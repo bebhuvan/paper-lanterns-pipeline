@@ -156,6 +156,9 @@ class BookConfig:
     publication_year: int | None = None
     collection: str = "world-correspondence"
     language: str = "en"
+    text_direction: str = "ltr"
+    series_id: str | None = None
+    volume_number: int | None = None
     subtitle: str = ""
     imprint: str = ""
     archive_id: str = ""
@@ -186,6 +189,8 @@ class BookConfig:
         if author_str and not authors_list:
             authors_list = [author_str]
         year_raw = meta.get("publication_year", meta.get("year"))
+        vol_raw = meta.get("volume_number")
+        dir_raw = str(meta.get("text_direction") or "ltr").strip().lower()
         profile_name = _first_str(
             ext.get("profile"), ext.get("reader_profile"), meta.get("profile"), default="english_epistolary"
         )
@@ -199,6 +204,9 @@ class BookConfig:
             imprint=_first_str(meta.get("imprint")),
             collection=_first_str(meta.get("collection"), default="world-correspondence"),
             language=_first_str(meta.get("language"), default="en"),
+            text_direction="rtl" if dir_raw == "rtl" else "ltr",
+            series_id=str(meta["series_id"]) if meta.get("series_id") else None,
+            volume_number=int(vol_raw) if vol_raw is not None else None,
             declared_scripts=list(meta.get("declared_scripts") or []),
             page_count=int(meta["page_count"]) if meta.get("page_count") is not None else None,
             active_run_id=_first_str(meta.get("active_run_id")),
@@ -300,6 +308,9 @@ class BookConfig:
             f"imprint = {_toml_scalar(self.imprint)}",
             f"collection = {_toml_scalar(self.collection)}",
             f"language = {_toml_scalar(self.language)}",
+            *([f"text_direction = {_toml_scalar(self.text_direction)}"] if self.text_direction != "ltr" else []),
+            *([f"series_id = {_toml_scalar(self.series_id)}"] if self.series_id else []),
+            *([f"volume_number = {self.volume_number}"] if self.volume_number is not None else []),
             f"declared_scripts = {_toml_scalar(self.declared_scripts)}",
             f"profile = {_toml_scalar(self.profile)}",
             *([f"active_run_id = {_toml_scalar(self.active_run_id)}"] if self.active_run_id else []),

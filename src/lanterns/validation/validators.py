@@ -58,6 +58,53 @@ def _collect_confirmed_block_ids(
     return confirmed
 
 
+def _check_units_coverage(
+    ast: CollectionAST,
+    expected_content_ids: set[str],
+    findings: list[ValidationFinding],
+) -> None:
+    if not any(sec.units for sec in ast.sections):
+        return
+    seen_bids: set[str] = set()
+    for sec in ast.sections:
+        for unit in sec.units:
+            unit_bids = set(unit.block_ids)
+            overlap = seen_bids & unit_bids
+            if overlap:
+                findings.append(
+                    ValidationFinding(
+                        code="structural_unit_overlap",
+                        severity="blocker",
+                        page_number=unit.start_anchor.page_number,
+                        block_id=sorted(overlap)[0],
+                        message=f"StructuralUnit {unit.unit_id} overlaps earlier unit on block(s) {sorted(overlap)[:4]}.",
+                    )
+                )
+            seen_bids.update(unit_bids)
+            for child in unit.children:
+                bad_child = set(child.block_ids) - unit_bids
+                if bad_child:
+                    findings.append(
+                        ValidationFinding(
+                            code="structural_child_out_of_bounds",
+                            severity="blocker",
+                            page_number=child.start_anchor.page_number,
+                            block_id=sorted(bad_child)[0],
+                            message=f"ChildSpan {child.child_id} includes blocks outside parent unit {unit.unit_id}.",
+                        )
+                    )
+    for dropped in sorted(expected_content_ids - seen_bids):
+        findings.append(
+            ValidationFinding(
+                code="source_block_dropped",
+                severity="blocker",
+                block_id=dropped,
+                message=f"Content block {dropped} was omitted from CollectionAST section.units.",
+                evidence={"block_id": dropped},
+            )
+        )
+
+
 def source_block_coverage(ast: CollectionAST) -> list[ValidationFinding]:
     """Mathematical 100% conservation check across all non-furniture source blocks."""
     letters_by_id = {lu.letter_id: lu for lu in ast.letters}
@@ -81,6 +128,7 @@ def source_block_coverage(ast: CollectionAST) -> list[ValidationFinding]:
     }
 
     findings: list[ValidationFinding] = []
+    expected_content_ids: set[str] = set()
     for page in ast.pages:
         if page.failed_closed:
             continue
@@ -99,17 +147,20 @@ def source_block_coverage(ast: CollectionAST) -> list[ValidationFinding]:
                             evidence={"block_type": blk.type},
                         )
                     )
-            elif blk.block_id not in conserved_section_ids:
-                findings.append(
-                    ValidationFinding(
-                        code="source_block_dropped",
-                        severity="blocker",
-                        page_number=page.page_number,
-                        block_id=blk.block_id,
-                        message=f"Content block {blk.block_id} ({blk.type}) on page {page.page_number} was dropped from CollectionAST sections.",
-                        evidence={"block_type": blk.type},
+            else:
+                expected_content_ids.add(blk.block_id)
+                if blk.block_id not in conserved_section_ids:
+                    findings.append(
+                        ValidationFinding(
+                            code="source_block_dropped",
+                            severity="blocker",
+                            page_number=page.page_number,
+                            block_id=blk.block_id,
+                            message=f"Content block {blk.block_id} ({blk.type}) on page {page.page_number} was dropped from CollectionAST sections.",
+                            evidence={"block_type": blk.type},
+                        )
                     )
-                )
+    _check_units_coverage(ast, expected_content_ids, findings)
     return findings
 
 

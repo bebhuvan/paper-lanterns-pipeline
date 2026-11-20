@@ -62,6 +62,10 @@ BoundaryConfidence = Literal["high", "adjudicated", "human_mapped", "ambiguous"]
 SectionKind = Literal["frontmatter", "chapter", "epistolary_part", "appendix", "index", "backmatter"]
 FindingSeverity = Literal["blocker", "warning", "info"]
 ProvenanceTier = Literal["blocked", "community", "machine_checked", "source_certified"]
+CorrespondentRole = Literal["person", "org"]
+TextDirection = Literal["ltr", "rtl"]
+ChildSpanKind = Literal["enclosure", "letter_excerpt", "verse_insert"]
+StructuralUnitKind = Literal["letter", "letter_excerpt", "narrative", "editorial_bridge", "document", "apparatus"]
 
 BLOCK_TYPES: tuple[str, ...] = get_args(BlockType)
 BLOCK_ALIGNMENTS: tuple[str, ...] = get_args(BlockAlignment)
@@ -159,11 +163,61 @@ class FootnoteItem(BaseModel):
     is_orphan: bool = False
 
 
+class CorrespondentRef(BaseModel):
+    name: str
+    kind: CorrespondentRole = "person"
+    role: str | None = None
+
+
+class BoundaryAnchor(BaseModel):
+    page_number: int
+    block_id: str
+    bbox_y0: float | None = None
+    anchor_text_prefix: str = ""
+    source: Literal["model", "human"] = "model"
+
+
+class ChildSpan(BaseModel):
+    child_id: str
+    kind: ChildSpanKind
+    start_anchor: BoundaryAnchor
+    end_anchor: BoundaryAnchor
+    block_ids: list[str] = Field(default_factory=list)
+    title: str | None = None
+    senders: list[CorrespondentRef] = Field(default_factory=list)
+    recipients: list[CorrespondentRef] = Field(default_factory=list)
+    place: str | None = None
+    date_raw: str | None = None
+    date_iso: str | None = None
+
+
+class StructuralUnit(BaseModel):
+    unit_id: str
+    kind: StructuralUnitKind
+    start_anchor: BoundaryAnchor
+    end_anchor: BoundaryAnchor
+    block_ids: list[str] = Field(default_factory=list)
+    children: list[ChildSpan] = Field(default_factory=list)
+    label: str | None = None
+    title: str | None = None
+    senders: list[CorrespondentRef] = Field(default_factory=list)
+    recipients: list[CorrespondentRef] = Field(default_factory=list)
+    place: str | None = None
+    date_raw: str | None = None
+    date_iso: str | None = None
+    footnote_ids: list[str] = Field(default_factory=list)
+    language: str | None = None
+
+
 class EpistolaryMetadata(BaseModel):
     letter_number_label: str | None = None
     header_tagged: str | None = None
     sender_display: str | None = None
     recipient_display: str | None = None
+    senders: list[CorrespondentRef] = Field(default_factory=list)
+    recipients: list[CorrespondentRef] = Field(default_factory=list)
+    place: str | None = None
+    date_iso: str | None = None
     dateline_tagged: str | None = None
     dateline_plain: str | None = None
     dateline_position: Literal["top", "bottom", "inline", "absent"] = "absent"
@@ -188,6 +242,7 @@ class LetterUnit(BaseModel):
     end_folio: str | None = None
     block_ids: list[str] = Field(default_factory=list)
     blocks: list[BlockIR] = Field(default_factory=list)
+    children: list[ChildSpan] = Field(default_factory=list)
     metadata: EpistolaryMetadata = Field(default_factory=EpistolaryMetadata)
     footnote_ids: list[str] = Field(default_factory=list)
     preceding_editorial_block_ids: list[str] = Field(default_factory=list)
@@ -209,6 +264,7 @@ class BookSection(BaseModel):
     start_page: int
     end_page: int
     items: list[SectionItem] = Field(default_factory=list)
+    units: list[StructuralUnit] = Field(default_factory=list)
     footnote_ids: list[str] = Field(default_factory=list)
     unavailable_pages: list[int] = Field(default_factory=list)
 
@@ -244,6 +300,10 @@ class CollectionAST(BaseModel):
     author_or_editor: str = ""
     year: int | None = None
     archive_id: str | None = None
+    language: str = "en"
+    text_direction: TextDirection = "ltr"
+    series_id: str | None = None
+    volume_number: int | None = None
     active_run_id: str
     total_pages: int
     pages: list[PageIR] = Field(default_factory=list)

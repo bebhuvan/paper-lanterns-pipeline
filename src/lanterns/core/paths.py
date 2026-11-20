@@ -99,6 +99,12 @@ class RepoPaths:
     def corrections_dir(self, book_id: str) -> Path:
         return self.book_dir(book_id) / "corrections"
 
+    def structure_overrides_path(self, book_id: str) -> Path:
+        return self.book_dir(book_id) / "structure_overrides.json"
+
+    def structure_auto_path(self, run_dir: str | Path) -> Path:
+        return Path(run_dir) / "ir" / "structure_auto.json"
+
     def collection_path(self, slug: str) -> Path:
         return self.collections_dir / f"{slug}.toml"
 

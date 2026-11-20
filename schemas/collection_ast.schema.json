@@ -183,6 +183,71 @@
         "is_orphan": { "type": "boolean" }
       }
     },
+    "CorrespondentRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "kind": { "type": "string", "enum": ["person", "org"] },
+        "role": { "type": ["string", "null"] }
+      }
+    },
+    "BoundaryAnchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["page_number", "block_id"],
+      "properties": {
+        "page_number": { "type": "integer", "minimum": 1 },
+        "block_id": { "type": "string" },
+        "bbox_y0": { "type": ["number", "null"] },
+        "anchor_text_prefix": { "type": "string" },
+        "source": { "type": "string", "enum": ["model", "human"] }
+      }
+    },
+    "ChildSpan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["child_id", "kind", "start_anchor", "end_anchor"],
+      "properties": {
+        "child_id": { "type": "string" },
+        "kind": { "type": "string", "enum": ["enclosure", "letter_excerpt", "verse_insert"] },
+        "start_anchor": { "$ref": "#/$defs/BoundaryAnchor" },
+        "end_anchor": { "$ref": "#/$defs/BoundaryAnchor" },
+        "block_ids": { "type": "array", "items": { "type": "string" } },
+        "title": { "type": ["string", "null"] },
+        "senders": { "type": "array", "items": { "$ref": "#/$defs/CorrespondentRef" } },
+        "recipients": { "type": "array", "items": { "$ref": "#/$defs/CorrespondentRef" } },
+        "place": { "type": ["string", "null"] },
+        "date_raw": { "type": ["string", "null"] },
+        "date_iso": { "type": ["string", "null"] }
+      }
+    },
+    "StructuralUnit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["unit_id", "kind", "start_anchor", "end_anchor"],
+      "properties": {
+        "unit_id": { "type": "string" },
+        "kind": {
+          "type": "string",
+          "enum": ["letter", "letter_excerpt", "narrative", "editorial_bridge", "document", "apparatus"]
+        },
+        "start_anchor": { "$ref": "#/$defs/BoundaryAnchor" },
+        "end_anchor": { "$ref": "#/$defs/BoundaryAnchor" },
+        "block_ids": { "type": "array", "items": { "type": "string" } },
+        "children": { "type": "array", "items": { "$ref": "#/$defs/ChildSpan" } },
+        "label": { "type": ["string", "null"] },
+        "title": { "type": ["string", "null"] },
+        "senders": { "type": "array", "items": { "$ref": "#/$defs/CorrespondentRef" } },
+        "recipients": { "type": "array", "items": { "$ref": "#/$defs/CorrespondentRef" } },
+        "place": { "type": ["string", "null"] },
+        "date_raw": { "type": ["string", "null"] },
+        "date_iso": { "type": ["string", "null"] },
+        "footnote_ids": { "type": "array", "items": { "type": "string" } },
+        "language": { "type": ["string", "null"] }
+      }
+    },
     "EpistolaryMetadata": {
       "type": "object",
       "additionalProperties": false,
@@ -191,6 +256,10 @@
         "header_tagged": { "type": ["string", "null"] },
         "sender_display": { "type": ["string", "null"] },
         "recipient_display": { "type": ["string", "null"] },
+        "senders": { "type": "array", "items": { "$ref": "#/$defs/CorrespondentRef" } },
+        "recipients": { "type": "array", "items": { "$ref": "#/$defs/CorrespondentRef" } },
+        "place": { "type": ["string", "null"] },
+        "date_iso": { "type": ["string", "null"] },
         "dateline_tagged": { "type": ["string", "null"] },
         "dateline_plain": { "type": ["string", "null"] },
         "dateline_position": {
@@ -232,6 +301,10 @@
         "blocks": {
           "type": "array",
           "items": { "$ref": "#/$defs/BlockIR" }
+        },
+        "children": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/ChildSpan" }
         },
         "metadata": { "$ref": "#/$defs/EpistolaryMetadata" },
         "footnote_ids": { "type": "array", "items": { "type": "string" } },
@@ -291,6 +364,10 @@
         "items": {
           "type": "array",
           "items": { "$ref": "#/$defs/SectionItem" }
+        },
+        "units": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/StructuralUnit" }
         },
         "footnote_ids": { "type": "array", "items": { "type": "string" } },
         "unavailable_pages": {
@@ -355,6 +432,10 @@
     "author_or_editor": { "type": "string" },
     "year": { "type": ["integer", "null"] },
     "archive_id": { "type": ["string", "null"] },
+    "language": { "type": "string" },
+    "text_direction": { "type": "string", "enum": ["ltr", "rtl"] },
+    "series_id": { "type": ["string", "null"] },
+    "volume_number": { "type": ["integer", "null"], "minimum": 1 },
     "active_run_id": { "type": "string" },
     "total_pages": { "type": "integer", "minimum": 0 },
     "pages": {
