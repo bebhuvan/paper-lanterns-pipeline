@@ -169,13 +169,20 @@ def _build_callout_queue(block_footnotes: list[FootnoteItem] | None) -> dict[str
     return queue
 
 
+def html_lang_dir_attrs(ast: Any, *, xhtml: bool = False) -> str:
+    """Build `lang`/`xml:lang` and optional `dir="rtl"` root `<html>` attributes from `CollectionAST`."""
+    lang_esc = html.escape((getattr(ast, "language", None) or "en").strip() or "en", quote=True)
+    dir_attr = (getattr(ast, "text_direction", "ltr") == "rtl" and ' dir="rtl"') or ""
+    xml_attr = (xhtml and f'xml:lang="{lang_esc}" ') or ""
+    return f'{xml_attr}lang="{lang_esc}"{dir_attr}'
+
+
 def _format_fnref_html(fn_id: str, label_text: str, ref_registry: dict[str, list[str]], *, epub: bool) -> str:
     target_id = html.escape(fn_anchor_id(fn_id), quote=True)
     ref_id = html.escape(alloc_fnref_id(fn_id, ref_registry), quote=True)
     lbl_esc = html.escape(label_text, quote=True)
-    if epub:
-        return f'<sup class="fn-ref"><a id="{ref_id}" epub:type="noteref" href="#{target_id}">{lbl_esc}</a></sup>'
-    return f'<sup class="fn-ref"><a id="{ref_id}" href="#{target_id}" role="doc-noteref">{lbl_esc}</a></sup>'
+    epub_attr = (epub and ' epub:type="noteref"') or ""
+    return f'<sup class="fn-ref"><a id="{ref_id}"{epub_attr} role="doc-noteref" href="#{target_id}">{lbl_esc}</a></sup>'
 
 
 def _format_folio_html(
@@ -483,6 +490,15 @@ def render_inline_markdown(tagged_text: str, block_footnotes: list[FootnoteItem]
     return "".join(out)
 
 
+def _count_leading_table_headers(row_blocks: list[BlockIR]) -> int:
+    count = 0
+    for r_blk in row_blocks:
+        if r_blk.table_role != "header":
+            return count
+        count += 1
+    return 0
+
+
 def _render_table_group_html(
     caption_block: BlockIR | None,
     row_blocks: list[BlockIR],
@@ -510,15 +526,29 @@ def _render_table_group_html(
         )
         cap_html = f"<caption>{inner}</caption>"
 
+    lead_hdr_count = _count_leading_table_headers(row_blocks)
     head_rows: list[str] = []
     body_rows: list[str] = []
-    for r_blk in row_blocks:
-        cell_tag = "th" if r_blk.table_role == "header" else "td"
+    for row_idx, r_blk in enumerate(row_blocks):
+        is_hdr = r_blk.table_role == "header"
+        cell_tag = (is_hdr and "th") or "td"
+        row_fol = ""
+        if r_blk.page_number not in seen_page_ids:
+            row_fol = (
+                _format_folio_html(
+                    r_blk.page_number,
+                    r_blk.printed_folio or str(r_blk.page_number),
+                    seen_page_ids=seen_page_ids,
+                    proof_href_prefix=proof_href_prefix,
+                    epub=epub,
+                )
+                + " "
+            )
         cells = r_blk.cells or [TableCell(text=p.strip()) for p in r_blk.tagged_text.split("|")]
         rendered_cells: list[str] = []
-        for cell in cells:
-            cs = f' colspan="{cell.colspan}"' if cell.colspan > 1 else ""
-            rs = f' rowspan="{cell.rowspan}"' if cell.rowspan > 1 else ""
+        for cell_idx, cell in enumerate(cells):
+            cs = (cell.colspan > 1 and f' colspan="{cell.colspan}"') or ""
+            rs = (cell.rowspan > 1 and f' rowspan="{cell.rowspan}"') or ""
             c_inner = render_inline_html(
                 cell.text,
                 block_footnotes=fn_by_block.get(r_blk.block_id),
@@ -530,13 +560,20 @@ def _render_table_group_html(
                 proof_href_prefix=proof_href_prefix,
                 epub=epub,
             )
-            rendered_cells.append(f"<{cell_tag}{cs}{rs}>{c_inner}</{cell_tag}>")
-        row_html = f"<tr>{''.join(rendered_cells)}</tr>"
-        (head_rows if r_blk.table_role == "header" else body_rows).append(row_html)
+            prefix = (cell_idx == 0 and row_fol) or ""
+            rendered_cells.append(f"<{cell_tag}{cs}{rs}>{prefix}{c_inner}</{cell_tag}>")
+        sub_cls = (is_hdr and row_idx >= lead_hdr_count and ' class="table-subheader"') or ""
+        row_html = f"<tr{sub_cls}>{''.join(rendered_cells)}</tr>"
+        (head_rows if row_idx < lead_hdr_count else body_rows).append(row_html)
 
-    thead = f"<thead>{''.join(head_rows)}</thead>" if head_rows else ""
-    tbody = f"<tbody>{''.join(body_rows or head_rows)}</tbody>" if (body_rows or not head_rows) else "<tbody></tbody>"
+    thead = (head_rows and f"<thead>{''.join(head_rows)}</thead>") or ""
+    tbody = f"<tbody>{''.join(body_rows)}</tbody>"
     return f'<div class="archival-table-wrap"><table class="archival-table">{cap_html}{thead}{tbody}</table></div>'
+
+
+def _compute_heading_level(block: BlockIR, heading_base: int, max_heading_level: int) -> int:
+    raw = heading_base + (0 if block.type == "letter_header" else max(0, (block.heading_level or 1) - 1))
+    return min(6, max(2, min(raw, max_heading_level)))
 
 
 def render_single_block_html(
@@ -549,7 +586,8 @@ def render_single_block_html(
     folio_to_page: dict[str, int],
     proof_href_prefix: str | None = None,
     epub: bool = False,
-    heading_base: int = 3,
+    heading_base: int = 2,
+    max_heading_level: int = 6,
 ) -> str:
     """Render one non-table, non-list `BlockIR` to semantic HTML5/XHTML."""
     cls = block_css_classes(block)
@@ -578,13 +616,13 @@ def render_single_block_html(
     if block.type == "ornamental_break":
         return f'<div id="{bid}" class="{cls}" role="separator">{inner.strip() or "* * *"}</div>'
     if block.type in {"heading", "letter_header"}:
-        lvl = heading_base if block.type == "letter_header" else min(6, max(2, heading_base + max(0, (block.heading_level or 2) - 1)))
+        lvl = _compute_heading_level(block, heading_base, max_heading_level)
         return f'<h{lvl} id="{bid}" class="{cls}">{inner}</h{lvl}>'
     if block.type == "margin_note":
-        side_cls = "margin-right" if (block.bbox and block.bbox[0] >= 500) else "margin-left"
+        side_cls = (block.bbox and block.bbox[0] >= 500 and "margin-right") or "margin-left"
         return f'<aside id="{bid}" class="{cls} {side_cls}" role="note">{inner}</aside>'
     if block.type in {"illustration", "facsimile_plate"}:
-        label = "Facsimile plate" if block.type == "facsimile_plate" else "Illustration"
+        label = (block.type == "facsimile_plate" and "Facsimile plate") or "Illustration"
         desc = inner or html.escape(f"[{label} on p. {block.printed_folio or block.page_number}]")
         return f'<figure id="{bid}" class="{cls}"><figcaption>{desc}</figcaption></figure>'
     tag = _HTML_INLINE_TAG_MAP.get(block.type, "p")
@@ -629,6 +667,21 @@ def _find_continuation_index(
     return None
 
 
+def _intermediate_float_folio_tokens(
+    span_floats: list[BlockIR],
+    cur_max_page: int,
+    nxt_page: int,
+) -> str:
+    seen: set[int] = set()
+    toks: list[str] = []
+    for flt in span_floats:
+        pnum = flt.page_number
+        if cur_max_page < pnum < nxt_page and pnum not in seen:
+            seen.add(pnum)
+            toks.append(f"[[FOLIO:{pnum}:{flt.printed_folio or pnum}]]")
+    return " ".join(toks)
+
+
 def coalesce_continued_blocks(
     blocks: list[BlockIR],
     fn_by_block: dict[str, list[FootnoteItem]],
@@ -642,6 +695,7 @@ def coalesce_continued_blocks(
     idx = 0
     while idx < len(visible):
         acc = visible[idx]
+        cur_max_page = acc.page_number
         acc_fns = list(fn_by_block.get(acc.block_id, []))
         seen_fids = {fn.footnote_id for fn in acc_fns}
         deferred_floats: list[BlockIR] = []
@@ -650,13 +704,14 @@ def coalesce_continued_blocks(
             k = _find_continuation_index(visible, idx, acc.type)
             if k is None:
                 break
-            deferred_floats.extend(visible[idx:k])
+            span_floats = visible[idx:k]
+            deferred_floats.extend(span_floats)
             nxt = visible[k]
-            rhs = (
-                _upgrade_leading_folio_token(nxt)
-                if (include_folio_tokens and nxt.page_number > acc.page_number)
-                else nxt.tagged_text.lstrip()
-            )
+            rhs = nxt.tagged_text.lstrip()
+            if include_folio_tokens and nxt.page_number > cur_max_page:
+                mid_toks = _intermediate_float_folio_tokens(span_floats, cur_max_page, nxt.page_number)
+                rhs = f"{mid_toks} {_upgrade_leading_folio_token(nxt)}".strip()
+            cur_max_page = max(cur_max_page, nxt.page_number, *(f.page_number for f in span_floats))
             joined_tag = f"{acc.tagged_text.rstrip()} {rhs}".strip()
             joined_pln = f"{acc.plain_text.rstrip()} {nxt.plain_text.lstrip()}".strip()
             for fn in fn_by_block.get(nxt.block_id, []):
@@ -693,6 +748,66 @@ def count_redundant_leading_headings(blocks: list[BlockIR], section_title_plain:
     return 0
 
 
+def _resolve_child_spans_html(
+    blocks: list[BlockIR],
+    children: list[Any] | None,
+) -> dict[int, int]:
+    """Return non-overlapping `start_idx -> end_idx_exclusive` over `blocks` for `ChildSpan` enclosures."""
+    if not children:
+        return {}
+    pos = {b.block_id: i for i, b in enumerate(blocks)}
+    spans: dict[int, int] = {}
+    last_end = 0
+    for ch in children:
+        s_i = pos.get(ch.start_anchor.block_id)
+        e_i = pos.get(ch.end_anchor.block_id)
+        if s_i is not None and e_i is not None and last_end <= s_i <= e_i:
+            spans[s_i] = e_i + 1
+            last_end = e_i + 1
+    return spans
+
+
+def _render_list_group_html(
+    list_blocks: list[BlockIR],
+    *,
+    fn_by_block: dict[str, list[FootnoteItem]],
+    available_footnotes: dict[str, FootnoteItem],
+    ref_registry: dict[str, list[str]],
+    seen_page_ids: set[int],
+    folio_to_page: dict[str, int],
+    proof_href_prefix: str | None,
+    epub: bool,
+) -> str:
+    items_html: list[str] = []
+    for cur in list_blocks:
+        fol_prefix = ""
+        if cur.page_number not in seen_page_ids:
+            fol_prefix = (
+                _format_folio_html(
+                    cur.page_number,
+                    cur.printed_folio or str(cur.page_number),
+                    seen_page_ids=seen_page_ids,
+                    proof_href_prefix=proof_href_prefix,
+                    epub=epub,
+                )
+                + " "
+            )
+        li_inner = render_inline_html(
+            cur.tagged_text,
+            block_footnotes=fn_by_block.get(cur.block_id),
+            available_footnotes=available_footnotes,
+            ref_registry=ref_registry,
+            seen_page_ids=seen_page_ids,
+            folio_to_page=folio_to_page,
+            default_page=cur.page_number,
+            proof_href_prefix=proof_href_prefix,
+            preserve_line_breaks=cur.line_breaks_preserved,
+            epub=epub,
+        )
+        items_html.append(f'<li id="{html.escape(sanitize_xml_id(cur.block_id, "blk"))}">{fol_prefix}{li_inner}</li>')
+    return f'<ul class="archival-list">{"".join(items_html)}</ul>'
+
+
 def render_block_stream_html(
     blocks: list[BlockIR],
     *,
@@ -703,39 +818,56 @@ def render_block_stream_html(
     folio_to_page: dict[str, int],
     proof_href_prefix: str | None = None,
     epub: bool = False,
-    heading_base: int = 3,
+    heading_base: int = 2,
     leading_section_title: str = "",
+    children: list[Any] | None = None,
 ) -> str:
-    """Render an ordered sequence of `BlockIR`s, preserving page anchors, tables, lists, and two-column pairs."""
+    """Render an ordered sequence of `BlockIR`s, preserving page anchors, tables, lists, enclosures, and heading hierarchy."""
     blocks, fn_by_block = coalesce_continued_blocks(blocks, fn_by_block)
+    child_spans = _resolve_child_spans_html(blocks, children)
     skip_n = count_redundant_leading_headings(blocks, leading_section_title)
     out: list[str] = []
     if skip_n > 0 and blocks[0].page_number not in seen_page_ids:
-        fol_label = blocks[0].printed_folio or str(blocks[0].page_number)
         out.append(
             '<div class="page-locus">'
             + _format_folio_html(
                 blocks[0].page_number,
-                fol_label,
+                blocks[0].printed_folio or str(blocks[0].page_number),
                 seen_page_ids=seen_page_ids,
                 proof_href_prefix=proof_href_prefix,
                 epub=epub,
             )
             + "</div>"
         )
+    max_next_h = max(2, heading_base)
     idx = skip_n
     while idx < len(blocks):
+        if idx in child_spans:
+            end_c = child_spans[idx]
+            enc_html = render_block_stream_html(
+                blocks[idx:end_c],
+                fn_by_block=fn_by_block,
+                available_footnotes=available_footnotes,
+                ref_registry=ref_registry,
+                seen_page_ids=seen_page_ids,
+                folio_to_page=folio_to_page,
+                proof_href_prefix=proof_href_prefix,
+                epub=epub,
+                heading_base=max_next_h,
+            )
+            out.append(f'<div class="enclosure-span">{enc_html}</div>')
+            idx = end_c
+            continue
         blk = blocks[idx]
-        if blk.type in {"running_header", "folio", "scanner_residue", "noise", "footnote"}:
+        if blk.type in _SKIP_STREAM_TYPES:
             idx += 1
             continue
         if blk.page_number not in seen_page_ids:
-            fol_label = blk.printed_folio or str(blk.page_number)
             out.append(
                 '<div class="page-locus">'
                 + _format_folio_html(
                     blk.page_number,
-                    fol_label,
+                    blk.printed_folio or str(blk.page_number),
                     seen_page_ids=seen_page_ids,
                     proof_href_prefix=proof_href_prefix,
                     epub=epub,
@@ -743,30 +875,26 @@ def render_block_stream_html(
                 + "</div>"
             )
         if blk.type == "list_item":
-            items_html: list[str] = []
-            while idx < len(blocks) and blocks[idx].type == "list_item":
-                cur = blocks[idx]
-                li_inner = render_inline_html(
-                    cur.tagged_text,
-                    block_footnotes=fn_by_block.get(cur.block_id),
+            end_li = idx + 1
+            while end_li < len(blocks) and blocks[end_li].type == "list_item":
+                end_li += 1
+            out.append(
+                _render_list_group_html(
+                    blocks[idx:end_li],
+                    fn_by_block=fn_by_block,
                     available_footnotes=available_footnotes,
                     ref_registry=ref_registry,
                     seen_page_ids=seen_page_ids,
                     folio_to_page=folio_to_page,
-                    default_page=cur.page_number,
                     proof_href_prefix=proof_href_prefix,
-                    preserve_line_breaks=cur.line_breaks_preserved,
                     epub=epub,
                 )
-                items_html.append(f'<li id="{html.escape(sanitize_xml_id(cur.block_id, "blk"))}">{li_inner}</li>')
-                idx += 1
-            out.append(f'<ul class="archival-list">{"".join(items_html)}</ul>')
+            )
+            idx = end_li
             continue
-
         if blk.type in {"table_caption", "table_row"}:
             cap_blk = blk if blk.type == "table_caption" else None
-            if cap_blk is not None:
-                idx += 1
+            idx += int(cap_blk is not None)
             row_blks: list[BlockIR] = []
             while idx < len(blocks) and blocks[idx].type == "table_row":
                 row_blks.append(blocks[idx])
@@ -797,10 +925,10 @@ def render_block_stream_html(
                         proof_href_prefix=proof_href_prefix,
                         epub=epub,
                         heading_base=heading_base,
+                        max_heading_level=max_next_h,
                     )
                 )
             continue
-
         if (
             blk.alignment == "two_column_left"
             and idx + 1 < len(blocks)
@@ -816,6 +944,7 @@ def render_block_stream_html(
                 proof_href_prefix=proof_href_prefix,
                 epub=epub,
                 heading_base=heading_base,
+                max_heading_level=max_next_h,
             )
             right_html = render_single_block_html(
                 blocks[idx + 1],
@@ -827,11 +956,30 @@ def render_block_stream_html(
                 proof_href_prefix=proof_href_prefix,
                 epub=epub,
                 heading_base=heading_base,
+                max_heading_level=max_next_h,
             )
             out.append(f'<div class="two-col-pair">{left_html}{right_html}</div>')
             idx += 2
             continue
-
+        if blk.type in {"heading", "letter_header"}:
+            used_lvl = _compute_heading_level(blk, heading_base, max_next_h)
+            out.append(
+                render_single_block_html(
+                    blk,
+                    fn_by_block=fn_by_block,
+                    available_footnotes=available_footnotes,
+                    ref_registry=ref_registry,
+                    seen_page_ids=seen_page_ids,
+                    folio_to_page=folio_to_page,
+                    proof_href_prefix=proof_href_prefix,
+                    epub=epub,
+                    heading_base=heading_base,
+                    max_heading_level=max_next_h,
+                )
+            )
+            max_next_h = min(6, max(max_next_h, used_lvl + 1))
+            idx += 1
+            continue
         out.append(
             render_single_block_html(
                 blk,
@@ -843,6 +991,7 @@ def render_block_stream_html(
                 proof_href_prefix=proof_href_prefix,
                 epub=epub,
                 heading_base=heading_base,
+                max_heading_level=max_next_h,
             )
         )
         idx += 1
@@ -860,7 +1009,7 @@ def render_footnotes_apparatus_html(
     epub: bool = False,
     heading_label: str = "Editorial & Authorial Notes",
 ) -> str:
-    """Render bidirectional `#fn-...` <-> `#fnref-...` footnote apparatus."""
+    """Render DPUB-ARIA 1.1 compliant bidirectional `#fn-...` <-> `#fnref-...` multi-paragraph apparatus."""
     items_out: list[str] = []
     for fid in dict.fromkeys(footnote_ids):
         fn = footnotes_map.get(fid)
@@ -869,39 +1018,50 @@ def render_footnotes_apparatus_html(
         dom_id = html.escape(fn_anchor_id(fn.footnote_id), quote=True)
         lbl_esc = html.escape(fn.label or "*", quote=False)
         orphan_badge = (
-            f'<span class="fn-orphan-tag">[Unlinked note, p. {html.escape(fn.origin_folio or str(fn.origin_page))}]</span> '
-            if fn.is_orphan
-            else ""
-        )
-        body_html = render_inline_html(
-            fn.tagged_text,
-            available_footnotes=footnotes_map,
-            ref_registry=ref_registry,
-            seen_page_ids=seen_page_ids,
-            folio_to_page=folio_to_page,
-            default_page=fn.origin_page,
-            proof_href_prefix=proof_href_prefix,
-            epub=epub,
-        )
+            fn.is_orphan
+            and f'<span class="fn-orphan-tag">[Unlinked note, p. {html.escape(fn.origin_folio or str(fn.origin_page))}]</span> '
+        ) or ""
+        raw_paras = [p for p in split_tagged_paragraphs_balanced(fn.tagged_text) if p.strip()] or [fn.tagged_text]
+        rendered_paras = [
+            render_inline_html(
+                p,
+                available_footnotes=footnotes_map,
+                ref_registry=ref_registry,
+                seen_page_ids=seen_page_ids,
+                folio_to_page=folio_to_page,
+                default_page=fn.origin_page,
+                proof_href_prefix=proof_href_prefix,
+                epub=epub,
+            )
+            for p in raw_paras
+        ]
         refs = ref_registry.get(fn.footnote_id) or []
-        backlink = (
-            f' <a class="fn-backlink" href="#{html.escape(refs[0], quote=True)}" aria-label="Return to text">↩</a>'
-            if refs
-            else ""
+        backlinks = "".join(
+            f' <a class="fn-backlink" role="doc-backlink" href="#{html.escape(r, quote=True)}" '
+            f'aria-label="Return to citation {i}">↩{(len(refs) > 1 and f"<sup>{i}</sup>") or ""}</a>'
+            for i, r in enumerate(refs, start=1)
         )
+        p_tags: list[str] = []
+        for p_idx, p_html in enumerate(rendered_paras):
+            lead = (p_idx == 0 and epub and f'<span class="fn-label">{lbl_esc}.</span> {orphan_badge}') or (
+                p_idx == 0 and orphan_badge
+            ) or ""
+            tail = (p_idx == len(rendered_paras) - 1 and backlinks) or ""
+            p_tags.append(f"<p>{lead}{p_html}{tail}</p>")
+        joined_p = "".join(p_tags)
         items_out.append(
-            f'<aside id="{dom_id}" epub:type="footnote" class="fn-item"><p><span class="fn-label">{lbl_esc}.</span> {orphan_badge}{body_html}{backlink}</p></aside>'
+            f'<aside id="{dom_id}" epub:type="footnote" role="doc-footnote" class="fn-item">{joined_p}</aside>'
             if epub
-            else f'<li id="{dom_id}" class="fn-item" role="doc-footnote"><span class="fn-label">{lbl_esc}.</span> <span class="fn-body">{orphan_badge}{body_html}{backlink}</span></li>'
+            else f'<li id="{dom_id}" class="fn-item"><span class="fn-label">{lbl_esc}.</span> <div class="fn-body">{joined_p}</div></li>'
         )
     if not items_out:
         return ""
     h_esc = html.escape(heading_label)
     body = "".join(items_out)
     return (
-        f'<section epub:type="footnotes" class="apparatus-notes"><h3>{h_esc}</h3>{body}</section>'
+        f'<section epub:type="footnotes" class="apparatus-notes"><h2>{h_esc}</h2>{body}</section>'
         if epub
-        else f'<section class="apparatus-notes" role="doc-endnotes"><h3 class="apparatus-heading">{h_esc}</h3><ol class="fn-list">{body}</ol></section>'
+        else f'<section class="apparatus-notes" role="doc-endnotes"><h2 class="apparatus-heading">{h_esc}</h2><ol class="fn-list">{body}</ol></section>'
     )
 
 
@@ -1010,10 +1170,7 @@ a:hover { color: var(--ink-primary); }
   color: var(--ink-secondary);
   margin: 0.45rem 0 0.85rem;
 }
-.block-salutation {
-  font-style: italic;
-  margin: 0.6rem 0 0.75rem;
-}
+.block-salutation { margin: 0.6rem 0 0.75rem; }
 .block-body { text-align: justify; hyphens: auto; }
 .block-blockquote, .block-epigraph {
   margin: 1.15rem 1.8rem;
@@ -1023,13 +1180,12 @@ a:hover { color: var(--ink-primary); }
 }
 .block-verse {
   margin: 1.1rem 2rem;
-  font-style: italic;
+  white-space: pre-wrap;
   line-height: 1.62;
 }
 .block-valediction { margin: 0.9rem 0 0.35rem; }
 .block-signature {
-  font-variant: small-caps;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   margin: 0.25rem 0 1.2rem;
 }
 .block-postscript {
@@ -1046,12 +1202,20 @@ a:hover { color: var(--ink-primary); }
   font-size: 1.02rem;
 }
 .block-editorial {
-  margin: 1.25rem 0;
-  padding: 0.75rem 1.1rem;
-  background: var(--paper-elevated);
-  border-left: 3px solid var(--accent-oxblood);
-  color: var(--ink-secondary);
+  margin: 0 0 1.05rem;
+  text-align: justify;
+  hyphens: auto;
+}
+.unit-letter-excerpt {
+  margin: 1.15rem 1.6rem;
+  padding-left: 0.95rem;
+  border-left: 2px solid var(--rule-hairline);
   font-size: 1.05rem;
+}
+.enclosure-span {
+  margin: 0.9rem 0 0.9rem 1.25rem;
+  padding-left: 0.95rem;
+  border-left: 2px solid var(--rule-hairline);
 }
 .block-ornamental-break {
   text-align: center;
@@ -1067,6 +1231,25 @@ a:hover { color: var(--ink-primary); }
   padding: 0.25rem 0.6rem;
   border-left: 2px solid var(--rule-hairline);
   margin: 0.4rem 0 0.7rem;
+}
+.block-margin-note.margin-right {
+  border-left: none;
+  border-right: 2px solid var(--rule-hairline);
+  text-align: right;
+}
+@media (min-width: 1180px) {
+  .reading-column .block-margin-note.margin-left {
+    float: left;
+    clear: left;
+    width: 11rem;
+    margin: 0.15rem 1.25rem 0.6rem -12.5rem;
+  }
+  .reading-column .block-margin-note.margin-right {
+    float: right;
+    clear: right;
+    width: 11rem;
+    margin: 0.15rem -12.5rem 0.6rem 1.25rem;
+  }
 }
 
 /* Spatial Alignments */
@@ -1139,6 +1322,11 @@ a:hover { color: var(--ink-primary); }
   border-bottom: 1px solid var(--ink-primary);
   font-weight: 600;
 }
+.archival-table tr.table-subheader th {
+  padding-top: 0.85rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--ink-secondary);
+}
 
 /* Letter Unit Wrapper & Editorial Framing */
 .letter-unit {
@@ -1196,6 +1384,9 @@ a:hover { color: var(--ink-primary); }
 }
 .fn-list { list-style: none; padding: 0; margin: 0; }
 .fn-item { margin-bottom: 0.65rem; display: flex; gap: 0.55rem; align-items: baseline; }
+.fn-body { flex: 1; }
+.fn-body p { margin: 0 0 0.45rem; }
+.fn-body p:last-child { margin-bottom: 0; }
 .fn-label { font-family: var(--font-sans); font-weight: 600; font-size: 0.82rem; min-width: 1.6rem; }
 .fn-orphan-tag { font-family: var(--font-sans); font-size: 0.75rem; color: var(--accent-oxblood); }
 .fn-backlink { font-family: var(--font-sans); font-size: 0.8rem; text-decoration: none; margin-left: 0.3rem; }
@@ -1280,4 +1471,106 @@ dialog.scan-drawer::backdrop { background: rgba(26, 24, 22, 0.55); }
   font-family: var(--font-sans);
   font-size: 0.85rem;
 }
+"""
+
+EDITORIAL_EPUB_CSS = """/* Paper Lanterns v3 — Dark-Mode-Safe EPUB 3.3 Stylesheet */
+body {
+  line-height: 1.65;
+  margin: 0;
+  padding: 0;
+}
+
+.small-caps { font-variant: small-caps; letter-spacing: 0.04em; }
+.unclear { border-bottom: 1px dotted currentColor; }
+
+.archival-block { margin: 0 0 0.95em; }
+.block-heading { font-weight: 600; line-height: 1.28; margin: 1.9em 0 0.85em; }
+.block-letter-header {
+  font-weight: 600;
+  font-size: 1.08em;
+  letter-spacing: 0.03em;
+  margin: 1.8em 0 0.65em;
+  padding-top: 0.95em;
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
+}
+.block-dateline { font-variant-numeric: oldstyle-nums; opacity: 0.88; margin: 0.4em 0 0.75em; }
+.block-salutation { margin: 0.55em 0 0.7em; }
+.block-body, .block-editorial { text-align: justify; hyphens: auto; }
+.block-blockquote, .block-epigraph, .unit-letter-excerpt, .enclosure-span {
+  margin: 1em 1.4em;
+  padding-left: 0.9em;
+  border-left: 2px solid rgba(128, 128, 128, 0.35);
+}
+.block-verse {
+  margin: 1em 1.6em;
+  white-space: pre-wrap;
+  line-height: 1.58;
+}
+.block-valediction { margin: 0.85em 0 0.3em; }
+.block-signature { letter-spacing: 0.03em; margin: 0.2em 0 1.1em; }
+.block-postscript {
+  margin-top: 0.9em;
+  padding-top: 0.5em;
+  border-top: 1px dashed rgba(128, 128, 128, 0.35);
+}
+.block-address {
+  margin: 0.8em 0 1.15em;
+  padding: 0.55em 0.9em;
+  border: 1px solid rgba(128, 128, 128, 0.32);
+}
+.block-ornamental-break { text-align: center; letter-spacing: 0.35em; opacity: 0.75; margin: 1.5em 0; }
+.block-margin-note {
+  font-size: 0.82em;
+  line-height: 1.4;
+  opacity: 0.82;
+  padding: 0.2em 0.55em;
+  border-left: 2px solid rgba(128, 128, 128, 0.35);
+  margin: 0.35em 0 0.65em;
+}
+.block-margin-note.margin-right {
+  border-left: none;
+  border-right: 2px solid rgba(128, 128, 128, 0.35);
+  text-align: right;
+}
+
+.align-left { text-align: left; }
+.align-center { text-align: center; }
+.align-right { text-align: right; }
+.align-indented { padding-left: 2em; }
+.align-inline { display: inline; margin-right: 0.5em; }
+.align-cascading { text-align: left; }
+.align-cascading .cascade-line { display: inline-block; padding-left: 1.5em; }
+
+.page-locus { margin: 0.75em 0 0.25em; text-align: right; font-size: 0.75em; }
+.folio-marker { font-size: 0.78em; opacity: 0.72; }
+.page-unavailable {
+  margin: 1.2em 0;
+  padding: 0.8em 1em;
+  border: 1px solid currentColor;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.archival-table-wrap { overflow-x: auto; margin: 1.2em 0; }
+.archival-table { width: 100%; border-collapse: collapse; font-size: 0.94em; }
+.archival-table th, .archival-table td {
+  padding: 0.4em 0.55em;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.28);
+  text-align: left;
+  vertical-align: top;
+}
+.archival-table thead th, .archival-table tr.table-subheader th {
+  border-bottom: 1px solid currentColor;
+  font-weight: 600;
+}
+
+.letter-unit { margin: 2em 0; padding-bottom: 1.2em; border-bottom: 1px solid rgba(128, 128, 128, 0.28); }
+.fn-ref a { font-size: 0.78em; font-weight: 600; text-decoration: none; }
+.apparatus-notes { margin-top: 2.4em; padding-top: 1.1em; border-top: 1px solid currentColor; font-size: 0.92em; }
+.fn-item { margin-bottom: 0.6em; }
+.fn-item p { margin: 0 0 0.4em; }
+.fn-label { font-weight: 600; }
+.fn-orphan-tag { font-size: 0.82em; opacity: 0.82; }
+.fn-backlink { font-size: 0.85em; text-decoration: none; margin-left: 0.25em; }
 """

@@ -20,7 +20,7 @@ def _format_findings_section(ast: CollectionAST) -> list[str]:
         return []
     out = ["## 6. Open Validation Findings"]
     for f in ast.findings[:40]:
-        loc = f"p. {f.page_number}" if f.page_number else (f.letter_id or "book")
+        loc = (f.page_number and f"p. {f.page_number}") or f.letter_id or "book"
         out.append(f"- `[{f.severity}]` `{f.code}` ({loc}): {f.message}")
     if len(ast.findings) > 40:
         out.append(f"- ... and {len(ast.findings) - 40} additional finding(s).")
@@ -45,8 +45,8 @@ def render_edition_report(
     orphan_fns = sum(1 for fn in ast.footnotes.values() if fn.is_orphan)
 
     rubric = ast.rubric
-    tier = rubric.provenance_tier if rubric else "community"
-    total_score = f"{rubric.total_score:.1f} / 100.0" if rubric else "Unscored"
+    tier = (rubric and rubric.provenance_tier) or "community"
+    total_score = (rubric and f"{rubric.total_score:.1f} / 100.0") or "Unscored"
 
     lines: list[str] = [
         f"# Edition Report — {ast.title}",
@@ -64,8 +64,8 @@ def render_edition_report(
         "## 2. Structural & Epistolary Inventory",
         f"- **Total Source Pages**: {ast.total_pages}",
         f"- **Extracted Pages**: {extracted_pages}",
-        f"- **Fail-Closed Pages**: {len(failed_pages)} ({failed_pages if failed_pages else 'none'})",
-        f"- **Rescued / Fallback Pages**: {len(rescued_pages)} ({rescued_pages if rescued_pages else 'none'})",
+        f"- **Fail-Closed Pages**: {len(failed_pages)} ({failed_pages or 'none'})",
+        f"- **Rescued / Fallback Pages**: {len(rescued_pages)} ({rescued_pages or 'none'})",
         f"- **Sections Compiled**: {len(ast.sections)}",
         f"- **Individual Letters Extracted**: {len(ast.letters)}",
         f"- **Footnotes Linked**: {len(ast.footnotes) - orphan_fns} (Orphan notes preserved: {orphan_fns})",

@@ -13,7 +13,7 @@ import shutil
 from pathlib import Path
 from typing import Any
 
-from lanterns.core.models import BookSection, CollectionAST, FootnoteItem, LetterUnit
+from lanterns.core.models import BlockIR, BookSection, CollectionAST, FootnoteItem
 from lanterns.renderers.html_utils import (
     EDITORIAL_SHARED_CSS,
     READER_STRICT_CSP,
@@ -22,6 +22,9 @@ from lanterns.renderers.html_utils import (
     collect_section_footnotes,
     fold_diacritics_for_search,
     footnotes_by_block_map,
+    html_lang_dir_attrs,
+    index_ast_blocks,
+    iter_section_render_units,
     render_block_stream_html,
     render_footnotes_apparatus_html,
     render_inline_html,
@@ -87,7 +90,7 @@ _collect_section_footnotes = collect_section_footnotes
 def _render_section_item_html(
     section: BookSection,
     ast: CollectionAST,
-    letters_by_id: dict[str, LetterUnit],
+    block_lookup: dict[str, BlockIR],
     *,
     fn_by_block: dict[str, list[FootnoteItem]],
     sec_footnotes: dict[str, FootnoteItem],
@@ -100,22 +103,17 @@ def _render_section_item_html(
     parts: list[str] = []
     unavail_sorted = sorted(p for p in section.unavailable_pages if p not in seen_page_ids)
     unavail_idx = 0
+    render_units = iter_section_render_units(section, ast, block_lookup)
 
-    for item_idx, item in enumerate(section.items):
-        item_blocks = (
-            letters_by_id[item.letter_id].blocks
-            if (item.kind == "letter" and item.letter_id in letters_by_id)
-            else item.blocks
-        )
-        first_page = item_blocks[0].page_number if item_blocks else section.end_page + 1
+    for unit_idx, (u_kind, blks, ltr, u_obj) in enumerate(render_units):
+        first_page = blks[0].page_number if blks else section.end_page + 1
         while unavail_idx < len(unavail_sorted) and unavail_sorted[unavail_idx] <= first_page:
             upage = unavail_sorted[unavail_idx]
             seen_page_ids.add(upage)
             parts.append(render_unavailable_page_banner(upage, proof_href_prefix=proof_href))
             unavail_idx += 1
 
-        if item.kind == "letter" and item.letter_id in letters_by_id:
-            ltr = letters_by_id[item.letter_id]
+        if ltr is not None:
             dom_id = html.escape(letter_dom_anchor(ltr.letter_id), quote=True)
             standalone_link = render_optional_links(
                 ((has_letters_edition, f'<a href="../../letters/{html.escape(ltr.slug, quote=True)}.html">Standalone Letter View →</a>'),)
@@ -125,34 +123,39 @@ def _render_section_item_html(
             )
             meta_txt = html.escape(sender_rec or f"Letter #{ltr.sequence_index}")
             inner_html = render_block_stream_html(
-                ltr.blocks,
+                blks,
                 fn_by_block=fn_by_block,
                 available_footnotes=sec_footnotes,
                 ref_registry=ref_registry,
                 seen_page_ids=seen_page_ids,
                 folio_to_page=folio_to_page,
                 proof_href_prefix=proof_href,
-                heading_base=3,
+                heading_base=2,
+                children=ltr.children,
             )
             parts.append(
                 f'<article id="{dom_id}" class="letter-unit">'
                 f'<div class="letter-meta-bar"><span>{meta_txt}</span>{standalone_link}</div>'
                 f"{inner_html}</article>"
             )
-        elif item.blocks:
-            parts.append(
-                render_block_stream_html(
-                    item.blocks,
-                    fn_by_block=fn_by_block,
-                    available_footnotes=sec_footnotes,
-                    ref_registry=ref_registry,
-                    seen_page_ids=seen_page_ids,
-                    folio_to_page=folio_to_page,
-                    proof_href_prefix=proof_href,
-                    heading_base=3,
-                    leading_section_title=section.title_plain if item_idx == 0 else "",
-                )
+        elif blks:
+            inner_html = render_block_stream_html(
+                blks,
+                fn_by_block=fn_by_block,
+                available_footnotes=sec_footnotes,
+                ref_registry=ref_registry,
+                seen_page_ids=seen_page_ids,
+                folio_to_page=folio_to_page,
+                proof_href_prefix=proof_href,
+                heading_base=2,
+                leading_section_title=(unit_idx == 0 and section.title_plain) or "",
+                children=(u_obj and u_obj.children) or None,
             )
+            if u_obj is not None:
+                u_dom = html.escape(sanitize_xml_id(u_obj.unit_id, "unit"), quote=True)
+                parts.append(f'<div id="{u_dom}" class="structural-unit unit-{u_kind.replace("_", "-")}">{inner_html}</div>')
+            else:
+                parts.append(inner_html)
 
     while unavail_idx < len(unavail_sorted):
         upage = unavail_sorted[unavail_idx]
@@ -166,6 +169,7 @@ def _render_section_page(
     ast: CollectionAST,
     section: BookSection,
     *,
+    block_lookup: dict[str, BlockIR],
     prev_sec: BookSection | None,
     next_sec: BookSection | None,
     folio_to_page: dict[str, int],
@@ -173,17 +177,16 @@ def _render_section_page(
     has_letters_edition: bool,
     has_local_scans: bool = False,
 ) -> str:
-    letters_by_id = {ltr.letter_id: ltr for ltr in ast.letters}
     ordered_fn_ids, sec_footnotes = _collect_section_footnotes(section, ast)
     fn_by_block = footnotes_by_block_map(sec_footnotes)
     ref_registry: dict[str, list[str]] = {}
     seen_page_ids: set[int] = set()
-    proof_href = "../../proofing/index.html" if has_proofing else None
+    proof_href = (has_proofing and "../../proofing/index.html") or None
 
     body_html = _render_section_item_html(
         section,
         ast,
-        letters_by_id,
+        block_lookup,
         fn_by_block=fn_by_block,
         sec_footnotes=sec_footnotes,
         ref_registry=ref_registry,
@@ -213,12 +216,13 @@ def _render_section_page(
     )
     letters_nav = render_optional_links(((has_letters_edition, '<a href="../../letters/index.html">Letters Catalog</a>'),))
     proof_nav = render_optional_links(((has_proofing, '<a href="../../proofing/index.html">Proofing Studio</a>'),))
-    tier = ast.rubric.provenance_tier if ast.rubric else "community"
+    tier = (ast.rubric and ast.rubric.provenance_tier) or "community"
     archive_attr = html.escape(ast.archive_id or "", quote=True)
     csp_escaped = html.escape(READER_STRICT_CSP, quote=True)
+    lang_attrs = html_lang_dir_attrs(ast)
 
     return f"""<!DOCTYPE html>
-<html lang="en">
+<html {lang_attrs}>
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="Content-Security-Policy" content="{csp_escaped}" />
@@ -254,20 +258,59 @@ def _render_section_page(
 """
 
 
-def _build_search_entries(ast: CollectionAST) -> list[dict[str, Any]]:
+def _build_search_entries(ast: CollectionAST, block_lookup: dict[str, BlockIR] | None = None) -> list[dict[str, Any]]:
+    lookup = block_lookup or index_ast_blocks(ast)
     entries: list[dict[str, Any]] = []
+    seen_letter_ids: set[str] = set()
+    for sec in ast.sections:
+        sec_stem = section_filename_stem(sec.section_id)
+        for u_kind, blks, ltr, u_obj in iter_section_render_units(sec, ast, lookup):
+            if ltr is not None:
+                seen_letter_ids.add(ltr.letter_id)
+                plain_body = " ".join(strip_constrained_tags(b.tagged_text) for b in blks).strip()
+                corr = " → ".join(p for p in (ltr.metadata.sender_display, ltr.metadata.recipient_display) if p)
+                title = (corr and f"Letter #{ltr.sequence_index}: {corr}") or f"Letter #{ltr.sequence_index}"
+                entries.append(
+                    {
+                        "kind": "letter",
+                        "title": title,
+                        "href": f"sections/{sec_stem}.html#{letter_dom_anchor(ltr.letter_id)}",
+                        "page": ltr.start_page,
+                        "folio": ltr.start_folio or str(ltr.start_page),
+                        "snippet": plain_body[:400],
+                        "folded": fold_diacritics_for_search(plain_body),
+                    }
+                )
+            elif blks:
+                plain_body = " ".join(strip_constrained_tags(b.tagged_text) for b in blks).strip()
+                if not plain_body:
+                    continue
+                frag = (u_obj and f"#{sanitize_xml_id(u_obj.unit_id, 'unit')}") or ""
+                entries.append(
+                    {
+                        "kind": u_kind,
+                        "title": (u_obj and u_obj.title) or sec.title_plain,
+                        "href": f"sections/{sec_stem}.html{frag}",
+                        "page": blks[0].page_number,
+                        "folio": blks[0].printed_folio or str(blks[0].page_number),
+                        "snippet": plain_body[:400],
+                        "folded": fold_diacritics_for_search(plain_body),
+                    }
+                )
     sec_stem_by_id = {s.section_id: section_filename_stem(s.section_id) for s in ast.sections}
     for ltr in ast.letters:
-        plain_body = " ".join(strip_constrained_tags(b.tagged_text) for b in ltr.blocks)[:500]
-        sec_stem = sec_stem_by_id.get(ltr.section_id, "sec")
+        if ltr.letter_id in seen_letter_ids:
+            continue
+        plain_body = " ".join(strip_constrained_tags(b.tagged_text) for b in ltr.blocks).strip()
+        corr = " → ".join(p for p in (ltr.metadata.sender_display, ltr.metadata.recipient_display) if p)
         entries.append(
             {
                 "kind": "letter",
-                "title": f"Letter #{ltr.sequence_index}: {ltr.metadata.sender_display or 'Unknown'} → {ltr.metadata.recipient_display or 'Unknown'}",
-                "href": f"sections/{sec_stem}.html#{letter_dom_anchor(ltr.letter_id)}",
+                "title": (corr and f"Letter #{ltr.sequence_index}: {corr}") or f"Letter #{ltr.sequence_index}",
+                "href": f"sections/{sec_stem_by_id.get(ltr.section_id, 'sec')}.html#{letter_dom_anchor(ltr.letter_id)}",
                 "page": ltr.start_page,
                 "folio": ltr.start_folio or str(ltr.start_page),
-                "snippet": plain_body,
+                "snippet": plain_body[:400],
                 "folded": fold_diacritics_for_search(plain_body),
             }
         )
@@ -283,8 +326,8 @@ def _render_landing_page(
     has_tei: bool,
     has_proofing: bool,
 ) -> str:
-    tier = ast.rubric.provenance_tier if ast.rubric else "community"
-    score_str = f"{ast.rubric.total_score:.1f} / 100" if ast.rubric else "Pending"
+    tier = (ast.rubric and ast.rubric.provenance_tier) or "community"
+    score_str = (ast.rubric and f"{ast.rubric.total_score:.1f} / 100") or "Pending"
     sec_rows: list[str] = []
     for sec in ast.sections:
         stem = html.escape(section_filename_stem(sec.section_id), quote=True)
@@ -323,7 +366,7 @@ def _render_landing_page(
     )
     downloads_html = " · ".join(link for enabled, link in download_specs if enabled)
 
-    year_txt = f" ({ast.year})" if ast.year else ""
+    year_txt = (ast.year and f" ({ast.year})") or ""
     byline = html.escape(f"{ast.author_or_editor}{year_txt}".strip() or "Public Domain Archival Correspondence")
     letters_section = render_optional_links(
         (
@@ -337,9 +380,10 @@ def _render_landing_page(
             ),
         )
     )
+    lang_attrs = html_lang_dir_attrs(ast)
 
     return f"""<!DOCTYPE html>
-<html lang="en">
+<html {lang_attrs}>
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="Content-Security-Policy" content="{html.escape(READER_STRICT_CSP, quote=True)}" />
@@ -533,16 +577,18 @@ def render_book_web(
     atomic_write_text(web_dir / "styles.css", EDITORIAL_SHARED_CSS)
     atomic_write_text(web_dir / "reader.js", READER_JS)
 
+    block_lookup = index_ast_blocks(ast)
     folio_to_page = build_folio_to_page_map(ast)
-    search_entries = _build_search_entries(ast)
+    search_entries = _build_search_entries(ast, block_lookup)
     atomic_write_json(web_dir / "search_index.json", {"book_id": ast.book_id, "entries": search_entries})
 
     for idx, sec in enumerate(ast.sections):
-        prev_sec = ast.sections[idx - 1] if idx > 0 else None
-        next_sec = ast.sections[idx + 1] if idx + 1 < len(ast.sections) else None
+        prev_sec = (idx > 0 and ast.sections[idx - 1]) or None
+        next_sec = (idx + 1 < len(ast.sections) and ast.sections[idx + 1]) or None
         sec_html = _render_section_page(
             ast,
             sec,
+            block_lookup=block_lookup,
             prev_sec=prev_sec,
             next_sec=next_sec,
             folio_to_page=folio_to_page,

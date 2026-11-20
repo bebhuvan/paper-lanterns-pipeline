@@ -2,9 +2,11 @@
 
 from __future__ import annotations
 
+import json
 import shutil
 import subprocess
 import xml.etree.ElementTree as ET
+import zipfile
 from pathlib import Path
 
 import pytest
@@ -12,15 +14,18 @@ import pytest
 from lanterns.core.models import (
     ChildSpan,
     CorrespondentRef,
+    TableCell,
     make_boundary_anchor,
 )
 from lanterns.epistolary.compiler import compile_collection_ast
+from lanterns.renderers import render_complete_edition
 from lanterns.renderers.render_letters import render_letters_edition
 from lanterns.renderers.render_markdown_tei import render_markdown_and_tei
 from tests.conftest import make_block, make_page
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 TEI_RNG_PATH = REPO_ROOT / "workspace" / "tools" / "tei_all.rng"
+EPUBCHECK_JAR = REPO_ROOT / "workspace" / "tools" / "epubcheck-5.1.0" / "epubcheck.jar"
 TEI_NS = "{http://www.tei-c.org/ns/1.0}"
 
 
@@ -169,3 +174,194 @@ def test_tei_p5_tessellation_unified_opener_closer_cmif_and_relaxng(tmp_path: Pa
         assert proc.returncode == 0, f"tei_all.rng validation failed:\n{proc.stderr}"
     else:
         pytest.skip("xmllint or tei_all.rng not present")
+
+
+def _resolve_epubcheck_cmd(epub_path: Path) -> list[str] | None:
+    if not EPUBCHECK_JAR.is_file():
+        return None
+    if shutil.which("java"):
+        probe = subprocess.run(["java", "-version"], capture_output=True, check=False)
+        if probe.returncode == 0:
+            return ["java", "-jar", str(EPUBCHECK_JAR), str(epub_path)]
+    if shutil.which("mise"):
+        return ["mise", "x", "java@temurin-21.0.13+9.0.LTS", "--", "java", "-jar", str(EPUBCHECK_JAR), str(epub_path)]
+    return None
+
+
+def test_epub33_dpub_aria_wcag_nav011_tables_dark_css_and_epubcheck(tmp_path: Path) -> None:
+    """Verify H6/H7/H8 EPUB 3.3, Web, and Letters: NAV-011 float/list/table page order, mid-table subheaders,
+    DPUB-ARIA 1.1 multi-citation multi-paragraph footnotes, WCAG heading clamping, dark-mode CSS, RTL/series, and EPUBCheck."""
+    # Page 1: Chapter heading, narrative with jumped H4 heading (must clamp to H2), letter opening + body continuing across p.2 plate to p.3
+    p1_blocks = [
+        make_block("p0001-b0001", 1, "heading", "PART I. PERSIAN DISPATCHES", heading_level=1),
+        make_block("p0001-b0002", 1, "heading", "Historical Introduction", heading_level=4),
+        make_block("p0001-b0003", 1, "editorial", "Biographical introduction citing note one.<fnref>1</fnref>"),
+        make_block("p0001-b0004", 1, "letter_header", "DISPATCH I.", epistolary_transition="starts_new_letter"),
+        make_block("p0001-b0005", 1, "salutation", "To the Commander,"),
+        make_block(
+            "p0001-b0006",
+            1,
+            "body",
+            "This paragraph starts on leaf one and continues past the facsimile plate",
+            continues_to_next=True,
+        ),
+        make_block("p0001-b0007", 1, "footnote", "First paragraph of shared note.", note_label="1"),
+        make_block("p0001-b0008", 1, "footnote", "Second paragraph of shared note.", note_label=None),
+    ]
+    # Page 2: Full-page facsimile plate interrupting continued prose
+    p2_blocks = [
+        make_block("p0002-b0001", 2, "facsimile_plate", "Facsimile of Persian seal"),
+    ]
+    # Page 3: Continued prose citing same footnote 1 a second time + verse + signature + start of multi-page list
+    p3_blocks = [
+        make_block(
+            "p0003-b0001",
+            3,
+            "body",
+            "onto leaf three with second citation.<fnref>1</fnref>",
+            continues_from_prev=True,
+        ),
+        make_block("p0003-b0002", 3, "verse", "Line one in roman type\nLine two in roman type"),
+        make_block("p0003-b0003", 3, "margin_note", "Right shoulder gloss", bbox=[640, 120, 760, 180]),
+        make_block("p0003-b0004", 3, "list_item", "First supply item on leaf three"),
+    ]
+    # Page 4: Continued list item + table with leading header, body row, mid-table subheader, and body row on p.5
+    p4_blocks = [
+        make_block("p0004-b0001", 4, "list_item", "Second supply item turning onto leaf four"),
+        make_block(
+            "p0004-b0002",
+            4,
+            "table_row",
+            "District | Revenue",
+            table_role="header",
+            cells=[TableCell(text="District"), TableCell(text="Revenue")],
+        ),
+        make_block(
+            "p0004-b0003",
+            4,
+            "table_row",
+            "Mysore | 12,000",
+            table_role="body",
+            cells=[TableCell(text="Mysore"), TableCell(text="12,000")],
+        ),
+        make_block(
+            "p0004-b0004",
+            4,
+            "table_row",
+            "Northern Provinces | Subtotal",
+            table_role="header",
+            cells=[TableCell(text="Northern Provinces", colspan=2)],
+        ),
+    ]
+    p5_blocks = [
+        make_block(
+            "p0005-b0001",
+            5,
+            "table_row",
+            "Bednore | 8,500",
+            table_role="body",
+            cells=[TableCell(text="Bednore"), TableCell(text="8,500")],
+        ),
+        make_block("p0005-b0002", 5, "signature", "Tipu Sultan", alignment="right"),
+    ]
+
+    pages = [
+        make_page(1, p1_blocks, printed_folio="1"),
+        make_page(2, p2_blocks, printed_folio="2"),
+        make_page(3, p3_blocks, printed_folio="3"),
+        make_page(4, p4_blocks, printed_folio="4"),
+        make_page(5, p5_blocks, printed_folio="5"),
+    ]
+    ast = compile_collection_ast(pages, book_id="epub33-v3-test", title="Persian Dispatches Vol. II")
+    ast.language = "fa"
+    ast.text_direction = "rtl"
+    ast.series_id = "persian-dispatches"
+    ast.volume_number = 2
+    # Link second citation on p0003-b0001 to the same footnote so multi-citation backlinks are exercised
+    fn_only = next(iter(ast.footnotes.values()))
+    if "p0003-b0001" not in fn_only.referenced_in_block_ids:
+        fn_only.referenced_in_block_ids.append("p0003-b0001")
+
+    ed_dir = tmp_path / "edition"
+    res = render_complete_edition(ast, ed_dir, include_proofing=False)
+    assert res["manifest"]["renderer_version"] == "3.0.0"
+
+    epub_path = Path(res["epub"]["epub_path"])
+    assert epub_path.is_file()
+
+    with zipfile.ZipFile(epub_path, "r") as zf:
+        opf_txt = zf.read("OEBPS/content.opf").decode("utf-8")
+        nav_txt = zf.read("OEBPS/nav.xhtml").decode("utf-8")
+        css_txt = zf.read("OEBPS/styles.css").decode("utf-8")
+        sec_names = [n for n in zf.namelist() if n.startswith("OEBPS/sec-") and n.endswith(".xhtml")]
+        assert len(sec_names) == 1
+        sec_xhtml = zf.read(sec_names[0]).decode("utf-8")
+
+    # 1. Dark-mode-safe EPUB CSS & diplomatic typography
+    assert "#faf7f2" not in css_txt
+    assert "#1a1816" not in css_txt
+    assert "backdrop-filter" not in css_txt
+    web_css = (ed_dir / "web" / "styles.css").read_text(encoding="utf-8")
+    assert ".block-salutation { margin:" in web_css
+    assert "white-space: pre-wrap;" in web_css
+
+    # 2. RTL + Series + Accessibility OPF & Nav roles
+    assert '<dc:language>fa</dc:language>' in opf_txt
+    assert 'page-progression-direction="rtl"' in opf_txt
+    assert 'property="belongs-to-collection"' in opf_txt
+    assert 'property="group-position">2</meta>' in opf_txt
+    assert 'property="schema:accessMode">textual</meta>' in opf_txt
+    assert 'role="doc-toc"' in nav_txt
+    assert 'role="doc-pagelist"' in nav_txt
+    assert 'dir="rtl"' in sec_xhtml
+
+    # 3. Strictly monotone #page-1..#page-5 order in XHTML DOM (NAV-011 regression check across float/list/table)
+    sec_root = ET.fromstring(sec_xhtml.encode("utf-8"))
+    dom_page_ids = [
+        int(el.attrib["id"][5:])
+        for el in sec_root.iter()
+        if el.attrib.get("id", "").startswith("page-") and el.attrib["id"][5:].isdigit()
+    ]
+    assert dom_page_ids == [1, 2, 3, 4, 5], f"Non-monotone page anchors: {dom_page_ids}"
+
+    # 4. Mid-table subheader preserved in <tbody> (not hoisted to <thead>)
+    XHTML_NS = "{http://www.w3.org/1999/xhtml}"
+    thead_rows = sec_root.findall(f".//{XHTML_NS}thead/{XHTML_NS}tr")
+    tbody_rows = sec_root.findall(f".//{XHTML_NS}tbody/{XHTML_NS}tr")
+    assert len(thead_rows) == 1
+    assert len(tbody_rows) == 3
+    assert tbody_rows[1].attrib.get("class") == "table-subheader"
+
+    # 5. WCAG heading hierarchy (H4 clamped to H2 after H1) & DPUB-ARIA multi-citation multi-paragraph footnote
+    heading_levels = [
+        int(el.tag.removeprefix(XHTML_NS)[1:])
+        for el in sec_root.iter()
+        if el.tag.removeprefix(XHTML_NS) in {"h1", "h2", "h3", "h4", "h5", "h6"}
+    ]
+    for prev_h, cur_h in zip(heading_levels, heading_levels[1:], strict=False):
+        assert cur_h <= prev_h + 1, f"WCAG heading skip detected: {heading_levels}"
+    assert 'role="doc-noteref"' in sec_xhtml
+    assert 'role="doc-footnote"' in sec_xhtml
+    assert sec_xhtml.count('role="doc-backlink"') == 2
+
+    # 6. Web HTML: zero invalid <li role="doc-footnote"> & full Life & Letters search index
+    web_sec_files = list((ed_dir / "web" / "sections").glob("*.html"))
+    web_sec_html = web_sec_files[0].read_text(encoding="utf-8")
+    assert 'role="doc-footnote"' not in web_sec_html
+    assert 'dir="rtl"' in web_sec_html
+    assert "margin-right" in web_sec_html
+
+    search_doc = json.loads((ed_dir / "web" / "search_index.json").read_text(encoding="utf-8"))
+    kinds_indexed = {entry["kind"] for entry in search_doc["entries"]}
+    assert "letter" in kinds_indexed
+    assert kinds_indexed - {"letter"}, f"Non-letter units missing from search_index.json: {kinds_indexed}"
+
+    # 7. Official W3C EPUBCheck v5.1.0 validation (0 fatals, 0 errors, 0 warnings)
+    cmd = _resolve_epubcheck_cmd(epub_path)
+    if cmd is not None:
+        proc = subprocess.run(cmd, capture_output=True, text=True, check=False)
+        combined = f"{proc.stdout}\n{proc.stderr}"
+        assert proc.returncode == 0, f"EPUBCheck failed:\n{combined}"
+        assert "No errors or warnings detected" in combined, f"EPUBCheck emitted warnings:\n{combined}"
+    else:
+        pytest.skip("Java / EPUBCheck v5.1.0 not present")

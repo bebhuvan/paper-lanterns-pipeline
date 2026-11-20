@@ -23,6 +23,7 @@ from lanterns.renderers.html_utils import (
     fold_diacritics_for_search,
     footnotes_by_block_map,
     format_markdown_footnote,
+    html_lang_dir_attrs,
     index_ast_blocks,
     render_block_stream_html,
     render_footnotes_apparatus_html,
@@ -146,7 +147,7 @@ def _render_editorial_frame_html(
         seen_page_ids=seen_page_ids,
         folio_to_page=folio_to_page,
         proof_href_prefix=proof_href,
-        heading_base=3,
+        heading_base=2,
     )
     return f'<aside class="editorial-frame-box"><span class="editorial-frame-label">{html.escape(label)}</span>{inner}</aside>'
 
@@ -168,7 +169,7 @@ def _render_standalone_letter_html(
     fn_by_block = footnotes_by_block_map(ltr_footnotes)
     ref_registry: dict[str, list[str]] = {}
     seen_page_ids: set[int] = set()
-    proof_href = "../proofing/index.html" if has_proofing else None
+    proof_href = (has_proofing and "../proofing/index.html") or None
 
     prec_blocks = [block_lookup[bid] for bid in letter.preceding_editorial_block_ids if bid in block_lookup]
     foll_blocks = [block_lookup[bid] for bid in letter.following_editorial_block_ids if bid in block_lookup]
@@ -192,6 +193,7 @@ def _render_standalone_letter_html(
         folio_to_page=folio_to_page,
         proof_href_prefix=proof_href,
         heading_base=2,
+        children=letter.children,
     )
     foll_html = _render_editorial_frame_html(
         "Following Editorial Note",
@@ -244,9 +246,10 @@ def _render_standalone_letter_html(
     csp_escaped = html.escape(READER_STRICT_CSP, quote=True)
     drawer_html = render_optional_links(((has_book_web, build_scan_dialog_html()),))
     drawer_js = render_optional_links(((has_book_web, '<script src="../web/reader.js" defer></script>'),))
+    lang_attrs = html_lang_dir_attrs(ast)
 
     return f"""<!DOCTYPE html>
-<html lang="en">
+<html {lang_attrs}>
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="Content-Security-Policy" content="{csp_escaped}" />
@@ -437,10 +440,11 @@ LETTERS_CATALOG_JS = """/* Paper Lanterns v2 — Safe-DOM Interactive Correspond
 
 
 def _render_letters_index_html(ast: CollectionAST, initial_rows_html: str, *, has_book_web: bool, has_proofing: bool) -> str:
-    web_link = '<a href="../web/index.html">Complete Book Edition</a>' if has_book_web else ""
-    proof_link = '<a href="../proofing/index.html">Proofing Studio</a>' if has_proofing else ""
+    web_link = render_optional_links(((has_book_web, '<a href="../web/index.html">Complete Book Edition</a>'),))
+    proof_link = render_optional_links(((has_proofing, '<a href="../proofing/index.html">Proofing Studio</a>'),))
+    lang_attrs = html_lang_dir_attrs(ast)
     return f"""<!DOCTYPE html>
-<html lang="en">
+<html {lang_attrs}>
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="Content-Security-Policy" content="{html.escape(READER_STRICT_CSP, quote=True)}" />
@@ -529,11 +533,11 @@ def render_letters_edition(
     static_rows: list[str] = []
 
     for idx, ltr in enumerate(ast.letters):
-        prev_ltr = ast.letters[idx - 1] if idx > 0 else None
-        next_ltr = ast.letters[idx + 1] if idx + 1 < len(ast.letters) else None
+        prev_ltr = (idx > 0 and ast.letters[idx - 1]) or None
+        next_ltr = (idx + 1 < len(ast.letters) and ast.letters[idx + 1]) or None
         sec = sec_by_id.get(ltr.section_id)
-        sec_stem = section_filename_stem(sec.section_id) if sec else "sec"
-        sec_title = sec.title_plain if sec else ltr.section_id
+        sec_stem = (sec and section_filename_stem(sec.section_id)) or "sec"
+        sec_title = (sec and sec.title_plain) or ltr.section_id
 
         ltr_html = _render_standalone_letter_html(
             ast,

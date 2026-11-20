@@ -16,11 +16,14 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from lanterns.core.models import BookSection, CollectionAST, LetterUnit
+from lanterns.core.models import BlockIR, BookSection, CollectionAST
 from lanterns.renderers.html_utils import (
-    EDITORIAL_SHARED_CSS,
+    EDITORIAL_EPUB_CSS,
     collect_section_footnotes,
     footnotes_by_block_map,
+    html_lang_dir_attrs,
+    index_ast_blocks,
+    iter_section_render_units,
     render_block_stream_html,
     render_footnotes_apparatus_html,
     render_inline_html,
@@ -40,6 +43,19 @@ CONTAINER_XML = """<?xml version="1.0" encoding="UTF-8"?>
 </container>
 """
 
+_BODY_MATTER_BY_KIND: dict[str, str] = {
+    "front_matter": "frontmatter",
+    "toc": "frontmatter",
+    "appendix": "backmatter",
+    "endnotes": "backmatter",
+    "index": "backmatter",
+}
+_SECTION_EPUB_TYPE_BY_KIND: dict[str, str] = {
+    "epistolary_part": "part",
+    "appendix": "appendix",
+    "index": "index",
+}
+
 
 def epub_section_filename(section_id: str) -> str:
     """Return `sec-<sanitized_id>.xhtml` inside `OEBPS/`."""
@@ -50,30 +66,51 @@ def epub_section_filename(section_id: str) -> str:
 _collect_section_footnotes = collect_section_footnotes
 
 
+def _extract_dom_page_entries(
+    root: ET.Element,
+    before_pages: set[int],
+    folio_by_page: dict[int, str],
+) -> list[tuple[int, str]]:
+    entries: list[tuple[int, str]] = []
+    for elem in root.iter():
+        eid = elem.attrib.get("id", "")
+        if eid.startswith("page-") and eid[5:].isdigit():
+            pnum = int(eid[5:])
+            if pnum not in before_pages:
+                entries.append((pnum, folio_by_page.get(pnum, str(pnum))))
+    return entries
+
+
 def _build_section_xhtml(
     ast: CollectionAST,
     section: BookSection,
     *,
+    block_lookup: dict[str, BlockIR],
     global_seen_pages: set[int],
     folio_to_page: dict[str, int],
 ) -> tuple[str, list[tuple[int, str]]]:
-    letters_by_id: dict[str, LetterUnit] = {ltr.letter_id: ltr for ltr in ast.letters}
     ordered_fn_ids, sec_footnotes = _collect_section_footnotes(section, ast)
     fn_by_block = footnotes_by_block_map(sec_footnotes)
     ref_registry: dict[str, list[str]] = {}
     before_pages = set(global_seen_pages)
 
     parts: list[str] = []
-    for upage in sorted(p for p in section.unavailable_pages if p not in global_seen_pages):
-        global_seen_pages.add(upage)
-        parts.append(render_unavailable_page_banner(upage, epub=True))
+    unavail_sorted = sorted(p for p in section.unavailable_pages if p not in global_seen_pages)
+    unavail_idx = 0
+    render_units = iter_section_render_units(section, ast, block_lookup)
 
-    for item_idx, item in enumerate(section.items):
-        if item.kind == "letter" and item.letter_id in letters_by_id:
-            ltr = letters_by_id[item.letter_id]
+    for unit_idx, (u_kind, blks, ltr, u_obj) in enumerate(render_units):
+        first_page = blks[0].page_number if blks else section.end_page + 1
+        while unavail_idx < len(unavail_sorted) and unavail_sorted[unavail_idx] <= first_page:
+            upage = unavail_sorted[unavail_idx]
+            global_seen_pages.add(upage)
+            parts.append(render_unavailable_page_banner(upage, epub=True))
+            unavail_idx += 1
+
+        if ltr is not None:
             dom_id = html.escape(letter_dom_anchor(ltr.letter_id), quote=True)
             inner = render_block_stream_html(
-                ltr.blocks,
+                blks,
                 fn_by_block=fn_by_block,
                 available_footnotes=sec_footnotes,
                 ref_registry=ref_registry,
@@ -81,22 +118,33 @@ def _build_section_xhtml(
                 folio_to_page=folio_to_page,
                 epub=True,
                 heading_base=2,
+                children=ltr.children,
             )
             parts.append(f'<article id="{dom_id}" class="letter-unit">{inner}</article>')
-        elif item.blocks:
-            parts.append(
-                render_block_stream_html(
-                    item.blocks,
-                    fn_by_block=fn_by_block,
-                    available_footnotes=sec_footnotes,
-                    ref_registry=ref_registry,
-                    seen_page_ids=global_seen_pages,
-                    folio_to_page=folio_to_page,
-                    epub=True,
-                    heading_base=2,
-                    leading_section_title=section.title_plain if item_idx == 0 else "",
-                )
+        elif blks:
+            inner = render_block_stream_html(
+                blks,
+                fn_by_block=fn_by_block,
+                available_footnotes=sec_footnotes,
+                ref_registry=ref_registry,
+                seen_page_ids=global_seen_pages,
+                folio_to_page=folio_to_page,
+                epub=True,
+                heading_base=2,
+                leading_section_title=(unit_idx == 0 and section.title_plain) or "",
+                children=(u_obj and u_obj.children) or None,
             )
+            if u_obj is not None:
+                u_id = html.escape(sanitize_xml_id(u_obj.unit_id, "unit"), quote=True)
+                parts.append(f'<div id="{u_id}" class="structural-unit unit-{u_kind.replace("_", "-")}">{inner}</div>')
+            else:
+                parts.append(inner)
+
+    while unavail_idx < len(unavail_sorted):
+        upage = unavail_sorted[unavail_idx]
+        global_seen_pages.add(upage)
+        parts.append(render_unavailable_page_banner(upage, epub=True))
+        unavail_idx += 1
 
     apparatus = render_footnotes_apparatus_html(
         ordered_fn_ids,
@@ -108,21 +156,22 @@ def _build_section_xhtml(
         heading_label="Notes",
     )
 
-    new_pages = sorted(global_seen_pages - before_pages)
     folio_by_page = {p.page_number: (p.printed_folio or str(p.page_number)) for p in ast.pages}
-    sec_page_entries = [(pnum, folio_by_page.get(pnum, str(pnum))) for pnum in new_pages]
     sec_title = render_inline_html(section.title_tagged or section.title_plain, epub=True)
     sec_dom_id = html.escape(sanitize_xml_id(section.section_id, "sec"), quote=True)
+    lang_attrs = html_lang_dir_attrs(ast, xhtml=True)
+    body_matter = _BODY_MATTER_BY_KIND.get(section.kind, "bodymatter")
+    sec_epub_type = _SECTION_EPUB_TYPE_BY_KIND.get(section.kind, "chapter")
 
     xhtml = f"""<?xml version="1.0" encoding="UTF-8"?>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" {lang_attrs}>
 <head>
   <meta charset="utf-8"/>
   <title>{html.escape(section.title_plain)}</title>
   <link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
-<body>
-  <section id="{sec_dom_id}" epub:type="chapter">
+<body epub:type="{body_matter}">
+  <section id="{sec_dom_id}" epub:type="{sec_epub_type}">
     <h1>{sec_title}</h1>
     {"".join(parts)}
     {apparatus}
@@ -130,7 +179,8 @@ def _build_section_xhtml(
 </body>
 </html>
 """
-    ET.fromstring(xhtml.encode("utf-8"))
+    root = ET.fromstring(xhtml.encode("utf-8"))
+    sec_page_entries = _extract_dom_page_entries(root, before_pages, folio_by_page)
     return xhtml, sec_page_entries
 
 
@@ -159,33 +209,32 @@ def _build_nav_xhtml(
         )
 
     letters_nav_block = (
-        '<nav id="nav-letters" aria-label="Correspondence Index">'
+        letter_items
+        and '<nav id="nav-letters" aria-label="Correspondence Index">'
         "<h2>Index of Letters</h2>"
         f'<ol>{"".join(letter_items)}</ol></nav>'
-        if letter_items
-        else ""
-    )
+    ) or ""
     page_items = [
         f'<li><a href="{html.escape(f"{href}#page-{pnum}", quote=True)}">{html.escape(fol)}</a></li>'
         for href, pnum, fol in page_list
     ]
     page_nav_block = (
-        '<nav epub:type="page-list" id="nav-pages" aria-label="Page List">'
+        page_items
+        and '<nav epub:type="page-list" role="doc-pagelist" id="nav-pages" aria-label="Page List">'
         "<h2>Pages</h2>"
         f'<ol>{"".join(page_items)}</ol></nav>'
-        if page_items
-        else ""
-    )
+    ) or ""
+    lang_attrs = html_lang_dir_attrs(ast, xhtml=True)
 
     nav_doc = f"""<?xml version="1.0" encoding="UTF-8"?>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" {lang_attrs}>
 <head>
   <meta charset="utf-8"/>
   <title>Contents — {html.escape(ast.title)}</title>
   <link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
 <body>
-  <nav epub:type="toc" id="toc">
+  <nav epub:type="toc" role="doc-toc" id="toc">
     <h1>Contents</h1>
     <ol>{"".join(chap_items)}</ol>
   </nav>
@@ -198,24 +247,45 @@ def _build_nav_xhtml(
     return nav_doc
 
 
+def _build_series_opf_meta(ast: CollectionAST) -> str:
+    if not ast.series_id:
+        return ""
+    vol_xml = (
+        f'\n    <meta refines="#series-id" property="group-position">{ast.volume_number}</meta>'
+        if ast.volume_number is not None
+        else ""
+    )
+    return (
+        f'\n    <meta property="belongs-to-collection" id="series-id">{html.escape(ast.series_id)}</meta>'
+        '\n    <meta refines="#series-id" property="collection-type">series</meta>'
+        f"{vol_xml}"
+    )
+
+
 def _build_content_opf(
     ast: CollectionAST,
     manifest_entries: list[tuple[str, str, str, str]],
     spine_ids: list[str],
+    *,
+    has_pages: bool = False,
 ) -> str:
     book_uuid = str(uuid.uuid5(uuid.NAMESPACE_URL, f"https://paperlanterns.org/books/{ast.book_id}"))
     modified = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    creator_xml = (
-        f"<dc:creator>{html.escape(ast.author_or_editor)}</dc:creator>" if ast.author_or_editor else ""
-    )
-    date_xml = f"<dc:date>{ast.year}</dc:date>" if ast.year else ""
+    lang_code = html.escape((ast.language or "en").strip() or "en")
+    creator_xml = (ast.author_or_editor and f"<dc:creator>{html.escape(ast.author_or_editor)}</dc:creator>") or ""
+    date_xml = (ast.year and f"<dc:date>{ast.year}</dc:date>") or ""
+    series_xml = _build_series_opf_meta(ast)
+    page_a11y_xml = (
+        has_pages and '\n    <meta property="schema:accessibilityFeature">pageNavigation</meta>'
+    ) or ""
     manifest_xml = "\n    ".join(
         f'<item id="{html.escape(iid, quote=True)}" href="{html.escape(href, quote=True)}" '
         f'media-type="{html.escape(mtype, quote=True)}"'
-        + (f' properties="{html.escape(props, quote=True)}"' if props else "")
+        + ((props and f' properties="{html.escape(props, quote=True)}"') or "")
         + "/>"
         for iid, href, mtype, props in manifest_entries
     )
+    spine_dir = (ast.text_direction == "rtl" and ' page-progression-direction="rtl"') or ""
     spine_xml = "\n    ".join(f'<itemref idref="{html.escape(sid, quote=True)}"/>' for sid in spine_ids)
 
     opf = f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -223,16 +293,22 @@ def _build_content_opf(
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:identifier id="pub-id">urn:uuid:{book_uuid}</dc:identifier>
     <dc:title>{html.escape(ast.title)}</dc:title>
-    <dc:language>en</dc:language>
+    <dc:language>{lang_code}</dc:language>
     {creator_xml}
     {date_xml}
     <dc:rights>Public Domain / CC0 1.0</dc:rights>
-    <meta property="dcterms:modified">{modified}</meta>
+    <meta property="dcterms:modified">{modified}</meta>{series_xml}
+    <meta property="schema:accessMode">textual</meta>
+    <meta property="schema:accessModeSufficient">textual</meta>
+    <meta property="schema:accessibilityFeature">structuralNavigation</meta>
+    <meta property="schema:accessibilityFeature">readingOrder</meta>{page_a11y_xml}
+    <meta property="schema:accessibilityHazard">none</meta>
+    <meta property="schema:accessibilitySummary">Diplomatic archival transcription with structural navigation, print-equivalent page markers, and linked footnote apparatus.</meta>
   </metadata>
   <manifest>
     {manifest_xml}
   </manifest>
-  <spine>
+  <spine{spine_dir}>
     {spine_xml}
   </spine>
 </package>
@@ -247,6 +323,7 @@ def render_epub_edition(ast: CollectionAST, edition_dir: str | Path) -> dict[str
     out_dir.mkdir(parents=True, exist_ok=True)
     epub_path = out_dir / f"{ast.book_id}.epub"
 
+    block_lookup = index_ast_blocks(ast)
     folio_to_page = build_folio_to_page_map(ast)
     global_seen_pages: set[int] = set()
     page_list: list[tuple[str, int, str]] = []
@@ -258,18 +335,16 @@ def render_epub_edition(ast: CollectionAST, edition_dir: str | Path) -> dict[str
     ]
     spine_ids: list[str] = []
 
-    sections_to_emit = list(ast.sections)
-    if not sections_to_emit:
-        sections_to_emit = [
-            BookSection(
-                section_id="sec-empty",
-                kind="epistolary_part",
-                title_tagged=ast.title,
-                title_plain=ast.title,
-                start_page=1,
-                end_page=max(1, ast.total_pages),
-            )
-        ]
+    sections_to_emit = list(ast.sections) or [
+        BookSection(
+            section_id="sec-empty",
+            kind="epistolary_part",
+            title_tagged=ast.title,
+            title_plain=ast.title,
+            start_page=1,
+            end_page=max(1, ast.total_pages),
+        )
+    ]
 
     for idx, sec in enumerate(sections_to_emit, start=1):
         fname = epub_section_filename(sec.section_id)
@@ -278,6 +353,7 @@ def render_epub_edition(ast: CollectionAST, edition_dir: str | Path) -> dict[str
         xhtml_str, sec_pages = _build_section_xhtml(
             ast,
             sec,
+            block_lookup=block_lookup,
             global_seen_pages=global_seen_pages,
             folio_to_page=folio_to_page,
         )
@@ -288,14 +364,14 @@ def render_epub_edition(ast: CollectionAST, edition_dir: str | Path) -> dict[str
             page_list.append((fname, pnum, fol))
 
     nav_xhtml = _build_nav_xhtml(ast, sec_href_by_id, page_list)
-    opf_xml = _build_content_opf(ast, manifest_entries, spine_ids)
+    opf_xml = _build_content_opf(ast, manifest_entries, spine_ids, has_pages=bool(page_list))
 
     tmp_path = epub_path.with_suffix(".tmp.epub")
     with zipfile.ZipFile(tmp_path, "w") as zf:
         zf.writestr("mimetype", "application/epub+zip", compress_type=zipfile.ZIP_STORED)
         zf.writestr("META-INF/container.xml", CONTAINER_XML, compress_type=zipfile.ZIP_DEFLATED)
         zf.writestr("OEBPS/content.opf", opf_xml.encode("utf-8"), compress_type=zipfile.ZIP_DEFLATED)
-        zf.writestr("OEBPS/styles.css", EDITORIAL_SHARED_CSS.encode("utf-8"), compress_type=zipfile.ZIP_DEFLATED)
+        zf.writestr("OEBPS/styles.css", EDITORIAL_EPUB_CSS.encode("utf-8"), compress_type=zipfile.ZIP_DEFLATED)
         zf.writestr("OEBPS/nav.xhtml", nav_xhtml.encode("utf-8"), compress_type=zipfile.ZIP_DEFLATED)
         for fname, content in xhtml_files.items():
             zf.writestr(f"OEBPS/{fname}", content.encode("utf-8"), compress_type=zipfile.ZIP_DEFLATED)

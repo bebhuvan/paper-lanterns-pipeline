@@ -82,6 +82,7 @@ def render_complete_edition(
 
     manifest = {
         "schema_version": "1.0.0",
+        "renderer_version": "3.0.0",
         "book_id": ast.book_id,
         "collection": ast.collection,
         "title": ast.title,
