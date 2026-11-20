@@ -129,6 +129,7 @@ def build_iiif_page_url(
     width: int = 1600,
     *,
     use_iiif_endpoint: bool = False,
+    raw_leaf_number: int | None = None,
 ) -> str:
     """Build canonical Archive.org zero-storage scan page URL.
 
@@ -136,7 +137,7 @@ def build_iiif_page_url(
     (`/download/<id>/page/n<N>_w<W>.jpg`), which aligns 1:1 with accessible
     PDF pages even when `scandata.xml` skips calibration cards (`addToAccessFormats=false`),
     and never triggers IIIF v2 HTTP 403 `>100% scale` rejections on narrow octavos.
-    Set `use_iiif_endpoint=True` for the IIIF Image API v2 `full/max` URL.
+    Set `use_iiif_endpoint=True` (with resolved Scribe `raw_leaf_number`) for IIIF Image API v2 `full/max`.
     """
     clean_id = _validate_identifier(identifier)
     if leaf_index < 0:
@@ -145,16 +146,19 @@ def build_iiif_page_url(
         raise ArchiveSourceError(f"width must be > 0, got {width}")
     quoted_id = quote(clean_id, safe="")
     if use_iiif_endpoint:
-        return f"{ARCHIVE_IIIF_BASE}/{quoted_id}${leaf_index}/full/max/0/default.jpg"
+        eff_leaf = raw_leaf_number if raw_leaf_number is not None else leaf_index
+        if eff_leaf < 0:
+            raise ArchiveSourceError(f"raw_leaf_number must be >= 0, got {eff_leaf}")
+        return f"{ARCHIVE_IIIF_BASE}/{quoted_id}${eff_leaf}/full/max/0/default.jpg"
     return f"{ARCHIVE_DOWNLOAD_BASE}/{quoted_id}/page/n{leaf_index}_w{width}.jpg"
 
 
-def build_iiif_info_url(identifier: str, leaf_index: int) -> str:
-    """Build IIIF Image API `info.json` tile descriptor URL for OpenSeadragon deep-zoom."""
+def build_iiif_info_url(identifier: str, raw_leaf_number: int) -> str:
+    """Build IIIF Image API `info.json` tile descriptor URL using the resolved Scribe `raw_leaf_number`."""
     clean_id = _validate_identifier(identifier)
-    if leaf_index < 0:
-        raise ArchiveSourceError(f"leaf_index must be >= 0, got {leaf_index}")
-    return f"{ARCHIVE_IIIF_BASE}/{quote(clean_id, safe='')}${leaf_index}/info.json"
+    if raw_leaf_number < 0:
+        raise ArchiveSourceError(f"raw_leaf_number must be >= 0, got {raw_leaf_number}")
+    return f"{ARCHIVE_IIIF_BASE}/{quote(clean_id, safe='')}${raw_leaf_number}/info.json"
 
 
 def search_archive_correspondence(
@@ -413,9 +417,7 @@ def access_leaves(
     excluded = {num for num, inc in parsed if not inc}
 
     offset = (min(leaf_nums) - min(xml_nums)) if (leaf_nums and xml_nums) else 0
-    aligned_preferred = bool(
-        offset != 0 and len(xml_nums) == len(leaf_nums) and max(leaf_nums) == max(xml_nums) + offset
-    )
+    aligned_preferred = bool(offset != 0 and max(leaf_nums) == max(xml_nums) + offset)
     direct = _leaves_excluding(numbered, excluded)
     aligned = _leaves_excluding(numbered, {n + offset for n in excluded}) if offset != 0 else direct
 
@@ -431,6 +433,16 @@ def access_leaves(
         if len(shifted) == expected_page_count:
             return shifted
     return candidates[0]
+
+
+def resolve_raw_leaf_numbers(
+    jp2_names: Sequence[str],
+    scandata_xml: str,
+    *,
+    expected_page_count: int | None = None,
+) -> list[int]:
+    """Return the Scribe raw `_NNNN` leaf numbers aligned 1:1 with accessible pages."""
+    return [_leaf_number(m) for m in access_leaves(jp2_names, scandata_xml, expected_page_count=expected_page_count)]
 
 
 def _verify_file_hashes(
@@ -579,7 +591,14 @@ def _download_leaf_slice(
     return downloaded
 
 
-def _extract_jp2_slice_if_requested(jp2_zip_path: Path, dest_root: Path, leaf_indices: Sequence[int] | None) -> list[str]:
+def _extract_jp2_slice_if_requested(
+    jp2_zip_path: Path,
+    dest_root: Path,
+    leaf_indices: Sequence[int] | None,
+    *,
+    scandata_xml: str = "",
+    by_raw_leaf_num: bool = False,
+) -> list[str]:
     if not leaf_indices:
         return []
     out_dir = dest_root / "jp2_leaves"
@@ -588,14 +607,17 @@ def _extract_jp2_slice_if_requested(jp2_zip_path: Path, dest_root: Path, leaf_in
     wanted = set(leaf_indices)
     with zipfile.ZipFile(jp2_zip_path) as zf:
         jp2_members = sorted(n for n in zf.namelist() if n.lower().endswith(_IMAGE_LEAF_EXTS))
-        for pos, member in enumerate(jp2_members):
-            leaf_no = _leaf_number(member)
-            if pos in wanted or leaf_no in wanted:
-                dst = out_dir / Path(member).name
-                part = dst.with_suffix(f".part.{os.getpid()}")
-                part.write_bytes(zf.read(member))
-                part.replace(dst)
-                extracted.append(str(dst))
+        if by_raw_leaf_num:
+            selected = [m for m in jp2_members if _leaf_number(m) in wanted]
+        else:
+            accessible = access_leaves(jp2_members, scandata_xml) if scandata_xml else jp2_members
+            selected = [m for pos, m in enumerate(accessible) if pos in wanted]
+        for member in selected:
+            dst = out_dir / Path(member).name
+            part = dst.with_suffix(f".part.{os.getpid()}")
+            part.write_bytes(zf.read(member))
+            part.replace(dst)
+            extracted.append(str(dst))
     return extracted
 
 
@@ -858,11 +880,15 @@ def download_archive_source(
         )
         dst_file = Path(primary_dl["path"])
         is_zip = dst_file.suffix.lower() == ".zip"
-        extracted_leaves = _extract_jp2_slice_if_requested(dst_file, dest_root, leaf_indices) if is_zip else []
+        scandata_xml = _read_scandata_text(Path(scandata_dl["path"]) if scandata_dl else None) if is_zip else ""
+        extracted_leaves = (
+            _extract_jp2_slice_if_requested(dst_file, dest_root, leaf_indices, scandata_xml=scandata_xml)
+            if is_zip
+            else []
+        )
         originals_info: dict[str, Any] | None = None
         deriv_warning: str | None = None
         if is_zip and build_originals_pdf and not leaf_indices:
-            scandata_xml = _read_scandata_text(Path(scandata_dl["path"]) if scandata_dl else None)
             local_deriv: Path | None = None
             if isinstance(meta.get("pdf"), dict) and meta["pdf"].get("name"):
                 cand_deriv = dest_root / Path(str(meta["pdf"]["name"])).name

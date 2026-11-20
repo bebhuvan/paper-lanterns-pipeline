@@ -184,7 +184,7 @@ def verify_hotspots(
 
     pdf_path = book.resolve_source_pdf_path(source_pdf, paths=repo)
     settings = book.resolved_extraction_settings(paths=repo)
-    crop_route = model or str(settings.get("hotspot_model") or "gemini/gemini-4-argon")
+    crop_route = model or str(settings.get("hotspot_model") or "gemini/gemini-4-hydrogen")
     decision_route = str(settings.get("decision_model") or "gemini/gemini-decision-1")
     boundary_route = str(settings.get("boundary_model") or "gemini/gemini-4-hydrogen")
 

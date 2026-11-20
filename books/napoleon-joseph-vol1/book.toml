@@ -12,9 +12,9 @@ declared_scripts = []
 profile = "recitation_shielded"
 
 [source]
-archive_id = "confidentialcorr01napo"
+archive_id = "confidentialcorre01napouoft"
 source_pdf = "sources/napoleon-joseph-correspondence-vol1.pdf"
-source_pdf_sha256 = ""
+source_pdf_sha256 = "f743feb4b8b236450a3047cd0b6a85eaa3d8e266e9b190acb0978d40fa348ac9"
 
 [extraction]
 profile = "recitation_shielded"

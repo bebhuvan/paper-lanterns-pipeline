@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import io
 import json
 import shutil
 import subprocess
@@ -11,10 +12,12 @@ from pathlib import Path
 from typing import Any
 
 import pymupdf as fitz
+from PIL import Image
 
 from lanterns.cli import _cmd_compile
-from lanterns.core.config import BookConfig
+from lanterns.core.config import BookConfig, load_profiles
 from lanterns.core.paths import RepoPaths
+from lanterns.core.pricing import ensure_priced_routes
 from lanterns.epistolary.compiler import compile_collection_ast
 from lanterns.extraction.pipeline import run_extraction
 from lanterns.providers.base import MockProvider
@@ -22,6 +25,13 @@ from lanterns.renderers import render_complete_edition
 from lanterns.renderers.html_utils import _format_folio_html
 from lanterns.renderers.proofing_studio import _build_proofing_csp, render_proofing_studio
 from lanterns.renderers.render_book_web import READER_JS
+from lanterns.source.archive_org import (
+    _extract_jp2_slice_if_requested,
+    access_leaves,
+    build_iiif_info_url,
+    build_iiif_page_url,
+    resolve_raw_leaf_numbers,
+)
 from tests.conftest import make_block, make_page
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -395,3 +405,62 @@ def test_h11_cli_compile_renders_once_and_fails_nonzero_on_gate_error(tmp_path: 
         lambda *_a, **_kw: {"ok": False, "valid": False, "error_count": 1, "errors": [{"surface": "epub", "code": "err", "message": "boom"}], "findings": []},
     )
     assert _cmd_compile(args, repo) == 1
+
+
+def test_h10_no_argon_or_disqualified_qwen38_flash_in_profiles() -> None:
+    profiles = load_profiles(str(REPO_ROOT))
+    routes: list[str] = []
+    for pname, pdata in profiles.items():
+        for key in ("primary", "hotspot_model", "boundary_model", "decision_model"):
+            if pdata.get(key):
+                routes.append(str(pdata[key]))
+        routes.extend(str(r) for r in (pdata.get("fallback_chain") or []) if r)
+        assert "gemini-4-argon" not in json.dumps(pdata), f"argon remains in profile {pname}"
+        assert "qwen3.8-flash" not in json.dumps(pdata), f"qwen3.8-flash remains in profile {pname}"
+    ensure_priced_routes(routes, root=str(REPO_ROOT))
+    hv_src = (REPO_ROOT / "src" / "lanterns" / "extraction" / "hotspot_verifier.py").read_text(encoding="utf-8")
+    assert "gemini-4-argon" not in hv_src
+
+
+def test_h9_archive_org_raw_leaf_resolution_slice_and_book_toml(tmp_path: Path) -> None:
+    assert (
+        build_iiif_page_url("test_id", 5, use_iiif_endpoint=True, raw_leaf_number=9)
+        == "https://iiif.archive.org/iiif/test_id$9/full/max/0/default.jpg"
+    )
+    assert (
+        build_iiif_page_url("test_id", 5, width=1200)
+        == "https://archive.org/download/test_id/page/n5_w1200.jpg"
+    )
+    assert build_iiif_info_url("test_id", 9) == "https://iiif.archive.org/iiif/test_id$9/info.json"
+
+    # Mid-book missing XML/JP2 leaf count mismatch still aligns 0-based scandata when max matches offset
+    jp2s = ["b_0001.jp2", "b_0002.jp2", "b_0004.jp2", "b_0005.jp2"]
+    scandata = """
+    <bookData><pageData>
+      <page leafNum="0"><addToAccessFormats>false</addToAccessFormats></page>
+      <page leafNum="1"><addToAccessFormats>true</addToAccessFormats></page>
+      <page leafNum="2"><addToAccessFormats>true</addToAccessFormats></page>
+      <page leafNum="3"><addToAccessFormats>false</addToAccessFormats></page>
+      <page leafNum="4"><addToAccessFormats>true</addToAccessFormats></page>
+    </pageData></bookData>
+    """
+    assert access_leaves(jp2s, scandata, expected_page_count=None) == ["b_0002.jp2", "b_0005.jp2"]
+    assert resolve_raw_leaf_numbers(jp2s, scandata) == [2, 5]
+
+    # Slice extraction uses accessible index only (never matching pos OR raw leaf_no twice)
+    jp2_zip = tmp_path / "item_jp2.zip"
+    with zipfile.ZipFile(jp2_zip, "w") as zf:
+        for name in jp2s:
+            buf = io.BytesIO()
+            Image.new("L", (40, 40), color=240).save(buf, format="PNG")
+            zf.writestr(f"item_jp2/{name}", buf.getvalue())
+    extracted = _extract_jp2_slice_if_requested(jp2_zip, tmp_path / "out", [1], scandata_xml=scandata)
+    assert [Path(p).name for p in extracted] == ["b_0005.jp2"]
+
+    nap = BookConfig.load("napoleon-joseph-vol1", paths=RepoPaths.from_root(REPO_ROOT))
+    goe = BookConfig.load("goethe-zelter", paths=RepoPaths.from_root(REPO_ROOT))
+    assert nap.archive_id == "confidentialcorre01napouoft"
+    assert len(nap.source_pdf_sha256) == 64
+    assert goe.archive_id == "goetheslettersto00goetrich"
+    assert len(goe.source_pdf_sha256) == 64
+

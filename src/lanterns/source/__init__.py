@@ -15,6 +15,7 @@ from lanterns.source.archive_org import (
     download_archive_source,
     fetch_archive_metadata,
     parse_scandata_leaves,
+    resolve_raw_leaf_numbers,
     search_archive_correspondence,
 )
 
@@ -31,5 +32,6 @@ __all__ = [
     "download_archive_source",
     "fetch_archive_metadata",
     "parse_scandata_leaves",
+    "resolve_raw_leaf_numbers",
     "search_archive_correspondence",
 ]

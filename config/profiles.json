@@ -5,11 +5,11 @@
     "primary_provider": "gemini",
     "primary_model": "gemini-3.8-flash",
     "fallback_chain": [
-      "gemini/gemini-3.6-flash",
-      "qwen_cloud/qwen4-max",
-      "anthropic/claude-sonnet-5-5"
+      "anthropic/claude-sonnet-5-5",
+      "gemini/gemini-4-hydrogen",
+      "qwen_cloud/qwen4-max"
     ],
-    "hotspot_model": "gemini/gemini-4-argon",
+    "hotspot_model": "gemini/gemini-4-hydrogen",
     "boundary_model": "gemini/gemini-4-hydrogen",
     "decision_model": "gemini/gemini-decision-1",
     "media_resolution": "MEDIA_RESOLUTION_HIGH",
@@ -24,8 +24,8 @@
     "primary_provider": "gemini",
     "primary_model": "gemini-4-hydrogen",
     "fallback_chain": [
-      "qwen_cloud/qwen4-max",
       "anthropic/claude-sonnet-5-5",
+      "qwen_cloud/qwen4-max",
       "gemini/gemini-3.8-flash"
     ],
     "hotspot_model": "anthropic/claude-opus-5-5",
@@ -43,11 +43,11 @@
     "primary_provider": "gemini",
     "primary_model": "gemini-4-hydrogen",
     "fallback_chain": [
-      "qwen_cloud/qwen4-max",
       "anthropic/claude-opus-5-5",
-      "anthropic/claude-sonnet-5-5"
+      "qwen_cloud/qwen4-max",
+      "gemini/gemini-3.8-flash"
     ],
-    "hotspot_model": "gemini/gemini-4-argon",
+    "hotspot_model": "gemini/gemini-4-hydrogen",
     "boundary_model": "gemini/gemini-4-hydrogen",
     "decision_model": "gemini/gemini-decision-1",
     "media_resolution": "MEDIA_RESOLUTION_ULTRA_HIGH",
@@ -81,11 +81,11 @@
     "primary_provider": "gemini",
     "primary_model": "gemini-3.8-flash",
     "fallback_chain": [
-      "qwen_cloud/qwen4-max",
       "anthropic/claude-sonnet-5-5",
-      "qwen_cloud/qwen3.8-flash"
+      "gemini/gemini-4-hydrogen",
+      "qwen_cloud/qwen4-max"
     ],
-    "hotspot_model": "gemini/gemini-4-argon",
+    "hotspot_model": "gemini/gemini-4-hydrogen",
     "boundary_model": "gemini/gemini-4-hydrogen",
     "decision_model": "gemini/gemini-decision-1",
     "media_resolution": "MEDIA_RESOLUTION_HIGH",
@@ -136,6 +136,7 @@
     "primary_provider": "anthropic",
     "primary_model": "claude-sonnet-5-5",
     "fallback_chain": [
+      "gemini/gemini-4-hydrogen",
       "gemini/gemini-3.8-flash",
       "qwen_cloud/qwen4-max"
     ],
