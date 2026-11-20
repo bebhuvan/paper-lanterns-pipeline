@@ -1,0 +1,54 @@
+{
+  "book_id": "vivekananda-letters-1944",
+  "page_number": 305,
+  "check_id": "scan-check-p0305",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "c310a68d109ada9656dbd8e03b48e7a295c7d61b08961547f38a8bd34b4bf798",
+  "checks": [
+    {
+      "block_id": "p0305-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (169) To Swami Brahmananda and compositor 'Chandala'."
+    },
+    {
+      "block_id": "p0305-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (169) To Swami Brahmananda and compositor 'Chandala'."
+    },
+    {
+      "block_id": "p0305-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (169) To Swami Brahmananda and compositor 'Chandala'."
+    },
+    {
+      "block_id": "p0305-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (169) To Swami Brahmananda and compositor 'Chandala'."
+    },
+    {
+      "block_id": "p0305-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (169) To Swami Brahmananda and compositor 'Chandala'."
+    },
+    {
+      "block_id": "p0305-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (169) To Swami Brahmananda and compositor 'Chandala'."
+    },
+    {
+      "block_id": "p0305-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (169) To Swami Brahmananda and compositor 'Chandala'."
+    },
+    {
+      "block_id": "p0305-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (169) To Swami Brahmananda and compositor 'Chandala'."
+    },
+    {
+      "block_id": "p0305-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (169) To Swami Brahmananda and compositor 'Chandala'."
+    }
+  ]
+}

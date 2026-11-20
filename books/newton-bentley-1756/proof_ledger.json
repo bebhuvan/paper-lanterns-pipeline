@@ -1,0 +1,255 @@
+{
+  "version": "proof-ledger-v2",
+  "book_id": "newton-bentley-1756",
+  "updated_at": "2026-11-18T04:51:43.695868+00:00",
+  "pages": {
+    "13": {
+      "page_number": 13,
+      "status": "verified",
+      "signoff_method": "human",
+      "p1_reviewer_id": "qa_p1_diplomatic",
+      "p1_verified_at": "2026-11-16T02:47:39.518179+00:00",
+      "p2_verifier_id": "archival_editor_p2",
+      "p2_verified_at": "2026-11-16T02:47:39.713559+00:00",
+      "reviewer": "archival_editor_p2",
+      "verified_at": "2026-11-16T02:47:39.713559+00:00",
+      "source_page_sha256": "5871d76f3542fb96546da1021ddc6165541e3bce170f670138288cd017a5d9fa",
+      "page_text_sha256": "e73925efc73122e40c12f4724812f876df65147bb7ea05fc7fc5245e88ec15bf",
+      "attestation": {
+        "channel": "community_proposal",
+        "proposal_sha256": "94872a3568ba089add97175de739b2d4d3a0f7c1d18bed510584ebd6c19b9058",
+        "proposal_file": "newton_p2.json",
+        "applied_correction_ids": [],
+        "accepted_blocks": [
+          {
+            "block_id": "p0013-b0001",
+            "page_number": 13,
+            "reading_order": 0,
+            "printed_folio": "[ 11 ]",
+            "type": "folio",
+            "bbox": [
+              448,
+              36,
+              560,
+              65
+            ],
+            "tagged_text": "[ 11 ]",
+            "plain_text": "[ 11 ]",
+            "spans": [],
+            "alignment": "center",
+            "epistolary_transition": "none",
+            "line_breaks_preserved": false,
+            "heading_level": null,
+            "note_label": null,
+            "continues_from_prev": false,
+            "continues_to_next": false,
+            "table_role": null,
+            "cells": null,
+            "provenance_provider": "gemini_cli",
+            "provenance_model": "scan-check",
+            "provenance_harness": "native_scan_check",
+            "source_page_sha256": "5871d76f3542fb96546da1021ddc6165541e3bce170f670138288cd017a5d9fa"
+          },
+          {
+            "block_id": "p0013-b0002",
+            "page_number": 13,
+            "reading_order": 1,
+            "printed_folio": "[ 11 ]",
+            "type": "body",
+            "bbox": [
+              162,
+              85,
+              848,
+              240
+            ],
+            "tagged_text": "There is yet another Argument for a Deity, which I take to be a very ſtrong one, but till the Principles on which it is grounded are better received, I think it more adviſable to let it ſleep.",
+            "plain_text": "There is yet another Argument for a Deity, which I take to be a very ſtrong one, but till the Principles on which it is grounded are better received, I think it more adviſable to let it ſleep.",
+            "spans": [],
+            "alignment": "indented",
+            "epistolary_transition": "none",
+            "line_breaks_preserved": false,
+            "heading_level": null,
+            "note_label": null,
+            "continues_from_prev": false,
+            "continues_to_next": false,
+            "table_role": null,
+            "cells": null,
+            "provenance_provider": "gemini_cli",
+            "provenance_model": "scan-check",
+            "provenance_harness": "native_scan_check",
+            "source_page_sha256": "5871d76f3542fb96546da1021ddc6165541e3bce170f670138288cd017a5d9fa"
+          },
+          {
+            "block_id": "p0013-b0003",
+            "page_number": 13,
+            "reading_order": 2,
+            "printed_folio": "[ 11 ]",
+            "type": "valediction",
+            "bbox": [
+              247,
+              278,
+              745,
+              427
+            ],
+            "tagged_text": "<i>I am,</i>\n<i>Your moſt humble Servant,</i>\n<i>to command,</i>",
+            "plain_text": "I am,\nYour moſt humble Servant,\nto command,",
+            "spans": [
+              {
+                "tag": "i",
+                "start": 0,
+                "end": 5
+              },
+              {
+                "tag": "i",
+                "start": 6,
+                "end": 31
+              },
+              {
+                "tag": "i",
+                "start": 32,
+                "end": 43
+              }
+            ],
+            "alignment": "cascading",
+            "epistolary_transition": "none",
+            "line_breaks_preserved": true,
+            "heading_level": null,
+            "note_label": null,
+            "continues_from_prev": false,
+            "continues_to_next": false,
+            "table_role": null,
+            "cells": null,
+            "provenance_provider": "gemini_cli",
+            "provenance_model": "scan-check",
+            "provenance_harness": "native_scan_check",
+            "source_page_sha256": "5871d76f3542fb96546da1021ddc6165541e3bce170f670138288cd017a5d9fa"
+          },
+          {
+            "block_id": "p0013-b0004",
+            "page_number": 13,
+            "reading_order": 3,
+            "printed_folio": "[ 11 ]",
+            "type": "dateline",
+            "bbox": [
+              146,
+              444,
+              405,
+              487
+            ],
+            "tagged_text": "Cambridge,\nDecemb. 10, 1692.",
+            "plain_text": "Cambridge,\nDecemb. 10, 1692.",
+            "spans": [],
+            "alignment": "left",
+            "epistolary_transition": "none",
+            "line_breaks_preserved": true,
+            "heading_level": null,
+            "note_label": null,
+            "continues_from_prev": false,
+            "continues_to_next": false,
+            "table_role": null,
+            "cells": null,
+            "provenance_provider": "gemini_cli",
+            "provenance_model": "scan-check",
+            "provenance_harness": "native_scan_check",
+            "source_page_sha256": "5871d76f3542fb96546da1021ddc6165541e3bce170f670138288cd017a5d9fa"
+          },
+          {
+            "block_id": "p0013-b0005",
+            "page_number": 13,
+            "reading_order": 4,
+            "printed_folio": "[ 11 ]",
+            "type": "signature",
+            "bbox": [
+              518,
+              513,
+              847,
+              543
+            ],
+            "tagged_text": "<sc>Is. Newton,</sc>",
+            "plain_text": "Is. Newton,",
+            "spans": [
+              {
+                "tag": "sc",
+                "start": 0,
+                "end": 11
+              }
+            ],
+            "alignment": "right",
+            "epistolary_transition": "none",
+            "line_breaks_preserved": false,
+            "heading_level": null,
+            "note_label": null,
+            "continues_from_prev": false,
+            "continues_to_next": false,
+            "table_role": null,
+            "cells": null,
+            "provenance_provider": "gemini_cli",
+            "provenance_model": "scan-check",
+            "provenance_harness": "native_scan_check",
+            "source_page_sha256": "5871d76f3542fb96546da1021ddc6165541e3bce170f670138288cd017a5d9fa"
+          },
+          {
+            "block_id": "p0013-b0006",
+            "page_number": 13,
+            "reading_order": 5,
+            "printed_folio": "[ 11 ]",
+            "type": "folio",
+            "bbox": [
+              427,
+              833,
+              498,
+              851
+            ],
+            "tagged_text": "C 2",
+            "plain_text": "C 2",
+            "spans": [],
+            "alignment": "center",
+            "epistolary_transition": "none",
+            "line_breaks_preserved": false,
+            "heading_level": null,
+            "note_label": null,
+            "continues_from_prev": false,
+            "continues_to_next": false,
+            "table_role": null,
+            "cells": null,
+            "provenance_provider": "gemini_cli",
+            "provenance_model": "scan-check",
+            "provenance_harness": "native_scan_check",
+            "source_page_sha256": "5871d76f3542fb96546da1021ddc6165541e3bce170f670138288cd017a5d9fa"
+          },
+          {
+            "block_id": "p0013-b0007",
+            "page_number": 13,
+            "reading_order": 6,
+            "printed_folio": "[ 11 ]",
+            "type": "folio",
+            "bbox": [
+              724,
+              826,
+              857,
+              847
+            ],
+            "tagged_text": "LET-",
+            "plain_text": "LET-",
+            "spans": [],
+            "alignment": "right",
+            "epistolary_transition": "none",
+            "line_breaks_preserved": false,
+            "heading_level": null,
+            "note_label": null,
+            "continues_from_prev": false,
+            "continues_to_next": false,
+            "table_role": null,
+            "cells": null,
+            "provenance_provider": "gemini_cli",
+            "provenance_model": "scan-check",
+            "provenance_harness": "native_scan_check",
+            "source_page_sha256": "5871d76f3542fb96546da1021ddc6165541e3bce170f670138288cd017a5d9fa"
+          }
+        ]
+      },
+      "evidence": null,
+      "notes": "P2 independent verification complete (P2 != P1)."
+    }
+  }
+}

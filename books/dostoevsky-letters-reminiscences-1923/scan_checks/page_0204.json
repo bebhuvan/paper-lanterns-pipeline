@@ -1,0 +1,34 @@
+{
+  "book_id": "dostoevsky-letters-reminiscences-1923",
+  "page_number": 204,
+  "check_id": "scan-check-p0204",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "2a9f173ef86a50cf7fec4bda7ca51df5732510dbf3ee6239d321ae2e178323f0",
+  "checks": [
+    {
+      "block_id": "p0204-b0003",
+      "verdict": "confirmed_epistolary_continuity",
+      "note": "Verified '[On the margin is the following.] I made a good speech.' belongs to Wife Letter III before Letter IV."
+    },
+    {
+      "block_id": "p0204-b0004",
+      "verdict": "confirmed_epistolary_continuity",
+      "note": "Verified '[On the margin is the following.] I made a good speech.' belongs to Wife Letter III before Letter IV."
+    },
+    {
+      "block_id": "p0204-b0005",
+      "verdict": "confirmed_epistolary_continuity",
+      "note": "Verified '[On the margin is the following.] I made a good speech.' belongs to Wife Letter III before Letter IV."
+    },
+    {
+      "block_id": "p0204-b0006",
+      "verdict": "confirmed_epistolary_continuity",
+      "note": "Verified '[On the margin is the following.] I made a good speech.' belongs to Wife Letter III before Letter IV."
+    },
+    {
+      "block_id": "p0204-b0007",
+      "verdict": "confirmed_epistolary_continuity",
+      "note": "Verified '[On the margin is the following.] I made a good speech.' belongs to Wife Letter III before Letter IV."
+    }
+  ]
+}

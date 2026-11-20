@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "fifty-famous-letters-1930",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 34,
+  "reviewer": "native-vision-350ppi-scan-check",
+  "checked_at": "2026-11-19T06:33:11.386533+00:00",
+  "source_page_sha256": "c7a195588999835b06f402a579150458a8dbe08d531e5de45c2c4a2d5139a5e8",
+  "render_png": "renders/page_0034.png",
+  "checks": [
+    {
+      "block_id": "p0034-b0001",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0034.png."
+    },
+    {
+      "block_id": "p0034-b0002",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0034.png."
+    },
+    {
+      "block_id": "p0034-b0003",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0034.png."
+    },
+    {
+      "block_id": "p0034-b0004",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0034.png."
+    },
+    {
+      "block_id": "p0034-b0005",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0034.png."
+    },
+    {
+      "block_id": "p0034-b0006",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0034.png."
+    },
+    {
+      "block_id": "p0034-b0007",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0034.png."
+    }
+  ],
+  "correction_ids": []
+}

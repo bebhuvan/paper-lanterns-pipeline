@@ -1,0 +1,46 @@
+{
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Preliminaries & Title-Page",
+      "start_block_id": "p0005-b0001",
+      "end_block_id": "p0007-b0006"
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents & Appendix List",
+      "start_block_id": "p0009-b0002",
+      "end_block_id": "p0014-b0013"
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Introduction",
+      "start_block_id": "p0015-b0001",
+      "end_block_id": "p0047-b0004"
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters Received: July–December 1617 (Nos. 509–587)",
+      "start_block_id": "p0049-b0002",
+      "end_block_id": "p0337-b0008"
+    },
+    {
+      "kind": "chapter",
+      "title": "Appendix (Nos. I–VII)",
+      "start_block_id": "p0338-b0001",
+      "end_block_id": "p0363-b0007"
+    },
+    {
+      "kind": "backmatter",
+      "title": "Map: The East Indies in 1617",
+      "start_block_id": "p0365-b0001",
+      "end_block_id": "p0366-b0003"
+    },
+    {
+      "kind": "index",
+      "title": "Index & Colophon",
+      "start_block_id": "p0367-b0001",
+      "end_block_id": "p0390-b0009"
+    }
+  ]
+}

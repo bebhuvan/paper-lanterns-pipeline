@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "exam_id": "exam_08_gandhi_govt_1943_p0079",
+  "split": "held_out",
+  "source_pdf": "gandhijis-correspondence-with-government.pdf",
+  "source_page_number": 79,
+  "archive_id": "gandhijiscorresp00gand",
+  "book_title": "Gandhiji's Correspondence with the Government, 1942-44",
+  "year": 1945,
+  "era": "20c",
+  "languages": [
+    "en"
+  ],
+  "profile": "english_epistolary",
+  "quirk_tags": [
+    "multi_letter_single_page",
+    "numeric_letter_headers_vs_bottom_folio",
+    "co_signed_signature",
+    "gathering_signature_mark"
+  ],
+  "expected_printed_folio": "49",
+  "acceptable_printed_folios": [
+    "49"
+  ],
+  "expected_letter_segments_on_page": 2,
+  "expected_new_letter_starts": 2,
+  "continues_from_prev_page": false,
+  "continues_to_next_page": false,
+  "has_margin_note": false,
+  "has_editorial_block": false,
+  "has_enclosure": false,
+  "has_postscript": false,
+  "has_address_block": false,
+  "jbig2_source_risk": false,
+  "expected_block_types_present": [
+    "letter_header",
+    "dateline",
+    "salutation",
+    "body",
+    "valediction",
+    "signature"
+  ],
+  "expected_footnote_labels": [],
+  "must_preserve_verbatim": [
+    "44",
+    "2nd March, 1943",
+    "Dear Col. Bhandari,",
+    "M. K. Gandhi",
+    "45",
+    "12-3-1943",
+    "M. D. D. Gilder",
+    "S. Nayyar"
+  ],
+  "must_not_modernize_or_leak": [
+    "G.C.–4",
+    "G.C.-4"
+  ],
+  "notes": "Two complete numbered letters ('44' and '45') on one page where '44' is top centered letter_header (NOT folio!), '49' at bottom center is printed folio, 'G.C.–4' is gathering signature, and Letter 45 is co-signed by M. D. D. Gilder & S. Nayyar.",
+  "page_image": "pages/exam_08_gandhi_govt_1943_p0079.png",
+  "page_sha256": "bbf408c0aeb7c0c1b1bbc4c1d6de103ee016a4fea6127e578992c4cebf0e4f3d",
+  "pixel_size": [
+    1669,
+    2644
+  ],
+  "pixel_verified": true,
+  "case_id": "exam_08_gandhi_govt_1943_p0079",
+  "id": "exam_08_gandhi_govt_1943_p0079",
+  "expected_letter_count": 2,
+  "must_contain_exact": [
+    "44",
+    "2nd March, 1943",
+    "Dear Col. Bhandari,",
+    "M. K. Gandhi",
+    "45",
+    "12-3-1943",
+    "M. D. D. Gilder",
+    "S. Nayyar"
+  ],
+  "verbatim_substrings": [
+    "44",
+    "2nd March, 1943",
+    "Dear Col. Bhandari,",
+    "M. K. Gandhi",
+    "45",
+    "12-3-1943",
+    "M. D. D. Gilder",
+    "S. Nayyar"
+  ],
+  "expect_margin_note": false,
+  "expect_editorial": false
+}

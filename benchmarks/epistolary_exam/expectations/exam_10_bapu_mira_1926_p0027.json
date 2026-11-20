@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "exam_id": "exam_10_bapu_mira_1926_p0027",
+  "split": "held_out",
+  "source_pdf": "bapusletterstomi00gand.pdf",
+  "source_page_number": 27,
+  "archive_id": "bapusletterstomi00gand",
+  "book_title": "Bapu's Letters to Mira [1924-1948]",
+  "year": 1949,
+  "era": "20c",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "profile": "indic_and_oriental_epistolary",
+  "quirk_tags": [
+    "editorial_square_bracket_headnote",
+    "authorial_endorsement_and_postmark",
+    "devanagari_salutation_in_english_letter",
+    "redacted_name_ellipsis",
+    "multi_symbol_footnotes"
+  ],
+  "expected_printed_folio": "17",
+  "acceptable_printed_folios": [
+    "17"
+  ],
+  "expected_letter_segments_on_page": 1,
+  "expected_new_letter_starts": 1,
+  "continues_from_prev_page": false,
+  "continues_to_next_page": true,
+  "has_margin_note": false,
+  "has_editorial_block": true,
+  "has_enclosure": false,
+  "has_postscript": false,
+  "has_address_block": false,
+  "jbig2_source_risk": false,
+  "expected_block_types_present": [
+    "letter_header",
+    "editorial",
+    "dateline",
+    "salutation",
+    "body",
+    "footnote"
+  ],
+  "expected_footnote_labels": [
+    "*",
+    "†"
+  ],
+  "must_preserve_verbatim": [
+    "[ Bapu was at the Gauhati Congress.]",
+    "Unrevised",
+    "(Post Mark)",
+    "चि.",
+    "aritha",
+    "Raisina",
+    "Brahmaputra",
+    "New Delhi."
+  ],
+  "must_not_modernize_or_leak": [],
+  "notes": "Letter 9 with square-bracketed editorial headnote, 'Unrevised*' endorsement + '27-12-’26 (Post Mark)', Devanagari salutation 'चि. मीरा,' opening an English letter, redacted 'Miss. . . .', and symbol footnotes (*, †).",
+  "page_image": "pages/exam_10_bapu_mira_1926_p0027.png",
+  "page_sha256": "a1f28c158f3fe6a9edc7d4c9fc0e0a28e7318502b0bbda7c05adb518542acef2",
+  "pixel_size": [
+    1571,
+    2622
+  ],
+  "pixel_verified": true,
+  "case_id": "exam_10_bapu_mira_1926_p0027",
+  "id": "exam_10_bapu_mira_1926_p0027",
+  "expected_letter_count": 1,
+  "must_contain_exact": [
+    "[ Bapu was at the Gauhati Congress.]",
+    "Unrevised",
+    "(Post Mark)",
+    "चि.",
+    "aritha",
+    "Raisina",
+    "Brahmaputra",
+    "New Delhi."
+  ],
+  "verbatim_substrings": [
+    "[ Bapu was at the Gauhati Congress.]",
+    "Unrevised",
+    "(Post Mark)",
+    "चि.",
+    "aritha",
+    "Raisina",
+    "Brahmaputra",
+    "New Delhi."
+  ],
+  "expect_margin_note": false,
+  "expect_editorial": true
+}

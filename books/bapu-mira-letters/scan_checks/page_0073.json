@@ -1,0 +1,44 @@
+{
+  "book_id": "bapu-mira-letters",
+  "page_number": 73,
+  "check_id": "scan-check-p0073",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "9c6339ac001c5b0f1195e8c2cd299dd51142ff15bf8b892689ed9e67682ede3d",
+  "checks": [
+    {
+      "block_id": "p0073-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed postal address block on printed p. 63; fixed literal \\n escapes."
+    },
+    {
+      "block_id": "p0073-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed postal address block on printed p. 63; fixed literal \\n escapes."
+    },
+    {
+      "block_id": "p0073-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed postal address block on printed p. 63; fixed literal \\n escapes."
+    },
+    {
+      "block_id": "p0073-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed postal address block on printed p. 63; fixed literal \\n escapes."
+    },
+    {
+      "block_id": "p0073-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed postal address block on printed p. 63; fixed literal \\n escapes."
+    },
+    {
+      "block_id": "p0073-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed postal address block on printed p. 63; fixed literal \\n escapes."
+    },
+    {
+      "block_id": "p0073-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed postal address block on printed p. 63; fixed literal \\n escapes."
+    }
+  ]
+}

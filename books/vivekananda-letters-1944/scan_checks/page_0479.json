@@ -1,0 +1,44 @@
+{
+  "book_id": "vivekananda-letters-1944",
+  "page_number": 479,
+  "check_id": "scan-check-p0479",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "e2e78057346d330484f2f0fa4b548d9949bbb8974af240aaec2f7b03334473d0",
+  "checks": [
+    {
+      "block_id": "p0479-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified conclusion of Letter (308) with Gita Devanagari verse."
+    },
+    {
+      "block_id": "p0479-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified conclusion of Letter (308) with Gita Devanagari verse."
+    },
+    {
+      "block_id": "p0479-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified conclusion of Letter (308) with Gita Devanagari verse."
+    },
+    {
+      "block_id": "p0479-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified conclusion of Letter (308) with Gita Devanagari verse."
+    },
+    {
+      "block_id": "p0479-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified conclusion of Letter (308) with Gita Devanagari verse."
+    },
+    {
+      "block_id": "p0479-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified conclusion of Letter (308) with Gita Devanagari verse."
+    },
+    {
+      "block_id": "p0479-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified conclusion of Letter (308) with Gita Devanagari verse."
+    }
+  ]
+}

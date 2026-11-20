@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "fifty-famous-letters-1930",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Flyleaf & Half-Title",
+      "start_page": 1,
+      "end_page": 8
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Title Page & Copyright",
+      "start_page": 9,
+      "end_page": 10
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Dedication",
+      "start_page": 11,
+      "end_page": 12
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Foreword",
+      "start_page": 13,
+      "end_page": 14
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents",
+      "start_page": 15,
+      "end_page": 24
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Acknowledgements & Fly-Title",
+      "start_page": 25,
+      "end_page": 28
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters 1–12: Antiquity — Socrates to Zenobia",
+      "start_page": 29,
+      "end_page": 69
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters 13–24: Medieval, Renaissance & Tudor — Gregory VII to Queen Elizabeth",
+      "start_page": 70,
+      "end_page": 111
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters 25–36: Seventeenth & Eighteenth Centuries — Raleigh to Franklin",
+      "start_page": 112,
+      "end_page": 155
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters 37–50: Nineteenth & Early Twentieth Centuries — Napoleon to Woodrow Wilson",
+      "start_page": 156,
+      "end_page": 206
+    },
+    {
+      "kind": "index",
+      "title": "Index",
+      "start_page": 207,
+      "end_page": 214
+    },
+    {
+      "kind": "backmatter",
+      "title": "Preservation Endpapers",
+      "start_page": 215,
+      "end_page": 220
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "book_id": "eic-letters-received-vol-6-1617b",
+  "page_number": 234,
+  "check_id": "vol6-scan-check-p0234",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "5aa4315c55db5ef0e15983542a0fc378b06354b8a7845be6619499c4321b101c",
+  "checked_at": "2026-11-17T20:23:38.959834+00:00",
+  "checks": [
+    {
+      "block_id": "p0234-b0003",
+      "token": "print for Pomeris",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0234.png: unlabelled top-of-page continuation of multi-page footnote from p. 185."
+    },
+    {
+      "block_id": "p0234-b0004",
+      "token": "Kashmír/Kashmir",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0234.png: printed variation matches ink."
+    },
+    {
+      "block_id": "p0234-b0005",
+      "token": "fn_cont_3",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0234.png: continuation paragraph of p. 185 footnote."
+    }
+  ]
+}

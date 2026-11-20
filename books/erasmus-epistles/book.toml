@@ -1,0 +1,20 @@
+[book]
+book_id = "erasmus-epistles"
+title = "The Epistles of Erasmus"
+author_or_editor = "Desiderius Erasmus (ed. F. M. Nichols)"
+authors = ["Desiderius Erasmus (ed. F. M. Nichols)"]
+publication_year = 1901
+subtitle = ""
+imprint = ""
+collection = "world-correspondence"
+language = "en"
+declared_scripts = []
+profile = "polyglot_epistolary"
+
+[source]
+archive_id = ""
+source_pdf = "sources/the-epistles-of-erasmus.pdf"
+source_pdf_sha256 = ""
+
+[extraction]
+profile = "polyglot_epistolary"

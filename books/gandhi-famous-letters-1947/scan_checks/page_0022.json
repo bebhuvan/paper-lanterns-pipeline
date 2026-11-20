@@ -1,0 +1,44 @@
+{
+  "book_id": "gandhi-famous-letters-1947",
+  "page_number": 22,
+  "check_id": "scan-check-p0022",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "a866238a11392b14fe4e7371e98047c476f381c19f3d1fc191983d90347c1c93",
+  "checks": [
+    {
+      "block_id": "p0022-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified ending of First Letter to Lord Chelmsford before Ultimatum section."
+    },
+    {
+      "block_id": "p0022-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified ending of First Letter to Lord Chelmsford before Ultimatum section."
+    },
+    {
+      "block_id": "p0022-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified ending of First Letter to Lord Chelmsford before Ultimatum section."
+    },
+    {
+      "block_id": "p0022-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified ending of First Letter to Lord Chelmsford before Ultimatum section."
+    },
+    {
+      "block_id": "p0022-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified ending of First Letter to Lord Chelmsford before Ultimatum section."
+    },
+    {
+      "block_id": "p0022-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified ending of First Letter to Lord Chelmsford before Ultimatum section."
+    },
+    {
+      "block_id": "p0022-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified ending of First Letter to Lord Chelmsford before Ultimatum section."
+    }
+  ]
+}

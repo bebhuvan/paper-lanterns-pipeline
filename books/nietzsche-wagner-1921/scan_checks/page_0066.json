@@ -1,0 +1,19 @@
+{
+  "book_id": "nietzsche-wagner-1921",
+  "page_number": 66,
+  "check_id": "scan-check-p0066",
+  "reviewer": "native-vision-400ppi-scan-check",
+  "source_page_sha256": "2799e5e152599e6ce88bcfaf3c2a14dad7349ecae5bc1f10d5422ebc96e01d48",
+  "checks": [
+    {
+      "block_id": "p0066-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "400-PPI scan confirms compositor spelling 'Appollonian' printed verbatim."
+    },
+    {
+      "block_id": "p0066-b0005",
+      "verdict": "corrected_from_scan",
+      "note": "400-PPI crop confirms inline 'financial' with slipped 'n' foot (not hyphenated 'finan-cial')."
+    }
+  ]
+}

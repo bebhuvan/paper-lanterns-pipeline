@@ -1,0 +1,79 @@
+{
+  "book_id": "bapu-mira-letters",
+  "page_number": 295,
+  "check_id": "scan-check-p0295",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "18595efee1f17c442715ef07148b9d26cfbd1bc0482d2743df2751fbcafd9914",
+  "checks": [
+    {
+      "block_id": "p0295-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 239 dateline and footnote on printed p. 285; fixed literal \\n escape."
+    },
+    {
+      "block_id": "p0295-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 239 dateline and footnote on printed p. 285; fixed literal \\n escape."
+    },
+    {
+      "block_id": "p0295-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 239 dateline and footnote on printed p. 285; fixed literal \\n escape."
+    },
+    {
+      "block_id": "p0295-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 239 dateline and footnote on printed p. 285; fixed literal \\n escape."
+    },
+    {
+      "block_id": "p0295-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 239 dateline and footnote on printed p. 285; fixed literal \\n escape."
+    },
+    {
+      "block_id": "p0295-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 239 dateline and footnote on printed p. 285; fixed literal \\n escape."
+    },
+    {
+      "block_id": "p0295-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 239 dateline and footnote on printed p. 285; fixed literal \\n escape."
+    },
+    {
+      "block_id": "p0295-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 239 dateline and footnote on printed p. 285; fixed literal \\n escape."
+    },
+    {
+      "block_id": "p0295-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 239 dateline and footnote on printed p. 285; fixed literal \\n escape."
+    },
+    {
+      "block_id": "p0295-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 239 dateline and footnote on printed p. 285; fixed literal \\n escape."
+    },
+    {
+      "block_id": "p0295-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 239 dateline and footnote on printed p. 285; fixed literal \\n escape."
+    },
+    {
+      "block_id": "p0295-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 239 dateline and footnote on printed p. 285; fixed literal \\n escape."
+    },
+    {
+      "block_id": "p0295-b0013",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 239 dateline and footnote on printed p. 285; fixed literal \\n escape."
+    },
+    {
+      "block_id": "p0295-b0014",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 239 dateline and footnote on printed p. 285; fixed literal \\n escape."
+    }
+  ]
+}

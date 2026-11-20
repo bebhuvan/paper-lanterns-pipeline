@@ -1,0 +1,22 @@
+[book]
+book_id = "sand-flaubert-letters-1922"
+title = "The George Sand-Gustave Flaubert Letters"
+author_or_editor = "George Sand & Gustave Flaubert (trans. Aimée L. McKenzie)"
+authors = ["George Sand", "Gustave Flaubert", "Aimée L. McKenzie (trans.)"]
+publication_year = 1922
+subtitle = "With an Introduction by Stuart P. Sherman"
+imprint = "London: Duckworth & Co. (Boni and Liveright), 1922"
+collection = "world-correspondence"
+language = "en"
+declared_scripts = ["Latin", "European diacritics"]
+profile = "polyglot_epistolary"
+active_run_id = "canonical-hydrogen-batch-v1"
+
+[source]
+archive_id = "georgesandgustav00sand"
+source_pdf = "sources/georgesandgustav00sand/georgesandgustav00sand.originals.pdf"
+source_pdf_sha256 = "656acdb3c5b9f37d80a4c8053736e61a62d8ec3ad9932975e8d2765647548dff"
+
+[extraction]
+profile = "polyglot_epistolary"
+render_dpi = 350

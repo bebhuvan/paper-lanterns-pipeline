@@ -1,0 +1,89 @@
+{
+  "book_id": "sand-flaubert-letters-1922",
+  "page_number": 335,
+  "check_id": "scan-check-p0335",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "066ad795c3023a3539db6518b715c4404b69dab61f829374063065be097f1563",
+  "checks": [
+    {
+      "block_id": "p0335-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CCLVI closing 'Gustave Flaubert / otherwise called the R. P. Cruchard...' and footnote 'Dans de temps'."
+    },
+    {
+      "block_id": "p0335-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CCLVI closing 'Gustave Flaubert / otherwise called the R. P. Cruchard...' and footnote 'Dans de temps'."
+    },
+    {
+      "block_id": "p0335-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CCLVI closing 'Gustave Flaubert / otherwise called the R. P. Cruchard...' and footnote 'Dans de temps'."
+    },
+    {
+      "block_id": "p0335-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CCLVI closing 'Gustave Flaubert / otherwise called the R. P. Cruchard...' and footnote 'Dans de temps'."
+    },
+    {
+      "block_id": "p0335-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CCLVI closing 'Gustave Flaubert / otherwise called the R. P. Cruchard...' and footnote 'Dans de temps'."
+    },
+    {
+      "block_id": "p0335-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CCLVI closing 'Gustave Flaubert / otherwise called the R. P. Cruchard...' and footnote 'Dans de temps'."
+    },
+    {
+      "block_id": "p0335-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CCLVI closing 'Gustave Flaubert / otherwise called the R. P. Cruchard...' and footnote 'Dans de temps'."
+    },
+    {
+      "block_id": "p0335-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CCLVI closing 'Gustave Flaubert / otherwise called the R. P. Cruchard...' and footnote 'Dans de temps'."
+    },
+    {
+      "block_id": "p0335-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CCLVI closing 'Gustave Flaubert / otherwise called the R. P. Cruchard...' and footnote 'Dans de temps'."
+    },
+    {
+      "block_id": "p0335-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CCLVI closing 'Gustave Flaubert / otherwise called the R. P. Cruchard...' and footnote 'Dans de temps'."
+    },
+    {
+      "block_id": "p0335-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CCLVI closing 'Gustave Flaubert / otherwise called the R. P. Cruchard...' and footnote 'Dans de temps'."
+    },
+    {
+      "block_id": "p0335-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CCLVI closing 'Gustave Flaubert / otherwise called the R. P. Cruchard...' and footnote 'Dans de temps'."
+    },
+    {
+      "block_id": "p0335-b0013",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CCLVI closing 'Gustave Flaubert / otherwise called the R. P. Cruchard...' and footnote 'Dans de temps'."
+    },
+    {
+      "block_id": "p0335-b0014",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CCLVI closing 'Gustave Flaubert / otherwise called the R. P. Cruchard...' and footnote 'Dans de temps'."
+    },
+    {
+      "block_id": "p0335-b0015",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CCLVI closing 'Gustave Flaubert / otherwise called the R. P. Cruchard...' and footnote 'Dans de temps'."
+    },
+    {
+      "block_id": "p0335-b0016",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CCLVI closing 'Gustave Flaubert / otherwise called the R. P. Cruchard...' and footnote 'Dans de temps'."
+    }
+  ]
+}

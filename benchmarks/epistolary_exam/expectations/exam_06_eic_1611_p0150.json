@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "exam_id": "exam_06_eic_1611_p0150",
+  "split": "tuning",
+  "source_pdf": "Letters received by the East India Company.pdf",
+  "source_page_number": 150,
+  "archive_id": "lettersreceivedb01east",
+  "book_title": "Letters Received by the East India Company from Its Servants in the East, Vol. I",
+  "year": 1896,
+  "era": "17c",
+  "languages": [
+    "en",
+    "la"
+  ],
+  "profile": "archaic_18c_epistolary",
+  "quirk_tags": [
+    "postscript_after_signature",
+    "floral_ornamental_break",
+    "pious_invocation_dateline",
+    "woodcut_drop_cap_initial",
+    "anglo_oriental_trade_lexicon"
+  ],
+  "expected_printed_folio": "102",
+  "acceptable_printed_folios": [
+    "102"
+  ],
+  "expected_letter_segments_on_page": 2,
+  "expected_new_letter_starts": 1,
+  "continues_from_prev_page": true,
+  "continues_to_next_page": true,
+  "has_margin_note": false,
+  "has_editorial_block": false,
+  "has_enclosure": false,
+  "has_postscript": true,
+  "has_address_block": false,
+  "jbig2_source_risk": true,
+  "expected_block_types_present": [
+    "valediction",
+    "signature",
+    "postscript",
+    "letter_header",
+    "dateline",
+    "body"
+  ],
+  "expected_footnote_labels": [],
+  "must_preserve_verbatim": [
+    "Your very loving friend",
+    "Henry Middleton.",
+    "P.S.",
+    "Laus Deo.",
+    "16th of May, 1611",
+    "MR. FEMELL",
+    "Shabunder",
+    "Nahuda Mahomet"
+  ],
+  "must_not_modernize_or_leak": [
+    "EAST INDIA COMPANY'S RECORDS"
+  ],
+  "notes": "Postscript ('P.S.') after signature, floral fleuron divider, Letter 52 with 'Laus Deo.' dateline, and 4-line historiated woodcut initial 'M' joining 'R. FEMELL' -> 'MR. FEMELL'.",
+  "page_image": "pages/exam_06_eic_1611_p0150.png",
+  "page_sha256": "8ab9ce303a000903fbc6376d74ecf6ae97a68c6b7085784ddf281836c9a6aef0",
+  "pixel_size": [
+    1183,
+    1825
+  ],
+  "pixel_verified": true,
+  "case_id": "exam_06_eic_1611_p0150",
+  "id": "exam_06_eic_1611_p0150",
+  "expected_letter_count": 2,
+  "must_contain_exact": [
+    "Your very loving friend",
+    "Henry Middleton.",
+    "P.S.",
+    "Laus Deo.",
+    "16th of May, 1611",
+    "MR. FEMELL",
+    "Shabunder",
+    "Nahuda Mahomet"
+  ],
+  "verbatim_substrings": [
+    "Your very loving friend",
+    "Henry Middleton.",
+    "P.S.",
+    "Laus Deo.",
+    "16th of May, 1611",
+    "MR. FEMELL",
+    "Shabunder",
+    "Nahuda Mahomet"
+  ],
+  "expect_margin_note": false,
+  "expect_editorial": false
+}

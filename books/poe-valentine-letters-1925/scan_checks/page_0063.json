@@ -1,0 +1,44 @@
+{
+  "book_id": "poe-valentine-letters-1925",
+  "page_number": 63,
+  "check_id": "scan-check-p0063",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "974e21816886909b8c10fab2a5955f46f27ab450170967b148c8f7c04db4aa46",
+  "checks": [
+    {
+      "block_id": "p0063-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Reverse of Letter II: 'LETTER NUMBER TWO' fixed to running_header; postal docketing fixed to address_block."
+    },
+    {
+      "block_id": "p0063-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Reverse of Letter II: 'LETTER NUMBER TWO' fixed to running_header; postal docketing fixed to address_block."
+    },
+    {
+      "block_id": "p0063-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Reverse of Letter II: 'LETTER NUMBER TWO' fixed to running_header; postal docketing fixed to address_block."
+    },
+    {
+      "block_id": "p0063-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Reverse of Letter II: 'LETTER NUMBER TWO' fixed to running_header; postal docketing fixed to address_block."
+    },
+    {
+      "block_id": "p0063-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Reverse of Letter II: 'LETTER NUMBER TWO' fixed to running_header; postal docketing fixed to address_block."
+    },
+    {
+      "block_id": "p0063-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Reverse of Letter II: 'LETTER NUMBER TWO' fixed to running_header; postal docketing fixed to address_block."
+    },
+    {
+      "block_id": "p0063-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Reverse of Letter II: 'LETTER NUMBER TWO' fixed to running_header; postal docketing fixed to address_block."
+    }
+  ]
+}

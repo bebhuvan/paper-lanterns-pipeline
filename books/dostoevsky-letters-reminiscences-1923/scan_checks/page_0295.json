@@ -1,0 +1,29 @@
+{
+  "book_id": "dostoevsky-letters-reminiscences-1923",
+  "page_number": 295,
+  "check_id": "scan-check-p0295",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "f515a17a5048fc62613816e40f3af850ae15a9cb75ed105a573950913f9657ee",
+  "checks": [
+    {
+      "block_id": "p0295-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Mille Âmes' (U+00C2) printed diacritic and opening of Plescheyev Biographical Index entry."
+    },
+    {
+      "block_id": "p0295-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Mille Âmes' (U+00C2) printed diacritic and opening of Plescheyev Biographical Index entry."
+    },
+    {
+      "block_id": "p0295-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Mille Âmes' (U+00C2) printed diacritic and opening of Plescheyev Biographical Index entry."
+    },
+    {
+      "block_id": "p0295-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Mille Âmes' (U+00C2) printed diacritic and opening of Plescheyev Biographical Index entry."
+    }
+  ]
+}

@@ -1,0 +1,1617 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "rukaat-i-alamgiri-aurangzeb-1908",
+  "force_split_before_block_ids": [],
+  "forbid_split_before_block_ids": [],
+  "enclosure_block_ranges": [],
+  "explicit_letters": [
+    {
+      "sequence_index": 1,
+      "start_block_id": "p0015-b0003",
+      "letter_number_label": "I",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Sultan Mahammad Mūazzam, Sháh Alam Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 2,
+      "start_block_id": "p0017-b0002",
+      "letter_number_label": "II",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Sultan Mahammad Mūazzam, Sháh Alam Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 3,
+      "start_block_id": "p0018-b0004",
+      "letter_number_label": "III",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Sultan Mahammad Mūazzam, Sháh Alam Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 4,
+      "start_block_id": "p0019-b0002",
+      "letter_number_label": "IV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Sultan Mahammad Mūazzam, Sháh Alam Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 5,
+      "start_block_id": "p0019-b0005",
+      "letter_number_label": "V",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Sultan Mahammad Mūazzam, Sháh Alam Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 6,
+      "start_block_id": "p0021-b0003",
+      "letter_number_label": "VI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Sultan Mahammad Mūazzam, Sháh Alam Bahádūr",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1686",
+      "dateline_tagged": "1686",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 7,
+      "start_block_id": "p0021-b0005",
+      "letter_number_label": "VII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Sultan Mahammad Mūazzam, Sháh Alam Bahádūr",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1704",
+      "dateline_tagged": "1704",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 8,
+      "start_block_id": "p0023-b0003",
+      "letter_number_label": "VIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 9,
+      "start_block_id": "p0023-b0006",
+      "letter_number_label": "IX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 10,
+      "start_block_id": "p0024-b0004",
+      "letter_number_label": "X",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 11,
+      "start_block_id": "p0025-b0004",
+      "letter_number_label": "XI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1692",
+      "dateline_tagged": "1692",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 12,
+      "start_block_id": "p0026-b0004",
+      "letter_number_label": "XII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 13,
+      "start_block_id": "p0031-b0003",
+      "letter_number_label": "XIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 14,
+      "start_block_id": "p0031-b0005",
+      "letter_number_label": "XIV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 15,
+      "start_block_id": "p0032-b0004",
+      "letter_number_label": "XV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 16,
+      "start_block_id": "p0033-b0004",
+      "letter_number_label": "XVI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 17,
+      "start_block_id": "p0035-b0002",
+      "letter_number_label": "XVII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 18,
+      "start_block_id": "p0035-b0005",
+      "letter_number_label": "XVIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1686",
+      "dateline_tagged": "1686",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 19,
+      "start_block_id": "p0036-b0003",
+      "letter_number_label": "XIX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1704",
+      "dateline_tagged": "1704",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 20,
+      "start_block_id": "p0038-b0004",
+      "letter_number_label": "XX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 21,
+      "start_block_id": "p0039-b0004",
+      "letter_number_label": "XXI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 22,
+      "start_block_id": "p0040-b0004",
+      "letter_number_label": "XXII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 23,
+      "start_block_id": "p0041-b0004",
+      "letter_number_label": "XXIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1704",
+      "dateline_tagged": "1704",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 24,
+      "start_block_id": "p0042-b0004",
+      "letter_number_label": "XXIV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 25,
+      "start_block_id": "p0043-b0003",
+      "letter_number_label": "XXV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 26,
+      "start_block_id": "p0043-b0006",
+      "letter_number_label": "XXVI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 27,
+      "start_block_id": "p0045-b0002",
+      "letter_number_label": "XXVII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 28,
+      "start_block_id": "p0045-b0004",
+      "letter_number_label": "XXVIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 29,
+      "start_block_id": "p0047-b0002",
+      "letter_number_label": "XXIX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 30,
+      "start_block_id": "p0047-b0005",
+      "letter_number_label": "XXX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 31,
+      "start_block_id": "p0047-b0008",
+      "letter_number_label": "XXXI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1704",
+      "dateline_tagged": "1704",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 32,
+      "start_block_id": "p0048-b0002",
+      "letter_number_label": "XXXII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1704",
+      "dateline_tagged": "1704",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 33,
+      "start_block_id": "p0048-b0005",
+      "letter_number_label": "XXXIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1704",
+      "dateline_tagged": "1704",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 34,
+      "start_block_id": "p0049-b0004",
+      "letter_number_label": "XXXIV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 35,
+      "start_block_id": "p0050-b0004",
+      "letter_number_label": "XXXV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 36,
+      "start_block_id": "p0050-b0007",
+      "letter_number_label": "XXXVI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1704",
+      "dateline_tagged": "1704",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 37,
+      "start_block_id": "p0052-b0004",
+      "letter_number_label": "XXXVII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1704",
+      "dateline_tagged": "1704",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 38,
+      "start_block_id": "p0053-b0003",
+      "letter_number_label": "XXXVIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1696",
+      "dateline_tagged": "1696",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 39,
+      "start_block_id": "p0054-b0003",
+      "letter_number_label": "XXXIX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 40,
+      "start_block_id": "p0055-b0003",
+      "letter_number_label": "XL",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 41,
+      "start_block_id": "p0056-b0002",
+      "letter_number_label": "XLI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 42,
+      "start_block_id": "p0056-b0005",
+      "letter_number_label": "XLII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 43,
+      "start_block_id": "p0057-b0004",
+      "letter_number_label": "XLIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1700",
+      "dateline_tagged": "1700",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 44,
+      "start_block_id": "p0058-b0004",
+      "letter_number_label": "XLIV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1704",
+      "dateline_tagged": "1704",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 45,
+      "start_block_id": "p0059-b0003",
+      "letter_number_label": "XLV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 46,
+      "start_block_id": "p0060-b0002",
+      "letter_number_label": "XLVI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 47,
+      "start_block_id": "p0060-b0005",
+      "letter_number_label": "XLVII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 48,
+      "start_block_id": "p0061-b0002",
+      "letter_number_label": "XLVIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 49,
+      "start_block_id": "p0062-b0004",
+      "letter_number_label": "XLIX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 50,
+      "start_block_id": "p0063-b0004",
+      "letter_number_label": "L",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 51,
+      "start_block_id": "p0064-b0004",
+      "letter_number_label": "LI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 52,
+      "start_block_id": "p0065-b0004",
+      "letter_number_label": "LII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 53,
+      "start_block_id": "p0066-b0004",
+      "letter_number_label": "LIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 54,
+      "start_block_id": "p0067-b0004",
+      "letter_number_label": "LIV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 55,
+      "start_block_id": "p0069-b0004",
+      "letter_number_label": "LV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 56,
+      "start_block_id": "p0071-b0002",
+      "letter_number_label": "LVI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1690 or 1701",
+      "dateline_tagged": "1690 or 1701",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 57,
+      "start_block_id": "p0072-b0004",
+      "letter_number_label": "LVII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 58,
+      "start_block_id": "p0072-b0007",
+      "letter_number_label": "LVIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1704",
+      "dateline_tagged": "1704",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 59,
+      "start_block_id": "p0073-b0004",
+      "letter_number_label": "LIX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 60,
+      "start_block_id": "p0074-b0002",
+      "letter_number_label": "LX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 61,
+      "start_block_id": "p0074-b0005",
+      "letter_number_label": "LXI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 62,
+      "start_block_id": "p0074-b0007",
+      "letter_number_label": "LXII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 63,
+      "start_block_id": "p0075-b0004",
+      "letter_number_label": "LXIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 64,
+      "start_block_id": "p0076-b0002",
+      "letter_number_label": "LXIV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1704",
+      "dateline_tagged": "1704",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 65,
+      "start_block_id": "p0077-b0002",
+      "letter_number_label": "LXV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 66,
+      "start_block_id": "p0077-b0005",
+      "letter_number_label": "LXVI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 67,
+      "start_block_id": "p0078-b0004",
+      "letter_number_label": "LXVII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 68,
+      "start_block_id": "p0078-b0007",
+      "letter_number_label": "LXVIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 69,
+      "start_block_id": "p0079-b0004",
+      "letter_number_label": "LXIX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 70,
+      "start_block_id": "p0080-b0002",
+      "letter_number_label": "LXX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 71,
+      "start_block_id": "p0081-b0004",
+      "letter_number_label": "LXXI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 72,
+      "start_block_id": "p0082-b0005",
+      "letter_number_label": "LXXII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1707",
+      "dateline_tagged": "1707",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 73,
+      "start_block_id": "p0085-b0002-s2",
+      "letter_number_label": "LXXIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Sultan Muhammad Kám Bakhsha",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1707",
+      "dateline_tagged": "1707",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 74,
+      "start_block_id": "p0087-b0003",
+      "letter_number_label": "LXXIV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Muhammad Ma’az-ūd-Din Bahádūr",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1706",
+      "dateline_tagged": "1706",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 75,
+      "start_block_id": "p0087-b0006",
+      "letter_number_label": "LXXV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Muhammad Ma’az-ūd-Din Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 76,
+      "start_block_id": "p0089-b0003",
+      "letter_number_label": "LXXVI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Muhammad Bidár Bakhta",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 77,
+      "start_block_id": "p0089-b0005",
+      "letter_number_label": "LXXVII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Muhammad Bidár Bakhta",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 78,
+      "start_block_id": "p0090-b0004",
+      "letter_number_label": "LXXVIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Muhammad Bidár Bakhta",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 79,
+      "start_block_id": "p0091-b0004",
+      "letter_number_label": "LXXIX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Muhammad Bidár Bakhta",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 80,
+      "start_block_id": "p0092-b0004",
+      "letter_number_label": "LXXX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Muhammad Bidár Bakhta",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 81,
+      "start_block_id": "p0092-b0007",
+      "letter_number_label": "LXXXI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Muhammad Bidár Bakhta",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 82,
+      "start_block_id": "p0093-b0002",
+      "letter_number_label": "LXXXII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Muhammad Bidár Bakhta",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 83,
+      "start_block_id": "p0093-b0005",
+      "letter_number_label": "LXXXIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Muhammad Bidár Bakhta",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 84,
+      "start_block_id": "p0094-b0004",
+      "letter_number_label": "LXXXIV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Muhammad Bidár Bakhta",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1703",
+      "dateline_tagged": "1703",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 85,
+      "start_block_id": "p0095-b0003",
+      "letter_number_label": "LXXXV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Muhammad Bidár Bakhta",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1692",
+      "dateline_tagged": "1692",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 86,
+      "start_block_id": "p0095-b0006",
+      "letter_number_label": "LXXXVI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Prince Muhammad Bidár Bakhta",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 87,
+      "start_block_id": "p0096-b0003",
+      "letter_number_label": "LXXXVII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Muhammad Azim-ūd-Din Bahádūr",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1704",
+      "dateline_tagged": "1704",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 88,
+      "start_block_id": "p0097-b0002",
+      "letter_number_label": "LXXXVIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Muhammad Azim-ūd-Din Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 89,
+      "start_block_id": "p0098-b0002",
+      "letter_number_label": "LXXXIX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Muhammad Azim-ūd-Din Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 90,
+      "start_block_id": "p0098-b0004",
+      "letter_number_label": "XC",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Muhammad Azim-ūd-Din Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 91,
+      "start_block_id": "p0099-b0003",
+      "letter_number_label": "XCI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Amir-ūl-Umará Sháyasta Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1659",
+      "dateline_tagged": "1659",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 92,
+      "start_block_id": "p0102-b0003",
+      "letter_number_label": "XCII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1704",
+      "dateline_tagged": "1704",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 93,
+      "start_block_id": "p0104-b0004",
+      "letter_number_label": "XCIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1704",
+      "dateline_tagged": "1704",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 94,
+      "start_block_id": "p0105-b0003",
+      "letter_number_label": "XCIV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 95,
+      "start_block_id": "p0107-b0002",
+      "letter_number_label": "XCV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1703",
+      "dateline_tagged": "1703",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 96,
+      "start_block_id": "p0108-b0005",
+      "letter_number_label": "XCVI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1706",
+      "dateline_tagged": "1706",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 97,
+      "start_block_id": "p0111-b0002",
+      "letter_number_label": "XCVII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 98,
+      "start_block_id": "p0112-b0002",
+      "letter_number_label": "XCVIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 99,
+      "start_block_id": "p0112-b0005",
+      "letter_number_label": "XCIX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1698",
+      "dateline_tagged": "1698",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 100,
+      "start_block_id": "p0114-b0004",
+      "letter_number_label": "C",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 101,
+      "start_block_id": "p0114-b0007",
+      "letter_number_label": "CI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1706",
+      "dateline_tagged": "1706",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 102,
+      "start_block_id": "p0115-b0004",
+      "letter_number_label": "CII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 103,
+      "start_block_id": "p0116-b0002",
+      "letter_number_label": "CIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 104,
+      "start_block_id": "p0116-b0005",
+      "letter_number_label": "CIV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1703",
+      "dateline_tagged": "1703",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 105,
+      "start_block_id": "p0117-b0004",
+      "letter_number_label": "CV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 106,
+      "start_block_id": "p0118-b0002",
+      "letter_number_label": "CVI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 107,
+      "start_block_id": "p0118-b0005",
+      "letter_number_label": "CVII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 108,
+      "start_block_id": "p0119-b0004",
+      "letter_number_label": "CVIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1704",
+      "dateline_tagged": "1704",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 109,
+      "start_block_id": "p0120-b0005",
+      "letter_number_label": "CIX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 110,
+      "start_block_id": "p0122-b0002",
+      "letter_number_label": "CX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 111,
+      "start_block_id": "p0122-b0005",
+      "letter_number_label": "CXI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1689",
+      "dateline_tagged": "1689",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 112,
+      "start_block_id": "p0123-b0004",
+      "letter_number_label": "CXII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 113,
+      "start_block_id": "p0124-b0002",
+      "letter_number_label": "CXIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 114,
+      "start_block_id": "p0124-b0005",
+      "letter_number_label": "CXIV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1695",
+      "dateline_tagged": "1695",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 115,
+      "start_block_id": "p0126-b0002",
+      "letter_number_label": "CXV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 116,
+      "start_block_id": "p0126-b0005",
+      "letter_number_label": "CXVI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1698",
+      "dateline_tagged": "1698",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 117,
+      "start_block_id": "p0127-b0005",
+      "letter_number_label": "CXVII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1698",
+      "dateline_tagged": "1698",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 118,
+      "start_block_id": "p0130-b0004",
+      "letter_number_label": "CXVIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1703",
+      "dateline_tagged": "1703",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 119,
+      "start_block_id": "p0131-b0004",
+      "letter_number_label": "CXIX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 120,
+      "start_block_id": "p0132-b0002",
+      "letter_number_label": "CXX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 121,
+      "start_block_id": "p0133-b0004",
+      "letter_number_label": "CXXI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 122,
+      "start_block_id": "p0134-b0004",
+      "letter_number_label": "CXXII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 123,
+      "start_block_id": "p0135-b0004",
+      "letter_number_label": "CXXIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 124,
+      "start_block_id": "p0135-b0007",
+      "letter_number_label": "CXXIV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 125,
+      "start_block_id": "p0136-b0002",
+      "letter_number_label": "CXXV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1693",
+      "dateline_tagged": "1693",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 126,
+      "start_block_id": "p0137-b0004",
+      "letter_number_label": "CXXVI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1697",
+      "dateline_tagged": "1697",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 127,
+      "start_block_id": "p0139-b0002",
+      "letter_number_label": "CXXVII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 128,
+      "start_block_id": "p0139-b0005",
+      "letter_number_label": "CXXVIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1694",
+      "dateline_tagged": "1694",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 129,
+      "start_block_id": "p0141-b0002",
+      "letter_number_label": "CXXIX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 130,
+      "start_block_id": "p0141-b0005",
+      "letter_number_label": "CXXX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 131,
+      "start_block_id": "p0142-b0002",
+      "letter_number_label": "CXXXI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 132,
+      "start_block_id": "p0142-b0005",
+      "letter_number_label": "CXXXII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 133,
+      "start_block_id": "p0143-b0004",
+      "letter_number_label": "CXXXIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1692",
+      "dateline_tagged": "1692",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 134,
+      "start_block_id": "p0144-b0002",
+      "letter_number_label": "CXXXIV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1697",
+      "dateline_tagged": "1697",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 135,
+      "start_block_id": "p0145-b0004",
+      "letter_number_label": "CXXXV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1706",
+      "dateline_tagged": "1706",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 136,
+      "start_block_id": "p0146-b0004",
+      "letter_number_label": "CXXXVI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1704",
+      "dateline_tagged": "1704",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 137,
+      "start_block_id": "p0147-b0002",
+      "letter_number_label": "CXXXVII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 138,
+      "start_block_id": "p0147-b0005",
+      "letter_number_label": "CXXXVIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1694",
+      "dateline_tagged": "1694",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 139,
+      "start_block_id": "p0148-b0002",
+      "letter_number_label": "CXXXIX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 140,
+      "start_block_id": "p0148-b0005",
+      "letter_number_label": "CXL",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 141,
+      "start_block_id": "p0149-b0004",
+      "letter_number_label": "CXLI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 142,
+      "start_block_id": "p0150-b0004",
+      "letter_number_label": "CXLII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 143,
+      "start_block_id": "p0150-b0007",
+      "letter_number_label": "CXLIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 144,
+      "start_block_id": "p0151-b0004",
+      "letter_number_label": "CXLIV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 145,
+      "start_block_id": "p0152-b0004",
+      "letter_number_label": "CXLV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 146,
+      "start_block_id": "p0152-b0007",
+      "letter_number_label": "CXLVI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 147,
+      "start_block_id": "p0153-b0004",
+      "letter_number_label": "CXLVII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 148,
+      "start_block_id": "p0153-b0007",
+      "letter_number_label": "CXLVIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1660",
+      "dateline_tagged": "1660",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 149,
+      "start_block_id": "p0154-b0005",
+      "letter_number_label": "CXLIX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 150,
+      "start_block_id": "p0155-b0004",
+      "letter_number_label": "CL",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 151,
+      "start_block_id": "p0157-b0002",
+      "letter_number_label": "CLI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 152,
+      "start_block_id": "p0157-b0005",
+      "letter_number_label": "CLII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 153,
+      "start_block_id": "p0158-b0005",
+      "letter_number_label": "CLIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1694",
+      "dateline_tagged": "1694",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 154,
+      "start_block_id": "p0159-b0005",
+      "letter_number_label": "CLIV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 155,
+      "start_block_id": "p0160-b0004",
+      "letter_number_label": "CLV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 156,
+      "start_block_id": "p0161-b0004",
+      "letter_number_label": "CLVI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1699",
+      "dateline_tagged": "1699",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 157,
+      "start_block_id": "p0162-b0003",
+      "letter_number_label": "CLVII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Gházi-ūd-Din Khán Bahádūr Firūz Jang",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 158,
+      "start_block_id": "p0163-b0004",
+      "letter_number_label": "CLVIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Gházi-ūd-Din Khán Bahádūr Firūz Jang",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1702",
+      "dateline_tagged": "1702",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 159,
+      "start_block_id": "p0163-b0007",
+      "letter_number_label": "CLIX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Gházi-ūd-Din Khán Bahádūr Firūz Jang",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 160,
+      "start_block_id": "p0165-b0003",
+      "letter_number_label": "CLX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Zūl Fikár Khán Bahádūr Nasrat Jang",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 161,
+      "start_block_id": "p0166-b0004",
+      "letter_number_label": "CLXI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Zūl Fikár Khán Bahádūr Nasrat Jang",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 162,
+      "start_block_id": "p0167-b0004",
+      "letter_number_label": "CLXII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Zūl Fikár Khán Bahádūr Nasrat Jang",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 163,
+      "start_block_id": "p0168-b0004",
+      "letter_number_label": "CLXIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Zūl Fikár Khán Bahádūr Nasrat Jang",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1702",
+      "dateline_tagged": "1702",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 164,
+      "start_block_id": "p0169-b0004",
+      "letter_number_label": "CLXIV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Zūl Fikár Khán Bahádūr Nasrat Jang",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 165,
+      "start_block_id": "p0171-b0003",
+      "letter_number_label": "CLXV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Mirzá Sadr-ūd-Din Muhammad Khán Safavi",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 166,
+      "start_block_id": "p0171-b0006",
+      "letter_number_label": "CLXVI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Mirzá Sadr-ūd-Din Muhammad Khán Safavi",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 167,
+      "start_block_id": "p0173-b0003",
+      "letter_number_label": "CLXVII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "A’akel Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1662",
+      "dateline_tagged": "1662",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 168,
+      "start_block_id": "p0174-b0003",
+      "letter_number_label": "CLXVIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Hamid-ūd-Din Khán Bahádūr",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 169,
+      "start_block_id": "p0175-b0003",
+      "letter_number_label": "CLXIX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Ináyat Alláh Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 170,
+      "start_block_id": "p0176-b0002",
+      "letter_number_label": "CLXX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Ináyat Alláh Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1699",
+      "dateline_tagged": "1699",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 171,
+      "start_block_id": "p0177-b0004",
+      "letter_number_label": "CLXXI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Ináyat Alláh Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 172,
+      "start_block_id": "p0178-b0002",
+      "letter_number_label": "CLXXII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Ináyat Alláh Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 173,
+      "start_block_id": "p0178-b0005",
+      "letter_number_label": "CLXXIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Ináyat Alláh Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 174,
+      "start_block_id": "p0178-b0008",
+      "letter_number_label": "CLXXIV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Ináyat Alláh Khán",
+      "boundary_confidence": "human_mapped",
+      "dateline_plain": "1694",
+      "dateline_tagged": "1694",
+      "dateline_position": "top"
+    },
+    {
+      "sequence_index": 175,
+      "start_block_id": "p0181-b0003",
+      "letter_number_label": "CLXXV",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 176,
+      "start_block_id": "p0182-b0005",
+      "letter_number_label": "CLXXVI",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 177,
+      "start_block_id": "p0183-b0004",
+      "letter_number_label": "CLXXVII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 178,
+      "start_block_id": "p0184-b0002",
+      "letter_number_label": "CLXXVIII",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Asad Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 179,
+      "start_block_id": "p0185-b0004",
+      "letter_number_label": "CLXXIX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Abdūl Kásim Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 180,
+      "start_block_id": "p0186-b0004",
+      "letter_number_label": "CLXXX",
+      "sender_display": "Aurangzeb",
+      "recipient_display": "Abdūl Kásim Khán",
+      "boundary_confidence": "human_mapped"
+    },
+    {
+      "sequence_index": 181,
+      "start_block_id": "p0187-b0004",
+      "letter_number_label": "CLXXXI",
+      "sender_display": "Prince Mahammad A’azam Sháh Bahádūr",
+      "recipient_display": "Afazal Khán",
+      "boundary_confidence": "human_mapped"
+    }
+  ],
+  "notes": "181 Mughal letters from Ruka’at-i-Alamgiri (1908); 1..180 by Aurangzeb to his sons and nobles, and 181 mandate by Prince A’azam to Afazal Khán; preserves genuine 1908 printer header errata on #130 (CXX.) and #148 (CXVIII.) while indexing canonical CXXX/CXLVIII labels."
+}

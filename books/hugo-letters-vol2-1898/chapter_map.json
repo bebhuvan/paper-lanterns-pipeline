@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "hugo-letters-vol2-1898",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Half-Title & Title Page",
+      "start_page": 1,
+      "end_page": 10
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Note",
+      "start_page": 11,
+      "end_page": 12
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents",
+      "start_page": 13,
+      "end_page": 14
+    },
+    {
+      "kind": "chapter",
+      "title": "I. Letters to Various Persons. — Journey on the Rhine (1836–1851)",
+      "start_page": 15,
+      "end_page": 68
+    },
+    {
+      "kind": "chapter",
+      "title": "II. The Coup d'État. — Letters from Brussels (1851–1852)",
+      "start_page": 69,
+      "end_page": 128
+    },
+    {
+      "kind": "chapter",
+      "title": "III. Letters from Exile (1852–1870)",
+      "start_page": 129,
+      "end_page": 248
+    },
+    {
+      "kind": "chapter",
+      "title": "IV. After the Fall of the Empire (1870–1882)",
+      "start_page": 249,
+      "end_page": 270
+    }
+  ]
+}

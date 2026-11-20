@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "hugo-letters-vol1-1896",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Half-Title, Frontispiece & Title Page",
+      "start_page": 1,
+      "end_page": 12
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents",
+      "start_page": 13,
+      "end_page": 14
+    },
+    {
+      "kind": "chapter",
+      "title": "I. Letters to His Father and Mother (1815–1826)",
+      "start_page": 15,
+      "end_page": 54
+    },
+    {
+      "kind": "chapter",
+      "title": "II. To Adèle Hugo, and Others. — Journey to Reims. — Coronation of Charles X.",
+      "start_page": 55,
+      "end_page": 84
+    },
+    {
+      "kind": "chapter",
+      "title": "III. To Various Persons",
+      "start_page": 85,
+      "end_page": 192
+    },
+    {
+      "kind": "chapter",
+      "title": "IV. To Charles Augustin Sainte-Beuve",
+      "start_page": 193,
+      "end_page": 228
+    },
+    {
+      "kind": "chapter",
+      "title": "V. To His Children",
+      "start_page": 229,
+      "end_page": 258
+    },
+    {
+      "kind": "appendix",
+      "title": "Appendix I. Académie des Jeux Floraux, 1819–1823",
+      "start_page": 259,
+      "end_page": 284
+    },
+    {
+      "kind": "appendix",
+      "title": "Appendix II. Additional Letters to Various Persons",
+      "start_page": 285,
+      "end_page": 300
+    }
+  ]
+}

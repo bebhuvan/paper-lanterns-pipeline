@@ -1,0 +1,14 @@
+{
+  "book_id": "poe-whitman-last-letters-1909",
+  "page_number": 11,
+  "check_id": "scan-check-p0011",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "24f654e1164538c0d26918bdd4f69d481f2e7b2f43fb3c35a950375fe70ef2b0",
+  "checks": [
+    {
+      "block_id": "p0011-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified dedication plate typography."
+    }
+  ]
+}

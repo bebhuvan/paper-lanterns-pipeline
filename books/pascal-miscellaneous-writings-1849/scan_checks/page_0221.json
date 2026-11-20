@@ -1,0 +1,49 @@
+{
+  "book_id": "pascal-miscellaneous-writings-1849",
+  "page_number": 221,
+  "check_id": "scan-check-p0221",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "726c371c1e4ab155e1407c11e2271a63b668bad9c8086efdf0f86a76e6278ad2",
+  "checks": [
+    {
+      "block_id": "p0221-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Translator's Editorial Notice explaining MS prefix mark '+' / dagger for first-time MSS passages."
+    },
+    {
+      "block_id": "p0221-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Translator's Editorial Notice explaining MS prefix mark '+' / dagger for first-time MSS passages."
+    },
+    {
+      "block_id": "p0221-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Translator's Editorial Notice explaining MS prefix mark '+' / dagger for first-time MSS passages."
+    },
+    {
+      "block_id": "p0221-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Translator's Editorial Notice explaining MS prefix mark '+' / dagger for first-time MSS passages."
+    },
+    {
+      "block_id": "p0221-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Translator's Editorial Notice explaining MS prefix mark '+' / dagger for first-time MSS passages."
+    },
+    {
+      "block_id": "p0221-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Translator's Editorial Notice explaining MS prefix mark '+' / dagger for first-time MSS passages."
+    },
+    {
+      "block_id": "p0221-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Translator's Editorial Notice explaining MS prefix mark '+' / dagger for first-time MSS passages."
+    },
+    {
+      "block_id": "p0221-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Translator's Editorial Notice explaining MS prefix mark '+' / dagger for first-time MSS passages."
+    }
+  ]
+}

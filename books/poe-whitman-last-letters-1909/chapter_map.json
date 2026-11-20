@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "poe-whitman-last-letters-1909",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Half-Title, Frontispiece & Title Page",
+      "start_page": 1,
+      "end_page": 12
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Preface",
+      "start_page": 13,
+      "end_page": 14
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents",
+      "start_page": 15,
+      "end_page": 16
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Half-Title & Introduction",
+      "start_page": 17,
+      "end_page": 22
+    },
+    {
+      "kind": "chapter",
+      "title": "The Last Letters of Edgar Allan Poe to Sarah Helen Whitman",
+      "start_page": 23,
+      "end_page": 65
+    },
+    {
+      "kind": "chapter",
+      "title": "Marriage Documents & Letter to Mrs. Clemm",
+      "start_page": 66,
+      "end_page": 78
+    }
+  ]
+}

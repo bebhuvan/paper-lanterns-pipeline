@@ -1,0 +1,28 @@
+{
+  "book_id": "eic-letters-received-vol-6-1617b",
+  "page_number": 142,
+  "check_id": "vol6-scan-check-p0142",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "e635e87e06b15cf8106b3e84e31aa008946a1a009083ceab2735fa3498a33dca",
+  "checked_at": "2026-11-17T20:23:38.959834+00:00",
+  "checks": [
+    {
+      "block_id": "p0142-b0006",
+      "token": "Cokin,^8",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0142.png: callout '8' in body refers to unnumbered footnote 'George Cokayne.' (omitted '8' by compositor)."
+    },
+    {
+      "block_id": "p0142-b0013",
+      "token": "George Cokayne.",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0142.png: footnote 8 label '8' omitted in print before 'George Cokayne.'"
+    },
+    {
+      "block_id": "p0142-b0013-s2",
+      "token": "George Cokayne.",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0142.png: split fragment of unlabelled footnote 8 (compositor omitted 8)."
+    }
+  ]
+}

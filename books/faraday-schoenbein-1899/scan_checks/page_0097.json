@@ -1,0 +1,59 @@
+{
+  "book_id": "faraday-schoenbein-1899",
+  "page_number": 97,
+  "check_id": "scan-check-p0097",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "99dfa6a53e71f3b599f1fd56d6d042dd1517c12253a5f1c1954f288a93acbb40",
+  "checks": [
+    {
+      "block_id": "p0097-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Greek 'α)' list marker verbatim."
+    },
+    {
+      "block_id": "p0097-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Greek 'α)' list marker verbatim."
+    },
+    {
+      "block_id": "p0097-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Greek 'α)' list marker verbatim."
+    },
+    {
+      "block_id": "p0097-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Greek 'α)' list marker verbatim."
+    },
+    {
+      "block_id": "p0097-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Greek 'α)' list marker verbatim."
+    },
+    {
+      "block_id": "p0097-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Greek 'α)' list marker verbatim."
+    },
+    {
+      "block_id": "p0097-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Greek 'α)' list marker verbatim."
+    },
+    {
+      "block_id": "p0097-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Greek 'α)' list marker verbatim."
+    },
+    {
+      "block_id": "p0097-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Greek 'α)' list marker verbatim."
+    },
+    {
+      "block_id": "p0097-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Greek 'α)' list marker verbatim."
+    }
+  ]
+}

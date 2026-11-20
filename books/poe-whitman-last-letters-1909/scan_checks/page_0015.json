@@ -1,0 +1,74 @@
+{
+  "book_id": "poe-whitman-last-letters-1909",
+  "page_number": 15,
+  "check_id": "scan-check-p0015",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "99acc6d928f94ec76e3ac641d00947f23563e7bdb5b03d3c196cb12bade1e08e",
+  "checks": [
+    {
+      "block_id": "p0015-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified CONTENTS poppy headpiece dropped and all 9 letter entries + front/back titles."
+    },
+    {
+      "block_id": "p0015-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified CONTENTS poppy headpiece dropped and all 9 letter entries + front/back titles."
+    },
+    {
+      "block_id": "p0015-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified CONTENTS poppy headpiece dropped and all 9 letter entries + front/back titles."
+    },
+    {
+      "block_id": "p0015-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified CONTENTS poppy headpiece dropped and all 9 letter entries + front/back titles."
+    },
+    {
+      "block_id": "p0015-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified CONTENTS poppy headpiece dropped and all 9 letter entries + front/back titles."
+    },
+    {
+      "block_id": "p0015-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified CONTENTS poppy headpiece dropped and all 9 letter entries + front/back titles."
+    },
+    {
+      "block_id": "p0015-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified CONTENTS poppy headpiece dropped and all 9 letter entries + front/back titles."
+    },
+    {
+      "block_id": "p0015-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified CONTENTS poppy headpiece dropped and all 9 letter entries + front/back titles."
+    },
+    {
+      "block_id": "p0015-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified CONTENTS poppy headpiece dropped and all 9 letter entries + front/back titles."
+    },
+    {
+      "block_id": "p0015-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified CONTENTS poppy headpiece dropped and all 9 letter entries + front/back titles."
+    },
+    {
+      "block_id": "p0015-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified CONTENTS poppy headpiece dropped and all 9 letter entries + front/back titles."
+    },
+    {
+      "block_id": "p0015-b0013",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified CONTENTS poppy headpiece dropped and all 9 letter entries + front/back titles."
+    },
+    {
+      "block_id": "p0015-b0014",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified CONTENTS poppy headpiece dropped and all 9 letter entries + front/back titles."
+    }
+  ]
+}

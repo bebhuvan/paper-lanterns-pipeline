@@ -1,0 +1,46 @@
+{
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Preliminaries & Title-Page",
+      "start_block_id": "p0001-b0001",
+      "end_block_id": "p0007-b0011"
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents",
+      "start_block_id": "p0009-b0001",
+      "end_block_id": "p0014-b0019"
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Introduction",
+      "start_block_id": "p0015-b0001",
+      "end_block_id": "p0046-b0004"
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters Received: January–June 1617 (Nos. 424–508)",
+      "start_block_id": "p0047-b0001",
+      "end_block_id": "p0360-b0008"
+    },
+    {
+      "kind": "chapter",
+      "title": "Appendix (Nos. I–VIII)",
+      "start_block_id": "p0361-b0001",
+      "end_block_id": "p0396-b0009"
+    },
+    {
+      "kind": "index",
+      "title": "Index",
+      "start_block_id": "p0397-b0001",
+      "end_block_id": "p0418-b0008"
+    },
+    {
+      "kind": "backmatter",
+      "title": "Corrigenda & Colophon",
+      "start_block_id": "p0419-b0001",
+      "end_block_id": "p0420-b0001"
+    }
+  ]
+}

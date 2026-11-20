@@ -1,0 +1,49 @@
+{
+  "book_id": "faraday-schoenbein-1899",
+  "page_number": 63,
+  "check_id": "scan-check-p0063",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "619caaa73f7f1ca971bd924c43c4d550d674e26954b6e6054e9d0afc6cc22a75",
+  "checks": [
+    {
+      "block_id": "p0063-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Über das Verhalten' (Ü) and footnote ink verbatim."
+    },
+    {
+      "block_id": "p0063-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Über das Verhalten' (Ü) and footnote ink verbatim."
+    },
+    {
+      "block_id": "p0063-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Über das Verhalten' (Ü) and footnote ink verbatim."
+    },
+    {
+      "block_id": "p0063-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Über das Verhalten' (Ü) and footnote ink verbatim."
+    },
+    {
+      "block_id": "p0063-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Über das Verhalten' (Ü) and footnote ink verbatim."
+    },
+    {
+      "block_id": "p0063-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Über das Verhalten' (Ü) and footnote ink verbatim."
+    },
+    {
+      "block_id": "p0063-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Über das Verhalten' (Ü) and footnote ink verbatim."
+    },
+    {
+      "block_id": "p0063-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Über das Verhalten' (Ü) and footnote ink verbatim."
+    }
+  ]
+}

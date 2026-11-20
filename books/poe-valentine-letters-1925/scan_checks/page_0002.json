@@ -1,0 +1,39 @@
+{
+  "book_id": "poe-valentine-letters-1925",
+  "page_number": 2,
+  "check_id": "scan-check-p0002",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "a5bcacca31cca07fde058d36f756141c3b85aaa238ab47351e6d022833a894fe",
+  "checks": [
+    {
+      "block_id": "p0002-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "KC Public Library pocket sticker graphic removed via drop_residue; call-number stamps kept as scanner_residue."
+    },
+    {
+      "block_id": "p0002-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "KC Public Library pocket sticker graphic removed via drop_residue; call-number stamps kept as scanner_residue."
+    },
+    {
+      "block_id": "p0002-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "KC Public Library pocket sticker graphic removed via drop_residue; call-number stamps kept as scanner_residue."
+    },
+    {
+      "block_id": "p0002-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "KC Public Library pocket sticker graphic removed via drop_residue; call-number stamps kept as scanner_residue."
+    },
+    {
+      "block_id": "p0002-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "KC Public Library pocket sticker graphic removed via drop_residue; call-number stamps kept as scanner_residue."
+    },
+    {
+      "block_id": "p0002-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "KC Public Library pocket sticker graphic removed via drop_residue; call-number stamps kept as scanner_residue."
+    }
+  ]
+}

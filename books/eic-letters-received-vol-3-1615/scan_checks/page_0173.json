@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-3-1615",
+  "page_number": 173,
+  "check_id": "vol3-scan-check-p0173",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "f3208cba8d061dc37fa8ec6e855dae183949e2a06c43605b6974357677d0f71e",
+  "checked_at": "2026-11-18T02:22:00+00:00",
+  "checks": [
+    {
+      "block_id": "p0173-b0004",
+      "token": "^1",
+      "verdict": "printed_as_read",
+      "note": "Endnote callout printed in text; corresponding note is in NOTES. section (pp. 343-388)."
+    }
+  ]
+}

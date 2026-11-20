@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "nietzsche-wagner-1921",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Half-Title & Title Page",
+      "start_page": 1,
+      "end_page": 10
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents",
+      "start_page": 11,
+      "end_page": 12
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Foreword",
+      "start_page": 13,
+      "end_page": 14
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Introduction (H. L. Mencken)",
+      "start_page": 15,
+      "end_page": 24
+    },
+    {
+      "kind": "chapter",
+      "title": "I. First Meeting",
+      "start_page": 25,
+      "end_page": 33
+    },
+    {
+      "kind": "chapter",
+      "title": "II. First Visit to Tribschen (Spring of 1869)",
+      "start_page": 34,
+      "end_page": 39
+    },
+    {
+      "kind": "chapter",
+      "title": "III. The Summer of 1869",
+      "start_page": 40,
+      "end_page": 47
+    },
+    {
+      "kind": "chapter",
+      "title": "IV. Late Autumn of 1869",
+      "start_page": 48,
+      "end_page": 53
+    },
+    {
+      "kind": "chapter",
+      "title": "V. Experiences During the Winter of 1870",
+      "start_page": 54,
+      "end_page": 69
+    },
+    {
+      "kind": "chapter",
+      "title": "VI. Wagner's Birthday (April-June, 1870)",
+      "start_page": 70,
+      "end_page": 81
+    },
+    {
+      "kind": "chapter",
+      "title": "VII. War's Alarms and Quiet Family Festivities",
+      "start_page": 82,
+      "end_page": 99
+    },
+    {
+      "kind": "chapter",
+      "title": "VIII. Various Journeyings (1871)",
+      "start_page": 100,
+      "end_page": 105
+    },
+    {
+      "kind": "chapter",
+      "title": "IX. Cares and Joys (1871)",
+      "start_page": 106,
+      "end_page": 116
+    },
+    {
+      "kind": "chapter",
+      "title": "X. The Birth of Tragedy Out of the Spirit of Music (1872)",
+      "start_page": 117,
+      "end_page": 128
+    },
+    {
+      "kind": "chapter",
+      "title": "XI. Difficult Decisions",
+      "start_page": 129,
+      "end_page": 138
+    },
+    {
+      "kind": "chapter",
+      "title": "XII. The Laying of the Cornerstone",
+      "start_page": 139,
+      "end_page": 148
+    },
+    {
+      "kind": "chapter",
+      "title": "XIII. Circular Letter from Richard Wagner to Friedrich Nietzsche, Professor in Ordinary of Classical Philology at the University of Basle",
+      "start_page": 149,
+      "end_page": 157
+    },
+    {
+      "kind": "chapter",
+      "title": "XIV. Conflicts",
+      "start_page": 158,
+      "end_page": 175
+    },
+    {
+      "kind": "chapter",
+      "title": "XV. Misunderstandings (1873)",
+      "start_page": 176,
+      "end_page": 190
+    },
+    {
+      "kind": "chapter",
+      "title": "XVI. Renewed Discords (1873)",
+      "start_page": 191,
+      "end_page": 203
+    },
+    {
+      "kind": "chapter",
+      "title": "XVII. Nietzsche's Appeal to the German Nation (1873)",
+      "start_page": 204,
+      "end_page": 219
+    },
+    {
+      "kind": "chapter",
+      "title": "XVIII. Critical Period (1874)",
+      "start_page": 220,
+      "end_page": 228
+    },
+    {
+      "kind": "chapter",
+      "title": "XIX. Second “Thoughts Out of Season” (1874)",
+      "start_page": 229,
+      "end_page": 238
+    },
+    {
+      "kind": "chapter",
+      "title": "XX. “Schopenhauer as Educator”",
+      "start_page": 239,
+      "end_page": 263
+    },
+    {
+      "kind": "chapter",
+      "title": "XXI. Winter in Bayreuth (1875)",
+      "start_page": 264,
+      "end_page": 280
+    },
+    {
+      "kind": "chapter",
+      "title": "XXII. “Richard Wagner in Bayreuth” (1876)",
+      "start_page": 281,
+      "end_page": 291
+    },
+    {
+      "kind": "chapter",
+      "title": "XXIII. The Bayreuth Festival (1876)",
+      "start_page": 292,
+      "end_page": 308
+    },
+    {
+      "kind": "chapter",
+      "title": "XXIV. End of the Friendship (1876-1878)",
+      "start_page": 309,
+      "end_page": 342
+    }
+  ]
+}

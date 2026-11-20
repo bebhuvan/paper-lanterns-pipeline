@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0.0",
+  "exam_id": "exam_07_newton_1756_p0015",
+  "split": "held_out",
+  "source_pdf": "newton-bentley-letters-1756.pdf",
+  "source_page_number": 15,
+  "archive_id": "fourlettersfroms00newt",
+  "book_title": "Four Letters from Sir Isaac Newton to Doctor Bentley",
+  "year": 1756,
+  "era": "18c",
+  "languages": [
+    "en"
+  ],
+  "profile": "archaic_18c_epistolary",
+  "quirk_tags": [
+    "long_s_orthography",
+    "superscription_address_block",
+    "double_rule_ornament",
+    "drop_cap_initial",
+    "catchword_furniture"
+  ],
+  "expected_printed_folio": "13",
+  "acceptable_printed_folios": [
+    "13",
+    "[ 13 ]",
+    "[13]"
+  ],
+  "expected_letter_segments_on_page": 1,
+  "expected_new_letter_starts": 1,
+  "continues_from_prev_page": false,
+  "continues_to_next_page": true,
+  "has_margin_note": false,
+  "has_editorial_block": false,
+  "has_enclosure": false,
+  "has_postscript": false,
+  "has_address_block": true,
+  "jbig2_source_risk": true,
+  "expected_block_types_present": [
+    "letter_header",
+    "address_block",
+    "salutation",
+    "body"
+  ],
+  "expected_footnote_labels": [],
+  "must_preserve_verbatim": [
+    "LETTER II.",
+    "Worceſter",
+    "SIR,",
+    "diffuſed",
+    "ſpherical",
+    "ſolid Maſs",
+    "Preſſure",
+    "looſening"
+  ],
+  "must_not_modernize_or_leak": [
+    "Worcester",
+    "diffused",
+    "spherical",
+    "solid Mass",
+    "Pressure"
+  ],
+  "notes": "Held-out 18th-c. opener with centered superscription address_block ('For Mr. BENTLEY, at the Palace at Worceſter.') before 'SIR,', dense long-s ſ, and bottom-right catchword 'The'.",
+  "page_image": "pages/exam_07_newton_1756_p0015.png",
+  "page_sha256": "fa66bc9bd0d3332d52e0901c92944f6bb9dffa9a7ba48ae78789c3490296f036",
+  "pixel_size": [
+    1287,
+    2249
+  ],
+  "pixel_verified": true,
+  "case_id": "exam_07_newton_1756_p0015",
+  "id": "exam_07_newton_1756_p0015",
+  "expected_letter_count": 1,
+  "must_contain_exact": [
+    "LETTER II.",
+    "Worceſter",
+    "SIR,",
+    "diffuſed",
+    "ſpherical",
+    "ſolid Maſs",
+    "Preſſure",
+    "looſening"
+  ],
+  "verbatim_substrings": [
+    "LETTER II.",
+    "Worceſter",
+    "SIR,",
+    "diffuſed",
+    "ſpherical",
+    "ſolid Maſs",
+    "Preſſure",
+    "looſening"
+  ],
+  "expect_margin_note": false,
+  "expect_editorial": false
+}

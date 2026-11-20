@@ -1,0 +1,14 @@
+{
+  "book_id": "voltaire-in-his-letters-1919",
+  "page_number": 140,
+  "check_id": "scan-check-p0140",
+  "reviewer": "native-vision-500ppi-scan-check",
+  "source_page_sha256": "4916f556aef4fe27d87cb75e2265583cf107c3f24113a6333fea3fb195f2ca41",
+  "checks": [
+    {
+      "block_id": "p0140-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "500-PPI scan confirms 'Belisaire' printed without accent."
+    }
+  ]
+}

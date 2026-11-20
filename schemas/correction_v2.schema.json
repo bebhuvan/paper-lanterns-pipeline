@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://paperlanterns.org/schemas/correction_v2.schema.json",
+  "title": "CorrectionProposalV2",
+  "description": "Anchor-matched diplomatic block corrections and community proofing proposals stored in books/<book_id>/corrections/*.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "book_id"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "correction-v2"
+    },
+    "book_id": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": ["string", "null"]
+    },
+    "reviewer": {
+      "type": ["string", "null"]
+    },
+    "generated_by": {
+      "type": ["string", "null"],
+      "description": "Automated tool identifier (e.g. 'verify-hotspots', 'scan-check') when machine-proposed; null for human volunteers."
+    },
+    "created_at": {
+      "type": ["string", "null"]
+    },
+    "corrections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["correction_id", "page_number", "op"],
+        "properties": {
+          "correction_id": {
+            "type": "string"
+          },
+          "page_number": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "block_id": {
+            "type": ["string", "null"]
+          },
+          "block_id_hint": {
+            "type": ["string", "null"]
+          },
+          "anchor_text": {
+            "type": ["string", "null"]
+          },
+          "op": {
+            "type": "string",
+            "enum": [
+              "set_text",
+              "set_type",
+              "set_alignment",
+              "set_transition",
+              "set_note_label",
+              "set_cells",
+              "split_block",
+              "merge_with_next",
+              "drop_residue"
+            ]
+          },
+          "replacement_tagged_text": {
+            "type": ["string", "null"]
+          },
+          "replacement_type": {
+            "type": ["string", "null"]
+          },
+          "replacement_alignment": {
+            "type": ["string", "null"],
+            "enum": [
+              "left",
+              "center",
+              "right",
+              "indented",
+              "cascading",
+              "inline",
+              "two_column_left",
+              "two_column_right",
+              null
+            ]
+          },
+          "replacement_transition": {
+            "type": ["string", "null"],
+            "enum": ["none", "starts_new_letter", "starts_enclosure", "ends_enclosure", null]
+          },
+          "replacement_note_label": {
+            "type": ["string", "null"]
+          },
+          "replacement_line_breaks_preserved": {
+            "type": ["boolean", "null"]
+          },
+          "replacement_bbox": {
+            "type": ["array", "null"],
+            "items": { "type": "integer", "minimum": 0, "maximum": 1000 },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "replacement_cells": {
+            "type": ["array", "null"]
+          },
+          "split_blocks": {
+            "type": ["array", "null"],
+            "items": { "type": "object" }
+          },
+          "reviewer": {
+            "type": ["string", "null"]
+          },
+          "source": {
+            "type": "string",
+            "enum": ["human", "machine"],
+            "default": "human"
+          },
+          "note": {
+            "type": ["string", "null"]
+          },
+          "created_at": {
+            "type": ["string", "null"]
+          }
+        }
+      },
+      "default": []
+    },
+    "page_signoff": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["page_number", "status", "reviewer"],
+      "properties": {
+        "page_number": { "type": "integer", "minimum": 1 },
+        "status": {
+          "type": "string",
+          "enum": ["p1_proofed", "verified", "needs_review"]
+        },
+        "reviewer": { "type": "string", "minLength": 1 },
+        "p1_reviewer": { "type": ["string", "null"] },
+        "source_page_sha256": { "type": ["string", "null"] },
+        "page_text_sha256": { "type": ["string", "null"] },
+        "verified_at": { "type": ["string", "null"] },
+        "note": { "type": ["string", "null"] }
+      }
+    },
+    "page_signoffs": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["page_number", "status", "reviewer"],
+        "properties": {
+          "page_number": { "type": "integer", "minimum": 1 },
+          "status": {
+            "type": "string",
+            "enum": ["p1_proofed", "verified", "needs_review"]
+          },
+          "reviewer": { "type": "string", "minLength": 1 },
+          "p1_reviewer": { "type": ["string", "null"] },
+          "source_page_sha256": { "type": ["string", "null"] },
+          "page_text_sha256": { "type": ["string", "null"] },
+          "verified_at": { "type": ["string", "null"] },
+          "note": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "letter_map_patch": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "force_split_before_block_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "forbid_split_before_block_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "explicit_letters": {
+          "type": "array",
+          "items": { "type": "object" }
+        }
+      }
+    }
+  }
+}

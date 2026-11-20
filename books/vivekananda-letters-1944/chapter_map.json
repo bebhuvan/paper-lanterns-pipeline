@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "vivekananda-letters-1944",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Title Pages & Imprint",
+      "start_page": 1,
+      "end_page": 9
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Prefaces (First, Second, and Fourth Editions)",
+      "start_page": 10,
+      "end_page": 12
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents & Frontispiece",
+      "start_page": 13,
+      "end_page": 15
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters I–LV (1888–1893: India, Japan & Early America)",
+      "start_page": 16,
+      "end_page": 96
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters LVI–CV (1894: America)",
+      "start_page": 97,
+      "end_page": 205
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters CVI–CLXIV (1895: America & England)",
+      "start_page": 206,
+      "end_page": 290
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters CLXV–CCXXVII (Dec. 1895–1896: America, England & Europe)",
+      "start_page": 291,
+      "end_page": 374
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters CCXXVIII–CCLXVI (Jan.–Nov. 1897: Return to India, Darjeeling & Almora)",
+      "start_page": 375,
+      "end_page": 435
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters CCLXVII–CCCXVIII (Nov. 1897–1902: India, Second Visit to the West & Final Years)",
+      "start_page": 436,
+      "end_page": 486
+    },
+    {
+      "kind": "appendix",
+      "title": "Notes on Persons Mentioned in the Letters",
+      "start_page": 487,
+      "end_page": 497
+    },
+    {
+      "kind": "appendix",
+      "title": "Index, Erratum & Advaita Ashrama Publications",
+      "start_page": 498,
+      "end_page": 522
+    }
+  ]
+}

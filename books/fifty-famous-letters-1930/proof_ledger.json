@@ -1,0 +1,972 @@
+{
+  "version": "proof-ledger-v2",
+  "book_id": "fifty-famous-letters-1930",
+  "updated_at": "2026-11-19T06:33:11.698763+00:00",
+  "pages": {
+    "25": {
+      "page_number": 25,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.401130+00:00",
+      "source_page_sha256": "0a8f7550d23f918aac910b6928a5583ce00c207d28bf062191f74c1f9c1a8c6b",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0025",
+        "reread_block_ids": [
+          "p0025-b0001",
+          "p0025-b0002",
+          "p0025-b0003",
+          "p0025-b0004",
+          "p0025-b0005",
+          "p0025-b0006"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "26": {
+      "page_number": 26,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.416365+00:00",
+      "source_page_sha256": "01335b5ffb4b240ea9588290db446cd8a8b7f115806a4ae903b1211f0a3cae49",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0026",
+        "reread_block_ids": [
+          "p0026-b0001",
+          "p0026-b0002",
+          "p0026-b0003",
+          "p0026-b0004",
+          "p0026-b0005",
+          "p0026-b0006",
+          "p0026-b0007",
+          "p0026-b0008",
+          "p0026-b0009"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "27": {
+      "page_number": 27,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.422995+00:00",
+      "source_page_sha256": "9dc742053bcb13d44bd09e9cfae8841ff6686d5a02890e728242577794bee880",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0027",
+        "reread_block_ids": [
+          "p0027-b0001"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "29": {
+      "page_number": 29,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.429668+00:00",
+      "source_page_sha256": "5a760780e7ad6d2dbf279ae932636af55155a18f9ed17e31bc5b0f36f8ee8103",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0029",
+        "reread_block_ids": [
+          "p0029-b0001",
+          "p0029-b0002",
+          "p0029-b0003",
+          "p0029-b0004",
+          "p0029-b0005",
+          "p0029-b0006"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "31": {
+      "page_number": 31,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.436425+00:00",
+      "source_page_sha256": "20788e780e74a2f769f2b409543cff4ad718217b3fcb83a50b7a3f635a03a893",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0031",
+        "reread_block_ids": [
+          "p0031-b0001",
+          "p0031-b0002",
+          "p0031-b0003",
+          "p0031-b0004"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "34": {
+      "page_number": 34,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.443370+00:00",
+      "source_page_sha256": "c7a195588999835b06f402a579150458a8dbe08d531e5de45c2c4a2d5139a5e8",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0034",
+        "reread_block_ids": [
+          "p0034-b0001",
+          "p0034-b0002",
+          "p0034-b0003",
+          "p0034-b0004",
+          "p0034-b0005",
+          "p0034-b0006",
+          "p0034-b0007"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "36": {
+      "page_number": 36,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.451537+00:00",
+      "source_page_sha256": "b061b19054c8426f576f72cae92897fdf87565cf1e6d589a13b07b57980497e5",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0036",
+        "reread_block_ids": [
+          "p0036-b0001",
+          "p0036-b0002",
+          "p0036-b0003",
+          "p0036-b0004",
+          "p0036-b0005",
+          "p0036-b0006",
+          "p0036-b0007",
+          "p0036-b0008",
+          "p0036-b0009",
+          "p0036-b0010"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "37": {
+      "page_number": 37,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.458529+00:00",
+      "source_page_sha256": "2048f6004b024d94677225d11cb2ffac6e3ce55e9e4f8c870178395baf741b23",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0037",
+        "reread_block_ids": [
+          "p0037-b0001",
+          "p0037-b0002",
+          "p0037-b0003",
+          "p0037-b0004",
+          "p0037-b0005"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "38": {
+      "page_number": 38,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.465653+00:00",
+      "source_page_sha256": "4e476df1e716a77ec9eed6e6d87dae3be46db398407a3efecc6dd8c17224e953",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0038",
+        "reread_block_ids": [
+          "p0038-b0001",
+          "p0038-b0002",
+          "p0038-b0003",
+          "p0038-b0004",
+          "p0038-b0005"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "51": {
+      "page_number": 51,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.472590+00:00",
+      "source_page_sha256": "bb6c8788fd90e13c394a3d5bb2038672ed2c9abcde93c51e6a0f6a7221810c6a",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0051",
+        "reread_block_ids": [
+          "p0051-b0001",
+          "p0051-b0002",
+          "p0051-b0003",
+          "p0051-b0004"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "59": {
+      "page_number": 59,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.479937+00:00",
+      "source_page_sha256": "7e43f89380bbf2572979726b084b4e7706bffbddc5fd7fe323846dfae2b9a37e",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0059",
+        "reread_block_ids": [
+          "p0059-b0001",
+          "p0059-b0002",
+          "p0059-b0003",
+          "p0059-b0004",
+          "p0059-b0005",
+          "p0059-b0006"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "63": {
+      "page_number": 63,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.487160+00:00",
+      "source_page_sha256": "e1530364fe67f48d7c4d24540746cedab680f279237b512ad0cc1f121ced5368",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0063",
+        "reread_block_ids": [
+          "p0063-b0001",
+          "p0063-b0002",
+          "p0063-b0003",
+          "p0063-b0004",
+          "p0063-b0005",
+          "p0063-b0006"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "68": {
+      "page_number": 68,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.494967+00:00",
+      "source_page_sha256": "36d93fa4200c84e181dfca5f6bd84275573a3ba7022fc99d2c194b3d3b7887ba",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0068",
+        "reread_block_ids": [
+          "p0068-b0001",
+          "p0068-b0002",
+          "p0068-b0003",
+          "p0068-b0004",
+          "p0068-b0005",
+          "p0068-b0006"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "89": {
+      "page_number": 89,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.502954+00:00",
+      "source_page_sha256": "f066fa22a8b1b5aef7517f040a273c0567d8074fa852180c20b89f4ec778b868",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0089",
+        "reread_block_ids": [
+          "p0089-b0001",
+          "p0089-b0002",
+          "p0089-b0003",
+          "p0089-b0004",
+          "p0089-b0005",
+          "p0089-b0006",
+          "p0089-b0007"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "95": {
+      "page_number": 95,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.511154+00:00",
+      "source_page_sha256": "f82f8043d97157a81e20b9398aee8c0ff8fba0799340f1763ccc084f59b62fb2",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0095",
+        "reread_block_ids": [
+          "p0095-b0001",
+          "p0095-b0002",
+          "p0095-b0003",
+          "p0095-b0004"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "122": {
+      "page_number": 122,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.519354+00:00",
+      "source_page_sha256": "310ee3a6ca43edd7a5203e8350b26c3681cb559be68d8202921ec7a29549edb3",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0122",
+        "reread_block_ids": [
+          "p0122-b0001",
+          "p0122-b0002",
+          "p0122-b0003"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "123": {
+      "page_number": 123,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.527603+00:00",
+      "source_page_sha256": "e3d44c6dc0490b8492f1daa466549899da29645c67ed0e2087b433746934d8eb",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0123",
+        "reread_block_ids": [
+          "p0123-b0001",
+          "p0123-b0002",
+          "p0123-b0003",
+          "p0123-b0004"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "131": {
+      "page_number": 131,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.536044+00:00",
+      "source_page_sha256": "e303dcc0dda852e7ff0b405ff5379a9bdb1650e084051a1b9c5bc9dedc71e794",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0131",
+        "reread_block_ids": [
+          "p0131-b0001",
+          "p0131-b0002",
+          "p0131-b0003",
+          "p0131-b0004"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "133": {
+      "page_number": 133,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.544604+00:00",
+      "source_page_sha256": "d5144c8578a2e3bba3b48b434f79e0ae535f08fbe7c8ce1181ef4c22953d9709",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0133",
+        "reread_block_ids": [
+          "p0133-b0001",
+          "p0133-b0002",
+          "p0133-b0003",
+          "p0133-b0004",
+          "p0133-b0005",
+          "p0133-b0006",
+          "p0133-b0007",
+          "p0133-b0008"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "137": {
+      "page_number": 137,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.553708+00:00",
+      "source_page_sha256": "da94e8480b1e7b838a8f3ae3689eaaba53949ff918284ee5f90061238153a393",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0137",
+        "reread_block_ids": [
+          "p0137-b0001",
+          "p0137-b0002",
+          "p0137-b0003",
+          "p0137-b0004"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "150": {
+      "page_number": 150,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.562801+00:00",
+      "source_page_sha256": "8150e7763054adb8691d36fa70c72abc513d1b8310b9273e8228f16954552833",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0150",
+        "reread_block_ids": [
+          "p0150-b0001",
+          "p0150-b0002",
+          "p0150-b0003"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "174": {
+      "page_number": 174,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.571921+00:00",
+      "source_page_sha256": "3ccdd134d2a44c0d76432f0c4f296238214bddce898851346add71c765a7425f",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0174",
+        "reread_block_ids": [
+          "p0174-b0001",
+          "p0174-b0002",
+          "p0174-b0003",
+          "p0174-b0004"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "178": {
+      "page_number": 178,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.581449+00:00",
+      "source_page_sha256": "43981ed44dff6bcbcd1389cd313870217617cc9013d7cd45ae4167d9c32260ed",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0178",
+        "reread_block_ids": [
+          "p0178-b0001",
+          "p0178-b0002",
+          "p0178-b0003",
+          "p0178-b0004",
+          "p0178-b0005",
+          "p0178-b0006"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "179": {
+      "page_number": 179,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.590826+00:00",
+      "source_page_sha256": "64f94cce555b8de42b5803e6f772f1fe100a8e131898e0989178fbd023fe020d",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0179",
+        "reread_block_ids": [
+          "p0179-b0001",
+          "p0179-b0002",
+          "p0179-b0003",
+          "p0179-b0004",
+          "p0179-b0005",
+          "p0179-b0006",
+          "p0179-b0007",
+          "p0179-b0008"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "183": {
+      "page_number": 183,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.600683+00:00",
+      "source_page_sha256": "37697df57ed492528bd56bf38928eab4c2e583526d9227e6797c3d9e2c6635df",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0183",
+        "reread_block_ids": [
+          "p0183-b0001",
+          "p0183-b0002",
+          "p0183-b0003",
+          "p0183-b0004",
+          "p0183-b0005",
+          "p0183-b0006",
+          "p0183-b0007",
+          "p0183-b0008"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "187": {
+      "page_number": 187,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.610419+00:00",
+      "source_page_sha256": "8c4e7c1a32d7c6fa49fdb2652f1aac0bbac5c4c6224dc15867d0d2165d1111a9",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0187",
+        "reread_block_ids": [
+          "p0187-b0001",
+          "p0187-b0002",
+          "p0187-b0003"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "189": {
+      "page_number": 189,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.620379+00:00",
+      "source_page_sha256": "ee97e5212ca375f76272fdeb251620e7f996eb11137b73b806c64de871f0a27e",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0189",
+        "reread_block_ids": [
+          "p0189-b0001",
+          "p0189-b0002",
+          "p0189-b0003",
+          "p0189-b0004",
+          "p0189-b0005",
+          "p0189-b0006",
+          "p0189-b0007",
+          "p0189-b0008"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "190": {
+      "page_number": 190,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.630220+00:00",
+      "source_page_sha256": "daf145f25db15fc78fbbfa863741287f233e970b90ffdd1a47d59e1d0ed9f1b0",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0190",
+        "reread_block_ids": [
+          "p0190-b0001",
+          "p0190-b0002",
+          "p0190-b0003"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "191": {
+      "page_number": 191,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.640418+00:00",
+      "source_page_sha256": "c5a358879eec19c6cb233dfa1504c887be7021fc7939ab94834fab137fa665fb",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0191",
+        "reread_block_ids": [
+          "p0191-b0001",
+          "p0191-b0002",
+          "p0191-b0003",
+          "p0191-b0004"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "193": {
+      "page_number": 193,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.649877+00:00",
+      "source_page_sha256": "f38bbe84947d955e4d81c84c2ccff44663ee11d55f3b4502b7961e9838f6d00c",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0193",
+        "reread_block_ids": [
+          "p0193-b0001",
+          "p0193-b0002",
+          "p0193-b0003",
+          "p0193-b0004",
+          "p0193-b0005",
+          "p0193-b0006",
+          "p0193-b0007",
+          "p0193-b0008",
+          "p0193-b0009"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "194": {
+      "page_number": 194,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.659453+00:00",
+      "source_page_sha256": "40f2114ae50563527d17ca758ac63990a7522aa302a38371d797a95bc095da1c",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0194",
+        "reread_block_ids": [
+          "p0194-b0001",
+          "p0194-b0002",
+          "p0194-b0003",
+          "p0194-b0004",
+          "p0194-b0005",
+          "p0194-b0006",
+          "p0194-b0007"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "195": {
+      "page_number": 195,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.669089+00:00",
+      "source_page_sha256": "32e015067894c63d59d9fa7bb77d703f5b94eb96b627d63b779960b9ef8d5a88",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0195",
+        "reread_block_ids": [
+          "p0195-b0001",
+          "p0195-b0002",
+          "p0195-b0003",
+          "p0195-b0004"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "205": {
+      "page_number": 205,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.678889+00:00",
+      "source_page_sha256": "a9e17738e223fe92b96e9bb681c2657f8a622cc7bd80ec5c40d123b96e0ca18d",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0205",
+        "reread_block_ids": [
+          "p0205-b0001",
+          "p0205-b0002",
+          "p0205-b0003",
+          "p0205-b0004",
+          "p0205-b0005",
+          "p0205-b0006",
+          "p0205-b0007",
+          "p0205-b0008",
+          "p0205-b0009"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "207": {
+      "page_number": 207,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.688770+00:00",
+      "source_page_sha256": "6a5f8182875481753cd61b577ce109292dd1edf82d6881aad3fe558d54225223",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0207",
+        "reread_block_ids": [
+          "p0207-b0001",
+          "p0207-b0002",
+          "p0207-b0003",
+          "p0207-b0004"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    },
+    "214": {
+      "page_number": 214,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-19T06:33:11.698725+00:00",
+      "source_page_sha256": "63e086a5596e5d2ec51b5448e4ca0111309e21dea5c4c433103283274a788b4a",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "page_0214",
+        "reread_block_ids": [
+          "p0214-b0001",
+          "p0214-b0002",
+          "p0214-b0003",
+          "p0214-b0004",
+          "p0214-b0005",
+          "p0214-b0006"
+        ],
+        "confirmed_block_ids": []
+      },
+      "notes": null
+    }
+  }
+}

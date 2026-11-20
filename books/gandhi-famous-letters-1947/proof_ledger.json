@@ -1,0 +1,1160 @@
+{
+  "version": "proof-ledger-v2",
+  "book_id": "gandhi-famous-letters-1947",
+  "updated_at": "2026-11-18T16:27:11.254107+00:00",
+  "pages": {
+    "1": {
+      "page_number": 1,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "73b1c83d08aed7b802501aaf6decf93e89d90d116a15d7c1fa26b275dac4fa12",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0001",
+        "reread_block_ids": [
+          "p0001-b0001",
+          "p0001-b0002"
+        ],
+        "confirmed_block_ids": [
+          "p0001-b0001",
+          "p0001-b0002"
+        ]
+      },
+      "notes": "Verified dust-jacket blurb and 'Price Rs. 3/8/-' verbatim against 350 DPI render."
+    },
+    "3": {
+      "page_number": 3,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "d6a1c776dcabfad9b0f1d05f8a6dfafb8114cd9ddbc9e29c1da0282d9ab352ec",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0003",
+        "reread_block_ids": [
+          "p0003-b0001",
+          "p0003-b0002",
+          "p0003-b0003",
+          "p0003-b0004",
+          "p0003-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0003-b0001",
+          "p0003-b0002",
+          "p0003-b0003",
+          "p0003-b0004",
+          "p0003-b0005"
+        ]
+      },
+      "notes": "Verified Rashtrapati Bhavan Aide-de-Camp's Library bookplate and handwritten shelfmark 'IX (b) - a'."
+    },
+    "6": {
+      "page_number": 6,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "2f9aba0df876671e2b7b6b24416de54cebf5eba3bf08260faf7bcfd657234322",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0006",
+        "reread_block_ids": [
+          "p0006-b0001",
+          "p0006-b0002",
+          "p0006-b0003",
+          "p0006-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0006-b0001",
+          "p0006-b0002",
+          "p0006-b0003",
+          "p0006-b0004"
+        ]
+      },
+      "notes": "Verified title page capitals 'C' and 'E' in 'COMPILED & EDITED' on 350 DPI render."
+    },
+    "7": {
+      "page_number": 7,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "9cdf0319c2acc2c4f24d4fd89ee06553c2ae77c15661e17e7f47c1da6db86fc2",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0007",
+        "reread_block_ids": [
+          "p0007-b0001",
+          "p0007-b0002",
+          "p0007-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0007-b0001",
+          "p0007-b0002",
+          "p0007-b0003"
+        ]
+      },
+      "notes": "Verified copyright notice (1947) and Lahore publisher colophon with trailing comma verbatim."
+    },
+    "10": {
+      "page_number": 10,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "207e1f685782f715d9d79b235118737d9b7444a2a0226801d0f4f9a8dc5ecb96",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0010",
+        "reread_block_ids": [
+          "p0010-b0001",
+          "p0010-b0002",
+          "p0010-b0003",
+          "p0010-b0004",
+          "p0010-b0005",
+          "p0010-b0006",
+          "p0010-b0007",
+          "p0010-b0008",
+          "p0010-b0009",
+          "p0010-b0010",
+          "p0010-b0011",
+          "p0010-b0012",
+          "p0010-b0013",
+          "p0010-b0014",
+          "p0010-b0015",
+          "p0010-b0016",
+          "p0010-b0017",
+          "p0010-b0018",
+          "p0010-b0019",
+          "p0010-b0020"
+        ],
+        "confirmed_block_ids": [
+          "p0010-b0001",
+          "p0010-b0002",
+          "p0010-b0003",
+          "p0010-b0004",
+          "p0010-b0005",
+          "p0010-b0006",
+          "p0010-b0007",
+          "p0010-b0008",
+          "p0010-b0009",
+          "p0010-b0010",
+          "p0010-b0011",
+          "p0010-b0012",
+          "p0010-b0013",
+          "p0010-b0014",
+          "p0010-b0015",
+          "p0010-b0016",
+          "p0010-b0017",
+          "p0010-b0018",
+          "p0010-b0019",
+          "p0010-b0020"
+        ]
+      },
+      "notes": "Verified Table of Contents entries 1–14 verbatim including 'Youngmen', '12.I–IV'."
+    },
+    "11": {
+      "page_number": 11,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "24c3cb43121384ebc1ac534a9fc9c2b0b94b92ef01fe6926dde76f906ece9535",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0011",
+        "reread_block_ids": [
+          "p0011-b0001",
+          "p0011-b0002",
+          "p0011-b0003",
+          "p0011-b0004",
+          "p0011-b0005",
+          "p0011-b0006",
+          "p0011-b0007",
+          "p0011-b0008",
+          "p0011-b0009",
+          "p0011-b0010",
+          "p0011-b0011",
+          "p0011-b0012",
+          "p0011-b0013",
+          "p0011-b0014",
+          "p0011-b0015",
+          "p0011-b0016"
+        ],
+        "confirmed_block_ids": [
+          "p0011-b0001",
+          "p0011-b0002",
+          "p0011-b0003",
+          "p0011-b0004",
+          "p0011-b0005",
+          "p0011-b0006",
+          "p0011-b0007",
+          "p0011-b0008",
+          "p0011-b0009",
+          "p0011-b0010",
+          "p0011-b0011",
+          "p0011-b0012",
+          "p0011-b0013",
+          "p0011-b0014",
+          "p0011-b0015",
+          "p0011-b0016"
+        ]
+      },
+      "notes": "Verified Table of Contents entries 15–27 verbatim including compositor 'Linlithow', dotted leaders in 25, 'Sir Richards'."
+    },
+    "12": {
+      "page_number": 12,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "8a68c2d01f67a795b53d646e86b7c5da2244013e260bc1210ea59b8f2b5cf4f3",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0012",
+        "reread_block_ids": [
+          "p0012-b0001",
+          "p0012-b0002",
+          "p0012-b0003",
+          "p0012-b0004",
+          "p0012-b0005",
+          "p0012-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0012-b0001",
+          "p0012-b0002",
+          "p0012-b0003",
+          "p0012-b0004",
+          "p0012-b0005",
+          "p0012-b0006"
+        ]
+      },
+      "notes": "Verified Biographical Sketch opening verbatim including printed 'Mohanlal Karamchand Gandhi' and 'Gujerati'."
+    },
+    "16": {
+      "page_number": 16,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "aeb6b9ff6de2692aa3e6304bc255748086ef44b6805262744a4c017ef1b40788",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0016",
+        "reread_block_ids": [
+          "p0016-b0001",
+          "p0016-b0002",
+          "p0016-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0016-b0001",
+          "p0016-b0002",
+          "p0016-b0003"
+        ]
+      },
+      "notes": "Verified Letter to Lord Chelmsford editorial intro page and horizontal rule."
+    },
+    "22": {
+      "page_number": 22,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "a866238a11392b14fe4e7371e98047c476f381c19f3d1fc191983d90347c1c93",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0022",
+        "reread_block_ids": [
+          "p0022-b0001",
+          "p0022-b0002",
+          "p0022-b0003",
+          "p0022-b0004",
+          "p0022-b0005",
+          "p0022-b0006",
+          "p0022-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0022-b0001",
+          "p0022-b0002",
+          "p0022-b0003",
+          "p0022-b0004",
+          "p0022-b0005",
+          "p0022-b0006",
+          "p0022-b0007"
+        ]
+      },
+      "notes": "Verified ending of First Letter to Lord Chelmsford before Ultimatum section."
+    },
+    "23": {
+      "page_number": 23,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "28253be41990f4a0449923ed9a06422f8abe795a6f9defaf89b98332dca5cdee",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0023",
+        "reread_block_ids": [
+          "p0023-b0001",
+          "p0023-b0002",
+          "p0023-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0023-b0001",
+          "p0023-b0002",
+          "p0023-b0003"
+        ]
+      },
+      "notes": "Verified Ultimatum to Lord Chelmsford editorial intro page verbatim."
+    },
+    "29": {
+      "page_number": 29,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "95f0536dbdc2db9d79e7b4e0ee9013c3f5ca8fad1629822f43bcf678a03cbf60",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0029",
+        "reread_block_ids": [
+          "p0029-b0001",
+          "p0029-b0002",
+          "p0029-b0003",
+          "p0029-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0029-b0001",
+          "p0029-b0002",
+          "p0029-b0003",
+          "p0029-b0004"
+        ]
+      },
+      "notes": "Verified To Every Englishman Living in India editorial intro page verbatim."
+    },
+    "53": {
+      "page_number": 53,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "fa4a993735140c3407076e686f9a28d688858bb7e8000cecc87bb526be4f5219",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0053",
+        "reread_block_ids": [
+          "p0053-b0001",
+          "p0053-b0002",
+          "p0053-b0003",
+          "p0053-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0053-b0001",
+          "p0053-b0002",
+          "p0053-b0003",
+          "p0053-b0004"
+        ]
+      },
+      "notes": "Verified Ultimatum to Lord Reading editorial intro page verbatim."
+    },
+    "56": {
+      "page_number": 56,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "e8774e29de191d90d9540ea50f7142c1c7bdea86226817f340a8e329ad43c39c",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0056",
+        "reread_block_ids": [
+          "p0056-b0001",
+          "p0056-b0002",
+          "p0056-b0003",
+          "p0056-b0004",
+          "p0056-b0005",
+          "p0056-b0006",
+          "p0056-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0056-b0001",
+          "p0056-b0002",
+          "p0056-b0003",
+          "p0056-b0004",
+          "p0056-b0005",
+          "p0056-b0006",
+          "p0056-b0007"
+        ]
+      },
+      "notes": "Verified pie'd movable-type sort 'demands' (inverted m + stacked an) and compositor 'including het' on p. 56 (folio 53)."
+    },
+    "57": {
+      "page_number": 57,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "685524f2c03104d3a577b2084385eae2e99e08a37de34cd958ba18b9fb96ad9f",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0057",
+        "reread_block_ids": [
+          "p0057-b0001",
+          "p0057-b0002",
+          "p0057-b0003",
+          "p0057-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0057-b0001",
+          "p0057-b0002",
+          "p0057-b0003",
+          "p0057-b0004"
+        ]
+      },
+      "notes": "Verified folio 54 continuation ('elementary rights...') confirming compositor typo 'het' on preceding page."
+    },
+    "60": {
+      "page_number": 60,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "ae7392ad462a099898798a84d3dff2e4660f749d5757f560a37b070a8f101e70",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0060",
+        "reread_block_ids": [
+          "p0060-b0001",
+          "p0060-b0002",
+          "p0060-b0003",
+          "p0060-b0004",
+          "p0060-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0060-b0001",
+          "p0060-b0002",
+          "p0060-b0003",
+          "p0060-b0004",
+          "p0060-b0005"
+        ]
+      },
+      "notes": "Verified First Letter to Lord Irwin opening, italics in first paragraph, and 'Why I Regard the British Rule as a Curse!'."
+    },
+    "71": {
+      "page_number": 71,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "f0196dfa03d1389b3d99b08615dc9e784705e817129c4c3091eb3a5f48696a40",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0071",
+        "reread_block_ids": [
+          "p0071-b0001",
+          "p0071-b0002",
+          "p0071-b0003",
+          "p0071-b0004",
+          "p0071-b0005",
+          "p0071-b0006",
+          "p0071-b0007",
+          "p0071-b0008",
+          "p0071-b0009"
+        ],
+        "confirmed_block_ids": [
+          "p0071-b0001",
+          "p0071-b0002",
+          "p0071-b0003",
+          "p0071-b0004",
+          "p0071-b0005",
+          "p0071-b0006",
+          "p0071-b0007",
+          "p0071-b0008",
+          "p0071-b0009"
+        ]
+      },
+      "notes": "Verified Second Letter to Lord Irwin opening, spaced ellipses '......', '.,....', and bullet items."
+    },
+    "80": {
+      "page_number": 80,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "939cb12da297cff962c756ccb5baa76736f186c8d1551a8e96dce413d4b2248a",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0080",
+        "reread_block_ids": [
+          "p0080-b0001",
+          "p0080-b0002",
+          "p0080-b0003",
+          "p0080-b0004",
+          "p0080-b0005",
+          "p0080-b0006",
+          "p0080-b0007",
+          "p0080-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0080-b0001",
+          "p0080-b0002",
+          "p0080-b0003",
+          "p0080-b0004",
+          "p0080-b0005",
+          "p0080-b0006",
+          "p0080-b0007",
+          "p0080-b0008"
+        ]
+      },
+      "notes": "Verified Sabarmati I (To Mira Bai), asterisk callout 'it *.', 'Love BAPU.', and linked italic footnote."
+    },
+    "81": {
+      "page_number": 81,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "94e0f172e9a984529fc54cc0086684c896668ca00075ce46e8929d34a302bfcd",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0081",
+        "reread_block_ids": [
+          "p0081-b0001",
+          "p0081-b0002"
+        ],
+        "confirmed_block_ids": [
+          "p0081-b0001",
+          "p0081-b0002"
+        ]
+      },
+      "notes": "Verified Sabarmati II (General Letter) opening verbatim."
+    },
+    "83": {
+      "page_number": 83,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "d6cb6a804437e563b338a3f9ef1d12ef6305824dadbfd2d1edf0aa2e64241598",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0083",
+        "reread_block_ids": [
+          "p0083-b0001",
+          "p0083-b0002",
+          "p0083-b0003",
+          "p0083-b0004",
+          "p0083-b0005",
+          "p0083-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0083-b0001",
+          "p0083-b0002",
+          "p0083-b0003",
+          "p0083-b0004",
+          "p0083-b0005",
+          "p0083-b0006"
+        ]
+      },
+      "notes": "Verified Sabarmati III (To 'Ba') and nested letter to Devadas verbatim."
+    },
+    "84": {
+      "page_number": 84,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "3011bc1ac12915f1fed3dd9b65d2b63a3970c232b7e65816666752fff47a14b3",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0084",
+        "reread_block_ids": [
+          "p0084-b0001",
+          "p0084-b0002",
+          "p0084-b0003",
+          "p0084-b0004",
+          "p0084-b0005",
+          "p0084-b0006",
+          "p0084-b0007",
+          "p0084-b0008",
+          "p0084-b0009"
+        ],
+        "confirmed_block_ids": [
+          "p0084-b0001",
+          "p0084-b0002",
+          "p0084-b0003",
+          "p0084-b0004",
+          "p0084-b0005",
+          "p0084-b0006",
+          "p0084-b0007",
+          "p0084-b0008",
+          "p0084-b0009"
+        ]
+      },
+      "notes": "Verified Sabarmati IV (To Lakshmi) with bottom-left dateline and bottom-right signature."
+    },
+    "85": {
+      "page_number": 85,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "456fe71ae73878b9f409d48176f578d6861b50368790ecf4d54ca1ffcef5f16e",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0085",
+        "reread_block_ids": [
+          "p0085-b0001",
+          "p0085-b0002",
+          "p0085-b0003",
+          "p0085-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0085-b0001",
+          "p0085-b0002",
+          "p0085-b0003",
+          "p0085-b0004"
+        ]
+      },
+      "notes": "Verified Correspondence with Lord Willingdon 1st Rejoinder intro verbatim."
+    },
+    "92": {
+      "page_number": 92,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "b2aec408ee49a701cd700ccae1d4dc6edb158b24fdb0effc9aaee5bbb6b0c064",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0092",
+        "reread_block_ids": [
+          "p0092-b0001",
+          "p0092-b0002",
+          "p0092-b0003",
+          "p0092-b0004",
+          "p0092-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0092-b0001",
+          "p0092-b0002",
+          "p0092-b0003",
+          "p0092-b0004",
+          "p0092-b0005"
+        ]
+      },
+      "notes": "Verified Second Rejoinder intro preserving printed heading typo 'SECNOD REJOINDER.' verbatim."
+    },
+    "96": {
+      "page_number": 96,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "98fc1ca3f18f7f079fea3f278c34e20695a5cef67d9bed3eef3e4563dbf43915",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0096",
+        "reread_block_ids": [
+          "p0096-b0001",
+          "p0096-b0002",
+          "p0096-b0003",
+          "p0096-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0096-b0001",
+          "p0096-b0002",
+          "p0096-b0003",
+          "p0096-b0004"
+        ]
+      },
+      "notes": "Verified To the Nation opening preserving printed compositor typo 'Viceory' verbatim."
+    },
+    "112": {
+      "page_number": 112,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "f959abea049d3dc734e8eca3e32f8fef2d4ff2592ec52053e574991bf3af3902",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0112",
+        "reread_block_ids": [
+          "p0112-b0001",
+          "p0112-b0002",
+          "p0112-b0003",
+          "p0112-b0004",
+          "p0112-b0005",
+          "p0112-b0006",
+          "p0112-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0112-b0001",
+          "p0112-b0002",
+          "p0112-b0003",
+          "p0112-b0004",
+          "p0112-b0005",
+          "p0112-b0006",
+          "p0112-b0007"
+        ]
+      },
+      "notes": "Verified To Mr. M. A. Jinnah closing, cascading valediction, and small-caps signature."
+    },
+    "123": {
+      "page_number": 123,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "79ad090c669df3b86dbdcbb0c0ac1127ffcabb628158af86abc97e71add55d8e",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0123",
+        "reread_block_ids": [
+          "p0123-b0001",
+          "p0123-b0002",
+          "p0123-b0003",
+          "p0123-b0004",
+          "p0123-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0123-b0001",
+          "p0123-b0002",
+          "p0123-b0003",
+          "p0123-b0004",
+          "p0123-b0005"
+        ]
+      },
+      "notes": "Verified 1942 Movement section heading, 1st Letter label, and editorial note verbatim."
+    },
+    "129": {
+      "page_number": 129,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "d643a1d84cbcc6b835b5c9da7c673ed252e8f9d0d87ca98dc4e5269783051168",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0129",
+        "reread_block_ids": [
+          "p0129-b0001",
+          "p0129-b0002",
+          "p0129-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0129-b0001",
+          "p0129-b0002",
+          "p0129-b0003"
+        ]
+      },
+      "notes": "Verified folio 26 [sic for 126] misprint and omitted period after 'possible' verbatim."
+    },
+    "132": {
+      "page_number": 132,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "cbb99d488a1a68ec5312b479827cfa93d987f63e79e578f7941d447600cac0f5",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0132",
+        "reread_block_ids": [
+          "p0132-b0001",
+          "p0132-b0002",
+          "p0132-b0003",
+          "p0132-b0004",
+          "p0132-b0005",
+          "p0132-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0132-b0001",
+          "p0132-b0002",
+          "p0132-b0003",
+          "p0132-b0004",
+          "p0132-b0005",
+          "p0132-b0006"
+        ]
+      },
+      "notes": "Verified chipped initial 'o' in 'only' on 350 DPI render of To the Secretary, Home Department."
+    },
+    "136": {
+      "page_number": 136,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "192a9434513b5a76ed68279f6ced24763f9bb9e6f4a3d9897be4f5b489bc2932",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0136",
+        "reread_block_ids": [
+          "p0136-b0001",
+          "p0136-b0002",
+          "p0136-b0003",
+          "p0136-b0004",
+          "p0136-b0005",
+          "p0136-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0136-b0001",
+          "p0136-b0002",
+          "p0136-b0003",
+          "p0136-b0004",
+          "p0136-b0005",
+          "p0136-b0006"
+        ]
+      },
+      "notes": "Verified folio 133 closing with bottom-right 'January 19, 1943.' dateline verbatim."
+    },
+    "140": {
+      "page_number": 140,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "98645998ffd8d5ad3d146a0bb2dfb1f79b0d02e2373df0f1a7db0cb5cfe3516d",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0140",
+        "reread_block_ids": [
+          "p0140-b0001",
+          "p0140-b0002",
+          "p0140-b0003",
+          "p0140-b0004",
+          "p0140-b0005",
+          "p0140-b0006",
+          "p0140-b0007",
+          "p0140-b0008",
+          "p0140-b0009",
+          "p0140-b0010",
+          "p0140-b0011"
+        ],
+        "confirmed_block_ids": [
+          "p0140-b0001",
+          "p0140-b0002",
+          "p0140-b0003",
+          "p0140-b0004",
+          "p0140-b0005",
+          "p0140-b0006",
+          "p0140-b0007",
+          "p0140-b0008",
+          "p0140-b0009",
+          "p0140-b0010",
+          "p0140-b0011"
+        ]
+      },
+      "notes": "Verified folio 137 personal letter to Lord Linlithgow closing and numbered list verbatim."
+    },
+    "142": {
+      "page_number": 142,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "cb1cecbd988560de2793131d59fb1e797e8fc20b91efda060fc50b91e00ecfca",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0142",
+        "reread_block_ids": [
+          "p0142-b0001",
+          "p0142-b0002",
+          "p0142-b0003",
+          "p0142-b0004",
+          "p0142-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0142-b0001",
+          "p0142-b0002",
+          "p0142-b0003",
+          "p0142-b0004",
+          "p0142-b0005"
+        ]
+      },
+      "notes": "Verified faint 'e' in 'Dear' and broken-serif 'r' in 'your' on 350 DPI render."
+    },
+    "146": {
+      "page_number": 146,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "de76a0a59a833f4a79286de6dfb3a080db5d485012d8688c2183632b012c698a",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0146",
+        "reread_block_ids": [
+          "p0146-b0001",
+          "p0146-b0002",
+          "p0146-b0003",
+          "p0146-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0146-b0001",
+          "p0146-b0002",
+          "p0146-b0003",
+          "p0146-b0004"
+        ]
+      },
+      "notes": "Verified Last Letter to Lord Linlithgow opening verbatim."
+    },
+    "151": {
+      "page_number": 151,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "7a3ac2ed37ca2c0a49aad99569b15a06df495da224915f89631695ead934966c",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0151",
+        "reread_block_ids": [
+          "p0151-b0001",
+          "p0151-b0002",
+          "p0151-b0003",
+          "p0151-b0004",
+          "p0151-b0005",
+          "p0151-b0006",
+          "p0151-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0151-b0001",
+          "p0151-b0002",
+          "p0151-b0003",
+          "p0151-b0004",
+          "p0151-b0005",
+          "p0151-b0006",
+          "p0151-b0007"
+        ]
+      },
+      "notes": "Verified To Sir Richard closing letter preserving dropped movable-type pronoun ('your letter. am sorry') verbatim."
+    },
+    "154": {
+      "page_number": 154,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T16:27:11.254107+00:00",
+      "source_page_sha256": "cc1c29a8f522a33b2bc311571c668f75d3b7cc33cbc2520833fc23dd588fb6a2",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0154",
+        "reread_block_ids": [
+          "p0154-b0001",
+          "p0154-b0002",
+          "p0154-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0154-b0001",
+          "p0154-b0002",
+          "p0154-b0003"
+        ]
+      },
+      "notes": "Verified rear Aide-de-Camp's Library circulation slip classified as scanner_residue."
+    }
+  }
+}

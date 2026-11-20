@@ -1,0 +1,44 @@
+{
+  "book_id": "cortes-letters-vol1-1908",
+  "page_number": 347,
+  "check_id": "scan-check-p0347",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "4f401eb0e3d4407b572267c2c07cd18f3760a1cd863222ccb36bd2d649b75635",
+  "checks": [
+    {
+      "block_id": "p0347-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Fernan Cortes' closing and 1522 Cromberger postscript 'Note.¹' concluding Second Letter."
+    },
+    {
+      "block_id": "p0347-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Fernan Cortes' closing and 1522 Cromberger postscript 'Note.¹' concluding Second Letter."
+    },
+    {
+      "block_id": "p0347-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Fernan Cortes' closing and 1522 Cromberger postscript 'Note.¹' concluding Second Letter."
+    },
+    {
+      "block_id": "p0347-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Fernan Cortes' closing and 1522 Cromberger postscript 'Note.¹' concluding Second Letter."
+    },
+    {
+      "block_id": "p0347-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Fernan Cortes' closing and 1522 Cromberger postscript 'Note.¹' concluding Second Letter."
+    },
+    {
+      "block_id": "p0347-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Fernan Cortes' closing and 1522 Cromberger postscript 'Note.¹' concluding Second Letter."
+    },
+    {
+      "block_id": "p0347-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Fernan Cortes' closing and 1522 Cromberger postscript 'Note.¹' concluding Second Letter."
+    }
+  ]
+}

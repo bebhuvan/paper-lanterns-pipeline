@@ -1,0 +1,46 @@
+{
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Preliminaries & Title-Page",
+      "start_block_id": "p0001-b0001",
+      "end_block_id": "p0010-b0002"
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents & Appendix List",
+      "start_block_id": "p0011-b0002",
+      "end_block_id": "p0016-b0019"
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Introduction",
+      "start_block_id": "p0017-b0001",
+      "end_block_id": "p0048-b0004"
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters Received: 1615 (Nos. 251–331)",
+      "start_block_id": "p0049-b0002",
+      "end_block_id": "p0328-b0010"
+    },
+    {
+      "kind": "chapter",
+      "title": "Appendix (Nos. I–VI)",
+      "start_block_id": "p0329-b0001",
+      "end_block_id": "p0342-b0009"
+    },
+    {
+      "kind": "backmatter",
+      "title": "Notes",
+      "start_block_id": "p0343-b0001",
+      "end_block_id": "p0388-b0022"
+    },
+    {
+      "kind": "index",
+      "title": "Index & Colophon",
+      "start_block_id": "p0389-b0001",
+      "end_block_id": "p0408-b0020"
+    }
+  ]
+}

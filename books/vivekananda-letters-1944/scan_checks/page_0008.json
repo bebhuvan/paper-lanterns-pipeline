@@ -1,0 +1,24 @@
+{
+  "book_id": "vivekananda-letters-1944",
+  "page_number": 8,
+  "check_id": "scan-check-p0008",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "c5280fd471b915f1506e51e93c8ac5e4fef701a60c0d181df1526683be47b531",
+  "checks": [
+    {
+      "block_id": "p0008-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified title page, Advaita Ashrama crest ('Ramakrishna Order Emblem'), and imprint."
+    },
+    {
+      "block_id": "p0008-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified title page, Advaita Ashrama crest ('Ramakrishna Order Emblem'), and imprint."
+    },
+    {
+      "block_id": "p0008-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified title page, Advaita Ashrama crest ('Ramakrishna Order Emblem'), and imprint."
+    }
+  ]
+}

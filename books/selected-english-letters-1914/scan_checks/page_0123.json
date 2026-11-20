@@ -1,0 +1,74 @@
+{
+  "book_id": "selected-english-letters-1914",
+  "page_number": 123,
+  "check_id": "scan-check-p0123",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "1c21ab6b2e932f6c905ab0275549e7a8650b0f457ecf648bea18add0173ac64e",
+  "checks": [
+    {
+      "block_id": "p0123-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter LVIII bottom dateline ('August 23, 1909.') and Letter LIX opening ('The John R. Jones Company' verbatim on body page)."
+    },
+    {
+      "block_id": "p0123-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter LVIII bottom dateline ('August 23, 1909.') and Letter LIX opening ('The John R. Jones Company' verbatim on body page)."
+    },
+    {
+      "block_id": "p0123-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter LVIII bottom dateline ('August 23, 1909.') and Letter LIX opening ('The John R. Jones Company' verbatim on body page)."
+    },
+    {
+      "block_id": "p0123-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter LVIII bottom dateline ('August 23, 1909.') and Letter LIX opening ('The John R. Jones Company' verbatim on body page)."
+    },
+    {
+      "block_id": "p0123-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter LVIII bottom dateline ('August 23, 1909.') and Letter LIX opening ('The John R. Jones Company' verbatim on body page)."
+    },
+    {
+      "block_id": "p0123-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter LVIII bottom dateline ('August 23, 1909.') and Letter LIX opening ('The John R. Jones Company' verbatim on body page)."
+    },
+    {
+      "block_id": "p0123-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter LVIII bottom dateline ('August 23, 1909.') and Letter LIX opening ('The John R. Jones Company' verbatim on body page)."
+    },
+    {
+      "block_id": "p0123-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter LVIII bottom dateline ('August 23, 1909.') and Letter LIX opening ('The John R. Jones Company' verbatim on body page)."
+    },
+    {
+      "block_id": "p0123-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter LVIII bottom dateline ('August 23, 1909.') and Letter LIX opening ('The John R. Jones Company' verbatim on body page)."
+    },
+    {
+      "block_id": "p0123-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter LVIII bottom dateline ('August 23, 1909.') and Letter LIX opening ('The John R. Jones Company' verbatim on body page)."
+    },
+    {
+      "block_id": "p0123-b0013",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter LVIII bottom dateline ('August 23, 1909.') and Letter LIX opening ('The John R. Jones Company' verbatim on body page)."
+    },
+    {
+      "block_id": "p0123-b0014",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter LVIII bottom dateline ('August 23, 1909.') and Letter LIX opening ('The John R. Jones Company' verbatim on body page)."
+    },
+    {
+      "block_id": "p0123-b0015",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter LVIII bottom dateline ('August 23, 1909.') and Letter LIX opening ('The John R. Jones Company' verbatim on body page)."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "book_id": "tipu-sultan-select-letters-1811",
+  "page_number": 596,
+  "check_id": "tipu-sultan-select-letters-1811-p0596",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "346a28755a9e5054cbcf110ea78c335f189a81f2e5e2a423fd76c12192621f47",
+  "checked_at": "2026-11-17T21:31:14.948331+00:00",
+  "checks": [
+    {
+      "block_id": "p0596-b0011",
+      "token": "rahities",
+      "verdict": "printed_as_read",
+      "note": "Printed unaccented rahities."
+    }
+  ]
+}

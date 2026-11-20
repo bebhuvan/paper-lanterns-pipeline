@@ -1,0 +1,24 @@
+{
+  "book_id": "dostoevsky-letters-reminiscences-1923",
+  "page_number": 11,
+  "check_id": "scan-check-p0011",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "9c87485ea45cc1aadb317198b56f2faa95912849748edb9cccc50ff0e5af7df2",
+  "checks": [
+    {
+      "block_id": "p0011-b0001",
+      "verdict": "classified_tissue_guard_showthrough",
+      "note": "Verified translucent protective tissue guard showing p. 13 title page + red 'WITHDRAWN' library stamp; classified as scanner_residue."
+    },
+    {
+      "block_id": "p0011-b0002",
+      "verdict": "classified_tissue_guard_showthrough",
+      "note": "Verified translucent protective tissue guard showing p. 13 title page + red 'WITHDRAWN' library stamp; classified as scanner_residue."
+    },
+    {
+      "block_id": "p0011-b0004",
+      "verdict": "classified_tissue_guard_showthrough",
+      "note": "Verified translucent protective tissue guard showing p. 13 title page + red 'WITHDRAWN' library stamp; classified as scanner_residue."
+    }
+  ]
+}

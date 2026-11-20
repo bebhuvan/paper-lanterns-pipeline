@@ -1,0 +1,34 @@
+{
+  "book_id": "pascal-provincial-letters-1847",
+  "page_number": 114,
+  "check_id": "scan-check-p0114",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "21d0341b2a0073a3f27d4bfdbb06954343f8e1f894d41ac396100c02e1bbba0f",
+  "checks": [
+    {
+      "block_id": "p0114-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified end of 'Reply of the Provincial' and Translator footnote on authorship."
+    },
+    {
+      "block_id": "p0114-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified end of 'Reply of the Provincial' and Translator footnote on authorship."
+    },
+    {
+      "block_id": "p0114-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified end of 'Reply of the Provincial' and Translator footnote on authorship."
+    },
+    {
+      "block_id": "p0114-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified end of 'Reply of the Provincial' and Translator footnote on authorship."
+    },
+    {
+      "block_id": "p0114-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified end of 'Reply of the Provincial' and Translator footnote on authorship."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "book_id": "eic-letters-received-vol-1-1602-1613",
+  "page_number": 119,
+  "check_id": "vol1-scan-check-p0119",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "70de6dc60662a1b5bbc4fee696d376a4fde9b33cc86247a979d2021ac064b06e",
+  "checked_at": "2026-11-17T20:13:15.909303+00:00",
+  "checks": [
+    {
+      "block_id": "p0119-b0006",
+      "token": "537^li",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0119.png: printed pound-weight abbreviation '^li'."
+    },
+    {
+      "block_id": "p0119-b0007",
+      "token": "11^li",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0119.png: printed pound-weight abbreviation '^li'."
+    },
+    {
+      "block_id": "p0119-b0008",
+      "token": "vi^li",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0119.png: printed pound-weight abbreviation '^li'."
+    }
+  ]
+}

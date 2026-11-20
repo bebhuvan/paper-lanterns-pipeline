@@ -1,0 +1,54 @@
+{
+  "book_id": "hugo-letters-vol1-1896",
+  "page_number": 259,
+  "check_id": "scan-check-p0259",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "3385f9f0fdde14c97691ab8c49d8116c7b05a695275cb5dc19fcff7b0295877d",
+  "checks": [
+    {
+      "block_id": "p0259-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'I. ACADEMIE DES JEUX FLORAUX, 1819-1823.' unaccented all-caps heading in Appendix I."
+    },
+    {
+      "block_id": "p0259-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'I. ACADEMIE DES JEUX FLORAUX, 1819-1823.' unaccented all-caps heading in Appendix I."
+    },
+    {
+      "block_id": "p0259-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'I. ACADEMIE DES JEUX FLORAUX, 1819-1823.' unaccented all-caps heading in Appendix I."
+    },
+    {
+      "block_id": "p0259-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'I. ACADEMIE DES JEUX FLORAUX, 1819-1823.' unaccented all-caps heading in Appendix I."
+    },
+    {
+      "block_id": "p0259-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'I. ACADEMIE DES JEUX FLORAUX, 1819-1823.' unaccented all-caps heading in Appendix I."
+    },
+    {
+      "block_id": "p0259-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'I. ACADEMIE DES JEUX FLORAUX, 1819-1823.' unaccented all-caps heading in Appendix I."
+    },
+    {
+      "block_id": "p0259-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'I. ACADEMIE DES JEUX FLORAUX, 1819-1823.' unaccented all-caps heading in Appendix I."
+    },
+    {
+      "block_id": "p0259-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'I. ACADEMIE DES JEUX FLORAUX, 1819-1823.' unaccented all-caps heading in Appendix I."
+    },
+    {
+      "block_id": "p0259-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'I. ACADEMIE DES JEUX FLORAUX, 1819-1823.' unaccented all-caps heading in Appendix I."
+    }
+  ]
+}

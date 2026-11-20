@@ -1,0 +1,392 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://paperlanterns.org/schemas/collection_ast.schema.json",
+  "title": "CollectionAST",
+  "description": "Unified canonical AST driving both Complete Book Editions (Web, EPUB 3, Markdown, TEI P5) and Individual Online Letters.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "book_id",
+    "collection",
+    "title",
+    "active_run_id",
+    "total_pages",
+    "sections",
+    "letters",
+    "footnotes"
+  ],
+  "$defs": {
+    "StyleSpan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tag", "start", "end"],
+      "properties": {
+        "tag": {
+          "type": "string",
+          "enum": ["i", "b", "sc", "sup", "sub", "unclear"]
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "TableCell": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text"],
+      "properties": {
+        "text": { "type": "string" },
+        "colspan": { "type": "integer", "minimum": 1 },
+        "rowspan": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "BlockIR": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "block_id",
+        "page_number",
+        "reading_order",
+        "type",
+        "bbox",
+        "tagged_text",
+        "plain_text"
+      ],
+      "properties": {
+        "block_id": { "type": "string" },
+        "page_number": { "type": "integer", "minimum": 1 },
+        "reading_order": { "type": "integer", "minimum": 0 },
+        "printed_folio": { "type": ["string", "null"] },
+        "type": {
+          "type": "string",
+          "enum": [
+            "running_header",
+            "folio",
+            "heading",
+            "letter_header",
+            "dateline",
+            "salutation",
+            "body",
+            "blockquote",
+            "verse",
+            "valediction",
+            "signature",
+            "postscript",
+            "address_block",
+            "editorial",
+            "ornamental_break",
+            "list_item",
+            "toc_entry",
+            "index_entry",
+            "table_caption",
+            "table_row",
+            "footnote",
+            "margin_note",
+            "illustration",
+            "caption",
+            "epigraph",
+            "imprint",
+            "scanner_residue",
+            "noise"
+          ]
+        },
+        "bbox": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 0, "maximum": 1000 },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "tagged_text": { "type": "string" },
+        "plain_text": { "type": "string" },
+        "spans": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/StyleSpan" }
+        },
+        "alignment": {
+          "type": "string",
+          "enum": [
+            "left",
+            "center",
+            "right",
+            "indented",
+            "cascading",
+            "inline",
+            "two_column_left",
+            "two_column_right"
+          ]
+        },
+        "epistolary_transition": {
+          "type": "string",
+          "enum": ["none", "starts_new_letter", "starts_enclosure", "ends_enclosure"]
+        },
+        "line_breaks_preserved": { "type": "boolean" },
+        "heading_level": { "type": ["integer", "null"] },
+        "note_label": { "type": ["string", "null"] },
+        "continues_from_prev": { "type": "boolean" },
+        "continues_to_next": { "type": "boolean" },
+        "table_role": { "type": ["string", "null"] },
+        "cells": {
+          "type": ["array", "null"],
+          "items": { "$ref": "#/$defs/TableCell" }
+        },
+        "provenance_provider": { "type": "string" },
+        "provenance_model": { "type": "string" },
+        "provenance_harness": { "type": "string" },
+        "source_page_sha256": { "type": "string" }
+      }
+    },
+    "PageIR": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["page_number", "blocks"],
+      "properties": {
+        "page_number": { "type": "integer", "minimum": 1 },
+        "printed_folio": { "type": ["string", "null"] },
+        "page_orientation": { "type": "string" },
+        "warning_codes": { "type": "array", "items": { "type": "string" } },
+        "failed_closed": { "type": "boolean" },
+        "failure_reason": { "type": ["string", "null"] },
+        "source_page_sha256": { "type": "string" },
+        "blocks": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/BlockIR" }
+        },
+        "provider": { "type": "string" },
+        "model": { "type": "string" },
+        "harness": { "type": "string" },
+        "rescued": { "type": "boolean" },
+        "cost_usd": { "type": "number", "minimum": 0 }
+      }
+    },
+    "FootnoteItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["footnote_id", "label", "origin_page", "tagged_text", "plain_text"],
+      "properties": {
+        "footnote_id": { "type": "string" },
+        "label": { "type": "string" },
+        "origin_page": { "type": "integer", "minimum": 1 },
+        "origin_folio": { "type": ["string", "null"] },
+        "block_ids": { "type": "array", "items": { "type": "string" } },
+        "tagged_text": { "type": "string" },
+        "plain_text": { "type": "string" },
+        "referenced_in_block_ids": { "type": "array", "items": { "type": "string" } },
+        "referenced_in_letter_ids": { "type": "array", "items": { "type": "string" } },
+        "section_id": { "type": ["string", "null"] },
+        "is_orphan": { "type": "boolean" }
+      }
+    },
+    "EpistolaryMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "letter_number_label": { "type": ["string", "null"] },
+        "header_tagged": { "type": ["string", "null"] },
+        "sender_display": { "type": ["string", "null"] },
+        "recipient_display": { "type": ["string", "null"] },
+        "dateline_tagged": { "type": ["string", "null"] },
+        "dateline_plain": { "type": ["string", "null"] },
+        "dateline_position": {
+          "type": "string",
+          "enum": ["top", "bottom", "inline", "absent"]
+        },
+        "salutation_tagged": { "type": ["string", "null"] },
+        "valediction_tagged": { "type": ["string", "null"] },
+        "signature_tagged": { "type": ["string", "null"] },
+        "address_block_tagged": { "type": ["string", "null"] },
+        "has_postscript": { "type": "boolean" },
+        "has_enclosure": { "type": "boolean" },
+        "languages": { "type": "array", "items": { "type": "string" } },
+        "incipit": { "type": "string" }
+      }
+    },
+    "LetterUnit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "letter_id",
+        "slug",
+        "sequence_index",
+        "section_id",
+        "start_page",
+        "end_page",
+        "blocks"
+      ],
+      "properties": {
+        "letter_id": { "type": "string" },
+        "slug": { "type": "string" },
+        "sequence_index": { "type": "integer", "minimum": 0 },
+        "section_id": { "type": "string" },
+        "start_page": { "type": "integer", "minimum": 1 },
+        "end_page": { "type": "integer", "minimum": 1 },
+        "start_folio": { "type": ["string", "null"] },
+        "end_folio": { "type": ["string", "null"] },
+        "block_ids": { "type": "array", "items": { "type": "string" } },
+        "blocks": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/BlockIR" }
+        },
+        "metadata": { "$ref": "#/$defs/EpistolaryMetadata" },
+        "footnote_ids": { "type": "array", "items": { "type": "string" } },
+        "preceding_editorial_block_ids": { "type": "array", "items": { "type": "string" } },
+        "following_editorial_block_ids": { "type": "array", "items": { "type": "string" } },
+        "boundary_confidence": {
+          "type": "string",
+          "enum": ["high", "adjudicated", "human_mapped", "ambiguous"]
+        }
+      }
+    },
+    "SectionItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind"],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": ["letter", "blocks"]
+        },
+        "letter_id": { "type": ["string", "null"] },
+        "blocks": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/BlockIR" }
+        }
+      }
+    },
+    "BookSection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "section_id",
+        "kind",
+        "title_tagged",
+        "title_plain",
+        "start_page",
+        "end_page",
+        "items"
+      ],
+      "properties": {
+        "section_id": { "type": "string" },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "frontmatter",
+            "chapter",
+            "epistolary_part",
+            "appendix",
+            "index",
+            "backmatter"
+          ]
+        },
+        "title_tagged": { "type": "string" },
+        "title_plain": { "type": "string" },
+        "start_page": { "type": "integer", "minimum": 1 },
+        "end_page": { "type": "integer", "minimum": 1 },
+        "items": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/SectionItem" }
+        },
+        "footnote_ids": { "type": "array", "items": { "type": "string" } },
+        "unavailable_pages": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 1 }
+        }
+      }
+    },
+    "ValidationFinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["code", "severity", "message"],
+      "properties": {
+        "code": { "type": "string" },
+        "severity": {
+          "type": "string",
+          "enum": ["blocker", "warning", "info"]
+        },
+        "page_number": { "type": ["integer", "null"] },
+        "block_id": { "type": ["string", "null"] },
+        "letter_id": { "type": ["string", "null"] },
+        "message": { "type": "string" },
+        "evidence": { "type": "object" }
+      }
+    },
+    "RubricBreakdown": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "total_score",
+        "text_and_diacritic_fidelity",
+        "epistolary_structure_and_layout",
+        "apparatus_and_footnote_integrity",
+        "completeness_and_page_coverage",
+        "compiled_output_validity",
+        "provenance_tier",
+        "blocker_count",
+        "hotspot_count"
+      ],
+      "properties": {
+        "total_score": { "type": "number", "minimum": 0, "maximum": 100 },
+        "text_and_diacritic_fidelity": { "type": "number", "minimum": 0, "maximum": 30 },
+        "epistolary_structure_and_layout": { "type": "number", "minimum": 0, "maximum": 25 },
+        "apparatus_and_footnote_integrity": { "type": "number", "minimum": 0, "maximum": 20 },
+        "completeness_and_page_coverage": { "type": "number", "minimum": 0, "maximum": 15 },
+        "compiled_output_validity": { "type": "number", "minimum": 0, "maximum": 10 },
+        "provenance_tier": {
+          "type": "string",
+          "enum": ["blocked", "community", "machine_checked", "source_certified"]
+        },
+        "blocker_count": { "type": "integer", "minimum": 0 },
+        "hotspot_count": { "type": "integer", "minimum": 0 },
+        "notes": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  },
+  "properties": {
+    "schema_version": { "type": "string" },
+    "book_id": { "type": "string" },
+    "collection": { "type": "string" },
+    "title": { "type": "string" },
+    "author_or_editor": { "type": "string" },
+    "year": { "type": ["integer", "null"] },
+    "archive_id": { "type": ["string", "null"] },
+    "active_run_id": { "type": "string" },
+    "total_pages": { "type": "integer", "minimum": 0 },
+    "pages": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/PageIR" }
+    },
+    "sections": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/BookSection" }
+    },
+    "letters": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/LetterUnit" }
+    },
+    "footnotes": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/FootnoteItem" }
+    },
+    "findings": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/ValidationFinding" }
+    },
+    "rubric": {
+      "oneOf": [
+        { "$ref": "#/$defs/RubricBreakdown" },
+        { "type": "null" }
+      ]
+    },
+    "proof_summary": { "type": "object" },
+    "model_breakdown": {
+      "type": "object",
+      "additionalProperties": { "type": "integer", "minimum": 0 }
+    },
+    "total_spend_usd": { "type": "number", "minimum": 0 }
+  }
+}

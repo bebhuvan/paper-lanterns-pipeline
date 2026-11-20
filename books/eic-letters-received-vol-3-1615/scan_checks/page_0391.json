@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-3-1615",
+  "page_number": 391,
+  "check_id": "vol3-scan-check-p0391",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "3df2712a9eea6ca3a5e523702046a7abc74c522f191c915535b5a76ea42b4b0f",
+  "checked_at": "2026-11-18T02:22:00+00:00",
+  "checks": [
+    {
+      "block_id": "p0391-b0045",
+      "token": "Burhanpur",
+      "verdict": "printed_as_read",
+      "note": "Verified on cropped PNG render: bare form 'Burhanpur' matches printer ink."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "book_id": "nietzsche-wagner-1921",
+  "page_number": 281,
+  "check_id": "scan-check-p0281",
+  "reviewer": "native-vision-400ppi-scan-check",
+  "source_page_sha256": "25715c0e617f6f56f57a106937da16af7aef478ab203503e706a72d6e5b7086c",
+  "checks": [
+    {
+      "block_id": "p0281-b0002",
+      "verdict": "corrected_from_scan",
+      "note": "400-PPI crop confirms chipped small-cap 'B' lead type in “RICHARD WAGNER IN BAYREUTH.” (restoring 'Bayreuth')."
+    }
+  ]
+}

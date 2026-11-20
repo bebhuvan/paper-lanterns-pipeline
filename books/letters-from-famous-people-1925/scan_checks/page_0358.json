@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "letters-from-famous-people-1925",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 358,
+  "reviewer": "native-vision-350ppi-scan-check",
+  "checked_at": "2026-11-19T06:46:11.101499+00:00",
+  "source_page_sha256": "83c2c09ba37cbbc0be5256edf06bde12d5520a92e0e088e06ebfc7c7c29550ef",
+  "render_png": "renders/page_0358.png",
+  "checks": [
+    {
+      "block_id": "p0358-b0001",
+      "status": "corrected",
+      "note": "Inspected on 350 DPI PNG renders/page_0358.png."
+    },
+    {
+      "block_id": "p0358-b0002",
+      "status": "corrected",
+      "note": "Inspected on 350 DPI PNG renders/page_0358.png."
+    },
+    {
+      "block_id": "p0358-b0003",
+      "status": "corrected",
+      "note": "Inspected on 350 DPI PNG renders/page_0358.png."
+    },
+    {
+      "block_id": "p0358-b0004",
+      "status": "corrected",
+      "note": "Inspected on 350 DPI PNG renders/page_0358.png."
+    },
+    {
+      "block_id": "p0358-b0005",
+      "status": "corrected",
+      "note": "Inspected on 350 DPI PNG renders/page_0358.png."
+    }
+  ],
+  "correction_ids": [
+    "corr-drop-p0358-b0001",
+    "corr-drop-p0358-b0002",
+    "corr-drop-p0358-b0003",
+    "corr-drop-p0358-b0004",
+    "corr-drop-p0358-b0005"
+  ]
+}

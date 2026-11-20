@@ -1,0 +1,94 @@
+{
+  "book_id": "poe-valentine-letters-1925",
+  "page_number": 38,
+  "check_id": "scan-check-p0038",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "80d592244f9633a7009645df835e9448d40dcaf2d8b591cc3cf1d48bde411bc8",
+  "checks": [
+    {
+      "block_id": "p0038-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 38; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0038-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 38; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0038-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 38; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0038-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 38; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0038-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 38; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0038-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 38; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0038-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 38; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0038-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 38; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0038-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 38; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0038-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 38; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0038-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 38; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0038-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 38; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0038-b0013",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 38; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0038-b0014",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 38; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0038-b0015",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 38; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0038-b0016",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 38; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0038-b0017",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 38; diplomatic fidelity and structural blocks confirmed."
+    }
+  ]
+}

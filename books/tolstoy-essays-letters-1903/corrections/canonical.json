@@ -1,0 +1,126 @@
+{
+  "version": "correction-v2",
+  "book_id": "tolstoy-essays-letters-1903",
+  "created_at": "2026-11-16T14:17:08.861323+00:00",
+  "corrections": [
+    {
+      "correction_id": "tolstoy-p0011-bondaref-acute",
+      "page_number": 11,
+      "block_id": "p0011-b0017",
+      "op": "set_text",
+      "replacement_tagged_text": "XV.*<sc>Timothy Bóndaref</sc> . . . . . 210",
+      "source": "machine",
+      "note": "500-PPI scan check on p. 11 (p. [vii] Contents): printed 'BÓNDAREF' has acute accent on Ó."
+    },
+    {
+      "correction_id": "tolstoy-p0106-zola-speech-quote",
+      "page_number": 106,
+      "block_id": "p0106-b0008",
+      "op": "set_type",
+      "replacement_type": "blockquote",
+      "replacement_transition": "none",
+      "source": "machine",
+      "note": "Émile Zola's speech quoted inside Tolstoy's Essay V (Non-Acting), not an epistolary letter."
+    },
+    {
+      "correction_id": "tolstoy-p0115-zola-speech-sig",
+      "page_number": 115,
+      "block_id": "p0115-b0004",
+      "op": "set_type",
+      "replacement_type": "blockquote",
+      "source": "machine",
+      "note": "Closing attribution of Zola's speech quoted inside Essay V."
+    },
+    {
+      "correction_id": "tolstoy-p0120-dumas-quote-open",
+      "page_number": 120,
+      "block_id": "p0120-b0010",
+      "op": "set_type",
+      "replacement_type": "blockquote",
+      "replacement_transition": "none",
+      "source": "machine",
+      "note": "Alexandre Dumas fils's letter to Le Gaulois quoted inside Tolstoy's Essay V (Non-Acting)."
+    },
+    {
+      "correction_id": "tolstoy-p0121-further-earlobe",
+      "page_number": 121,
+      "block_id": "p0121-b0003",
+      "op": "set_text",
+      "replacement_tagged_text": "I should prefer not to express my opinion further on any matter whatever. Those who were of our opinion will continue to be so for some time yet; those who held other views will cling to them more and more tenaciously. It would be better to have no discussions. ‘Opinions are like nails,’ said a moralist, a friend of mine: ‘the more one hits them the more one drives them in.’",
+      "source": "machine",
+      "note": "500-PPI scan check on p. 121 (p. 109): broken right earlobe of lead 'r' in 'further'."
+    },
+    {
+      "correction_id": "tolstoy-p0125-dumas-quote-sig",
+      "page_number": 125,
+      "block_id": "p0125-b0006",
+      "op": "set_type",
+      "replacement_type": "blockquote",
+      "source": "machine",
+      "note": "Closing signature of Dumas's quoted text inside Essay V."
+    },
+    {
+      "correction_id": "tolstoy-p0125-dumas-quote-date",
+      "page_number": 125,
+      "block_id": "p0125-b0007",
+      "op": "set_type",
+      "replacement_type": "blockquote",
+      "source": "machine",
+      "note": "Closing date of Dumas's quoted text inside Essay V."
+    },
+    {
+      "correction_id": "tolstoy-p0135-famine-stricken-join",
+      "page_number": 135,
+      "block_id": "p0135-b0002",
+      "op": "set_text",
+      "replacement_tagged_text": "AN AFTERWORD TO AN ACCOUNT RENDERED\nOF RELIEF SUPPLIED TO THE FAMINE-STRICKEN, IN THE GOVERNMENT OF\nTOÚLA, IN 1891 AND 1892",
+      "source": "machine",
+      "note": "Multi-line heading compound 'FAMINE-STRICKEN' on p. 135 ([123])."
+    },
+    {
+      "correction_id": "tolstoy-p0161-beketof-acute",
+      "page_number": 161,
+      "block_id": "p0161-b0005",
+      "op": "set_text",
+      "replacement_tagged_text": "Since I began writing this article, a Russian translation has appeared of an article by Mr. Huxley, composed of a speech on Evolution and Ethics<sup>*</sup> delivered by him to some English Society. In this article the learned Professor — like our well-known Professor Bekétof and many others who have written on the same subject, and with as little success as his predecessors—tries to prove that the struggle for existence does not infringe morality, and that side by side with the acknowledgement of the struggle for existence as a fundamental law of life, morality may not merely exist, but even progress. Mr. Huxley's article is full of all kinds of jokes, verses, and general views on ancient religion and philosophy, and is consequently so florid and complicated that it is only with great effort that one is able to reach its fundamental thought. That thought, however, is as follows : The law of evolution runs counter to the moral law ; this was known to the ancient Greeks and Hindus. The philosophy and religion of both those peoples brought them to the doctrine of self-renunciation. That doctrine, the author thinks, is not correct ; the correct one is this : A law exists, which the author calls the cosmic law, in",
+      "source": "machine",
+      "note": "500-PPI scan check on p. 161 (p. 149): printed 'Bekétof' has acute accent on é."
+    },
+    {
+      "correction_id": "tolstoy-p0214-kharkof-acute",
+      "page_number": 214,
+      "block_id": "p0214-b0006",
+      "op": "set_text",
+      "replacement_tagged_text": "The ‘Statute of Increased Protection,’ usually translated ‘State of Siege,’ was first applied to Petersburg and Moscow only, but was subsequently extended to Odessa, Kief, Khárkof, and Warsaw. Under this law, practically absolute power, including that of capital punishment, was entrusted to the Governors-General of the Provinces in question.",
+      "source": "machine",
+      "note": "500-PPI scan check on p. 214 (p. 202 footnote †): printed 'Khárkof' has acute accent on á."
+    },
+    {
+      "correction_id": "tolstoy-p0225-toula-acute",
+      "page_number": 225,
+      "block_id": "p0225-b0007",
+      "op": "set_text",
+      "replacement_tagged_text": "With such a valuation of the land—here in the Toúla Government, for instance,—good arable land might be estimated at about 5 or 6 roubles<sup>*</sup> the desyatína;<sup>†</sup> kitchen-gardens in the villages, at about 10 roubles the desyatína; meadows that are fertilized by spring floods at about 15 roubles, and so on. In towns the valuation would be 100 to 500 roubles the desyatína, and in crowded parts of Moscow or Petersburg, or at the landing-places of navigable rivers, it would amount to several thousands or even tens of thousands of roubles the desyatína.",
+      "source": "machine",
+      "note": "500-PPI scan check on p. 225 (p. [213]): printed 'Toúla Government' has acute accent on ú."
+    },
+    {
+      "correction_id": "tolstoy-p0255-roman-iii",
+      "page_number": 255,
+      "block_id": "p0255-b0004",
+      "op": "set_text",
+      "replacement_tagged_text": "<sc>iii.</sc>",
+      "source": "machine",
+      "note": "500-PPI scan check on p. 255 (p. 243): centered small-caps Roman section heading 'III.'."
+    },
+    {
+      "correction_id": "tolstoy-p0291-noticed-scan-verified",
+      "page_number": 291,
+      "block_id": "p0291-b0003",
+      "op": "set_text",
+      "replacement_tagged_text": "publication of the Synod's Edict I also noticed indications of anger of this kind in some of the people I met. On the very day (February 25) when the Edict was made public, while crossing a public square I heard the words: 'See! there goes the devil in human form,' and had the crowd been composed of other elements I should very likely have been beaten to death, as happened some years ago to a man at the Panteléymon Chapel.",
+      "source": "machine",
+      "note": "500-PPI scan check on p. 291 (p. 279 line 1): clipped top ascenders clearly read 'noticed'."
+    }
+  ]
+}

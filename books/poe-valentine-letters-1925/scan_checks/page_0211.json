@@ -1,0 +1,44 @@
+{
+  "book_id": "poe-valentine-letters-1925",
+  "page_number": 211,
+  "check_id": "scan-check-p0211",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "6954b0a4fba0bc750152a774050002f05b35d6581e318254375aca006336f546",
+  "checks": [
+    {
+      "block_id": "p0211-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed stacked fraction '4½$' verified pixel-for-pixel on folio 181; Caslon 'st' ligatures normalized."
+    },
+    {
+      "block_id": "p0211-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed stacked fraction '4½$' verified pixel-for-pixel on folio 181; Caslon 'st' ligatures normalized."
+    },
+    {
+      "block_id": "p0211-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed stacked fraction '4½$' verified pixel-for-pixel on folio 181; Caslon 'st' ligatures normalized."
+    },
+    {
+      "block_id": "p0211-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed stacked fraction '4½$' verified pixel-for-pixel on folio 181; Caslon 'st' ligatures normalized."
+    },
+    {
+      "block_id": "p0211-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed stacked fraction '4½$' verified pixel-for-pixel on folio 181; Caslon 'st' ligatures normalized."
+    },
+    {
+      "block_id": "p0211-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed stacked fraction '4½$' verified pixel-for-pixel on folio 181; Caslon 'st' ligatures normalized."
+    },
+    {
+      "block_id": "p0211-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed stacked fraction '4½$' verified pixel-for-pixel on folio 181; Caslon 'st' ligatures normalized."
+    }
+  ]
+}

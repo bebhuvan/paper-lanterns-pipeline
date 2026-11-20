@@ -1,0 +1,39 @@
+{
+  "book_id": "gandhi-famous-letters-1947",
+  "page_number": 83,
+  "check_id": "scan-check-p0083",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "d6cb6a804437e563b338a3f9ef1d12ef6305824dadbfd2d1edf0aa2e64241598",
+  "checks": [
+    {
+      "block_id": "p0083-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sabarmati III (To 'Ba') and nested letter to Devadas verbatim."
+    },
+    {
+      "block_id": "p0083-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sabarmati III (To 'Ba') and nested letter to Devadas verbatim."
+    },
+    {
+      "block_id": "p0083-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sabarmati III (To 'Ba') and nested letter to Devadas verbatim."
+    },
+    {
+      "block_id": "p0083-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sabarmati III (To 'Ba') and nested letter to Devadas verbatim."
+    },
+    {
+      "block_id": "p0083-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sabarmati III (To 'Ba') and nested letter to Devadas verbatim."
+    },
+    {
+      "block_id": "p0083-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sabarmati III (To 'Ba') and nested letter to Devadas verbatim."
+    }
+  ]
+}

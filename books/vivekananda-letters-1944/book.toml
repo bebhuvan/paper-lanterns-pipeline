@@ -1,0 +1,22 @@
+[book]
+book_id = "vivekananda-letters-1944"
+title = "Letters of Swami Vivekananda"
+author_or_editor = "Swami Vivekananda"
+authors = ["Swami Vivekananda"]
+publication_year = 1944
+subtitle = "Fourth Edition"
+imprint = "Mayavati, Almora, Himalayas: Advaita Ashrama, 1944"
+collection = "indian-epistolary-heritage"
+language = "en"
+declared_scripts = ["Latin", "IAST", "Devanagari", "Bengali", "European diacritics"]
+profile = "indic_and_oriental_epistolary"
+active_run_id = "canonical-hydrogen-batch-v1"
+
+[source]
+archive_id = ""
+source_pdf = "sources/letters-of-swami-vivekananda.pdf"
+source_pdf_sha256 = "ab5e96ce002cb04fa20d2c40a93f6b6b79058825c4320b853fb58228a0b4c450"
+
+[extraction]
+profile = "indic_and_oriental_epistolary"
+render_dpi = 350

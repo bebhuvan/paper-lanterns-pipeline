@@ -1,0 +1,19 @@
+{
+  "book_id": "rukaat-i-alamgiri-aurangzeb-1908",
+  "page_number": 141,
+  "check_id": "scan-check-p0141",
+  "reviewer": "native-vision-400ppi-scan-check",
+  "source_page_sha256": "5997aebe9fcdf4efb5c0716fae5496b86cc622b9b5792a937d114eec2fee6e40",
+  "checks": [
+    {
+      "block_id": "p0141-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "400-PPI scan confirms original 1908 compositor Roman-numeral erratum in header verbatim ('LETTER CXXIX.')."
+    },
+    {
+      "block_id": "p0141-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "400-PPI scan confirms original 1908 compositor Roman-numeral erratum in header verbatim ('LETTER CXX.')."
+    }
+  ]
+}

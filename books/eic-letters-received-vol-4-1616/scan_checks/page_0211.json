@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-4-1616",
+  "page_number": 211,
+  "check_id": "eic-letters-received-vol-4-1616-p0211",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "80e091c8ba66b33c3eba431682a5b178b8420965fa600da87ef197ac51b2a289",
+  "checked_at": "2026-11-17T21:16:06.113382+00:00",
+  "checks": [
+    {
+      "block_id": "p0211-b0005",
+      "token": "13th<sup>*</sup>",
+      "verdict": "printed_as_read",
+      "note": "Verified on crops_vol4_detail2.png: references marginal note '* I hope now within 2 or 3 days.' on p0211-b0004."
+    }
+  ]
+}

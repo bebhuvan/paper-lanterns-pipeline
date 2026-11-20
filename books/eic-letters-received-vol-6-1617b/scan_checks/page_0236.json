@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-6-1617b",
+  "page_number": 236,
+  "check_id": "vol6-scan-check-p0236",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "e2cb4d2ca0ff42dc8d9aa237daefe1b9bd166f489c56306cd83c511d879e5df5",
+  "checked_at": "2026-11-17T20:23:38.959834+00:00",
+  "checks": [
+    {
+      "block_id": "p0236-b0004",
+      "token": "Hazrat Ísá",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0236.png: printed 'Í' in 'Hazrat Ísá'."
+    }
+  ]
+}

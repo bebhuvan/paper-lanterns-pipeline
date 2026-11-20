@@ -1,0 +1,69 @@
+{
+  "book_id": "bapu-mira-letters",
+  "page_number": 167,
+  "check_id": "scan-check-p0167",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "c25a925bd9c77cb7a70cb48d4a7c898155cda5b3c14110d5fb6374bba0306702",
+  "checks": [
+    {
+      "block_id": "p0167-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Simla*' callout and restored leading '*' marker on footnote block p0167-b0011."
+    },
+    {
+      "block_id": "p0167-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Simla*' callout and restored leading '*' marker on footnote block p0167-b0011."
+    },
+    {
+      "block_id": "p0167-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Simla*' callout and restored leading '*' marker on footnote block p0167-b0011."
+    },
+    {
+      "block_id": "p0167-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Simla*' callout and restored leading '*' marker on footnote block p0167-b0011."
+    },
+    {
+      "block_id": "p0167-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Simla*' callout and restored leading '*' marker on footnote block p0167-b0011."
+    },
+    {
+      "block_id": "p0167-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Simla*' callout and restored leading '*' marker on footnote block p0167-b0011."
+    },
+    {
+      "block_id": "p0167-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Simla*' callout and restored leading '*' marker on footnote block p0167-b0011."
+    },
+    {
+      "block_id": "p0167-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Simla*' callout and restored leading '*' marker on footnote block p0167-b0011."
+    },
+    {
+      "block_id": "p0167-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Simla*' callout and restored leading '*' marker on footnote block p0167-b0011."
+    },
+    {
+      "block_id": "p0167-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Simla*' callout and restored leading '*' marker on footnote block p0167-b0011."
+    },
+    {
+      "block_id": "p0167-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Simla*' callout and restored leading '*' marker on footnote block p0167-b0011."
+    },
+    {
+      "block_id": "p0167-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Simla*' callout and restored leading '*' marker on footnote block p0167-b0011."
+    }
+  ]
+}

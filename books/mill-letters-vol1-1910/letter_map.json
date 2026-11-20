@@ -1,0 +1,3177 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "mill-letters-vol1-1910",
+  "force_split_before_block_ids": [],
+  "forbid_split_before_block_ids": [],
+  "explicit_letters": [
+    {
+      "letter_id": "letter-0001",
+      "sequence_index": 1,
+      "start_block_id": "p0055-b0005",
+      "end_block_id": "p0057-b0005",
+      "letter_number_label": "1",
+      "header_tagged": "To <sc>John Sterling</sc>,\nin reply to a letter from him, resigning his membership of the London Debating Society.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Sterling",
+      "dateline_tagged": "<sc>India House</sc>, <i>15th April</i> 1829.",
+      "dateline_plain": "India House, 15th April 1829.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0002",
+      "sequence_index": 2,
+      "start_block_id": "p0057-b0006",
+      "end_block_id": "p0073-b0005",
+      "letter_number_label": "2",
+      "header_tagged": "T<sc>o</sc> J<sc>ohn</sc> S<sc>terling</sc>,",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Sterling",
+      "dateline_tagged": "<sc>India House</sc>,\n<i>From the 20th of October to the 22nd</i>, 1831.",
+      "dateline_plain": "India House, From the 20th of October to the 22nd, 1831.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0003",
+      "sequence_index": 3,
+      "start_block_id": "p0073-b0006",
+      "end_block_id": "p0075-b0009",
+      "letter_number_label": "3",
+      "header_tagged": "To <sc>Gustave d'Eichthal</sc>.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Gustave d'Eichthal",
+      "dateline_tagged": "<i>30th Nov.</i> 1831.",
+      "dateline_plain": "30th Nov. 1831.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0004",
+      "sequence_index": 4,
+      "start_block_id": "p0075-b0010",
+      "end_block_id": "p0080-b0008",
+      "letter_number_label": "4",
+      "header_tagged": "To <sc>John Sterling</sc>,\nwho was still in the West Indies.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Sterling",
+      "dateline_tagged": "<sc>London</sc>, <i>24th May</i> 1832.",
+      "dateline_plain": "London, 24th May 1832.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0005",
+      "sequence_index": 5,
+      "start_block_id": "p0080-b0009",
+      "end_block_id": "p0086-b0005",
+      "letter_number_label": "5",
+      "header_tagged": "To <sc>Thomas Carlyle</sc>.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Carlyle",
+      "dateline_tagged": "<sc>India House</sc>, <i>29th May</i> 1832.",
+      "dateline_plain": "India House, 29th May 1832.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0006",
+      "sequence_index": 6,
+      "start_block_id": "p0086-b0006",
+      "end_block_id": "p0090-b0005",
+      "letter_number_label": "6",
+      "header_tagged": "To <sc>Thomas Carlyle</sc>.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Carlyle",
+      "dateline_tagged": "<sc>London</sc>, <i>17th July</i> 1832.",
+      "dateline_plain": "London, 17th July 1832.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0007",
+      "sequence_index": 7,
+      "start_block_id": "p0091-b0003",
+      "end_block_id": "p0096-b0007",
+      "letter_number_label": "7",
+      "header_tagged": "To <sc>Thomas Carlyle.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Carlyle",
+      "dateline_tagged": "<sc>India House</sc>, <i>9th March</i> 1833.",
+      "dateline_plain": "India House, 9th March 1833.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0008",
+      "sequence_index": 8,
+      "start_block_id": "p0096-b0008",
+      "end_block_id": "p0100-b0005",
+      "letter_number_label": "8",
+      "header_tagged": "To <sc>Thomas Carlyle</sc>.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Carlyle",
+      "dateline_tagged": "<sc>India House</sc>, <i>11th and 12th April</i> 1833.",
+      "dateline_plain": "India House, 11th and 12th April 1833.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0009",
+      "sequence_index": 9,
+      "start_block_id": "p0100-b0006",
+      "end_block_id": "p0100-b0007",
+      "letter_number_label": "9",
+      "header_tagged": "To <sc>Thomas Carlyle</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Carlyle",
+      "dateline_tagged": "[1833]",
+      "dateline_plain": "[1833]",
+      "dateline_position": "absent",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0010",
+      "sequence_index": 10,
+      "start_block_id": "p0101-b0003",
+      "end_block_id": "p0105-b0005",
+      "letter_number_label": "10",
+      "header_tagged": "To <sc>Thomas Carlyle</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Carlyle",
+      "dateline_tagged": "<sc>India House</sc>, 18<i>th May</i> 1833.",
+      "dateline_plain": "India House, 18th May 1833.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0011",
+      "sequence_index": 11,
+      "start_block_id": "p0106-b0003",
+      "end_block_id": "p0109-b0005",
+      "letter_number_label": "11",
+      "header_tagged": "To <sc>Thomas Carlyle.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Carlyle",
+      "dateline_tagged": "<sc>London</sc>, <i>5th July</i> 1833.",
+      "dateline_plain": "London, 5th July 1833.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0012",
+      "sequence_index": 12,
+      "start_block_id": "p0109-b0006",
+      "end_block_id": "p0110-b0003",
+      "letter_number_label": "12",
+      "header_tagged": "To <sc>Thomas Carlyle</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Carlyle",
+      "dateline_tagged": "<i>5th July</i> 1833.",
+      "dateline_plain": "5th July 1833.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0013",
+      "sequence_index": 13,
+      "start_block_id": "p0110-b0004",
+      "end_block_id": "p0111-b0006",
+      "letter_number_label": "13",
+      "header_tagged": "To <sc>John Sterling</sc>,\ncondemning the inaction of the Government concerning the education of negroes.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Sterling",
+      "dateline_tagged": "<i>12th July</i> 1833.",
+      "dateline_plain": "12th July 1833.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0014",
+      "sequence_index": 14,
+      "start_block_id": "p0111-b0007",
+      "end_block_id": "p0111-b0010",
+      "letter_number_label": "14",
+      "header_tagged": "To <sc>Thomas Carlyle.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Carlyle",
+      "dateline_tagged": "[No date. ? <i>August</i> 1833.]",
+      "dateline_plain": "[No date. ? August 1833.]",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0015",
+      "sequence_index": 15,
+      "start_block_id": "p0111-b0011",
+      "end_block_id": "p0116-b0007",
+      "letter_number_label": "15",
+      "header_tagged": "To <sc>Thomas Carlyle.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Carlyle",
+      "dateline_tagged": "<sc>India House,</sc> <i>2nd August</i> 1833.",
+      "dateline_plain": "India House, 2nd August 1833.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0016",
+      "sequence_index": 16,
+      "start_block_id": "p0116-b0008",
+      "end_block_id": "p0119-b0005",
+      "letter_number_label": "16",
+      "header_tagged": "To <sc>Thomas Carlyle.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Carlyle",
+      "dateline_tagged": "<sc>India House,</sc> <i>5th September</i> 1833.",
+      "dateline_plain": "India House, 5th September 1833.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0017",
+      "sequence_index": 17,
+      "start_block_id": "p0119-b0006",
+      "end_block_id": "p0125-b0007",
+      "letter_number_label": "17",
+      "header_tagged": "To <sc>Thomas Carlyle.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Carlyle",
+      "dateline_tagged": "<sc>Mickleham, near Dorking, Surrey,</sc>\n<i>5th October</i> 1833.\n(Don't direct hither, though.)",
+      "dateline_plain": "Mickleham, near Dorking, Surrey, 5th October 1833. (Don't direct hither, though.)",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0018",
+      "sequence_index": 18,
+      "start_block_id": "p0125-b0008",
+      "end_block_id": "p0135-b0005",
+      "letter_number_label": "18",
+      "header_tagged": "To <sc>Thomas Carlyle</sc>.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Carlyle",
+      "dateline_tagged": "<sc>India House</sc>, <i>25th November</i> 1833.",
+      "dateline_plain": "India House, 25th November 1833.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0019",
+      "sequence_index": 19,
+      "start_block_id": "p0135-b0006",
+      "end_block_id": "p0140-b0005",
+      "letter_number_label": "19",
+      "header_tagged": "To <sc>Thomas Carlyle.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Carlyle",
+      "dateline_tagged": "<sc>Kensington,</sc> <i>22nd December</i> 1833.",
+      "dateline_plain": "Kensington, 22nd December 1833.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0020",
+      "sequence_index": 20,
+      "start_block_id": "p0141-b0003",
+      "end_block_id": "p0147-b0006",
+      "letter_number_label": "20",
+      "header_tagged": "To <sc>Thomas Carlyle</sc>.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Carlyle",
+      "dateline_tagged": "<sc>Kensington</sc>, <i>12th January</i> 1834.",
+      "dateline_plain": "Kensington, 12th January 1834.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0021",
+      "sequence_index": 21,
+      "start_block_id": "p0147-b0007",
+      "end_block_id": "p0151-b0007",
+      "letter_number_label": "21",
+      "header_tagged": "To <sc>Thomas Carlyle</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Carlyle",
+      "dateline_tagged": "<sc>Kensington</sc>, <i>2nd March</i> 1834.",
+      "dateline_plain": "Kensington, 2nd March 1834.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0022",
+      "sequence_index": 22,
+      "start_block_id": "p0151-b0008",
+      "end_block_id": "p0153-b0006",
+      "letter_number_label": "22",
+      "header_tagged": "To <sc>Thomas Carlyle</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Carlyle",
+      "dateline_tagged": "<sc>India House</sc>, <i>28th April</i> 1834.",
+      "dateline_plain": "India House, 28th April 1834.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0023",
+      "sequence_index": 23,
+      "start_block_id": "p0154-b0003",
+      "end_block_id": "p0154-b0009",
+      "letter_number_label": "23",
+      "header_tagged": "To <sc>Thomas Carlyle</sc>,\non the MS. of the “French Revolution.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Carlyle",
+      "dateline_tagged": "<sc>India House</sc>, <i>Wednesday</i> [no date, 1835 ?].",
+      "dateline_plain": "India House, Wednesday [no date, 1835 ?].",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0024",
+      "sequence_index": 24,
+      "start_block_id": "p0154-b0010",
+      "end_block_id": "p0155-b0006",
+      "letter_number_label": "24",
+      "header_tagged": "To <sc>Thomas Carlyle</sc>,\nwith reference to the accidental destruction of the MS. of the “French Revolution” while in Mill’s possession.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Carlyle",
+      "dateline_tagged": "<sc>India House</sc>, <i>7th March</i> [1835].",
+      "dateline_plain": "India House, 7th March [1835].",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0025",
+      "sequence_index": 25,
+      "start_block_id": "p0155-b0007",
+      "end_block_id": "p0156-b0005",
+      "letter_number_label": "25",
+      "header_tagged": "To <sc>Thomas Carlyle</sc>,\nin reply to his acceptance of Mill's proposal to make financial recompense for the loss of the MS. of the “French Revolution.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Carlyle",
+      "dateline_tagged": "<sc>India House</sc>, <i>Tuesday</i> [<i>10th March</i> 1835].",
+      "dateline_plain": "India House, Tuesday [10th March 1835].",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0026",
+      "sequence_index": 26,
+      "start_block_id": "p0156-b0006",
+      "end_block_id": "p0161-b0006",
+      "letter_number_label": "26",
+      "header_tagged": "To E. L<sc>ytton</sc> B<sc>ulwer</sc> (afterwards Lord L<sc>ytton</sc>)",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "E. Lytton Bulwer (afterwards Lord Lytton)",
+      "dateline_tagged": "I<sc>ndia</sc> H<sc>ouse</sc>, <i>23rd November</i> 1836.",
+      "dateline_plain": "India House, 23rd November 1836.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0027",
+      "sequence_index": 27,
+      "start_block_id": "p0161-b0007",
+      "end_block_id": "p0162-b0006",
+      "letter_number_label": "27",
+      "header_tagged": "To E. <sc>Lytton Bulwer</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "E. Lytton Bulwer",
+      "dateline_tagged": "<i>29th November</i> 1836.",
+      "dateline_plain": "29th November 1836.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0028",
+      "sequence_index": 28,
+      "start_block_id": "p0163-b0003",
+      "end_block_id": "p0163-b0010",
+      "letter_number_label": "28",
+      "header_tagged": "To E. <sc>Lytton Bulwer</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "E. Lytton Bulwer",
+      "dateline_tagged": "<i>Wednesday</i> [1837].",
+      "dateline_plain": "Wednesday [1837].",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0029",
+      "sequence_index": 29,
+      "start_block_id": "p0163-b0011",
+      "end_block_id": "p0165-b0006",
+      "letter_number_label": "29",
+      "header_tagged": "To E. <sc>Lytton Bulwer</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "E. Lytton Bulwer",
+      "dateline_tagged": "<sc>India House</sc>, <i>3rd March</i> 1838.",
+      "dateline_plain": "India House, 3rd March 1838.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0030",
+      "sequence_index": 30,
+      "start_block_id": "p0166-b0002",
+      "end_block_id": "p0168-b0005",
+      "letter_number_label": "30",
+      "header_tagged": "To E. <sc>Lytton Bulwer</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "E. Lytton Bulwer",
+      "dateline_tagged": "<sc>India House</sc>, <i>5th March</i> 1838.",
+      "dateline_plain": "India House, 5th March 1838.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0031",
+      "sequence_index": 31,
+      "start_block_id": "p0168-b0006",
+      "end_block_id": "p0169-b0006",
+      "letter_number_label": "31",
+      "header_tagged": "To <sc>John Sterling</sc>,",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Sterling",
+      "dateline_tagged": "<sc>India House</sc>, <i>24th July</i> 1839.",
+      "dateline_plain": "India House, 24th July 1839.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0032",
+      "sequence_index": 32,
+      "start_block_id": "p0169-b0007",
+      "end_block_id": "p0170-b0005",
+      "letter_number_label": "32",
+      "header_tagged": "To <sc>John Sterling</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Sterling",
+      "dateline_tagged": "<sc>India House</sc>, <i>28th September</i> 1839.",
+      "dateline_plain": "India House, 28th September 1839.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0033",
+      "sequence_index": 33,
+      "start_block_id": "p0170-b0006",
+      "end_block_id": "p0171-b0009",
+      "letter_number_label": "33",
+      "header_tagged": "To <sc>John Sterling</sc>,\non Coleridge.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Sterling",
+      "dateline_tagged": "<sc>India House</sc>, <i>2nd October</i> 1839.",
+      "dateline_plain": "India House, 2nd October 1839.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0034",
+      "sequence_index": 34,
+      "start_block_id": "p0172-b0003",
+      "end_block_id": "p0172-b0006",
+      "letter_number_label": "34",
+      "header_tagged": "To <sc>John Sterling.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Sterling",
+      "dateline_tagged": "<sc>East India House,</sc> <i>4th November</i> 1839.",
+      "dateline_plain": "East India House, 4th November 1839.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0035",
+      "sequence_index": 35,
+      "start_block_id": "p0172-b0007",
+      "end_block_id": "p0174-b0004",
+      "letter_number_label": "35",
+      "header_tagged": "To <sc>John Sterling.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Sterling",
+      "dateline_tagged": "<sc>India House,</sc> <i>22nd April</i> 1840.",
+      "dateline_plain": "India House, 22nd April 1840.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0036",
+      "sequence_index": 36,
+      "start_block_id": "p0174-b0005",
+      "end_block_id": "p0174-b0010",
+      "letter_number_label": "36",
+      "header_tagged": "To <sc>John Sterling</sc>.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Sterling",
+      "dateline_tagged": "<sc>India House</sc>, 1<i>st October</i> 1840.",
+      "dateline_plain": "India House, 1st October 1840.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0037",
+      "sequence_index": 37,
+      "start_block_id": "p0174-b0011",
+      "end_block_id": "p0175-b0007",
+      "letter_number_label": "37",
+      "header_tagged": "To <sc>John Sterling</sc>.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Sterling",
+      "dateline_tagged": "3<i>rd December</i> 1840.",
+      "dateline_plain": "3rd December 1840.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0038",
+      "sequence_index": 38,
+      "start_block_id": "p0175-b0008",
+      "end_block_id": "p0176-b0005",
+      "letter_number_label": "38",
+      "header_tagged": "To <sc>John Sterling</sc>.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Sterling",
+      "dateline_tagged": "<sc>India House</sc>, 19<i>th December</i> 1840.",
+      "dateline_plain": "India House, 19th December 1840.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0039",
+      "sequence_index": 39,
+      "start_block_id": "p0176-b0006",
+      "end_block_id": "p0177-b0005",
+      "letter_number_label": "39",
+      "header_tagged": "To <sc>John Sterling</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Sterling",
+      "dateline_tagged": "<sc>India House</sc>, <i>5th January</i> 1841.",
+      "dateline_plain": "India House, 5th January 1841.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0040",
+      "sequence_index": 40,
+      "start_block_id": "p0177-b0006",
+      "end_block_id": "p0178-b0005",
+      "letter_number_label": "40",
+      "header_tagged": "To <sc>John Sterling.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Sterling",
+      "dateline_tagged": "<sc>India House,</sc> <i>November</i> 1842.",
+      "dateline_plain": "India House, November 1842.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0041",
+      "sequence_index": 41,
+      "start_block_id": "p0178-b0006",
+      "end_block_id": "p0179-b0007",
+      "letter_number_label": "41",
+      "header_tagged": "To <sc>John Sterling.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Sterling",
+      "dateline_tagged": "<sc>India House,</sc> <i>November</i> 1842.",
+      "dateline_plain": "India House, November 1842.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0042",
+      "sequence_index": 42,
+      "start_block_id": "p0179-b0008",
+      "end_block_id": "p0180-b0005",
+      "letter_number_label": "42",
+      "header_tagged": "To Sir E. <sc>Lytton Bulwer</sc>,\nin reply to a letter from him concerning the “Logic.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Sir E. Lytton Bulwer",
+      "dateline_tagged": "<sc>India House</sc>, <i>27th March</i> 1843.",
+      "dateline_plain": "India House, 27th March 1843.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0043",
+      "sequence_index": 43,
+      "start_block_id": "p0180-b0006",
+      "end_block_id": "p0181-b0004",
+      "letter_number_label": "43",
+      "header_tagged": "To <sc>John Sterling</sc>,",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Sterling",
+      "dateline_tagged": "<sc>India House</sc>, <i>26th April</i> 1843.",
+      "dateline_plain": "India House, 26th April 1843.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0044",
+      "sequence_index": 44,
+      "start_block_id": "p0181-b0005",
+      "end_block_id": "p0183-b0004",
+      "letter_number_label": "44",
+      "header_tagged": "To <sc>John Sterling</sc>,",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Sterling",
+      "dateline_tagged": "<sc>India House</sc>, <i>29th May</i> 1844.",
+      "dateline_plain": "India House, 29th May 1844.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "Greek"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0045",
+      "sequence_index": 45,
+      "start_block_id": "p0183-b0005",
+      "end_block_id": "p0183-b0011",
+      "letter_number_label": "45",
+      "header_tagged": "To <sc>John Sterling,</sc>\nin reply to a letter from him, informing Mill that he was on the point of death.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Sterling",
+      "dateline_tagged": "<sc>India House,</sc> 16<i>th August</i> 1844.",
+      "dateline_plain": "India House, 16th August 1844.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0046",
+      "sequence_index": 46,
+      "start_block_id": "p0184-b0003",
+      "end_block_id": "p0189-b0005",
+      "letter_number_label": "46",
+      "header_tagged": "To <sc>John Austin</sc>, the eminent jurist.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Austin, the eminent jurist",
+      "dateline_tagged": "<i>13th April</i> 1847.",
+      "dateline_plain": "13th April 1847.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0047",
+      "sequence_index": 47,
+      "start_block_id": "p0189-b0006",
+      "end_block_id": "p0190-b0004",
+      "letter_number_label": "47",
+      "header_tagged": "To J. F. <sc>Mollett</sc>,",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "J. F. Mollett",
+      "dateline_tagged": "<i>30th December</i> 1847.",
+      "dateline_plain": "30th December 1847.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0048",
+      "sequence_index": 48,
+      "start_block_id": "p0190-b0005",
+      "end_block_id": "p0191-b0005",
+      "letter_number_label": "48",
+      "header_tagged": "To Mrs. <sc>John Austin</sc>,\nwho was then resident in Paris, immediately after the abdication of Louis Philippe.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Mrs. John Austin",
+      "dateline_tagged": "<i>27th February</i> 1848.",
+      "dateline_plain": "27th February 1848.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0049",
+      "sequence_index": 49,
+      "start_block_id": "p0191-b0006",
+      "end_block_id": "p0192-b0004",
+      "letter_number_label": "49",
+      "header_tagged": "To Mrs. <sc>Austin</sc>,\n\nindicating Mill's difference from John Austin with regard to the French Revolution of 1848.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Mrs. Austin",
+      "dateline_tagged": "<i>March</i> (?) 1848.",
+      "dateline_plain": "March (?) 1848.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0050",
+      "sequence_index": 50,
+      "start_block_id": "p0192-b0005",
+      "end_block_id": "p0193-b0005",
+      "letter_number_label": "50",
+      "header_tagged": "To <sc>Armand Marrast</sc>,\nthen a member of the Provisional Government in France, enclosing a presentation copy of the \"Political Economy,\" which had just been published.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Armand Marrast",
+      "dateline_tagged": "1848.",
+      "dateline_plain": "1848.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0051",
+      "sequence_index": 51,
+      "start_block_id": "p0193-b0006",
+      "end_block_id": "p0194-b0005",
+      "letter_number_label": "51",
+      "header_tagged": "To <sc>Eugène Sue,</sc>\nenclosing a presentation copy of the “Political Economy.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Eugène Sue",
+      "dateline_tagged": "1848.",
+      "dateline_plain": "1848.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0052",
+      "sequence_index": 52,
+      "start_block_id": "p0194-b0006",
+      "end_block_id": "p0195-b0005",
+      "letter_number_label": "52",
+      "header_tagged": "To <sc>John Jay</sc>, of New York.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Jay, of New York",
+      "dateline_tagged": "<i>About November</i> 1848.",
+      "dateline_plain": "About November 1848.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0053",
+      "sequence_index": 53,
+      "start_block_id": "p0195-b0006",
+      "end_block_id": "p0195-b0009",
+      "letter_number_label": "53",
+      "header_tagged": "To <sc>Emile Littré</sc>,",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Emile Littré",
+      "dateline_tagged": "<i>22nd December</i> 1848.",
+      "dateline_plain": "22nd December 1848.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0054",
+      "sequence_index": 54,
+      "start_block_id": "p0195-b0010",
+      "end_block_id": "p0196-b0004",
+      "letter_number_label": "54",
+      "header_tagged": "To <sc>George Grote</sc>.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "George Grote",
+      "dateline_tagged": "<i>22nd December</i> 1848.",
+      "dateline_plain": "22nd December 1848.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0055",
+      "sequence_index": 55,
+      "start_block_id": "p0196-b0005",
+      "end_block_id": "p0203-b0008",
+      "letter_number_label": "55",
+      "header_tagged": "To Dr. W. G. <sc>Ward</sc>,\ntouching on a variety of religious and other topics.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Dr. W. G. Ward",
+      "dateline_tagged": "<i>Spring of</i> 1849.",
+      "dateline_plain": "Spring of 1849.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0056",
+      "sequence_index": 56,
+      "start_block_id": "p0203-b0009",
+      "end_block_id": "p0205-b0005",
+      "letter_number_label": "56",
+      "header_tagged": "To <sc>William Conner</sc>,",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "William Conner",
+      "dateline_tagged": "<i>26th September</i> 1849.",
+      "dateline_plain": "26th September 1849.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0057",
+      "sequence_index": 57,
+      "start_block_id": "p0205-b0006",
+      "end_block_id": "p0207-b0005",
+      "letter_number_label": "57",
+      "header_tagged": "To W. J. Fox,\non religious and moral instruction in schools.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "W. J. Fox",
+      "dateline_tagged": "<i>End of</i> 1849.",
+      "dateline_plain": "End of 1849.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0058",
+      "sequence_index": 58,
+      "start_block_id": "p0207-b0006",
+      "end_block_id": "p0209-b0005",
+      "letter_number_label": "58",
+      "header_tagged": "To <sc>Edward Herford</sc>, Coroner of Manchester,\nin reply to a letter from him, inviting Mill to join a society called the “Poor Law Reform Association.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Edward Herford, Coroner of Manchester",
+      "dateline_tagged": "<i>January</i> 1850.",
+      "dateline_plain": "January 1850.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0059",
+      "sequence_index": 59,
+      "start_block_id": "p0210-b0003",
+      "end_block_id": "p0210-b0009",
+      "letter_number_label": "59",
+      "header_tagged": "To <sc>Edward Herford</sc>;\na sequel to the preceding letter.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Edward Herford",
+      "dateline_tagged": "<i>February</i> 1850.",
+      "dateline_plain": "February 1850.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0060",
+      "sequence_index": 60,
+      "start_block_id": "p0211-b0003",
+      "end_block_id": "p0213-b0005",
+      "letter_number_label": "60",
+      "header_tagged": "To <sc>Walter Coulson</sc>,\non reading an article by Charles Kingsley on Free\nTrade.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Walter Coulson",
+      "dateline_tagged": "<sc>India House</sc>, <i>22nd November</i> 1850.",
+      "dateline_plain": "India House, 22nd November 1850.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0061",
+      "sequence_index": 61,
+      "start_block_id": "p0213-b0006",
+      "end_block_id": "p0214-b0004",
+      "letter_number_label": "61",
+      "header_tagged": "To the Editor of the <i>Weekly Dispatch.</i>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "the Editor of the Weekly Dispatch",
+      "dateline_tagged": "<i>1st February</i> 1851.",
+      "dateline_plain": "1st February 1851.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0062",
+      "sequence_index": 62,
+      "start_block_id": "p0214-b0006",
+      "end_block_id": "p0219-b0005",
+      "letter_number_label": "62",
+      "header_tagged": "Pre-Marriage Statement (to Mrs. Harriet Taylor)",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Mrs. Harriet Taylor",
+      "dateline_tagged": "<i>6th March</i> 1851.",
+      "dateline_plain": "6th March 1851.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00",
+      "note": "Merged Pre-Marriage Statement across tipped-in collotype facsimile (pp. 214-219)."
+    },
+    {
+      "letter_id": "letter-0063",
+      "sequence_index": 63,
+      "start_block_id": "p0219-b0006",
+      "end_block_id": "p0219-b0009",
+      "letter_number_label": "63",
+      "header_tagged": "To F. <sc>Lucas</sc>,\nin reply to an invitation to stand for Parliament for an Irish county.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "F. Lucas",
+      "dateline_tagged": "<sc>India House</sc>, <i>28th March</i> 1851.",
+      "dateline_plain": "India House, 28th March 1851.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0064",
+      "sequence_index": 64,
+      "start_block_id": "p0220-b0003",
+      "end_block_id": "p0222-b0005",
+      "letter_number_label": "64",
+      "header_tagged": "To Sir <sc>George Grey</sc>,",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Sir George Grey",
+      "dateline_tagged": "<i>15th May</i> 1851.",
+      "dateline_plain": "15th May 1851.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0065",
+      "sequence_index": 65,
+      "start_block_id": "p0222-b0006",
+      "end_block_id": "p0224-b0003",
+      "letter_number_label": "65",
+      "header_tagged": "To <sc>John Chapman</sc>,\non the first draft of the prospectus of the <i>Westminster Review.</i>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Chapman",
+      "dateline_tagged": "<i>9th June</i> 1851.",
+      "dateline_plain": "9th June 1851.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0066",
+      "sequence_index": 66,
+      "start_block_id": "p0225-b0003",
+      "end_block_id": "p0227-b0005",
+      "letter_number_label": "66",
+      "header_tagged": "To the Rev. H. W. <sc>Carr</sc>, of South Shields,\nin reply to a letter from him.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "the Rev. H. W. Carr, of South Shields",
+      "dateline_tagged": "<i>7th January</i> 1852.",
+      "dateline_plain": "7th January 1852.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0067",
+      "sequence_index": 67,
+      "start_block_id": "p0227-b0006",
+      "end_block_id": "p0228-b0003",
+      "letter_number_label": "67",
+      "header_tagged": "To Dr. <sc>Adolph Soetbeer</sc>, of Hamburg,\non his translation of the “Political Economy” into\nGerman.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Dr. Adolph Soetbeer, of Hamburg",
+      "dateline_tagged": "18<i>th March</i> 1852.",
+      "dateline_plain": "18th March 1852.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0068",
+      "sequence_index": 68,
+      "start_block_id": "p0228-b0004",
+      "end_block_id": "p0230-b0004",
+      "letter_number_label": "68",
+      "header_tagged": "To Professor <sc>Carl</sc> D. <sc>Heinrich Rau</sc>, of Heidelberg.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Professor Carl D. Heinrich Rau, of Heidelberg",
+      "dateline_tagged": "<sc>East India House</sc>, <i>20th March</i> 1852.",
+      "dateline_plain": "East India House, 20th March 1852.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0069",
+      "sequence_index": 69,
+      "start_block_id": "p0230-b0005",
+      "end_block_id": "p0231-b0004",
+      "letter_number_label": "69",
+      "header_tagged": "To Professor <sc>Green</sc>, of Poona.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Professor Green, of Poona",
+      "dateline_tagged": "<sc>India House</sc>, <i>8th April</i> 1852.",
+      "dateline_plain": "India House, 8th April 1852.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0070",
+      "sequence_index": 70,
+      "start_block_id": "p0231-b0005",
+      "end_block_id": "p0233-b0004",
+      "letter_number_label": "70",
+      "header_tagged": "To Professor <sc>Rau</sc>,\nin answer to a question concerning the position of\nLabour Co-partnership in England.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Professor Rau",
+      "dateline_tagged": "<sc>East India House</sc>, <i>7th July</i> 1852.",
+      "dateline_plain": "East India House, 7th July 1852.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0071",
+      "sequence_index": 71,
+      "start_block_id": "p0233-b0005",
+      "end_block_id": "p0235-b0006",
+      "letter_number_label": "71",
+      "header_tagged": "To Lord <sc>Monteagle</sc>,\nthe Whig statesman, in acknowledgment of his pamphlet on the Representation of Minorities.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Lord Monteagle",
+      "dateline_tagged": "<i>20th March</i> 1853.",
+      "dateline_plain": "20th March 1853.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0072",
+      "sequence_index": 72,
+      "start_block_id": "p0235-b0007",
+      "end_block_id": "p0236-b0005",
+      "letter_number_label": "72",
+      "header_tagged": "To Sir <sc>William Molesworth</sc>,\nin reply to a letter asking Mill's opinion on the argument put forward by the opponents of a Succession Duty, that “it would lead to partition of the land, which was an evil.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Sir William Molesworth",
+      "dateline_tagged": "<sc>India House</sc>, 15<i>th May</i> 1853.",
+      "dateline_plain": "India House, 15th May 1853.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0073",
+      "sequence_index": 73,
+      "start_block_id": "p0236-b0006",
+      "end_block_id": "p0237-b0004",
+      "letter_number_label": "73",
+      "header_tagged": "To Lord <sc>Hobart</sc>,\nacknowledging his “Remarks on the Law of Partnership Liability.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Lord Hobart",
+      "dateline_tagged": "<sc>Blackheath</sc>, <i>7th August</i> [1853?].",
+      "dateline_plain": "Blackheath, 7th August [1853?].",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0074",
+      "sequence_index": 74,
+      "start_block_id": "p0237-b0005",
+      "end_block_id": "p0238-b0004",
+      "letter_number_label": "74",
+      "header_tagged": "To T. J. <sc>Furnivale</sc>,\nin reply to a request for permission to reprint a chapter of the “Political Economy.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "T. J. Furnivale",
+      "dateline_tagged": "13<i>th February</i> 1854.",
+      "dateline_plain": "13th February 1854.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0075",
+      "sequence_index": 75,
+      "start_block_id": "p0238-b0005",
+      "end_block_id": "p0239-b0005",
+      "letter_number_label": "75",
+      "header_tagged": "To <sc>Arthur Gore</sc>,",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Arthur Gore",
+      "dateline_tagged": "<i>February</i> 1854.",
+      "dateline_plain": "February 1854.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0076",
+      "sequence_index": 76,
+      "start_block_id": "p0239-b0006",
+      "end_block_id": "p0240-b0005",
+      "letter_number_label": "76",
+      "header_tagged": "To the Chairman of the Library Committees,\nSouth Carolina.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "the Chairman of the Library Committees, South Carolina",
+      "dateline_tagged": "<i>3rd March</i> 1854.",
+      "dateline_plain": "3rd March 1854.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0077",
+      "sequence_index": 77,
+      "start_block_id": "p0240-b0006",
+      "end_block_id": "p0241-b0005",
+      "letter_number_label": "77",
+      "header_tagged": "To the Secretary of the Neophyte Writers'\nSociety.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "the Secretary of the Neophyte Writers' Society",
+      "dateline_tagged": "<i>23rd April</i> 1854.",
+      "dateline_plain": "23rd April 1854.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0078",
+      "sequence_index": 78,
+      "start_block_id": "p0241-b0006",
+      "end_block_id": "p0242-b0003",
+      "letter_number_label": "78",
+      "header_tagged": "To <sc>William Stigant</sc>,\nwho sought Mill's advice on a course of reading in\nMoral Philosophy.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "William Stigant",
+      "dateline_tagged": "<sc>East India House</sc>, 1<i>st August</i> 1854.",
+      "dateline_plain": "East India House, 1st August 1854.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0079",
+      "sequence_index": 79,
+      "start_block_id": "p0242-b0004",
+      "end_block_id": "p0244-b0003",
+      "letter_number_label": "79",
+      "header_tagged": "<sc>To Barbot de Chément</sc>,\n<i>a French captain of artillery.</i>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Barbot de Chément, a French captain of artillery",
+      "dateline_tagged": "<sc>East India House</sc>, <i>7th August</i> 1854.",
+      "dateline_plain": "East India House, 7th August 1854.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0080",
+      "sequence_index": 80,
+      "start_block_id": "p0244-b0004",
+      "end_block_id": "p0245-b0005",
+      "letter_number_label": "80",
+      "header_tagged": "To Sir <sc>John</sc> M‘<sc>Neill</sc>,\non James Ferrier’s work “ Institutes of Metaphysic.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Sir John M‘Neill",
+      "dateline_tagged": "<sc>Torquay</sc>, <i>5th December</i> 1854.",
+      "dateline_plain": "Torquay, 5th December 1854.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0081",
+      "sequence_index": 81,
+      "start_block_id": "p0245-b0006",
+      "end_block_id": "p0246-b0004",
+      "letter_number_label": "81",
+      "header_tagged": "To <sc>Wentworth Holworthy.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Wentworth Holworthy",
+      "dateline_tagged": "<sc>East India House,</sc> <i>11th July</i> 1855.",
+      "dateline_plain": "East India House, 11th July 1855.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0082",
+      "sequence_index": 82,
+      "start_block_id": "p0246-b0006",
+      "end_block_id": "p0247-b0007",
+      "letter_number_label": "82",
+      "header_tagged": "To a Correspondent (on Sir William Molesworth)",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Unidentified Correspondent",
+      "dateline_tagged": "[1855]",
+      "dateline_plain": "[1855]",
+      "dateline_position": "absent",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0083",
+      "sequence_index": 83,
+      "start_block_id": "p0247-b0009",
+      "end_block_id": "p0248-b0007",
+      "letter_number_label": "83",
+      "header_tagged": "To a Correspondent (Epitaph on Sir William Molesworth)",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Unidentified Correspondent",
+      "dateline_tagged": "<sc>Blackheath,</sc> 5<i>th November</i> 1855.",
+      "dateline_plain": "Blackheath, 5th November 1855.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0084",
+      "sequence_index": 84,
+      "start_block_id": "p0248-b0010",
+      "end_block_id": "p0249-b0004",
+      "letter_number_label": "84",
+      "header_tagged": "To <sc>Arthur Hardy</sc>, of Adelaide.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Arthur Hardy, of Adelaide",
+      "dateline_tagged": "<i>29th September</i> 1856.",
+      "dateline_plain": "29th September 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0085",
+      "sequence_index": 85,
+      "start_block_id": "p0249-b0005",
+      "end_block_id": "p0250-b0005",
+      "letter_number_label": "85",
+      "header_tagged": "To the Secretary of the Sunday League.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "the Secretary of the Sunday League",
+      "dateline_tagged": "<i>November</i> 1856.",
+      "dateline_plain": "November 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0086",
+      "sequence_index": 86,
+      "start_block_id": "p0250-b0006",
+      "end_block_id": "p0252-b0005",
+      "letter_number_label": "86",
+      "header_tagged": "To the author of “Currency Self-Regulating\nand Elastic.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "the author of “Currency Self-Regulating and Elastic.”",
+      "dateline_tagged": "<sc>East India House</sc>, <i>24th November</i> 1856.",
+      "dateline_plain": "East India House, 24th November 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0087",
+      "sequence_index": 87,
+      "start_block_id": "p0252-b0006",
+      "end_block_id": "p0253-b0005",
+      "letter_number_label": "87",
+      "header_tagged": "To <sc>Costantino Baer</sc>, attaché au Ministère\nde l’Intérieur à Naples.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Costantino Baer, attaché au Ministère de l’Intérieur à Naples",
+      "dateline_tagged": "<sc>East India House</sc>, <i>13th December</i> 1856.",
+      "dateline_plain": "East India House, 13th December 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0088",
+      "sequence_index": 88,
+      "start_block_id": "p0254-b0003",
+      "end_block_id": "p0256-b0008",
+      "letter_number_label": "88",
+      "header_tagged": "To <sc>Pasquale Villari.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Pasquale Villari",
+      "dateline_tagged": "<sc>East India House,</sc> <i>30th June</i> 1857.",
+      "dateline_plain": "East India House, 30th June 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0089",
+      "sequence_index": 89,
+      "start_block_id": "p0256-b0009",
+      "end_block_id": "p0257-b0006",
+      "letter_number_label": "89",
+      "header_tagged": "To <sc>Henry Carleton</sc>, of Philadelphia.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Henry Carleton, of Philadelphia",
+      "dateline_tagged": "<sc>East India House</sc>, <i>12th October</i> 1857.",
+      "dateline_plain": "East India House, 12th October 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0090",
+      "sequence_index": 90,
+      "start_block_id": "p0258-b0002",
+      "end_block_id": "p0259-b0005",
+      "letter_number_label": "90",
+      "header_tagged": "To F. <sc>Sinnett</sc>, of Melbourne.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "F. Sinnett, of Melbourne",
+      "dateline_tagged": "<sc>Blackheath</sc>, <i>22nd October</i> 1857.",
+      "dateline_plain": "Blackheath, 22nd October 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0091",
+      "sequence_index": 91,
+      "start_block_id": "p0259-b0007",
+      "end_block_id": "p0260-b0006",
+      "letter_number_label": "91",
+      "header_tagged": "To a Memorialist (on an Educational Franchise)",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Unidentified Correspondent (a Memorialist)",
+      "dateline_tagged": "<sc>East India House</sc>, <i>11th December</i> 1857.",
+      "dateline_plain": "East India House, 11th December 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0092",
+      "sequence_index": 92,
+      "start_block_id": "p0260-b0007",
+      "end_block_id": "p0261-b0004",
+      "letter_number_label": "92",
+      "header_tagged": "To <sc>John Holmes</sc>, of Leeds,\non the Co-operative movement.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Holmes, of Leeds",
+      "dateline_tagged": "<sc>East India House</sc>, 19<i>th January</i> 1858.",
+      "dateline_plain": "East India House, 19th January 1858.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0093",
+      "sequence_index": 93,
+      "start_block_id": "p0261-b0005",
+      "end_block_id": "p0262-b0003",
+      "letter_number_label": "93",
+      "header_tagged": "<sc>To Giuseppe Mazzini.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Giuseppe Mazzini",
+      "dateline_tagged": "<sc>Blackheath Park,</sc> <i>21st February</i> 1858.",
+      "dateline_plain": "Blackheath Park, 21st February 1858.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0094",
+      "sequence_index": 94,
+      "start_block_id": "p0262-b0004",
+      "end_block_id": "p0263-b0007",
+      "letter_number_label": "94",
+      "header_tagged": "To <sc>Pasquale Villari</sc>.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Pasquale Villari",
+      "dateline_tagged": "<sc>East India House</sc>, <i>le</i> 9 <i>mars</i>, 1858.",
+      "dateline_plain": "East India House, le 9 mars, 1858.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0095",
+      "sequence_index": 95,
+      "start_block_id": "p0264-b0003",
+      "end_block_id": "p0265-b0004",
+      "letter_number_label": "95",
+      "header_tagged": "To <sc>William Newmarch</sc>.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "William Newmarch",
+      "dateline_tagged": "<sc>East India House</sc>, <i>20th March</i> 1858.",
+      "dateline_plain": "East India House, 20th March 1858.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0096",
+      "sequence_index": 96,
+      "start_block_id": "p0265-b0005",
+      "end_block_id": "p0266-b0003",
+      "letter_number_label": "96",
+      "header_tagged": "To <sc>Giuseppe Mazzini</sc>,",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Giuseppe Mazzini",
+      "dateline_tagged": "<sc>East India House</sc>, <i>15th April</i> 1858.",
+      "dateline_plain": "East India House, 15th April 1858.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0097",
+      "sequence_index": 97,
+      "start_block_id": "p0266-b0005",
+      "end_block_id": "p0266-b0008",
+      "letter_number_label": "97",
+      "header_tagged": "To J. <sc>Britten.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "J. Britten",
+      "dateline_tagged": "<sc>East India House</sc>, <i>1st July</i> 1858.",
+      "dateline_plain": "East India House, 1st July 1858.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0098",
+      "sequence_index": 98,
+      "start_block_id": "p0266-b0009",
+      "end_block_id": "p0268-b0004",
+      "letter_number_label": "98",
+      "header_tagged": "To <sc>Pasquale Villari.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Pasquale Villari",
+      "dateline_tagged": "<sc>East India House</sc>, <i>le 8 juillet</i> 1858.",
+      "dateline_plain": "East India House, le 8 juillet 1858.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0099",
+      "sequence_index": 99,
+      "start_block_id": "p0268-b0005",
+      "end_block_id": "p0271-b0005",
+      "letter_number_label": "99",
+      "header_tagged": "To Judge <sc>Chapman</sc>,\nthen Prime Minister of the colony of Victoria.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Judge Chapman",
+      "dateline_tagged": "<sc>East India House</sc>, <i>8th July</i> 1858.",
+      "dateline_plain": "East India House, 8th July 1858.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0100",
+      "sequence_index": 100,
+      "start_block_id": "p0272-b0003",
+      "end_block_id": "p0275-b0006",
+      "letter_number_label": "100",
+      "header_tagged": "To <sc>Louis Blanc</sc>,\nacknowledging his book, “ 1848: Historical Revela-\ntions.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Louis Blanc",
+      "dateline_tagged": "<sc>Blackheath Park</sc>, <i>le</i> 9 <i>juillet</i> 1858.",
+      "dateline_plain": "Blackheath Park, le 9 juillet 1858.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0101",
+      "sequence_index": 101,
+      "start_block_id": "p0275-b0007",
+      "end_block_id": "p0275-b0012",
+      "letter_number_label": "101",
+      "header_tagged": "To <sc>George Grote</sc>,\nin reply to a letter of sympathy on the death of Mrs. Mill.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "George Grote",
+      "dateline_tagged": "<sc>Blackheath</sc>, <i>28th November</i> 1858.",
+      "dateline_plain": "Blackheath, 28th November 1858.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0102",
+      "sequence_index": 102,
+      "start_block_id": "p0276-b0003",
+      "end_block_id": "p0276-b0008",
+      "letter_number_label": "102",
+      "header_tagged": "To <sc>James Lorimer</sc>,\non Plural Voting.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "James Lorimer",
+      "dateline_tagged": "<sc>Blackheath</sc>, <i>3rd March</i> 1859.",
+      "dateline_plain": "Blackheath, 3rd March 1859.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0103",
+      "sequence_index": 103,
+      "start_block_id": "p0276-b0009",
+      "end_block_id": "p0278-b0005",
+      "letter_number_label": "103",
+      "header_tagged": "To <sc>Thomas Hare</sc>,",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Hare",
+      "dateline_tagged": "<i>3rd March</i> 1859.",
+      "dateline_plain": "3rd March 1859.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0104",
+      "sequence_index": 104,
+      "start_block_id": "p0278-b0006",
+      "end_block_id": "p0278-b0011",
+      "letter_number_label": "104",
+      "header_tagged": "To <sc>Pasquale Villari</sc>,\nin reply to a letter of condolence on the death of Mrs. Mill.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Pasquale Villari",
+      "dateline_tagged": "<i>le</i> 6 <i>mars</i> 1859.",
+      "dateline_plain": "le 6 mars 1859.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0105",
+      "sequence_index": 105,
+      "start_block_id": "p0279-b0003",
+      "end_block_id": "p0279-b0006",
+      "letter_number_label": "105",
+      "header_tagged": "To <sc>Alexander Bain</sc>.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Alexander Bain",
+      "dateline_tagged": "<sc>Blackheath</sc>, <i>17th March</i> 1859.",
+      "dateline_plain": "Blackheath, 17th March 1859.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0106",
+      "sequence_index": 106,
+      "start_block_id": "p0279-b0007",
+      "end_block_id": "p0281-b0004",
+      "letter_number_label": "106",
+      "header_tagged": "To <sc>Pasquale Villari</sc>,\nin reply to a further letter on the death of Mrs. Mill.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Pasquale Villari",
+      "dateline_tagged": "<sc>Blackheath</sc>, <i>28th March</i> 1859.",
+      "dateline_plain": "Blackheath, 28th March 1859.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0107",
+      "sequence_index": 107,
+      "start_block_id": "p0281-b0005",
+      "end_block_id": "p0281-b0009",
+      "letter_number_label": "107",
+      "header_tagged": "To <sc>Thomas Hare.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Hare",
+      "dateline_tagged": "<i>29th March</i> 1859.",
+      "dateline_plain": "29th March 1859.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0108",
+      "sequence_index": 108,
+      "start_block_id": "p0281-b0010",
+      "end_block_id": "p0282-b0005",
+      "letter_number_label": "108",
+      "header_tagged": "To <sc>James Lorimer</sc>,",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "James Lorimer",
+      "dateline_tagged": "<i>7th April</i> 1859.",
+      "dateline_plain": "7th April 1859.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0109",
+      "sequence_index": 109,
+      "start_block_id": "p0282-b0006",
+      "end_block_id": "p0283-b0006",
+      "letter_number_label": "109",
+      "header_tagged": "To <sc>Thomas Hare</sc>,\nafter Lord Derby's resignation, when Lord Granville was endeavouring to form a Cabinet.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Thomas Hare",
+      "dateline_tagged": "<sc>St. Véran</sc>, <i>17th June</i> 1859.",
+      "dateline_plain": "St. Véran, 17th June 1859.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0110",
+      "sequence_index": 110,
+      "start_block_id": "p0284-b0003",
+      "end_block_id": "p0284-b0006",
+      "letter_number_label": "110",
+      "header_tagged": "To <sc>Pasquale Villari</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Pasquale Villari",
+      "dateline_tagged": "<sc>St. Véran</sc>, 22 <i>juin</i> 1859.",
+      "dateline_plain": "St. Véran, 22 juin 1859.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0111",
+      "sequence_index": 111,
+      "start_block_id": "p0285-b0003",
+      "end_block_id": "p0286-b0004",
+      "letter_number_label": "111",
+      "header_tagged": "To <sc>Alexander Bain</sc>.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Alexander Bain",
+      "dateline_tagged": "<sc>St. Véran</sc>, <i>6th August</i> 1859.",
+      "dateline_plain": "St. Véran, 6th August 1859.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0112",
+      "sequence_index": 112,
+      "start_block_id": "p0286-b0005",
+      "end_block_id": "p0287-b0004",
+      "letter_number_label": "112",
+      "header_tagged": "To <sc>Alexander Bain.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Alexander Bain",
+      "dateline_tagged": "<sc>St. Véran,</sc> 15<i>th October</i> 1859.",
+      "dateline_plain": "St. Véran, 15th October 1859.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0113",
+      "sequence_index": 113,
+      "start_block_id": "p0287-b0005",
+      "end_block_id": "p0288-b0006",
+      "letter_number_label": "113",
+      "header_tagged": "To <sc>Alexander Bain.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Alexander Bain",
+      "dateline_tagged": "<sc>St. Véran</sc>, 14<i>th November</i> 1859.",
+      "dateline_plain": "St. Véran, 14th November 1859.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0114",
+      "sequence_index": 114,
+      "start_block_id": "p0289-b0003",
+      "end_block_id": "p0293-b0006",
+      "letter_number_label": "114",
+      "header_tagged": "To Dr. W. G. W<sc>ard</sc>.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Dr. W. G. Ward",
+      "dateline_tagged": "<sc>St. Véran</sc>, <i>28th November</i> 1859.",
+      "dateline_plain": "St. Véran, 28th November 1859.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0115",
+      "sequence_index": 115,
+      "start_block_id": "p0293-b0007",
+      "end_block_id": "p0294-b0006",
+      "letter_number_label": "115",
+      "header_tagged": "To <sc>Pasquale Villari</sc>,\nwho had been reviewing the “Political Economy” in\nan Italian Review.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Pasquale Villari",
+      "dateline_tagged": "<sc>St. Véran</sc>, <i>le 29 novembre</i> 1859.",
+      "dateline_plain": "St. Véran, le 29 novembre 1859.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0116",
+      "sequence_index": 116,
+      "start_block_id": "p0295-b0003",
+      "end_block_id": "p0295-b0007",
+      "letter_number_label": "116",
+      "header_tagged": "To <sc>Edwin</sc> (afterwards Sir <sc>Edwin</sc>) <sc>Chadwick</sc>,\nthe sanitary reformer.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Edwin (afterwards Sir Edwin) Chadwick, the sanitary reformer",
+      "dateline_tagged": "<i>20th December</i> 1859.",
+      "dateline_plain": "20th December 1859.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0117",
+      "sequence_index": 117,
+      "start_block_id": "p0296-b0003",
+      "end_block_id": "p0298-b0004",
+      "letter_number_label": "117",
+      "header_tagged": "To <sc>Charles Dupont-White</sc>,\non his book “La Centralisation.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Charles Dupont-White",
+      "dateline_tagged": "<sc>St. Véran</sc>, <i>le 6 avril</i> 1860.",
+      "dateline_plain": "St. Véran, le 6 avril 1860.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0118",
+      "sequence_index": 118,
+      "start_block_id": "p0298-b0005",
+      "end_block_id": "p0299-b0004",
+      "letter_number_label": "118",
+      "header_tagged": "To <sc>Alexander Bain</sc>,\nrecording Mill's first impressions on reading “The Origin of Species.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Alexander Bain",
+      "dateline_tagged": "<i>11th April</i> 1860.",
+      "dateline_plain": "11th April 1860.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0119",
+      "sequence_index": 119,
+      "start_block_id": "p0299-b0005",
+      "end_block_id": "p0299-b0008",
+      "letter_number_label": "119",
+      "header_tagged": "To <sc>Charles Dupont-White.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Charles Dupont-White",
+      "dateline_tagged": "<sc>Ax (Ariège)</sc> <i>le</i> 10 <i>juin</i> 1860.",
+      "dateline_plain": "Ax (Ariège) le 10 juin 1860.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0120",
+      "sequence_index": 120,
+      "start_block_id": "p0299-b0009",
+      "end_block_id": "p0300-b0006",
+      "letter_number_label": "120",
+      "header_tagged": "To T. <sc>Cliffe Leslie</sc>, the political economist.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "T. Cliffe Leslie, the political economist",
+      "dateline_tagged": "<sc>Blackheath Park</sc>, 18<i>th August</i> 1860.",
+      "dateline_plain": "Blackheath Park, 18th August 1860.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0121",
+      "sequence_index": 121,
+      "start_block_id": "p0300-b0007",
+      "end_block_id": "p0303-b0004",
+      "letter_number_label": "121",
+      "header_tagged": "To a Correspondent.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "a Correspondent",
+      "dateline_tagged": "<sc>Blackheath Park,</sc> <i>23rd September</i> 1860.",
+      "dateline_plain": "Blackheath Park, 23rd September 1860.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0122",
+      "sequence_index": 122,
+      "start_block_id": "p0303-b0005",
+      "end_block_id": "p0304-b0006",
+      "letter_number_label": "122",
+      "header_tagged": "To the same Correspondent.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "the same Correspondent",
+      "dateline_tagged": "<sc>Blackheath Park</sc>, <i>4th October</i> 1860.",
+      "dateline_plain": "Blackheath Park, 4th October 1860.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0123",
+      "sequence_index": 123,
+      "start_block_id": "p0304-b0007",
+      "end_block_id": "p0306-b0005",
+      "letter_number_label": "123",
+      "header_tagged": "To <sc>Pasquale Villari.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Pasquale Villari",
+      "dateline_tagged": "<sc>St. Véran,</sc> <i>le</i> 6 <i>novembre</i> 1860.",
+      "dateline_plain": "St. Véran, le 6 novembre 1860.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0124",
+      "sequence_index": 124,
+      "start_block_id": "p0306-b0006",
+      "end_block_id": "p0307-b0005",
+      "letter_number_label": "124",
+      "header_tagged": "To <sc>Gustave de Beaumont</sc>,\neditor of “Œuvres et Correspondance inédites d'Alexis de Tocqueville.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Gustave de Beaumont",
+      "dateline_tagged": "<sc>St. Véran</sc>, <i>le</i> 15 <i>janvier</i> 1861.",
+      "dateline_plain": "St. Véran, le 15 janvier 1861.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0125",
+      "sequence_index": 125,
+      "start_block_id": "p0307-b0006",
+      "end_block_id": "p0308-b0004",
+      "letter_number_label": "125",
+      "header_tagged": "<sc>To Edwin Chadwick.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Edwin Chadwick",
+      "dateline_tagged": "<sc>Blackheath Park,</sc> 1<i>st March</i> 1861.",
+      "dateline_plain": "Blackheath Park, 1st March 1861.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0126",
+      "sequence_index": 126,
+      "start_block_id": "p0308-b0005",
+      "end_block_id": "p0309-b0005",
+      "letter_number_label": "126",
+      "header_tagged": "To Sir <sc>Henry Taylor</sc>,\nin reply to a letter from him criticising Mill's “Representative Government.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Sir Henry Taylor",
+      "dateline_tagged": "<sc>Blackheath Park</sc>, <i>5th July</i> 1861.",
+      "dateline_plain": "Blackheath Park, 5th July 1861.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0127",
+      "sequence_index": 127,
+      "start_block_id": "p0309-b0006",
+      "end_block_id": "p0310-b0004",
+      "letter_number_label": "127",
+      "header_tagged": "To <sc>John Chapman</sc>,\nwith reference to a building strike, then in progress ; concerning which Mr. Frederic Harrison had written a letter to the <i>Daily News</i>.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Chapman",
+      "dateline_tagged": "<sc>Blackheath Park</sc>, <i>4th August</i> 1861.",
+      "dateline_plain": "Blackheath Park, 4th August 1861.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0128",
+      "sequence_index": 128,
+      "start_block_id": "p0310-b0005",
+      "end_block_id": "p0311-b0006",
+      "letter_number_label": "128",
+      "header_tagged": "To T. <sc>Cliffe Leslie</sc>,\non an article written by him on Income Tax Reform.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "T. Cliffe Leslie",
+      "dateline_tagged": "<sc>St. Véran</sc>, 20<i>th December</i> 1861.",
+      "dateline_plain": "St. Véran, 20th December 1861.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0129",
+      "sequence_index": 129,
+      "start_block_id": "p0311-b0007",
+      "end_block_id": "p0313-b0005",
+      "letter_number_label": "129",
+      "header_tagged": "To <sc>George Grote.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "George Grote",
+      "dateline_tagged": "<sc>St. Véran,</sc> 10<i>th January</i> 1862.",
+      "dateline_plain": "St. Véran, 10th January 1862.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0130",
+      "sequence_index": 130,
+      "start_block_id": "p0314-b0002",
+      "end_block_id": "p0316-b0005",
+      "letter_number_label": "130",
+      "header_tagged": "<sc>To Célestin de Blignières</sc>,\non his book “Exposition de la philosophie et de la\nreligion positives.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Célestin de Blignières",
+      "dateline_tagged": "<sc>St. Véran</sc>, <i>le 22 janvier</i> 1862.",
+      "dateline_plain": "St. Véran, le 22 janvier 1862.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0131",
+      "sequence_index": 131,
+      "start_block_id": "p0316-b0006",
+      "end_block_id": "p0318-b0005",
+      "letter_number_label": "131",
+      "header_tagged": "To <sc>Pasquale Villari</sc>,\non some characteristics of the Latin and Germanic races.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Pasquale Villari",
+      "dateline_tagged": "<sc>St. Véran</sc>, <i>le 26 janvier</i> 1862.",
+      "dateline_plain": "St. Véran, le 26 janvier 1862.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0132",
+      "sequence_index": 132,
+      "start_block_id": "p0318-b0006",
+      "end_block_id": "p0320-b0005",
+      "letter_number_label": "132",
+      "header_tagged": "To <sc>W. T. Thornton</sc>,\nin reply to a letter asking about peasant proprietors in the neighbourhood of Avignon.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "W. T. Thornton",
+      "dateline_tagged": "<sc>St. Véran</sc>, 28<i>th January</i> 1862.",
+      "dateline_plain": "St. Véran, 28th January 1862.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0133",
+      "sequence_index": 133,
+      "start_block_id": "p0321-b0003",
+      "end_block_id": "p0321-b0006",
+      "letter_number_label": "133",
+      "header_tagged": "To W. T. <sc>Thornton</sc>,\nindicating Mill's attitude towards Spiritualism.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "W. T. Thornton",
+      "dateline_tagged": "<sc>Athens</sc>, 11<i>th June</i> 1862.",
+      "dateline_plain": "Athens, 11th June 1862.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0134",
+      "sequence_index": 134,
+      "start_block_id": "p0321-b0007",
+      "end_block_id": "p0323-b0004",
+      "letter_number_label": "134",
+      "header_tagged": "To E. R. <sc>Edger</sc>,\nin acknowledgment of a work entitled “ Social Freedom.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "E. R. Edger",
+      "dateline_tagged": "<sc>St. Véran</sc>, 13<i>th September</i> 1862.",
+      "dateline_plain": "St. Véran, 13th September 1862.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0135",
+      "sequence_index": 135,
+      "start_block_id": "p0323-b0005",
+      "end_block_id": "p0324-b0006",
+      "letter_number_label": "135",
+      "header_tagged": "From W. T. <sc>Thornton</sc> to <sc>Henry Fawcett</sc>,\ndescribing Mill’s mode of life at Avignon.",
+      "sender_display": "W. T. Thornton",
+      "recipient_display": "Henry Fawcett",
+      "dateline_tagged": "<sc>St. Véran, Avignon</sc>, <i>October</i> 1862.",
+      "dateline_plain": "St. Véran, Avignon, October 1862.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0136",
+      "sequence_index": 136,
+      "start_block_id": "p0325-b0003",
+      "end_block_id": "p0328-b0004",
+      "letter_number_label": "136",
+      "header_tagged": "To <sc>John Lothrop Motley</sc>,\nthen American ambassador to Austria, on the American civil war.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Lothrop Motley",
+      "dateline_tagged": "<sc>St. Véran</sc>, 31<i>st October</i> 1862.",
+      "dateline_plain": "St. Véran, 31st October 1862.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0137",
+      "sequence_index": 137,
+      "start_block_id": "p0328-b0005",
+      "end_block_id": "p0329-b0005",
+      "letter_number_label": "137",
+      "header_tagged": "To <sc>Nikolai Ogareff</sc>,\non his book “Essai sur la situation russe.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Nikolai Ogareff",
+      "dateline_tagged": "<sc>St. Véran</sc>, <i>le 7 novembre</i> 1862.",
+      "dateline_plain": "St. Véran, le 7 novembre 1862.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0138",
+      "sequence_index": 138,
+      "start_block_id": "p0329-b0006",
+      "end_block_id": "p0330-b0004",
+      "letter_number_label": "138",
+      "header_tagged": "<sc>To George Finlay</sc>,\non taxation of land in Greece.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "George Finlay",
+      "dateline_tagged": "<sc>Blackheath Park</sc>, <i>24th December</i> 1862.",
+      "dateline_plain": "Blackheath Park, 24th December 1862.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0139",
+      "sequence_index": 139,
+      "start_block_id": "p0330-b0005",
+      "end_block_id": "p0331-b0006",
+      "letter_number_label": "139",
+      "header_tagged": "To <sc>Max Kyllman</sc>, of Manchester,\nin reply to a letter informing Mill of the change of opinion taking place in Lancashire on the American civil war; and of a great meeting of operatives organised for the purpose of sending an address to Abraham Lincoln.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Max Kyllman, of Manchester",
+      "dateline_tagged": "<i>24th December</i> 1862.",
+      "dateline_plain": "24th December 1862.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0140",
+      "sequence_index": 140,
+      "start_block_id": "p0331-b0007",
+      "end_block_id": "p0332-b0004",
+      "letter_number_label": "140",
+      "header_tagged": "To the Right Hon. <sc>Joseph Napier</sc>,\nwho afterwards became Lord Chancellor of Ireland, and received a baronetcy. This is in reply to a letter on the subject of Mill’s criticism of Butler’s “Analogy” in his “Logic.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "the Right Hon. Joseph Napier",
+      "dateline_tagged": "<sc>Blackheath Park</sc>, <i>24th December</i> 1862.",
+      "dateline_plain": "Blackheath Park, 24th December 1862.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0141",
+      "sequence_index": 141,
+      "start_block_id": "p0333-b0003",
+      "end_block_id": "p0336-b0004",
+      "letter_number_label": "141",
+      "header_tagged": "To <sc>Alexander Bain.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Alexander Bain",
+      "dateline_tagged": "<sc>Blackheath Park,</sc> <i>7th January</i> 1863.",
+      "dateline_plain": "Blackheath Park, 7th January 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0142",
+      "sequence_index": 142,
+      "start_block_id": "p0336-b0005",
+      "end_block_id": "p0338-b0004",
+      "letter_number_label": "142",
+      "header_tagged": "To <sc>Samuel Bailey</sc>,\non his books, “On the Received Text of Shakespeare,” and “Letters on the Philosophy of the Mind.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Samuel Bailey",
+      "dateline_tagged": "<sc>Blackheath Park</sc>, <i>21st January</i> 1863.",
+      "dateline_plain": "Blackheath Park, 21st January 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0143",
+      "sequence_index": 143,
+      "start_block_id": "p0338-b0005",
+      "end_block_id": "p0343-b0005",
+      "letter_number_label": "143",
+      "header_tagged": "To <sc>John Lothrop Motley</sc>,\non the American civil war.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "John Lothrop Motley",
+      "dateline_tagged": "<sc>Blackheath Park</sc>, <i>26th January</i> 1863.",
+      "dateline_plain": "Blackheath Park, 26th January 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0144",
+      "sequence_index": 144,
+      "start_block_id": "p0343-b0006",
+      "end_block_id": "p0344-b0005",
+      "letter_number_label": "144",
+      "header_tagged": "To the Right Hon. <sc>Joseph Napier</sc>,\non Miracles.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "the Right Hon. Joseph Napier",
+      "dateline_tagged": "<sc>Blackheath Park</sc>, <i>27th January</i> 1863.",
+      "dateline_plain": "Blackheath Park, 27th January 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0145",
+      "sequence_index": 145,
+      "start_block_id": "p0344-b0006",
+      "end_block_id": "p0345-b0005",
+      "letter_number_label": "145",
+      "header_tagged": "To <sc>George Finlay</sc>, the Greek historian,\nwho was then living at Athens.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "George Finlay, the Greek historian",
+      "dateline_tagged": "<sc>Blackheath Park</sc>, <i>2nd February</i> 1863.",
+      "dateline_plain": "Blackheath Park, 2nd February 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0146",
+      "sequence_index": 146,
+      "start_block_id": "p0345-b0006",
+      "end_block_id": "p0346-b0006",
+      "letter_number_label": "146",
+      "header_tagged": "To R. C. <sc>Wyllie</sc>,\nForeign Minister at the Sandwich Islands.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "R. C. Wyllie, Foreign Minister at the Sandwich Islands",
+      "dateline_tagged": "<sc>Blackheath Park</sc>, <i>3rd February</i> 1863.",
+      "dateline_plain": "Blackheath Park, 3rd February 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0147",
+      "sequence_index": 147,
+      "start_block_id": "p0346-b0007",
+      "end_block_id": "p0349-b0006",
+      "letter_number_label": "147",
+      "header_tagged": "To <sc>Alexander Bain,</sc>\non James Ferrier's “Institutes of Metaphysic.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Alexander Bain",
+      "dateline_tagged": "<sc>Blackheath Park,</sc> 13<i>th February</i> 1863.",
+      "dateline_plain": "Blackheath Park, 13th February 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0148",
+      "sequence_index": 148,
+      "start_block_id": "p0349-b0007",
+      "end_block_id": "p0351-b0005",
+      "letter_number_label": "148",
+      "header_tagged": "To <sc>Max Kyllman</sc>,",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Max Kyllman",
+      "dateline_tagged": "<sc>Blackheath Park</sc>, 15<i>th February</i> 1863.",
+      "dateline_plain": "Blackheath Park, 15th February 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0149",
+      "sequence_index": 149,
+      "start_block_id": "p0351-b0006",
+      "end_block_id": "p0352-b0004",
+      "letter_number_label": "149",
+      "header_tagged": "To C. A. <sc>Cummings</sc>, of Boston (U.S.)",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "C. A. Cummings, of Boston (U.S.)",
+      "dateline_tagged": "<sc>Blackheath Park</sc>, 23<i>rd February</i> 1863.",
+      "dateline_plain": "Blackheath Park, 23rd February 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0150",
+      "sequence_index": 150,
+      "start_block_id": "p0353-b0003",
+      "end_block_id": "p0353-b0006",
+      "letter_number_label": "150",
+      "header_tagged": "To <sc>Henry Solly</sc>,\nof the Working Men's Club and Institute Union, on working men's clubs.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Henry Solly, of the Working Men's Club and Institute Union",
+      "dateline_tagged": "<sc>St. Véran</sc>, <i>6th April</i> 1863.",
+      "dateline_plain": "St. Véran, 6th April 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0151",
+      "sequence_index": 151,
+      "start_block_id": "p0353-b0007",
+      "end_block_id": "p0354-b0005",
+      "letter_number_label": "151",
+      "header_tagged": "To W. T. <sc>Thornton</sc>,\nin reply to a criticism of his on the “Utilitarianism.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "W. T. Thornton",
+      "dateline_tagged": "<sc>St. Véran</sc>, <i>17th April</i> 1863.",
+      "dateline_plain": "St. Véran, 17th April 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0152",
+      "sequence_index": 152,
+      "start_block_id": "p0355-b0003",
+      "end_block_id": "p0355-b0008",
+      "letter_number_label": "152",
+      "header_tagged": "To <sc>Theodor Gomperz</sc> (Mill's German translator).",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Theodor Gomperz (Mill's German translator)",
+      "dateline_tagged": "<sc>St. Véran</sc>, <i>23rd April</i> 1863.",
+      "dateline_plain": "St. Véran, 23rd April 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0153",
+      "sequence_index": 153,
+      "start_block_id": "p0355-b0009",
+      "end_block_id": "p0356-b0004",
+      "letter_number_label": "153",
+      "header_tagged": "To T. <sc>Cliffe Leslie</sc>,\non labour co-partnership.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "T. Cliffe Leslie",
+      "dateline_tagged": "<sc>St. Véran</sc>, <i>4th May</i> 1863.",
+      "dateline_plain": "St. Véran, 4th May 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0154",
+      "sequence_index": 154,
+      "start_block_id": "p0356-b0005",
+      "end_block_id": "p0357-b0004",
+      "letter_number_label": "154",
+      "header_tagged": "To <sc>Theodor Gomperz.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Theodor Gomperz",
+      "dateline_tagged": "<sc>Blackheath Park,</sc> <i>5th July</i> 1863.",
+      "dateline_plain": "Blackheath Park, 5th July 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0155",
+      "sequence_index": 155,
+      "start_block_id": "p0358-b0003",
+      "end_block_id": "p0358-b0006",
+      "letter_number_label": "155",
+      "header_tagged": "To J. G. <sc>Palfrey</sc>, of Boston,\nacknowledging his “History of New England,” and\n“Papers on the Slave Power.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "J. G. Palfrey, of Boston",
+      "dateline_tagged": "<sc>Blackheath Park</sc>, 18<i>th July</i> 1863.",
+      "dateline_plain": "Blackheath Park, 18th July 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0156",
+      "sequence_index": 156,
+      "start_block_id": "p0358-b0007",
+      "end_block_id": "p0361-b0006",
+      "letter_number_label": "156",
+      "header_tagged": "To J. <sc>Stuart Glennie</sc>.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "J. Stuart Glennie",
+      "dateline_tagged": "<sc>Blackheath Park</sc>, 23<i>rd July</i> 1863.",
+      "dateline_plain": "Blackheath Park, 23rd July 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0157",
+      "sequence_index": 157,
+      "start_block_id": "p0361-b0007",
+      "end_block_id": "p0362-b0005",
+      "letter_number_label": "157",
+      "header_tagged": "To T. <sc>Cliffe Leslie</sc>.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "T. Cliffe Leslie",
+      "dateline_tagged": "<sc>St. Véran</sc>, 15<i>th September</i> 1863.",
+      "dateline_plain": "St. Véran, 15th September 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0158",
+      "sequence_index": 158,
+      "start_block_id": "p0362-b0006",
+      "end_block_id": "p0364-b0007",
+      "letter_number_label": "158",
+      "header_tagged": "To Judge <sc>Appleton.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Judge Appleton",
+      "dateline_tagged": "<sc>St. Véran,</sc> <i>24th September</i> 1863.",
+      "dateline_plain": "St. Véran, 24th September 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0159",
+      "sequence_index": 159,
+      "start_block_id": "p0365-b0003",
+      "end_block_id": "p0366-b0004",
+      "letter_number_label": "159",
+      "header_tagged": "To W. T. <sc>Thornton.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "W. T. Thornton",
+      "dateline_tagged": "<sc>St. Véran,</sc> <i>23rd October</i> 1863.",
+      "dateline_plain": "St. Véran, 23rd October 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0160",
+      "sequence_index": 160,
+      "start_block_id": "p0366-b0005",
+      "end_block_id": "p0368-b0004",
+      "letter_number_label": "160",
+      "header_tagged": "To <sc>Henry Chenevix</sc>,\non Miracles.",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Henry Chenevix",
+      "dateline_tagged": "<sc>St. Véran</sc>, <i>4th November</i> 1863.",
+      "dateline_plain": "St. Véran, 4th November 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0161",
+      "sequence_index": 161,
+      "start_block_id": "p0368-b0005",
+      "end_block_id": "p0369-b0005",
+      "letter_number_label": "161",
+      "header_tagged": "To Professor <sc>Antoine Elisée Cherbuliez</sc>, of Zurich, acknowledging his book, “Précis de la Science Economique.”",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Professor Antoine Elisée Cherbuliez, of Zurich",
+      "dateline_tagged": "<sc>St. Véran</sc>, <i>le</i> 6 <i>novembre</i> 1863.",
+      "dateline_plain": "St. Véran, le 6 novembre 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0162",
+      "sequence_index": 162,
+      "start_block_id": "p0369-b0006",
+      "end_block_id": "p0371-b0008",
+      "letter_number_label": "162",
+      "header_tagged": "To T. <sc>Cliffe Leslie.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "T. Cliffe Leslie",
+      "dateline_tagged": "<sc>St. Véran,</sc> <i>14th November</i> 1863.",
+      "dateline_plain": "St. Véran, 14th November 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    },
+    {
+      "letter_id": "letter-0163",
+      "sequence_index": 163,
+      "start_block_id": "p0372-b0003",
+      "end_block_id": "p0374-b0006",
+      "letter_number_label": "163",
+      "header_tagged": "To <sc>Alexander Bain.</sc>",
+      "sender_display": "John Stuart Mill",
+      "recipient_display": "Alexander Bain",
+      "dateline_tagged": "<sc>St. Véran,</sc> <i>22nd November</i> 1863.",
+      "dateline_plain": "St. Véran, 22nd November 1863.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "updated_at": "2026-11-19T15:17:05.655578+00:00"
+    }
+  ]
+}

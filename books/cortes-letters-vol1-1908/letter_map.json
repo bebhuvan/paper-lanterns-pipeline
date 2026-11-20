@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "cortes-letters-vol1-1908",
+  "force_split_before_block_ids": [],
+  "forbid_split_before_block_ids": [],
+  "enclosure_block_ranges": [],
+  "explicit_letters": [
+    {
+      "sequence_index": 1,
+      "start_block_id": "p0082-b0004",
+      "end_block_id": "p0086-b0007",
+      "letter_number_label": "I",
+      "sender_display": "Hernán Cortés (The Marques del Valle)",
+      "recipient_display": "Emperor Charles V",
+      "dateline_plain": "From Valladolid, the 3rd of February, 1544.",
+      "dateline_tagged": "From Valladolid, the 3rd of February, 1544.",
+      "dateline_position": "bottom",
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "updated_at": "2026-11-17T22:41:27.174910+00:00"
+    },
+    {
+      "sequence_index": 2,
+      "start_block_id": "p0143-b0001",
+      "end_block_id": "p0191-b0009",
+      "letter_number_label": "First Letter",
+      "sender_display": "Judiciary and Municipal Authorities of the Villa Rica de la Vera Cruz (for Hernán Cortés)",
+      "recipient_display": "Queen Doña Juana and Emperor Charles V",
+      "dateline_plain": "From the Rica Villa de la Vera Cruz, on the tenth July, 1519.",
+      "dateline_tagged": "From the Rica Villa de la Vera Cruz, on the tenth July, 1519.",
+      "dateline_position": "bottom",
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "updated_at": "2026-11-17T22:41:27.174910+00:00"
+    },
+    {
+      "sequence_index": 3,
+      "start_block_id": "p0205-b0001",
+      "end_block_id": "p0347-b0006",
+      "letter_number_label": "Second Letter",
+      "sender_display": "Hernán Cortés",
+      "recipient_display": "Emperor Charles V",
+      "dateline_plain": "From the town of Segura de la Frontera, of this New Spain, on the 30th October, 1520.",
+      "dateline_tagged": "From the town of Segura de la Frontera, of this New Spain, on the 30th October, 1520.",
+      "dateline_position": "bottom",
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "updated_at": "2026-11-17T22:41:27.174910+00:00"
+    }
+  ]
+}

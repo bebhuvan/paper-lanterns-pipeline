@@ -1,0 +1,69 @@
+{
+  "book_id": "sand-flaubert-letters-1922",
+  "page_number": 139,
+  "check_id": "scan-check-p0139",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "897805b34e80c8fa5e9c4dd1d48650b27ff614d535f500c65cd25eac5254dd8d",
+  "checks": [
+    {
+      "block_id": "p0139-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Çà et Là' accented uppercase C-cedilla verbatim on folio 95."
+    },
+    {
+      "block_id": "p0139-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Çà et Là' accented uppercase C-cedilla verbatim on folio 95."
+    },
+    {
+      "block_id": "p0139-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Çà et Là' accented uppercase C-cedilla verbatim on folio 95."
+    },
+    {
+      "block_id": "p0139-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Çà et Là' accented uppercase C-cedilla verbatim on folio 95."
+    },
+    {
+      "block_id": "p0139-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Çà et Là' accented uppercase C-cedilla verbatim on folio 95."
+    },
+    {
+      "block_id": "p0139-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Çà et Là' accented uppercase C-cedilla verbatim on folio 95."
+    },
+    {
+      "block_id": "p0139-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Çà et Là' accented uppercase C-cedilla verbatim on folio 95."
+    },
+    {
+      "block_id": "p0139-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Çà et Là' accented uppercase C-cedilla verbatim on folio 95."
+    },
+    {
+      "block_id": "p0139-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Çà et Là' accented uppercase C-cedilla verbatim on folio 95."
+    },
+    {
+      "block_id": "p0139-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Çà et Là' accented uppercase C-cedilla verbatim on folio 95."
+    },
+    {
+      "block_id": "p0139-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Çà et Là' accented uppercase C-cedilla verbatim on folio 95."
+    },
+    {
+      "block_id": "p0139-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Çà et Là' accented uppercase C-cedilla verbatim on folio 95."
+    }
+  ]
+}

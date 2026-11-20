@@ -1,0 +1,19 @@
+{
+  "book_id": "dostoevsky-family-friends-1914",
+  "page_number": 52,
+  "check_id": "scan-check-p0052",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "ae1934258509d7535c2ec515d0e638160a0ab333fc0ae34732235da8553bddd7",
+  "checks": [
+    {
+      "block_id": "p0052-b0002",
+      "verdict": "confirmed_compositor_callout_mismatch",
+      "note": "Verified 1914 compositor mismatch on folio 28: inline 'Bulgarin*' vs footnote '¹ Faddey Bulgarin (1789-1859)...'; paired via note_label='*'."
+    },
+    {
+      "block_id": "p0052-b0003",
+      "verdict": "confirmed_compositor_callout_mismatch",
+      "note": "Verified 1914 compositor mismatch on folio 28: inline 'Bulgarin*' vs footnote '¹ Faddey Bulgarin (1789-1859)...'; paired via note_label='*'."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "exam_id": "exam_02_napoleon_1795_p0033",
+  "split": "tuning",
+  "source_pdf": "napoleon-joseph-correspondence-vol1.pdf",
+  "source_page_number": 33,
+  "archive_id": "confidentialcorr01napo",
+  "book_title": "The Confidential Correspondence of Napoleon Bonaparte with His Brother Joseph, Vol. I",
+  "year": 1856,
+  "era": "18c_19c",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "profile": "polyglot_epistolary",
+  "quirk_tags": [
+    "multi_letter_single_page",
+    "absent_salutation_and_signature",
+    "french_diacritics",
+    "symbol_footnote",
+    "cross_page_hyphenation",
+    "gathering_signature_mark"
+  ],
+  "expected_printed_folio": "25",
+  "acceptable_printed_folios": [
+    "25"
+  ],
+  "expected_letter_segments_on_page": 3,
+  "expected_new_letter_starts": 3,
+  "continues_from_prev_page": false,
+  "continues_to_next_page": true,
+  "has_margin_note": false,
+  "has_editorial_block": false,
+  "has_enclosure": false,
+  "has_postscript": false,
+  "has_address_block": false,
+  "jbig2_source_risk": true,
+  "expected_block_types_present": [
+    "letter_header",
+    "dateline",
+    "body",
+    "footnote"
+  ],
+  "expected_footnote_labels": [
+    "*"
+  ],
+  "must_preserve_verbatim": [
+    "[18.]",
+    "[19.]",
+    "[20.]",
+    "La Vendée",
+    "Chiapé",
+    "Director-General of the Telegraph"
+  ],
+  "must_not_modernize_or_leak": [
+    "La Vendee",
+    "Chiape",
+    "ROYALIST AGITATION"
+  ],
+  "notes": "Three numbered letters ([18.], [19.], [20.]) on one page; [18.] and [19.] lack both salutation and signature; French acute accents; asterisk footnote; gathering mark 'VOL. I.—2'.",
+  "page_image": "pages/exam_02_napoleon_1795_p0033.png",
+  "page_sha256": "43b26ce9bea3e6ea578299ee6f3a3864221b71d09037a5b9fe2420fc6c5d3eaf",
+  "pixel_size": [
+    969,
+    1559
+  ],
+  "pixel_verified": true,
+  "case_id": "exam_02_napoleon_1795_p0033",
+  "id": "exam_02_napoleon_1795_p0033",
+  "expected_letter_count": 3,
+  "must_contain_exact": [
+    "[18.]",
+    "[19.]",
+    "[20.]",
+    "La Vendée",
+    "Chiapé",
+    "Director-General of the Telegraph"
+  ],
+  "verbatim_substrings": [
+    "[18.]",
+    "[19.]",
+    "[20.]",
+    "La Vendée",
+    "Chiapé",
+    "Director-General of the Telegraph"
+  ],
+  "expect_margin_note": false,
+  "expect_editorial": false
+}

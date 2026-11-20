@@ -1,0 +1,49 @@
+{
+  "book_id": "dostoevsky-family-friends-1914",
+  "page_number": 379,
+  "check_id": "scan-check-p0379",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "a4c4f433e17dedc839ae5518f95e02c65c66ceede47c34285adbb9fc8e741935",
+  "checks": [
+    {
+      "block_id": "p0379-b0003",
+      "verdict": "confirmed_original_printer_erratum",
+      "note": "Confirmed 1914 printer spelling 'R. P. Pobyedonoszev' and 'January 30, 1881' in Contemporary Judgments I."
+    },
+    {
+      "block_id": "p0379-b0004",
+      "verdict": "confirmed_original_printer_erratum",
+      "note": "Confirmed 1914 printer spelling 'R. P. Pobyedonoszev' and 'January 30, 1881' in Contemporary Judgments I."
+    },
+    {
+      "block_id": "p0379-b0005",
+      "verdict": "confirmed_original_printer_erratum",
+      "note": "Confirmed 1914 printer spelling 'R. P. Pobyedonoszev' and 'January 30, 1881' in Contemporary Judgments I."
+    },
+    {
+      "block_id": "p0379-b0006",
+      "verdict": "confirmed_original_printer_erratum",
+      "note": "Confirmed 1914 printer spelling 'R. P. Pobyedonoszev' and 'January 30, 1881' in Contemporary Judgments I."
+    },
+    {
+      "block_id": "p0379-b0007",
+      "verdict": "confirmed_original_printer_erratum",
+      "note": "Confirmed 1914 printer spelling 'R. P. Pobyedonoszev' and 'January 30, 1881' in Contemporary Judgments I."
+    },
+    {
+      "block_id": "p0379-b0008",
+      "verdict": "confirmed_original_printer_erratum",
+      "note": "Confirmed 1914 printer spelling 'R. P. Pobyedonoszev' and 'January 30, 1881' in Contemporary Judgments I."
+    },
+    {
+      "block_id": "p0379-b0009",
+      "verdict": "confirmed_original_printer_erratum",
+      "note": "Confirmed 1914 printer spelling 'R. P. Pobyedonoszev' and 'January 30, 1881' in Contemporary Judgments I."
+    },
+    {
+      "block_id": "p0379-b0010",
+      "verdict": "confirmed_original_printer_erratum",
+      "note": "Confirmed 1914 printer spelling 'R. P. Pobyedonoszev' and 'January 30, 1881' in Contemporary Judgments I."
+    }
+  ]
+}

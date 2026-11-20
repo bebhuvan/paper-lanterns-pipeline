@@ -1,0 +1,49 @@
+{
+  "book_id": "poe-whitman-last-letters-1909",
+  "page_number": 61,
+  "check_id": "scan-check-p0061",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "b310979290d1a0cdeefcb63a85dbc2befbfcd556adc21fbbee176ea8b329811b",
+  "checks": [
+    {
+      "block_id": "p0061-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified SEVENTH LETTER rose headpiece dropped and Sunday evening 26. opening + verse."
+    },
+    {
+      "block_id": "p0061-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified SEVENTH LETTER rose headpiece dropped and Sunday evening 26. opening + verse."
+    },
+    {
+      "block_id": "p0061-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified SEVENTH LETTER rose headpiece dropped and Sunday evening 26. opening + verse."
+    },
+    {
+      "block_id": "p0061-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified SEVENTH LETTER rose headpiece dropped and Sunday evening 26. opening + verse."
+    },
+    {
+      "block_id": "p0061-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified SEVENTH LETTER rose headpiece dropped and Sunday evening 26. opening + verse."
+    },
+    {
+      "block_id": "p0061-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified SEVENTH LETTER rose headpiece dropped and Sunday evening 26. opening + verse."
+    },
+    {
+      "block_id": "p0061-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified SEVENTH LETTER rose headpiece dropped and Sunday evening 26. opening + verse."
+    },
+    {
+      "block_id": "p0061-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified SEVENTH LETTER rose headpiece dropped and Sunday evening 26. opening + verse."
+    }
+  ]
+}

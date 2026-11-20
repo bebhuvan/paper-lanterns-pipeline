@@ -1,0 +1,40 @@
+{
+  "book_id": "tipu-sultan-select-letters-1811",
+  "page_number": 637,
+  "check_id": "tipu-sultan-select-letters-1811-p0637",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "b1bd8c0be97536dffea53158e027b4a7307e87577f0a847f591107f812b5ca8b",
+  "checked_at": "2026-11-17T21:31:14.948331+00:00",
+  "checks": [
+    {
+      "block_id": "p0637-b0014",
+      "token": "d°",
+      "verdict": "printed_as_read",
+      "note": "Printed tabular abbreviation d<sup>o</sup> / d.<sup>o</sup> (ditto), not a footnote callout."
+    },
+    {
+      "block_id": "p0637-b0015",
+      "token": "d°",
+      "verdict": "printed_as_read",
+      "note": "Printed tabular abbreviation d<sup>o</sup> / d.<sup>o</sup> (ditto), not a footnote callout."
+    },
+    {
+      "block_id": "p0637-b0017",
+      "token": "d°",
+      "verdict": "printed_as_read",
+      "note": "Printed tabular abbreviation d<sup>o</sup> / d.<sup>o</sup> (ditto), not a footnote callout."
+    },
+    {
+      "block_id": "p0637-b0018",
+      "token": "d°",
+      "verdict": "printed_as_read",
+      "note": "Printed tabular abbreviation d<sup>o</sup> / d.<sup>o</sup> (ditto), not a footnote callout."
+    },
+    {
+      "block_id": "p0637-b0019",
+      "token": "d°",
+      "verdict": "printed_as_read",
+      "note": "Printed tabular abbreviation d<sup>o</sup> / d.<sup>o</sup> (ditto), not a footnote callout."
+    }
+  ]
+}

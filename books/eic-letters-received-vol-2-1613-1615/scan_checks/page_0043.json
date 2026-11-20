@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-2-1613-1615",
+  "page_number": 43,
+  "check_id": "vol2-scan-check-p0043",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "7ac7059be78d997f3702714ebb1f2f77adc8953cb22896844b3f2749ef59c6f2",
+  "checked_at": "2026-11-18T02:34:00+00:00",
+  "checks": [
+    {
+      "block_id": "p0043-b0017",
+      "token": "c^n",
+      "verdict": "printed_as_read",
+      "note": "Verified on sheet_vol2_bounds.png (p43): prints 'per c^n' (centum abbreviation), not a footnote callout."
+    }
+  ]
+}

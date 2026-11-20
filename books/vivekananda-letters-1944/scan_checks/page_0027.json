@@ -1,0 +1,49 @@
+{
+  "book_id": "vivekananda-letters-1944",
+  "page_number": 27,
+  "check_id": "scan-check-p0027",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "75a1efab0f8b78fd231532afb6c8e79dcf09d3974271a589532516901a95ba57",
+  "checks": [
+    {
+      "block_id": "p0027-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified compositor spelling 'Shrâddha' and Vedic footnote."
+    },
+    {
+      "block_id": "p0027-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified compositor spelling 'Shrâddha' and Vedic footnote."
+    },
+    {
+      "block_id": "p0027-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified compositor spelling 'Shrâddha' and Vedic footnote."
+    },
+    {
+      "block_id": "p0027-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified compositor spelling 'Shrâddha' and Vedic footnote."
+    },
+    {
+      "block_id": "p0027-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified compositor spelling 'Shrâddha' and Vedic footnote."
+    },
+    {
+      "block_id": "p0027-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified compositor spelling 'Shrâddha' and Vedic footnote."
+    },
+    {
+      "block_id": "p0027-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified compositor spelling 'Shrâddha' and Vedic footnote."
+    },
+    {
+      "block_id": "p0027-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified compositor spelling 'Shrâddha' and Vedic footnote."
+    }
+  ]
+}

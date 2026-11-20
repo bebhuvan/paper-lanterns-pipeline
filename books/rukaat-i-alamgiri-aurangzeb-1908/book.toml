@@ -1,0 +1,22 @@
+[book]
+book_id = "rukaat-i-alamgiri-aurangzeb-1908"
+title = "Ruka'at-i-Alamgiri; or, Letters of Aurungzebe, with Historical and Explanatory Notes"
+author_or_editor = "Aurangzeb, Jamshedji Hormasji Bilimoriya (tr.)"
+authors = ["Aurangzeb", "Jamshedji Hormasji Bilimoriya (tr.)"]
+publication_year = 1908
+subtitle = ""
+imprint = "London: Luzac & Co. / Bombay: Cherag Printing Press"
+collection = "indian-epistolary-heritage"
+language = "en"
+declared_scripts = ["Latin", "IAST", "European diacritics"]
+profile = "indic_and_oriental_epistolary"
+active_run_id = "canonical-hydrogen-v1"
+
+[source]
+archive_id = "rukaatialamgirio00aurarich"
+source_pdf = "/home/bebhuvan/Documents/Akshara wokspace/Paper Lanterns New/sources/rukaatialamgirio00aurarich/rukaatialamgirio00aurarich.originals.pdf"
+source_pdf_sha256 = "082e5fbb8c740e19a01b41bea401c9d506bce6f8c890f4bb8ccdbc90a9232ad7"
+
+[extraction]
+profile = "indic_and_oriental_epistolary"
+render_dpi = 400

@@ -1,0 +1,22 @@
+[book]
+book_id = "voltaire-in-his-letters-1919"
+title = "Voltaire in His Letters: Being a Selection from His Correspondence"
+author_or_editor = "Voltaire, S. G. Tallentyre (Evelyn Beatrice Hall)"
+authors = ["Voltaire", "S. G. Tallentyre (Evelyn Beatrice Hall)"]
+publication_year = 1919
+subtitle = ""
+imprint = ""
+collection = "world-correspondence"
+language = "en"
+declared_scripts = []
+profile = "claude_sonnet_epistolary"
+active_run_id = "canonical-sonnet55-batch-v1"
+
+[source]
+archive_id = "voltaireinhislet00voltrich"
+source_pdf = "/home/bebhuvan/Documents/Akshara wokspace/Paper Lanterns New/sources/voltaireinhislet00voltrich/voltaireinhislet00voltrich.originals.pdf"
+source_pdf_sha256 = ""
+
+[extraction]
+profile = "claude_sonnet_epistolary"
+render_dpi = 400

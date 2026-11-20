@@ -1,0 +1,21 @@
+[book]
+book_id = "eic-letters-received-vol-2-1613-1615"
+title = "Letters Received by the East India Company from Its Servants in the East, Vol. II: 1613–1615"
+author_or_editor = "East India Company, William Foster (ed.)"
+authors = ["East India Company", "William Foster (ed.)"]
+publication_year = 1897
+subtitle = ""
+imprint = "London: Sampson Low, Marston & Company"
+collection = "indian-epistolary-heritage"
+language = "en"
+declared_scripts = ["Latin"]
+profile = "claude_sonnet_epistolary"
+active_run_id = "canonical-sonnet55-batch-v1"
+
+[source]
+archive_id = "lettersreceivedb02east"
+source_pdf = "sources/lettersreceivedb02east/lettersreceivedb02east.originals.pdf"
+source_pdf_sha256 = "d95839140e69e5fc88d7169468398eed2c1843ae4c3711717fbe4f49708d396d"
+
+[extraction]
+profile = "claude_sonnet_epistolary"

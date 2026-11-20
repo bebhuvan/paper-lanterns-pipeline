@@ -1,0 +1,34 @@
+{
+  "book_id": "poe-valentine-letters-1925",
+  "page_number": 103,
+  "check_id": "scan-check-p0103",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "ecf250d91afa60a31b5fad2f9a4d3ebed38415b203a636ddfaaa788d853fb955",
+  "checks": [
+    {
+      "block_id": "p0103-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Collotype facsimile plate of Letter VI: caption + illustration kept; blurry cursive OCR dropped."
+    },
+    {
+      "block_id": "p0103-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Collotype facsimile plate of Letter VI: caption + illustration kept; blurry cursive OCR dropped."
+    },
+    {
+      "block_id": "p0103-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Collotype facsimile plate of Letter VI: caption + illustration kept; blurry cursive OCR dropped."
+    },
+    {
+      "block_id": "p0103-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Collotype facsimile plate of Letter VI: caption + illustration kept; blurry cursive OCR dropped."
+    },
+    {
+      "block_id": "p0103-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Collotype facsimile plate of Letter VI: caption + illustration kept; blurry cursive OCR dropped."
+    }
+  ]
+}

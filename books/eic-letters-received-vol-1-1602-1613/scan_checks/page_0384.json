@@ -1,0 +1,22 @@
+{
+  "book_id": "eic-letters-received-vol-1-1602-1613",
+  "page_number": 384,
+  "check_id": "vol1-scan-check-p0384",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "7f4d3e1a107464c6e0133efea0d25ee63ec5208159a8d1a53bd1d846ec7c4061",
+  "checked_at": "2026-11-17T20:13:15.909303+00:00",
+  "checks": [
+    {
+      "block_id": "p0384-b0022",
+      "token": "escrivão",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0384.png: printed tilde in 'escrivão'."
+    },
+    {
+      "block_id": "p0384-b0037",
+      "token": "tarjumān",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0384.png: printed macron in 'tarjumān'."
+    }
+  ]
+}

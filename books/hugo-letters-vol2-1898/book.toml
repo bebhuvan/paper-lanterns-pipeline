@@ -1,0 +1,22 @@
+[book]
+book_id = "hugo-letters-vol2-1898"
+title = "The Letters of Victor Hugo"
+author_or_editor = "Victor Hugo (ed. Paul Meurice)"
+authors = ["Victor Hugo", "Paul Meurice (ed.)"]
+publication_year = 1898
+subtitle = "From Exile, and After the Fall of the Empire"
+imprint = "Boston and New York: Houghton, Mifflin and Company, 1898"
+collection = "world-correspondence"
+language = "en"
+declared_scripts = ["Latin", "European diacritics"]
+profile = "claude_sonnet_epistolary"
+active_run_id = "canonical-sonnet55-batch-v1"
+
+[source]
+archive_id = "lettersofvictorh00hugorich"
+source_pdf = "sources/lettersofvictorh00hugorich/lettersofvictorh00hugorich.originals.pdf"
+source_pdf_sha256 = "72538c45528be644db1113d647885cfc3e98aa9866f6c1402f70a84824f89390"
+
+[extraction]
+profile = "claude_sonnet_epistolary"
+render_dpi = 350

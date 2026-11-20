@@ -1,0 +1,93 @@
+{
+  "version": "correction-v2",
+  "book_id": "dostoevsky-family-friends-1914",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "generated_by": "scan-check",
+  "created_at": "2026-11-17T10:17:33.466982+00:00",
+  "corrections": [
+    {
+      "correction_id": "dost14-p0052-b0003-bulgarin",
+      "page_number": 52,
+      "block_id": "p0052-b0003",
+      "op": "set_note_label",
+      "replacement_note_label": "*",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 52 (folio 28): 1914 compositor mismatch prints inline 'Bulgarin*' with footnote '¹ Faddey Bulgarin (1789-1859)...'; preserve printed text verbatim and pair note_label='*'."
+    },
+    {
+      "correction_id": "dost14-p0067-b0001-illus",
+      "page_number": 67,
+      "block_id": "p0067-b0001",
+      "op": "set_text",
+      "replacement_tagged_text": "",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 67 (facing p. 42): normalize illustration block tagged_text to '' (matching the other 15 plates; printed English caption stays in p0067-b0002)."
+    },
+    {
+      "correction_id": "dost14-p0242-b0004-ps",
+      "page_number": 242,
+      "block_id": "p0242-b0004",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 242 (folio 208): paragraph 'When I think of the Petersburg relatives...' after first signature belongs to postscript section of Letter LIX."
+    },
+    {
+      "correction_id": "dost14-p0242-b0006-ps",
+      "page_number": 242,
+      "block_id": "p0242-b0006",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 242 (folio 208): closing line 'Till next time, my dears.' inside Letter LIX postscript."
+    },
+    {
+      "correction_id": "dost14-p0297-b0007-lxxvi",
+      "page_number": 297,
+      "block_id": "p0297-b0007",
+      "op": "set_text",
+      "replacement_tagged_text": "LXXVI",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 297 (folio 255): printed Roman numeral is LXXVI (To I. S. Aksakov), fixing VLM typo LXXXVI."
+    },
+    {
+      "correction_id": "dost14-p0380-b0007-hdg",
+      "page_number": 380,
+      "block_id": "p0380-b0007",
+      "op": "set_type",
+      "replacement_type": "heading",
+      "replacement_transition": "none",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 380 (folio 334): 'III' is a section subheading above 'Turgenev on Dostoevsky', not a standalone letter."
+    },
+    {
+      "correction_id": "dost14-p0380-b0008-hdg",
+      "page_number": 380,
+      "block_id": "p0380-b0008",
+      "op": "set_type",
+      "replacement_type": "heading",
+      "replacement_transition": "none",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 380 (folio 334): subheading 'Turgenev on Dostoevsky' precedes six Turgenev letter excerpts."
+    },
+    {
+      "correction_id": "dost14-p0384-b0006-hdg",
+      "page_number": 384,
+      "block_id": "p0384-b0006",
+      "op": "set_type",
+      "replacement_type": "heading",
+      "replacement_transition": "none",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 384 (folio 336): 'IV' is a section subheading above 'Leo Tolstoy on Dostoevsky', not a standalone letter."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "book_id": "eic-letters-received-vol-6-1617b",
+  "page_number": 340,
+  "check_id": "vol6-scan-check-p0340",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "d08f03a16cef9b17733511d3bdc1d3715e73482e8a7f80a5df4c553662234103",
+  "checked_at": "2026-11-17T20:23:38.959834+00:00",
+  "checks": [
+    {
+      "block_id": "p0340-b0002",
+      "token": "his^2",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0340.png: compositor omitted footnote '2' at bottom of p. 292."
+    },
+    {
+      "block_id": "p0340-b0011-s1",
+      "token": "The Hound's.",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0340.png: compositor printed label 1 instead of 2 before The Hound's (matches callout 2 on his)."
+    }
+  ]
+}

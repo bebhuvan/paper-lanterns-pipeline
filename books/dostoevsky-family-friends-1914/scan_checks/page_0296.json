@@ -1,0 +1,24 @@
+{
+  "book_id": "dostoevsky-family-friends-1914",
+  "page_number": 296,
+  "check_id": "scan-check-p0296",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "d519312c32d246d1216098bc7cffe6ce3e5711b7cd876476be8193b5bc72d861",
+  "checks": [
+    {
+      "block_id": "p0296-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'Die Räuber' umlaut in Letter LXXV on folio 254."
+    },
+    {
+      "block_id": "p0296-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'Die Räuber' umlaut in Letter LXXV on folio 254."
+    },
+    {
+      "block_id": "p0296-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'Die Räuber' umlaut in Letter LXXV on folio 254."
+    }
+  ]
+}

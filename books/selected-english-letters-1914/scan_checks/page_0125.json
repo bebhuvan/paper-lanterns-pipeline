@@ -1,0 +1,34 @@
+{
+  "book_id": "selected-english-letters-1914",
+  "page_number": 125,
+  "check_id": "scan-check-p0125",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "4bcd82a7f994aad90503c7f7664563af4b5a462bbd06d91f97a54f53dbef0192",
+  "checks": [
+    {
+      "block_id": "p0125-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter LX closing (Houghton Mifflin Company to Woodrow Wilson, 'revanche', cascading valediction)."
+    },
+    {
+      "block_id": "p0125-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter LX closing (Houghton Mifflin Company to Woodrow Wilson, 'revanche', cascading valediction)."
+    },
+    {
+      "block_id": "p0125-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter LX closing (Houghton Mifflin Company to Woodrow Wilson, 'revanche', cascading valediction)."
+    },
+    {
+      "block_id": "p0125-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter LX closing (Houghton Mifflin Company to Woodrow Wilson, 'revanche', cascading valediction)."
+    },
+    {
+      "block_id": "p0125-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter LX closing (Houghton Mifflin Company to Woodrow Wilson, 'revanche', cascading valediction)."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "book_id": "gandhi-famous-letters-1947",
+  "page_number": 80,
+  "check_id": "scan-check-p0080",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "939cb12da297cff962c756ccb5baa76736f186c8d1551a8e96dce413d4b2248a",
+  "checks": [
+    {
+      "block_id": "p0080-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sabarmati I (To Mira Bai), asterisk callout 'it *.', 'Love BAPU.', and linked italic footnote."
+    },
+    {
+      "block_id": "p0080-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sabarmati I (To Mira Bai), asterisk callout 'it *.', 'Love BAPU.', and linked italic footnote."
+    },
+    {
+      "block_id": "p0080-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sabarmati I (To Mira Bai), asterisk callout 'it *.', 'Love BAPU.', and linked italic footnote."
+    },
+    {
+      "block_id": "p0080-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sabarmati I (To Mira Bai), asterisk callout 'it *.', 'Love BAPU.', and linked italic footnote."
+    },
+    {
+      "block_id": "p0080-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sabarmati I (To Mira Bai), asterisk callout 'it *.', 'Love BAPU.', and linked italic footnote."
+    },
+    {
+      "block_id": "p0080-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sabarmati I (To Mira Bai), asterisk callout 'it *.', 'Love BAPU.', and linked italic footnote."
+    },
+    {
+      "block_id": "p0080-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sabarmati I (To Mira Bai), asterisk callout 'it *.', 'Love BAPU.', and linked italic footnote."
+    },
+    {
+      "block_id": "p0080-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sabarmati I (To Mira Bai), asterisk callout 'it *.', 'Love BAPU.', and linked italic footnote."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[book]
+book_id = "faraday-letters"
+title = "The Life and Letters of Faraday, Vol. I"
+author_or_editor = "Michael Faraday, Dr. Bence Jones (ed.)"
+authors = ["Michael Faraday", "Bence Jones (ed.)"]
+publication_year = 1870
+subtitle = "Second Edition, Revised — Volume I"
+imprint = "London: Longmans, Green, and Co., 1870"
+collection = "scientific-and-philosophical-letters"
+language = "en"
+declared_scripts = ["Latin", "European diacritics", "Greek"]
+profile = "polyglot_epistolary"
+
+[source]
+archive_id = "lifelettersoffar01joneiala"
+source_pdf = "sources/lifelettersoffar01joneiala/lifelettersoffar01joneiala.originals.pdf"
+source_pdf_sha256 = "590716d84a5c4900afd2fd659e54b96a47a0a47ad73e6fd5721594d6878a31bd"
+
+[extraction]
+profile = "polyglot_epistolary"

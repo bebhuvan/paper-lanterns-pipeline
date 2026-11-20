@@ -1,0 +1,44 @@
+{
+  "book_id": "pascal-miscellaneous-writings-1849",
+  "page_number": 262,
+  "check_id": "scan-check-p0262",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "6803da5288a1816eea36088438896780704b77c9056d570f700178dd4894efd3",
+  "checks": [
+    {
+      "block_id": "p0262-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefix before 'LX. + Vanity of Knowledge.'; genuine '*' Domat footnote."
+    },
+    {
+      "block_id": "p0262-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefix before 'LX. + Vanity of Knowledge.'; genuine '*' Domat footnote."
+    },
+    {
+      "block_id": "p0262-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefix before 'LX. + Vanity of Knowledge.'; genuine '*' Domat footnote."
+    },
+    {
+      "block_id": "p0262-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefix before 'LX. + Vanity of Knowledge.'; genuine '*' Domat footnote."
+    },
+    {
+      "block_id": "p0262-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefix before 'LX. + Vanity of Knowledge.'; genuine '*' Domat footnote."
+    },
+    {
+      "block_id": "p0262-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefix before 'LX. + Vanity of Knowledge.'; genuine '*' Domat footnote."
+    },
+    {
+      "block_id": "p0262-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefix before 'LX. + Vanity of Knowledge.'; genuine '*' Domat footnote."
+    }
+  ]
+}

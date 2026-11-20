@@ -1,0 +1,69 @@
+{
+  "book_id": "poe-valentine-letters-1925",
+  "page_number": 313,
+  "check_id": "scan-check-p0313",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "5b68f050e53d4f17b7cf1a0913234c00afcf7d94b04f44863957dd1ee3c62a41",
+  "checks": [
+    {
+      "block_id": "p0313-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Quoted letter to Col. Thayer in COMMENT retyped to blockquote while retaining footnote ^1 link."
+    },
+    {
+      "block_id": "p0313-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Quoted letter to Col. Thayer in COMMENT retyped to blockquote while retaining footnote ^1 link."
+    },
+    {
+      "block_id": "p0313-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Quoted letter to Col. Thayer in COMMENT retyped to blockquote while retaining footnote ^1 link."
+    },
+    {
+      "block_id": "p0313-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Quoted letter to Col. Thayer in COMMENT retyped to blockquote while retaining footnote ^1 link."
+    },
+    {
+      "block_id": "p0313-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Quoted letter to Col. Thayer in COMMENT retyped to blockquote while retaining footnote ^1 link."
+    },
+    {
+      "block_id": "p0313-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Quoted letter to Col. Thayer in COMMENT retyped to blockquote while retaining footnote ^1 link."
+    },
+    {
+      "block_id": "p0313-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Quoted letter to Col. Thayer in COMMENT retyped to blockquote while retaining footnote ^1 link."
+    },
+    {
+      "block_id": "p0313-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Quoted letter to Col. Thayer in COMMENT retyped to blockquote while retaining footnote ^1 link."
+    },
+    {
+      "block_id": "p0313-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Quoted letter to Col. Thayer in COMMENT retyped to blockquote while retaining footnote ^1 link."
+    },
+    {
+      "block_id": "p0313-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Quoted letter to Col. Thayer in COMMENT retyped to blockquote while retaining footnote ^1 link."
+    },
+    {
+      "block_id": "p0313-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Quoted letter to Col. Thayer in COMMENT retyped to blockquote while retaining footnote ^1 link."
+    },
+    {
+      "block_id": "p0313-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Quoted letter to Col. Thayer in COMMENT retyped to blockquote while retaining footnote ^1 link."
+    }
+  ]
+}

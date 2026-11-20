@@ -1,0 +1,24 @@
+{
+  "book_id": "sand-flaubert-letters-1922",
+  "page_number": 11,
+  "check_id": "scan-check-p0011",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "14c406d3c8231096a791f95375ceb8fbfc5034738108f73cd747fb4bee7664da",
+  "checks": [
+    {
+      "block_id": "p0011-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified PREFATORY NOTE signed 'A. L. McKenzie.' as frontmatter editorial."
+    },
+    {
+      "block_id": "p0011-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified PREFATORY NOTE signed 'A. L. McKenzie.' as frontmatter editorial."
+    },
+    {
+      "block_id": "p0011-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified PREFATORY NOTE signed 'A. L. McKenzie.' as frontmatter editorial."
+    }
+  ]
+}

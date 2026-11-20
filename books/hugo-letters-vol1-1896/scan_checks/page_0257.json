@@ -1,0 +1,19 @@
+{
+  "book_id": "hugo-letters-vol1-1896",
+  "page_number": 257,
+  "check_id": "scan-check-p0257",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "0e243e920674990f059175d0188c26d477bab25c885f0b3b13d3e4db5f9b46e9",
+  "checks": [
+    {
+      "block_id": "p0257-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified autograph Pyrenees drawing plate corresponding to Letter XXXI (p. 242) and dropped garbled cursive OCR."
+    },
+    {
+      "block_id": "p0257-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified autograph Pyrenees drawing plate corresponding to Letter XXXI (p. 242) and dropped garbled cursive OCR."
+    }
+  ]
+}

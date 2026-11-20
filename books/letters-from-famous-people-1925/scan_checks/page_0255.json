@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "letters-from-famous-people-1925",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 255,
+  "reviewer": "native-vision-350ppi-scan-check",
+  "checked_at": "2026-11-19T06:46:11.101499+00:00",
+  "source_page_sha256": "534797215c5e05b9294f5896102a693c79ca7ed343703b08a17e612597dfc4fb",
+  "render_png": "renders/page_0255.png",
+  "checks": [
+    {
+      "block_id": "p0255-b0001",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0255.png."
+    },
+    {
+      "block_id": "p0255-b0002",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0255.png."
+    },
+    {
+      "block_id": "p0255-b0003",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0255.png."
+    },
+    {
+      "block_id": "p0255-b0004",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0255.png."
+    },
+    {
+      "block_id": "p0255-b0005",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0255.png."
+    },
+    {
+      "block_id": "p0255-b0006",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0255.png."
+    },
+    {
+      "block_id": "p0255-b0007",
+      "status": "corrected",
+      "note": "Inspected on 350 DPI PNG renders/page_0255.png."
+    },
+    {
+      "block_id": "p0255-b0008",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0255.png."
+    }
+  ],
+  "correction_ids": [
+    "corr-p0255-olga"
+  ]
+}

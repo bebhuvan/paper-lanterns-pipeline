@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-6-1617b",
+  "page_number": 151,
+  "check_id": "vol6-scan-check-p0151",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "f07aca526befd4a4ca8947cf9e5dea0c5b6cd90687d0573415220d8dd8f27851",
+  "checked_at": "2026-11-17T20:23:38.959834+00:00",
+  "checks": [
+    {
+      "block_id": "p0151-b0003",
+      "token": "50^m",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0151.png: printed superscript '50ᵐ' (= 50,000)."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "schumann-letters-1907",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 280,
+  "reviewer": "native-vision-400ppi-scan-check",
+  "checked_at": "2026-11-19T14:23:21.486723+00:00",
+  "source_page_sha256": "485c4f9cec4948d749f930d011dd949b0bf52b52eb4fd8e9e1916e341b9b43be",
+  "render_png": "renders/page_0280.png",
+  "checks": [
+    {
+      "block_id": "p0280-b0001",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0280.png."
+    },
+    {
+      "block_id": "p0280-b0002",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0280.png."
+    }
+  ],
+  "correction_ids": []
+}

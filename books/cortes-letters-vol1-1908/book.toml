@@ -1,0 +1,22 @@
+[book]
+book_id = "cortes-letters-vol1-1908"
+title = "Letters of Cortes: The Five Letters of Relation from Fernando Cortes to the Emperor Charles V"
+author_or_editor = "Hernán Cortés (trans. & ed. Francis Augustus MacNutt)"
+authors = ["Hernán Cortés", "Francis Augustus MacNutt (trans. & ed.)"]
+publication_year = 1908
+subtitle = "Volume I"
+imprint = "New York & London: G. P. Putnam's Sons, 1908"
+collection = "world-correspondence"
+language = "en"
+declared_scripts = ["Latin", "European diacritics"]
+profile = "polyglot_epistolary"
+active_run_id = "canonical-hydrogen-batch-v1"
+
+[source]
+archive_id = "lettersofcorts01cortuoft"
+source_pdf = "sources/lettersofcorts01cortuoft/lettersofcorts01cortuoft.originals.pdf"
+source_pdf_sha256 = "6a6684992de72dcf793ff25e25a94b8fdef17077b485c005b04e68bce2518a66"
+
+[extraction]
+profile = "polyglot_epistolary"
+render_dpi = 350

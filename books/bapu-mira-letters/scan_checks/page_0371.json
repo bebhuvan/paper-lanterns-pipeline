@@ -1,0 +1,39 @@
+{
+  "book_id": "bapu-mira-letters",
+  "page_number": 371,
+  "check_id": "scan-check-p0371",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "87013199e0618c4d6f1ee4d3d79bf05f90aa7805c44c9447b1f33a8fe861632f",
+  "checks": [
+    {
+      "block_id": "p0371-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed closing of Mirabehn's enclosed Orissa report ('Mira') belonging inside Letter 358."
+    },
+    {
+      "block_id": "p0371-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed closing of Mirabehn's enclosed Orissa report ('Mira') belonging inside Letter 358."
+    },
+    {
+      "block_id": "p0371-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed closing of Mirabehn's enclosed Orissa report ('Mira') belonging inside Letter 358."
+    },
+    {
+      "block_id": "p0371-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed closing of Mirabehn's enclosed Orissa report ('Mira') belonging inside Letter 358."
+    },
+    {
+      "block_id": "p0371-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed closing of Mirabehn's enclosed Orissa report ('Mira') belonging inside Letter 358."
+    },
+    {
+      "block_id": "p0371-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed closing of Mirabehn's enclosed Orissa report ('Mira') belonging inside Letter 358."
+    }
+  ]
+}

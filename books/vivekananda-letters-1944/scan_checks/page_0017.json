@@ -1,0 +1,49 @@
+{
+  "book_id": "vivekananda-letters-1944",
+  "page_number": 17,
+  "check_id": "scan-check-p0017",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "621f65afbb894ab538ca7f00d711530bcf53ae0cdd96db39125ebfc6883c61f7",
+  "checks": [
+    {
+      "block_id": "p0017-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (3) To The Same, Letter (4) To The Same, and Dateline asterisks referring to p. 16 footnote."
+    },
+    {
+      "block_id": "p0017-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (3) To The Same, Letter (4) To The Same, and Dateline asterisks referring to p. 16 footnote."
+    },
+    {
+      "block_id": "p0017-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (3) To The Same, Letter (4) To The Same, and Dateline asterisks referring to p. 16 footnote."
+    },
+    {
+      "block_id": "p0017-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (3) To The Same, Letter (4) To The Same, and Dateline asterisks referring to p. 16 footnote."
+    },
+    {
+      "block_id": "p0017-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (3) To The Same, Letter (4) To The Same, and Dateline asterisks referring to p. 16 footnote."
+    },
+    {
+      "block_id": "p0017-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (3) To The Same, Letter (4) To The Same, and Dateline asterisks referring to p. 16 footnote."
+    },
+    {
+      "block_id": "p0017-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (3) To The Same, Letter (4) To The Same, and Dateline asterisks referring to p. 16 footnote."
+    },
+    {
+      "block_id": "p0017-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (3) To The Same, Letter (4) To The Same, and Dateline asterisks referring to p. 16 footnote."
+    }
+  ]
+}

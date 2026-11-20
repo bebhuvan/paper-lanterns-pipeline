@@ -1,0 +1,39 @@
+{
+  "book_id": "poe-valentine-letters-1925",
+  "page_number": 278,
+  "check_id": "scan-check-p0278",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "94ca1344167c5a5de8b46ca8f15709278ad02d4b8eb0386d4a060e4acca58585",
+  "checks": [
+    {
+      "block_id": "p0278-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed typo 'repects' (without 's') preserved verbatim per archival fidelity."
+    },
+    {
+      "block_id": "p0278-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed typo 'repects' (without 's') preserved verbatim per archival fidelity."
+    },
+    {
+      "block_id": "p0278-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed typo 'repects' (without 's') preserved verbatim per archival fidelity."
+    },
+    {
+      "block_id": "p0278-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed typo 'repects' (without 's') preserved verbatim per archival fidelity."
+    },
+    {
+      "block_id": "p0278-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed typo 'repects' (without 's') preserved verbatim per archival fidelity."
+    },
+    {
+      "block_id": "p0278-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed typo 'repects' (without 's') preserved verbatim per archival fidelity."
+    }
+  ]
+}

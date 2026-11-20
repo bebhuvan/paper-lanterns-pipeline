@@ -1,0 +1,1139 @@
+{
+  "version": "correction-v2",
+  "book_id": "eic-letters-received-vol-4-1616",
+  "created_at": "2026-11-17T21:16:06.113382+00:00",
+  "corrections": [
+    {
+      "correction_id": "v4-p0064-b0007-pecculls",
+      "page_number": 64,
+      "block_id_hint": "p0064-b0007",
+      "anchor_text": "May it please you to understand that I have made sale of your damasks, though at a low rate, at ten peccułls, one with another, the corge, a small price, but by reason of their defects and doubting the China junks would be here this year I sold them away for pepper due at all times of demand, which is sure as soon as pepper cometh down. Your sword-blades as yet will not away, but the King hath offered me a peccull per piece. I have sold two of them for two pecculls per piece, and if the Mallencaboes2 come down they will, I hope, all sell at that rate. I pray you, if I can sell them, per the next to send me word whether I shall return your adventure in pepper or gold of this country, it being good sand gold, such as is vendible at Sackadane, but in my opinion very dear, for now it is worth 6 pecculls the Priaman tayle and at the cheapest worth 5 and 5½ pecculls. If you will have any returned for the Company at these prices, I pray you advise me by the next and what quantity. A muster of it I will send to Mr. Balle to lay out for me upon necessaries, being half a tayle. I have writ to him to show it to you to see how you like it.",
+      "op": "set_text",
+      "replacement_tagged_text": "May it please you to understand that I have made sale of your damasks, though at a low rate, at ten pecculls, one with another, the corge, a small price, but by reason of their defects and doubting the China junks would be here this year I sold them away for pepper due at all times of demand, which is sure as soon as pepper cometh down. Your sword-blades as yet will not away, but the King hath offered me a peccull per piece. I have sold two of them for two pecculls per piece, and if the Mallencaboes<sup>2</sup> come down they will, I hope, all sell at that rate. I pray you, if I can sell them, per the next to send me word whether I shall return your adventure in pepper or gold of this country, it being good sand gold, such as is vendible at Sackadane, but in my opinion very dear, for now it is worth 6 pecculls the Priaman tayle and at the cheapest worth 5 and 5½ pecculls. If you will have any returned for the Company at these prices, I pray you advise me by the next and what quantity. A muster of it I will send to Mr. Balle to lay out for me upon necessaries, being half a tayle. I have writ to him to show it to you to see how you like it.",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Verified on crops_vol4_detail2.png: prints plain 'pecculls', not Polish 'ł'.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0103-b0013-fn2-text",
+      "page_number": 103,
+      "block_id_hint": "p0103-b0013",
+      "anchor_text": "Not extant.",
+      "op": "set_text",
+      "replacement_tagged_text": "<sup>2</sup> Not extant.",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Verified on sheet_vol4_d_fn_zoom.png: prints superscript '2 Not extant.'",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0103-b0013-fn2-label",
+      "page_number": 103,
+      "block_id_hint": "p0103-b0013",
+      "anchor_text": "Not extant.",
+      "op": "set_note_label",
+      "replacement_note_label": "2",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Verified on sheet_vol4_d_fn_zoom.png: footnote number is 2.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0103-b0012-fn1-label",
+      "page_number": 103,
+      "block_id_hint": "p0103-b0012",
+      "anchor_text": "See vol. iii., p. 334.",
+      "op": "set_note_label",
+      "replacement_note_label": "1",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Verified on sheet_vol4_d_fn_zoom.png: 'See vol. iii., p. 334.' is footnote 1 for 'ganty,1' (printer omitted superscript 1 before text).",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0105-b0009-maharaja",
+      "page_number": 105,
+      "block_id_hint": "p0105-b0009",
+      "anchor_text": "' Underecoon,' which is given as the name of the Zamorin, is probably ' Púnturak-kón (king of Púntura),' which, according to Logan's Malabar (vol. i., p. 237n), ' is still one of the titles of the Zamorin Maháraját Bahádur of Calicut.' Peyton (in Purchas, vol. i., p. 531) says ' the king's name is Pendre Quone Samorine.' ' Cheete ' appears to be the Malayalam Chetti, generally applied to a member of a trading caste (see Hobson-Jobson, p. 144).",
+      "op": "set_text",
+      "replacement_tagged_text": "' Underecoon,' which is given as the name of the Zamorin, is probably ' Púnturak-kón (king of Púntura),' which, according to Logan's <i>Malabar</i> (vol. i., p. 237<i>n</i>), ' is still one of the titles of the Zamorin Mahárájá Bahádur of Calicut.' Peyton (in <i>Purchas</i>, vol. i., p. 531) says ' the king's name is Pendre Quone Samorine.' ' Cheete ' appears to be the Malayalam <i>Chetti</i>, generally applied to a member of a trading caste (see <i>Hobson-Jobson</i>, p. 144).",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Verified on crops_vol4_detail2.png: prints 'Zamorin Mahárájá Bahádur'.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0122-b0003-mamudis",
+      "page_number": 122,
+      "block_id_hint": "p0122-b0003",
+      "anchor_text": "[Mamudis].",
+      "op": "set_text",
+      "replacement_tagged_text": "[Mamúdis].",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Verified on sheet_vol4_e_edge.png: prints acute accent '[Mamúdis].'",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0172-b0018-fn5",
+      "page_number": 172,
+      "block_id_hint": "p0172-b0018",
+      "anchor_text": "6 Youart (see vol. iii., p. 316).",
+      "op": "set_text",
+      "replacement_tagged_text": "<sup>5</sup> Youart (see vol. iii., p. 316).",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Verified on crops_vol4_detail2.png: prints '5 Youart'.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0172-b0018-fn5-label",
+      "page_number": 172,
+      "block_id_hint": "p0172-b0018",
+      "anchor_text": "6 Youart (see vol. iii., p. 316).",
+      "op": "set_note_label",
+      "replacement_note_label": "5",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Verified on crops_vol4_detail2.png: footnote number is 5, matching callout 5.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0189-b0003-molloccos",
+      "page_number": 189,
+      "block_id_hint": "p0189-b0003",
+      "anchor_text": "understand; for to such degree are the differences grown betwixt them and us through our trading at the Molloocсos (not to speak of other trifles) that it hath bred such strangeness betwixt us as if we never had been acquainted; and that which seems to be ridiculous is their concealing their knowledge of the [          ] of our common enemy in this dangerous time, notwithstanding they know that all the strength and industry both nations can [          ] may prove too little for defence, much less to conquer. At the said boat's first coming they gave out (as was told us by others) that they had wonderful good news, but would not recite the particulars, which made us deem the enemy had received some hurt that would bar their coming hither; and at last we hear that Don John de Silva is dead and the fleet departed they know not whither; but this and other things which one of them saith other of them denies, and so we rest unsatisfied. But of a loss of three of their ships catched up by the Spanish fleet about the straits in their freebooting courses, I think we may be [          ] thereof, the report having been long at [          ] it please God to send [          ] [one line illegible] as good reports in private we shall [          ] be [          ] without them. And if it prove so that the fleet is gone, then 'tis to be held likelier that they be gone to spoil Pattania than that Don John is dead and the rest discouraged from proceeding hither, for before their means to come hither they may have done that, and prolonged their coming hither but 10 or 15 days, and not lose many men, if they lose any, by that service. Nevertheless, while [          ] doubting the worst, we [          ] also hold it possible their purpose either may be dissolved, as well as that of the Mattaran, who [also?] was [          ] forward [rests quietly?] at home. For other matters refer [          ] [one line illegible] [          ] from Jaccatra of the [          ] accompanying the enclosed letter for Meslapotam.",
+      "op": "set_text",
+      "replacement_tagged_text": "understand; for to such degree are the differences grown betwixt them and us through our trading at the Mollooccos (not to speak of other trifles) that it hath bred such strangeness betwixt us as if we never had been acquainted; and that which seems to be ridiculous is their concealing their knowledge of the [          ] of our common enemy in this dangerous time, notwithstanding they know that all the strength and industry both nations can [          ] may prove too little for defence, much less to conquer. At the said boat's first coming they gave out (as was told us by others) that they had wonderful good news, but would not recite the particulars, which made us deem the enemy had received some hurt that would bar their coming hither; and at last we hear that Don John de Silva is dead and the fleet departed they know not whither; but this and other things which one of them saith other of them denies, and so we rest unsatisfied. But of a loss of three of their ships catched up by the Spanish fleet about the straits in their freebooting courses, I think we may be [          ] thereof, the report having been long at [          ] it please God to send [          ] [<i>one line illegible</i>] as good reports in private we shall [          ] be [          ] without them. And if it prove so that the fleet is gone, then 'tis to be held likelier that they be gone to spoil Pattania than that Don John is dead and the rest discouraged from proceeding hither, for before their means to come hither they may have done that, and prolonged their coming hither but 10 or 15 days, and not lose many men, if they lose any, by that service. Nevertheless, while [          ] doubting the worst, we [          ] also hold it possible their purpose either may be dissolved, as well as that of the Mattaran, who [also?] was [          ] forward [rests quietly?] at home. For other matters refer [          ] [<i>one line illegible</i>] [          ] from Jaccatra of the [          ] accompanying the enclosed letter for Meslapotam.",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Verified on crops_vol4_detail2.png: prints Latin 'c' in 'Mollooccos', not Cyrillic U+0441.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0191-b0003-severally",
+      "page_number": 191,
+      "block_id_hint": "p0191-b0003",
+      "anchor_text": "Captain in his voyage to those parts. Our trouble now you must imagine is not small to have two ships to trim and one junk, and expect every day to hear news from Langasaque of the arrival of two junks, wherein there is wood and skins freighted for the account of the Company, in one of which Edmund Sayres is to come. I do desire you most earnestly to send me down the account of Edoe voyage and Osakey since your last going up, severally,f [if they were several businesses ?]; for I should be loth to send home an account to the Company wherein they should find your charge without a discharge in some sort. I pray you consider it and do not fail in it.",
+      "op": "set_text",
+      "replacement_tagged_text": "Captain in his voyage to those parts. Our trouble now you must imagine is not small to have two ships to trim and one junk, and expect every day to hear news from Langasaque of the arrival of two junks, wherein there is wood and skins freighted for the account of the Company, in one of which Edmund Sayres is to come. I do desire you most earnestly to send me down the account of Edoe voyage and Osakey since your last going up, severally, [if they were several businesses ?]; for I should be loth to send home an account to the Company wherein they should find your charge without a discharge in some sort. I pray you consider it and do not fail in it.",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Verified on sheet_vol4_a_glyphs_fn.png: prints 'severally, [if...'; no superscript 'f'.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0202-b0009-391",
+      "page_number": 202,
+      "block_id_hint": "p0202-b0009",
+      "anchor_text": "39I",
+      "op": "set_text",
+      "replacement_tagged_text": "391",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Verified on sheet_vol4_a_glyphs_fn.png: prints letter number '391'.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0247-b0018-split",
+      "page_number": 247,
+      "block_id_hint": "p0247-b0018",
+      "anchor_text": "Nûr Mahâl. 3 Probably this was the number in the invoice.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0247-b0018-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> Núr Mahál.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0247-b0018-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> Probably this was the number in the invoice.",
+          "note_label": "3"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Verified on crops_vol4_detail2.png: footnote 2 reads '2 Núr Mahál.' (acute accents) and is followed on same baseline by '3 Probably...'.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0247-b0019-jahangir",
+      "page_number": 247,
+      "block_id_hint": "p0247-b0019",
+      "anchor_text": "Roe says that Jahângîr was rather mystified by this picture, but to all appearance ' he understood the moral to be a scorn of Asiatics, whom the naked satyr",
+      "op": "set_text",
+      "replacement_tagged_text": "<sup>4</sup> Roe says that Jahángír was rather mystified by this picture, but to all appearance ' he understood the moral to be a scorn of Asiatics, whom the naked satyr",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Verified on crops_vol4_detail2.png: prints '4 Roe says that Jahángír...' with acute accents.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0274-b0003-elephants",
+      "page_number": 274,
+      "block_id_hint": "p0274-b0003",
+      "anchor_text": "from us, you shall do very providently to make two good strong frigates of a convenient length and breadth, and that may draw four or five foot water at the most and well fitted, which will thoroughly secure our goods and violent carrying the same away from us, against the invasion of our forenamed enemies, and after [your] ships are gone will be hauled up ashore and lie safely for seven or eight months till another succeeding fleet shall come thither. If you knew so certainly as we that remain amongst these vile people what grievous villainies we have received at Surrat, and that even by the connivance and permission, or rather to speak more truly by the express commandment of Sultan Corrone, the chief lord of the place, being the King's third son and one that by an inveterate hatred wisheth ill to all Christians, you would with all expedition address your trade to Baroch. For this last year 1615 (besides at other times) the Governor of Surrat very violently extorted our goods from us against all right and reason, without making full restitution for them [          ]; for his officers did not stick to take from us our knives and money out of our pockets, being autho-rized by himself, that [          ] Governor; and cloth that he did take away in the Customhouse, and other wrongs that was offered to the tin and lead and the elephants' teeth, as was griev-ous to behold, as none of our countrymen in any other Mahometan kingdom, either Turkie, Peartia, and Barbarie, did ever suffer the like. But the capital injury that was offered us was about our cloth ; for the Governor took from us a great quantity of our better sort of cloths by as great violence as ever did thief take away any goods from a true man upon the highway, and that to your great damage and loss ; promising afterward some recompense for the same. These oppressions were [made ?] the more heinous by how much the more they were countenanced by Sultan Caroone, who at this present is going to Bra[mpore] in the country of Dackan, within ten days' journey of Surrat. He is like to insult over our nation much more than when he was farther ; and there-fore whether our trade should continue there where so many insolencies and barbarous villainies have been offered us without hope of redress, or to be rather transferred to another place where we may be secure and free from all oppressions, pray judge amongst yourselves. But hereof enough, because I believe my",
+      "op": "set_text",
+      "replacement_tagged_text": "from us, you shall do very providently to make two good strong frigates of a convenient length and breadth, and that may draw four or five foot water at the most and well fitted, which will thoroughly secure our goods and violent carrying the same away from us, against the invasion of our forenamed enemies, and after [your] ships are gone will be hauled up ashore and lie safely for seven or eight months till another succeeding fleet shall come thither. If you knew so certainly as we that remain amongst these vile people what grievous villainies we have received at Surrat, and that even by the connivance and permission, or rather to speak more truly by the express commandment of Sultan Corrone, the chief lord of the place, being the King's third son and one that by an inveterate hatred wisheth ill to all Christians, you would with all expedition address your trade to Baroch. For this last year 1615 (besides at other times) the Governor of Surrat very violently extorted our goods from us against all right and reason, without making full restitution for them [          ]; for his officers did not stick to take from us our knives and money out of our pockets, being autho-rized by himself, that [          ] Governor; and cloth that he did take away in the Customhouse, and other wrongs that was offered to the tin and lead and the elephants' teeth, as was griev-ous to behold, as none of our countrymen in any other Mahometan kingdom, either Turkie, Peartia, and Barbarie, did ever suffer the like. But the capital injury that was offered us was about our cloth ; for the Governor took from us a great quantity of our better sort of cloths by as great violence as ever did thief take away any goods from a true man upon the highway, and that to your great damage and loss ; promising afterward some recompense for the same. These oppressions were [made ?] the more heinous by how much the more they were countenanced by Sultan Caroone, who at this present is going to Bra[mpore] in the country of Dackan, within ten days' journey of Surrat. He is like to insult over our nation much more than when he was farther ; and there-fore whether our trade should continue there where so many insolencies and barbarous villainies have been offered us without hope of redress, or to be rather transferred to another place where we may be secure and free from all oppressions, pray judge amongst yourselves. But hereof enough, because I believe my",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Verified on sheet_vol4_glyphs.png: prints clear \"elephants'\".",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0285-b0016-acute",
+      "page_number": 285,
+      "block_id_hint": "p0285-b0016",
+      "anchor_text": "3 Shâh Abbas. Roe's letter to him is given in The Embassy (p. 132). It was enclosed in a letter to William Robbins, an English jeweller living at Ispahân, who was asked to get it translated and present it to the Shâh.",
+      "op": "set_text",
+      "replacement_tagged_text": "<sup>3</sup> Sháh Abbas. Roe's letter to him is given in <i>The Embassy</i> (p. 132). It was enclosed in a letter to William Robbins, an English jeweller living at Ispahán, who was asked to get it translated and present it to the Sháh.",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Verified on sheet_vol4_e_edge.png: prints acute accents 'Sháh' and 'Ispahán'.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0349-b0009-zulfikar",
+      "page_number": 349,
+      "block_id_hint": "p0349-b0009",
+      "anchor_text": "See p. 203. The succeeding paragraph has been omitted, as it contains only explanations of the claims made against Zûlfikár Khán.",
+      "op": "set_text",
+      "replacement_tagged_text": "See p. 203. The succeeding paragraph has been omitted, as it contains only explanations of the claims made against Zúlfikár Khán.",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Verified on p0349_fn.png: prints acute 'Zúlfikár Khán'.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0386-b0007-256",
+      "page_number": 386,
+      "block_id_hint": "p0386-b0007",
+      "anchor_text": "3 The Company's bale-mark is figured in vol. ii. (p. 2ɔ6).",
+      "op": "set_text",
+      "replacement_tagged_text": "<sup>3</sup> The Company's bale-mark is figured in vol. ii. (p. 256).",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Verified on sheet_vol4_glyphs.png: prints '(p. 256)'.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0387-b0003-about",
+      "page_number": 387,
+      "block_id_hint": "p0387-b0003",
+      "anchor_text": "But the Magolls, who are his competitors in government and of more violent disposition, viz. Isacke Beage the Shawbender (our archenemy) and his brother Salley Beag the Divon, with the rest were impatient at this refusal, and by proclamation laid great penalty on our servants, forbidding them and all others our house. Whereupon towards night Mr. Leske went to the Governor and iterated what was delivered the Cutwall. He entertained him kindly and promised to revoke the proclamation; yet before they parted, distasting some comparisons, he arose from Mr. Leske in choler; about which instant it was my unhappy chance to arrive at the river's side. These last words settled a jealousy in the Governor and caused his misapprehension, which, malignantly and cunningly prosecuted by our foresaid enemies, intimated my coming to take the town; which also by the unadvised bringing of the boat confirmed him in that belief, and brought me to that exigent beforementioned.",
+      "op": "set_text",
+      "replacement_tagged_text": "But the Magolls, who are his competitors in government and of more violent disposition, viz. Isacke Beage the Shawbender (our archenemy) and his brother Salley Beag the Divon, with the rest were impatient at this refusal, and by proclamation laid great penalty on our servants, forbidding them and all others our house. Whereupon towards night Mr. Leske went to the Governor and iterated what was delivered the Cutwall. He entertained him kindly and promised to revoke the proclamation; yet before they parted, distasting some comparisons, he arose from Mr. Leske in choler; about which instant it was my unhappy chance to arrive at the river's side. These last words settled a jealousy in the Governor and caused his misapprehension, which, malignantly and cunningly prosecuted by our foresaid enemies, intimated my coming to take the town; which also by the unadvised bringing of the boat confirmed him in that belief, and brought me to that exigent beforementioned.",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Verified on sheet_vol4_glyphs.png: prints clear 'about'.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0390-b0006-fn2-label",
+      "page_number": 390,
+      "block_id_hint": "p0390-b0006",
+      "anchor_text": "In the letter to Pepwell already quoted, Kerridge says that the coachman 'according to custom gave warning to make way, but Philip Hill, who was one of the company, and pretending he understood not, suffered himself to be jostled by the oxen.'",
+      "op": "set_note_label",
+      "replacement_note_label": "2",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Verified on sheet_vol4_d_fn_zoom.png: paragraph below note 1 serves as unnumbered note 2 for 'overturned one of them,2'; preserve exact unlabelled print text.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0402-b0042-ague",
+      "page_number": 402,
+      "block_id_hint": "p0402-b0042",
+      "anchor_text": "Diseases, 178 ; flux, 6 ; agㅁue, 9, 10, 97 ; fever, 106",
+      "op": "set_text",
+      "replacement_tagged_text": "Diseases, 178 ; flux, 6 ; ague, 9, 10, 97 ; fever, 106",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Verified on sheet_vol4_glyphs.png: prints clean 'ague'.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0114-cosig-fold",
+      "page_number": 114,
+      "block_id_hint": "p0114-b0004",
+      "anchor_text": "Gioan Vernadt.\nJ. D. Jonge.\nJan. Roossengyn.\nWillem van [Griensuen].",
+      "op": "set_text",
+      "replacement_tagged_text": "Gioan Vernadt.\nJ. D. Jonge.\nJan. Roossengyn.\nWillem van [Griensuen].\nJan Dircks. Lam.\nSteven Doensz. van Groenendyk.\nGisbrecht van Viam (<i>sic</i>).\nAdriaen Vander Dusse.\nThs. <i>Zuerius</i>, 1616.",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Fold 2-column co-signature block p0114-b0005 into p0114-b0004.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0114-cosig-drop",
+      "page_number": 114,
+      "block_id_hint": "p0114-b0005",
+      "anchor_text": "Jan Dircks. Lam.\nSteven Doensz. van Groenendyk.\nGisbrecht van Viam (sic).\nAdriaen Vander Dusse.\nThs. Zuerius, 1616.",
+      "op": "drop_residue",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Merged into p0114-b0004.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0235-cosig-fold",
+      "page_number": 235,
+      "block_id_hint": "p0235-b0005",
+      "anchor_text": "Tho. Mittford.\nWm. Methwold.\nTho. Rastell.\nGeorge Pley.",
+      "op": "set_text",
+      "replacement_tagged_text": "Tho. Mittford.\nWm. Methwold.\nTho. Rastell.\nGeorge Pley.\nTho. Kerridge.\nEdward Connok.\nTho. Barker.",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Fold 2-column co-signature block p0235-b0006 into p0235-b0005.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0235-cosig-drop",
+      "page_number": 235,
+      "block_id_hint": "p0235-b0006",
+      "anchor_text": "Tho. Kerridge.\nEdward Connok.\nTho. Barker.",
+      "op": "drop_residue",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Merged into p0235-b0005.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0048-b0008-split-fn",
+      "page_number": 48,
+      "block_id_hint": "p0048-b0008",
+      "anchor_text": "1 See p. 21.        2 See p. 33.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0048-b0008-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> See p. 21.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0048-b0008-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> See p. 33.",
+          "note_label": "2"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0070-b0006-split-fn",
+      "page_number": 70,
+      "block_id_hint": "p0070-b0006",
+      "anchor_text": "1 See vol. iii., p. 318. 2 25th ?",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0070-b0006-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> See vol. iii., p. 318.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0070-b0006-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> 25th ?",
+          "note_label": "2"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0079-b0010-split-fn",
+      "page_number": 79,
+      "block_id_hint": "p0079-b0010",
+      "anchor_text": "1 Parwíz.  2 Nizám Sháh of Ahmadnagar.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0079-b0010-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> Parwíz.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0079-b0010-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> Nizám Sháh of Ahmadnagar.",
+          "note_label": "2"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0107-b0005-split-fn",
+      "page_number": 107,
+      "block_id_hint": "p0107-b0005",
+      "anchor_text": "1 See vol. iii., p. 272. 2 See vol. iii., Introduction, p. xxvi. 3 Ibid., p. xxxiv.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0107-b0005-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> See vol. iii., p. 272.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0107-b0005-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> See vol. iii., Introduction, p. xxvi.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0107-b0005-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> <i>Ibid.,</i> p. xxxiv.",
+          "note_label": "3"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0108-b0006-split-fn",
+      "page_number": 108,
+      "block_id_hint": "p0108-b0006",
+      "anchor_text": "1 See vol. iii., p. 319.     2 See vol. iii., p. 336.     3 Ibid., p. 319.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0108-b0006-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> See vol. iii., p. 319.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0108-b0006-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> See vol. iii., p. 336.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0108-b0006-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> <i>Ibid.</i>, p. 319.",
+          "note_label": "3"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0111-b0019-split-fn",
+      "page_number": 111,
+      "block_id_hint": "p0111-b0019",
+      "anchor_text": "1 Thousand.     2 See p. 5.     3 Hundred.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0111-b0019-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> Thousand.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0111-b0019-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> See p. 5.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0111-b0019-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> Hundred.",
+          "note_label": "3"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0111-b0020-split-fn",
+      "page_number": 111,
+      "block_id_hint": "p0111-b0020",
+      "anchor_text": "4 'Mass' here means 'gold'; 'plankis' I cannot explain.     5 Johor.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0111-b0020-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> 'Mass' here means 'gold'; 'plankis' I cannot explain.",
+          "note_label": "4"
+        },
+        {
+          "block_id": "p0111-b0020-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>5</sup> Johor.",
+          "note_label": "5"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0146-b0016-split-fn",
+      "page_number": 146,
+      "block_id_hint": "p0146-b0016",
+      "anchor_text": "4 Not extant. 5 Ligor, on the eastern side of the Malay Peninsula.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0146-b0016-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> Not extant.",
+          "note_label": "4"
+        },
+        {
+          "block_id": "p0146-b0016-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>5</sup> Ligor, on the eastern side of the Malay Peninsula.",
+          "note_label": "5"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0169-b0011-split-fn",
+      "page_number": 169,
+      "block_id_hint": "p0169-b0011",
+      "anchor_text": "1 See p. 116.   2 Of going up to the Court.   3 Boat (fune).   4 See p. 139.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0169-b0011-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> See p. 116.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0169-b0011-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> Of going up to the Court.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0169-b0011-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> Boat (<i>fune</i>).",
+          "note_label": "3"
+        },
+        {
+          "block_id": "p0169-b0011-s4",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> See p. 139.",
+          "note_label": "4"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0179-b0014-split-fn",
+      "page_number": 179,
+      "block_id_hint": "p0179-b0014",
+      "anchor_text": "5 See p. 132. 6 The Zwarte Leeuw and the Jakatra. 7 See vol. iii., p. 329.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0179-b0014-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>5</sup> See p. 132.",
+          "note_label": "5"
+        },
+        {
+          "block_id": "p0179-b0014-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>6</sup> The <i>Zwarte Leeuw</i> and the <i>Jakatra</i>.",
+          "note_label": "6"
+        },
+        {
+          "block_id": "p0179-b0014-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>7</sup> See vol. iii., p. 329.",
+          "note_label": "7"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0186-b0011-split-fn",
+      "page_number": 186,
+      "block_id_hint": "p0186-b0011",
+      "anchor_text": "3 See vol. iii., p. 331. 4 Perhaps the Malay musim (season). 5 Of Goa.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0186-b0011-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> See vol. iii., p. 331.",
+          "note_label": "3"
+        },
+        {
+          "block_id": "p0186-b0011-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> Perhaps the Malay <i>musim</i> (season).",
+          "note_label": "4"
+        },
+        {
+          "block_id": "p0186-b0011-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>5</sup> Of Goa.",
+          "note_label": "5"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0190-b0006-split-fn",
+      "page_number": 190,
+      "block_id_hint": "p0190-b0006",
+      "anchor_text": "2 John Browne (see p. 106). 3 Cocks.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0190-b0006-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> John Browne (see p. 106).",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0190-b0006-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> Cocks.",
+          "note_label": "3"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0214-b0006-split-fn",
+      "page_number": 214,
+      "block_id_hint": "p0214-b0006",
+      "anchor_text": "1 Migmoy (see p. 173). On the negotiations with him, see Cocks's Diary, vol. i., p. 168, &c.     2 Cocks.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0214-b0006-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> Migmoy (see p. 173). On the negotiations with him, see Cocks's <i>Diary</i>, vol. i., p. 168, &c.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0214-b0006-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> Cocks.",
+          "note_label": "2"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0228-b0013-split-fn",
+      "page_number": 228,
+      "block_id_hint": "p0228-b0013",
+      "anchor_text": "MS. 'ophyum.'      2 Gamboge.      3 See vol. iii., p. 320.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0228-b0013-s1",
+          "type": "footnote",
+          "tagged_text": "MS. 'ophyum.'",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0228-b0013-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> Gamboge.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0228-b0013-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> See vol. iii., p. 320.",
+          "note_label": "3"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0237-b0008-split-fn",
+      "page_number": 237,
+      "block_id_hint": "p0237-b0008",
+      "anchor_text": "1 Baroda.        2 See vol. iii., p. 316.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0237-b0008-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> Baroda.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0237-b0008-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> See vol. iii., p. 316.",
+          "note_label": "2"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0258-b0007-split-fn",
+      "page_number": 258,
+      "block_id_hint": "p0258-b0007",
+      "anchor_text": "1 Probably we should read ' lest they.' 2 The Dutch. 3 Lontor, or Great Banda.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0258-b0007-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> Probably we should read ' lest they.'",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0258-b0007-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> The Dutch.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0258-b0007-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> Lontor, or Great Banda.",
+          "note_label": "3"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0310-b0006-split-fn",
+      "page_number": 310,
+      "block_id_hint": "p0310-b0006",
+      "anchor_text": "1 The Sea Adventure, which carried this letter.     2 See pp. 185, 272.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0310-b0006-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> The <i>Sea Adventure</i>, which carried this letter.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0310-b0006-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> See pp. 185, 272.",
+          "note_label": "2"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0313-b0007-split-fn",
+      "page_number": 313,
+      "block_id_hint": "p0313-b0007",
+      "anchor_text": "1 Kuhstak, a village on the coast between Gurú and Mínau.     2 See p. 261.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0313-b0007-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> Kuhstak, a village on the coast between Gurú and Mínau.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0313-b0007-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> See p. 261.",
+          "note_label": "2"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0313-b0008-split-fn",
+      "page_number": 313,
+      "block_id_hint": "p0313-b0008",
+      "anchor_text": "3 On December 24 (Egerton MS. 2121, f. 105a).     4 Not extant.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0313-b0008-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> On December 24 (<i>Egerton MS.</i> 2121, f. 105<i>a</i>).",
+          "note_label": "3"
+        },
+        {
+          "block_id": "p0313-b0008-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> Not extant.",
+          "note_label": "4"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0318-b0005-split-fn",
+      "page_number": 318,
+      "block_id_hint": "p0318-b0005",
+      "anchor_text": "1 Parganas, or districts. Purchas explains (vol. i., p. 455) that 'prigonies are lordships.' 2 See p. 28. 3 See vol. iii., p. 325.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0318-b0005-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> <i>Parganas</i>, or districts. Purchas explains (vol. i., p. 455) that '<i>prigonies</i> are lordships.'",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0318-b0005-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> See p. 28.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0318-b0005-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> See vol. iii., p. 325.",
+          "note_label": "3"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0318-b0007-split-fn",
+      "page_number": 318,
+      "block_id_hint": "p0318-b0007",
+      "anchor_text": "5 Sheher, on the S.W. coast of Arabia, between Ras Makalleh and the present port of Shekhr. It is now in ruins. See also Lancaster's Voyages, p. 173, and Van den Broecke's Reysen naer Oost-Indien, p. 31. 6 Mocha.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0318-b0007-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>5</sup> Sheher, on the S.W. coast of Arabia, between Ras Makalleh and the present port of Shekhr. It is now in ruins. See also <i>Lancaster's Voyages</i>, p. 173, and Van den Broecke's <i>Reysen naer Oost-Indien</i>, p. 31.",
+          "note_label": "5"
+        },
+        {
+          "block_id": "p0318-b0007-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>6</sup> Mocha.",
+          "note_label": "6"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0322-b0016-split-fn",
+      "page_number": 322,
+      "block_id_hint": "p0322-b0016",
+      "anchor_text": "3 Dated November 7, 1616. It is not among the I. O. Records, but a copy will be found in Brit. Mus. Egerton MS. 2121. 4 That ?",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0322-b0016-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> Dated November 7, 1616. It is not among the I. O. Records, but a copy will be found in Brit. Mus. <i>Egerton MS.</i> 2121.",
+          "note_label": "3"
+        },
+        {
+          "block_id": "p0322-b0016-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> That ?",
+          "note_label": "4"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0346-b0007-split-fn",
+      "page_number": 346,
+      "block_id_hint": "p0346-b0007",
+      "anchor_text": "1 See vol. iii., p. 248. 2 On p. 89 a different quantity is given. 3 Not extant.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0346-b0007-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> See vol. iii., p. 248.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0346-b0007-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> On p. 89 a different quantity is given.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0346-b0007-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> Not extant.",
+          "note_label": "3"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0346-b0008-split-fn",
+      "page_number": 346,
+      "block_id_hint": "p0346-b0008",
+      "anchor_text": "4 These names of piece-goods are difficult to identify. Baftas, lungis, chadars, and allejas (a striped silky stuff) are well known; sealas or zelas (p. 129) may be a material for turbans, with gold thread interwoven (cp. Hind. chillá); lollwee seems to be connected with Hind. lála, 'red'; burrall is probably Hind. biral, 'of delicate texture'; biramy is a soft stuff 'resembling Holland cloths' (vol. i., p. 29); and foota (cp. p. 50) may be conjectured to be Hind. phúta, 'variegated.' 5 See p. 87.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0346-b0008-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> These names of piece-goods are difficult to identify. <i>Baftas, lungis, chadars,</i> and <i>allejas</i> (a striped silky stuff) are well known; <i>sealas</i> or <i>zelas</i> (p. 129) may be a material for turbans, with gold thread interwoven (cp. Hind. <i>chillá</i>); <i>lollwee</i> seems to be connected with Hind. <i>lála,</i> 'red'; <i>burrall</i> is probably Hind. <i>biral,</i> 'of delicate texture'; <i>biramy</i> is a soft stuff 'resembling Holland cloths' (vol. i., p. 29); and <i>foota</i> (cp. p. 50) may be conjectured to be Hind. <i>phúta,</i> 'variegated.'",
+          "note_label": "4"
+        },
+        {
+          "block_id": "p0346-b0008-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>5</sup> See p. 87.",
+          "note_label": "5"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0358-b0007-split-fn",
+      "page_number": 358,
+      "block_id_hint": "p0358-b0007",
+      "anchor_text": "1 See p. 64. 2 Probably ' until ' is meant. 3 Fanams. 4 A mistake for Cochi",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0358-b0007-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> See p. 64.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0358-b0007-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> Probably ' until ' is meant.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0358-b0007-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> Fanams.",
+          "note_label": "3"
+        },
+        {
+          "block_id": "p0358-b0007-s4",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> A mistake for Cochi",
+          "note_label": "4"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0364-b0005-split-fn",
+      "page_number": 364,
+      "block_id_hint": "p0364-b0005",
+      "anchor_text": "1 Kerridge. 2 Edwards. 3 See p. 243. 4 Zúlfikár Khán. 5 Burhánpúr.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0364-b0005-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> Kerridge.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0364-b0005-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> Edwards.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0364-b0005-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> See p. 243.",
+          "note_label": "3"
+        },
+        {
+          "block_id": "p0364-b0005-s4",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> Zúlfikár Khán.",
+          "note_label": "4"
+        },
+        {
+          "block_id": "p0364-b0005-s5",
+          "type": "footnote",
+          "tagged_text": "<sup>5</sup> Burhánpúr.",
+          "note_label": "5"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0369-b0005-split-fn",
+      "page_number": 369,
+      "block_id_hint": "p0369-b0005",
+      "anchor_text": "1 See p. 202.     2 At the Court.     3 See p. 151.     4 Khoja Abul Hasan.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0369-b0005-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> See p. 202.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0369-b0005-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> At the Court.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0369-b0005-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> See p. 151.",
+          "note_label": "3"
+        },
+        {
+          "block_id": "p0369-b0005-s4",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> Khoja Abul Hasan.",
+          "note_label": "4"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0369-b0006-split-fn",
+      "page_number": 369,
+      "block_id_hint": "p0369-b0006",
+      "anchor_text": "5 Olpad, about twelve miles N.W. of Surat.     6 Jágír, distinct.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0369-b0006-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>5</sup> Olpad, about twelve miles N.W. of Surat.",
+          "note_label": "5"
+        },
+        {
+          "block_id": "p0369-b0006-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>6</sup> <i>Jágír</i>, distinct.",
+          "note_label": "6"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    },
+    {
+      "correction_id": "v4-p0374-b0008-split-fn",
+      "page_number": 374,
+      "block_id_hint": "p0374-b0008",
+      "anchor_text": "For these letters, see p. 291.    3 See f. 101 of the same volume.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0374-b0008-s1",
+          "type": "footnote",
+          "tagged_text": "For these letters, see p. 291.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0374-b0008-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> See f. 101 of the same volume.",
+          "note_label": "3"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split horizontal multi-footnote line into individual footnote blocks.",
+      "created_at": "2026-11-17T21:16:06.113382+00:00"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "poe-valentine-letters-1925",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Half-Title, Limitation, Portrait & Title Page",
+      "start_page": 1,
+      "end_page": 12
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Introduction",
+      "start_page": 13,
+      "end_page": 36
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents & Illustrations",
+      "start_page": 37,
+      "end_page": 42
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters I–II: University of Virginia (1826)",
+      "start_page": 43,
+      "end_page": 66
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters III–V: Richmond Crisis (March 1827)",
+      "start_page": 67,
+      "end_page": 92
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters VI–IX: Fort Moultrie & Fortress Monroe (1828–1829)",
+      "start_page": 93,
+      "end_page": 144
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters X–XX: Richmond & Baltimore (May–November 1829)",
+      "start_page": 145,
+      "end_page": 250
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters XXI–XXXI: West Point, New York & Baltimore (1830–1833)",
+      "start_page": 251,
+      "end_page": 352
+    },
+    {
+      "kind": "appendix",
+      "title": "Bills for Edgar Allan Poe at Manor House School",
+      "start_page": 353,
+      "end_page": 376
+    }
+  ]
+}

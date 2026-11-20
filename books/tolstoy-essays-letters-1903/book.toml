@@ -1,0 +1,22 @@
+[book]
+book_id = "tolstoy-essays-letters-1903"
+title = "Essays and Letters"
+author_or_editor = "Leo Tolstoy (tr. Aylmer Maude)"
+authors = ["Leo Tolstoy (tr. Aylmer Maude)"]
+publication_year = 1903
+subtitle = "Translated by Aylmer Maude (The World's Classics, XLVI)"
+imprint = "London: Grant Richards, Leicester Square, 1903"
+collection = "world-correspondence"
+language = "en"
+declared_scripts = []
+profile = "claude_sonnet_epistolary"
+active_run_id = "canonical-20261116-132507"
+
+[source]
+archive_id = "essaysletters03tols"
+source_pdf = "/home/bebhuvan/Documents/Akshara wokspace/Paper Lanterns New/sources/essaysletters03tols/essaysletters03tols.originals.pdf"
+source_pdf_sha256 = "1474ecefe4f6b64bccaf1033a51c43dc720d1faab14373dff7b9b273d54b7f45"
+
+[extraction]
+profile = "claude_sonnet_epistolary"
+render_dpi = 350

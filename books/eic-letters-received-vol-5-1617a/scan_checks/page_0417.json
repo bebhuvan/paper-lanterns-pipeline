@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-5-1617a",
+  "page_number": 417,
+  "check_id": "vol5-scan-check-p0417",
+  "reviewer": "native-vision-250to450ppi-scan-check",
+  "source_page_sha256": "864e792c2f015c0cd65800176810e6b67c29a64fff1b8ca8e86b3e01d535d890",
+  "checked_at": "2026-11-17T17:58:00.757804+00:00",
+  "checks": [
+    {
+      "block_id": "p0417-b0029",
+      "token": "Bijapur",
+      "verdict": "printed_as_read",
+      "note": "450-DPI crop confirms Index literally prints 'Bijapur' without diacritics."
+    }
+  ]
+}

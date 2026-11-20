@@ -1,0 +1,54 @@
+{
+  "book_id": "selected-english-letters-1914",
+  "page_number": 37,
+  "check_id": "scan-check-p0037",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "1b2cd0f246c8c412f393ac89654094f7406e1e2efab80e7164ed9e47af3f95df",
+  "checks": [
+    {
+      "block_id": "p0037-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XIII (Samuel Johnson to Mr. Macpherson) and Letter XIV opening (Horace Walpole)."
+    },
+    {
+      "block_id": "p0037-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XIII (Samuel Johnson to Mr. Macpherson) and Letter XIV opening (Horace Walpole)."
+    },
+    {
+      "block_id": "p0037-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XIII (Samuel Johnson to Mr. Macpherson) and Letter XIV opening (Horace Walpole)."
+    },
+    {
+      "block_id": "p0037-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XIII (Samuel Johnson to Mr. Macpherson) and Letter XIV opening (Horace Walpole)."
+    },
+    {
+      "block_id": "p0037-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XIII (Samuel Johnson to Mr. Macpherson) and Letter XIV opening (Horace Walpole)."
+    },
+    {
+      "block_id": "p0037-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XIII (Samuel Johnson to Mr. Macpherson) and Letter XIV opening (Horace Walpole)."
+    },
+    {
+      "block_id": "p0037-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XIII (Samuel Johnson to Mr. Macpherson) and Letter XIV opening (Horace Walpole)."
+    },
+    {
+      "block_id": "p0037-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XIII (Samuel Johnson to Mr. Macpherson) and Letter XIV opening (Horace Walpole)."
+    },
+    {
+      "block_id": "p0037-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XIII (Samuel Johnson to Mr. Macpherson) and Letter XIV opening (Horace Walpole)."
+    }
+  ]
+}

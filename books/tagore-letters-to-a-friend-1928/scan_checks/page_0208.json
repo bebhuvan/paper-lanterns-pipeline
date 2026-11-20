@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "tagore-letters-to-a-friend-1928",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 208,
+  "reviewer": "native-vision-500ppi-scan-check",
+  "checked_at": "2026-11-19T14:06:56.659895+00:00",
+  "source_page_sha256": "e751324ab23289e94de8b0a3e46c18dc5b449f0ec2d916cee004a6855aced238",
+  "render_png": "renders/page_0208.png",
+  "checks": [
+    {
+      "block_id": "p0208-b0001",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0208.png."
+    },
+    {
+      "block_id": "p0208-b0002",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0208.png."
+    },
+    {
+      "block_id": "p0208-b0003",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0208.png."
+    },
+    {
+      "block_id": "p0208-b0004",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0208.png."
+    },
+    {
+      "block_id": "p0208-b0005",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0208.png."
+    },
+    {
+      "block_id": "p0208-b0006",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0208.png."
+    },
+    {
+      "block_id": "p0208-b0007",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0208.png."
+    },
+    {
+      "block_id": "p0208-b0008",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0208.png."
+    },
+    {
+      "block_id": "p0208-b0009",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0208.png."
+    },
+    {
+      "block_id": "p0208-b0010",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0208.png."
+    },
+    {
+      "block_id": "p0208-b0011",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0208.png."
+    },
+    {
+      "block_id": "p0208-b0012",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0208.png."
+    },
+    {
+      "block_id": "p0208-b0013",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0208.png."
+    },
+    {
+      "block_id": "p0208-b0014",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0208.png."
+    },
+    {
+      "block_id": "p0208-b0015",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0208.png."
+    },
+    {
+      "block_id": "p0208-b0016",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0208.png."
+    },
+    {
+      "block_id": "p0208-b0017",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0208.png."
+    },
+    {
+      "block_id": "p0208-b0018",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0208.png."
+    }
+  ],
+  "correction_ids": []
+}

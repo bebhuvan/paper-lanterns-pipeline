@@ -1,0 +1,29 @@
+{
+  "book_id": "gandhi-famous-letters-1947",
+  "page_number": 29,
+  "check_id": "scan-check-p0029",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "95f0536dbdc2db9d79e7b4e0ee9013c3f5ca8fad1629822f43bcf678a03cbf60",
+  "checks": [
+    {
+      "block_id": "p0029-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified To Every Englishman Living in India editorial intro page verbatim."
+    },
+    {
+      "block_id": "p0029-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified To Every Englishman Living in India editorial intro page verbatim."
+    },
+    {
+      "block_id": "p0029-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified To Every Englishman Living in India editorial intro page verbatim."
+    },
+    {
+      "block_id": "p0029-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified To Every Englishman Living in India editorial intro page verbatim."
+    }
+  ]
+}

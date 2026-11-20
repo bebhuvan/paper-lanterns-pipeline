@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "toru-dutt-life-letters-1921",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Frontmatter & Title Pages",
+      "start_page": 1,
+      "end_page": 12
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Foreword (by the Right Hon. H. A. L. Fisher)",
+      "start_page": 13,
+      "end_page": 16
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Author's Preface (by Harihar Das)",
+      "start_page": 17,
+      "end_page": 20
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents & List of Illustrations",
+      "start_page": 21,
+      "end_page": 22
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter I: The Dutt Family",
+      "start_page": 23,
+      "end_page": 42
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter II: Early Life, Visit to Europe and Preparation for a Career",
+      "start_page": 43,
+      "end_page": 72
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter III: Return to India",
+      "start_page": 73,
+      "end_page": 83
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter IV: Toru's Letters to Miss Martin, December 1873–December 1875",
+      "start_page": 84,
+      "end_page": 153
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter V: Toru's Letters to Miss Martin, January–December 1876",
+      "start_page": 154,
+      "end_page": 282
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter VI: Toru's Letters to Miss Martin, January–July 1877",
+      "start_page": 283,
+      "end_page": 321
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter VII: The Character of Toru Dutt as Revealed in Her Letters",
+      "start_page": 322,
+      "end_page": 326
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter VIII: 'A Sheaf Gleaned in French Fields' and 'A Scene from Contemporary History'",
+      "start_page": 327,
+      "end_page": 345
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter IX: Last Days",
+      "start_page": 346,
+      "end_page": 355
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter X: 'Bianca' and 'Le Journal de Mlle d'Arvers'",
+      "start_page": 356,
+      "end_page": 368
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter XI: 'Ancient Ballads and Legends of Hindustan'",
+      "start_page": 369,
+      "end_page": 381
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter XII: Supplementary Review (by E. J. Thompson)",
+      "start_page": 382,
+      "end_page": 389
+    },
+    {
+      "kind": "backmatter",
+      "title": "Appendix",
+      "start_page": 390,
+      "end_page": 399
+    },
+    {
+      "kind": "index",
+      "title": "Index & Library Endpapers",
+      "start_page": 400,
+      "end_page": 408
+    }
+  ]
+}

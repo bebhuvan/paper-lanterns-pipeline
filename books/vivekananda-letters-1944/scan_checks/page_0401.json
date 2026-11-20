@@ -1,0 +1,64 @@
+{
+  "book_id": "vivekananda-letters-1944",
+  "page_number": 401,
+  "check_id": "scan-check-p0401",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "6eb7eedd6f1f7a1a9b6ef122352ad87c06aa2c9da84204e8a4fda524c2d9a12c",
+  "checks": [
+    {
+      "block_id": "p0401-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sanskrit Shloka footnote numeral '१' and aligned body callout '१'."
+    },
+    {
+      "block_id": "p0401-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sanskrit Shloka footnote numeral '१' and aligned body callout '१'."
+    },
+    {
+      "block_id": "p0401-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sanskrit Shloka footnote numeral '१' and aligned body callout '१'."
+    },
+    {
+      "block_id": "p0401-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sanskrit Shloka footnote numeral '१' and aligned body callout '१'."
+    },
+    {
+      "block_id": "p0401-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sanskrit Shloka footnote numeral '१' and aligned body callout '१'."
+    },
+    {
+      "block_id": "p0401-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sanskrit Shloka footnote numeral '१' and aligned body callout '१'."
+    },
+    {
+      "block_id": "p0401-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sanskrit Shloka footnote numeral '१' and aligned body callout '१'."
+    },
+    {
+      "block_id": "p0401-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sanskrit Shloka footnote numeral '१' and aligned body callout '१'."
+    },
+    {
+      "block_id": "p0401-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sanskrit Shloka footnote numeral '१' and aligned body callout '१'."
+    },
+    {
+      "block_id": "p0401-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sanskrit Shloka footnote numeral '१' and aligned body callout '१'."
+    },
+    {
+      "block_id": "p0401-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Sanskrit Shloka footnote numeral '१' and aligned body callout '१'."
+    }
+  ]
+}

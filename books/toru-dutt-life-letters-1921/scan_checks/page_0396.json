@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "toru-dutt-life-letters-1921",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 396,
+  "reviewer": "native-vision-400ppi-scan-check",
+  "checked_at": "2026-11-19T15:52:28.339181+00:00",
+  "source_page_sha256": "628f00917142d238b16eb494413afddacdd156bfeda34ff9132c7137aab1e426",
+  "render_png": "renders/page_0396.png",
+  "checks": [
+    {
+      "block_id": "p0396-b0001",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0396.png."
+    },
+    {
+      "block_id": "p0396-b0002",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0396.png."
+    },
+    {
+      "block_id": "p0396-b0003",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0396.png."
+    },
+    {
+      "block_id": "p0396-b0004",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0396.png."
+    },
+    {
+      "block_id": "p0396-b0005",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0396.png."
+    },
+    {
+      "block_id": "p0396-b0006",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0396.png."
+    },
+    {
+      "block_id": "p0396-b0007",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0396.png."
+    },
+    {
+      "block_id": "p0396-b0008",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0396.png."
+    },
+    {
+      "block_id": "p0396-b0009",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0396.png."
+    },
+    {
+      "block_id": "p0396-b0010",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0396.png."
+    },
+    {
+      "block_id": "p0396-b0011",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0396.png."
+    },
+    {
+      "block_id": "p0396-b0012",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0396.png."
+    },
+    {
+      "block_id": "p0396-b0013",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0396.png."
+    },
+    {
+      "block_id": "p0396-b0014",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0396.png."
+    }
+  ]
+}

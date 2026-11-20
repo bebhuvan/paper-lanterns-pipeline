@@ -1,0 +1,34 @@
+{
+  "book_id": "pascal-miscellaneous-writings-1849",
+  "page_number": 257,
+  "check_id": "scan-check-p0257",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "2877b49184b32d50a679f16a791815f96f7add1ffe8aeb65d5f6e127c7055f91",
+  "checks": [
+    {
+      "block_id": "p0257-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefixes before 'XLVII. +' and '+ It is no disgrace...'; genuine '*' Montaigne footnote."
+    },
+    {
+      "block_id": "p0257-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefixes before 'XLVII. +' and '+ It is no disgrace...'; genuine '*' Montaigne footnote."
+    },
+    {
+      "block_id": "p0257-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefixes before 'XLVII. +' and '+ It is no disgrace...'; genuine '*' Montaigne footnote."
+    },
+    {
+      "block_id": "p0257-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefixes before 'XLVII. +' and '+ It is no disgrace...'; genuine '*' Montaigne footnote."
+    },
+    {
+      "block_id": "p0257-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefixes before 'XLVII. +' and '+ It is no disgrace...'; genuine '*' Montaigne footnote."
+    }
+  ]
+}

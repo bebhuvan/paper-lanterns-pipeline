@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "humboldt-varnhagen-letters-1860",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 21,
+  "reviewer": "native-vision-600ppi-scan-check",
+  "checked_at": "2026-11-19T15:37:51.442581+00:00",
+  "source_page_sha256": "72d2de8bf48b30543a4be2d6eceaa10be794a2e2c623933b436215f84aa276e7",
+  "render_png": "renders/page_0021.png",
+  "checks": [
+    {
+      "block_id": "p0021-b0001",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0021.png."
+    },
+    {
+      "block_id": "p0021-b0002",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0021.png."
+    },
+    {
+      "block_id": "p0021-b0003",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0021.png."
+    },
+    {
+      "block_id": "p0021-b0004",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0021.png."
+    }
+  ]
+}

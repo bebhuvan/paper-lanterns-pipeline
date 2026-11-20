@@ -1,0 +1,20 @@
+[book]
+book_id = "napoleon-joseph-vol1"
+title = "The Confidential Correspondence of Napoleon Bonaparte with His Brother Joseph, Vol. I"
+author_or_editor = "Napoleon Bonaparte"
+authors = ["Napoleon Bonaparte"]
+publication_year = 1856
+subtitle = ""
+imprint = ""
+collection = "world-correspondence"
+language = "en"
+declared_scripts = []
+profile = "recitation_shielded"
+
+[source]
+archive_id = "confidentialcorr01napo"
+source_pdf = "sources/napoleon-joseph-correspondence-vol1.pdf"
+source_pdf_sha256 = ""
+
+[extraction]
+profile = "recitation_shielded"

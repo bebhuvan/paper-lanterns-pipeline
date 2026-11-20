@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "dostoevsky-letters-reminiscences-1923",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Half-Title, Frontispiece & Title Page",
+      "start_page": 1,
+      "end_page": 14
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents",
+      "start_page": 15,
+      "end_page": 16
+    },
+    {
+      "kind": "chapter",
+      "title": "Letter from F. M. Dostoevsky to His Brother",
+      "start_page": 17,
+      "end_page": 30
+    },
+    {
+      "kind": "chapter",
+      "title": "Dostoevsky's Letters to A. N. Maikov",
+      "start_page": 31,
+      "end_page": 112
+    },
+    {
+      "kind": "chapter",
+      "title": "Reminiscences of Dostoevsky by His Wife",
+      "start_page": 113,
+      "end_page": 170
+    },
+    {
+      "kind": "chapter",
+      "title": "Dostoevsky's Letters to His Wife on the Poushkin Celebrations",
+      "start_page": 171,
+      "end_page": 252
+    },
+    {
+      "kind": "chapter",
+      "title": "Dostoevsky and Pobiedonoszev: Some Letters",
+      "start_page": 253,
+      "end_page": 279
+    },
+    {
+      "kind": "chapter",
+      "title": "Pobiedonoszev's Letters to Alexander III",
+      "start_page": 280,
+      "end_page": 282
+    },
+    {
+      "kind": "index",
+      "title": "Biographical Index",
+      "start_page": 283,
+      "end_page": 302
+    },
+    {
+      "kind": "appendix",
+      "title": "Facsimile from Dostoevsky's MS. of 'The Life of a Great Sinner'",
+      "start_page": 303,
+      "end_page": 310
+    }
+  ]
+}

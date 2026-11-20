@@ -1,0 +1,16 @@
+{
+  "book_id": "tipu-sultan-select-letters-1811",
+  "page_number": 484,
+  "check_id": "tipu-sultan-select-letters-1811-p0484",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "fd7d0cf67eb205b69020d4c5580850155addd2aae85aa6d80185bd4ec5965fcd",
+  "checked_at": "2026-11-17T21:31:14.948331+00:00",
+  "checks": [
+    {
+      "block_id": "p0484-b0006",
+      "token": "Husain",
+      "verdict": "printed_as_read",
+      "note": "Printed unaccented Husain."
+    }
+  ]
+}

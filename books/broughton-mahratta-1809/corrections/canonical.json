@@ -1,0 +1,210 @@
+{
+  "version": "correction-v2",
+  "book_id": "broughton-mahratta-1809",
+  "created_at": "2026-11-16T09:26:05.369338+00:00",
+  "corrections": [
+    {
+      "correction_id": "ucla-pencil-p0034-b0006",
+      "page_number": 34,
+      "block_id": "p0034-b0006",
+      "op": "drop_residue",
+      "source": "machine",
+      "note": "Modern UCLA library borrower marginal pencil annotation on scan leaf."
+    },
+    {
+      "correction_id": "ucla-pencil-p0035-b0007",
+      "page_number": 35,
+      "block_id": "p0035-b0007",
+      "op": "drop_residue",
+      "source": "machine",
+      "note": "Modern UCLA library borrower marginal pencil annotation on scan leaf."
+    },
+    {
+      "correction_id": "ucla-pencil-p0059-b0004",
+      "page_number": 59,
+      "block_id": "p0059-b0004",
+      "op": "drop_residue",
+      "source": "machine",
+      "note": "Modern UCLA library borrower marginal pencil annotation on scan leaf."
+    },
+    {
+      "correction_id": "ucla-pencil-p0063-b0003",
+      "page_number": 63,
+      "block_id": "p0063-b0003",
+      "op": "drop_residue",
+      "source": "machine",
+      "note": "Modern UCLA library borrower marginal pencil annotation on scan leaf."
+    },
+    {
+      "correction_id": "ucla-pencil-p0063-b0004",
+      "page_number": 63,
+      "block_id": "p0063-b0004",
+      "op": "drop_residue",
+      "source": "machine",
+      "note": "Modern UCLA library borrower marginal pencil annotation on scan leaf."
+    },
+    {
+      "correction_id": "ucla-pencil-p0115-b0005",
+      "page_number": 115,
+      "block_id": "p0115-b0005",
+      "op": "drop_residue",
+      "source": "machine",
+      "note": "Modern UCLA library borrower marginal pencil annotation on scan leaf."
+    },
+    {
+      "correction_id": "ucla-pencil-p0145-b0007",
+      "page_number": 145,
+      "block_id": "p0145-b0007",
+      "op": "drop_residue",
+      "source": "machine",
+      "note": "Modern UCLA library borrower marginal pencil annotation on scan leaf."
+    },
+    {
+      "correction_id": "ucla-pencil-p0168-b0004",
+      "page_number": 168,
+      "block_id": "p0168-b0004",
+      "op": "drop_residue",
+      "source": "machine",
+      "note": "Modern UCLA library borrower marginal pencil annotation on scan leaf."
+    },
+    {
+      "correction_id": "ucla-pencil-p0187-b0005",
+      "page_number": 187,
+      "block_id": "p0187-b0005",
+      "op": "drop_residue",
+      "source": "machine",
+      "note": "Modern UCLA library borrower marginal pencil annotation on scan leaf."
+    },
+    {
+      "correction_id": "ucla-pencil-p0205-b0005",
+      "page_number": 205,
+      "block_id": "p0205-b0005",
+      "op": "drop_residue",
+      "source": "machine",
+      "note": "Modern UCLA library borrower marginal pencil annotation on scan leaf."
+    },
+    {
+      "correction_id": "ucla-pencil-p0265-b0003",
+      "page_number": 265,
+      "block_id": "p0265-b0003",
+      "op": "drop_residue",
+      "source": "machine",
+      "note": "Modern UCLA library borrower marginal pencil annotation on scan leaf."
+    },
+    {
+      "correction_id": "ucla-pencil-p0278-b0003",
+      "page_number": 278,
+      "block_id": "p0278-b0003",
+      "op": "drop_residue",
+      "source": "machine",
+      "note": "Modern UCLA library borrower marginal pencil annotation on scan leaf."
+    },
+    {
+      "correction_id": "ucla-pencil-p0283-b0005",
+      "page_number": 283,
+      "block_id": "p0283-b0005",
+      "op": "drop_residue",
+      "source": "machine",
+      "note": "Modern UCLA library borrower marginal pencil annotation on scan leaf."
+    },
+    {
+      "correction_id": "ucla-clipping-p0327-b0002",
+      "page_number": 327,
+      "block_id": "p0327-b0002",
+      "op": "drop_residue",
+      "replacement_transition": "none",
+      "source": "machine",
+      "note": "1906 Times of India Weekly newspaper clipping pasted onto rear endpaper of UCLA copy."
+    },
+    {
+      "correction_id": "ucla-clipping-p0327-b0003",
+      "page_number": 327,
+      "block_id": "p0327-b0003",
+      "op": "drop_residue",
+      "replacement_transition": "none",
+      "source": "machine",
+      "note": "1906 Times of India Weekly newspaper clipping pasted onto rear endpaper of UCLA copy."
+    },
+    {
+      "correction_id": "ucla-clipping-p0327-b0004",
+      "page_number": 327,
+      "block_id": "p0327-b0004",
+      "op": "drop_residue",
+      "replacement_transition": "none",
+      "source": "machine",
+      "note": "1906 Times of India Weekly newspaper clipping pasted onto rear endpaper of UCLA copy."
+    },
+    {
+      "correction_id": "ucla-clipping-p0327-b0005",
+      "page_number": 327,
+      "block_id": "p0327-b0005",
+      "op": "drop_residue",
+      "replacement_transition": "none",
+      "source": "machine",
+      "note": "1906 Times of India Weekly newspaper clipping pasted onto rear endpaper of UCLA copy."
+    },
+    {
+      "correction_id": "ucla-clipping-p0327-b0006",
+      "page_number": 327,
+      "block_id": "p0327-b0006",
+      "op": "drop_residue",
+      "replacement_transition": "none",
+      "source": "machine",
+      "note": "1906 Times of India Weekly newspaper clipping pasted onto rear endpaper of UCLA copy."
+    },
+    {
+      "correction_id": "cornell-collation-p0213-b0004",
+      "page_number": 213,
+      "block_id": "p0213-b0004",
+      "op": "set_text",
+      "replacement_tagged_text": "The distress for cash continues to be severely felt throughout the army, and in order to answer the demands of the troops it is proposed to raise thirty lakhs, in the following proportions : <i>viz.</i>, ten from Deoba Kalia, and from Bapoo Seendhiya, Gokul Paruk, and Zalim Sing,h, five each. The latter is to have the Soobuship of Mewar given to him as an equivalent, but what good things are to fall to the lot of the others is not yet determined upon : it is, however, much more easy to talk of such a sum than to raise it. I do not well know how to explain to you precisely what is now understood by a Soobuship : the office somewhat resembles that of the Proconsuls of ancient Rome, who were sent into distant provinces to superintend the interests and possessions of the republic. Holkar, as well as Seendhiya, has at present large possessions in Oodipoor, or Mewar, and each has a Soobudar in the province. Their original claims were for no more than a tribute of eight lakhs of rupees, imposed by Muhadajee Seendhiya for the restitution of <i>Chuetohrgurh</i>, which he had conquered from the Rana, one half of which was made over by the present Muha Raj to Holkar as a testimony of his friendship, when they united their forces to act against the English in 1806. In the provinces which belong entirely to Seendhiya the Soobudar is simply the governor, as in Malwa, Ajmeer, Gwaliur, &c.",
+      "source": "machine",
+      "note": "Torn fore-edge of UCLA leaf (printed p. 175) collated verbatim against intact Cornell copy of the identical 1892 Constable edition (archive.org/details/cu31924024052973, leaf 210)."
+    },
+    {
+      "correction_id": "cornell-collation-p0214-b0002",
+      "page_number": 214,
+      "block_id": "p0214-b0002",
+      "op": "set_text",
+      "replacement_tagged_text": "and carry him off to his tent, where he confined him for a day and a night. Bawanee Purshad complained to the Muha Raj of this outrage, who ordered the youth to be set at liberty, and promised to pay the debt, whenever he himself should settle with the Raja. In the midst of this universal distress, proceeding solely from a want of ready money, three or four <i>Kulamuts</i>, or musicians, the favourites of the Muha Raj, are abundantly supplied from his own purse, and parade about the camp with the retinue and magnificence of Nuwabs ; to the great scandal and indignation of the more respectable members of the army, who are unable to give their horses a feed of corn, or even to afford their servants a hearty dinner.",
+      "source": "machine",
+      "note": "Torn fore-edge of UCLA leaf (printed p. 176) collated verbatim against intact Cornell copy (cu31924024052973, leaf 211)."
+    },
+    {
+      "correction_id": "cornell-collation-p0214-b0003",
+      "page_number": 214,
+      "block_id": "p0214-b0003",
+      "op": "set_text",
+      "replacement_tagged_text": "Many of the inferior servants of the government, who were displaced to make way for Surjee Rao's friends, have been reinstated in their offices, and among the rest Atmaran has returned to his post in our camp, greatly to the satisfaction of all parties.",
+      "source": "machine",
+      "note": "Torn fore-edge of UCLA leaf (printed p. 176) collated verbatim against intact Cornell copy (cu31924024052973, leaf 211; preserving original 1892 compositor spelling 'Atmaran')."
+    },
+    {
+      "correction_id": "scan-pixel-p0039-b0007",
+      "page_number": 39,
+      "block_id": "p0039-b0007",
+      "op": "set_text",
+      "replacement_tagged_text": "<sup>1</sup> The second Maráthá War of 1803-4, in which General Wellesley defeated the armies of Sindhia and Raghují II. of Nagpúr, and Venkají, his brother, at Assaye (23rd Sept., 1803), and Argaum (28th Nov., 1803), in the south, while Lord Lake was victorious over Maráthá armies at Delhi (14th March), and Laswari (1st Nov.) in the north. On the 14th Nov., 1804, General Fraser defeated Holkar at Deeg, thus ending the campaign.",
+      "source": "machine",
+      "note": "400-PPI pixel check on p. 39 footnote 1: Grant Duff prints Hunterian acute 'Maráthá' (not macron)."
+    },
+    {
+      "correction_id": "scan-pixel-p0303-b0003",
+      "page_number": 303,
+      "block_id": "p0303-b0003",
+      "op": "set_text",
+      "replacement_tagged_text": "<sc>Baboo</sc> Khan, created a Mankurree, 84.\n—— violent act against merchants by, 96.\n<i>Baee</i>, the favourite wife of the Muha Raj, 75, 94.\n—— mourning of, for Surjee Rao, 169, 171.\n—— expected confinement of the, 187.\n—— confinement of the, 207, 208.\n—— purification of the, 227.\n<i>Bajru</i> [<i>Bajra</i>], bulrush millet, 77.\n<i>Bala</i>, a long spear, 77.\nBala, a possible rival to Anajee, 242.\n<i>Bal Govind</i>, name of Krishna, 191.\nBala Qadir, a Moohumedam fuqeer, 239, 240.\nBala Rao set at liberty, 185.\n—— suspected by the Muha Raj, 234, 235.\n—— escapes from camp, 244.\nBanswara, Soobuship [Subahship] of, 244.\nBapoo Seendhiya, a Mahratta chief, 96.\n—— a candidate for post of Minister, 173, 175.\n—— account of, 184, 196.\n—— defeat of detachment of, at Rutlam, 228.\n—— death of the wife of, 241.\nBaptiste, Portuguese commander, 60.\n—— invests fort of Kiruolee, 128.\n—— reports of, 185.\n—— assurances of success from, 200.\n—— exerts influence to recover his command, 228.",
+      "source": "machine",
+      "note": "400-PPI pixel check on p. 303 Index: 'Baee, the favourite wife of the Muha Raj'."
+    },
+    {
+      "correction_id": "homograph-u0435-p0246-b0003",
+      "page_number": 246,
+      "block_id": "p0246-b0003",
+      "op": "set_text",
+      "replacement_tagged_text": "father over the sex of his child. Madoojee Seendhiya lost several boys in early infancy, whose deaths were all attributed to this malignant influence ; and it is by no means improbable, however ridiculous it may appear to us, that in the present case the Baee has had recourse to a stratagem of this kind to avert so fatal an evil, and perhaps to increase her own influence in proportion as her husband's joy would be greater from so agreeable a surprise. In many parts of Hindoostan the natives have so great a dread of the <i>Nuzur</i>, that it is deemed an affront to tell them they look in good health, are getting fat, handsome, or the like ; and this superstition is carried to such a length, that they often dress their children in mean clothes, lest they should attract the glances of an evil eye. It is even disagreeable to them to call a horse, a bullock, or any other animal belonging to them fat. These doubts, respecting the sex of the Muha Raj's child, have gathered strength from the circumstance of several women, called in to the assistance of the <i>Accoucheuse</i>, not having yet been suffered to quit the Baee's apartments. The sceptics of the army, however, account for the delay in disclosing the truth, by the infant's having been born under the influence of a certain star, and its not being usual for children so born to be presented to their fathers, or seen by any strangers, during twenty-seven days. This will, I fear, prove after all to be the real state of the case, and that the Muha Raj's hopes have been re-excited only to be again overthrown with heavier disappointment. Ever since the confinement of the Baee, the women of the camp, and even of the neighbouring villages, have gone daily in large parties to the <i>Deooree</i>, carrying pitchers of water upon their heads, which they empty at the walls of the enclosure. The origin or motive of this curious ceremony I have not been able to learn, but it will be the means of ascertaining the real sex of the child, the number of days on which it is repeated being regulated by that. As each woman pours out her water from the pitcher she offers up a prayer to <i>Bawanee</i>, a favourite goddess with the",
+      "source": "machine",
+      "note": "Replaced Cyrillic small letter ie (U+0435) homograph caught by rare_character_advisory with Latin 'e' (U+0065)."
+    }
+  ]
+}

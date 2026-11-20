@@ -1,0 +1,238 @@
+{
+  "version": "proof-ledger-v2",
+  "book_id": "nietzsche-wagner-1921",
+  "updated_at": "2026-11-16T22:32:00+00:00",
+  "pages": {
+    "35": {
+      "page_number": 35,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-400ppi-scan-check",
+      "verified_at": "2026-11-16T22:32:00+00:00",
+      "source_page_sha256": "c232a6944a830ba56ca1fe0fd4b3a25651a07b628be1675b28b1282c003195b5",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0035",
+        "reread_block_ids": ["p0035-b0002", "p0035-b0003", "p0035-b0004", "p0035-b0005"],
+        "confirmed_block_ids": ["p0035-b0002", "p0035-b0003", "p0035-b0004", "p0035-b0005"]
+      },
+      "notes": null
+    },
+    "66": {
+      "page_number": 66,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-400ppi-scan-check",
+      "verified_at": "2026-11-16T22:32:00+00:00",
+      "source_page_sha256": "2799e5e152599e6ce88bcfaf3c2a14dad7349ecae5bc1f10d5422ebc96e01d48",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0066",
+        "reread_block_ids": ["p0066-b0004", "p0066-b0005"],
+        "confirmed_block_ids": ["p0066-b0004", "p0066-b0005"]
+      },
+      "notes": null
+    },
+    "88": {
+      "page_number": 88,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-400ppi-scan-check",
+      "verified_at": "2026-11-16T22:32:00+00:00",
+      "source_page_sha256": "1909c87362cd641bf4ebf942fb5e031d367cc35eb83bfd5e46131db35c2fa93c",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0088",
+        "reread_block_ids": ["p0088-b0003"],
+        "confirmed_block_ids": ["p0088-b0003"]
+      },
+      "notes": null
+    },
+    "109": {
+      "page_number": 109,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-400ppi-scan-check",
+      "verified_at": "2026-11-16T22:32:00+00:00",
+      "source_page_sha256": "1d865e6443444ff5eeb332865dacdfd3cc2081445ebe04cbd74deafb0d95faec",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0109",
+        "reread_block_ids": ["p0109-b0002"],
+        "confirmed_block_ids": ["p0109-b0002"]
+      },
+      "notes": null
+    },
+    "172": {
+      "page_number": 172,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-400ppi-scan-check",
+      "verified_at": "2026-11-16T22:32:00+00:00",
+      "source_page_sha256": "0d9a6692072cec66948341b5f44c1971bbd9d6734bc7780f629ab0ff168d95ba",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0172",
+        "reread_block_ids": ["p0172-b0004"],
+        "confirmed_block_ids": ["p0172-b0004"]
+      },
+      "notes": null
+    },
+    "181": {
+      "page_number": 181,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-400ppi-scan-check",
+      "verified_at": "2026-11-16T22:32:00+00:00",
+      "source_page_sha256": "0fa5470489bc2cf3c5db108ba845689b56c3e0da9f387594de0dedd2ee34c8c9",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0181",
+        "reread_block_ids": ["p0181-b0002"],
+        "confirmed_block_ids": ["p0181-b0002"]
+      },
+      "notes": null
+    },
+    "201": {
+      "page_number": 201,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-400ppi-scan-check",
+      "verified_at": "2026-11-16T22:32:00+00:00",
+      "source_page_sha256": "fdaa781fdbecd7eb32599a8a49269ff1c75fb41969a9487645564098d42d32a3",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0201",
+        "reread_block_ids": ["p0201-b0008"],
+        "confirmed_block_ids": ["p0201-b0008"]
+      },
+      "notes": null
+    },
+    "205": {
+      "page_number": 205,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-400ppi-scan-check",
+      "verified_at": "2026-11-16T22:32:00+00:00",
+      "source_page_sha256": "92c87cfbc267229810c1ed3e6b4fbd639e11dc9b87a218cb733eaa8079e9ea35",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0205",
+        "reread_block_ids": ["p0205-b0002"],
+        "confirmed_block_ids": ["p0205-b0002"]
+      },
+      "notes": null
+    },
+    "213": {
+      "page_number": 213,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-400ppi-scan-check",
+      "verified_at": "2026-11-16T22:32:00+00:00",
+      "source_page_sha256": "9eb5ea2749b082f7dce0b8bd8309eba00ae8e2f583a155c167e00483b2c20d1e",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0213",
+        "reread_block_ids": ["p0213-b0002", "p0213-b0003", "p0213-b0004"],
+        "confirmed_block_ids": ["p0213-b0002", "p0213-b0003", "p0213-b0004"]
+      },
+      "notes": null
+    },
+    "225": {
+      "page_number": 225,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-400ppi-scan-check",
+      "verified_at": "2026-11-16T22:32:00+00:00",
+      "source_page_sha256": "3409cf56977727834a7c4c0f88d635b8bd9d2f6cb94a6ab27e6bf10f27a6484a",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0225",
+        "reread_block_ids": ["p0225-b0011"],
+        "confirmed_block_ids": ["p0225-b0011"]
+      },
+      "notes": null
+    },
+    "281": {
+      "page_number": 281,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-400ppi-scan-check",
+      "verified_at": "2026-11-16T22:32:00+00:00",
+      "source_page_sha256": "25715c0e617f6f56f57a106937da16af7aef478ab203503e706a72d6e5b7086c",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0281",
+        "reread_block_ids": ["p0281-b0002"],
+        "confirmed_block_ids": ["p0281-b0002"]
+      },
+      "notes": null
+    }
+  }
+}

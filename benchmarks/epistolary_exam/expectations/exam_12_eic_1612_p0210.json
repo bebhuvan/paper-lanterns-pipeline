@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "exam_id": "exam_12_eic_1612_p0210",
+  "split": "held_out",
+  "source_pdf": "Letters received by the East India Company.pdf",
+  "source_page_number": 210,
+  "archive_id": "lettersreceivedb01east",
+  "book_title": "Letters Received by the East India Company from Its Servants in the East, Vol. I",
+  "year": 1896,
+  "era": "17c",
+  "languages": [
+    "en"
+  ],
+  "profile": "archaic_18c_epistolary",
+  "quirk_tags": [
+    "manuscript_damage_brackets_torn",
+    "editorial_conjecture_brackets",
+    "blank_lacuna_brackets",
+    "woodcut_drop_cap_initial",
+    "hanging_indent_argument_header"
+  ],
+  "expected_printed_folio": "162",
+  "acceptable_printed_folios": [
+    "162"
+  ],
+  "expected_letter_segments_on_page": 1,
+  "expected_new_letter_starts": 1,
+  "continues_from_prev_page": false,
+  "continues_to_next_page": true,
+  "has_margin_note": false,
+  "has_editorial_block": false,
+  "has_enclosure": false,
+  "has_postscript": false,
+  "has_address_block": false,
+  "jbig2_source_risk": true,
+  "expected_block_types_present": [
+    "letter_header",
+    "body"
+  ],
+  "expected_footnote_labels": [],
+  "must_preserve_verbatim": [
+    "83",
+    "[torn away]",
+    "Bab-el-Mandeb",
+    "THE 2nd of April",
+    "[torn]",
+    "Larree (Lahori Bandar)",
+    "[a bay on the East]",
+    "[of divers sorts, leather]"
+  ],
+  "must_not_modernize_or_leak": [
+    "EAST INDIA COMPANY'S RECORDS"
+  ],
+  "notes": "Three distinct editorial bracket forms on one page ('[torn away]' / '[torn]', conjecture '[a bay on the East]', and blank lacuna '[        ]'), plus 4-line historiated woodcut initial 'T' ('THE 2nd of April').",
+  "page_image": "pages/exam_12_eic_1612_p0210.png",
+  "page_sha256": "c289895c662107e1365b5335d4f075267596db62ee0ad608ad99d7cd582ce890",
+  "pixel_size": [
+    1183,
+    1825
+  ],
+  "pixel_verified": true,
+  "case_id": "exam_12_eic_1612_p0210",
+  "id": "exam_12_eic_1612_p0210",
+  "expected_letter_count": 1,
+  "must_contain_exact": [
+    "83",
+    "[torn away]",
+    "Bab-el-Mandeb",
+    "THE 2nd of April",
+    "[torn]",
+    "Larree (Lahori Bandar)",
+    "[a bay on the East]",
+    "[of divers sorts, leather]"
+  ],
+  "verbatim_substrings": [
+    "83",
+    "[torn away]",
+    "Bab-el-Mandeb",
+    "THE 2nd of April",
+    "[torn]",
+    "Larree (Lahori Bandar)",
+    "[a bay on the East]",
+    "[of divers sorts, leather]"
+  ],
+  "expect_margin_note": false,
+  "expect_editorial": false
+}

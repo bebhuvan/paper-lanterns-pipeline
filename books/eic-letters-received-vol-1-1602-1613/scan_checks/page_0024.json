@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-1-1602-1613",
+  "page_number": 24,
+  "check_id": "vol1-scan-check-p0024",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "9831bf07c8b39381bf06c594527a5017b730da5cb8ce374932bc9bf74e349ec5",
+  "checked_at": "2026-11-17T20:13:15.909303+00:00",
+  "checks": [
+    {
+      "block_id": "p0024-b0004",
+      "token": "Alençon",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0024.png: printed French cedilla 'Alençon'."
+    }
+  ]
+}

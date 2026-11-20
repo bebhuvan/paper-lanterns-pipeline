@@ -1,0 +1,21 @@
+[book]
+book_id = "hooker-tour-1848"
+title = "Notes of a Tour in the Plains of India, the Himala, and Borneo: Being Extracts from the Private Letters of Dr. Hooker (Part I)"
+author_or_editor = "Joseph Dalton Hooker"
+authors = ["Joseph Dalton Hooker"]
+publication_year = 1848
+subtitle = ""
+imprint = ""
+collection = "scientific-and-philosophical-letters"
+language = "en"
+declared_scripts = []
+profile = "claude_sonnet_epistolary"
+active_run_id = "canonical-sonnet55-v1"
+
+[source]
+archive_id = "b30361126"
+source_pdf = "/home/bebhuvan/Documents/Akshara wokspace/Paper Lanterns New/sources/b30361126/b30361126.pdf"
+source_pdf_sha256 = "e7ab320fe4ca0613aa19966c8ab061add8eead19b2a13bab1f35a3bad8e9a105"
+
+[extraction]
+profile = "claude_sonnet_epistolary"

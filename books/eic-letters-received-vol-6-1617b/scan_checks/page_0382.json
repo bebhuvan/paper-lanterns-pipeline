@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-6-1617b",
+  "page_number": 382,
+  "check_id": "vol6-scan-check-p0382",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "9742c3f0865ae136c3ef33bc1d0898e8c86d66d3f5165c67feaade26eef9a198",
+  "checked_at": "2026-11-17T20:23:38.959834+00:00",
+  "checks": [
+    {
+      "block_id": "p0382-b0004",
+      "token": "Jahangir",
+      "verdict": "printed_as_read",
+      "note": "Verified index proper-noun spelling."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "book_id": "poe-valentine-letters-1925",
+  "page_number": 212,
+  "check_id": "scan-check-p0212",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "d86963eec49f2e8bfc9e081dfbcd1fe08264dbf2ecd8438e297977bdf7f9b3f4",
+  "checks": [
+    {
+      "block_id": "p0212-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 212; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0212-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 212; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0212-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 212; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0212-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 212; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0212-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 212; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0212-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 212; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0212-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 212; diplomatic fidelity and structural blocks confirmed."
+    }
+  ]
+}

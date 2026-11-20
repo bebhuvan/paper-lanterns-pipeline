@@ -1,0 +1,34 @@
+{
+  "book_id": "tipu-sultan-select-letters-1811",
+  "page_number": 565,
+  "check_id": "tipu-sultan-select-letters-1811-p0565",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "27ed9f295ceb027ebbde4c137ded61d70616bac5c2c58f253d3e0d0d11028e17",
+  "checked_at": "2026-11-17T21:31:14.948331+00:00",
+  "checks": [
+    {
+      "block_id": "p0565-b0001",
+      "token": "<unclear>",
+      "verdict": "printed_as_read",
+      "note": "Engraved Persian Shikasta manuscript facsimile plate p0565; partial illegible strokes accurately tagged <unclear>."
+    },
+    {
+      "block_id": "p0565-b0002",
+      "token": "<unclear>",
+      "verdict": "printed_as_read",
+      "note": "Engraved Persian Shikasta manuscript facsimile plate p0565; partial illegible strokes accurately tagged <unclear>."
+    },
+    {
+      "block_id": "p0565-b0003",
+      "token": "<unclear>",
+      "verdict": "printed_as_read",
+      "note": "Engraved Persian Shikasta manuscript facsimile plate p0565; partial illegible strokes accurately tagged <unclear>."
+    },
+    {
+      "block_id": "p0565-b0004",
+      "token": "<unclear>",
+      "verdict": "printed_as_read",
+      "note": "Engraved Persian Shikasta manuscript facsimile plate p0565; partial illegible strokes accurately tagged <unclear>."
+    }
+  ]
+}

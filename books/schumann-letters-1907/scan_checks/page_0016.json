@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "schumann-letters-1907",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 16,
+  "reviewer": "native-vision-400ppi-scan-check",
+  "checked_at": "2026-11-19T14:23:21.486723+00:00",
+  "source_page_sha256": "41d4c27eaa3a61a2b8486daaa994710824352219ffea5bd8211d026118a3afd5",
+  "render_png": "renders/page_0016.png",
+  "checks": [
+    {
+      "block_id": "p0016-b0001",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0002",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0003",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0004",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0005",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0006",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0007",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0008",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0009",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0010",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0011",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0012",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0013",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0014",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0015",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0016",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0017",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0018",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0019",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0020",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0021",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0022",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0023",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0024",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0025",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0026",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0027",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0028",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0029",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0030",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0031",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0032",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0033",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0034",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0035",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0036",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0037",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0038",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0039",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    },
+    {
+      "block_id": "p0016-b0040",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0016.png."
+    }
+  ],
+  "correction_ids": []
+}

@@ -1,0 +1,142 @@
+{
+  "version": "correction-v2",
+  "book_id": "voltaire-in-his-letters-1919",
+  "created_at": "2026-11-16T12:40:32.190919+00:00",
+  "corrections": [
+    {
+      "correction_id": "voltaire-p0009-knickerbocker",
+      "page_number": 9,
+      "block_id": "p0009-b0006",
+      "op": "set_text",
+      "replacement_tagged_text": "G. P. Putnam’s Sons\nNew York and London\nThe Knickerbocker Press\n1919",
+      "source": "machine",
+      "note": "500-PPI scan check on p. 9 title page: blackletter imprint reads 'The Knickerbocker Press' (replacing mathematical Fraktur symbols)."
+    },
+    {
+      "correction_id": "voltaire-p0027-dalembert",
+      "page_number": 27,
+      "block_id": "p0027-b0004",
+      "op": "set_text",
+      "replacement_tagged_text": "In 1756 had begun Voltaire's connection with the great <i>Encyclopædia</i> and his closer friendship with d'Alembert, its promoter: in 1757 appeared its article on “Geneva,” which Voltaire had certainly inspired, and which, declaring, as it did, that Calvinism was but Socinianism after all, and making out a strong case in favour of play-acting, set the city by the ears, and for a while made Voltaire's position in it nearly untenable. It was at this date that he formulated his battle-cry, <i>Écrasez l'infâme—l'infâme</i> meaning, if it can be translated by any one word, intolerance, but particularly the religious intolerance which traduced, persecuted, burnt, in the name of Christ.",
+      "source": "machine",
+      "note": "500-PPI scan check on p. 27 (xix): faintly inked stem of 'l' in 'd'Alembert'."
+    },
+    {
+      "correction_id": "voltaire-p0123-gathering-sig",
+      "page_number": 123,
+      "block_id": "p0123-b0007",
+      "op": "set_type",
+      "replacement_type": "folio",
+      "source": "machine",
+      "note": "Octavo gathering signature '6' at foot of printed page 81."
+    },
+    {
+      "correction_id": "voltaire-p0287-b0003-editorial",
+      "page_number": 287,
+      "block_id": "p0287-b0003",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Continuation of Tallentyre's bracketed foreword for Letter LXXIII."
+    },
+    {
+      "correction_id": "voltaire-p0287-b0004-editorial",
+      "page_number": 287,
+      "block_id": "p0287-b0004",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Closing paragraph ']' of Tallentyre's bracketed foreword for Letter LXXIII."
+    },
+    {
+      "correction_id": "voltaire-p0303-lxxix",
+      "page_number": 303,
+      "block_id": "p0303-b0003",
+      "op": "set_text",
+      "replacement_tagged_text": "LXXIX",
+      "source": "machine",
+      "note": "500-PPI scan check on p. 303 (printed p. 253): Roman numeral is 'LXXIX'."
+    },
+    {
+      "correction_id": "voltaire-foreword-p0115-b0003",
+      "page_number": 115,
+      "block_id": "p0115-b0003",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Tallentyre [...] editorial foreword paragraph preceding Voltaire's letter."
+    },
+    {
+      "correction_id": "voltaire-foreword-p0115-b0004",
+      "page_number": 115,
+      "block_id": "p0115-b0004",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Tallentyre [...] editorial foreword paragraph preceding Voltaire's letter."
+    },
+    {
+      "correction_id": "voltaire-foreword-p0115-b0005",
+      "page_number": 115,
+      "block_id": "p0115-b0005",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Tallentyre [...] editorial foreword paragraph preceding Voltaire's letter."
+    },
+    {
+      "correction_id": "voltaire-foreword-p0235-b0003",
+      "page_number": 235,
+      "block_id": "p0235-b0003",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Tallentyre [...] editorial foreword paragraph preceding Voltaire's letter."
+    },
+    {
+      "correction_id": "voltaire-foreword-p0235-b0004",
+      "page_number": 235,
+      "block_id": "p0235-b0004",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Tallentyre [...] editorial foreword paragraph preceding Voltaire's letter."
+    },
+    {
+      "correction_id": "voltaire-foreword-p0235-b0005",
+      "page_number": 235,
+      "block_id": "p0235-b0005",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Tallentyre [...] editorial foreword paragraph preceding Voltaire's letter."
+    },
+    {
+      "correction_id": "voltaire-foreword-p0235-b0006",
+      "page_number": 235,
+      "block_id": "p0235-b0006",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Tallentyre [...] editorial foreword paragraph preceding Voltaire's letter."
+    },
+    {
+      "correction_id": "voltaire-foreword-p0235-b0007",
+      "page_number": 235,
+      "block_id": "p0235-b0007",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Tallentyre [...] editorial foreword paragraph preceding Voltaire's letter."
+    },
+    {
+      "correction_id": "voltaire-foreword-p0256-b0007",
+      "page_number": 256,
+      "block_id": "p0256-b0007",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Tallentyre [...] editorial foreword paragraph preceding Voltaire's letter."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+[book]
+book_id = "eic-letters-received-vol-1-1602-1613"
+title = "Letters Received by the East India Company from Its Servants in the East, Vol. I: 1602–1613"
+author_or_editor = "East India Company, Frederick Charles Danvers (ed.)"
+authors = ["East India Company", "Frederick Charles Danvers (ed.)"]
+publication_year = 1896
+subtitle = ""
+imprint = "London: Sampson Low, Marston & Company"
+collection = "indian-epistolary-heritage"
+language = "en"
+declared_scripts = ["Latin"]
+profile = "claude_sonnet_epistolary"
+active_run_id = "canonical-sonnet55-batch-v1"
+
+[source]
+archive_id = "lettersreceivedb01east"
+source_pdf = "sources/lettersreceivedb01east/lettersreceivedb01east.originals.pdf"
+source_pdf_sha256 = "6f106b2fe8fb4730adfe1b9828ed4e98fc428cb194fdca7e58cae171b19132b5"
+
+[extraction]
+profile = "claude_sonnet_epistolary"

@@ -1,0 +1,14 @@
+{
+  "book_id": "rukaat-i-alamgiri-aurangzeb-1908",
+  "page_number": 82,
+  "check_id": "scan-check-p0082",
+  "reviewer": "native-vision-400ppi-scan-check",
+  "source_page_sha256": "5b2f48f1f31e8a628be2b700a9caaa9089517e26b6bc2db29e16208a4884841b",
+  "checks": [
+    {
+      "block_id": "p0082-b0002",
+      "verdict": "corrected_from_scan",
+      "note": "400-PPI scan confirms subscript sort 3 after mace-bearers is footnote callout 3."
+    }
+  ]
+}

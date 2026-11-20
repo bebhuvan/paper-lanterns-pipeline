@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "nineteenth-century-letters-1919",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 381,
+  "reviewer": "native-vision-500ppi-scan-check",
+  "checked_at": "2026-11-19T05:39:15.954462+00:00",
+  "source_page_sha256": "1fe64ae5b06eddc7153481281cb346dcd51be03b5184ad75469a036a33f063e7",
+  "render_png": "renders/page_0381.png",
+  "checks": [
+    {
+      "block_id": "p0381-b0001",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0381.png."
+    },
+    {
+      "block_id": "p0381-b0002",
+      "status": "corrected",
+      "note": "Inspected on 500 PPI PNG renders/page_0381.png."
+    },
+    {
+      "block_id": "p0381-b0003",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0381.png."
+    },
+    {
+      "block_id": "p0381-b0004",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0381.png."
+    }
+  ]
+}

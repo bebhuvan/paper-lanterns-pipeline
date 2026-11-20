@@ -1,0 +1,39 @@
+{
+  "book_id": "gandhi-famous-letters-1947",
+  "page_number": 136,
+  "check_id": "scan-check-p0136",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "192a9434513b5a76ed68279f6ced24763f9bb9e6f4a3d9897be4f5b489bc2932",
+  "checks": [
+    {
+      "block_id": "p0136-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified folio 133 closing with bottom-right 'January 19, 1943.' dateline verbatim."
+    },
+    {
+      "block_id": "p0136-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified folio 133 closing with bottom-right 'January 19, 1943.' dateline verbatim."
+    },
+    {
+      "block_id": "p0136-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified folio 133 closing with bottom-right 'January 19, 1943.' dateline verbatim."
+    },
+    {
+      "block_id": "p0136-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified folio 133 closing with bottom-right 'January 19, 1943.' dateline verbatim."
+    },
+    {
+      "block_id": "p0136-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified folio 133 closing with bottom-right 'January 19, 1943.' dateline verbatim."
+    },
+    {
+      "block_id": "p0136-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified folio 133 closing with bottom-right 'January 19, 1943.' dateline verbatim."
+    }
+  ]
+}

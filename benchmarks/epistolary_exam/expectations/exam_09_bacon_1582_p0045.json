@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "exam_id": "exam_09_bacon_1582_p0045",
+  "split": "held_out",
+  "source_pdf": "The Letters and the life of Francis Bacon.pdf",
+  "source_page_number": 45,
+  "archive_id": "lettersandlifeof01sped",
+  "book_title": "The Letters and the Life of Francis Bacon, Vol. I",
+  "year": 1861,
+  "era": "16c_19c",
+  "languages": [
+    "en",
+    "it"
+  ],
+  "profile": "english_epistolary",
+  "quirk_tags": [
+    "jbig2_mrc_blot_damage",
+    "marginal_topical_shoulder_notes",
+    "textual_ms_variant_footnote",
+    "library_stamp_residue"
+  ],
+  "expected_printed_folio": "20",
+  "acceptable_printed_folios": [
+    "20",
+    null
+  ],
+  "expected_letter_segments_on_page": 1,
+  "expected_new_letter_starts": 0,
+  "continues_from_prev_page": true,
+  "continues_to_next_page": true,
+  "has_margin_note": true,
+  "has_editorial_block": false,
+  "has_enclosure": false,
+  "has_postscript": false,
+  "has_address_block": false,
+  "jbig2_source_risk": true,
+  "expected_block_types_present": [
+    "body",
+    "margin_note",
+    "footnote"
+  ],
+  "expected_footnote_labels": [
+    "1"
+  ],
+  "must_preserve_verbatim": [
+    "Corbolo",
+    "vouchsafeth",
+    "Signora Bianca",
+    "Ferrara.",
+    "Mantua.",
+    "Cosmo de' Medici",
+    "hisself",
+    "Biana in MS."
+  ],
+  "must_not_modernize_or_leak": [
+    "himself very deformed",
+    "LETTERS AND LIFE OF FRANCIS BACON"
+  ],
+  "notes": "Real Archive.org MRC/JBIG2 grey compression blots obscuring words (must use <unclear>, never invent text), outer-margin topical shoulder notes ('Ferrara.', 'Mantua.'), textual MS variant note '1 Biana in MS.', and bottom oval library stamp.",
+  "page_image": "pages/exam_09_bacon_1582_p0045.png",
+  "page_sha256": "dec1f7dfab02464d66cc5745e94096c50271dec40fd2f5b05b6c9fbbe07be9f3",
+  "pixel_size": [
+    3032,
+    5122
+  ],
+  "pixel_verified": true,
+  "case_id": "exam_09_bacon_1582_p0045",
+  "id": "exam_09_bacon_1582_p0045",
+  "expected_letter_count": 1,
+  "must_contain_exact": [
+    "Corbolo",
+    "vouchsafeth",
+    "Signora Bianca",
+    "Ferrara.",
+    "Mantua.",
+    "Cosmo de' Medici",
+    "hisself",
+    "Biana in MS."
+  ],
+  "verbatim_substrings": [
+    "Corbolo",
+    "vouchsafeth",
+    "Signora Bianca",
+    "Ferrara.",
+    "Mantua.",
+    "Cosmo de' Medici",
+    "hisself",
+    "Biana in MS."
+  ],
+  "expect_margin_note": true,
+  "expect_editorial": false
+}

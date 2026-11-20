@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "sand-flaubert-letters-1922",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Half-Title, Title Page & Prefatory Note",
+      "start_page": 1,
+      "end_page": 12
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Introduction by Stuart P. Sherman",
+      "start_page": 13,
+      "end_page": 44
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters I–XXVIII (1863–1866)",
+      "start_page": 45,
+      "end_page": 70
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters XXIX–LXXXIII (1866–1868)",
+      "start_page": 71,
+      "end_page": 137
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters LXXXIV–XCI (1868)",
+      "start_page": 138,
+      "end_page": 148
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters XCII–CXXXVII (1868–1869)",
+      "start_page": 149,
+      "end_page": 191
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters CXXXVIII–CLXXXI (1869–1871)",
+      "start_page": 192,
+      "end_page": 232
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters CLXXXII–CCII (1871)",
+      "start_page": 233,
+      "end_page": 275
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters CCIII–CCXLVIII (1871–1873)",
+      "start_page": 276,
+      "end_page": 326
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters CCXLIX–CCLXII (1873)",
+      "start_page": 327,
+      "end_page": 342
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters CCLXIII–CCLXXXIV (1873–1874)",
+      "start_page": 343,
+      "end_page": 373
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters CCLXXXV–CCCII (1874–1876)",
+      "start_page": 374,
+      "end_page": 400
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters CCCIII–CCCXIX (1876–1880)",
+      "start_page": 401,
+      "end_page": 420
+    },
+    {
+      "kind": "appendix",
+      "title": "Index",
+      "start_page": 421,
+      "end_page": 432
+    }
+  ]
+}

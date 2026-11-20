@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "tagore-letters-to-a-friend-1928",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 125,
+  "reviewer": "native-vision-500ppi-scan-check",
+  "checked_at": "2026-11-19T14:06:56.659895+00:00",
+  "source_page_sha256": "a74a28756016ca2a8316f8b8fe82f91a799af810fee0a82af64589326e6f7f48",
+  "render_png": "renders/page_0125.png",
+  "checks": [
+    {
+      "block_id": "p0125-b0001",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0125.png."
+    },
+    {
+      "block_id": "p0125-b0002",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0125.png."
+    },
+    {
+      "block_id": "p0125-b0003",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0125.png."
+    },
+    {
+      "block_id": "p0125-b0004",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0125.png."
+    },
+    {
+      "block_id": "p0125-b0005",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0125.png."
+    },
+    {
+      "block_id": "p0125-b0006",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0125.png."
+    },
+    {
+      "block_id": "p0125-b0007",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0125.png."
+    },
+    {
+      "block_id": "p0125-b0008",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0125.png."
+    }
+  ],
+  "correction_ids": []
+}

@@ -1,0 +1,16 @@
+{
+  "book_id": "tipu-sultan-select-letters-1811",
+  "page_number": 452,
+  "check_id": "tipu-sultan-select-letters-1811-p0452",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "ec96b9f612c45ada2076b2f9b0b54059fcd6ad0e911080f21fe47a7924975950",
+  "checked_at": "2026-11-17T21:31:14.948331+00:00",
+  "checks": [
+    {
+      "block_id": "p0452-b0019",
+      "token": "Nizám Alî",
+      "verdict": "printed_as_read",
+      "note": "Genuine circumflex 'î' printed in Alî."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-3-1615",
+  "page_number": 398,
+  "check_id": "vol3-scan-check-p0398",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "9d33b0d392e84c9d458c416fb9d4eb0186f022719bf15c57b87b036cb01cdf7d",
+  "checked_at": "2026-11-18T02:22:00+00:00",
+  "checks": [
+    {
+      "block_id": "p0398-b0021",
+      "token": "Jahangir",
+      "verdict": "printed_as_read",
+      "note": "Verified on cropped PNG render: bare form 'Jahangir' matches printer ink."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "exam_id": "exam_03_faraday_1813_p0088",
+  "split": "tuning",
+  "source_pdf": "letters of Faraday.pdf",
+  "source_page_number": 88,
+  "archive_id": "lifeandlettersof01jone",
+  "book_title": "The Life and Letters of Faraday, Vol. I",
+  "year": 1870,
+  "era": "19c",
+  "languages": [
+    "en"
+  ],
+  "profile": "english_epistolary",
+  "quirk_tags": [
+    "life_and_letters_interleaved",
+    "marginal_shoulder_chronology",
+    "redacted_name_dash",
+    "unheadered_letter_opener",
+    "running_margin_quotes"
+  ],
+  "expected_printed_folio": "68",
+  "acceptable_printed_folios": [
+    "68"
+  ],
+  "expected_letter_segments_on_page": 1,
+  "expected_new_letter_starts": 1,
+  "continues_from_prev_page": false,
+  "continues_to_next_page": true,
+  "has_margin_note": true,
+  "has_editorial_block": true,
+  "has_enclosure": false,
+  "has_postscript": false,
+  "has_address_block": false,
+  "jbig2_source_risk": true,
+  "expected_block_types_present": [
+    "margin_note",
+    "editorial",
+    "body"
+  ],
+  "expected_footnote_labels": [],
+  "must_preserve_verbatim": [
+    "1813.",
+    "ÆT. 21.",
+    "The last letter to Abbott",
+    "Dear A——",
+    "self-created wisdom"
+  ],
+  "must_not_modernize_or_leak": [
+    "LIFE OF FARADAY"
+  ],
+  "notes": "Biographer prose bridging into an unheadered quoted letter opening inline with redacted name 'Dear A——' alongside outer-margin shoulder note '1813. / ÆT. 21.'.",
+  "page_image": "pages/exam_03_faraday_1813_p0088.png",
+  "page_sha256": "09ad3cdc901ac223c13f291bc99fb644b861393d2c66768b519daa1b31f4209c",
+  "pixel_size": [
+    1100,
+    1791
+  ],
+  "pixel_verified": true,
+  "case_id": "exam_03_faraday_1813_p0088",
+  "id": "exam_03_faraday_1813_p0088",
+  "expected_letter_count": 1,
+  "must_contain_exact": [
+    "1813.",
+    "ÆT. 21.",
+    "The last letter to Abbott",
+    "Dear A——",
+    "self-created wisdom"
+  ],
+  "verbatim_substrings": [
+    "1813.",
+    "ÆT. 21.",
+    "The last letter to Abbott",
+    "Dear A——",
+    "self-created wisdom"
+  ],
+  "expect_margin_note": true,
+  "expect_editorial": true
+}

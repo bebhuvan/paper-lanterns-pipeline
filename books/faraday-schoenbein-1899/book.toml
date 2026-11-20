@@ -1,0 +1,22 @@
+[book]
+book_id = "faraday-schoenbein-1899"
+title = "The Letters of Faraday and Schoenbein, 1836–1862: With Notes, Comments and References to Contemporary Letters"
+author_or_editor = "Michael Faraday & Christian Friedrich Schoenbein (ed. Georg W. A. Kahlbaum & Francis V. Darbishire)"
+authors = ["Michael Faraday", "Christian Friedrich Schoenbein", "Georg W. A. Kahlbaum (ed.)", "Francis V. Darbishire (ed.)"]
+publication_year = 1899
+subtitle = "With Notes, Comments and References to Contemporary Letters"
+imprint = "Bâle: Benno Schwabe / London: Williams & Norgate, 1899"
+collection = "scientific-and-philosophical-letters"
+language = "en"
+declared_scripts = ["Latin", "European diacritics", "Greek"]
+profile = "polyglot_epistolary"
+active_run_id = "canonical-hydrogen-batch-v1"
+
+[source]
+archive_id = "lettersoffaraday00fararich"
+source_pdf = "sources/lettersoffaraday00fararich/lettersoffaraday00fararich.originals.pdf"
+source_pdf_sha256 = "918b6e033039a0ac30b3aa8d1e6d9ab6eedb8cf6ba218ecd2db8a75c801b2d07"
+
+[extraction]
+profile = "polyglot_epistolary"
+render_dpi = 350

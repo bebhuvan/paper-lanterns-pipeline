@@ -1,0 +1,22 @@
+{
+  "book_id": "eic-letters-received-vol-5-1617a",
+  "page_number": 344,
+  "check_id": "vol5-scan-check-p0344",
+  "reviewer": "native-vision-250to450ppi-scan-check",
+  "source_page_sha256": "5ab3349dc73a59741b502393354663125fe3e8c26f87c4140371047c725740b3",
+  "checked_at": "2026-11-17T17:58:00.757804+00:00",
+  "checks": [
+    {
+      "block_id": "p0344-b0003",
+      "token": "Endregery,",
+      "verdict": "printed_as_read",
+      "note": "250-DPI scan confirms 1901 compositor omitted inline superscript '1' after 'Endregery,' in line 2."
+    },
+    {
+      "block_id": "p0344-b0004",
+      "token": "1 Indragiri...",
+      "verdict": "printed_as_read",
+      "note": "250-DPI scan confirms footnote '1' printed at foot of p. 300 without matching inline callout in body."
+    }
+  ]
+}

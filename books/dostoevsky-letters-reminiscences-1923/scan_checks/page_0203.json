@@ -1,0 +1,29 @@
+{
+  "book_id": "dostoevsky-letters-reminiscences-1923",
+  "page_number": 203,
+  "check_id": "scan-check-p0203",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "e2e9bc97a45b78d14384ba864bcdba47c0317d0b380bc96cf48dc6682f480e68",
+  "checks": [
+    {
+      "block_id": "p0203-b0003",
+      "verdict": "confirmed_epistolary_continuity",
+      "note": "Verified Wife Letter III P.S. before margin addition on p. 204."
+    },
+    {
+      "block_id": "p0203-b0004",
+      "verdict": "confirmed_epistolary_continuity",
+      "note": "Verified Wife Letter III P.S. before margin addition on p. 204."
+    },
+    {
+      "block_id": "p0203-b0005",
+      "verdict": "confirmed_epistolary_continuity",
+      "note": "Verified Wife Letter III P.S. before margin addition on p. 204."
+    },
+    {
+      "block_id": "p0203-b0006",
+      "verdict": "confirmed_epistolary_continuity",
+      "note": "Verified Wife Letter III P.S. before margin addition on p. 204."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "book_id": "tipu-sultan-select-letters-1811",
+  "page_number": 574,
+  "check_id": "tipu-sultan-select-letters-1811-p0574",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "742ceb08bf4c3d1cc011f5a49d3dc6afc1463ed7dd7d43d9fc27170251c9d37f",
+  "checked_at": "2026-11-17T21:31:14.948331+00:00",
+  "checks": [
+    {
+      "block_id": "p0574-b0014",
+      "token": "*",
+      "verdict": "printed_as_read",
+      "note": "Footnote '*' is referenced inside parent footnote block p0574-b0012 ('Lukmaiser*')."
+    }
+  ]
+}

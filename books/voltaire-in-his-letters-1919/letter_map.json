@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "voltaire-in-his-letters-1919",
+  "force_split_before_block_ids": [],
+  "forbid_split_before_block_ids": [
+    "p0253-b0007",
+    "p0205-b0004"
+  ],
+  "enclosure_block_ranges": [],
+  "explicit_letters": [],
+  "notes": null
+}

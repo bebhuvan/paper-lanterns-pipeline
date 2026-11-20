@@ -1,0 +1,16 @@
+{
+  "book_id": "tipu-sultan-select-letters-1811",
+  "page_number": 588,
+  "check_id": "tipu-sultan-select-letters-1811-p0588",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "aed453035ba7bafecc780d722afa9f67f0f064bcbb6c0fd55d34a2f459fe629e",
+  "checked_at": "2026-11-17T21:31:14.948331+00:00",
+  "checks": [
+    {
+      "block_id": "p0588-b0007",
+      "token": "*",
+      "verdict": "printed_as_read",
+      "note": "Footnote '*' is referenced inside parent footnote block p0588-b0006 ('stipulations,*')."
+    }
+  ]
+}

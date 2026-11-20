@@ -1,0 +1,74 @@
+{
+  "book_id": "bapu-mira-letters",
+  "page_number": 25,
+  "check_id": "scan-check-p0025",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "53e09d30c72f3d23e5e8b65475803af98c4db36cb80c3e09312ab850b5a7cd1d",
+  "checks": [
+    {
+      "block_id": "p0025-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 7 Devanagari etymology ('चि.', 'चिरंजीवी', 'ज' U+091C) verbatim."
+    },
+    {
+      "block_id": "p0025-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 7 Devanagari etymology ('चि.', 'चिरंजीवी', 'ज' U+091C) verbatim."
+    },
+    {
+      "block_id": "p0025-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 7 Devanagari etymology ('चि.', 'चिरंजीवी', 'ज' U+091C) verbatim."
+    },
+    {
+      "block_id": "p0025-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 7 Devanagari etymology ('चि.', 'चिरंजीवी', 'ज' U+091C) verbatim."
+    },
+    {
+      "block_id": "p0025-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 7 Devanagari etymology ('चि.', 'चिरंजीवी', 'ज' U+091C) verbatim."
+    },
+    {
+      "block_id": "p0025-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 7 Devanagari etymology ('चि.', 'चिरंजीवी', 'ज' U+091C) verbatim."
+    },
+    {
+      "block_id": "p0025-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 7 Devanagari etymology ('चि.', 'चिरंजीवी', 'ज' U+091C) verbatim."
+    },
+    {
+      "block_id": "p0025-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 7 Devanagari etymology ('चि.', 'चिरंजीवी', 'ज' U+091C) verbatim."
+    },
+    {
+      "block_id": "p0025-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 7 Devanagari etymology ('चि.', 'चिरंजीवी', 'ज' U+091C) verbatim."
+    },
+    {
+      "block_id": "p0025-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 7 Devanagari etymology ('चि.', 'चिरंजीवी', 'ज' U+091C) verbatim."
+    },
+    {
+      "block_id": "p0025-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 7 Devanagari etymology ('चि.', 'चिरंजीवी', 'ज' U+091C) verbatim."
+    },
+    {
+      "block_id": "p0025-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 7 Devanagari etymology ('चि.', 'चिरंजीवी', 'ज' U+091C) verbatim."
+    },
+    {
+      "block_id": "p0025-b0013",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 7 Devanagari etymology ('चि.', 'चिरंजीवी', 'ज' U+091C) verbatim."
+    }
+  ]
+}

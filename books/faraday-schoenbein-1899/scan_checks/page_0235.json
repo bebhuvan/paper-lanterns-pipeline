@@ -1,0 +1,29 @@
+{
+  "book_id": "faraday-schoenbein-1899",
+  "page_number": 235,
+  "check_id": "scan-check-p0235",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "f585cda693ee52fbada77caf8cc67a18da7b06ee2527adce02d68f8eed243468",
+  "checks": [
+    {
+      "block_id": "p0235-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed NO² / Fe² O³ chemical superscripts vs footnote callouts 1-2."
+    },
+    {
+      "block_id": "p0235-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed NO² / Fe² O³ chemical superscripts vs footnote callouts 1-2."
+    },
+    {
+      "block_id": "p0235-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed NO² / Fe² O³ chemical superscripts vs footnote callouts 1-2."
+    },
+    {
+      "block_id": "p0235-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed NO² / Fe² O³ chemical superscripts vs footnote callouts 1-2."
+    }
+  ]
+}

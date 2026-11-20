@@ -1,0 +1,49 @@
+{
+  "book_id": "dostoevsky-letters-reminiscences-1923",
+  "page_number": 289,
+  "check_id": "scan-check-p0289",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "7e4b922dc7174d4f46297f5ac0b75ce95c0aac915d6f2063387a80d0a341f4fb",
+  "checks": [
+    {
+      "block_id": "p0289-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified zoomed crop of line 5 smudge: 'Gatzuk' (matching italicized 'Gatzuk's' on line 6, no 'c')."
+    },
+    {
+      "block_id": "p0289-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified zoomed crop of line 5 smudge: 'Gatzuk' (matching italicized 'Gatzuk's' on line 6, no 'c')."
+    },
+    {
+      "block_id": "p0289-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified zoomed crop of line 5 smudge: 'Gatzuk' (matching italicized 'Gatzuk's' on line 6, no 'c')."
+    },
+    {
+      "block_id": "p0289-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified zoomed crop of line 5 smudge: 'Gatzuk' (matching italicized 'Gatzuk's' on line 6, no 'c')."
+    },
+    {
+      "block_id": "p0289-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified zoomed crop of line 5 smudge: 'Gatzuk' (matching italicized 'Gatzuk's' on line 6, no 'c')."
+    },
+    {
+      "block_id": "p0289-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified zoomed crop of line 5 smudge: 'Gatzuk' (matching italicized 'Gatzuk's' on line 6, no 'c')."
+    },
+    {
+      "block_id": "p0289-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified zoomed crop of line 5 smudge: 'Gatzuk' (matching italicized 'Gatzuk's' on line 6, no 'c')."
+    },
+    {
+      "block_id": "p0289-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified zoomed crop of line 5 smudge: 'Gatzuk' (matching italicized 'Gatzuk's' on line 6, no 'c')."
+    }
+  ]
+}

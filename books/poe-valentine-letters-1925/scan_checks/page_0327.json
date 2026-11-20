@@ -1,0 +1,59 @@
+{
+  "book_id": "poe-valentine-letters-1925",
+  "page_number": 327,
+  "check_id": "scan-check-p0327",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "551327acb64570d6796936e87aefdf9234c22d50f53436868d95e2b0ab68d3db",
+  "checks": [
+    {
+      "block_id": "p0327-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed superscript possessive 'Hy’ˢ.' verified pixel-for-pixel on folio 291."
+    },
+    {
+      "block_id": "p0327-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed superscript possessive 'Hy’ˢ.' verified pixel-for-pixel on folio 291."
+    },
+    {
+      "block_id": "p0327-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed superscript possessive 'Hy’ˢ.' verified pixel-for-pixel on folio 291."
+    },
+    {
+      "block_id": "p0327-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed superscript possessive 'Hy’ˢ.' verified pixel-for-pixel on folio 291."
+    },
+    {
+      "block_id": "p0327-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed superscript possessive 'Hy’ˢ.' verified pixel-for-pixel on folio 291."
+    },
+    {
+      "block_id": "p0327-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed superscript possessive 'Hy’ˢ.' verified pixel-for-pixel on folio 291."
+    },
+    {
+      "block_id": "p0327-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed superscript possessive 'Hy’ˢ.' verified pixel-for-pixel on folio 291."
+    },
+    {
+      "block_id": "p0327-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed superscript possessive 'Hy’ˢ.' verified pixel-for-pixel on folio 291."
+    },
+    {
+      "block_id": "p0327-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed superscript possessive 'Hy’ˢ.' verified pixel-for-pixel on folio 291."
+    },
+    {
+      "block_id": "p0327-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Printed superscript possessive 'Hy’ˢ.' verified pixel-for-pixel on folio 291."
+    }
+  ]
+}

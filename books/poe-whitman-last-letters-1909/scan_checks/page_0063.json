@@ -1,0 +1,54 @@
+{
+  "book_id": "poe-whitman-last-letters-1909",
+  "page_number": 63,
+  "check_id": "scan-check-p0063",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "53b584324ec0da38af8278dde60f2d310dfb867935b2e75b07b031e956f4fa12",
+  "checks": [
+    {
+      "block_id": "p0063-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Seventh Letter enclosure blockquote and P.S. continuation."
+    },
+    {
+      "block_id": "p0063-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Seventh Letter enclosure blockquote and P.S. continuation."
+    },
+    {
+      "block_id": "p0063-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Seventh Letter enclosure blockquote and P.S. continuation."
+    },
+    {
+      "block_id": "p0063-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Seventh Letter enclosure blockquote and P.S. continuation."
+    },
+    {
+      "block_id": "p0063-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Seventh Letter enclosure blockquote and P.S. continuation."
+    },
+    {
+      "block_id": "p0063-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Seventh Letter enclosure blockquote and P.S. continuation."
+    },
+    {
+      "block_id": "p0063-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Seventh Letter enclosure blockquote and P.S. continuation."
+    },
+    {
+      "block_id": "p0063-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Seventh Letter enclosure blockquote and P.S. continuation."
+    },
+    {
+      "block_id": "p0063-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Seventh Letter enclosure blockquote and P.S. continuation."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "book_id": "voltaire-in-his-letters-1919",
+  "page_number": 247,
+  "check_id": "scan-check-p0247",
+  "reviewer": "native-vision-500ppi-scan-check",
+  "source_page_sha256": "891128069f68954ddb67e8c939907303d0159dd59ce42f0bb319664e7806ad7d",
+  "checks": [
+    {
+      "block_id": "p0247-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "500-PPI scan confirms 'd'Etallonde' printed without accent."
+    }
+  ]
+}

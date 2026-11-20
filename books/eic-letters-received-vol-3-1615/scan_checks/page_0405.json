@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-3-1615",
+  "page_number": 405,
+  "check_id": "vol3-scan-check-p0405",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "1c3e919d4db6af56ad5c6487ee41c8c57fcd7c4189ff52c863e8b16cbe96c230",
+  "checked_at": "2026-11-18T02:22:00+00:00",
+  "checks": [
+    {
+      "block_id": "p0405-b0003",
+      "token": "Shogun",
+      "verdict": "printed_as_read",
+      "note": "Verified on cropped PNG render: bare form 'Shogun' matches printer ink."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "book_id": "dostoevsky-letters-reminiscences-1923",
+  "page_number": 10,
+  "check_id": "scan-check-p0010",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "a86cc3212ffec3f332a3ea4ddedae4341e288b43e0c5722ba1dcde236a9c8604",
+  "checks": [
+    {
+      "block_id": "p0010-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Perov frontispiece portrait and caption 'F. M. Dostoevsky. / From the portrait by V. G. Perov' ('Emery Walker ph.sc.')."
+    },
+    {
+      "block_id": "p0010-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Perov frontispiece portrait and caption 'F. M. Dostoevsky. / From the portrait by V. G. Perov' ('Emery Walker ph.sc.')."
+    },
+    {
+      "block_id": "p0010-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Perov frontispiece portrait and caption 'F. M. Dostoevsky. / From the portrait by V. G. Perov' ('Emery Walker ph.sc.')."
+    }
+  ]
+}

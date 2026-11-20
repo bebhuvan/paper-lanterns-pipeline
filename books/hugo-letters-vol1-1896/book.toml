@@ -1,0 +1,22 @@
+[book]
+book_id = "hugo-letters-vol1-1896"
+title = "The Letters of Victor Hugo"
+author_or_editor = "Victor Hugo (ed. Paul Meurice)"
+authors = ["Victor Hugo", "Paul Meurice (ed.)"]
+publication_year = 1896
+subtitle = "To His Family, to Sainte-Beuve and Others"
+imprint = "Boston and New York: Houghton, Mifflin and Company, 1896"
+collection = "world-correspondence"
+language = "en"
+declared_scripts = ["Latin", "European diacritics"]
+profile = "claude_sonnet_epistolary"
+active_run_id = "canonical-sonnet55-batch-v1"
+
+[source]
+archive_id = "ofvictorhletters00hugorich"
+source_pdf = "sources/ofvictorhletters00hugorich/ofvictorhletters00hugorich.originals.pdf"
+source_pdf_sha256 = "c19ab8cdfb2a7459f638d8925006db54f5178a62d5dba971e7276291f03c34b4"
+
+[extraction]
+profile = "claude_sonnet_epistolary"
+render_dpi = 350

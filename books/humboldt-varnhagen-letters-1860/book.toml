@@ -1,0 +1,21 @@
+[book]
+book_id = "humboldt-varnhagen-letters-1860"
+title = "Letters of Alexander von Humboldt to Varnhagen von Ense, From 1827 to 1858"
+author_or_editor = "Alexander von Humboldt, Friedrich Kapp (tr.)"
+authors = ["Alexander von Humboldt", "Friedrich Kapp (tr.)"]
+publication_year = 1860
+subtitle = "With Extracts from Varnhagen's Diaries, and Letters of Varnhagen and Others to Humboldt"
+imprint = "New York: Rudd & Carleton, 1860"
+collection = "scientific-and-philosophical-letters"
+language = "en"
+declared_scripts = ["Latin", "European diacritics"]
+profile = "claude_sonnet_epistolary"
+active_run_id = "canonical-sonnet55-batch-v1"
+
+[source]
+archive_id = "alexandlettersof00humbrich"
+source_pdf = "sources/alexandlettersof00humbrich/alexandlettersof00humbrich.originals.pdf"
+source_pdf_sha256 = "49ca815f0ee523f5307c23d40937f4888fe6948e9a0edc484933f39a0df2122e"
+
+[extraction]
+profile = "claude_sonnet_epistolary"

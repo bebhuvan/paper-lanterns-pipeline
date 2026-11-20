@@ -1,0 +1,16 @@
+{
+  "book_id": "tipu-sultan-select-letters-1811",
+  "page_number": 268,
+  "check_id": "tipu-sultan-select-letters-1811-p0268",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "00a2ff30d7ed188cb8a0f2c0d68f9f702400e7d4c0ce80335795bdf4eab28af9",
+  "checked_at": "2026-11-17T21:31:14.948331+00:00",
+  "checks": [
+    {
+      "block_id": "p0268-b0011",
+      "token": "أزبي",
+      "verdict": "printed_as_read",
+      "note": "Genuine Arabic hamza above initial alif in أزبي تشفي on 300dpi scan."
+    }
+  ]
+}

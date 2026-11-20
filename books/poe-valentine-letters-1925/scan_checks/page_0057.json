@@ -1,0 +1,29 @@
+{
+  "book_id": "poe-valentine-letters-1925",
+  "page_number": 57,
+  "check_id": "scan-check-p0057",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "c7b09edc692bb23658c5452186166077c527ae8c893500f38100b22699ad8623",
+  "checks": [
+    {
+      "block_id": "p0057-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 57; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0057-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 57; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0057-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 57; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0057-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 57; diplomatic fidelity and structural blocks confirmed."
+    }
+  ]
+}

@@ -1,0 +1,4412 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "humboldt-varnhagen-letters-1860",
+  "force_split_before_block_ids": [],
+  "forbid_split_before_block_ids": [],
+  "explicit_letters": [
+    {
+      "letter_id": "letter-0001",
+      "sequence_index": 1,
+      "start_block_id": "p0025-b0004",
+      "end_block_id": "p0025-b0010",
+      "letter_number_label": "1",
+      "header_tagged": "1.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>September 25th</i>, 1827.\nTuesday.",
+      "dateline_plain": "Berlin, September 25th, 1827. Tuesday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0002",
+      "sequence_index": 2,
+      "start_block_id": "p0026-b0002",
+      "end_block_id": "p0026-b0010",
+      "letter_number_label": "2",
+      "header_tagged": "2.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>November</i> 1<i>st</i>, 1827.",
+      "dateline_plain": "Berlin, November 1st, 1827.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0003",
+      "sequence_index": 3,
+      "start_block_id": "p0027-b0003",
+      "end_block_id": "p0027-b0007",
+      "letter_number_label": "3",
+      "header_tagged": "3.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>November</i> 21, 1827.\n<sc>Wednesday, at Night.</sc>",
+      "dateline_plain": "Berlin, November 21, 1827. Wednesday, at Night.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0004",
+      "sequence_index": 4,
+      "start_block_id": "p0028-b0003",
+      "end_block_id": "p0029-b0005",
+      "letter_number_label": "4",
+      "header_tagged": "4.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>April 15th</i>, 1828.",
+      "dateline_plain": "Berlin, April 15th, 1828.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0005",
+      "sequence_index": 5,
+      "start_block_id": "p0029-b0008",
+      "end_block_id": "p0029-b0012",
+      "letter_number_label": "5",
+      "header_tagged": "5.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>3d of April</i>, 1829.",
+      "dateline_plain": "Berlin, 3d of April, 1829.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0006",
+      "sequence_index": 6,
+      "start_block_id": "p0030-b0002",
+      "end_block_id": "p0030-b0008",
+      "letter_number_label": "6",
+      "header_tagged": "6.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>26th of April</i>, 1830.",
+      "dateline_plain": "Berlin, 26th of April, 1830.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0007",
+      "sequence_index": 7,
+      "start_block_id": "p0031-b0003",
+      "end_block_id": "p0032-b0006",
+      "letter_number_label": "7",
+      "header_tagged": "7.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>July 9th</i>, 1830.",
+      "dateline_plain": "Berlin, July 9th, 1830.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0008",
+      "sequence_index": 8,
+      "start_block_id": "p0033-b0005",
+      "end_block_id": "p0035-b0007",
+      "letter_number_label": "8",
+      "header_tagged": "8.\n<sc>Varnhagen to Humboldt.</sc>",
+      "sender_display": "Varnhagen von Ense",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>January 23d</i>, 1833.",
+      "dateline_plain": "Berlin, January 23d, 1833.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0009",
+      "sequence_index": 9,
+      "start_block_id": "p0036-b0003",
+      "end_block_id": "p0037-b0004",
+      "letter_number_label": "9",
+      "header_tagged": "9.\n<sc>Humboldt to Rahel.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Rahel Varnhagen",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>February</i> 1, 1833.",
+      "dateline_plain": "Berlin, February 1, 1833.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0010",
+      "sequence_index": 10,
+      "start_block_id": "p0037-b0006",
+      "end_block_id": "p0038-b0003",
+      "letter_number_label": "10",
+      "header_tagged": "10.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>3d of Feby.</i>, 1833.",
+      "dateline_plain": "Berlin, 3d of Feby., 1833.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0011",
+      "sequence_index": 11,
+      "start_block_id": "p0039-b0003",
+      "end_block_id": "p0039-b0009",
+      "letter_number_label": "11",
+      "header_tagged": "11.\nHUMBOLDT TO RAHEL.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Rahel Varnhagen",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>February</i> 9<i>th</i>, 1853.\nSaturday.",
+      "dateline_plain": "Berlin, February 9th, 1853. Saturday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0012",
+      "sequence_index": 12,
+      "start_block_id": "p0040-b0003",
+      "end_block_id": "p0040-b0007",
+      "letter_number_label": "12",
+      "header_tagged": "12.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Saturday</sc>, <i>March 9th,</i> 1833.",
+      "dateline_plain": "Saturday, March 9th, 1833.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0013",
+      "sequence_index": 13,
+      "start_block_id": "p0041-b0003",
+      "end_block_id": "p0041-b0009",
+      "letter_number_label": "13",
+      "header_tagged": "13.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>December</i> 3, 1833.",
+      "dateline_plain": "Berlin, December 3, 1833.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0014",
+      "sequence_index": 14,
+      "start_block_id": "p0042-b0003",
+      "end_block_id": "p0042-b0011",
+      "letter_number_label": "14",
+      "header_tagged": "14.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>December</i> 9, 1833.",
+      "dateline_plain": "Berlin, December 9, 1833.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0015",
+      "sequence_index": 15,
+      "start_block_id": "p0043-b0003",
+      "end_block_id": "p0043-b0008",
+      "letter_number_label": "15",
+      "header_tagged": "15.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>December</i> 19, 1833.\nTuesday.",
+      "dateline_plain": "Berlin, December 19, 1833. Tuesday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0016",
+      "sequence_index": 16,
+      "start_block_id": "p0043-b0010",
+      "end_block_id": "p0048-b0003",
+      "letter_number_label": "16",
+      "header_tagged": "16.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>Oct.</i> 24, 1834.\nMonday.",
+      "dateline_plain": "Berlin, Oct. 24, 1834. Monday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0017",
+      "sequence_index": 17,
+      "start_block_id": "p0048-b0005",
+      "end_block_id": "p0049-b0006",
+      "letter_number_label": "17",
+      "header_tagged": "17.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>October 28th</i>, 1834.",
+      "dateline_plain": "Berlin, October 28th, 1834.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0018",
+      "sequence_index": 18,
+      "start_block_id": "p0049-b0008",
+      "end_block_id": "p0050-b0003",
+      "letter_number_label": "18",
+      "header_tagged": "18.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>Sunday, 6 o'clock</i> <sc>a.m.</sc>,\n<i>April 5th</i>, 1855.",
+      "dateline_plain": "Berlin, Sunday, 6 o'clock a.m., April 5th, 1855.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0019",
+      "sequence_index": 19,
+      "start_block_id": "p0051-b0003",
+      "end_block_id": "p0052-b0006",
+      "letter_number_label": "19",
+      "header_tagged": "19.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>May 15th</i>, 1835, <i>Tuesday.</i>",
+      "dateline_plain": "Berlin, May 15th, 1835, Tuesday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0020",
+      "sequence_index": 20,
+      "start_block_id": "p0052-b0008",
+      "end_block_id": "p0052-b0012",
+      "letter_number_label": "20",
+      "header_tagged": "20.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>May 6th</i>, 1835.",
+      "dateline_plain": "Berlin, May 6th, 1835.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0021",
+      "sequence_index": 21,
+      "start_block_id": "p0053-b0003",
+      "end_block_id": "p0053-b0008",
+      "letter_number_label": "21",
+      "header_tagged": "21.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>Saturday, 23d of May</i>, 1835.",
+      "dateline_plain": "Berlin, Saturday, 23d of May, 1835.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0022",
+      "sequence_index": 22,
+      "start_block_id": "p0054-b0002",
+      "end_block_id": "p0055-b0007",
+      "letter_number_label": "22",
+      "header_tagged": "22.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>March 28th</i>, 1836.\nMonday.",
+      "dateline_plain": "Berlin, March 28th, 1836. Monday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0023",
+      "sequence_index": 23,
+      "start_block_id": "p0057-b0003",
+      "end_block_id": "p0057-b0007",
+      "letter_number_label": "23",
+      "header_tagged": "23.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>May</i> 31<i>st</i>, 1836.",
+      "dateline_plain": "Berlin, May 31st, 1836.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0024",
+      "sequence_index": 24,
+      "start_block_id": "p0057-b0009",
+      "end_block_id": "p0058-b0005",
+      "letter_number_label": "24",
+      "header_tagged": "24.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<i>Monday, April</i> 24<i>th</i>, 1837.",
+      "dateline_plain": "Monday, April 24th, 1837.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0025",
+      "sequence_index": 25,
+      "start_block_id": "p0059-b0003",
+      "end_block_id": "p0059-b0008",
+      "letter_number_label": "25",
+      "header_tagged": "25.\n<sc>Humboldt to the Princess von Pueckler.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Princess von Pückler",
+      "dateline_tagged": "<sc>Thursday,</sc> 2<i>d May,</i> 1837.",
+      "dateline_plain": "Thursday, 2d May, 1837.",
+      "dateline_position": "bottom",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0026",
+      "sequence_index": 26,
+      "start_block_id": "p0060-b0003",
+      "end_block_id": "p0061-b0006",
+      "letter_number_label": "26",
+      "header_tagged": "26.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "[May 1837]",
+      "dateline_plain": "[May 1837]",
+      "dateline_position": "absent",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0027",
+      "sequence_index": 27,
+      "start_block_id": "p0062-b0005",
+      "end_block_id": "p0064-b0003",
+      "letter_number_label": "27",
+      "header_tagged": "27.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>May</i> 10<i>th</i>, 1837.\n<sc>Wednesday.</sc>",
+      "dateline_plain": "Berlin, May 10th, 1837. Wednesday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0028",
+      "sequence_index": 28,
+      "start_block_id": "p0064-b0005",
+      "end_block_id": "p0065-b0007",
+      "letter_number_label": "28",
+      "header_tagged": "28.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Wednesday</sc>, <i>May</i> 17<i>th</i>, 1837.",
+      "dateline_plain": "Wednesday, May 17th, 1837.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0029",
+      "sequence_index": 29,
+      "start_block_id": "p0066-b0003",
+      "end_block_id": "p0066-b0008",
+      "letter_number_label": "29",
+      "header_tagged": "29.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Monday</sc>, <i>May 30th,</i> 1837.",
+      "dateline_plain": "Monday, May 30th, 1837.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0030",
+      "sequence_index": 30,
+      "start_block_id": "p0067-b0003",
+      "end_block_id": "p0068-b0004",
+      "letter_number_label": "30",
+      "header_tagged": "30.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Saturday</sc>, <i>July</i> 1<i>st</i>, 1837.",
+      "dateline_plain": "Saturday, July 1st, 1837.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0031",
+      "sequence_index": 31,
+      "start_block_id": "p0068-b0006",
+      "end_block_id": "p0069-b0006",
+      "letter_number_label": "31",
+      "header_tagged": "31.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>October 4th</i>, 1837.",
+      "dateline_plain": "Berlin, October 4th, 1837.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0032",
+      "sequence_index": 32,
+      "start_block_id": "p0069-b0008",
+      "end_block_id": "p0070-b0005",
+      "letter_number_label": "32",
+      "header_tagged": "32.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Sunday</sc>, <i>October 22d</i>, 1837.\n<i>Six o'clock</i>, <sc>a. m.</sc>",
+      "dateline_plain": "Sunday, October 22d, 1837. Six o'clock, a. m.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0033",
+      "sequence_index": 33,
+      "start_block_id": "p0070-b0007",
+      "end_block_id": "p0073-b0008",
+      "letter_number_label": "33",
+      "header_tagged": "33.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin, Tuesday,</sc> <i>November 7th,</i> 1837.",
+      "dateline_plain": "Berlin, Tuesday, November 7th, 1837.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0034",
+      "sequence_index": 34,
+      "start_block_id": "p0074-b0002",
+      "end_block_id": "p0074-b0009",
+      "letter_number_label": "34",
+      "header_tagged": "34.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>June 9th</i>, 1838.\n<sc>Saturday.</sc>",
+      "dateline_plain": "Berlin, June 9th, 1838. Saturday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0035",
+      "sequence_index": 35,
+      "start_block_id": "p0075-b0003",
+      "end_block_id": "p0075-b0007",
+      "letter_number_label": "35",
+      "header_tagged": "35.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>August 3d</i>, 1838.",
+      "dateline_plain": "Berlin, August 3d, 1838.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0036",
+      "sequence_index": 36,
+      "start_block_id": "p0078-b0003",
+      "end_block_id": "p0080-b0004",
+      "letter_number_label": "36",
+      "header_tagged": "36.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin, Monday</sc>, <i>June 3d</i>, 1839.",
+      "dateline_plain": "Berlin, Monday, June 3d, 1839.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0037",
+      "sequence_index": 37,
+      "start_block_id": "p0081-b0003",
+      "end_block_id": "p0081-b0009",
+      "letter_number_label": "37",
+      "header_tagged": "37.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Friday</sc>, <i>Sept.</i> 13<i>th</i>, 1839.",
+      "dateline_plain": "Friday, Sept. 13th, 1839.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0038",
+      "sequence_index": 38,
+      "start_block_id": "p0082-b0003",
+      "end_block_id": "p0082-b0007",
+      "letter_number_label": "38",
+      "header_tagged": "38.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>29th Dec.</i>, 1839.",
+      "dateline_plain": "Berlin, 29th Dec., 1839.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0039",
+      "sequence_index": 39,
+      "start_block_id": "p0083-b0003",
+      "end_block_id": "p0084-b0005",
+      "letter_number_label": "39",
+      "header_tagged": "39.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Wednesday Afternoon</sc>, <i>Feb. 26th</i>, 1840.",
+      "dateline_plain": "Wednesday Afternoon, Feb. 26th, 1840.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0040",
+      "sequence_index": 40,
+      "start_block_id": "p0084-b0007",
+      "end_block_id": "p0085-b0005",
+      "letter_number_label": "40",
+      "header_tagged": "40.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Monday</sc>, <i>March 9th</i>, 1840.",
+      "dateline_plain": "Monday, March 9th, 1840.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0041",
+      "sequence_index": 41,
+      "start_block_id": "p0085-b0007",
+      "end_block_id": "p0087-b0006",
+      "letter_number_label": "41",
+      "header_tagged": "41.\n<sc>HUMBOLDT TO VARNHAGEN.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Wednesday</sc>, <i>March</i> 18<i>th</i>, 1840.",
+      "dateline_plain": "Wednesday, March 18th, 1840.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0042",
+      "sequence_index": 42,
+      "start_block_id": "p0087-b0008",
+      "end_block_id": "p0089-b0007",
+      "letter_number_label": "42",
+      "header_tagged": "42.\nMETTERNICH TO HUMBOLDT.",
+      "sender_display": "Prince Metternich",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Vienna</sc>, <i>29th of March</i>, 1840.",
+      "dateline_plain": "Vienna, 29th of March, 1840.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0043",
+      "sequence_index": 43,
+      "start_block_id": "p0090-b0003",
+      "end_block_id": "p0090-b0008",
+      "letter_number_label": "43",
+      "header_tagged": "43.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Thursday</sc>, <i>April</i> 9<i>th</i>, 1840.",
+      "dateline_plain": "Thursday, April 9th, 1840.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0044",
+      "sequence_index": 44,
+      "start_block_id": "p0091-b0003",
+      "end_block_id": "p0092-b0008",
+      "letter_number_label": "44",
+      "header_tagged": "44.\nKING CHRISTIAN VIII. OF DENMARK TO HUMBOLDT.",
+      "sender_display": "King Christian Viii. Of Denmark",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Copenhagen</sc>, <i>the 13th January</i>, 1840.",
+      "dateline_plain": "Copenhagen, the 13th January, 1840.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0045",
+      "sequence_index": 45,
+      "start_block_id": "p0093-b0003",
+      "end_block_id": "p0093-b0007",
+      "letter_number_label": "45",
+      "header_tagged": "45.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Saturday</sc>, <i>April 11th</i>, 1840.",
+      "dateline_plain": "Saturday, April 11th, 1840.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0046",
+      "sequence_index": 46,
+      "start_block_id": "p0094-b0005",
+      "end_block_id": "p0095-b0005",
+      "letter_number_label": "46",
+      "header_tagged": "46.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<i>April 13th,</i> 1840.",
+      "dateline_plain": "April 13th, 1840.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0047",
+      "sequence_index": 47,
+      "start_block_id": "p0095-b0007",
+      "end_block_id": "p0096-b0009",
+      "letter_number_label": "47",
+      "header_tagged": "47.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Friday</sc>, <i>March</i> 29<i>th</i>, 1840.",
+      "dateline_plain": "Friday, March 29th, 1840.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0048",
+      "sequence_index": 48,
+      "start_block_id": "p0097-b0003",
+      "end_block_id": "p0100-b0005",
+      "letter_number_label": "48",
+      "header_tagged": "48.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin, Tuesday Night,</sc> <i>Oct.</i> 27<i>th</i>, 1840.",
+      "dateline_plain": "Berlin, Tuesday Night, Oct. 27th, 1840.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0049",
+      "sequence_index": 49,
+      "start_block_id": "p0101-b0003",
+      "end_block_id": "p0102-b0004",
+      "letter_number_label": "49",
+      "header_tagged": "49.\n<sc>GUIZOT TO HUMBOLDT.</sc>",
+      "sender_display": "François Guizot",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>London</sc>, <i>August</i> 24, 1840.",
+      "dateline_plain": "London, August 24, 1840.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0050",
+      "sequence_index": 50,
+      "start_block_id": "p0102-b0007",
+      "end_block_id": "p0103-b0008",
+      "letter_number_label": "50",
+      "header_tagged": "50.\nARAGO TO HUMBOLDT.",
+      "sender_display": "François Arago",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Paris</sc>, <i>March 12th</i>, 1841.",
+      "dateline_plain": "Paris, March 12th, 1841.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0051",
+      "sequence_index": 51,
+      "start_block_id": "p0104-b0002",
+      "end_block_id": "p0105-b0005",
+      "letter_number_label": "51",
+      "header_tagged": "51.\n<sc>Humboldt to Bettina von Arnim.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Bettina von Arnim",
+      "dateline_tagged": "<sc>Saturday</sc>, <i>November</i> 21, 1840.",
+      "dateline_plain": "Saturday, November 21, 1840.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0052",
+      "sequence_index": 52,
+      "start_block_id": "p0105-b0007",
+      "end_block_id": "p0106-b0004",
+      "letter_number_label": "52",
+      "header_tagged": "52.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>August</i> 22<i>d</i>, 1841.",
+      "dateline_plain": "Berlin, August 22d, 1841.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0053",
+      "sequence_index": 53,
+      "start_block_id": "p0108-b0005",
+      "end_block_id": "p0108-b0011",
+      "letter_number_label": "53",
+      "header_tagged": "53.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Saturday</sc>, <i>April 24th</i>, 1841.",
+      "dateline_plain": "Saturday, April 24th, 1841.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0054",
+      "sequence_index": 54,
+      "start_block_id": "p0109-b0003",
+      "end_block_id": "p0112-b0004",
+      "letter_number_label": "54",
+      "header_tagged": "54.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Wednesday</sc>, <i>April 28th</i>, 1841.",
+      "dateline_plain": "Wednesday, April 28th, 1841.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0055",
+      "sequence_index": 55,
+      "start_block_id": "p0112-b0006",
+      "end_block_id": "p0113-b0004",
+      "letter_number_label": "55",
+      "header_tagged": "55.\nHUMBOLDT TO SPIKER.\n(C.)",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Dr. S. H. Spiker",
+      "dateline_tagged": "[1841]",
+      "dateline_plain": "[1841]",
+      "dateline_position": "absent",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0056",
+      "sequence_index": 56,
+      "start_block_id": "p0113-b0007",
+      "end_block_id": "p0113-b0012",
+      "letter_number_label": "56",
+      "header_tagged": "56.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Monday Night</sc>, <i>May</i> 3, 1841.",
+      "dateline_plain": "Monday Night, May 3, 1841.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0057",
+      "sequence_index": 57,
+      "start_block_id": "p0114-b0002",
+      "end_block_id": "p0116-b0004",
+      "letter_number_label": "57",
+      "header_tagged": "57.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Tuesday</sc>, <i>May 4th</i>, 1841.",
+      "dateline_plain": "Tuesday, May 4th, 1841.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0058",
+      "sequence_index": 58,
+      "start_block_id": "p0116-b0006",
+      "end_block_id": "p0118-b0005",
+      "letter_number_label": "58",
+      "header_tagged": "53.\nKING CHRISTIAN VIII. OF DENMARK TO HUMBOLDT.",
+      "sender_display": "King Christian Viii. Of Denmark",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "[1841]",
+      "dateline_plain": "[1841]",
+      "dateline_position": "absent",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0059",
+      "sequence_index": 59,
+      "start_block_id": "p0118-b0007",
+      "end_block_id": "p0119-b0005",
+      "letter_number_label": "59",
+      "header_tagged": "59.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>May 17th</i>, 1841.",
+      "dateline_plain": "Berlin, May 17th, 1841.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0060",
+      "sequence_index": 60,
+      "start_block_id": "p0120-b0002",
+      "end_block_id": "p0121-b0006",
+      "letter_number_label": "60",
+      "header_tagged": "60.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Friday</sc>, 3<i>d December</i>, 1841.",
+      "dateline_plain": "Friday, 3d December, 1841.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0061",
+      "sequence_index": 61,
+      "start_block_id": "p0123-b0003",
+      "end_block_id": "p0124-b0004",
+      "letter_number_label": "61",
+      "header_tagged": "61.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin, Monday Night,</sc> <i>Dec.</i> 7<i>th</i>, 1841.",
+      "dateline_plain": "Berlin, Monday Night, Dec. 7th, 1841.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0062",
+      "sequence_index": 62,
+      "start_block_id": "p0127-b0005",
+      "end_block_id": "p0128-b0006",
+      "letter_number_label": "62",
+      "header_tagged": "62.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin, Monday</sc>, 28<i>th February</i>, 1842.",
+      "dateline_plain": "Berlin, Monday, 28th February, 1842.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0063",
+      "sequence_index": 63,
+      "start_block_id": "p0128-b0008",
+      "end_block_id": "p0129-b0008",
+      "letter_number_label": "63",
+      "header_tagged": "63.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, 16<i>th March</i>, 1842.\n<sc>Wednesday.</sc>",
+      "dateline_plain": "Berlin, 16th March, 1842. Wednesday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0064",
+      "sequence_index": 64,
+      "start_block_id": "p0130-b0003",
+      "end_block_id": "p0135-b0004",
+      "letter_number_label": "64",
+      "header_tagged": "64.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>March 21st</i>, 1842.",
+      "dateline_plain": "Berlin, March 21st, 1842.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0065",
+      "sequence_index": 65,
+      "start_block_id": "p0135-b0007",
+      "end_block_id": "p0136-b0004",
+      "letter_number_label": "65",
+      "header_tagged": "65.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Thursday</sc>, 31<i>st March</i>, 1842.",
+      "dateline_plain": "Thursday, 31st March, 1842.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0066",
+      "sequence_index": 66,
+      "start_block_id": "p0136-b0006",
+      "end_block_id": "p0138-b0006",
+      "letter_number_label": "66",
+      "header_tagged": "66.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>April 6th</i>, 1842.\n<sc>Wednesday Night.</sc>",
+      "dateline_plain": "Berlin, April 6th, 1842. Wednesday Night.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0067",
+      "sequence_index": 67,
+      "start_block_id": "p0138-b0008",
+      "end_block_id": "p0139-b0009",
+      "letter_number_label": "67",
+      "header_tagged": "67.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>April 7th</i>, 1842.\n<sc>Thursday Night.</sc>",
+      "dateline_plain": "Berlin, April 7th, 1842. Thursday Night.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0068",
+      "sequence_index": 68,
+      "start_block_id": "p0139-b0011",
+      "end_block_id": "p0140-b0006",
+      "letter_number_label": "68",
+      "header_tagged": "68.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin,</sc> <i>June 24th,</i> 1842.",
+      "dateline_plain": "Berlin, June 24th, 1842.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0069",
+      "sequence_index": 69,
+      "start_block_id": "p0146-b0003",
+      "end_block_id": "p0147-b0005",
+      "letter_number_label": "69",
+      "header_tagged": "69.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>April 3d</i>, 1842.\n<sc>Monday.</sc>",
+      "dateline_plain": "Berlin, April 3d, 1842. Monday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0070",
+      "sequence_index": 70,
+      "start_block_id": "p0147-b0007",
+      "end_block_id": "p0148-b0005",
+      "letter_number_label": "70",
+      "header_tagged": "70.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Tuesday</sc>, <i>June 13th</i>, 1843.",
+      "dateline_plain": "Tuesday, June 13th, 1843.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0071",
+      "sequence_index": 71,
+      "start_block_id": "p0148-b0007",
+      "end_block_id": "p0149-b0006",
+      "letter_number_label": "71",
+      "header_tagged": "71.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>June 26th</i>, 1843.",
+      "dateline_plain": "Berlin, June 26th, 1843.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0072",
+      "sequence_index": 72,
+      "start_block_id": "p0149-b0008",
+      "end_block_id": "p0150-b0005",
+      "letter_number_label": "72",
+      "header_tagged": "72.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Tuesday,</sc> <i>June 27th,</i> 1843.",
+      "dateline_plain": "Tuesday, June 27th, 1843.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0073",
+      "sequence_index": 73,
+      "start_block_id": "p0150-b0007",
+      "end_block_id": "p0152-b0004",
+      "letter_number_label": "73",
+      "header_tagged": "73.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Sans Souci</sc>, <i>August 27th,</i> 1843.",
+      "dateline_plain": "Sans Souci, August 27th, 1843.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0074",
+      "sequence_index": 74,
+      "start_block_id": "p0152-b0006",
+      "end_block_id": "p0154-b0005",
+      "letter_number_label": "74",
+      "header_tagged": "74.\nHUMBOLDT TO THE PRINCE OF PRUSSIA.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "The Prince of Prussia",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>Dec.</i> 29, 1843.",
+      "dateline_plain": "Berlin, Dec. 29, 1843.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0075",
+      "sequence_index": 75,
+      "start_block_id": "p0154-b0007",
+      "end_block_id": "p0155-b0005",
+      "letter_number_label": "75",
+      "header_tagged": "75.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Monday</sc>, <i>Jan. 1st</i>, 1844.",
+      "dateline_plain": "Monday, Jan. 1st, 1844.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0076",
+      "sequence_index": 76,
+      "start_block_id": "p0159-b0003",
+      "end_block_id": "p0162-b0005",
+      "letter_number_label": "76",
+      "header_tagged": "76.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>April</i> 1<i>st</i>, 1844.\n<sc>Monday Evening.</sc>",
+      "dateline_plain": "Berlin, April 1st, 1844. Monday Evening.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0077",
+      "sequence_index": 77,
+      "start_block_id": "p0162-b0007",
+      "end_block_id": "p0163-b0006",
+      "letter_number_label": "77",
+      "header_tagged": "77.\nJ. W. T. TO HUMBOLDT.",
+      "sender_display": "J. W. T",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Höfgen, near Solingen,</sc> <i>March</i> 12<i>st</i>, 1844.",
+      "dateline_plain": "Höfgen, near Solingen, March 12st, 1844.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0078",
+      "sequence_index": 78,
+      "start_block_id": "p0163-b0009",
+      "end_block_id": "p0165-b0004",
+      "letter_number_label": "78",
+      "header_tagged": "78.\nCOUNT BRESSON, FRENCH AMBASSADOR, TO HUMBOLDT.",
+      "sender_display": "Count Bresson, French Ambassador,",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>February 6th</i>, 1839.",
+      "dateline_plain": "Berlin, February 6th, 1839.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0079",
+      "sequence_index": 79,
+      "start_block_id": "p0166-b0003",
+      "end_block_id": "p0167-b0008",
+      "letter_number_label": "79",
+      "header_tagged": "79.\nARAGO TO HUMBOLDT.",
+      "sender_display": "François Arago",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Paris</sc>, <i>August 19th</i>, 1834.",
+      "dateline_plain": "Paris, August 19th, 1834.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0080",
+      "sequence_index": 80,
+      "start_block_id": "p0168-b0003",
+      "end_block_id": "p0168-b0008",
+      "letter_number_label": "80 (I)",
+      "header_tagged": "80.\n<sc>FOUR NOTES OF FREDERICK WILLIAM THE FOURTH\nTO HUMBOLDT.</sc>\nI.",
+      "sender_display": "Frederick William IV, King of Prussia",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>23d December</sc>, 1836 (<i>at Night</i>).",
+      "dateline_plain": "23d December, 1836 (at Night).",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0081",
+      "sequence_index": 81,
+      "start_block_id": "p0168-b0009",
+      "end_block_id": "p0169-b0005",
+      "letter_number_label": "80 (II)",
+      "header_tagged": "II.",
+      "sender_display": "Frederick William IV, King of Prussia",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "B. 21 <i>Feb.</i>, 1839.",
+      "dateline_plain": "B. 21 Feb., 1839.",
+      "dateline_position": "bottom",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0082",
+      "sequence_index": 82,
+      "start_block_id": "p0169-b0006",
+      "end_block_id": "p0169-b0013",
+      "letter_number_label": "80 (III)",
+      "header_tagged": "III.",
+      "sender_display": "Frederick William IV, King of Prussia",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "B., 23 <i>March</i>, 1840.",
+      "dateline_plain": "B., 23 March, 1840.",
+      "dateline_position": "bottom",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0083",
+      "sequence_index": 83,
+      "start_block_id": "p0170-b0006",
+      "end_block_id": "p0170-b0009",
+      "letter_number_label": "80 (IV)",
+      "header_tagged": "IV.",
+      "sender_display": "Frederick William IV, King of Prussia",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "Given at our Palace at Potsdam, 29th April, 1849 (1843 ?), near midnight.",
+      "dateline_plain": "Given at our Palace at Potsdam, 29th April, 1849 (1843 ?), near midnight.",
+      "dateline_position": "bottom",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0084",
+      "sequence_index": 84,
+      "start_block_id": "p0171-b0003",
+      "end_block_id": "p0172-b0004",
+      "letter_number_label": "81",
+      "header_tagged": "81.\nKING CHRISTIAN VIII. OF DENMARK TO HUMBOLDT.",
+      "sender_display": "King Christian Viii. Of Denmark",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Copenhagen</sc>, <i>May 3d</i>, 1843.",
+      "dateline_plain": "Copenhagen, May 3d, 1843.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0085",
+      "sequence_index": 85,
+      "start_block_id": "p0172-b0006",
+      "end_block_id": "p0175-b0006",
+      "letter_number_label": "82",
+      "header_tagged": "82.\nJOHN HERSCHEL TO HUMBOLDT.",
+      "sender_display": "John Herschel",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Collingwood</sc>, 21<i>st Dec.</i> 1843.\n<sc>Hawkhurst, Kent.</sc>",
+      "dateline_plain": "Collingwood, 21st Dec. 1843. Hawkhurst, Kent.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "Greek",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0086",
+      "sequence_index": 86,
+      "start_block_id": "p0176-b0003",
+      "end_block_id": "p0176-b0010",
+      "letter_number_label": "83",
+      "header_tagged": "83.\nBALZAC TO HUMBOLDT.",
+      "sender_display": "Honoré de Balzac",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Berlin, Hotel de la Russie</sc>, 1843.",
+      "dateline_plain": "Berlin, Hotel de la Russie, 1843.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0087",
+      "sequence_index": 87,
+      "start_block_id": "p0177-b0003",
+      "end_block_id": "p0178-b0004",
+      "letter_number_label": "84",
+      "header_tagged": "84.\nROBERT PEEL TO HUMBOLDT.",
+      "sender_display": "Sir Robert Peel",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Whitehall</sc>, <i>Sept. 4th</i>, 1843.",
+      "dateline_plain": "Whitehall, Sept. 4th, 1843.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0088",
+      "sequence_index": 88,
+      "start_block_id": "p0178-b0006",
+      "end_block_id": "p0179-b0006",
+      "letter_number_label": "85",
+      "header_tagged": "85.\nMETTERNICH TO HUMBOLDT.",
+      "sender_display": "Prince Metternich",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Vienna</sc>, <i>October</i>, 1843.",
+      "dateline_plain": "Vienna, October, 1843.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0089",
+      "sequence_index": 89,
+      "start_block_id": "p0179-b0008",
+      "end_block_id": "p0181-b0007",
+      "letter_number_label": "86",
+      "header_tagged": "86.\n<sc>Prescott to Humboldt.</sc>",
+      "sender_display": "William Hickling Prescott",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Boston</sc>, <i>Dec. 23d</i>, 1843.",
+      "dateline_plain": "Boston, Dec. 23d, 1843.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0090",
+      "sequence_index": 90,
+      "start_block_id": "p0182-b0003",
+      "end_block_id": "p0182-b0007",
+      "letter_number_label": "87",
+      "header_tagged": "87.\nMADAME DE RÉCAMIER TO HUMBOLDT.",
+      "sender_display": "Madame De Récamier",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Paris</sc>, <i>July 28th</i>, 1843.",
+      "dateline_plain": "Paris, July 28th, 1843.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0091",
+      "sequence_index": 91,
+      "start_block_id": "p0183-b0003",
+      "end_block_id": "p0183-b0009",
+      "letter_number_label": "88",
+      "header_tagged": "88.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<i>August 31st,</i> 1844.\n<sc>Saturday Night</sc>.",
+      "dateline_plain": "August 31st, 1844. Saturday Night.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0092",
+      "sequence_index": 92,
+      "start_block_id": "p0183-b0011",
+      "end_block_id": "p0185-b0006",
+      "letter_number_label": "89",
+      "header_tagged": "89.\nLEOPOLD, GRAND-DUKE OF TUSCANY, TO HUMBOLDT.",
+      "sender_display": "Leopold, Grand-Duke Of Tuscany,",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Florence</sc>, <i>July 20th,</i> 1844.",
+      "dateline_plain": "Florence, July 20th, 1844.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0093",
+      "sequence_index": 93,
+      "start_block_id": "p0185-b0008",
+      "end_block_id": "p0186-b0005",
+      "letter_number_label": "90",
+      "header_tagged": "90.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<i>2d September,</i> 1844.\n<sc>Monday.</sc>",
+      "dateline_plain": "2d September, 1844. Monday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0094",
+      "sequence_index": 94,
+      "start_block_id": "p0186-b0007",
+      "end_block_id": "p0187-b0005",
+      "letter_number_label": "91",
+      "header_tagged": "91.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>September 6th</i>, 1844.",
+      "dateline_plain": "Berlin, September 6th, 1844.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0095",
+      "sequence_index": 95,
+      "start_block_id": "p0188-b0003",
+      "end_block_id": "p0189-b0005",
+      "letter_number_label": "92",
+      "header_tagged": "92.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>Sept.</i> 13<i>th</i>, 1844.",
+      "dateline_plain": "Berlin, Sept. 13th, 1844.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0096",
+      "sequence_index": 96,
+      "start_block_id": "p0190-b0005",
+      "end_block_id": "p0191-b0005",
+      "letter_number_label": "93",
+      "header_tagged": "93.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>September</i> 19<i>th</i>, 1844.\n<sc>Thursday.</sc>",
+      "dateline_plain": "Berlin, September 19th, 1844. Thursday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0097",
+      "sequence_index": 97,
+      "start_block_id": "p0191-b0007",
+      "end_block_id": "p0192-b0006",
+      "letter_number_label": "94",
+      "header_tagged": "94.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin, Tuesday,</sc> <i>June 3d,</i> 1845.\n<i>One o'clock,</i> <sc>a. m.</sc>",
+      "dateline_plain": "Berlin, Tuesday, June 3d, 1845. One o'clock, a. m.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0098",
+      "sequence_index": 98,
+      "start_block_id": "p0192-b0008",
+      "end_block_id": "p0193-b0007",
+      "letter_number_label": "95",
+      "header_tagged": "95.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin, Wednesday,</sc> <i>June 4th,</i> 1845.",
+      "dateline_plain": "Berlin, Wednesday, June 4th, 1845.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0099",
+      "sequence_index": 99,
+      "start_block_id": "p0193-b0009",
+      "end_block_id": "p0194-b0006",
+      "letter_number_label": "96",
+      "header_tagged": "96.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin,</sc> <i>June 16th,</i> 1845.\n<sc>Monday Morning.</sc>",
+      "dateline_plain": "Berlin, June 16th, 1845. Monday Morning.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0100",
+      "sequence_index": 100,
+      "start_block_id": "p0194-b0008",
+      "end_block_id": "p0195-b0007",
+      "letter_number_label": "97",
+      "header_tagged": "97.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin, Thursday,</sc> <i>September 4th,</i> 1845.",
+      "dateline_plain": "Berlin, Thursday, September 4th, 1845.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0101",
+      "sequence_index": 101,
+      "start_block_id": "p0196-b0003",
+      "end_block_id": "p0197-b0006",
+      "letter_number_label": "98",
+      "header_tagged": "98.\n<sc>Metternich to Humboldt.</sc>",
+      "sender_display": "Prince Metternich",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Vienna</sc>, <i>June 21st,</i> 1845.",
+      "dateline_plain": "Vienna, June 21st, 1845.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0102",
+      "sequence_index": 102,
+      "start_block_id": "p0197-b0008",
+      "end_block_id": "p0199-b0008",
+      "letter_number_label": "99",
+      "header_tagged": "99.\nJULES JANIN TO HUMBOLDT.",
+      "sender_display": "Jules Janin",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Star Hotel at Bonn,</sc>\n<sc>Sunday Evening,</sc> <i>August 10th,</i> 1845.",
+      "dateline_plain": "Star Hotel at Bonn, Sunday Evening, August 10th, 1845.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0103",
+      "sequence_index": 103,
+      "start_block_id": "p0200-b0002",
+      "end_block_id": "p0201-b0006",
+      "letter_number_label": "100",
+      "header_tagged": "100.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Potsdam</sc>, <i>26th of September</i>, 1845.",
+      "dateline_plain": "Potsdam, 26th of September, 1845.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0104",
+      "sequence_index": 104,
+      "start_block_id": "p0201-b0008",
+      "end_block_id": "p0204-b0002",
+      "letter_number_label": "101",
+      "header_tagged": "101.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Potsdam</sc>, <i>October 2d</i>, 1845.",
+      "dateline_plain": "Potsdam, October 2d, 1845.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0105",
+      "sequence_index": 105,
+      "start_block_id": "p0204-b0004",
+      "end_block_id": "p0204-b0009",
+      "letter_number_label": "102",
+      "header_tagged": "102.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>October 2d</i>, 1845.",
+      "dateline_plain": "Berlin, October 2d, 1845.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0106",
+      "sequence_index": 106,
+      "start_block_id": "p0204-b0011",
+      "end_block_id": "p0206-b0007",
+      "letter_number_label": "103",
+      "header_tagged": "103.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>Nov. 30th</i>, 1845.\n<sc>Sunday.</sc>",
+      "dateline_plain": "Berlin, Nov. 30th, 1845. Sunday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0107",
+      "sequence_index": 107,
+      "start_block_id": "p0206-b0009",
+      "end_block_id": "p0207-b0006",
+      "letter_number_label": "104",
+      "header_tagged": "104.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Thursday</sc>, <i>January 15th</i>, 1846.",
+      "dateline_plain": "Thursday, January 15th, 1846.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0108",
+      "sequence_index": 108,
+      "start_block_id": "p0207-b0008",
+      "end_block_id": "p0208-b0007",
+      "letter_number_label": "105",
+      "header_tagged": "105.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin,</sc> <i>January 25th,</i> 1846.\n<sc>Saturday Night.</sc>",
+      "dateline_plain": "Berlin, January 25th, 1846. Saturday Night.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0109",
+      "sequence_index": 109,
+      "start_block_id": "p0209-b0003",
+      "end_block_id": "p0211-b0006",
+      "letter_number_label": "106",
+      "header_tagged": "106.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>February 7th</i>, 1846.\n<sc>Saturday.</sc>",
+      "dateline_plain": "Berlin, February 7th, 1846. Saturday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0110",
+      "sequence_index": 110,
+      "start_block_id": "p0211-b0008",
+      "end_block_id": "p0212-b0005",
+      "letter_number_label": "107",
+      "header_tagged": "107.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>Feb.</i> 20<i>th</i>, 1846.\n<sc>Friday.</sc>",
+      "dateline_plain": "Berlin, Feb. 20th, 1846. Friday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0111",
+      "sequence_index": 111,
+      "start_block_id": "p0212-b0007",
+      "end_block_id": "p0213-b0006",
+      "letter_number_label": "108",
+      "header_tagged": "108.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>March 29th</i>, 1846.\n<sc>Sunday.</sc>",
+      "dateline_plain": "Berlin, March 29th, 1846. Sunday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0112",
+      "sequence_index": 112,
+      "start_block_id": "p0213-b0008",
+      "end_block_id": "p0214-b0005",
+      "letter_number_label": "109",
+      "header_tagged": "109.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin,</sc> <i>March</i> 30<i>th,</i> 1846.",
+      "dateline_plain": "Berlin, March 30th, 1846.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0113",
+      "sequence_index": 113,
+      "start_block_id": "p0214-b0007",
+      "end_block_id": "p0216-b0010",
+      "letter_number_label": "110",
+      "header_tagged": "110.\nHUMBOLDT TO FRIEDRICH WILHELM IV.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Frederick William IV, King of Prussia",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>March</i> 29, 1846.",
+      "dateline_plain": "Berlin, March 29, 1846.",
+      "dateline_position": "bottom",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0114",
+      "sequence_index": 114,
+      "start_block_id": "p0216-b0012",
+      "end_block_id": "p0223-b0006",
+      "letter_number_label": "111",
+      "header_tagged": "111.\nBESSEL TO HUMBOLDT.",
+      "sender_display": "Friedrich Wilhelm Bessel",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Koenigsberg</sc>, <i>Feb. 12th</i>, 1846.",
+      "dateline_plain": "Koenigsberg, Feb. 12th, 1846.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0115",
+      "sequence_index": 115,
+      "start_block_id": "p0223-b0009",
+      "end_block_id": "p0224-b0004",
+      "letter_number_label": "112",
+      "header_tagged": "112.\nVICTOR HUGO TO HUMBOLDT.",
+      "sender_display": "Victor Hugo",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>March</sc> 20<i>th</i>, 1845.",
+      "dateline_plain": "March 20th, 1845.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0116",
+      "sequence_index": 116,
+      "start_block_id": "p0224-b0006",
+      "end_block_id": "p0225-b0004",
+      "letter_number_label": "113",
+      "header_tagged": "113.\nFRIEDRICH RUECKERT TO HUMBOLDT.",
+      "sender_display": "Friedrich Rückert",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>March</i>, 1846.",
+      "dateline_plain": "Berlin, March, 1846.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0117",
+      "sequence_index": 117,
+      "start_block_id": "p0225-b0006",
+      "end_block_id": "p0227-b0005",
+      "letter_number_label": "114",
+      "header_tagged": "114.\n<sc>Alexander Manzoni to Humboldt.</sc>\n<sc>(from the French.)</sc>",
+      "sender_display": "Alexander Manzoni",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Milan</sc>, <i>Dec.</i> 6<i>th</i>, 1844.",
+      "dateline_plain": "Milan, Dec. 6th, 1844.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0118",
+      "sequence_index": 118,
+      "start_block_id": "p0228-b0003",
+      "end_block_id": "p0228-b0007",
+      "letter_number_label": "115",
+      "header_tagged": "115.\nTHIERS TO HUMBOLDT.\n<sc>(from the French.)</sc>",
+      "sender_display": "Adolphe Thiers",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Paris</sc>, <i>August</i>, 1845.",
+      "dateline_plain": "Paris, August, 1845.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0119",
+      "sequence_index": 119,
+      "start_block_id": "p0228-b0009",
+      "end_block_id": "p0229-b0004",
+      "letter_number_label": "116",
+      "header_tagged": "116.\nTHE PRINCESS OF CANINO, LUCIEN BONAPARTE'S\nWIDOW, TO HUMBOLDT.",
+      "sender_display": "The Princess Of Canino, Lucien Bonaparte'S Widow,",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Paris</sc>, <i>May</i>, 1845.",
+      "dateline_plain": "Paris, May, 1845.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0120",
+      "sequence_index": 120,
+      "start_block_id": "p0229-b0006",
+      "end_block_id": "p0229-b0011",
+      "letter_number_label": "117",
+      "header_tagged": "117.\nDUCHESS HELENE D'ORLEANS TO HUMBOLDT.",
+      "sender_display": "Duchess Helene D'Orleans",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Tuileries</sc>, <i>Feb. 12th</i>, 1845.",
+      "dateline_plain": "Tuileries, Feb. 12th, 1845.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0121",
+      "sequence_index": 121,
+      "start_block_id": "p0230-b0003",
+      "end_block_id": "p0230-b0008",
+      "letter_number_label": "118",
+      "header_tagged": "118.\nDUCHESS HELENE D'ORLEANS TO HUMBOLDT.",
+      "sender_display": "Duchess Helene D'Orleans",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Neuilly</sc>, <i>May 12th</i>, 1845.",
+      "dateline_plain": "Neuilly, May 12th, 1845.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0122",
+      "sequence_index": 122,
+      "start_block_id": "p0231-b0003",
+      "end_block_id": "p0231-b0008",
+      "letter_number_label": "119",
+      "header_tagged": "119.\nDUCHESS HELENE D'ORLEANS TO HUMBOLDT.",
+      "sender_display": "Duchess Helene D'Orleans",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Winter of</sc> 1845.",
+      "dateline_plain": "Winter of 1845.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0123",
+      "sequence_index": 123,
+      "start_block_id": "p0231-b0010",
+      "end_block_id": "p0232-b0007",
+      "letter_number_label": "120",
+      "header_tagged": "120.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Potsdam</sc>, <i>April 22d</i>, 1846.\n<sc>Wednesday.</sc>",
+      "dateline_plain": "Potsdam, April 22d, 1846. Wednesday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0124",
+      "sequence_index": 124,
+      "start_block_id": "p0233-b0005",
+      "end_block_id": "p0233-b0010",
+      "letter_number_label": "121",
+      "header_tagged": "121.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Potsdam</sc>, <i>May</i> 18<i>th</i>, 1846.",
+      "dateline_plain": "Potsdam, May 18th, 1846.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0125",
+      "sequence_index": 125,
+      "start_block_id": "p0233-b0012",
+      "end_block_id": "p0236-b0005",
+      "letter_number_label": "122",
+      "header_tagged": "122.\nMETTERNICH TO HUMBOLDT.\n(From the French.)",
+      "sender_display": "Prince Metternich",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Vienna</sc>, <i>May</i> 10, 1846.",
+      "dateline_plain": "Vienna, May 10, 1846.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0126",
+      "sequence_index": 126,
+      "start_block_id": "p0237-b0003",
+      "end_block_id": "p0237-b0009",
+      "letter_number_label": "123",
+      "header_tagged": "123.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>May 30th</i>, 1846.\n<sc>Saturday.</sc>",
+      "dateline_plain": "Berlin, May 30th, 1846. Saturday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0127",
+      "sequence_index": 127,
+      "start_block_id": "p0237-b0011",
+      "end_block_id": "p0238-b0005",
+      "letter_number_label": "124",
+      "header_tagged": "124.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Potsdam</sc>, <i>November 14th</i>, 1846.",
+      "dateline_plain": "Potsdam, November 14th, 1846.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0128",
+      "sequence_index": 128,
+      "start_block_id": "p0239-b0006",
+      "end_block_id": "p0240-b0005",
+      "letter_number_label": "125",
+      "header_tagged": "125.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>November 28th</i>, 1846.\n<sc>Saturday.</sc>",
+      "dateline_plain": "Berlin, November 28th, 1846. Saturday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0129",
+      "sequence_index": 129,
+      "start_block_id": "p0240-b0007",
+      "end_block_id": "p0241-b0007",
+      "letter_number_label": "126",
+      "header_tagged": "126.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin,</sc> <i>December 6th,</i> 1846.\n<sc>Sunday.</sc>",
+      "dateline_plain": "Berlin, December 6th, 1846. Sunday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0130",
+      "sequence_index": 130,
+      "start_block_id": "p0241-b0009",
+      "end_block_id": "p0243-b0005",
+      "letter_number_label": "127",
+      "header_tagged": "<b>127.</b>\nMIGNET TO HUMBOLDT.",
+      "sender_display": "François Mignet",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Paris,</sc> <i>July</i> 1<i>st</i>, 1846.",
+      "dateline_plain": "Paris, July 1st, 1846.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0131",
+      "sequence_index": 131,
+      "start_block_id": "p0243-b0007",
+      "end_block_id": "p0246-b0007",
+      "letter_number_label": "128",
+      "header_tagged": "128.\nHUMBOLDT TO BAUDIN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Captain Baudin",
+      "dateline_tagged": "<sc>Carthagena</sc>, <i>April</i> 12, 1801.",
+      "dateline_plain": "Carthagena, April 12, 1801.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0132",
+      "sequence_index": 132,
+      "start_block_id": "p0246-b0009",
+      "end_block_id": "p0247-b0006",
+      "letter_number_label": "129",
+      "header_tagged": "129.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Sunday</sc>, <i>Feb. 21st</i>, 1847.",
+      "dateline_plain": "Sunday, Feb. 21st, 1847.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0133",
+      "sequence_index": 133,
+      "start_block_id": "p0248-b0003",
+      "end_block_id": "p0249-b0005",
+      "letter_number_label": "130",
+      "header_tagged": "130.\nMETTERNICH TO HUMBOLDT.",
+      "sender_display": "Prince Metternich",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Vienna</sc>, <i>February</i>, 1847.",
+      "dateline_plain": "Vienna, February, 1847.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0134",
+      "sequence_index": 134,
+      "start_block_id": "p0249-b0007",
+      "end_block_id": "p0250-b0005",
+      "letter_number_label": "131",
+      "header_tagged": "131.\nPRINCE ALBERT TO HUMBOLDT.",
+      "sender_display": "Prince Albert",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Windsor Castle,</sc> <i>February</i> 17<i>th</i>, 1847.",
+      "dateline_plain": "Windsor Castle, February 17th, 1847.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0135",
+      "sequence_index": 135,
+      "start_block_id": "p0250-b0007",
+      "end_block_id": "p0251-b0006",
+      "letter_number_label": "132",
+      "header_tagged": "132.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>February 27th,</i> 1847.\n<sc>Saturday.</sc>",
+      "dateline_plain": "Berlin, February 27th, 1847. Saturday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0136",
+      "sequence_index": 136,
+      "start_block_id": "p0251-b0008",
+      "end_block_id": "p0253-b0006",
+      "letter_number_label": "133",
+      "header_tagged": "133.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin,</sc> <i>March 27th,</i> 1847.",
+      "dateline_plain": "Berlin, March 27th, 1847.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0137",
+      "sequence_index": 137,
+      "start_block_id": "p0256-b0003",
+      "end_block_id": "p0257-b0005",
+      "letter_number_label": "134",
+      "header_tagged": "134.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>Jan. 18th</i>, 1849.",
+      "dateline_plain": "Berlin, Jan. 18th, 1849.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0138",
+      "sequence_index": 138,
+      "start_block_id": "p0259-b0003",
+      "end_block_id": "p0259-b0008",
+      "letter_number_label": "135",
+      "header_tagged": "135.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Potsdam</sc>, <i>August 16th</i>, 1849.\n<sc>Sunday</sc>.",
+      "dateline_plain": "Potsdam, August 16th, 1849. Sunday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0139",
+      "sequence_index": 139,
+      "start_block_id": "p0260-b0002",
+      "end_block_id": "p0260-b0008",
+      "letter_number_label": "136",
+      "header_tagged": "136.\n<sc>HUMBOLDT TO VARNHAGEN.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Potsdam</sc>, <i>October</i> 15<i>th</i>, 1849.",
+      "dateline_plain": "Potsdam, October 15th, 1849.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0140",
+      "sequence_index": 140,
+      "start_block_id": "p0261-b0003",
+      "end_block_id": "p0261-b0009",
+      "letter_number_label": "137",
+      "header_tagged": "137.\n<sc>Metternich to Humboldt.</sc>\n<sc>(From the French.)</sc>",
+      "sender_display": "Prince Metternich",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Richmond</sc>, <i>Sep. 17th</i>, 1849.",
+      "dateline_plain": "Richmond, Sep. 17th, 1849.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0141",
+      "sequence_index": 141,
+      "start_block_id": "p0262-b0002",
+      "end_block_id": "p0262-b0008",
+      "letter_number_label": "138",
+      "header_tagged": "138.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Potsdam</sc>, <i>October 29th</i>, 1849.",
+      "dateline_plain": "Potsdam, October 29th, 1849.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0142",
+      "sequence_index": 142,
+      "start_block_id": "p0262-b0010",
+      "end_block_id": "p0264-b0007",
+      "letter_number_label": "139",
+      "header_tagged": "139.\nHELEN, DUCHESS OF ORLEANS, TO HUMBOLDT.",
+      "sender_display": "Helen, Duchess Of Orleans,",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Eisenach</sc>, <i>Oct.</i> 23, 1849.",
+      "dateline_plain": "Eisenach, Oct. 23, 1849.",
+      "dateline_position": "bottom",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0143",
+      "sequence_index": 143,
+      "start_block_id": "p0264-b0009",
+      "end_block_id": "p0266-b0005",
+      "letter_number_label": "140",
+      "header_tagged": "140.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Potsdam</sc>, <i>October</i> 31<i>st</i>, 1849.\n<sc>Wednesday Night.</sc>",
+      "dateline_plain": "Potsdam, October 31st, 1849. Wednesday Night.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0144",
+      "sequence_index": 144,
+      "start_block_id": "p0267-b0003",
+      "end_block_id": "p0267-b0010",
+      "letter_number_label": "141",
+      "header_tagged": "<b>141.</b>\n<sc>HUMBOLDT TO VARNHAGEN.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Potsdam</sc>, <i>November 4th</i>, 1849.\n<sc>Sunday.</sc>",
+      "dateline_plain": "Potsdam, November 4th, 1849. Sunday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0145",
+      "sequence_index": 145,
+      "start_block_id": "p0268-b0003",
+      "end_block_id": "p0268-b0009",
+      "letter_number_label": "142",
+      "header_tagged": "142.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>March 19th</i>, 1850.\n<sc>Tuesday</sc>.",
+      "dateline_plain": "Berlin, March 19th, 1850. Tuesday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0146",
+      "sequence_index": 146,
+      "start_block_id": "p0268-b0011",
+      "end_block_id": "p0269-b0007",
+      "letter_number_label": "143",
+      "header_tagged": "143.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Potsdam</sc>, <i>July 2d</i>, 1850.",
+      "dateline_plain": "Potsdam, July 2d, 1850.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0147",
+      "sequence_index": 147,
+      "start_block_id": "p0270-b0002",
+      "end_block_id": "p0271-b0005",
+      "letter_number_label": "144",
+      "header_tagged": "144.\n<sc>Humboldt to Bettina von Arnim.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Bettina von Arnim",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>June 7th,</i> 1851.",
+      "dateline_plain": "Berlin, June 7th, 1851.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0148",
+      "sequence_index": 148,
+      "start_block_id": "p0271-b0007",
+      "end_block_id": "p0272-b0005",
+      "letter_number_label": "145",
+      "header_tagged": "145.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Potsdam,</sc> <i>November</i> 1<i>st,</i> 1851.",
+      "dateline_plain": "Potsdam, November 1st, 1851.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0149",
+      "sequence_index": 149,
+      "start_block_id": "p0274-b0002",
+      "end_block_id": "p0274-b0011",
+      "letter_number_label": "146",
+      "header_tagged": "146.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin,</sc> <i>January 28th,</i> 1852.\n<sc>Wednesday.</sc>",
+      "dateline_plain": "Berlin, January 28th, 1852. Wednesday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0150",
+      "sequence_index": 150,
+      "start_block_id": "p0276-b0006",
+      "end_block_id": "p0277-b0006",
+      "letter_number_label": "147",
+      "header_tagged": "147.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>Feb. 5th</i>, 1852.",
+      "dateline_plain": "Berlin, Feb. 5th, 1852.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0151",
+      "sequence_index": 151,
+      "start_block_id": "p0279-b0003",
+      "end_block_id": "p0279-b0009",
+      "letter_number_label": "148",
+      "header_tagged": "148.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>February</i> 12<i>th</i>, 1852.",
+      "dateline_plain": "Berlin, February 12th, 1852.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0152",
+      "sequence_index": 152,
+      "start_block_id": "p0279-b0011",
+      "end_block_id": "p0282-b0003",
+      "letter_number_label": "149",
+      "header_tagged": "149.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>March</i> 23<i>d</i>, 1852.\n<sc>Tuesday</sc>, late at night.",
+      "dateline_plain": "Berlin, March 23d, 1852. Tuesday, late at night.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0153",
+      "sequence_index": 153,
+      "start_block_id": "p0283-b0003",
+      "end_block_id": "p0284-b0003",
+      "letter_number_label": "150",
+      "header_tagged": "150.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>March 13th</i>, 1853.",
+      "dateline_plain": "Berlin, March 13th, 1853.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0154",
+      "sequence_index": 154,
+      "start_block_id": "p0284-b0005",
+      "end_block_id": "p0285-b0006",
+      "letter_number_label": "151",
+      "header_tagged": "151.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>March 14th</i>, 1853.",
+      "dateline_plain": "Berlin, March 14th, 1853.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0155",
+      "sequence_index": 155,
+      "start_block_id": "p0286-b0003",
+      "end_block_id": "p0286-b0008",
+      "letter_number_label": "152",
+      "header_tagged": "152.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>August 15th</i>, 1853.",
+      "dateline_plain": "Berlin, August 15th, 1853.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0156",
+      "sequence_index": 156,
+      "start_block_id": "p0287-b0003",
+      "end_block_id": "p0288-b0010",
+      "letter_number_label": "153",
+      "header_tagged": "153.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>August 31st</i>, 1853.",
+      "dateline_plain": "Berlin, August 31st, 1853.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0157",
+      "sequence_index": 157,
+      "start_block_id": "p0289-b0003",
+      "end_block_id": "p0289-b0009",
+      "letter_number_label": "154",
+      "header_tagged": "154.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>September 2d,</i> 1853.",
+      "dateline_plain": "Berlin, September 2d, 1853.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0158",
+      "sequence_index": 158,
+      "start_block_id": "p0292-b0007",
+      "end_block_id": "p0293-b0006",
+      "letter_number_label": "155",
+      "header_tagged": "155.\n<sc>HUMBOLDT TO VARNHAGEN.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>Dec.</i> 12<i>th</i>, 1853.\n<sc>Monday.</sc>",
+      "dateline_plain": "Berlin, Dec. 12th, 1853. Monday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0159",
+      "sequence_index": 159,
+      "start_block_id": "p0294-b0003",
+      "end_block_id": "p0295-b0006",
+      "letter_number_label": "156",
+      "header_tagged": "156.\n<sc>HUMBOLDT TO VARNHAGEN.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin, Thursday Night</sc>—<i>from the</i> 13<i>th to\nthe</i> 14<i>th of April,</i> 1854.",
+      "dateline_plain": "Berlin, Thursday Night—from the 13th to the 14th of April, 1854.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0160",
+      "sequence_index": 160,
+      "start_block_id": "p0295-b0008",
+      "end_block_id": "p0296-b0006",
+      "letter_number_label": "157",
+      "header_tagged": "<b>157.</b>\n<sc>Arago to Humboldt.</sc>",
+      "sender_display": "Arago",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Paris,</sc> <i>June 3d,</i> 1848.",
+      "dateline_plain": "Paris, June 3d, 1848.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0161",
+      "sequence_index": 161,
+      "start_block_id": "p0297-b0003",
+      "end_block_id": "p0297-b0009",
+      "letter_number_label": "158",
+      "header_tagged": "158.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin, Friday,</sc> <i>April</i> 14<i>th</i>, 1854.",
+      "dateline_plain": "Berlin, Friday, April 14th, 1854.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0162",
+      "sequence_index": 162,
+      "start_block_id": "p0297-b0011",
+      "end_block_id": "p0299-b0007",
+      "letter_number_label": "159",
+      "header_tagged": "159.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Potsdam</sc>, <i>July 4th</i>, 1854.  In the age of crystal palaces.",
+      "dateline_plain": "Potsdam, July 4th, 1854. In the age of crystal palaces.",
+      "dateline_position": "bottom",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0163",
+      "sequence_index": 163,
+      "start_block_id": "p0302-b0002",
+      "end_block_id": "p0305-b0004",
+      "letter_number_label": "160",
+      "header_tagged": "160.\n<sc>Varnhagen to Humboldt.</sc>",
+      "sender_display": "Varnhagen von Ense",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>July 8th</i>, 1854.",
+      "dateline_plain": "Berlin, July 8th, 1854.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0164",
+      "sequence_index": 164,
+      "start_block_id": "p0305-b0007",
+      "end_block_id": "p0307-b0006",
+      "letter_number_label": "161",
+      "header_tagged": "161.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>July 9th</i>, 1854.\n<sc>Saturday Night.</sc>",
+      "dateline_plain": "Berlin, July 9th, 1854. Saturday Night.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0165",
+      "sequence_index": 165,
+      "start_block_id": "p0308-b0002",
+      "end_block_id": "p0309-b0005",
+      "letter_number_label": "162",
+      "header_tagged": "162.\n<sc>HUMBOLDT TO BETTINA VON ARNIM.</sc>\n(Copied by Varnhagen.)",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Bettina von Arnim",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>July 8th</i>, 1854.",
+      "dateline_plain": "Berlin, July 8th, 1854.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0166",
+      "sequence_index": 166,
+      "start_block_id": "p0310-b0003",
+      "end_block_id": "p0311-b0005",
+      "letter_number_label": "163",
+      "header_tagged": "163.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>July 10th</i>, 1854.",
+      "dateline_plain": "Berlin, July 10th, 1854.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0167",
+      "sequence_index": 167,
+      "start_block_id": "p0311-b0007",
+      "end_block_id": "p0312-b0007",
+      "letter_number_label": "164",
+      "header_tagged": "164.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>July 29th</i>, 1854.\n<sc>At Night</sc>.",
+      "dateline_plain": "Berlin, July 29th, 1854. At Night.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0168",
+      "sequence_index": 168,
+      "start_block_id": "p0312-b0009",
+      "end_block_id": "p0313-b0006",
+      "letter_number_label": "165",
+      "header_tagged": "165.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>July</i> 31<i>st</i>, 1854.",
+      "dateline_plain": "Berlin, July 31st, 1854.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0169",
+      "sequence_index": 169,
+      "start_block_id": "p0313-b0008",
+      "end_block_id": "p0314-b0007",
+      "letter_number_label": "166",
+      "header_tagged": "166.\nVARNHAGEN TO HUMBOLDT.",
+      "sender_display": "Varnhagen von Ense",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Berlin,</sc> <i>January 8th,</i> 1855.",
+      "dateline_plain": "Berlin, January 8th, 1855.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0170",
+      "sequence_index": 170,
+      "start_block_id": "p0314-b0009",
+      "end_block_id": "p0315-b0006",
+      "letter_number_label": "167",
+      "header_tagged": "167.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>April 26th</i>, 1855.\n<sc>Wednesday.</sc>",
+      "dateline_plain": "Berlin, April 26th, 1855. Wednesday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0171",
+      "sequence_index": 171,
+      "start_block_id": "p0316-b0002",
+      "end_block_id": "p0317-b0007",
+      "letter_number_label": "168",
+      "header_tagged": "168.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>August 9th</i>, 1855.",
+      "dateline_plain": "Berlin, August 9th, 1855.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0172",
+      "sequence_index": 172,
+      "start_block_id": "p0321-b0006",
+      "end_block_id": "p0323-b0005",
+      "letter_number_label": "169",
+      "header_tagged": "169.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>January 13th</i>, 1856.",
+      "dateline_plain": "Berlin, January 13th, 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0173",
+      "sequence_index": 173,
+      "start_block_id": "p0324-b0002",
+      "end_block_id": "p0325-b0007",
+      "letter_number_label": "170",
+      "header_tagged": "170.\nTHE PRINCESS LIEVEN TO HUMBOLDT.",
+      "sender_display": "Princess Lieven",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Paris</sc>, <i>January 8th</i>, 1856.",
+      "dateline_plain": "Paris, January 8th, 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0174",
+      "sequence_index": 174,
+      "start_block_id": "p0325-b0009",
+      "end_block_id": "p0326-b0005",
+      "letter_number_label": "171",
+      "header_tagged": "171.\nVARNHAGEN TO HUMBOLDT.",
+      "sender_display": "Varnhagen von Ense",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>January 27th</i>, 1856.",
+      "dateline_plain": "Berlin, January 27th, 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0175",
+      "sequence_index": 175,
+      "start_block_id": "p0326-b0007",
+      "end_block_id": "p0328-b0003",
+      "letter_number_label": "172",
+      "header_tagged": "172.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>January 28th</i>, 1856.",
+      "dateline_plain": "Berlin, January 28th, 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0176",
+      "sequence_index": 176,
+      "start_block_id": "p0328-b0005",
+      "end_block_id": "p0329-b0005",
+      "letter_number_label": "173",
+      "header_tagged": "173.\n<sc>HUMBOLDT TO VARNHAGEN.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin, Thursday,</sc> <i>Feb. 7th,</i> 1856.",
+      "dateline_plain": "Berlin, Thursday, Feb. 7th, 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0177",
+      "sequence_index": 177,
+      "start_block_id": "p0329-b0007",
+      "end_block_id": "p0330-b0007",
+      "letter_number_label": "174",
+      "header_tagged": "174.\n<sc>Varnhagen to Humboldt.</sc>",
+      "sender_display": "Varnhagen von Ense",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>March</i> 14<i>th</i>, 1856.",
+      "dateline_plain": "Berlin, March 14th, 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0178",
+      "sequence_index": 178,
+      "start_block_id": "p0331-b0003",
+      "end_block_id": "p0331-b0008",
+      "letter_number_label": "175",
+      "header_tagged": "175.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>April 14th</i>, 1856.",
+      "dateline_plain": "Berlin, April 14th, 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0179",
+      "sequence_index": 179,
+      "start_block_id": "p0332-b0003",
+      "end_block_id": "p0333-b0005",
+      "letter_number_label": "176",
+      "header_tagged": "176.\n<sc>HUMBOLDT TO VARNHAGEN.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>September</i> 11<i>th</i>, 1856.",
+      "dateline_plain": "Berlin, September 11th, 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0180",
+      "sequence_index": 180,
+      "start_block_id": "p0333-b0007",
+      "end_block_id": "p0335-b0008",
+      "letter_number_label": "177",
+      "header_tagged": "177.\n<sc>The Prussian Minister Resident, Von Gerolt,\nto Humboldt.</sc>",
+      "sender_display": "The Prussian Minister Resident, Von Gerolt,",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>New York</sc>, <i>August 25th</i>, 1856.",
+      "dateline_plain": "New York, August 25th, 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0181",
+      "sequence_index": 181,
+      "start_block_id": "p0335-b0010",
+      "end_block_id": "p0337-b0006",
+      "letter_number_label": "178",
+      "header_tagged": "178.\nVARNHAGEN TO HUMBOLDT.",
+      "sender_display": "Varnhagen von Ense",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Berlin,</sc> <i>September</i> 13<i>th</i>, 1856.",
+      "dateline_plain": "Berlin, September 13th, 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0182",
+      "sequence_index": 182,
+      "start_block_id": "p0337-b0008",
+      "end_block_id": "p0337-b0013",
+      "letter_number_label": "179",
+      "header_tagged": "179.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>September 22d,</i> 1856.\n<sc>Monday.</sc>",
+      "dateline_plain": "Berlin, September 22d, 1856. Monday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0183",
+      "sequence_index": 183,
+      "start_block_id": "p0338-b0003",
+      "end_block_id": "p0338-b0010",
+      "letter_number_label": "180",
+      "header_tagged": "180.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>Sept.</i> 23<i>d</i>, 1856.\n<sc>Tuesday, 2 o'clock.</sc>",
+      "dateline_plain": "Berlin, Sept. 23d, 1856. Tuesday, 2 o'clock.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0184",
+      "sequence_index": 184,
+      "start_block_id": "p0338-b0012",
+      "end_block_id": "p0339-b0004",
+      "letter_number_label": "181",
+      "header_tagged": "181.\n(<sc>enclosed.</sc>)\nGRAND DUKE CHARLES ALEXANDER OF SAXE WEIMAR\nTO HUMBOLDT.",
+      "sender_display": "Grand Duke Charles Alexander Of Saxe Weimar",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>At the Chateau of Berlin</sc>,\n<i>Tuesday Morning.</i>",
+      "dateline_plain": "At the Chateau of Berlin, Tuesday Morning.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0185",
+      "sequence_index": 185,
+      "start_block_id": "p0339-b0006",
+      "end_block_id": "p0341-b0005",
+      "letter_number_label": "182",
+      "header_tagged": "182.\nVARNHAGEN TO HUMBOLDT.",
+      "sender_display": "Varnhagen von Ense",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>September 24th</i>, 1856.",
+      "dateline_plain": "Berlin, September 24th, 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0186",
+      "sequence_index": 186,
+      "start_block_id": "p0341-b0007",
+      "end_block_id": "p0342-b0007",
+      "letter_number_label": "183",
+      "header_tagged": "183.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>Sep.</i> 24<i>th</i>, 1856.\n<sc>Wednesday.</sc>",
+      "dateline_plain": "Berlin, Sep. 24th, 1856. Wednesday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0187",
+      "sequence_index": 187,
+      "start_block_id": "p0342-b0009",
+      "end_block_id": "p0344-b0005",
+      "letter_number_label": "184",
+      "header_tagged": "184.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Potsdam,</sc> <i>November 9th,</i> 1856.",
+      "dateline_plain": "Potsdam, November 9th, 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0188",
+      "sequence_index": 188,
+      "start_block_id": "p0344-b0007",
+      "end_block_id": "p0345-b0007",
+      "letter_number_label": "185",
+      "header_tagged": "185.\nMETTERNICH TO HUMBOLDT.",
+      "sender_display": "Prince Metternich",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Koenigswart</sc>, <i>October 14th</i>, 1856.",
+      "dateline_plain": "Koenigswart, October 14th, 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0189",
+      "sequence_index": 189,
+      "start_block_id": "p0346-b0003",
+      "end_block_id": "p0346-b0009",
+      "letter_number_label": "186",
+      "header_tagged": "186.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>November 20th</i>, 1856.\n<sc>Thursday.</sc>",
+      "dateline_plain": "Berlin, November 20th, 1856. Thursday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0190",
+      "sequence_index": 190,
+      "start_block_id": "p0346-b0011",
+      "end_block_id": "p0347-b0007",
+      "letter_number_label": "187",
+      "header_tagged": "187.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>November 21st</i>, 1856.\n<sc>Friday.</sc>",
+      "dateline_plain": "Berlin, November 21st, 1856. Friday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0191",
+      "sequence_index": 191,
+      "start_block_id": "p0349-b0005",
+      "end_block_id": "p0350-b0007",
+      "letter_number_label": "188",
+      "header_tagged": "188.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>November</i> 30<i>th</i>, 1856.\n<sc>Sunday.</sc>",
+      "dateline_plain": "Berlin, November 30th, 1856. Sunday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0192",
+      "sequence_index": 192,
+      "start_block_id": "p0351-b0003",
+      "end_block_id": "p0352-b0004",
+      "letter_number_label": "189",
+      "header_tagged": "189.\nCHARLES ALEXANDER, GRAND DUKE OF SAXE-WEIMAR,\nTO HUMBOLDT.",
+      "sender_display": "Charles Alexander, Grand Duke Of Saxe-Weimar,",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Weimar</sc>, <i>November 29th</i>, 1856.",
+      "dateline_plain": "Weimar, November 29th, 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0193",
+      "sequence_index": 193,
+      "start_block_id": "p0352-b0006",
+      "end_block_id": "p0354-b0005",
+      "letter_number_label": "190",
+      "header_tagged": "190.\nJOBARD TO HUMBOLDT.",
+      "sender_display": "Jean-Baptiste-Ambroise-Marcellin Jobard",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Brussels</sc>, <i>November 26th</i>, 1856.",
+      "dateline_plain": "Brussels, November 26th, 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0194",
+      "sequence_index": 194,
+      "start_block_id": "p0354-b0007",
+      "end_block_id": "p0354-b0012",
+      "letter_number_label": "191",
+      "header_tagged": "191.\nLINES BY VARNHAGEN ON HILDEBRANDT'S PAINTING OF HUMBOLDT'S APARTMENTS, AND THE MOTTO ATTACHED.",
+      "sender_display": "Varnhagen von Ense",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>December</i> 1<i>st</i>, 1856.",
+      "dateline_plain": "Berlin, December 1st, 1856.",
+      "dateline_position": "bottom",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0195",
+      "sequence_index": 195,
+      "start_block_id": "p0355-b0003",
+      "end_block_id": "p0357-b0005",
+      "letter_number_label": "192",
+      "header_tagged": "192.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>December 3d</i>, 1856.<sup>*</sup>",
+      "dateline_plain": "Berlin, December 3d, 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0196",
+      "sequence_index": 196,
+      "start_block_id": "p0358-b0005",
+      "end_block_id": "p0359-b0006",
+      "letter_number_label": "193",
+      "header_tagged": "193.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>December</i> 17<i>th</i>, 1856.\n<sc>Wednesday Evening.</sc>",
+      "dateline_plain": "Berlin, December 17th, 1856. Wednesday Evening.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0197",
+      "sequence_index": 197,
+      "start_block_id": "p0359-b0008",
+      "end_block_id": "p0360-b0006",
+      "letter_number_label": "194",
+      "header_tagged": "194.\nCHARLES ALEXANDER, GRAND DUKE OF SAXE-WEIMAR,\nTO HUMBOLDT.",
+      "sender_display": "Charles Alexander, Grand Duke Of Saxe-Weimar,",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Weimar,</sc> <i>December 16th,</i> 1856.",
+      "dateline_plain": "Weimar, December 16th, 1856.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0198",
+      "sequence_index": 198,
+      "start_block_id": "p0360-b0008",
+      "end_block_id": "p0361-b0007",
+      "letter_number_label": "195",
+      "header_tagged": "195.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>Feb. 7th</i>, 1857.",
+      "dateline_plain": "Berlin, Feb. 7th, 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0199",
+      "sequence_index": 199,
+      "start_block_id": "p0362-b0003",
+      "end_block_id": "p0364-b0006",
+      "letter_number_label": "196",
+      "header_tagged": "196.\nVARNHAGEN TO HUMBOLDT.",
+      "sender_display": "Varnhagen von Ense",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>Feb.</i> 9<i>th</i>, 1857.",
+      "dateline_plain": "Berlin, Feb. 9th, 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "Greek"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0200",
+      "sequence_index": 200,
+      "start_block_id": "p0364-b0008",
+      "end_block_id": "p0365-b0007",
+      "letter_number_label": "197",
+      "header_tagged": "197.\nVARNHAGEN TO HUMBOLDT.",
+      "sender_display": "Varnhagen von Ense",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>February 20th</i>, 1857.",
+      "dateline_plain": "Berlin, February 20th, 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0201",
+      "sequence_index": 201,
+      "start_block_id": "p0367-b0003",
+      "end_block_id": "p0368-b0006",
+      "letter_number_label": "198",
+      "header_tagged": "198.\nVARNHAGEN TO HUMBOLDT.",
+      "sender_display": "Varnhagen von Ense",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>March 17th</i>, 1857.",
+      "dateline_plain": "Berlin, March 17th, 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0202",
+      "sequence_index": 202,
+      "start_block_id": "p0368-b0009",
+      "end_block_id": "p0369-b0005",
+      "letter_number_label": "199",
+      "header_tagged": "199.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>March</i> 19<i>th</i>, 1857—<i>at Night.</i>",
+      "dateline_plain": "Berlin, March 19th, 1857—at Night.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0203",
+      "sequence_index": 203,
+      "start_block_id": "p0370-b0005",
+      "end_block_id": "p0371-b0007",
+      "letter_number_label": "200",
+      "header_tagged": "200.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>April 6th</i>, 1857.\n<sc>Monday.</sc>",
+      "dateline_plain": "Berlin, April 6th, 1857. Monday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0204",
+      "sequence_index": 204,
+      "start_block_id": "p0371-b0009",
+      "end_block_id": "p0372-b0006",
+      "letter_number_label": "201",
+      "header_tagged": "201.\nKARL ALEXANDER, GRAND DUKE OF SAXE-WEIMAR,\nTO HUMBOLDT.",
+      "sender_display": "Karl Alexander, Grand Duke Of Saxe-Weimar,",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Weimar,</sc> <i>April 3d,</i> 1857.",
+      "dateline_plain": "Weimar, April 3d, 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0205",
+      "sequence_index": 205,
+      "start_block_id": "p0372-b0008",
+      "end_block_id": "p0374-b0006",
+      "letter_number_label": "202",
+      "header_tagged": "202.\nVARNHAGEN TO HUMBOLDT.",
+      "sender_display": "Varnhagen von Ense",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>April 7th</i>, 1857.",
+      "dateline_plain": "Berlin, April 7th, 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0206",
+      "sequence_index": 206,
+      "start_block_id": "p0374-b0008",
+      "end_block_id": "p0375-b0005",
+      "letter_number_label": "203",
+      "header_tagged": "203.\nVARNHAGEN TO HUMBOLDT.",
+      "sender_display": "Varnhagen von Ense",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>April 10th</i>, 1857.",
+      "dateline_plain": "Berlin, April 10th, 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0207",
+      "sequence_index": 207,
+      "start_block_id": "p0376-b0002",
+      "end_block_id": "p0376-b0005",
+      "letter_number_label": "204",
+      "header_tagged": "204.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>April 13th</i>, 1857.",
+      "dateline_plain": "Berlin, April 13th, 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0208",
+      "sequence_index": 208,
+      "start_block_id": "p0376-b0007",
+      "end_block_id": "p0378-b0004",
+      "letter_number_label": "205",
+      "header_tagged": "205.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>April 21st</i>, 1857.",
+      "dateline_plain": "Berlin, April 21st, 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0209",
+      "sequence_index": 209,
+      "start_block_id": "p0378-b0005",
+      "end_block_id": "p0379-b0006",
+      "letter_number_label": "206",
+      "header_tagged": "206.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>April 25th,</i> 1857.",
+      "dateline_plain": "Berlin, April 25th, 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0210",
+      "sequence_index": 210,
+      "start_block_id": "p0379-b0009",
+      "end_block_id": "p0380-b0006",
+      "letter_number_label": "207",
+      "header_tagged": "207.\nCHARLES ALEXANDER, GRAND DUKE OF SAXE-WEIMAR,\nTO HUMBOLDT.",
+      "sender_display": "Charles Alexander, Grand Duke Of Saxe-Weimar,",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Vienna,</sc> <i>April 22d,</i> 1857.",
+      "dateline_plain": "Vienna, April 22d, 1857.",
+      "dateline_position": "bottom",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0211",
+      "sequence_index": 211,
+      "start_block_id": "p0380-b0008",
+      "end_block_id": "p0381-b0005",
+      "letter_number_label": "208",
+      "header_tagged": "208.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin,</sc> <i>May 28th,</i> 1857.",
+      "dateline_plain": "Berlin, May 28th, 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0212",
+      "sequence_index": 212,
+      "start_block_id": "p0382-b0006",
+      "end_block_id": "p0383-b0006",
+      "letter_number_label": "209",
+      "header_tagged": "209.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Potsdam, Thursday.</sc> <i>In haste,</i>\n<i>June 4th,</i> 1857.",
+      "dateline_plain": "Potsdam, Thursday. In haste, June 4th, 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0213",
+      "sequence_index": 213,
+      "start_block_id": "p0383-b0008",
+      "end_block_id": "p0384-b0005",
+      "letter_number_label": "210",
+      "header_tagged": "210.\n<sc>CHARLES ALEXANDER, GRAND DUKE OF SAXE-WEIMAR,\nTO HUMBOLDT.</sc>",
+      "sender_display": "Charles Alexander, Grand Duke Of Saxe-Weimar,",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Ettersburg</sc>, <i>June</i> 1, 1857.",
+      "dateline_plain": "Ettersburg, June 1, 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0214",
+      "sequence_index": 214,
+      "start_block_id": "p0384-b0007",
+      "end_block_id": "p0385-b0006",
+      "letter_number_label": "211",
+      "header_tagged": "211.\n<sc>Thiers to Humboldt.</sc>\n<sc>(From the French.)</sc>",
+      "sender_display": "Adolphe Thiers",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Paris,</sc> <i>May 14th,</i> 1857.",
+      "dateline_plain": "Paris, May 14th, 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0215",
+      "sequence_index": 215,
+      "start_block_id": "p0385-b0008",
+      "end_block_id": "p0386-b0005",
+      "letter_number_label": "212",
+      "header_tagged": "212.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>June</i> 19<i>th</i>, 1857.",
+      "dateline_plain": "Berlin, June 19th, 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0216",
+      "sequence_index": 216,
+      "start_block_id": "p0387-b0005",
+      "end_block_id": "p0389-b0007",
+      "letter_number_label": "213",
+      "header_tagged": "213.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>June 30th</i>, 1857.\n<sc>Tuesday</sc>.",
+      "dateline_plain": "Berlin, June 30th, 1857. Tuesday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0217",
+      "sequence_index": 217,
+      "start_block_id": "p0390-b0003",
+      "end_block_id": "p0391-b0008",
+      "letter_number_label": "214",
+      "header_tagged": "214.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>July 6th</i>, 1857.\n<sc>Monday Night.</sc>",
+      "dateline_plain": "Berlin, July 6th, 1857. Monday Night.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0218",
+      "sequence_index": 218,
+      "start_block_id": "p0391-b0010",
+      "end_block_id": "p0393-b0006",
+      "letter_number_label": "215",
+      "header_tagged": "215.\nVARNHAGEN TO HUMBOLDT.",
+      "sender_display": "Varnhagen von Ense",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Berlin,</sc> <i>July 8th,</i> 1857.",
+      "dateline_plain": "Berlin, July 8th, 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0219",
+      "sequence_index": 219,
+      "start_block_id": "p0393-b0008",
+      "end_block_id": "p0394-b0008",
+      "letter_number_label": "216",
+      "header_tagged": "216.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>September 16th</i>, 1857.\n<sc>Wednesday.</sc>",
+      "dateline_plain": "Berlin, September 16th, 1857. Wednesday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0220",
+      "sequence_index": 220,
+      "start_block_id": "p0395-b0003",
+      "end_block_id": "p0395-b0008",
+      "letter_number_label": "217",
+      "header_tagged": "217.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>October</i> 14<i>th</i>, 1857.",
+      "dateline_plain": "Berlin, October 14th, 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0221",
+      "sequence_index": 221,
+      "start_block_id": "p0397-b0003",
+      "end_block_id": "p0398-b0006",
+      "letter_number_label": "218",
+      "header_tagged": "218.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>January 11th</i>, 1858.",
+      "dateline_plain": "Berlin, January 11th, 1858.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0222",
+      "sequence_index": 222,
+      "start_block_id": "p0398-b0008",
+      "end_block_id": "p0399-b0005",
+      "letter_number_label": "219",
+      "header_tagged": "219.\n<sc>PRINCE NAPOLEON, SON OF JEROME, TO HUMBOLDT.</sc>",
+      "sender_display": "Prince Napoleon, Son Of Jerome,",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Paris</sc>, <i>Oct.</i> 13<i>th</i>, 1857.",
+      "dateline_plain": "Paris, Oct. 13th, 1857.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0223",
+      "sequence_index": 223,
+      "start_block_id": "p0401-b0003",
+      "end_block_id": "p0401-b0008",
+      "letter_number_label": "220",
+      "header_tagged": "220.\n<sc>Varnhagen to Humboldt.</sc>",
+      "sender_display": "Varnhagen von Ense",
+      "recipient_display": "Alexander von Humboldt",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>February</i> 19<i>th</i>, 1858.",
+      "dateline_plain": "Berlin, February 19th, 1858.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0224",
+      "sequence_index": 224,
+      "start_block_id": "p0402-b0003",
+      "end_block_id": "p0402-b0010",
+      "letter_number_label": "221",
+      "header_tagged": "221.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>March 7th</i>, 1858.\n<sc>Sunday Night</sc>.",
+      "dateline_plain": "Berlin, March 7th, 1858. Sunday Night.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0225",
+      "sequence_index": 225,
+      "start_block_id": "p0403-b0006",
+      "end_block_id": "p0404-b0007",
+      "letter_number_label": "222",
+      "header_tagged": "222.\n<sc>HUMBOLDT TO VARNHAGEN.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>April</i> 13th, 1858.\n<sc>Tuesday.</sc>",
+      "dateline_plain": "Berlin, April 13th, 1858. Tuesday.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0226",
+      "sequence_index": 226,
+      "start_block_id": "p0405-b0006",
+      "end_block_id": "p0406-b0006",
+      "letter_number_label": "223",
+      "header_tagged": "223.\nHUMBOLDT TO VARNHAGEN.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Potsdam</sc>, <i>June</i> 19<i>th</i>, 1858.",
+      "dateline_plain": "Potsdam, June 19th, 1858.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0227",
+      "sequence_index": 227,
+      "start_block_id": "p0407-b0003",
+      "end_block_id": "p0409-b0006",
+      "letter_number_label": "224",
+      "header_tagged": "224.\n<sc>Humboldt to Varnhagen.</sc>",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Varnhagen von Ense",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>September 9th, at night,</i> 1858.",
+      "dateline_plain": "Berlin, September 9th, at night, 1858.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin",
+        "European diacritics"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    },
+    {
+      "letter_id": "letter-0228",
+      "sequence_index": 228,
+      "start_block_id": "p0410-b0002",
+      "end_block_id": "p0410-b0007",
+      "letter_number_label": "225",
+      "header_tagged": "225.\nHUMBOLDT TO LUDMILLA ASSING.",
+      "sender_display": "Alexander von Humboldt",
+      "recipient_display": "Ludmilla Assing",
+      "dateline_tagged": "<sc>Berlin</sc>, <i>Oct.</i> 12<i>th</i>, 1858.",
+      "dateline_plain": "Berlin, Oct. 12th, 1858.",
+      "dateline_position": "top",
+      "languages": [
+        "Latin"
+      ],
+      "boundary_confidence": "human_mapped",
+      "reviewer": "native-vision-600ppi-scan-check",
+      "updated_at": "2026-11-19T15:37:51.442581+00:00"
+    }
+  ]
+}

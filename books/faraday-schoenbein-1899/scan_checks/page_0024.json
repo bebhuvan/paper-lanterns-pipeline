@@ -1,0 +1,34 @@
+{
+  "book_id": "faraday-schoenbein-1899",
+  "page_number": 24,
+  "check_id": "scan-check-p0024",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "b1ce6ab01c117313c955252bcb7fb429867036a99da7462ef2f9207e8c1b8d3c",
+  "checks": [
+    {
+      "block_id": "p0024-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Kahlbaum Introduction closing ('Georg W. A. Kahlbaum.', 'Bâle, September, 15th, 1899.') stays in frontmatter."
+    },
+    {
+      "block_id": "p0024-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Kahlbaum Introduction closing ('Georg W. A. Kahlbaum.', 'Bâle, September, 15th, 1899.') stays in frontmatter."
+    },
+    {
+      "block_id": "p0024-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Kahlbaum Introduction closing ('Georg W. A. Kahlbaum.', 'Bâle, September, 15th, 1899.') stays in frontmatter."
+    },
+    {
+      "block_id": "p0024-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Kahlbaum Introduction closing ('Georg W. A. Kahlbaum.', 'Bâle, September, 15th, 1899.') stays in frontmatter."
+    },
+    {
+      "block_id": "p0024-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Kahlbaum Introduction closing ('Georg W. A. Kahlbaum.', 'Bâle, September, 15th, 1899.') stays in frontmatter."
+    }
+  ]
+}

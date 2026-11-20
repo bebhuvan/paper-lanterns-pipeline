@@ -1,0 +1,44 @@
+{
+  "book_id": "poe-valentine-letters-1925",
+  "page_number": 77,
+  "check_id": "scan-check-p0077",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "ad1baae6354aaf893500c1ebc1dd8571c366df236d53fde5c75dd387221d37e1",
+  "checks": [
+    {
+      "block_id": "p0077-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Postscript + second signature preserved inside Letter III."
+    },
+    {
+      "block_id": "p0077-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Postscript + second signature preserved inside Letter III."
+    },
+    {
+      "block_id": "p0077-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Postscript + second signature preserved inside Letter III."
+    },
+    {
+      "block_id": "p0077-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Postscript + second signature preserved inside Letter III."
+    },
+    {
+      "block_id": "p0077-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Postscript + second signature preserved inside Letter III."
+    },
+    {
+      "block_id": "p0077-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Postscript + second signature preserved inside Letter III."
+    },
+    {
+      "block_id": "p0077-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Postscript + second signature preserved inside Letter III."
+    }
+  ]
+}

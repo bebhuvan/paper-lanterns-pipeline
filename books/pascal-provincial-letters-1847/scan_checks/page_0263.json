@@ -1,0 +1,49 @@
+{
+  "book_id": "pascal-provincial-letters-1847",
+  "page_number": 263,
+  "check_id": "scan-check-p0263",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "fdcd246c654cb55b864f363363bebab9e81f4de5abc2a3e37911c77f6e21aa01",
+  "checks": [
+    {
+      "block_id": "p0263-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XI heading literally printed 'PERES LE MOINE AND GARASSE.' without grave accent on small caps."
+    },
+    {
+      "block_id": "p0263-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XI heading literally printed 'PERES LE MOINE AND GARASSE.' without grave accent on small caps."
+    },
+    {
+      "block_id": "p0263-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XI heading literally printed 'PERES LE MOINE AND GARASSE.' without grave accent on small caps."
+    },
+    {
+      "block_id": "p0263-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XI heading literally printed 'PERES LE MOINE AND GARASSE.' without grave accent on small caps."
+    },
+    {
+      "block_id": "p0263-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XI heading literally printed 'PERES LE MOINE AND GARASSE.' without grave accent on small caps."
+    },
+    {
+      "block_id": "p0263-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XI heading literally printed 'PERES LE MOINE AND GARASSE.' without grave accent on small caps."
+    },
+    {
+      "block_id": "p0263-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XI heading literally printed 'PERES LE MOINE AND GARASSE.' without grave accent on small caps."
+    },
+    {
+      "block_id": "p0263-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XI heading literally printed 'PERES LE MOINE AND GARASSE.' without grave accent on small caps."
+    }
+  ]
+}

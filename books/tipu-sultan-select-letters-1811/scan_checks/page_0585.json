@@ -1,0 +1,22 @@
+{
+  "book_id": "tipu-sultan-select-letters-1811",
+  "page_number": 585,
+  "check_id": "tipu-sultan-select-letters-1811-p0585",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "61255ce5e42039f2a5cc3f111ed33d1d508d11d98990b8b6216411852143b847",
+  "checked_at": "2026-11-17T21:31:14.948331+00:00",
+  "checks": [
+    {
+      "block_id": "p0585-b0009",
+      "token": "Ghulam Sadik",
+      "verdict": "printed_as_read",
+      "note": "Small caps GHULAM ALI and SADIK printed bare on 300dpi scan."
+    },
+    {
+      "block_id": "p0585-b0018",
+      "token": "||",
+      "verdict": "printed_as_read",
+      "note": "Footnote '||' is referenced inside signature block p0585-b0009 ('“ || * * * * *')."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[book]
+book_id = "forrest-bombay-state-papers-1885"
+title = "Selections from the Letters, Despatches, and Other State Papers Preserved in the Bombay Secretariat (Home Series, Vol. I)"
+author_or_editor = "George W. Forrest (ed.)"
+authors = ["George W. Forrest (ed.)"]
+publication_year = 1885
+subtitle = ""
+imprint = "Bombay: Government Central Press"
+collection = "indian-epistolary-heritage"
+language = "en"
+declared_scripts = ["Latin"]
+profile = "claude_sonnet_epistolary"
+
+[source]
+archive_id = "b29352630_0001"
+source_pdf = ""
+source_pdf_sha256 = ""
+
+[extraction]
+profile = "claude_sonnet_epistolary"

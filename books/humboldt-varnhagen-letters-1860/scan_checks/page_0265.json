@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "humboldt-varnhagen-letters-1860",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 265,
+  "reviewer": "native-vision-600ppi-scan-check",
+  "checked_at": "2026-11-19T15:37:51.442581+00:00",
+  "source_page_sha256": "b0d9a8bb370ae9b42f61968b9b01265be930f7642a8ead0fb3efa5583f8ad996",
+  "render_png": "renders/page_0265.png",
+  "checks": [
+    {
+      "block_id": "p0265-b0001",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0265.png."
+    },
+    {
+      "block_id": "p0265-b0002",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0265.png."
+    },
+    {
+      "block_id": "p0265-b0003",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0265.png."
+    },
+    {
+      "block_id": "p0265-b0004",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0265.png."
+    },
+    {
+      "block_id": "p0265-b0005",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0265.png."
+    },
+    {
+      "block_id": "p0265-b0006",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0265.png."
+    },
+    {
+      "block_id": "p0265-b0007",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0265.png."
+    },
+    {
+      "block_id": "p0265-b0008",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0265.png."
+    },
+    {
+      "block_id": "p0265-b0009",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0265.png."
+    },
+    {
+      "block_id": "p0265-b0010",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0265.png."
+    }
+  ]
+}

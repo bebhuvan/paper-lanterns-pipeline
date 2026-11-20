@@ -1,0 +1,325 @@
+{
+  "version": "correction-v2",
+  "book_id": "tipu-sultan-select-letters-1811",
+  "reviewer": "visual-audit",
+  "created_at": "2026-11-17T21:33:24.415346+00:00",
+  "corrections": [
+    {
+      "correction_id": "tipu-p0042-b0004-001",
+      "page_number": 42,
+      "block_id_hint": "p0042-b0004",
+      "anchor_text": "47 | والي Wály . . . . . . | ساحر Sahir . . . . . . | 1793-4.",
+      "op": "set_text",
+      "replacement_tagged_text": "47 | والي <i>Wály</i> . . . . . . | ساحر <i>Sáhir</i> . . . . . . | 1793-4.",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Visual audit p0042: printed acute accent over 'a' in Sáhir.",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    },
+    {
+      "correction_id": "tipu-p0052-b0010-002",
+      "page_number": 52,
+      "block_id_hint": "p0052-b0010",
+      "anchor_text": "180 — the Seven Superintendents of the Post at the Seven Capital Cities of the Sultanuṭ (Circular) - - - - - - 215",
+      "op": "set_text",
+      "replacement_tagged_text": "180 — <i>the</i> Seven Superintendents of the Post <i>at the Seven Capital Cities of the Sultanut</i> (Circular) - - - - - - 215",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Visual audit p0052 (300dpi): plain italic 't' without underdot.",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    },
+    {
+      "correction_id": "tipu-p0067-b0003-003",
+      "page_number": 67,
+      "block_id_hint": "p0067-b0003",
+      "anchor_text": "importance (as one might be led to suppose), but merely shows the diligent application of the Sultan to business; the word night here implying some time after midnight.(3) Its insertion in such a dispatch as the preceding one, certainly carries with it an air of affectation.",
+      "op": "set_text",
+      "replacement_tagged_text": "importance (as one might be led to suppose), but merely shows the diligent application of the <i>Sultan</i> to business; the word <i>night</i> here implying some time after midnight.<sup>(3)</sup> Its insertion in such a dispatch as the preceding one, certainly carries with it an air of affectation.",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Visual audit p0067: raised superscript callout (3) missing <sup> tag.",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    },
+    {
+      "correction_id": "tipu-p0067-b0009-004",
+      "page_number": 67,
+      "block_id_hint": "p0067-b0009",
+      "anchor_text": "Representations of the contumacious conduct of the Zemindár of Nergúnd were frequently transmitted [by us], in the course of last year, to Noor Mahommed Khân, who, no doubt, communicated the same to all the chiefs there [Poonah]. If a petty Zemindár, and a subject of our government, like this, may not be punished, how shall our authority be maintained? The justice of this argument was admitted, even by Râo Râsta.(1) Thus the chastisement of this Zemindár became necessary. If he is brought to reason from thence [i. e. by the Mahrattah chiefs] it will be well; otherwise he will be exterminated.",
+      "op": "set_text",
+      "replacement_tagged_text": "Representations of the contumacious conduct of the <i>Zemindár</i> of <i>Nergúnd</i> were frequently transmitted [by us], in the course of last year, to Noor Mahommed Khân, who, no doubt, communicated the same to all the chiefs there [<i>Poonah</i>]. If a petty <i>Zemindár</i>, and a subject of our government, like this, may not be punished, how shall our authority be maintained? The justice of this argument was admitted, even by Râo Râsta.<sup>(1)</sup> Thus the chastisement of this <i>Zemindár</i> became necessary. If he is brought to reason from thence [<i>i. e.</i> by the Mahrattah chiefs] it will be well; otherwise he will be exterminated.",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Visual audit p0067: raised superscript callout (1) missing <sup> tag.",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    },
+    {
+      "correction_id": "tipu-p0137-b0009-005",
+      "page_number": 137,
+      "block_id_hint": "p0137-b0009",
+      "anchor_text": "To MAHOMMED GHYÂS and NOOR MAHOMMED KHÂN; dated\n26th BEHÂRY. (9th June.)",
+      "op": "set_text",
+      "replacement_tagged_text": "<i>To</i> <sc>MAHOMMED GHYÂS</sc> <i>and</i> <sc>NOOR MAHOMMED KHÂN</sc>; <i>dated</i>\n26<i>th</i> <sc>BEHÂRY</sc>. (9<i>th June</i>.)",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Visual audit p0137: 'dated' is clearly printed.",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    },
+    {
+      "correction_id": "tipu-p0277-b0004-006",
+      "page_number": 277,
+      "block_id_hint": "p0277-b0004",
+      "anchor_text": "Rooe Wurm-râj, who presented himself before us, was honored with a grant of the farm of the Taalúk of Cherkul, and with other gifts. If you [in like manner] had come [to us], agreeably to our orders, you [also] would assuredly have experienced our bounteous favour. You will learn the remaining [or further] particulars from the letter of Fukhrûd-dęen.",
+      "op": "set_text",
+      "replacement_tagged_text": "Rooe Wurm-râj, who presented himself before us, was honored with a grant of the farm of the <i>Taalúk</i> of <i>Cherkul</i>, and with other gifts. If you [in like manner] had come [to us], agreeably to our orders, you [also] would assuredly have experienced our bounteous favour. You will learn the remaining [or further] particulars from the letter of Fukhrûd-deen.",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Visual audit p0277: plain roman 'e' in Fukhrûd-deen, no ogonek.",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    },
+    {
+      "correction_id": "tipu-p0277-b0012-007",
+      "page_number": 277,
+      "block_id_hint": "p0277-b0012",
+      "anchor_text": "In a loose paper in my possession, containing dīrections for the regulation of military salutes on various occasions,(1*) there is a note, or memorandum, purporting, that the Sultan was born on the 14th of Túlooey of the year of the Higera 1165;",
+      "op": "set_text",
+      "replacement_tagged_text": "In a loose paper in my possession, containing directions for the regulation of military salutes on various occasions,<sup>(1*)</sup> there is a note, or memorandum, purporting, that the <i>Sultan</i> was born on the 14th of <i>Túlooey</i> of the year of the <i>Higera</i> 1165;",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Visual audit p0277: plain 'i' in directions, no macron.",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    },
+    {
+      "correction_id": "tipu-p0452-b0019-008",
+      "page_number": 452,
+      "block_id_hint": "p0452-b0019",
+      "anchor_text": "(6) Though the Nizám is distinguished by his title in the preceding verse, that was only the because it happened to suit the measure. He is generally, as in this place, called Hujjám (barber) and Hujjám Nulli, being a play on his proper name, Nizâm Alî.",
+      "op": "set_text",
+      "replacement_tagged_text": "(6) Though the <i>Nizám</i> is distinguished by his title in the preceding verse, that was only the because it happened to suit the measure. He is generally, as in this place, called <i>Hujjám</i> (barber) and <i>Hujjám Nulli</i>, being a play on his proper name, Nizâm Alî.",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Visual audit p0452: '(barber)' is clearly printed.",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    },
+    {
+      "correction_id": "tipu-p0500-b0011-009",
+      "page_number": 500,
+      "block_id_hint": "p0500-b0011",
+      "anchor_text": "(1) Two letters of the same date with this are omitted, it being sufficient to mention, that one of them directs some elephants belonging to Abdûl Hûkeem Khân, and which had been seized at Shánoor, to be sent to the Sultan’s camp, and the remainder to Seringapatam. The other letter announces the abandonment of the intended embassy to Pegù.",
+      "op": "set_text",
+      "replacement_tagged_text": "(1) Two letters of the same date with this are omitted, it being sufficient to mention, that one of them directs some elephants belonging to Abdûl Hûkeem Khân, and which had been seized at <i>Shánoor</i>, to be sent to the <i>Sultan’s</i> camp, and the remainder to <i>Seringapatam</i>. The other letter announces the abandonment of the intended embassy to <i>Pegu</i>.",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Visual audit p0500 (300dpi): plain italic 'Pegu' without grave accent.",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    },
+    {
+      "correction_id": "tipu-p0537-b0004-010",
+      "page_number": 537,
+      "block_id_hint": "p0537-b0004",
+      "anchor_text": "The Sultan here proceeds to detail the means(2) by which, in the course of the night, he made a lodgement at the foot of the fort, from whence he was enabled to fix his ladders. Previously, however, to attempting an escalade, he tried the effect of his batteries, but apparently with little success, the walls of the place having been hewn out of the rock, and rendered by himself, before its capture by the Mahrattahs, extremely strong. This case, the Sultan observes, furnished a verification of the proverb, which says, “ there is no help for the evil of one’s “ own creating.” In the mean while the Mahrattahs were encamped at the distance only of three coss, watching for a favorable opportunity of relieving the place. “ Under these circumstances,” continues the Sultan, “ not thinking a further “ delay of two or three days advisable, I determined on an immediate assault ; “ with which view I prepared three hundred men, composed of regulars, of Jyshe, “ and of Ehshám, who being placed over night in the lodgement made at the foot “ of the fort, were directed to rush forward at the hour of morning prayer, when “ a rocket signal would be made for the purpose. In aid of this enterprize, “ besides the fire from the batteries, I caused eight pieces of light artillery to be “ placed in the plain before the fort, upon the walls of which they were ordered “ to keep up such a close fire, as should prevent the garrison from manning them, “ and thereby facilitate the progress of the storming party. Agreeably to this “ arrangement, the latter commenced the assault exactly at dawn of day ; but “ were opposed with great firmness and courage by the infidels, who planting themselves at the part of the wall which had been breached, and by which the “ assailants advanced, hurled upon them from thence large stones, besides pouring “ amongst them, from all sides, a heavy discharge of musketry. On this occasion “ a Teepdár [colonel] who had mounted the wall, as well as several others, tasted “ the sherbet of martyrdom. All this time the besieged, notwithstanding the",
+      "op": "set_text",
+      "replacement_tagged_text": "The Sultan here proceeds to detail the means<sup>(2)</sup> by which, in the course of the night, he made a lodgement at the foot of the fort, from whence he was enabled to fix his ladders. Previously, however, to attempting an escalade, he tried the effect of his batteries, but apparently with little success, the walls of the place having been hewn out of the rock, and rendered by himself, before its capture by the Mahrattahs, extremely strong. This case, the <i>Sultan</i> observes, furnished a verification of the proverb, which says, “ there is no help for the evil of one’s “ own creating.” In the mean while the Mahrattahs were encamped at the distance only of three <i>coss</i>, watching for a favorable opportunity of relieving the place. “ Under these circumstances,” continues the <i>Sultan</i>, “ not thinking a further “ delay of two or three days advisable, I determined on an immediate assault ; “ with which view I prepared three hundred men, composed of regulars, of <i>Jyshe</i>, “ and of <i>Ehshám</i>, who being placed over night in the lodgement made at the foot “ of the fort, were directed to rush forward at the hour of morning prayer, when “ a rocket signal would be made for the purpose. In aid of this enterprize, “ besides the fire from the batteries, I caused eight pieces of light artillery to be “ placed in the plain before the fort, upon the walls of which they were ordered “ to keep up such a close fire, as should prevent the garrison from manning them, “ and thereby facilitate the progress of the storming party. Agreeably to this “ arrangement, the latter commenced the assault exactly at dawn of day ; but “ were opposed with great firmness and courage by the infidels, who planting themselves at the part of the wall which had been breached, and by which the “ assailants advanced, hurled upon them from thence large stones, besides pouring “ amongst them, from all sides, a heavy discharge of musketry. On this occasion “ a <i>Teepdár</i> [colonel] who had mounted the wall, as well as several others, tasted “ the sherbet of martyrdom. All this time the besieged, notwithstanding the",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Visual audit p0537: superscript callout (2), wrongly tagged <sub>.",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    },
+    {
+      "correction_id": "tipu-p0214-b0007-011",
+      "page_number": 214,
+      "block_id_hint": "p0214-b0007",
+      "anchor_text": "(3) Original توپ حلوي\n(4) Original قنباره } I am not quite certain that I have rendered these terms rightly.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0214-b0007-s1",
+          "type": "footnote",
+          "tagged_text": "(3) Original توپ حلوي } I am not quite certain that I have rendered these terms rightly.",
+          "note_label": "3"
+        },
+        {
+          "block_id": "p0214-b0007-s2",
+          "type": "footnote",
+          "tagged_text": "(4) Original قنباره } I am not quite certain that I have rendered these terms rightly.",
+          "note_label": "4"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split braced paired footnote (3)/(4) on p0214 for 1:1 callout linking.",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    },
+    {
+      "correction_id": "tipu-p0288-b0013-012",
+      "page_number": 288,
+      "block_id_hint": "p0288-b0013",
+      "anchor_text": "(2*) (3*) } Original قابو طلب",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0288-b0013-s1",
+          "type": "footnote",
+          "tagged_text": "(2*) } Original قابو طلب",
+          "note_label": "2*"
+        },
+        {
+          "block_id": "p0288-b0013-s2",
+          "type": "footnote",
+          "tagged_text": "(3*) } Original قابو طلب",
+          "note_label": "3*"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split braced paired footnote (2*)/(3*) on p0288 for 1:1 callout linking.",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    },
+    {
+      "correction_id": "tipu-p0375-b0012-013",
+      "page_number": 375,
+      "block_id_hint": "p0375-b0012",
+      "anchor_text": "(2) }\\n(3) } Names uncertain.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0375-b0012-s1",
+          "type": "footnote",
+          "tagged_text": "(2) } Names uncertain.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0375-b0012-s2",
+          "type": "footnote",
+          "tagged_text": "(3) } Names uncertain.",
+          "note_label": "3"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split braced paired footnote (2)/(3) on p0375 for 1:1 callout linking.",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    },
+    {
+      "correction_id": "tipu-p0391-b0011-014",
+      "page_number": 391,
+      "block_id_hint": "p0391-b0011",
+      "anchor_text": "(39) (39*) Original في الجملة",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0391-b0011-s1",
+          "type": "footnote",
+          "tagged_text": "(39) Original في الجملة",
+          "note_label": "39"
+        },
+        {
+          "block_id": "p0391-b0011-s2",
+          "type": "footnote",
+          "tagged_text": "(39*) Original في الجملة",
+          "note_label": "39*"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split paired footnote (39)/(39*) on p0391 for 1:1 callout linking.",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    },
+    {
+      "correction_id": "tipu-p0392-b0011-015",
+      "page_number": 392,
+      "block_id_hint": "p0392-b0011",
+      "anchor_text": "(47) (48) Original مستقل بجاگیر بوده در نوکري سرکار حاضر باشد I confess myself to be quite uncertain as to the right meaning of this passage. It may import, that he was to remain with two thousand horse on his Jageer, but to hold himself always in readiness to join the Sultan when ordered ; or the sense may be, that which I have given in the text. Hûsain Ali states, that Kûtbûddeen, unable to maintain his footing in the district, was compelled, some time after the Sultan’s departure from Adoni, to retire to Gooty.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0392-b0011-s1",
+          "type": "footnote",
+          "tagged_text": "(47) Original مستقل بجاگیر بوده در نوکري سرکار حاضر باشد I confess myself to be quite uncertain as to the right meaning of this passage. It may import, that he was to remain with two thousand horse on his <i>Jageer</i>, but to hold himself always in readiness to join the <i>Sultan</i> when ordered ; or the sense may be, that which I have given in the text. Hûsain Ali states, that Kûtbûddeen, unable to maintain his footing in the district, was compelled, some time after the <i>Sultan’s</i> departure from <i>Adoni</i>, to retire to <i>Gooty</i>.",
+          "note_label": "47"
+        },
+        {
+          "block_id": "p0392-b0011-s2",
+          "type": "footnote",
+          "tagged_text": "(48) } See combined note (47).",
+          "note_label": "48"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Split braced paired footnote (47)/(48) on p0392 for 1:1 callout linking.",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    },
+    {
+      "correction_id": "tipu-p0402-b0013-016",
+      "page_number": 402,
+      "block_id_hint": "p0402-b0013",
+      "anchor_text": "(2*) Original باغي شده “ having revolted, or rebelled.”",
+      "op": "set_note_label",
+      "replacement_note_label": "2",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "1811 print has body callout (2) matched to footnote printed (2*).",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    },
+    {
+      "correction_id": "tipu-p0419-b0012-017",
+      "page_number": 419,
+      "block_id_hint": "p0419-b0012",
+      "anchor_text": "(3*) Original کیفیت اینست",
+      "op": "set_note_label",
+      "replacement_note_label": "3",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "1811 print has second body callout (3) matched to footnote printed (3*).",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    },
+    {
+      "correction_id": "tipu-p0429-b0014-018",
+      "page_number": 429,
+      "block_id_hint": "p0429-b0014",
+      "anchor_text": "(2*) Original بسالت ومعلي منزلت",
+      "op": "set_note_label",
+      "replacement_note_label": "2",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "1811 print has second body callout (2) matched to footnote printed (2*).",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    },
+    {
+      "correction_id": "tipu-p0451-b0012-019",
+      "page_number": 451,
+      "block_id_hint": "p0451-b0012",
+      "anchor_text": "(1*) Original چهار طفل اسد الهي باهوش",
+      "op": "set_note_label",
+      "replacement_note_label": "1",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "1811 print has body callout (1) matched to footnote printed (1*).",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    },
+    {
+      "correction_id": "tipu-p0541-b0006-type",
+      "page_number": 541,
+      "block_id_hint": "p0541-b0006",
+      "anchor_text": "(11) The circumstance, which gave rise to the false intelligence conveyed to the Mahrattahs on this occasion, is related by the Sultan in terms to the following effect. Contrary to his established custom, he had given orders, over night, that no foragers should go out the following morning, as it was his intention to march. This order coming to the knowledge of the Mahrattah spies, who were harboured secretly in the camp of the Mahrattah Bárgeers, or hired cavalry, in the service of Tippoo, they converted it into a notice to prepare for a sudden attack upon the Mahrattah position, and hastened thither, accordingly, with the information. The Sultan had with him, at this time, about seven thousand of these horse, who had served himself and his father upwards of fifteen years ; all of whom he disbanded soon after the occurrence which has been related. “ Since that time,” observes the Sultan, “ the infidels have ceased to receive intelligence respecting my movements.”",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Footnote (11) mistyped as editorial.",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    },
+    {
+      "correction_id": "tipu-p0541-b0006-nl",
+      "page_number": 541,
+      "block_id_hint": "p0541-b0006",
+      "anchor_text": "(11) The circumstance, which gave rise to the false intelligence conveyed to the Mahrattahs on this occasion, is related by the Sultan in terms to the following effect. Contrary to his established custom, he had given orders, over night, that no foragers should go out the following morning, as it was his intention to march. This order coming to the knowledge of the Mahrattah spies, who were harboured secretly in the camp of the Mahrattah Bárgeers, or hired cavalry, in the service of Tippoo, they converted it into a notice to prepare for a sudden attack upon the Mahrattah position, and hastened thither, accordingly, with the information. The Sultan had with him, at this time, about seven thousand of these horse, who had served himself and his father upwards of fifteen years ; all of whom he disbanded soon after the occurrence which has been related. “ Since that time,” observes the Sultan, “ the infidels have ceased to receive intelligence respecting my movements.”",
+      "op": "set_note_label",
+      "replacement_note_label": "11",
+      "reviewer": "visual-audit",
+      "source": "human",
+      "note": "Assign note_label '11' to footnote p0541-b0006.",
+      "created_at": "2026-11-17T21:33:24.415346+00:00"
+    }
+  ]
+}

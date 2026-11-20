@@ -1,0 +1,868 @@
+{
+  "version": "correction-v2",
+  "book_id": "eic-letters-received-vol-3-1615",
+  "created_at": "2026-11-18T06:11:30.959458+00:00",
+  "corrections": [
+    {
+      "correction_id": "v3-p0257-b0008-clear-r",
+      "page_number": 257,
+      "block_id_hint": "p0257-b0008",
+      "anchor_text": "Mr. Ettonn in Meaco hath sold some 400 taylls of goods. I would you could sell also, for our Captain hath need of money, etc. I have received the Secretary's letter to Saffe Donno5 about the release of Damian and John de Levano.",
+      "op": "set_text",
+      "replacement_tagged_text": "Mr. Ettonn in Meaco hath sold some 400 taylls of goods. I would you could sell also, for our Captain hath need of money, etc. I have received the Secretary's letter to Saffe Donno<sup>5</sup> about the release of Damian and John de Levano.",
+      "reviewer": "visual-audit",
+      "note": "Verified on page_0257.png: clearly reads 'our Captain'.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0361-b0022-pang-lima",
+      "page_number": 361,
+      "block_id_hint": "p0361-b0022",
+      "anchor_text": "Ponlema.—Malay Pang-lïma, a chief or governor. Cp. p. 191.",
+      "op": "set_text",
+      "replacement_tagged_text": "<i>Ponlema.</i>—Malay <i>Pang-līma</i>, a chief or governor. Cp. p. 191.",
+      "reviewer": "visual-audit",
+      "note": "Verified on 300dpi crop zoom_p361_panglima.png: printed with macron 'Pang-līma', not diaeresis.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0327-b0003-num-331",
+      "page_number": 327,
+      "block_id_hint": "p0327-b0003",
+      "anchor_text": "33I",
+      "op": "set_text",
+      "replacement_tagged_text": "331",
+      "reviewer": "visual-audit",
+      "note": "Verified on page_0327.png: bold serif numeral 331 (matching '1' in dateline/text).",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0171-b0004-merge-cosig",
+      "page_number": 171,
+      "block_id_hint": "p0171-b0004",
+      "anchor_text": "John Millwarde.\nWm. Nicolls.\nJohn Yeates.\nJohn Parsons.",
+      "op": "set_text",
+      "replacement_tagged_text": "John Millwarde.\nWm. Nicolls.\nJohn Yeates.\nJohn Parsons.\n\nArthur Speike.\nJohn Sandcroft.\nEdmond Aspinall.\nSamuell Juxon.\nRobt. Johnson.",
+      "reviewer": "visual-audit",
+      "note": "Verified on page_0171.png: merge two-column co-signatures of Consultation 281 into one signature block.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0171-b0005-drop-folded",
+      "page_number": 171,
+      "block_id_hint": "p0171-b0005",
+      "anchor_text": "Arthur Speike.\nJohn Sandcroft.\nEdmond Aspinall.\nSamuell Juxon.\nRobt. Johnson.",
+      "op": "drop_residue",
+      "reviewer": "visual-audit",
+      "note": "Second column of Consultation 281 co-signatures merged into p0171-b0004.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0168-b0007-body",
+      "page_number": 168,
+      "block_id_hint": "p0168-b0007",
+      "anchor_text": "Robt. Johnson.",
+      "op": "set_type",
+      "replacement_type": "body",
+      "reviewer": "visual-audit",
+      "note": "Internal council opinion/clause signature within single numbered document; keep closing signature only.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0168-b0009-body",
+      "page_number": 168,
+      "block_id_hint": "p0168-b0009",
+      "anchor_text": "Samuel Juxon.",
+      "op": "set_type",
+      "replacement_type": "body",
+      "reviewer": "visual-audit",
+      "note": "Internal council opinion/clause signature within single numbered document; keep closing signature only.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0169-b0004-body",
+      "page_number": 169,
+      "block_id_hint": "p0169-b0004",
+      "anchor_text": "Edmond Aspinall.",
+      "op": "set_type",
+      "replacement_type": "body",
+      "reviewer": "visual-audit",
+      "note": "Internal council opinion/clause signature within single numbered document; keep closing signature only.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0169-b0006-body",
+      "page_number": 169,
+      "block_id_hint": "p0169-b0006",
+      "anchor_text": "John Sandcroft.",
+      "op": "set_type",
+      "replacement_type": "body",
+      "reviewer": "visual-audit",
+      "note": "Internal council opinion/clause signature within single numbered document; keep closing signature only.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0170-b0005-body",
+      "page_number": 170,
+      "block_id_hint": "p0170-b0005",
+      "anchor_text": "Arthur Spike.4",
+      "op": "set_type",
+      "replacement_type": "body",
+      "reviewer": "visual-audit",
+      "note": "Internal council opinion/clause signature within single numbered document; keep closing signature only.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0172-b0010-body",
+      "page_number": 172,
+      "block_id_hint": "p0172-b0010",
+      "anchor_text": "John Millward.\nWm. Nicolls.\nJohn Yeates.",
+      "op": "set_type",
+      "replacement_type": "body",
+      "reviewer": "visual-audit",
+      "note": "Internal council opinion/clause signature within single numbered document; keep closing signature only.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0158-b0004-body",
+      "page_number": 158,
+      "block_id_hint": "p0158-b0004",
+      "anchor_text": "Lucas Anthonison.",
+      "op": "set_type",
+      "replacement_type": "body",
+      "reviewer": "visual-audit",
+      "note": "Internal council opinion/clause signature within single numbered document; keep closing signature only.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0202-b0006-body",
+      "page_number": 202,
+      "block_id_hint": "p0202-b0006",
+      "anchor_text": "Lucas Antheuniss.",
+      "op": "set_type",
+      "replacement_type": "body",
+      "reviewer": "visual-audit",
+      "note": "Internal council opinion/clause signature within single numbered document; keep closing signature only.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0203-b0016-body",
+      "page_number": 203,
+      "block_id_hint": "p0203-b0016",
+      "anchor_text": "Lucas Antheuniss.",
+      "op": "set_type",
+      "replacement_type": "body",
+      "reviewer": "visual-audit",
+      "note": "Internal council opinion/clause signature within single numbered document; keep closing signature only.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0204-b0025-body",
+      "page_number": 204,
+      "block_id_hint": "p0204-b0025",
+      "anchor_text": "Lucas Antheuniss.",
+      "op": "set_type",
+      "replacement_type": "body",
+      "reviewer": "visual-audit",
+      "note": "Internal council opinion/clause signature within single numbered document; keep closing signature only.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0262-b0005-body",
+      "page_number": 262,
+      "block_id_hint": "p0262-b0005",
+      "anchor_text": "Lucas Antheuniss.\nAdam Denton.\nRaphe Preston.\nThos. Brockedon.\nHumphry Elkington.\nTimothy Mallory.",
+      "op": "set_type",
+      "replacement_type": "body",
+      "reviewer": "visual-audit",
+      "note": "Internal council opinion/clause signature within single numbered document; keep closing signature only.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0229-b0007-merge-cosig",
+      "page_number": 229,
+      "block_id_hint": "p0229-b0007",
+      "anchor_text": "Lucas Antheuniss.\nAdam Denton.\nHugh Bennett.\nRobert Larkin.\nWilliam Sheppard.",
+      "op": "set_text",
+      "replacement_tagged_text": "Lucas Antheuniss.\nAdam Denton.\nHugh Bennett.\nRobert Larkin.\nWilliam Sheppard.\n\nThomas Brockedon.\nBenjamin Farie.\nRaphe Preston.\nHumphry Elkington.\nTimothy Mallory.",
+      "reviewer": "visual-audit",
+      "note": "Verified on page_0229.png: merge two-column co-signatures of Consultation 297.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0229-b0008-drop-folded",
+      "page_number": 229,
+      "block_id_hint": "p0229-b0008",
+      "anchor_text": "Thomas Brockedon.\nBenjamin Farie.\nRaphe Preston.\nHumphry Elkington.\nTimothy Mallory.",
+      "op": "drop_residue",
+      "reviewer": "visual-audit",
+      "note": "Second column of Consultation 297 co-signatures merged into p0229-b0007.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0104-b0003-ps",
+      "page_number": 104,
+      "block_id_hint": "p0104-b0003",
+      "anchor_text": "Sir, I pray remember my suit in this. For your letters I will, God willing, send them to Bantam or deliver them with my own hands.",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "reviewer": "visual-audit",
+      "note": "Continuation/postscript of preceding document after main signature.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0104-b0004-ps",
+      "page_number": 104,
+      "block_id_hint": "p0104-b0004",
+      "anchor_text": "Sir, I have sent you in the Hope an Antelope; the charge thereof I have delivered to Mr. Molleneux. Also I have sent in the same ship another antelope to Sir Thomas Smith, the which are things very rare in these parts, for they are not common here. I had three given me by the Governor in Baroche which be very fair ones. I think truly as yet none hath been carried home for England. The third antelope I gave to our General here, who I think hath sent it home also to Sir Thomas.1 I pray, Sir, remember my duty to Sir Duddly Diggs.2 And so I pray God to keep you and him in health.",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "reviewer": "visual-audit",
+      "note": "Continuation/postscript of preceding document after main signature.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0104-b0005-ps",
+      "page_number": 104,
+      "block_id_hint": "p0104-b0005",
+      "anchor_text": "Your Worship's to command,",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "reviewer": "visual-audit",
+      "note": "Continuation/postscript of preceding document after main signature.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0104-b0006-ps",
+      "page_number": 104,
+      "block_id_hint": "p0104-b0006",
+      "anchor_text": "John Oxwicke.",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "reviewer": "visual-audit",
+      "note": "Continuation/postscript of preceding document after main signature.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0120-b0003-ps",
+      "page_number": 120,
+      "block_id_hint": "p0120-b0003",
+      "anchor_text": "to be brought to make trial, which the dog so pinched that few hours after the leopard died.1 Since, the King of Perseia with a present sent hither half a dozen dogs. The King caused boars2 to be brought to fight with them, putting two or three dogs to a boar, yet none of them seized ; and remembering his own dog sent for him, who presently fastened on the boar ; so disgraced the Persian dogs, wherewith the King was exceedingly pleased. Two or three fierce mastiffs, a couple of Irish greyhounds and a couple of well [bred ?] water spaniels would give him great content.",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "reviewer": "visual-audit",
+      "note": "Continuation/postscript of preceding document after main signature.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0120-b0004-ps",
+      "page_number": 120,
+      "block_id_hint": "p0120-b0004",
+      "anchor_text": "Tho. Ker.",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "reviewer": "visual-audit",
+      "note": "Continuation/postscript of preceding document after main signature.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0208-b0003-ps",
+      "page_number": 208,
+      "block_id_hint": "p0208-b0003",
+      "anchor_text": "Loving friends to whom the above written shall come and may appertain, I pray you that if anything be omitted to be said in the aforesaid instrument through the short time to conclude the same here, that you will confer with Mr. Lucas Anthouness for conclusion ; his judgment in matters necessary thereto being sufficient to give instruction to every purpose belonging to the said business.",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "reviewer": "visual-audit",
+      "note": "Continuation/postscript of preceding document after main signature.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0208-b0004-ps",
+      "page_number": 208,
+      "block_id_hint": "p0208-b0004",
+      "anchor_text": "John Gourney.",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "reviewer": "visual-audit",
+      "note": "Continuation/postscript of preceding document after main signature.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0229-b0009-ps",
+      "page_number": 229,
+      "block_id_hint": "p0229-b0009",
+      "anchor_text": "Whereas the Right Honourable and Right Worshipful Company, having united all their particular Voyages into one Joint Stock, have given order both by their letters unto particular",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "reviewer": "visual-audit",
+      "note": "Continuation/postscript of preceding document after main signature.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0230-b0003-ps",
+      "page_number": 230,
+      "block_id_hint": "p0230-b0003",
+      "anchor_text": "Voyages and in general to all factories, and also by a commission granted unto the Worshipful General Downton, that the factors of the same after the coming away of the last ships of the same Voyage should balance up all remainders of goods, moneys, and good debts, and deliver the same over unto the chief factor of Bantam to be brought unto the Joint Stock; having also especial order from General Downton and the chief factor in Bantam to put the same in execution, We, Adam Denton, Robert Larkin and Benjamine Fary, according to the several orders aforesaid, have passed the said goods, moneys and good debts, remaining in Patania belonging to the Sixth, Seventh and Ninth Voyages over into the Joint Stock, as per the inventories delivered Mr. Ralphe Copindall appeareth; but now Mr. Lucas Antheuniss, cape merchant of the Seventh Voyage, coming from Siam and finding the moneys etc. belonging to the Seventh Voyage also passed over, notwithstanding the aforesaid reasons alleged, refused to allow of the same for divers reasons to himself best known,1 but requireth the same to be returned to his particular Voyage, and to make particular employment thereof and refer the deciding thereof to the Right Worshipful Company at home. Dated in Patania, this 9th of October anno 1615.",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "reviewer": "visual-audit",
+      "note": "Continuation/postscript of preceding document after main signature.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0230-b0004-ps",
+      "page_number": 230,
+      "block_id_hint": "p0230-b0004",
+      "anchor_text": "Lucas Antheuniss.",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "reviewer": "visual-audit",
+      "note": "Continuation/postscript of preceding document after main signature.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0277-b0007-ps",
+      "page_number": 277,
+      "block_id_hint": "p0277-b0007",
+      "anchor_text": "Teco, November 13th 1615.",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "reviewer": "visual-audit",
+      "note": "Continuation/postscript of preceding document after main signature.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0277-b0008-ps",
+      "page_number": 277,
+      "block_id_hint": "p0277-b0008",
+      "anchor_text": "Your Worships shall understand after that by general consent the Hector was to depart for Bantan and so for England, they of the Hector said peremptorily that she should stay at Teco and there prosecute her voyage ; which I being unable to resist consented to send the Thomas away, knowing how great prejudice it may be unto your Worships for two ships to stay in a place where the lading of one is much to be feared, and besides to enhance the price of pepper. So that I stay here for the settling of the factory and selling of the goods committed to my charge.",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "reviewer": "visual-audit",
+      "note": "Continuation/postscript of preceding document after main signature.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0277-b0009-ps",
+      "page_number": 277,
+      "block_id_hint": "p0277-b0009",
+      "anchor_text": "John Millward.",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "reviewer": "visual-audit",
+      "note": "Continuation/postscript of preceding document after main signature.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0292-b0003-ps",
+      "page_number": 292,
+      "block_id_hint": "p0292-b0003",
+      "anchor_text": "You are to note that the people of this country do not buy our sorts of India cloth so much for necessity as for the new and strange fashions and paintings thereof, being a people desiring change; for they have great store of silks and linen stuffs made here better and cheaper than we can afford our India cloth. So that we must strive to procure strange sorts of cloth with strange paintings every year; but such cloth as hath any red painting will not sell here. The Hollanders sell English broadcloth for 7 and 8 tayes the tattamy (which is 2⅓ yards at the least). The devil haul some of them for their pains. Valete.",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "reviewer": "visual-audit",
+      "note": "Continuation/postscript of preceding document after main signature.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0292-b0004-ps",
+      "page_number": 292,
+      "block_id_hint": "p0292-b0004",
+      "anchor_text": "Raphe Coppindall.",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "reviewer": "visual-audit",
+      "note": "Continuation/postscript of preceding document after main signature.",
+      "created_at": "2026-11-18T02:20:00+00:00"
+    },
+    {
+      "correction_id": "v3-p0410-b0007-slip",
+      "page_number": 410,
+      "block_id_hint": "p0410-b0007",
+      "anchor_text": "Form L-9\n20m-1,'42(8519)",
+      "op": "set_type",
+      "replacement_type": "scanner_residue",
+      "reviewer": "visual-audit",
+      "note": "UC Library borrower date-due slip (Form L-9), not part of original 1899 imprint.",
+      "created_at": "2026-11-18T02:22:00+00:00"
+    },
+    {
+      "correction_id": "v3-endnote-p0346-b0003-fn",
+      "page_number": 346,
+      "block_id": "p0346-b0003",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.346 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0346-b0004-fn",
+      "page_number": 346,
+      "block_id": "p0346-b0004",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.346 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0346-b0006-fn",
+      "page_number": 346,
+      "block_id": "p0346-b0006",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.346 as footnote.",
+      "replacement_note_label": "1"
+    },
+    {
+      "correction_id": "v3-endnote-p0346-b0007-fn",
+      "page_number": 346,
+      "block_id": "p0346-b0007",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.346 as footnote.",
+      "replacement_note_label": "2"
+    },
+    {
+      "correction_id": "v3-endnote-p0346-b0008-fn",
+      "page_number": 346,
+      "block_id": "p0346-b0008",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.346 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0346-b0009-fn",
+      "page_number": 346,
+      "block_id": "p0346-b0009",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.346 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0346-b0010-fn",
+      "page_number": 346,
+      "block_id": "p0346-b0010",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.346 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0346-b0011-fn",
+      "page_number": 346,
+      "block_id": "p0346-b0011",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.346 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0346-b0012-fn",
+      "page_number": 346,
+      "block_id": "p0346-b0012",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.346 as footnote.",
+      "replacement_note_label": "3"
+    },
+    {
+      "correction_id": "v3-endnote-p0348-b0002-fn",
+      "page_number": 348,
+      "block_id": "p0348-b0002",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.348 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0348-b0005-fn",
+      "page_number": 348,
+      "block_id": "p0348-b0005",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.348 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0351-b0003-fn",
+      "page_number": 351,
+      "block_id": "p0351-b0003",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.351 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0351-b0007-fn",
+      "page_number": 351,
+      "block_id": "p0351-b0007",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.351 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0355-b0003-fn",
+      "page_number": 355,
+      "block_id": "p0355-b0003",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.355 as footnote.",
+      "replacement_note_label": "2"
+    },
+    {
+      "correction_id": "v3-endnote-p0355-b0004-fn",
+      "page_number": 355,
+      "block_id": "p0355-b0004",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.355 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0355-b0005-fn",
+      "page_number": 355,
+      "block_id": "p0355-b0005",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.355 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0355-b0010-fn",
+      "page_number": 355,
+      "block_id": "p0355-b0010",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.355 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0355-b0015-fn",
+      "page_number": 355,
+      "block_id": "p0355-b0015",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.355 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0355-b0016-fn",
+      "page_number": 355,
+      "block_id": "p0355-b0016",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.355 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0359-b0003-fn",
+      "page_number": 359,
+      "block_id": "p0359-b0003",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.359 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0360-b0010-fn",
+      "page_number": 360,
+      "block_id": "p0360-b0010",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.360 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0361-b0003-fn",
+      "page_number": 361,
+      "block_id": "p0361-b0003",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.361 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0361-b0004-fn",
+      "page_number": 361,
+      "block_id": "p0361-b0004",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.361 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0365-b0014-fn",
+      "page_number": 365,
+      "block_id": "p0365-b0014",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.365 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0369-b0003-fn",
+      "page_number": 369,
+      "block_id": "p0369-b0003",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.369 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0369-b0004-fn",
+      "page_number": 369,
+      "block_id": "p0369-b0004",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.369 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0370-b0005-fn",
+      "page_number": 370,
+      "block_id": "p0370-b0005",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.370 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0370-b0012-fn",
+      "page_number": 370,
+      "block_id": "p0370-b0012",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.370 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0370-b0025-fn",
+      "page_number": 370,
+      "block_id": "p0370-b0025",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.370 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0373-b0003-fn",
+      "page_number": 373,
+      "block_id": "p0373-b0003",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.373 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0377-b0003-fn",
+      "page_number": 377,
+      "block_id": "p0377-b0003",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.377 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0382-b0003-fn",
+      "page_number": 382,
+      "block_id": "p0382-b0003",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.382 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0382-b0004-fn",
+      "page_number": 382,
+      "block_id": "p0382-b0004",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Classify backmatter endnote block on p.382 as footnote.",
+      "replacement_note_label": null
+    },
+    {
+      "correction_id": "v3-endnote-p0388-b0007-split",
+      "page_number": 388,
+      "block_id": "p0388-b0007",
+      "op": "split_block",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Split two-column endnote pair on p.388 into notes 1 and 3.",
+      "split_blocks": [
+        {
+          "block_id": "p0388-b0007-s1",
+          "type": "footnote",
+          "note_label": "1",
+          "tagged_text": "See pp. 134, 146, 170, 273."
+        },
+        {
+          "block_id": "p0388-b0007-s2",
+          "type": "footnote",
+          "note_label": "3",
+          "tagged_text": "From Pulo Ai."
+        }
+      ]
+    },
+    {
+      "correction_id": "v3-endnote-p0388-b0008-split",
+      "page_number": 388,
+      "block_id": "p0388-b0008",
+      "op": "split_block",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Split two-column endnote pair on p.388 into notes 2 and 4.",
+      "split_blocks": [
+        {
+          "block_id": "p0388-b0008-s1",
+          "type": "footnote",
+          "note_label": "2",
+          "tagged_text": "Cp. p. 114."
+        },
+        {
+          "block_id": "p0388-b0008-s2",
+          "type": "footnote",
+          "note_label": "4",
+          "tagged_text": "See p. 293."
+        }
+      ]
+    },
+    {
+      "correction_id": "v3-endnote-p0388-b0013-split",
+      "page_number": 388,
+      "block_id": "p0388-b0013",
+      "op": "split_block",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Split two-column endnote pair on p.388 into notes 1 and 3.",
+      "split_blocks": [
+        {
+          "block_id": "p0388-b0013-s1",
+          "type": "footnote",
+          "note_label": "1",
+          "tagged_text": "Saris."
+        },
+        {
+          "block_id": "p0388-b0013-s2",
+          "type": "footnote",
+          "note_label": "3",
+          "tagged_text": "Cp. note 3 to p. 239."
+        }
+      ]
+    },
+    {
+      "correction_id": "v3-endnote-p0388-b0014-split",
+      "page_number": 388,
+      "block_id": "p0388-b0014",
+      "op": "split_block",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Split two-column endnote pair on p.388 into notes 2 and 4.",
+      "split_blocks": [
+        {
+          "block_id": "p0388-b0014-s1",
+          "type": "footnote",
+          "note_label": "2",
+          "tagged_text": "Nafa (see vol. ii., p. 234)."
+        },
+        {
+          "block_id": "p0388-b0014-s2",
+          "type": "footnote",
+          "note_label": "4",
+          "tagged_text": "Now Shidzuoka."
+        }
+      ]
+    },
+    {
+      "correction_id": "v3-p0094-b0003-fn3",
+      "page_number": 94,
+      "block_id": "p0094-b0003",
+      "anchor_text": "The savage 8 your Worships sent by us",
+      "op": "set_text",
+      "replacement_tagged_text": "till we came into south latitude of 15° and then it veered to the northwards and grew more fair. The 19th of April 1614 we passed the equinoctial and coming into the latitude of 26° 30′ we met with the westerly winds, with which on the 15th of June we arrived in Souldanha, our first landfall being Conny Island,<sup>1</sup> which first did discover himself by his breach, the sea and winds being very high. The next night after our arrival, riding a storm, our boat split from our ship's stern and drove ashore and carried our small skiff away with her, both which before we could come to the knowledge of again was by the savages <sup>2</sup> so abused for the iron-work that they were the longer a-repairing. The savage <sup>3</sup> your Worships sent by us was put on land but we never saw him after, nor could get any refreshing of fresh victuals for our men during our abode here; which was a cause of our lesser stay. But before our departure the General sent me to discover the inland country and see for timber to mast our unbuilt pinnace, the which I found on the S.W. side of the Table <sup>4</sup> in abundance, either to build or mast small shipping. With this we supplied our wants in that kind; and our men being all in health, the 30th we departed. And when we came out, being becalmed, we had a strong current that set about the Cape Bona Spei to the N.N.W. after 8 leagues in 24 hours. The 4th of July after calms the wind came westerly, which put us about the Cape; the which having passed, we had a continual hindering current till we came 110 leagues past it, upon an E.S.E. <sup>6</sup>⁄<sub>11</sub> S. course, the same setting to the S.W. at sometimes 16 leagues in 24 hours, after which we had contrary winds and storms for the most part till the ending of this month, at what time we drew near the Island of Madagasker, where we saw a sail, whom we should have spoken withal but they were too great a distance from us upon a course we could not fetch. The 6th of August we came into Augustin Bay where to refresh our men, to procure which the General sent me into the land, but it was long before I could gain speech with the people, for fear they had of us; but after speech they brought us down cattle, the which we bought for money, one great bullock for 7 shillings, but far better cheap for small silver chains to hang about their necks. Here in my travel I found many balsam trees, the sap or gum",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Fix VLM 3->8 callout misread matching endnote 3 on p.354 (See p. 2.)."
+    },
+    {
+      "correction_id": "v3-p0365-b0011-fn4",
+      "page_number": 365,
+      "block_id": "p0365-b0011",
+      "anchor_text": "Condemned men.",
+      "op": "set_text",
+      "replacement_tagged_text": "<sup>4</sup> <i>Condemned men.</i>—These were convicts from Newgate, whom the Company had offered to transport to the Cape, as a charitable deed, to save them from being hanged. Upon arrival there, two were spared, upon Roe's intercession with Keeling, and the rest were set ashore, with a few tools, weapons and provisions. In the following year the <i>Gift,</i> on her homeward voyage, took off three of the survivors, and the rest are said to have found a passage in a Portuguese ship.",
+      "replacement_note_label": "4",
+      "source": "human",
+      "reviewer": "visual-audit",
+      "note": "Fix VLM 4->1 endnote label misread matching p.167 condemned men4."
+    }
+  ]
+}

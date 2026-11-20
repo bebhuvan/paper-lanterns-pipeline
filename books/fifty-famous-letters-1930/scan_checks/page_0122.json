@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "fifty-famous-letters-1930",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 122,
+  "reviewer": "native-vision-350ppi-scan-check",
+  "checked_at": "2026-11-19T06:33:11.386533+00:00",
+  "source_page_sha256": "310ee3a6ca43edd7a5203e8350b26c3681cb559be68d8202921ec7a29549edb3",
+  "render_png": "renders/page_0122.png",
+  "checks": [
+    {
+      "block_id": "p0122-b0001",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0122.png."
+    },
+    {
+      "block_id": "p0122-b0002",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0122.png."
+    },
+    {
+      "block_id": "p0122-b0003",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0122.png."
+    }
+  ],
+  "correction_ids": []
+}

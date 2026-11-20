@@ -1,0 +1,182 @@
+{
+  "version": "proof-ledger-v2",
+  "book_id": "tolstoy-essays-letters-1903",
+  "updated_at": "2026-11-16T14:17:08.861323+00:00",
+  "pages": {
+    "11": {
+      "page_number": 11,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-500ppi-scan-check",
+      "verified_at": "2026-11-16T14:17:08.861323+00:00",
+      "source_page_sha256": "819360f00b59d140a7b33693337169e6d55d0f38a060bb9ba44df0713ba10431",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0011",
+        "reread_block_ids": [
+          "p0011-b0017"
+        ],
+        "confirmed_block_ids": [
+          "p0011-b0017"
+        ]
+      },
+      "notes": "Verified against 500-PPI JP2 original leaf (books/tolstoy-essays-letters-1903/scan_checks/page_0011.jpg)."
+    },
+    "121": {
+      "page_number": 121,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-500ppi-scan-check",
+      "verified_at": "2026-11-16T14:17:08.861323+00:00",
+      "source_page_sha256": "48a657890e741d75f55f4eceeec9278c6945d58c8f27b0eee01ad609b80feb6d",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0121",
+        "reread_block_ids": [
+          "p0121-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0121-b0003"
+        ]
+      },
+      "notes": "Verified against 500-PPI JP2 original leaf (books/tolstoy-essays-letters-1903/scan_checks/page_0121.jpg)."
+    },
+    "161": {
+      "page_number": 161,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-500ppi-scan-check",
+      "verified_at": "2026-11-16T14:17:08.861323+00:00",
+      "source_page_sha256": "8992ff3be7e5f76306fa31f3c84da3efa2a715e553349cb0ef4a7664a55db3df",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0161",
+        "reread_block_ids": [
+          "p0161-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0161-b0005"
+        ]
+      },
+      "notes": "Verified against 500-PPI JP2 original leaf (books/tolstoy-essays-letters-1903/scan_checks/page_0161.jpg)."
+    },
+    "214": {
+      "page_number": 214,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-500ppi-scan-check",
+      "verified_at": "2026-11-16T14:17:08.861323+00:00",
+      "source_page_sha256": "a6aa80b449b19751c8238640aaafe8ac5b7fb8fb9df5df484b68d59e24977971",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0214",
+        "reread_block_ids": [
+          "p0214-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0214-b0006"
+        ]
+      },
+      "notes": "Verified against 500-PPI JP2 original leaf (books/tolstoy-essays-letters-1903/scan_checks/page_0214.jpg)."
+    },
+    "225": {
+      "page_number": 225,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-500ppi-scan-check",
+      "verified_at": "2026-11-16T14:17:08.861323+00:00",
+      "source_page_sha256": "2f00bba3b8bebfd6c8800e345d12486fc71eae5534c8c42a0935533b619a2acf",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0225",
+        "reread_block_ids": [
+          "p0225-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0225-b0007"
+        ]
+      },
+      "notes": "Verified against 500-PPI JP2 original leaf (books/tolstoy-essays-letters-1903/scan_checks/page_0225.jpg)."
+    },
+    "255": {
+      "page_number": 255,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-500ppi-scan-check",
+      "verified_at": "2026-11-16T14:17:08.861323+00:00",
+      "source_page_sha256": "97ab0b223125e78dca55b2461f4d5bcafd94854c57afe4461659d9643e991e11",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0255",
+        "reread_block_ids": [
+          "p0255-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0255-b0004"
+        ]
+      },
+      "notes": "Verified against 500-PPI JP2 original leaf (books/tolstoy-essays-letters-1903/scan_checks/page_0255.jpg)."
+    },
+    "291": {
+      "page_number": 291,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-500ppi-scan-check",
+      "verified_at": "2026-11-16T14:17:08.861323+00:00",
+      "source_page_sha256": "463da2b8b0026195d4277c24226182378c4675056bca6701b372b236cf86e0d6",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0291",
+        "reread_block_ids": [
+          "p0291-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0291-b0003"
+        ]
+      },
+      "notes": "Verified against 500-PPI JP2 original leaf (books/tolstoy-essays-letters-1903/scan_checks/page_0291.jpg)."
+    }
+  }
+}

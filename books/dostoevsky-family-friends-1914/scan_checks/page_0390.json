@@ -1,0 +1,19 @@
+{
+  "book_id": "dostoevsky-family-friends-1914",
+  "page_number": 390,
+  "check_id": "scan-check-p0390",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "915eb173e80ae1e40f1a02c4dd2769fa72a518b3a42c81ea08bed1a81f402d06",
+  "checks": [
+    {
+      "block_id": "p0390-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'Guêpes' circumflex spelling and 'Eugène Onegin' in Index folio 340."
+    },
+    {
+      "block_id": "p0390-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'Guêpes' circumflex spelling and 'Eugène Onegin' in Index folio 340."
+    }
+  ]
+}

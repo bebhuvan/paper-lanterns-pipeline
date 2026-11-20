@@ -1,0 +1,46 @@
+{
+  "book_id": "eic-letters-received-vol-3-1615",
+  "page_number": 344,
+  "check_id": "vol3-scan-check-p0344",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "135c46b398d536c4e2120e50fc824a629ba81c441483ca9b7cb4580499925a80",
+  "checked_at": "2026-11-18T02:30:00+00:00",
+  "checks": [
+    {
+      "block_id": "p0344-b0004",
+      "token": "^2",
+      "verdict": "printed_as_read",
+      "note": "Verified on NOTES. page scans (pp. 343-388): printed superscript endnote number."
+    },
+    {
+      "block_id": "p0344-b0005",
+      "token": "^3",
+      "verdict": "printed_as_read",
+      "note": "Verified on NOTES. page scans (pp. 343-388): printed superscript endnote number."
+    },
+    {
+      "block_id": "p0344-b0006",
+      "token": "^4",
+      "verdict": "printed_as_read",
+      "note": "Verified on NOTES. page scans (pp. 343-388): printed superscript endnote number."
+    },
+    {
+      "block_id": "p0344-b0008",
+      "token": "^1",
+      "verdict": "printed_as_read",
+      "note": "Verified on NOTES. page scans (pp. 343-388): printed superscript endnote number."
+    },
+    {
+      "block_id": "p0344-b0009",
+      "token": "^2",
+      "verdict": "printed_as_read",
+      "note": "Verified on NOTES. page scans (pp. 343-388): printed superscript endnote number."
+    },
+    {
+      "block_id": "p0344-b0010",
+      "token": "^3",
+      "verdict": "printed_as_read",
+      "note": "Verified on NOTES. page scans (pp. 343-388): printed superscript endnote number."
+    }
+  ]
+}

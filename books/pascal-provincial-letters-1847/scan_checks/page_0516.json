@@ -1,0 +1,19 @@
+{
+  "book_id": "pascal-provincial-letters-1847",
+  "page_number": 516,
+  "check_id": "scan-check-p0516",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "9ced83de484ec9444b99e7e5df0a450e180a7f77cea3b0169b03f83abb238381",
+  "checks": [
+    {
+      "block_id": "p0516-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Appendix No. I 'Decree of the Council of State against the Letters to a Provincial.'"
+    },
+    {
+      "block_id": "p0516-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Appendix No. I 'Decree of the Council of State against the Letters to a Provincial.'"
+    }
+  ]
+}

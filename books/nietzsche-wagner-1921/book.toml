@@ -1,0 +1,22 @@
+[book]
+book_id = "nietzsche-wagner-1921"
+title = "The Nietzsche-Wagner Correspondence"
+author_or_editor = "Friedrich Nietzsche, Richard Wagner, Elisabeth Förster-Nietzsche (ed.), Caroline V. Kerr (tr.), H. L. Mencken (intro.)"
+authors = ["Friedrich Nietzsche", "Richard Wagner", "Elisabeth Förster-Nietzsche (ed.)", "Caroline V. Kerr (tr.)", "H. L. Mencken (intro.)"]
+publication_year = 1921
+subtitle = "Edited by Elizabeth Foerster-Nietzsche; Translated by Caroline V. Kerr; Introduction by H. L. Mencken"
+imprint = "New York: Boni and Liveright, 1921"
+collection = "world-correspondence"
+language = "en"
+declared_scripts = []
+profile = "claude_sonnet_epistolary"
+active_run_id = "canonical-sonnet55-batch-v1"
+
+[source]
+archive_id = "nietzschewagnerc00niet"
+source_pdf = "sources/nietzschewagnerc00niet/nietzschewagnerc00niet.originals.pdf"
+source_pdf_sha256 = "fc99202af49681a2fe3794727b1eb5dbdd79766fa83c6fa85fedf381404a8d53"
+
+[extraction]
+profile = "claude_sonnet_epistolary"
+render_dpi = 400

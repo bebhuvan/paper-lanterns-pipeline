@@ -1,0 +1,49 @@
+{
+  "book_id": "sand-flaubert-letters-1922",
+  "page_number": 79,
+  "check_id": "scan-check-p0079",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "ecead6d58817db54f50e5bf3b26516279d7a84908db035307f67bbb0a37d8205",
+  "checks": [
+    {
+      "block_id": "p0079-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed pencil margin annotation ('like her books') isolated as scanner_residue on folio 35."
+    },
+    {
+      "block_id": "p0079-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed pencil margin annotation ('like her books') isolated as scanner_residue on folio 35."
+    },
+    {
+      "block_id": "p0079-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed pencil margin annotation ('like her books') isolated as scanner_residue on folio 35."
+    },
+    {
+      "block_id": "p0079-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed pencil margin annotation ('like her books') isolated as scanner_residue on folio 35."
+    },
+    {
+      "block_id": "p0079-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed pencil margin annotation ('like her books') isolated as scanner_residue on folio 35."
+    },
+    {
+      "block_id": "p0079-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed pencil margin annotation ('like her books') isolated as scanner_residue on folio 35."
+    },
+    {
+      "block_id": "p0079-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed pencil margin annotation ('like her books') isolated as scanner_residue on folio 35."
+    },
+    {
+      "block_id": "p0079-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed pencil margin annotation ('like her books') isolated as scanner_residue on folio 35."
+    }
+  ]
+}

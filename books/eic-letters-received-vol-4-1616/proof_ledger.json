@@ -1,0 +1,357 @@
+{
+  "version": "proof-ledger-v2",
+  "book_id": "eic-letters-received-vol-4-1616",
+  "updated_at": "2026-11-17T21:16:06.246923+00:00",
+  "pages": {
+    "17": {
+      "page_number": 17,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T21:16:06.142299+00:00",
+      "source_page_sha256": "bedf5f973dec16de8bc28cd19231d4dd0b807738ce4506a87c3e0ef6f1f89e8e",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "eic-letters-received-vol-4-1616-p0017",
+        "reread_block_ids": [
+          "p0017-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0017-b0005"
+        ]
+      },
+      "notes": null
+    },
+    "23": {
+      "page_number": 23,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T21:16:06.157490+00:00",
+      "source_page_sha256": "94688f97abf76fe12ab7da56298e5c3bb50fd564eb130b2d7cd039c36e4a2acb",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "eic-letters-received-vol-4-1616-p0023",
+        "reread_block_ids": [
+          "p0023-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0023-b0005"
+        ]
+      },
+      "notes": null
+    },
+    "31": {
+      "page_number": 31,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T21:16:06.164087+00:00",
+      "source_page_sha256": "9c54d8abf0cde9cc6cdbdf47e9389354e9852a040e60710843b8c28312fb989b",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "eic-letters-received-vol-4-1616-p0031",
+        "reread_block_ids": [
+          "p0031-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0031-b0005"
+        ]
+      },
+      "notes": null
+    },
+    "105": {
+      "page_number": 105,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T21:16:06.171471+00:00",
+      "source_page_sha256": "55418565a031f4625d73150fc4ae76061748d0897dccb01f7f6f4d14c1472fa7",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "eic-letters-received-vol-4-1616-p0105",
+        "reread_block_ids": [
+          "p0105-b0009"
+        ],
+        "confirmed_block_ids": [
+          "p0105-b0009"
+        ]
+      },
+      "notes": null
+    },
+    "113": {
+      "page_number": 113,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T21:16:06.178994+00:00",
+      "source_page_sha256": "41cbcae327e03cadf6ab1b443cdb8c1e42fc62f31a17a34cee56f74a0012a9f0",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "eic-letters-received-vol-4-1616-p0113",
+        "reread_block_ids": [
+          "p0113-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0113-b0003"
+        ]
+      },
+      "notes": null
+    },
+    "123": {
+      "page_number": 123,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T21:16:06.186431+00:00",
+      "source_page_sha256": "4bb49ac6930a7f0efdbeb7669afcb8d56fdbd9d2d4968aa36e4f87a742876c74",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "eic-letters-received-vol-4-1616-p0123",
+        "reread_block_ids": [
+          "p0123-b0023"
+        ],
+        "confirmed_block_ids": [
+          "p0123-b0023"
+        ]
+      },
+      "notes": null
+    },
+    "137": {
+      "page_number": 137,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T21:16:06.193365+00:00",
+      "source_page_sha256": "7cb1974671cb7c819793a15b12e95e92d030046df848f67ec347465db720e879",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "eic-letters-received-vol-4-1616-p0137",
+        "reread_block_ids": [
+          "p0137-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0137-b0007"
+        ]
+      },
+      "notes": null
+    },
+    "211": {
+      "page_number": 211,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T21:16:06.200481+00:00",
+      "source_page_sha256": "80e091c8ba66b33c3eba431682a5b178b8420965fa600da87ef197ac51b2a289",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "eic-letters-received-vol-4-1616-p0211",
+        "reread_block_ids": [
+          "p0211-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0211-b0005"
+        ]
+      },
+      "notes": null
+    },
+    "285": {
+      "page_number": 285,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T21:16:06.207608+00:00",
+      "source_page_sha256": "42c1b02f2570c32b6b26440340041baf0c43c81531b1650c22856726cb09c032",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "eic-letters-received-vol-4-1616-p0285",
+        "reread_block_ids": [
+          "p0285-b0016"
+        ],
+        "confirmed_block_ids": [
+          "p0285-b0016"
+        ]
+      },
+      "notes": null
+    },
+    "385": {
+      "page_number": 385,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T21:16:06.214880+00:00",
+      "source_page_sha256": "c42024ab10bbaf13b50f1b3dd2ae3637b980c7d57e74d710c84c90291c4c58c3",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "eic-letters-received-vol-4-1616-p0385",
+        "reread_block_ids": [
+          "p0385-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0385-b0004"
+        ]
+      },
+      "notes": null
+    },
+    "390": {
+      "page_number": 390,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T21:16:06.222746+00:00",
+      "source_page_sha256": "a98024486673c0112bfb52cf62dd281f8a73909769d48c5451b9fecb9f76ac79",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "eic-letters-received-vol-4-1616-p0390",
+        "reread_block_ids": [
+          "p0390-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0390-b0006"
+        ]
+      },
+      "notes": null
+    },
+    "397": {
+      "page_number": 397,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T21:16:06.229945+00:00",
+      "source_page_sha256": "bfbfad475bee059f75268e878e6d40ec56345b3d92711d39c78c3187c79cbe90",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "eic-letters-received-vol-4-1616-p0397",
+        "reread_block_ids": [
+          "p0397-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0397-b0005"
+        ]
+      },
+      "notes": null
+    },
+    "401": {
+      "page_number": 401,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T21:16:06.237423+00:00",
+      "source_page_sha256": "41dab78571d409aa8963026717a96af903e1209edd4862d01dc3bfd28f9d420e",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "eic-letters-received-vol-4-1616-p0401",
+        "reread_block_ids": [
+          "p0401-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0401-b0004"
+        ]
+      },
+      "notes": null
+    },
+    "407": {
+      "page_number": 407,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T21:16:06.246880+00:00",
+      "source_page_sha256": "ad4a559d2f2376de5f3153fbed573aad9b5efaf8698170851969dda596373bc4",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "eic-letters-received-vol-4-1616-p0407",
+        "reread_block_ids": [
+          "p0407-b0038"
+        ],
+        "confirmed_block_ids": [
+          "p0407-b0038"
+        ]
+      },
+      "notes": null
+    }
+  }
+}

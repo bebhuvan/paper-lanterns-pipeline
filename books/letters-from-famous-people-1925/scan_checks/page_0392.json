@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "letters-from-famous-people-1925",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 392,
+  "reviewer": "native-vision-350ppi-scan-check",
+  "checked_at": "2026-11-19T06:46:11.101499+00:00",
+  "source_page_sha256": "5d5c6c6e75d6c1cc5136dc76169f13d94fab8478668b31754c8fb0baafd98cbd",
+  "render_png": "renders/page_0392.png",
+  "checks": [
+    {
+      "block_id": "p0392-b0001",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0392.png."
+    }
+  ],
+  "correction_ids": []
+}

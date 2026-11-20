@@ -1,0 +1,21 @@
+[book]
+book_id = "tagore-letters-to-a-friend-1928"
+title = "Letters to a Friend"
+author_or_editor = "Rabindranath Tagore, C. F. Andrews (ed.)"
+authors = ["Rabindranath Tagore", "C. F. Andrews (ed.)"]
+publication_year = 1928
+subtitle = "Edited with Two Introductory Essays by C. F. Andrews"
+imprint = "London: George Allen & Unwin Ltd., 1928"
+collection = "indian-epistolary-heritage"
+language = "en"
+declared_scripts = ["Latin", "European diacritics"]
+profile = "claude_sonnet_epistolary"
+active_run_id = "canonical-sonnet55-batch-v1"
+
+[source]
+archive_id = "letterstofriend00tago"
+source_pdf = "sources/letterstofriend00tago/letterstofriend00tago.originals.pdf"
+source_pdf_sha256 = "034b7a0a3e2f54e2ee8f0e303aea254d978a8f83d092ba5592ceca8f138ddfce"
+
+[extraction]
+profile = "claude_sonnet_epistolary"

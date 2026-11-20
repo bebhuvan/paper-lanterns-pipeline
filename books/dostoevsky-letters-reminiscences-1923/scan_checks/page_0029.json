@@ -1,0 +1,39 @@
+{
+  "book_id": "dostoevsky-letters-reminiscences-1923",
+  "page_number": 29,
+  "check_id": "scan-check-p0029",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "9b5d1ffef57792ade950e7d57af2728c526ac507f2422e1ddb58c81856f4a15d",
+  "checks": [
+    {
+      "block_id": "p0029-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified closing '—Your F. Dostoevsky.' and 'On the margins :' postscripts."
+    },
+    {
+      "block_id": "p0029-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified closing '—Your F. Dostoevsky.' and 'On the margins :' postscripts."
+    },
+    {
+      "block_id": "p0029-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified closing '—Your F. Dostoevsky.' and 'On the margins :' postscripts."
+    },
+    {
+      "block_id": "p0029-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified closing '—Your F. Dostoevsky.' and 'On the margins :' postscripts."
+    },
+    {
+      "block_id": "p0029-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified closing '—Your F. Dostoevsky.' and 'On the margins :' postscripts."
+    },
+    {
+      "block_id": "p0029-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified closing '—Your F. Dostoevsky.' and 'On the margins :' postscripts."
+    }
+  ]
+}

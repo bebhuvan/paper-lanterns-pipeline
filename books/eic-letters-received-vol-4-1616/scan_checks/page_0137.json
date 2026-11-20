@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-4-1616",
+  "page_number": 137,
+  "check_id": "eic-letters-received-vol-4-1616-p0137",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "7cb1974671cb7c819793a15b12e95e92d030046df848f67ec347465db720e879",
+  "checked_at": "2026-11-17T21:16:06.113382+00:00",
+  "checks": [
+    {
+      "block_id": "p0137-b0007",
+      "token": "I am at present not half current",
+      "verdict": "printed_as_read",
+      "note": "Verified on sheet_vol4_a_glyphs_fn.png: unlabelled continuation of p. 96 fn. 3."
+    }
+  ]
+}

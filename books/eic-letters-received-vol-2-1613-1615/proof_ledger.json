@@ -1,0 +1,32 @@
+{
+  "version": "proof-ledger-v2",
+  "book_id": "eic-letters-received-vol-2-1613-1615",
+  "updated_at": "2026-11-17T21:03:31.593479+00:00",
+  "pages": {
+    "43": {
+      "page_number": 43,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T21:03:31.593454+00:00",
+      "source_page_sha256": "7ac7059be78d997f3702714ebb1f2f77adc8953cb22896844b3f2749ef59c6f2",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol2-scan-check-p0043",
+        "reread_block_ids": [
+          "p0043-b0017"
+        ],
+        "confirmed_block_ids": [
+          "p0043-b0017"
+        ]
+      },
+      "notes": null
+    }
+  }
+}

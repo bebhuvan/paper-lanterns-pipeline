@@ -1,0 +1,46 @@
+{
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Preliminaries & Title-Page",
+      "start_block_id": "p0005-b0001",
+      "end_block_id": "p0008-b0002"
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Preface",
+      "start_block_id": "p0009-b0003",
+      "end_block_id": "p0010-b0001"
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents & Corrigenda",
+      "start_block_id": "p0011-b0001",
+      "end_block_id": "p0018-b0014"
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Introduction",
+      "start_block_id": "p0019-b0001",
+      "end_block_id": "p0045-b0004"
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters Received: 1602–1613 (Nos. 1–123)",
+      "start_block_id": "p0047-b0001",
+      "end_block_id": "p0380-b0005"
+    },
+    {
+      "kind": "index",
+      "title": "Glossary",
+      "start_block_id": "p0381-b0001",
+      "end_block_id": "p0384-b0040"
+    },
+    {
+      "kind": "index",
+      "title": "Index & Colophon",
+      "start_block_id": "p0385-b0001",
+      "end_block_id": "p0410-b0005"
+    }
+  ]
+}

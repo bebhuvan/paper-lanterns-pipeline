@@ -1,0 +1,54 @@
+{
+  "book_id": "vivekananda-letters-1944",
+  "page_number": 416,
+  "check_id": "scan-check-p0416",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "3a3268a84e9d260f76631bd7204820972e5553db0bfe645c46dfe2d4ba3629be",
+  "checks": [
+    {
+      "block_id": "p0416-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter '(251)' faded digit '1'."
+    },
+    {
+      "block_id": "p0416-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter '(251)' faded digit '1'."
+    },
+    {
+      "block_id": "p0416-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter '(251)' faded digit '1'."
+    },
+    {
+      "block_id": "p0416-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter '(251)' faded digit '1'."
+    },
+    {
+      "block_id": "p0416-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter '(251)' faded digit '1'."
+    },
+    {
+      "block_id": "p0416-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter '(251)' faded digit '1'."
+    },
+    {
+      "block_id": "p0416-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter '(251)' faded digit '1'."
+    },
+    {
+      "block_id": "p0416-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter '(251)' faded digit '1'."
+    },
+    {
+      "block_id": "p0416-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter '(251)' faded digit '1'."
+    }
+  ]
+}

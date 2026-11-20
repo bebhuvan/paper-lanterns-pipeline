@@ -1,0 +1,89 @@
+{
+  "book_id": "hugo-letters-vol1-1896",
+  "page_number": 168,
+  "check_id": "scan-check-p0168",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "6184464a9de3f5f0d085967326238f8f8eb9db898bc4b2abfb758f77fe5c4d18",
+  "checks": [
+    {
+      "block_id": "p0168-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'François Ier.' ordinal in cast table on p. 168 (folio 154), clearing spurious callout."
+    },
+    {
+      "block_id": "p0168-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'François Ier.' ordinal in cast table on p. 168 (folio 154), clearing spurious callout."
+    },
+    {
+      "block_id": "p0168-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'François Ier.' ordinal in cast table on p. 168 (folio 154), clearing spurious callout."
+    },
+    {
+      "block_id": "p0168-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'François Ier.' ordinal in cast table on p. 168 (folio 154), clearing spurious callout."
+    },
+    {
+      "block_id": "p0168-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'François Ier.' ordinal in cast table on p. 168 (folio 154), clearing spurious callout."
+    },
+    {
+      "block_id": "p0168-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'François Ier.' ordinal in cast table on p. 168 (folio 154), clearing spurious callout."
+    },
+    {
+      "block_id": "p0168-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'François Ier.' ordinal in cast table on p. 168 (folio 154), clearing spurious callout."
+    },
+    {
+      "block_id": "p0168-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'François Ier.' ordinal in cast table on p. 168 (folio 154), clearing spurious callout."
+    },
+    {
+      "block_id": "p0168-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'François Ier.' ordinal in cast table on p. 168 (folio 154), clearing spurious callout."
+    },
+    {
+      "block_id": "p0168-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'François Ier.' ordinal in cast table on p. 168 (folio 154), clearing spurious callout."
+    },
+    {
+      "block_id": "p0168-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'François Ier.' ordinal in cast table on p. 168 (folio 154), clearing spurious callout."
+    },
+    {
+      "block_id": "p0168-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'François Ier.' ordinal in cast table on p. 168 (folio 154), clearing spurious callout."
+    },
+    {
+      "block_id": "p0168-b0013",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'François Ier.' ordinal in cast table on p. 168 (folio 154), clearing spurious callout."
+    },
+    {
+      "block_id": "p0168-b0014",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'François Ier.' ordinal in cast table on p. 168 (folio 154), clearing spurious callout."
+    },
+    {
+      "block_id": "p0168-b0015",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'François Ier.' ordinal in cast table on p. 168 (folio 154), clearing spurious callout."
+    },
+    {
+      "block_id": "p0168-b0016",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'François Ier.' ordinal in cast table on p. 168 (folio 154), clearing spurious callout."
+    }
+  ]
+}

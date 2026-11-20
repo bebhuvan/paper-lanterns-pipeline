@@ -1,0 +1,664 @@
+{
+  "schema_version": "1.0.0",
+  "benchmark_id": "epistolary_exam_v1",
+  "description": "12-page Stratified Multi-Book Epistolary Hard-Page Benchmark (6 tuning + 6 held_out across 10 correspondence volumes, 1582-1943, 8 languages/scripts, pixel-verified from archival scans).",
+  "total_pages": 12,
+  "splits": {
+    "tuning": [
+      "exam_01_newton_1756_p0013",
+      "exam_02_napoleon_1795_p0033",
+      "exam_03_faraday_1813_p0088",
+      "exam_04_goethe_1803_p0026",
+      "exam_05_vivekananda_1889_p0022",
+      "exam_06_eic_1611_p0150"
+    ],
+    "held_out": [
+      "exam_07_newton_1756_p0015",
+      "exam_08_gandhi_govt_1943_p0079",
+      "exam_09_bacon_1582_p0045",
+      "exam_10_bapu_mira_1926_p0027",
+      "exam_11_dostoevsky_1870_p0219",
+      "exam_12_eic_1612_p0210"
+    ]
+  },
+  "pages": [
+    {
+      "exam_id": "exam_01_newton_1756_p0013",
+      "split": "tuning",
+      "page_image": "pages/exam_01_newton_1756_p0013.png",
+      "expectation_file": "expectations/exam_01_newton_1756_p0013.json",
+      "page_sha256": "ade3f35662c4a602ab939d37cd0a196149d43bf375bac57f0fa8d980d67ebbce",
+      "source_pdf": "newton-bentley-letters-1756.pdf",
+      "source_page_number": 13,
+      "archive_id": "fourlettersfroms00newt",
+      "book_title": "Four Letters from Sir Isaac Newton to Doctor Bentley",
+      "year": 1756,
+      "era": "18c",
+      "languages": [
+        "en"
+      ],
+      "profile": "archaic_18c_epistolary",
+      "quirk_tags": [
+        "long_s_orthography",
+        "cascading_valediction",
+        "bottom_left_dateline",
+        "small_caps_signature",
+        "catchword_and_signature_mark"
+      ],
+      "case_id": "exam_01_newton_1756_p0013",
+      "id": "exam_01_newton_1756_p0013"
+    },
+    {
+      "exam_id": "exam_02_napoleon_1795_p0033",
+      "split": "tuning",
+      "page_image": "pages/exam_02_napoleon_1795_p0033.png",
+      "expectation_file": "expectations/exam_02_napoleon_1795_p0033.json",
+      "page_sha256": "43b26ce9bea3e6ea578299ee6f3a3864221b71d09037a5b9fe2420fc6c5d3eaf",
+      "source_pdf": "napoleon-joseph-correspondence-vol1.pdf",
+      "source_page_number": 33,
+      "archive_id": "confidentialcorr01napo",
+      "book_title": "The Confidential Correspondence of Napoleon Bonaparte with His Brother Joseph, Vol. I",
+      "year": 1856,
+      "era": "18c_19c",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "profile": "polyglot_epistolary",
+      "quirk_tags": [
+        "multi_letter_single_page",
+        "absent_salutation_and_signature",
+        "french_diacritics",
+        "symbol_footnote",
+        "cross_page_hyphenation",
+        "gathering_signature_mark"
+      ],
+      "case_id": "exam_02_napoleon_1795_p0033",
+      "id": "exam_02_napoleon_1795_p0033"
+    },
+    {
+      "exam_id": "exam_03_faraday_1813_p0088",
+      "split": "tuning",
+      "page_image": "pages/exam_03_faraday_1813_p0088.png",
+      "expectation_file": "expectations/exam_03_faraday_1813_p0088.json",
+      "page_sha256": "09ad3cdc901ac223c13f291bc99fb644b861393d2c66768b519daa1b31f4209c",
+      "source_pdf": "letters of Faraday.pdf",
+      "source_page_number": 88,
+      "archive_id": "lifeandlettersof01jone",
+      "book_title": "The Life and Letters of Faraday, Vol. I",
+      "year": 1870,
+      "era": "19c",
+      "languages": [
+        "en"
+      ],
+      "profile": "english_epistolary",
+      "quirk_tags": [
+        "life_and_letters_interleaved",
+        "marginal_shoulder_chronology",
+        "redacted_name_dash",
+        "unheadered_letter_opener",
+        "running_margin_quotes"
+      ],
+      "case_id": "exam_03_faraday_1813_p0088",
+      "id": "exam_03_faraday_1813_p0088"
+    },
+    {
+      "exam_id": "exam_04_goethe_1803_p0026",
+      "split": "tuning",
+      "page_image": "pages/exam_04_goethe_1803_p0026.png",
+      "expectation_file": "expectations/exam_04_goethe_1803_p0026.json",
+      "page_sha256": "6fef62c4881dabfab84045c7515c19af66b02cc278f7524bc326533a7ba82768",
+      "source_pdf": "Goethe's letters to Zelter.pdf",
+      "source_page_number": 26,
+      "archive_id": "goetheslettersto00goet",
+      "book_title": "Goethe's Letters to Zelter",
+      "year": 1887,
+      "era": "19c",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "profile": "polyglot_epistolary",
+      "quirk_tags": [
+        "unchaptered_epistolary",
+        "post_signature_enclosure",
+        "german_diacritics_inline",
+        "spaced_ellipsis"
+      ],
+      "case_id": "exam_04_goethe_1803_p0026",
+      "id": "exam_04_goethe_1803_p0026"
+    },
+    {
+      "exam_id": "exam_05_vivekananda_1889_p0022",
+      "split": "tuning",
+      "page_image": "pages/exam_05_vivekananda_1889_p0022.png",
+      "expectation_file": "expectations/exam_05_vivekananda_1889_p0022.json",
+      "page_sha256": "d5b1cfb15f7eb6798c102413422cb6ed03d63a1091e714b650bf291d5ce27b25",
+      "source_pdf": "Letters-Of-Swami-Vivekananda_text.pdf",
+      "source_page_number": 22,
+      "archive_id": "LettersOfSwamiVivekananda",
+      "book_title": "Letters of Swami Vivekananda",
+      "year": 1940,
+      "era": "19c_20c",
+      "languages": [
+        "en",
+        "sa"
+      ],
+      "profile": "indic_and_oriental_epistolary",
+      "quirk_tags": [
+        "multiscript_devanagari_sanskrit",
+        "iast_circumflex_diacritics",
+        "inline_return_address_and_close",
+        "mixed_symbol_and_numeric_callouts",
+        "cross_page_split_footnote"
+      ],
+      "case_id": "exam_05_vivekananda_1889_p0022",
+      "id": "exam_05_vivekananda_1889_p0022"
+    },
+    {
+      "exam_id": "exam_06_eic_1611_p0150",
+      "split": "tuning",
+      "page_image": "pages/exam_06_eic_1611_p0150.png",
+      "expectation_file": "expectations/exam_06_eic_1611_p0150.json",
+      "page_sha256": "8ab9ce303a000903fbc6376d74ecf6ae97a68c6b7085784ddf281836c9a6aef0",
+      "source_pdf": "Letters received by the East India Company.pdf",
+      "source_page_number": 150,
+      "archive_id": "lettersreceivedb01east",
+      "book_title": "Letters Received by the East India Company from Its Servants in the East, Vol. I",
+      "year": 1896,
+      "era": "17c",
+      "languages": [
+        "en",
+        "la"
+      ],
+      "profile": "archaic_18c_epistolary",
+      "quirk_tags": [
+        "postscript_after_signature",
+        "floral_ornamental_break",
+        "pious_invocation_dateline",
+        "woodcut_drop_cap_initial",
+        "anglo_oriental_trade_lexicon"
+      ],
+      "case_id": "exam_06_eic_1611_p0150",
+      "id": "exam_06_eic_1611_p0150"
+    },
+    {
+      "exam_id": "exam_07_newton_1756_p0015",
+      "split": "held_out",
+      "page_image": "pages/exam_07_newton_1756_p0015.png",
+      "expectation_file": "expectations/exam_07_newton_1756_p0015.json",
+      "page_sha256": "fa66bc9bd0d3332d52e0901c92944f6bb9dffa9a7ba48ae78789c3490296f036",
+      "source_pdf": "newton-bentley-letters-1756.pdf",
+      "source_page_number": 15,
+      "archive_id": "fourlettersfroms00newt",
+      "book_title": "Four Letters from Sir Isaac Newton to Doctor Bentley",
+      "year": 1756,
+      "era": "18c",
+      "languages": [
+        "en"
+      ],
+      "profile": "archaic_18c_epistolary",
+      "quirk_tags": [
+        "long_s_orthography",
+        "superscription_address_block",
+        "double_rule_ornament",
+        "drop_cap_initial",
+        "catchword_furniture"
+      ],
+      "case_id": "exam_07_newton_1756_p0015",
+      "id": "exam_07_newton_1756_p0015"
+    },
+    {
+      "exam_id": "exam_08_gandhi_govt_1943_p0079",
+      "split": "held_out",
+      "page_image": "pages/exam_08_gandhi_govt_1943_p0079.png",
+      "expectation_file": "expectations/exam_08_gandhi_govt_1943_p0079.json",
+      "page_sha256": "bbf408c0aeb7c0c1b1bbc4c1d6de103ee016a4fea6127e578992c4cebf0e4f3d",
+      "source_pdf": "gandhijis-correspondence-with-government.pdf",
+      "source_page_number": 79,
+      "archive_id": "gandhijiscorresp00gand",
+      "book_title": "Gandhiji's Correspondence with the Government, 1942-44",
+      "year": 1945,
+      "era": "20c",
+      "languages": [
+        "en"
+      ],
+      "profile": "english_epistolary",
+      "quirk_tags": [
+        "multi_letter_single_page",
+        "numeric_letter_headers_vs_bottom_folio",
+        "co_signed_signature",
+        "gathering_signature_mark"
+      ],
+      "case_id": "exam_08_gandhi_govt_1943_p0079",
+      "id": "exam_08_gandhi_govt_1943_p0079"
+    },
+    {
+      "exam_id": "exam_09_bacon_1582_p0045",
+      "split": "held_out",
+      "page_image": "pages/exam_09_bacon_1582_p0045.png",
+      "expectation_file": "expectations/exam_09_bacon_1582_p0045.json",
+      "page_sha256": "dec1f7dfab02464d66cc5745e94096c50271dec40fd2f5b05b6c9fbbe07be9f3",
+      "source_pdf": "The Letters and the life of Francis Bacon.pdf",
+      "source_page_number": 45,
+      "archive_id": "lettersandlifeof01sped",
+      "book_title": "The Letters and the Life of Francis Bacon, Vol. I",
+      "year": 1861,
+      "era": "16c_19c",
+      "languages": [
+        "en",
+        "it"
+      ],
+      "profile": "english_epistolary",
+      "quirk_tags": [
+        "jbig2_mrc_blot_damage",
+        "marginal_topical_shoulder_notes",
+        "textual_ms_variant_footnote",
+        "library_stamp_residue"
+      ],
+      "case_id": "exam_09_bacon_1582_p0045",
+      "id": "exam_09_bacon_1582_p0045"
+    },
+    {
+      "exam_id": "exam_10_bapu_mira_1926_p0027",
+      "split": "held_out",
+      "page_image": "pages/exam_10_bapu_mira_1926_p0027.png",
+      "expectation_file": "expectations/exam_10_bapu_mira_1926_p0027.json",
+      "page_sha256": "a1f28c158f3fe6a9edc7d4c9fc0e0a28e7318502b0bbda7c05adb518542acef2",
+      "source_pdf": "bapusletterstomi00gand.pdf",
+      "source_page_number": 27,
+      "archive_id": "bapusletterstomi00gand",
+      "book_title": "Bapu's Letters to Mira [1924-1948]",
+      "year": 1949,
+      "era": "20c",
+      "languages": [
+        "en",
+        "hi"
+      ],
+      "profile": "indic_and_oriental_epistolary",
+      "quirk_tags": [
+        "editorial_square_bracket_headnote",
+        "authorial_endorsement_and_postmark",
+        "devanagari_salutation_in_english_letter",
+        "redacted_name_ellipsis",
+        "multi_symbol_footnotes"
+      ],
+      "case_id": "exam_10_bapu_mira_1926_p0027",
+      "id": "exam_10_bapu_mira_1926_p0027"
+    },
+    {
+      "exam_id": "exam_11_dostoevsky_1870_p0219",
+      "split": "held_out",
+      "page_image": "pages/exam_11_dostoevsky_1870_p0219.png",
+      "expectation_file": "expectations/exam_11_dostoevsky_1870_p0219.json",
+      "page_sha256": "f311110a6f5c90ab6f47bd4f4af343998e3dd026cd8b08835ecd1812f02e1f79",
+      "source_pdf": "Letters of Fyodor Michailovitch Dostoevsky to his family and friends.pdf",
+      "source_page_number": 219,
+      "archive_id": "lettersoffyodorm00dostrich",
+      "book_title": "Letters of Fyodor Michailovitch Dostoevsky to His Family and Friends",
+      "year": 1914,
+      "era": "19c",
+      "languages": [
+        "en",
+        "ru-Latn"
+      ],
+      "profile": "polyglot_epistolary",
+      "quirk_tags": [
+        "age_bracket_running_header",
+        "unsigned_excerpt_close",
+        "dual_calendar_bracketed_dateline",
+        "inline_editorial_translation_brackets",
+        "russian_transliteration",
+        "handwritten_pencil_margin_noise"
+      ],
+      "case_id": "exam_11_dostoevsky_1870_p0219",
+      "id": "exam_11_dostoevsky_1870_p0219"
+    },
+    {
+      "exam_id": "exam_12_eic_1612_p0210",
+      "split": "held_out",
+      "page_image": "pages/exam_12_eic_1612_p0210.png",
+      "expectation_file": "expectations/exam_12_eic_1612_p0210.json",
+      "page_sha256": "c289895c662107e1365b5335d4f075267596db62ee0ad608ad99d7cd582ce890",
+      "source_pdf": "Letters received by the East India Company.pdf",
+      "source_page_number": 210,
+      "archive_id": "lettersreceivedb01east",
+      "book_title": "Letters Received by the East India Company from Its Servants in the East, Vol. I",
+      "year": 1896,
+      "era": "17c",
+      "languages": [
+        "en"
+      ],
+      "profile": "archaic_18c_epistolary",
+      "quirk_tags": [
+        "manuscript_damage_brackets_torn",
+        "editorial_conjecture_brackets",
+        "blank_lacuna_brackets",
+        "woodcut_drop_cap_initial",
+        "hanging_indent_argument_header"
+      ],
+      "case_id": "exam_12_eic_1612_p0210",
+      "id": "exam_12_eic_1612_p0210"
+    }
+  ],
+  "cases": [
+    {
+      "exam_id": "exam_01_newton_1756_p0013",
+      "split": "tuning",
+      "page_image": "pages/exam_01_newton_1756_p0013.png",
+      "expectation_file": "expectations/exam_01_newton_1756_p0013.json",
+      "page_sha256": "ade3f35662c4a602ab939d37cd0a196149d43bf375bac57f0fa8d980d67ebbce",
+      "source_pdf": "newton-bentley-letters-1756.pdf",
+      "source_page_number": 13,
+      "archive_id": "fourlettersfroms00newt",
+      "book_title": "Four Letters from Sir Isaac Newton to Doctor Bentley",
+      "year": 1756,
+      "era": "18c",
+      "languages": [
+        "en"
+      ],
+      "profile": "archaic_18c_epistolary",
+      "quirk_tags": [
+        "long_s_orthography",
+        "cascading_valediction",
+        "bottom_left_dateline",
+        "small_caps_signature",
+        "catchword_and_signature_mark"
+      ],
+      "case_id": "exam_01_newton_1756_p0013",
+      "id": "exam_01_newton_1756_p0013"
+    },
+    {
+      "exam_id": "exam_02_napoleon_1795_p0033",
+      "split": "tuning",
+      "page_image": "pages/exam_02_napoleon_1795_p0033.png",
+      "expectation_file": "expectations/exam_02_napoleon_1795_p0033.json",
+      "page_sha256": "43b26ce9bea3e6ea578299ee6f3a3864221b71d09037a5b9fe2420fc6c5d3eaf",
+      "source_pdf": "napoleon-joseph-correspondence-vol1.pdf",
+      "source_page_number": 33,
+      "archive_id": "confidentialcorr01napo",
+      "book_title": "The Confidential Correspondence of Napoleon Bonaparte with His Brother Joseph, Vol. I",
+      "year": 1856,
+      "era": "18c_19c",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "profile": "polyglot_epistolary",
+      "quirk_tags": [
+        "multi_letter_single_page",
+        "absent_salutation_and_signature",
+        "french_diacritics",
+        "symbol_footnote",
+        "cross_page_hyphenation",
+        "gathering_signature_mark"
+      ],
+      "case_id": "exam_02_napoleon_1795_p0033",
+      "id": "exam_02_napoleon_1795_p0033"
+    },
+    {
+      "exam_id": "exam_03_faraday_1813_p0088",
+      "split": "tuning",
+      "page_image": "pages/exam_03_faraday_1813_p0088.png",
+      "expectation_file": "expectations/exam_03_faraday_1813_p0088.json",
+      "page_sha256": "09ad3cdc901ac223c13f291bc99fb644b861393d2c66768b519daa1b31f4209c",
+      "source_pdf": "letters of Faraday.pdf",
+      "source_page_number": 88,
+      "archive_id": "lifeandlettersof01jone",
+      "book_title": "The Life and Letters of Faraday, Vol. I",
+      "year": 1870,
+      "era": "19c",
+      "languages": [
+        "en"
+      ],
+      "profile": "english_epistolary",
+      "quirk_tags": [
+        "life_and_letters_interleaved",
+        "marginal_shoulder_chronology",
+        "redacted_name_dash",
+        "unheadered_letter_opener",
+        "running_margin_quotes"
+      ],
+      "case_id": "exam_03_faraday_1813_p0088",
+      "id": "exam_03_faraday_1813_p0088"
+    },
+    {
+      "exam_id": "exam_04_goethe_1803_p0026",
+      "split": "tuning",
+      "page_image": "pages/exam_04_goethe_1803_p0026.png",
+      "expectation_file": "expectations/exam_04_goethe_1803_p0026.json",
+      "page_sha256": "6fef62c4881dabfab84045c7515c19af66b02cc278f7524bc326533a7ba82768",
+      "source_pdf": "Goethe's letters to Zelter.pdf",
+      "source_page_number": 26,
+      "archive_id": "goetheslettersto00goet",
+      "book_title": "Goethe's Letters to Zelter",
+      "year": 1887,
+      "era": "19c",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "profile": "polyglot_epistolary",
+      "quirk_tags": [
+        "unchaptered_epistolary",
+        "post_signature_enclosure",
+        "german_diacritics_inline",
+        "spaced_ellipsis"
+      ],
+      "case_id": "exam_04_goethe_1803_p0026",
+      "id": "exam_04_goethe_1803_p0026"
+    },
+    {
+      "exam_id": "exam_05_vivekananda_1889_p0022",
+      "split": "tuning",
+      "page_image": "pages/exam_05_vivekananda_1889_p0022.png",
+      "expectation_file": "expectations/exam_05_vivekananda_1889_p0022.json",
+      "page_sha256": "d5b1cfb15f7eb6798c102413422cb6ed03d63a1091e714b650bf291d5ce27b25",
+      "source_pdf": "Letters-Of-Swami-Vivekananda_text.pdf",
+      "source_page_number": 22,
+      "archive_id": "LettersOfSwamiVivekananda",
+      "book_title": "Letters of Swami Vivekananda",
+      "year": 1940,
+      "era": "19c_20c",
+      "languages": [
+        "en",
+        "sa"
+      ],
+      "profile": "indic_and_oriental_epistolary",
+      "quirk_tags": [
+        "multiscript_devanagari_sanskrit",
+        "iast_circumflex_diacritics",
+        "inline_return_address_and_close",
+        "mixed_symbol_and_numeric_callouts",
+        "cross_page_split_footnote"
+      ],
+      "case_id": "exam_05_vivekananda_1889_p0022",
+      "id": "exam_05_vivekananda_1889_p0022"
+    },
+    {
+      "exam_id": "exam_06_eic_1611_p0150",
+      "split": "tuning",
+      "page_image": "pages/exam_06_eic_1611_p0150.png",
+      "expectation_file": "expectations/exam_06_eic_1611_p0150.json",
+      "page_sha256": "8ab9ce303a000903fbc6376d74ecf6ae97a68c6b7085784ddf281836c9a6aef0",
+      "source_pdf": "Letters received by the East India Company.pdf",
+      "source_page_number": 150,
+      "archive_id": "lettersreceivedb01east",
+      "book_title": "Letters Received by the East India Company from Its Servants in the East, Vol. I",
+      "year": 1896,
+      "era": "17c",
+      "languages": [
+        "en",
+        "la"
+      ],
+      "profile": "archaic_18c_epistolary",
+      "quirk_tags": [
+        "postscript_after_signature",
+        "floral_ornamental_break",
+        "pious_invocation_dateline",
+        "woodcut_drop_cap_initial",
+        "anglo_oriental_trade_lexicon"
+      ],
+      "case_id": "exam_06_eic_1611_p0150",
+      "id": "exam_06_eic_1611_p0150"
+    },
+    {
+      "exam_id": "exam_07_newton_1756_p0015",
+      "split": "held_out",
+      "page_image": "pages/exam_07_newton_1756_p0015.png",
+      "expectation_file": "expectations/exam_07_newton_1756_p0015.json",
+      "page_sha256": "fa66bc9bd0d3332d52e0901c92944f6bb9dffa9a7ba48ae78789c3490296f036",
+      "source_pdf": "newton-bentley-letters-1756.pdf",
+      "source_page_number": 15,
+      "archive_id": "fourlettersfroms00newt",
+      "book_title": "Four Letters from Sir Isaac Newton to Doctor Bentley",
+      "year": 1756,
+      "era": "18c",
+      "languages": [
+        "en"
+      ],
+      "profile": "archaic_18c_epistolary",
+      "quirk_tags": [
+        "long_s_orthography",
+        "superscription_address_block",
+        "double_rule_ornament",
+        "drop_cap_initial",
+        "catchword_furniture"
+      ],
+      "case_id": "exam_07_newton_1756_p0015",
+      "id": "exam_07_newton_1756_p0015"
+    },
+    {
+      "exam_id": "exam_08_gandhi_govt_1943_p0079",
+      "split": "held_out",
+      "page_image": "pages/exam_08_gandhi_govt_1943_p0079.png",
+      "expectation_file": "expectations/exam_08_gandhi_govt_1943_p0079.json",
+      "page_sha256": "bbf408c0aeb7c0c1b1bbc4c1d6de103ee016a4fea6127e578992c4cebf0e4f3d",
+      "source_pdf": "gandhijis-correspondence-with-government.pdf",
+      "source_page_number": 79,
+      "archive_id": "gandhijiscorresp00gand",
+      "book_title": "Gandhiji's Correspondence with the Government, 1942-44",
+      "year": 1945,
+      "era": "20c",
+      "languages": [
+        "en"
+      ],
+      "profile": "english_epistolary",
+      "quirk_tags": [
+        "multi_letter_single_page",
+        "numeric_letter_headers_vs_bottom_folio",
+        "co_signed_signature",
+        "gathering_signature_mark"
+      ],
+      "case_id": "exam_08_gandhi_govt_1943_p0079",
+      "id": "exam_08_gandhi_govt_1943_p0079"
+    },
+    {
+      "exam_id": "exam_09_bacon_1582_p0045",
+      "split": "held_out",
+      "page_image": "pages/exam_09_bacon_1582_p0045.png",
+      "expectation_file": "expectations/exam_09_bacon_1582_p0045.json",
+      "page_sha256": "dec1f7dfab02464d66cc5745e94096c50271dec40fd2f5b05b6c9fbbe07be9f3",
+      "source_pdf": "The Letters and the life of Francis Bacon.pdf",
+      "source_page_number": 45,
+      "archive_id": "lettersandlifeof01sped",
+      "book_title": "The Letters and the Life of Francis Bacon, Vol. I",
+      "year": 1861,
+      "era": "16c_19c",
+      "languages": [
+        "en",
+        "it"
+      ],
+      "profile": "english_epistolary",
+      "quirk_tags": [
+        "jbig2_mrc_blot_damage",
+        "marginal_topical_shoulder_notes",
+        "textual_ms_variant_footnote",
+        "library_stamp_residue"
+      ],
+      "case_id": "exam_09_bacon_1582_p0045",
+      "id": "exam_09_bacon_1582_p0045"
+    },
+    {
+      "exam_id": "exam_10_bapu_mira_1926_p0027",
+      "split": "held_out",
+      "page_image": "pages/exam_10_bapu_mira_1926_p0027.png",
+      "expectation_file": "expectations/exam_10_bapu_mira_1926_p0027.json",
+      "page_sha256": "a1f28c158f3fe6a9edc7d4c9fc0e0a28e7318502b0bbda7c05adb518542acef2",
+      "source_pdf": "bapusletterstomi00gand.pdf",
+      "source_page_number": 27,
+      "archive_id": "bapusletterstomi00gand",
+      "book_title": "Bapu's Letters to Mira [1924-1948]",
+      "year": 1949,
+      "era": "20c",
+      "languages": [
+        "en",
+        "hi"
+      ],
+      "profile": "indic_and_oriental_epistolary",
+      "quirk_tags": [
+        "editorial_square_bracket_headnote",
+        "authorial_endorsement_and_postmark",
+        "devanagari_salutation_in_english_letter",
+        "redacted_name_ellipsis",
+        "multi_symbol_footnotes"
+      ],
+      "case_id": "exam_10_bapu_mira_1926_p0027",
+      "id": "exam_10_bapu_mira_1926_p0027"
+    },
+    {
+      "exam_id": "exam_11_dostoevsky_1870_p0219",
+      "split": "held_out",
+      "page_image": "pages/exam_11_dostoevsky_1870_p0219.png",
+      "expectation_file": "expectations/exam_11_dostoevsky_1870_p0219.json",
+      "page_sha256": "f311110a6f5c90ab6f47bd4f4af343998e3dd026cd8b08835ecd1812f02e1f79",
+      "source_pdf": "Letters of Fyodor Michailovitch Dostoevsky to his family and friends.pdf",
+      "source_page_number": 219,
+      "archive_id": "lettersoffyodorm00dostrich",
+      "book_title": "Letters of Fyodor Michailovitch Dostoevsky to His Family and Friends",
+      "year": 1914,
+      "era": "19c",
+      "languages": [
+        "en",
+        "ru-Latn"
+      ],
+      "profile": "polyglot_epistolary",
+      "quirk_tags": [
+        "age_bracket_running_header",
+        "unsigned_excerpt_close",
+        "dual_calendar_bracketed_dateline",
+        "inline_editorial_translation_brackets",
+        "russian_transliteration",
+        "handwritten_pencil_margin_noise"
+      ],
+      "case_id": "exam_11_dostoevsky_1870_p0219",
+      "id": "exam_11_dostoevsky_1870_p0219"
+    },
+    {
+      "exam_id": "exam_12_eic_1612_p0210",
+      "split": "held_out",
+      "page_image": "pages/exam_12_eic_1612_p0210.png",
+      "expectation_file": "expectations/exam_12_eic_1612_p0210.json",
+      "page_sha256": "c289895c662107e1365b5335d4f075267596db62ee0ad608ad99d7cd582ce890",
+      "source_pdf": "Letters received by the East India Company.pdf",
+      "source_page_number": 210,
+      "archive_id": "lettersreceivedb01east",
+      "book_title": "Letters Received by the East India Company from Its Servants in the East, Vol. I",
+      "year": 1896,
+      "era": "17c",
+      "languages": [
+        "en"
+      ],
+      "profile": "archaic_18c_epistolary",
+      "quirk_tags": [
+        "manuscript_damage_brackets_torn",
+        "editorial_conjecture_brackets",
+        "blank_lacuna_brackets",
+        "woodcut_drop_cap_initial",
+        "hanging_indent_argument_header"
+      ],
+      "case_id": "exam_12_eic_1612_p0210",
+      "id": "exam_12_eic_1612_p0210"
+    }
+  ]
+}

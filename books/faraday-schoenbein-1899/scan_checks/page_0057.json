@@ -1,0 +1,49 @@
+{
+  "book_id": "faraday-schoenbein-1899",
+  "page_number": 57,
+  "check_id": "scan-check-p0057",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "a5234d1d6da367ab6d271d0423de6cfb629792e0791f017ff3ae38d02c69b202",
+  "checks": [
+    {
+      "block_id": "p0057-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Trans. Elect. Soc.' (p0057-b0007) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0057-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Trans. Elect. Soc.' (p0057-b0007) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0057-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Trans. Elect. Soc.' (p0057-b0007) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0057-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Trans. Elect. Soc.' (p0057-b0007) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0057-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Trans. Elect. Soc.' (p0057-b0007) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0057-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Trans. Elect. Soc.' (p0057-b0007) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0057-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Trans. Elect. Soc.' (p0057-b0007) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0057-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Trans. Elect. Soc.' (p0057-b0007) is genuine 1899 printer ink."
+    }
+  ]
+}

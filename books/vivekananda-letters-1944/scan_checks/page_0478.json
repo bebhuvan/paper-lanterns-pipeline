@@ -1,0 +1,29 @@
+{
+  "book_id": "vivekananda-letters-1944",
+  "page_number": 478,
+  "check_id": "scan-check-p0478",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "72866aa44ed9193ea5eae81e0da6b94bd5d6ae6dd8119e3f2acb4e8628367fa7",
+  "checks": [
+    {
+      "block_id": "p0478-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified continuation of Letter (308) to Srimati Mrinalini Basu (no Letter 309 printed here)."
+    },
+    {
+      "block_id": "p0478-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified continuation of Letter (308) to Srimati Mrinalini Basu (no Letter 309 printed here)."
+    },
+    {
+      "block_id": "p0478-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified continuation of Letter (308) to Srimati Mrinalini Basu (no Letter 309 printed here)."
+    },
+    {
+      "block_id": "p0478-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified continuation of Letter (308) to Srimati Mrinalini Basu (no Letter 309 printed here)."
+    }
+  ]
+}

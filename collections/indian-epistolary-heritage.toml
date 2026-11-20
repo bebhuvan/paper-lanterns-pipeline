@@ -1,0 +1,39 @@
+slug = "indian-epistolary-heritage"
+title = "Indian Epistolary Heritage"
+subtitle = "Letters of the Freedom Movement, Philosophical Dialogues, Mercantile Records, and Multilingual Correspondence of South Asia"
+language_focus = ["en", "sa-Latn", "hi", "bn", "gu", "ur", "fa", "ar", "ta"]
+
+[source_prep]
+detect_sideways_pages = true
+min_render_dpi = 350
+max_render_dpi = 400
+
+[extraction]
+profile = "indic_and_oriental_epistolary"
+reader_profile = "indic_and_oriental_epistolary"
+primary_provider = "gemini"
+primary_model = "gemini-4-hydrogen"
+fallback_chain = [
+  "openrouter/qwen/qwen3-vl-235b-a22b-instruct",
+  "anthropic/claude-sonnet-5-5",
+]
+hotspot_model = "gemini/gemini-4-argon"
+boundary_model = "gemini/gemini-4-hydrogen"
+decision_model = "gemini/gemini-decision-1"
+media_resolution = "MEDIA_RESOLUTION_ULTRA_HIGH"
+render_dpi = 350
+thinking_level = "low"
+max_workers = 6
+enable_context_cache = true
+
+[validation]
+strict_block_conservation = true
+footnote_bidirectional_parity = true
+epistolary_boundary_audit = true
+preserve_hunterian_and_iast = true
+
+[publishing]
+cover_palette = "terracotta_khadi"
+emit_standalone_letters = true
+emit_tei_corresp = true
+emit_epub3 = true

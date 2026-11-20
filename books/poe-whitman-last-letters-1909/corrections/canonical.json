@@ -1,0 +1,202 @@
+{
+  "version": "correction-v2",
+  "book_id": "poe-whitman-last-letters-1909",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "generated_by": "scan-check",
+  "created_at": "2026-11-17T17:22:28.829439+00:00",
+  "corrections": [
+    {
+      "correction_id": "poe09-p0013-b0001-drop-ornament",
+      "page_number": 13,
+      "block_id": "p0013-b0001",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 13: Decorative floral headpiece banner above PREFACE; reclassify as scanner_residue to avoid fake illustration captions."
+    },
+    {
+      "correction_id": "poe09-p0015-b0001-drop-ornament",
+      "page_number": 15,
+      "block_id": "p0015-b0001",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 15: Decorative floral headpiece banner above CONTENTS; reclassify as scanner_residue to avoid fake illustration captions."
+    },
+    {
+      "correction_id": "poe09-p0016-b0007-drop-ornament",
+      "page_number": 16,
+      "block_id": "p0016-b0007",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 16: Decorative floral tailpiece beneath Contents; reclassify as scanner_residue to avoid fake illustration captions."
+    },
+    {
+      "correction_id": "poe09-p0019-b0001-drop-ornament",
+      "page_number": 19,
+      "block_id": "p0019-b0001",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 19: Decorative floral headpiece banner above INTRODUCTION; reclassify as scanner_residue to avoid fake illustration captions."
+    },
+    {
+      "correction_id": "poe09-p0023-b0001-drop-ornament",
+      "page_number": 23,
+      "block_id": "p0023-b0001",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 23: Decorative floral headpiece banner above FIRST LETTER; reclassify as scanner_residue to avoid fake illustration captions."
+    },
+    {
+      "correction_id": "poe09-p0039-b0001-drop-ornament",
+      "page_number": 39,
+      "block_id": "p0039-b0001",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 39: Decorative floral headpiece banner above SECOND LETTER; reclassify as scanner_residue to avoid fake illustration captions."
+    },
+    {
+      "correction_id": "poe09-p0050-b0001-drop-ornament",
+      "page_number": 50,
+      "block_id": "p0050-b0001",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 50: Decorative floral headpiece banner above THIRD LETTER; reclassify as scanner_residue to avoid fake illustration captions."
+    },
+    {
+      "correction_id": "poe09-p0052-b0001-drop-ornament",
+      "page_number": 52,
+      "block_id": "p0052-b0001",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 52: Decorative floral headpiece banner above FOURTH LETTER; reclassify as scanner_residue to avoid fake illustration captions."
+    },
+    {
+      "correction_id": "poe09-p0054-b0001-drop-ornament",
+      "page_number": 54,
+      "block_id": "p0054-b0001",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 54: Decorative floral headpiece banner above FIFTH LETTER; reclassify as scanner_residue to avoid fake illustration captions."
+    },
+    {
+      "correction_id": "poe09-p0056-b0001-drop-ornament",
+      "page_number": 56,
+      "block_id": "p0056-b0001",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 56: Decorative floral headpiece banner above SIXTH LETTER; reclassify as scanner_residue to avoid fake illustration captions."
+    },
+    {
+      "correction_id": "poe09-p0061-b0001-drop-ornament",
+      "page_number": 61,
+      "block_id": "p0061-b0001",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 61: Decorative floral headpiece banner above SEVENTH LETTER; reclassify as scanner_residue to avoid fake illustration captions."
+    },
+    {
+      "correction_id": "poe09-p0064-b0001-drop-ornament",
+      "page_number": 64,
+      "block_id": "p0064-b0001",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 64: Decorative floral headpiece banner above EIGHTH LETTER; reclassify as scanner_residue to avoid fake illustration captions."
+    },
+    {
+      "correction_id": "poe09-p0065-b0001-drop-ornament",
+      "page_number": 65,
+      "block_id": "p0065-b0001",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 65: Decorative floral headpiece banner above NINTH AND LAST LETTER; reclassify as scanner_residue to avoid fake illustration captions."
+    },
+    {
+      "correction_id": "poe09-p0066-b0001-drop-ornament",
+      "page_number": 66,
+      "block_id": "p0066-b0001",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 66: Decorative floral headpiece banner above REQUEST FOR BANNS OF MARRIAGE; reclassify as scanner_residue to avoid fake illustration captions."
+    },
+    {
+      "correction_id": "poe09-p0066-b0008-drop-ornament",
+      "page_number": 66,
+      "block_id": "p0066-b0008",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 66: Decorative floral tailpiece beneath Request for Banns; reclassify as scanner_residue to avoid fake illustration captions."
+    },
+    {
+      "correction_id": "poe09-p0067-b0001-drop-ornament",
+      "page_number": 67,
+      "block_id": "p0067-b0001",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 67: Decorative floral headpiece banner above CONTRACT CONCERNING MARRIAGE; reclassify as scanner_residue to avoid fake illustration captions."
+    },
+    {
+      "correction_id": "poe09-p0070-b0001-drop-ornament",
+      "page_number": 70,
+      "block_id": "p0070-b0001",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 70: Decorative floral headpiece banner above POE TO MRS. CLEMM; reclassify as scanner_residue to avoid fake illustration captions."
+    },
+    {
+      "correction_id": "poe09-p0071-b0001-drop-ornament",
+      "page_number": 71,
+      "block_id": "p0071-b0001",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 71: Knickerbocker Press printer's colophon tailpiece mark; reclassify as scanner_residue to avoid fake illustration captions."
+    },
+    {
+      "correction_id": "poe09-p0051-b0003-trans",
+      "page_number": 51,
+      "block_id": "p0051-b0003",
+      "op": "set_transition",
+      "replacement_transition": "none",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 51: Brown envelope endorsement under running header 'Third Letter' belongs to Third Letter (pp. 50-51)."
+    },
+    {
+      "correction_id": "poe09-p0068-b0003-listitem",
+      "page_number": 68,
+      "block_id": "p0068-b0003",
+      "op": "set_type",
+      "replacement_type": "list_item",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 68: Continuation of Estate Bank Stock & Notes inventory begun on p. 67 (not a blockquote)."
+    },
+    {
+      "correction_id": "poe09-p0068-b0006-trans",
+      "page_number": 68,
+      "block_id": "p0068-b0006",
+      "op": "set_transition",
+      "replacement_transition": "none",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 68: Second instrument within the three-part Marriage Contract (pp. 67-69), not a separate letter."
+    }
+  ]
+}

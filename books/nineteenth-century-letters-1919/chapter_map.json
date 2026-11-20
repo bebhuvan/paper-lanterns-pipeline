@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "nineteenth-century-letters-1919",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Preservation & Publisher Frontmatter",
+      "start_page": 1,
+      "end_page": 12
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Preface & Table of Contents",
+      "start_page": 13,
+      "end_page": 18
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Introduction",
+      "start_page": 19,
+      "end_page": 28
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Acknowledgments",
+      "start_page": 29,
+      "end_page": 30
+    },
+    {
+      "kind": "chapter",
+      "title": "Nineteenth Century Letters: Blake to DeQuincey (1757–1785)",
+      "start_page": 31,
+      "end_page": 171
+    },
+    {
+      "kind": "chapter",
+      "title": "Nineteenth Century Letters: Haydon to Shelley (1786–1792)",
+      "start_page": 172,
+      "end_page": 206
+    },
+    {
+      "kind": "chapter",
+      "title": "Nineteenth Century Letters: Bryant to Poe (1794–1809)",
+      "start_page": 207,
+      "end_page": 318
+    },
+    {
+      "kind": "chapter",
+      "title": "Nineteenth Century Letters: Lincoln, FitzGerald & Tennyson (1809)",
+      "start_page": 319,
+      "end_page": 365
+    },
+    {
+      "kind": "chapter",
+      "title": "Nineteenth Century Letters: Holmes to Motley (1809–1814)",
+      "start_page": 366,
+      "end_page": 443
+    },
+    {
+      "kind": "chapter",
+      "title": "Nineteenth Century Letters: Brontë to Huxley (1816–1825)",
+      "start_page": 444,
+      "end_page": 500
+    },
+    {
+      "kind": "chapter",
+      "title": "Nineteenth Century Letters: O'Brien to Stevenson (1828–1850)",
+      "start_page": 501,
+      "end_page": 564
+    },
+    {
+      "kind": "chapter",
+      "title": "Appendix",
+      "start_page": 565,
+      "end_page": 573
+    },
+    {
+      "kind": "backmatter",
+      "title": "Preservation Endpapers",
+      "start_page": 574,
+      "end_page": 580
+    }
+  ]
+}

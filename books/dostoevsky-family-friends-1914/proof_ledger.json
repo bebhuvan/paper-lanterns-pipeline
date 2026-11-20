@@ -1,0 +1,653 @@
+{
+  "version": "proof-ledger-v2",
+  "book_id": "dostoevsky-family-friends-1914",
+  "updated_at": "2026-11-17T10:17:33.466982+00:00",
+  "pages": {
+    "18": {
+      "page_number": 18,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T10:17:33.466982+00:00",
+      "source_page_sha256": "5f5b7bc253242f4b4f56b9b4a00fcb53917f15dd4bc62b2162e6daea67a3b346",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0018",
+        "reread_block_ids": [
+          "p0018-b0002",
+          "p0018-b0003",
+          "p0018-b0004",
+          "p0018-b0005",
+          "p0018-b0006",
+          "p0018-b0007",
+          "p0018-b0008",
+          "p0018-b0009",
+          "p0018-b0010",
+          "p0018-b0011",
+          "p0018-b0012",
+          "p0018-b0013",
+          "p0018-b0014",
+          "p0018-b0015",
+          "p0018-b0016",
+          "p0018-b0017",
+          "p0018-b0018",
+          "p0018-b0019",
+          "p0018-b0020",
+          "p0018-b0021",
+          "p0018-b0022",
+          "p0018-b0023",
+          "p0018-b0024",
+          "p0018-b0025",
+          "p0018-b0026",
+          "p0018-b0027",
+          "p0018-b0028",
+          "p0018-b0029"
+        ],
+        "confirmed_block_ids": [
+          "p0018-b0002",
+          "p0018-b0003",
+          "p0018-b0004",
+          "p0018-b0005",
+          "p0018-b0006",
+          "p0018-b0007",
+          "p0018-b0008",
+          "p0018-b0009",
+          "p0018-b0010",
+          "p0018-b0011",
+          "p0018-b0012",
+          "p0018-b0013",
+          "p0018-b0014",
+          "p0018-b0015",
+          "p0018-b0016",
+          "p0018-b0017",
+          "p0018-b0018",
+          "p0018-b0019",
+          "p0018-b0020",
+          "p0018-b0021",
+          "p0018-b0022",
+          "p0018-b0023",
+          "p0018-b0024",
+          "p0018-b0025",
+          "p0018-b0026",
+          "p0018-b0027",
+          "p0018-b0028",
+          "p0018-b0029"
+        ]
+      },
+      "notes": "Verified 'Eugénie Grandet' accented spelling in Chronological Table (1844)."
+    },
+    "44": {
+      "page_number": 44,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T10:17:33.466982+00:00",
+      "source_page_sha256": "f46026d0064760f3fa1fe869d754f70dbb390fde659982ebaa8743e53704e88b",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0044",
+        "reread_block_ids": [
+          "p0044-b0002",
+          "p0044-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0044-b0002",
+          "p0044-b0003"
+        ]
+      },
+      "notes": "Verified 'maître d'hôtel' and 'Béranger' circumflex/acute accents on folio 20."
+    },
+    "52": {
+      "page_number": 52,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T10:17:33.466982+00:00",
+      "source_page_sha256": "ae1934258509d7535c2ec515d0e638160a0ab333fc0ae34732235da8553bddd7",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0052",
+        "reread_block_ids": [
+          "p0052-b0002",
+          "p0052-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0052-b0002",
+          "p0052-b0003"
+        ]
+      },
+      "notes": "Verified 1914 compositor mismatch on folio 28: inline 'Bulgarin*' vs footnote '¹ Faddey Bulgarin (1789-1859)...'; paired via note_label='*'."
+    },
+    "53": {
+      "page_number": 53,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T10:17:33.466982+00:00",
+      "source_page_sha256": "25ef2b4304e654e21fd8f52e7474f1eacfa30e23abd7f4c22455b6589690c56e",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0053",
+        "reread_block_ids": [
+          "p0053-b0002",
+          "p0053-b0003",
+          "p0053-b0004",
+          "p0053-b0005",
+          "p0053-b0006",
+          "p0053-b0007",
+          "p0053-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0053-b0002",
+          "p0053-b0003",
+          "p0053-b0004",
+          "p0053-b0005",
+          "p0053-b0006",
+          "p0053-b0007",
+          "p0053-b0008"
+        ]
+      },
+      "notes": "Verified 'Guèpes' grave accent on folio 29 (Letter VIII)."
+    },
+    "67": {
+      "page_number": 67,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T10:17:33.466982+00:00",
+      "source_page_sha256": "67dbe9e8ee8f0d8ca77919160bb59dcda4954f742f3aa2bf9d356aa006367634",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0067",
+        "reread_block_ids": [
+          "p0067-b0001",
+          "p0067-b0002"
+        ],
+        "confirmed_block_ids": [
+          "p0067-b0001",
+          "p0067-b0002"
+        ]
+      },
+      "notes": "Verified Oval-framed portrait photograph of Michael Dostoevsky with Cyrillic signature 'М. М. Достоевскій' and caption 'MICHAEL DOSTOEVSKY.'"
+    },
+    "71": {
+      "page_number": 71,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T10:17:33.466982+00:00",
+      "source_page_sha256": "bc67790e242cddb823f134d5601c23e972287077af0c56f92fbc4f404245737b",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0071",
+        "reread_block_ids": [
+          "p0071-b0002",
+          "p0071-b0003",
+          "p0071-b0004",
+          "p0071-b0005",
+          "p0071-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0071-b0002",
+          "p0071-b0003",
+          "p0071-b0004",
+          "p0071-b0005",
+          "p0071-b0006"
+        ]
+      },
+      "notes": "Verified Letter XVI ('To his Brother Michael') opens directly with editorial bracket '[Postscript to a longer business letter, early in the year 1847.]'."
+    },
+    "219": {
+      "page_number": 219,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T10:17:33.466982+00:00",
+      "source_page_sha256": "c5a09175c1c4f3f23707c7dd51152665f44a1f2b1b3a04c390cb8d33c90a0654",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0219",
+        "reread_block_ids": [
+          "p0219-b0001",
+          "p0219-b0002"
+        ],
+        "confirmed_block_ids": [
+          "p0219-b0001",
+          "p0219-b0002"
+        ]
+      },
+      "notes": "Verified Russian MS facsimile of 'The Possessed, Part III.: Beginning of Chapter I.' classified purely as illustration + caption."
+    },
+    "232": {
+      "page_number": 232,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T10:17:33.466982+00:00",
+      "source_page_sha256": "512a9a1a3c768450a74de46bc135ee5dc5219a56a3fda882e8196b04854260ec",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0232",
+        "reread_block_ids": [
+          "p0232-b0004",
+          "p0232-b0005",
+          "p0232-b0006",
+          "p0232-b0007",
+          "p0232-b0008",
+          "p0232-b0009",
+          "p0232-b0010"
+        ],
+        "confirmed_block_ids": [
+          "p0232-b0004",
+          "p0232-b0005",
+          "p0232-b0006",
+          "p0232-b0007",
+          "p0232-b0008",
+          "p0232-b0009",
+          "p0232-b0010"
+        ]
+      },
+      "notes": "Confirmed genuine 1914 printer's transposition 'To his Niece Sfioa Alexandrovna' on Letter LVIII header (preserved verbatim; recipient metadata mapped cleanly)."
+    },
+    "242": {
+      "page_number": 242,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T10:17:33.466982+00:00",
+      "source_page_sha256": "4b7bfbe73c746d7cf039f6389cdb6182ff57a8c89ef003d51013da8df9d6d7d8",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0242",
+        "reread_block_ids": [
+          "p0242-b0002",
+          "p0242-b0003",
+          "p0242-b0004",
+          "p0242-b0005",
+          "p0242-b0006",
+          "p0242-b0007",
+          "p0242-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0242-b0002",
+          "p0242-b0003",
+          "p0242-b0004",
+          "p0242-b0005",
+          "p0242-b0006",
+          "p0242-b0007",
+          "p0242-b0008"
+        ]
+      },
+      "notes": "Verified Letter LIX postscripts after first signature continue through 'Your / Dostoevsky.' on folio 208."
+    },
+    "296": {
+      "page_number": 296,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T10:17:33.466982+00:00",
+      "source_page_sha256": "d519312c32d246d1216098bc7cffe6ce3e5711b7cd876476be8193b5bc72d861",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0296",
+        "reread_block_ids": [
+          "p0296-b0003",
+          "p0296-b0004",
+          "p0296-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0296-b0003",
+          "p0296-b0004",
+          "p0296-b0005"
+        ]
+      },
+      "notes": "Verified 'Die Räuber' umlaut in Letter LXXV on folio 254."
+    },
+    "297": {
+      "page_number": 297,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T10:17:33.466982+00:00",
+      "source_page_sha256": "118396a9ec76cfa5c5e276faaa711150ce538ec964e9817be3252e5aadf0ec17",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0297",
+        "reread_block_ids": [
+          "p0297-b0003",
+          "p0297-b0004",
+          "p0297-b0005",
+          "p0297-b0006",
+          "p0297-b0007",
+          "p0297-b0008",
+          "p0297-b0009",
+          "p0297-b0010",
+          "p0297-b0011"
+        ],
+        "confirmed_block_ids": [
+          "p0297-b0003",
+          "p0297-b0004",
+          "p0297-b0005",
+          "p0297-b0006",
+          "p0297-b0007",
+          "p0297-b0008",
+          "p0297-b0009",
+          "p0297-b0010",
+          "p0297-b0011"
+        ]
+      },
+      "notes": "Scan check folio 255: corrected VLM Roman numeral typo 'LXXXVI' to printed 'LXXVI' ('To I. S. Aksakov')."
+    },
+    "307": {
+      "page_number": 307,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T10:17:33.466982+00:00",
+      "source_page_sha256": "16bf1b3b8d6a570f58cadfc90b5e8f2475860e37aa4089def86e01da9f7f6d15",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0307",
+        "reread_block_ids": [
+          "p0307-b0001",
+          "p0307-b0002"
+        ],
+        "confirmed_block_ids": [
+          "p0307-b0001",
+          "p0307-b0002"
+        ]
+      },
+      "notes": "Verified 1838 Russian letter handwriting facsimile classified purely as illustration + caption."
+    },
+    "379": {
+      "page_number": 379,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T10:17:33.466982+00:00",
+      "source_page_sha256": "a4c4f433e17dedc839ae5518f95e02c65c66ceede47c34285adbb9fc8e741935",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0379",
+        "reread_block_ids": [
+          "p0379-b0003",
+          "p0379-b0004",
+          "p0379-b0005",
+          "p0379-b0006",
+          "p0379-b0007",
+          "p0379-b0008",
+          "p0379-b0009",
+          "p0379-b0010"
+        ],
+        "confirmed_block_ids": [
+          "p0379-b0003",
+          "p0379-b0004",
+          "p0379-b0005",
+          "p0379-b0006",
+          "p0379-b0007",
+          "p0379-b0008",
+          "p0379-b0009",
+          "p0379-b0010"
+        ]
+      },
+      "notes": "Confirmed 1914 printer spelling 'R. P. Pobyedonoszev' and 'January 30, 1881' in Contemporary Judgments I."
+    },
+    "380": {
+      "page_number": 380,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T10:17:33.466982+00:00",
+      "source_page_sha256": "35cce0f6ceabc667591927be23fc561c0af36d093c25c1f62290a445eec28f88",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0380",
+        "reread_block_ids": [
+          "p0380-b0003",
+          "p0380-b0004",
+          "p0380-b0005",
+          "p0380-b0006",
+          "p0380-b0007",
+          "p0380-b0008",
+          "p0380-b0009",
+          "p0380-b0010",
+          "p0380-b0011",
+          "p0380-b0012"
+        ],
+        "confirmed_block_ids": [
+          "p0380-b0003",
+          "p0380-b0004",
+          "p0380-b0005",
+          "p0380-b0006",
+          "p0380-b0007",
+          "p0380-b0008",
+          "p0380-b0009",
+          "p0380-b0010",
+          "p0380-b0011",
+          "p0380-b0012"
+        ]
+      },
+      "notes": "Confirmed 'I. S. Aksakov to R. P. Pobyedonoszev', section heading 'III TURGENEV ON DOSTOEVSKY', and Turgenev letters to Slutchevsky & Dostoevsky."
+    },
+    "383": {
+      "page_number": 383,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T10:17:33.466982+00:00",
+      "source_page_sha256": "0b3fa34c3f4dc47809cf36c340135b882c909685548fcb28bb9937761e801f3b",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0383",
+        "reread_block_ids": [
+          "p0383-b0003",
+          "p0383-b0004",
+          "p0383-b0005",
+          "p0383-b0006",
+          "p0383-b0007",
+          "p0383-b0008",
+          "p0383-b0009",
+          "p0383-b0010"
+        ],
+        "confirmed_block_ids": [
+          "p0383-b0003",
+          "p0383-b0004",
+          "p0383-b0005",
+          "p0383-b0006",
+          "p0383-b0007",
+          "p0383-b0008",
+          "p0383-b0009",
+          "p0383-b0010"
+        ]
+      },
+      "notes": "Confirmed Turgenev letters to Polonsky (with footnotes 1-2) and Mme. Milyutin on folio 335."
+    },
+    "384": {
+      "page_number": 384,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T10:17:33.466982+00:00",
+      "source_page_sha256": "73b417307ce06199f8b422215b242e028ace5f75762d3a82a72b04d975de7c1b",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0384",
+        "reread_block_ids": [
+          "p0384-b0002",
+          "p0384-b0003",
+          "p0384-b0004",
+          "p0384-b0005",
+          "p0384-b0006",
+          "p0384-b0007",
+          "p0384-b0008",
+          "p0384-b0009",
+          "p0384-b0010"
+        ],
+        "confirmed_block_ids": [
+          "p0384-b0002",
+          "p0384-b0003",
+          "p0384-b0004",
+          "p0384-b0005",
+          "p0384-b0006",
+          "p0384-b0007",
+          "p0384-b0008",
+          "p0384-b0009",
+          "p0384-b0010"
+        ]
+      },
+      "notes": "Confirmed Turgenev letters to Saltykov, section heading 'IV LEO TOLSTOY ON DOSTOEVSKY', and Tolstoy opening ('Lately I was ill...') continuing past p. 385 plate."
+    },
+    "387": {
+      "page_number": 387,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T10:17:33.466982+00:00",
+      "source_page_sha256": "a79997b68ac984d58e7cc65cf53752e31fc5e792de91a3257f5c9a63a504e362",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0387",
+        "reread_block_ids": [
+          "p0387-b0003",
+          "p0387-b0004",
+          "p0387-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0387-b0003",
+          "p0387-b0004",
+          "p0387-b0005"
+        ]
+      },
+      "notes": "Confirmed Tolstoy letter continuation ('Pushkin included...') and 1881 post-mortem passage on folio 337."
+    },
+    "390": {
+      "page_number": 390,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T10:17:33.466982+00:00",
+      "source_page_sha256": "915eb173e80ae1e40f1a02c4dd2769fa72a518b3a42c81ea08bed1a81f402d06",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0390",
+        "reread_block_ids": [
+          "p0390-b0003",
+          "p0390-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0390-b0003",
+          "p0390-b0004"
+        ]
+      },
+      "notes": "Verified 'Guêpes' circumflex spelling and 'Eugène Onegin' in Index folio 340."
+    }
+  }
+}

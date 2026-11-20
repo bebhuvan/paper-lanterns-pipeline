@@ -1,0 +1,16 @@
+{
+  "book_id": "tipu-sultan-select-letters-1811",
+  "page_number": 57,
+  "check_id": "tipu-sultan-select-letters-1811-p0057",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "623615741ee2a84e84f9da74f8e3b53d7706e98e64639eefdb06043438c33ca5",
+  "checked_at": "2026-11-17T21:31:14.948331+00:00",
+  "checks": [
+    {
+      "block_id": "p0057-b0038",
+      "token": "Mohyuddeen",
+      "verdict": "printed_as_read",
+      "note": "Printed unaccented Mohyuddeen in Contents."
+    }
+  ]
+}

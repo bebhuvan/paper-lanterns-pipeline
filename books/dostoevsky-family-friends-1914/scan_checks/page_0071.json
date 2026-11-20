@@ -1,0 +1,34 @@
+{
+  "book_id": "dostoevsky-family-friends-1914",
+  "page_number": 71,
+  "check_id": "scan-check-p0071",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "bc67790e242cddb823f134d5601c23e972287077af0c56f92fbc4f404245737b",
+  "checks": [
+    {
+      "block_id": "p0071-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XVI ('To his Brother Michael') opens directly with editorial bracket '[Postscript to a longer business letter, early in the year 1847.]'."
+    },
+    {
+      "block_id": "p0071-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XVI ('To his Brother Michael') opens directly with editorial bracket '[Postscript to a longer business letter, early in the year 1847.]'."
+    },
+    {
+      "block_id": "p0071-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XVI ('To his Brother Michael') opens directly with editorial bracket '[Postscript to a longer business letter, early in the year 1847.]'."
+    },
+    {
+      "block_id": "p0071-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XVI ('To his Brother Michael') opens directly with editorial bracket '[Postscript to a longer business letter, early in the year 1847.]'."
+    },
+    {
+      "block_id": "p0071-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XVI ('To his Brother Michael') opens directly with editorial bracket '[Postscript to a longer business letter, early in the year 1847.]'."
+    }
+  ]
+}

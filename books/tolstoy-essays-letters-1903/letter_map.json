@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "tolstoy-essays-letters-1903",
+  "force_split_before_block_ids": [],
+  "forbid_split_before_block_ids": [],
+  "enclosure_block_ranges": [],
+  "explicit_letters": [
+    {
+      "sequence_index": 1,
+      "letter_number_label": "VIII",
+      "sender_display": "Leo Tolstoy",
+      "recipient_display": "An Inquirer"
+    },
+    {
+      "sequence_index": 2,
+      "letter_number_label": "X",
+      "sender_display": "Leo Tolstoy",
+      "recipient_display": "Peter Verígin"
+    },
+    {
+      "sequence_index": 3,
+      "letter_number_label": "XI",
+      "sender_display": "Leo Tolstoy",
+      "recipient_display": "Peter Verígin"
+    },
+    {
+      "sequence_index": 4,
+      "letter_number_label": "XII",
+      "sender_display": "Leo Tolstoy",
+      "recipient_display": "Ernest H. Crosby"
+    },
+    {
+      "sequence_index": 5,
+      "letter_number_label": "XIV",
+      "sender_display": "Leo Tolstoy",
+      "recipient_display": "Russian Liberals"
+    },
+    {
+      "sequence_index": 6,
+      "letter_number_label": "XVI.I",
+      "sender_display": "Leo Tolstoy",
+      "recipient_display": "T. M. Bóndaref"
+    },
+    {
+      "sequence_index": 7,
+      "letter_number_label": "XVI.II",
+      "sender_display": "Leo Tolstoy",
+      "recipient_display": "A German Propagandist of Henry George's Views"
+    },
+    {
+      "sequence_index": 8,
+      "letter_number_label": "XVIII",
+      "sender_display": "Leo Tolstoy",
+      "recipient_display": "A Non-Commissioned Officer"
+    },
+    {
+      "sequence_index": 9,
+      "letter_number_label": "XXI",
+      "sender_display": "Leo Tolstoy",
+      "recipient_display": "Tsar Nicholas II and His Assistants"
+    },
+    {
+      "sequence_index": 10,
+      "letter_number_label": "XXIV",
+      "sender_display": "Leo Tolstoy",
+      "recipient_display": "S."
+    }
+  ],
+  "notes": "Hybrid Essays + Letters volume: 10 complete Tolstoy letters extracted as standalone LetterUnits; 16 philosophical essays and Thoughts Selected from Private Letters preserved in full in the 26-chapter Whole-Book Edition."
+}

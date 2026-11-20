@@ -1,0 +1,44 @@
+{
+  "book_id": "cortes-letters-vol1-1908",
+  "page_number": 356,
+  "check_id": "scan-check-p0356",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "29cff2bc534460b8949e4141ef23f437177e815e1e429f37ddf1f43f885f5d51",
+  "checks": [
+    {
+      "block_id": "p0356-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed printed accents 'façades' and 'naïveté' on folio 332."
+    },
+    {
+      "block_id": "p0356-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed printed accents 'façades' and 'naïveté' on folio 332."
+    },
+    {
+      "block_id": "p0356-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed printed accents 'façades' and 'naïveté' on folio 332."
+    },
+    {
+      "block_id": "p0356-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed printed accents 'façades' and 'naïveté' on folio 332."
+    },
+    {
+      "block_id": "p0356-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed printed accents 'façades' and 'naïveté' on folio 332."
+    },
+    {
+      "block_id": "p0356-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed printed accents 'façades' and 'naïveté' on folio 332."
+    },
+    {
+      "block_id": "p0356-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed printed accents 'façades' and 'naïveté' on folio 332."
+    }
+  ]
+}

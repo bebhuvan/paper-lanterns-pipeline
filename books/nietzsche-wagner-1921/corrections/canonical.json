@@ -1,0 +1,305 @@
+{
+  "version": "correction-v2",
+  "book_id": "nietzsche-wagner-1921",
+  "created_at": "2026-11-16T22:28:00+00:00",
+  "corrections": [
+    {
+      "correction_id": "nw-p0034-b0004-editorial",
+      "page_number": 34,
+      "block_id": "p0034-b0004",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 34: Förster-Nietzsche's opening narrative paragraph for Chapter II."
+    },
+    {
+      "correction_id": "nw-p0034-b0005-editorial",
+      "page_number": 34,
+      "block_id": "p0034-b0005",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 34: Förster-Nietzsche's biographical narrative before Cosima's note."
+    },
+    {
+      "correction_id": "nw-p0034-b0006-editorial",
+      "page_number": 34,
+      "block_id": "p0034-b0006",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 34: Förster-Nietzsche's narrative continuing onto p. 35."
+    },
+    {
+      "correction_id": "nw-p0035-b0002-editorial",
+      "page_number": 35,
+      "block_id": "p0035-b0002",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 35: Förster-Nietzsche's narrative continuation from p. 34."
+    },
+    {
+      "correction_id": "nw-p0035-b0003-editorial",
+      "page_number": 35,
+      "block_id": "p0035-b0003",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 35: Förster-Nietzsche's narrative paragraph on Basle."
+    },
+    {
+      "correction_id": "nw-p0035-b0004-editorial",
+      "page_number": 35,
+      "block_id": "p0035-b0004",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 35: editorial intro to Cosima von Bülow's May 20, 1869 note."
+    },
+    {
+      "correction_id": "nw-p0035-b0005-letter-start",
+      "page_number": 35,
+      "block_id": "p0035-b0005",
+      "op": "set_transition",
+      "replacement_transition": "starts_new_letter",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 35–36: opening of Cosima von Bülow's May 20, 1869 note to Nietzsche."
+    },
+    {
+      "correction_id": "nw-p0066-b0003-editorial",
+      "page_number": 66,
+      "block_id": "p0066-b0003",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 66: editor's parenthetical musical gloss following Cosima's excerpt."
+    },
+    {
+      "correction_id": "nw-p0066-b0004-editorial",
+      "page_number": 66,
+      "block_id": "p0066-b0004",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 66: Förster-Nietzsche's biographical commentary."
+    },
+    {
+      "correction_id": "nw-p0066-b0005-editorial-and-text",
+      "page_number": 66,
+      "block_id": "p0066-b0005",
+      "op": "set_text",
+      "replacement_type": "editorial",
+      "replacement_tagged_text": "The “dejection of spirit” of which Frau Cosima wrote was due, primarily, to the projected performance of the “<i>Walküre</i>” in Munich, upon which the young king insisted in apparent miscomprehension of Wagner’s objections to the plan. Wagner owed King Ludwig an enormous debt of gratitude, as it was due to his royal generosity that Wagner, for the first time in his life, was relieved from financial worries and enabled to devote himself wholly to his life-work. He, therefore, felt compelled to yield to the king’s wishes in regard to the Munich production of the “<i>Walküre,</i>” although he was dismayed at the attitude of the Intendant of the Court Theatre, who showed not the slightest inclination to conform to Wagner’s wishes in the matter. In writing to Karl Klindworth, Wagner said: “This then is the price I have paid for such a degree of household quiet",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 66: Förster-Nietzsche's commentary; also restores inline 'financial' where lead type 'n' foot slipped without hyphen."
+    },
+    {
+      "correction_id": "nw-p0067-b0002-editorial",
+      "page_number": 67,
+      "block_id": "p0067-b0002",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Continuation of p0066-b0005 editorial commentary."
+    },
+    {
+      "correction_id": "nw-p0067-b0003-editorial",
+      "page_number": 67,
+      "block_id": "p0067-b0003",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Förster-Nietzsche's biographical commentary."
+    },
+    {
+      "correction_id": "nw-p0067-b0004-editorial",
+      "page_number": 67,
+      "block_id": "p0067-b0004",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Förster-Nietzsche's biographical commentary."
+    },
+    {
+      "correction_id": "nw-p0067-b0005-editorial",
+      "page_number": 67,
+      "block_id": "p0067-b0005",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Förster-Nietzsche's biographical commentary."
+    },
+    {
+      "correction_id": "nw-p0068-b0002-editorial",
+      "page_number": 68,
+      "block_id": "p0068-b0002",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Förster-Nietzsche's biographical commentary."
+    },
+    {
+      "correction_id": "nw-p0068-b0003-editorial",
+      "page_number": 68,
+      "block_id": "p0068-b0003",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Förster-Nietzsche's biographical commentary."
+    },
+    {
+      "correction_id": "nw-p0068-b0004-editorial",
+      "page_number": 68,
+      "block_id": "p0068-b0004",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Förster-Nietzsche's biographical commentary."
+    },
+    {
+      "correction_id": "nw-p0068-b0005-editorial",
+      "page_number": 68,
+      "block_id": "p0068-b0005",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Förster-Nietzsche's biographical commentary."
+    },
+    {
+      "correction_id": "nw-p0069-b0002-editorial",
+      "page_number": 69,
+      "block_id": "p0069-b0002",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Förster-Nietzsche's biographical commentary."
+    },
+    {
+      "correction_id": "nw-p0069-b0003-editorial",
+      "page_number": 69,
+      "block_id": "p0069-b0003",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Förster-Nietzsche's biographical commentary."
+    },
+    {
+      "correction_id": "nw-p0069-b0004-editorial",
+      "page_number": 69,
+      "block_id": "p0069-b0004",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Förster-Nietzsche's biographical commentary."
+    },
+    {
+      "correction_id": "nw-p0088-b0003-no-asterisk",
+      "page_number": 88,
+      "block_id": "p0088-b0003",
+      "op": "set_text",
+      "replacement_tagged_text": "Wagner further said that the reason Nietzsche had “overcome his scruples in regard to associating with a family of such reprehensible morals, was because he regarded him (Wagner) and Frau Cosima as persons of extraordinary qualities which placed them far above the average, and consequently beyond the jurisdiction of all regulated domestic relations.”",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 88 (folio 64): no footnote asterisk is printed after 'relations.”'."
+    },
+    {
+      "correction_id": "nw-p0181-b0002-walkure-umlaut",
+      "page_number": 181,
+      "block_id": "p0181-b0002",
+      "op": "set_text",
+      "replacement_tagged_text": "deficiencies in the orchestra, as I had never heard certain numbers, such as the <i>Vorspiel</i> to ‘<i>Lohengrin</i>,’ <i>Vorspiel</i> and <i>Finale</i> of ‘<i>Tristan and Isolde</i>,’ the <i>Love song</i> from the ‘<i>Walküre</i>’ (‘Winterstürme wichen’—) and the <i>Forging Songs</i> from ‘<i>Siegfried</i>’ given in the right tempo and spirit. In addition to this, I had the gratification of seeing my native city conduct itself in a most exemplary manner. The real <i>haute volée</i> arranged a very well-appointed banquet (which I was unluckily unable to attend) with toasts by distinguished citizens—in short, the public displayed at least a trace of appreciation of Wagner’s great significance above and beyond such questions as conductors, first and second tenors, and the like.",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 181 (folio 157): umlaut 'ü' is clearly printed in 'Walküre'."
+    },
+    {
+      "correction_id": "nw-p0201-b0008-greek-erratum",
+      "page_number": 201,
+      "block_id": "p0201-b0008",
+      "op": "set_text",
+      "replacement_tagged_text": "* This is Gersdorff’s way of making a pun on the name of (David) <i>Strauss,</i> the real meaning of which is “<i>ostrich.</i>” Greek word: “σγζουθός.”",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 201 (folio 177): preserves original 1921 compositor Greek spelling 'σγζουθός' verbatim from the scan."
+    },
+    {
+      "correction_id": "nw-p0205-b0002-would",
+      "page_number": 205,
+      "block_id": "p0205-b0002",
+      "op": "set_text",
+      "replacement_tagged_text": "regard to an international company which had under consideration the purchase of the Fritzsch firm, and in this event, would attach particular value to retaining possession of my brother's works. Owing to the fact that the “<i>Christianity of Modern Theology</i>” was also to be published by Fritzsch, Overbeck was vitally interested in the representations of the mysterious stranger, and it was agreed that the next time she called, the interview should take place in his room. During this conversation, it came out that the international company mentioned as contemplating taking over the Fritzsch business, was really doing so in order to get a hold upon Richard Wagner whose prose writings were published by this firm. Wagner, so ran her story, was in the direst financial straits, the funds subscribed for the erection of the theatre had been diverted to the building of his own residence, and that it was the intention of the aforesaid international company to ruin Wagner's entire enterprise. At this point in her recital, my brother's customary amiability and courtesy forsook him; his indignation was so great that he was unable to speak a word, but he took a chair, opened the door and gave the visitor to understand that the chair was at her disposal—on the <i>other</i> side. But he was unable to shake off the impression created by the mysterious woman, as he was already much disquieted by the condition of Wagner's affairs. Therefore he wrote a letter to Rohde, in which he gave him a half-serious, half-humorous account of this mysterious story of intrigue:",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 205 (folio 181): 'would attach particular value' is legible despite light 'w' inking."
+    },
+    {
+      "correction_id": "nw-p0213-b0003-dedication-sig",
+      "page_number": 213,
+      "block_id": "p0213-b0003",
+      "op": "set_type",
+      "replacement_type": "blockquote",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 213: closing attribution of Wagner's quoted 9-line book-inscription verse (not an independent letter)."
+    },
+    {
+      "correction_id": "nw-p0213-b0004-dedication-date",
+      "page_number": 213,
+      "block_id": "p0213-b0004",
+      "op": "set_type",
+      "replacement_type": "blockquote",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 213: closing inscription date of Wagner's quoted 9-line verse (not an independent letter)."
+    },
+    {
+      "correction_id": "nw-p0281-b0002-bayreuth",
+      "page_number": 281,
+      "block_id": "p0281-b0002",
+      "op": "set_text",
+      "replacement_tagged_text": "“<sc>Richard Wagner in Bayreuth.</sc>”",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 281 (folio 257): small-cap 'B' in 'Bayreuth' has chipped lower bowl on plate but retains 'B' top bowl and lower serif."
+    },
+    {
+      "correction_id": "nw-p0332-b0002-editorial",
+      "page_number": 332,
+      "block_id": "p0332-b0002",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Continuation of Förster-Nietzsche's editorial commentary from p. 331."
+    },
+    {
+      "correction_id": "nw-p0332-b0003-editorial",
+      "page_number": 332,
+      "block_id": "p0332-b0003",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Förster-Nietzsche's editorial commentary in Chapter XXIV."
+    },
+    {
+      "correction_id": "nw-p0332-b0004-blockquote",
+      "page_number": 332,
+      "block_id": "p0332-b0004",
+      "op": "set_type",
+      "replacement_type": "blockquote",
+      "source": "machine",
+      "note": "Continuation aphorism quoted by Förster-Nietzsche inside her editorial commentary."
+    },
+    {
+      "correction_id": "nw-p0332-b0005-editorial",
+      "page_number": 332,
+      "block_id": "p0332-b0005",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Förster-Nietzsche's editorial commentary in Chapter XXIV."
+    },
+    {
+      "correction_id": "nw-p0332-b0006-editorial",
+      "page_number": 332,
+      "block_id": "p0332-b0006",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "source": "machine",
+      "note": "Förster-Nietzsche's editorial commentary continuing onto p. 333."
+    }
+  ]
+}

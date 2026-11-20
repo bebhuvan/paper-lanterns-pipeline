@@ -1,0 +1,69 @@
+{
+  "book_id": "sand-flaubert-letters-1922",
+  "page_number": 45,
+  "check_id": "scan-check-p0045",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "5183d8fa0659d39f70efcb2ebd275c269d802e50026be1f2a8170d1d7f1ab728",
+  "checks": [
+    {
+      "block_id": "p0045-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified first letter opening ('I. TO GEORGE SAND', 1863) and footnote 1."
+    },
+    {
+      "block_id": "p0045-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified first letter opening ('I. TO GEORGE SAND', 1863) and footnote 1."
+    },
+    {
+      "block_id": "p0045-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified first letter opening ('I. TO GEORGE SAND', 1863) and footnote 1."
+    },
+    {
+      "block_id": "p0045-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified first letter opening ('I. TO GEORGE SAND', 1863) and footnote 1."
+    },
+    {
+      "block_id": "p0045-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified first letter opening ('I. TO GEORGE SAND', 1863) and footnote 1."
+    },
+    {
+      "block_id": "p0045-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified first letter opening ('I. TO GEORGE SAND', 1863) and footnote 1."
+    },
+    {
+      "block_id": "p0045-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified first letter opening ('I. TO GEORGE SAND', 1863) and footnote 1."
+    },
+    {
+      "block_id": "p0045-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified first letter opening ('I. TO GEORGE SAND', 1863) and footnote 1."
+    },
+    {
+      "block_id": "p0045-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified first letter opening ('I. TO GEORGE SAND', 1863) and footnote 1."
+    },
+    {
+      "block_id": "p0045-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified first letter opening ('I. TO GEORGE SAND', 1863) and footnote 1."
+    },
+    {
+      "block_id": "p0045-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified first letter opening ('I. TO GEORGE SAND', 1863) and footnote 1."
+    },
+    {
+      "block_id": "p0045-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified first letter opening ('I. TO GEORGE SAND', 1863) and footnote 1."
+    }
+  ]
+}

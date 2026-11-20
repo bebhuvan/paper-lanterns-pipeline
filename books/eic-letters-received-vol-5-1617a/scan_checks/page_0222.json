@@ -1,0 +1,28 @@
+{
+  "book_id": "eic-letters-received-vol-5-1617a",
+  "page_number": 222,
+  "check_id": "vol5-scan-check-p0222",
+  "reviewer": "native-vision-250to450ppi-scan-check",
+  "source_page_sha256": "7bce1f65807ad3ca4051415fcd3adc49cdfc9c122ffb7f05c30f9afbddf27bf7",
+  "checked_at": "2026-11-17T17:58:00.757804+00:00",
+  "checks": [
+    {
+      "block_id": "p0222-b0004",
+      "token": "imature; denomination",
+      "verdict": "printed_as_read",
+      "note": "450-DPI crop across diagonal paper fold confirms 'imature' and 'denomination'."
+    },
+    {
+      "block_id": "p0222-b0005",
+      "token": "Mesolopotan..arrival",
+      "verdict": "printed_as_read",
+      "note": "450-DPI crop across diagonal paper fold confirms every folded letter legible."
+    },
+    {
+      "block_id": "p0222-b0006",
+      "token": "Mogull..from",
+      "verdict": "printed_as_read",
+      "note": "450-DPI crop across diagonal paper fold confirms every folded letter legible."
+    }
+  ]
+}

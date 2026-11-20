@@ -1,0 +1,19 @@
+{
+  "book_id": "dostoevsky-letters-reminiscences-1923",
+  "page_number": 187,
+  "check_id": "scan-check-p0187",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "b80206c7c7a943fb43cdd4869a29e7a897ebac51df9d14873fdb77f378bc6dbe",
+  "checks": [
+    {
+      "block_id": "p0187-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed broken type on line 14 reads 'preface.' unambiguously."
+    },
+    {
+      "block_id": "p0187-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed broken type on line 14 reads 'preface.' unambiguously."
+    }
+  ]
+}

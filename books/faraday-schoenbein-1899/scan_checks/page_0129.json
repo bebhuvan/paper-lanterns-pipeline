@@ -1,0 +1,49 @@
+{
+  "book_id": "faraday-schoenbein-1899",
+  "page_number": 129,
+  "check_id": "scan-check-p0129",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "1d97f103b6854aca779e3932f547b8730be8eb9e4f49726480af947730033d30",
+  "checks": [
+    {
+      "block_id": "p0129-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'l’électricité' and compositor 'negatve' typo verbatim."
+    },
+    {
+      "block_id": "p0129-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'l’électricité' and compositor 'negatve' typo verbatim."
+    },
+    {
+      "block_id": "p0129-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'l’électricité' and compositor 'negatve' typo verbatim."
+    },
+    {
+      "block_id": "p0129-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'l’électricité' and compositor 'negatve' typo verbatim."
+    },
+    {
+      "block_id": "p0129-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'l’électricité' and compositor 'negatve' typo verbatim."
+    },
+    {
+      "block_id": "p0129-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'l’électricité' and compositor 'negatve' typo verbatim."
+    },
+    {
+      "block_id": "p0129-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'l’électricité' and compositor 'negatve' typo verbatim."
+    },
+    {
+      "block_id": "p0129-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'l’électricité' and compositor 'negatve' typo verbatim."
+    }
+  ]
+}

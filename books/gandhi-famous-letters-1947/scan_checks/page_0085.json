@@ -1,0 +1,29 @@
+{
+  "book_id": "gandhi-famous-letters-1947",
+  "page_number": 85,
+  "check_id": "scan-check-p0085",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "456fe71ae73878b9f409d48176f578d6861b50368790ecf4d54ca1ffcef5f16e",
+  "checks": [
+    {
+      "block_id": "p0085-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Correspondence with Lord Willingdon 1st Rejoinder intro verbatim."
+    },
+    {
+      "block_id": "p0085-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Correspondence with Lord Willingdon 1st Rejoinder intro verbatim."
+    },
+    {
+      "block_id": "p0085-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Correspondence with Lord Willingdon 1st Rejoinder intro verbatim."
+    },
+    {
+      "block_id": "p0085-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Correspondence with Lord Willingdon 1st Rejoinder intro verbatim."
+    }
+  ]
+}

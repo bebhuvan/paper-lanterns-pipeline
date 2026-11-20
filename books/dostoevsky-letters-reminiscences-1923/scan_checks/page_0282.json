@@ -1,0 +1,14 @@
+{
+  "book_id": "dostoevsky-letters-reminiscences-1923",
+  "page_number": 282,
+  "check_id": "scan-check-p0282",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "6061d31d39e1f88f39783d7fab837d16b3ba71ba9653fda2cf1fbb9ac320121b",
+  "checks": [
+    {
+      "block_id": "p0282-b0001",
+      "verdict": "classified_blank_verso_showthrough",
+      "note": "Verified blank verso of p. 281 containing only faint mirrored show-through; classified as noise."
+    }
+  ]
+}

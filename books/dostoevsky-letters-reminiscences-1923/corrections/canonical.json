@@ -1,0 +1,193 @@
+{
+  "version": "correction-v2",
+  "book_id": "dostoevsky-letters-reminiscences-1923",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "generated_by": "scan-check",
+  "created_at": "2026-11-17T09:10:27.961071+00:00",
+  "corrections": [
+    {
+      "correction_id": "dost23-p0011-b0001-residue",
+      "page_number": 11,
+      "block_id": "p0011-b0001",
+      "op": "set_type",
+      "replacement_type": "scanner_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Translucent protective tissue-guard recto showing title page p. 13 underneath; classify as scanner_residue to prevent duplicate title heading."
+    },
+    {
+      "correction_id": "dost23-p0011-b0002-residue",
+      "page_number": 11,
+      "block_id": "p0011-b0002",
+      "op": "set_type",
+      "replacement_type": "scanner_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Translucent tissue-guard show-through of p. 13 translator imprint."
+    },
+    {
+      "correction_id": "dost23-p0011-b0004-residue",
+      "page_number": 11,
+      "block_id": "p0011-b0004",
+      "op": "set_text",
+      "replacement_type": "scanner_residue",
+      "replacement_tagged_text": "NEW YORK\nALFRED A. KNOPF\n1923",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 11 & p. 13: translucent tissue-guard show-through of 'NEW YORK / ALFRED A. KNOPF / 1923'; resolve <unclear> and classify as scanner_residue."
+    },
+    {
+      "correction_id": "dost23-p0012-b0001-residue",
+      "page_number": 12,
+      "block_id": "p0012-b0001",
+      "op": "set_type",
+      "replacement_type": "scanner_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Translucent tissue-guard verso showing Perov frontispiece p. 10 underneath; avoid duplicate illustration."
+    },
+    {
+      "correction_id": "dost23-p0012-b0002-residue",
+      "page_number": 12,
+      "block_id": "p0012-b0002",
+      "op": "set_text",
+      "replacement_type": "scanner_residue",
+      "replacement_tagged_text": "F. M. Dostoevsky\nFrom the portrait by V. G. Perov",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 12 & p. 10: translucent tissue-guard show-through of frontispiece caption; resolve <unclear> and classify as scanner_residue."
+    },
+    {
+      "correction_id": "dost23-p0028-b0007-nosplit",
+      "page_number": 28,
+      "block_id": "p0028-b0007",
+      "op": "set_transition",
+      "replacement_transition": "none",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 28 (folio 12): Dec. 22, 1849 addendum ('At my arrest several books...') continues the single Fortress letter to Mihail Dostoevsky (see editorial headnote p. 19)."
+    },
+    {
+      "correction_id": "dost23-p0187-b0003-preface",
+      "page_number": 187,
+      "block_id": "p0187-b0003",
+      "op": "set_text",
+      "replacement_tagged_text": "There was nothing new in it; it was only the usual complacency after a good Moscow dinner. We fed famously. While still in Moscow I decided, after having published my speech in the <i>Moscowskya Viedomosti</i>, to bring out in Petersburg one single number of <i>The Journal of an Author</i>—the only number for this year—and to publish in it my speech and a short preface which occurred to me literally at the very moment when I stood on the platform, immediately after my speech, and Turgenev and Annenkov also, together with Aksakov and others, rushed up to embrace me and, pressing my hands, <i>told me</i> over and over again that I had written a work of genius. Alas ! are they thinking the same of it now ? The thought of how they are taking it, now the raptures are over, forms the theme of my preface. The preface and speech I sent off to Petersburg to the printers, and I already had the proofs when I suddenly made up my mind to write a new chapter for <i>The Journal</i>, a profession of faith, addressed to Gradovsky. It ran into two folios ; I have written it and put my whole soul in it, and to-day, only to-day, I 've sent it off to Moscow to the printers.' (<i>Russky Arkhiv</i>, vol. iii. pp. 307-8, 1891.)",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 187 (folio 171) line 14: broken letterform in 'preface.' is unambiguously 'preface.'"
+    },
+    {
+      "correction_id": "dost23-p0196-b0003-ps",
+      "page_number": 196,
+      "block_id": "p0196-b0003",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 195-196: direct sentence continuation of P.S.—(May 25, 2 o'clock) in Wife Letter II."
+    },
+    {
+      "correction_id": "dost23-p0197-b0003-ps",
+      "page_number": 197,
+      "block_id": "p0197-b0003",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Continuation of Wife Letter II postscript."
+    },
+    {
+      "correction_id": "dost23-p0197-b0004-ps",
+      "page_number": 197,
+      "block_id": "p0197-b0004",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Continuation of Wife Letter II postscript."
+    },
+    {
+      "correction_id": "dost23-p0198-b0003-ps",
+      "page_number": 198,
+      "block_id": "p0198-b0003",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Closing paragraph of Wife Letter II postscript."
+    },
+    {
+      "correction_id": "dost23-p0204-b0003-ps",
+      "page_number": 204,
+      "block_id": "p0204-b0003",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 203-204 (folio 188): '[On the margin is the following.] I made a good speech.' belongs to Wife Letter III postscript."
+    },
+    {
+      "correction_id": "dost23-p0204-b0004-ps",
+      "page_number": 204,
+      "block_id": "p0204-b0004",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 204 (folio 188): marginal closing of Wife Letter III before Letter IV."
+    },
+    {
+      "correction_id": "dost23-p0282-b0001-blank",
+      "page_number": 282,
+      "block_id": "p0282-b0001",
+      "op": "set_text",
+      "replacement_type": "noise",
+      "replacement_tagged_text": "",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 282 (unnumbered blank verso of p. 281): only faint mirrored show-through visible; remove VLM meta-note."
+    },
+    {
+      "correction_id": "dost23-p0289-b0004-gatzuk",
+      "page_number": 289,
+      "block_id": "p0289-b0004",
+      "op": "set_text",
+      "replacement_tagged_text": "Gatzuk, Alexey Alexeyevich (1832-1891), archæologist, publisher of <i>Gatzuk's Newspaper</i> and <i>Gatzuk's Calendar.</i>",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Zoomed crop check on p. 289 (folio 273) line 5: light paper smudge over 'Gatzuk', matching italicized 'Gatzuk's' on the line below (no 'c')."
+    },
+    {
+      "correction_id": "dost23-p0296-b0004-notrans",
+      "page_number": 296,
+      "block_id": "p0296-b0004",
+      "op": "set_transition",
+      "replacement_transition": "none",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 296 (folio 280): archival police report quoted in Biographical Index (Plescheyev entry); keep inside Index rather than splitting as standalone LetterUnit."
+    },
+    {
+      "correction_id": "dost23-p0296-b0012-notrans",
+      "page_number": 296,
+      "block_id": "p0296-b0012",
+      "op": "set_transition",
+      "replacement_transition": "none",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Closing signature of first quoted archival document inside Biographical Index (Plescheyev entry)."
+    },
+    {
+      "correction_id": "dost23-p0296-b0013-notrans",
+      "page_number": 296,
+      "block_id": "p0296-b0013",
+      "op": "set_transition",
+      "replacement_transition": "none",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 296-297: second quoted 1850 Ministry document inside Biographical Index (Plescheyev entry)."
+    }
+  ]
+}

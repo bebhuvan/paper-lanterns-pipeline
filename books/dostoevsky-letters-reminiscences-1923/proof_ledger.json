@@ -1,0 +1,718 @@
+{
+  "version": "proof-ledger-v2",
+  "book_id": "dostoevsky-letters-reminiscences-1923",
+  "updated_at": "2026-11-17T09:10:27.961071+00:00",
+  "pages": {
+    "10": {
+      "page_number": 10,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "a86cc3212ffec3f332a3ea4ddedae4341e288b43e0c5722ba1dcde236a9c8604",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0010",
+        "reread_block_ids": [
+          "p0010-b0001",
+          "p0010-b0002",
+          "p0010-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0010-b0001",
+          "p0010-b0002",
+          "p0010-b0003"
+        ]
+      },
+      "notes": "Verified Perov frontispiece portrait and caption 'F. M. Dostoevsky. / From the portrait by V. G. Perov' ('Emery Walker ph.sc.')."
+    },
+    "11": {
+      "page_number": 11,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "9c87485ea45cc1aadb317198b56f2faa95912849748edb9cccc50ff0e5af7df2",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0011",
+        "reread_block_ids": [
+          "p0011-b0001",
+          "p0011-b0002",
+          "p0011-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0011-b0001",
+          "p0011-b0002",
+          "p0011-b0004"
+        ]
+      },
+      "notes": "Verified translucent protective tissue guard showing p. 13 title page + red 'WITHDRAWN' library stamp; classified as scanner_residue."
+    },
+    "12": {
+      "page_number": 12,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "fb15f3c5547eaa28dc31f830b6d5f2b0011976d72606de6f9294d186b23fa131",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0012",
+        "reread_block_ids": [
+          "p0012-b0001",
+          "p0012-b0002"
+        ],
+        "confirmed_block_ids": [
+          "p0012-b0001",
+          "p0012-b0002"
+        ]
+      },
+      "notes": "Verified verso of protective tissue guard showing p. 10 frontispiece through translucent paper; classified as scanner_residue."
+    },
+    "13": {
+      "page_number": 13,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "9149ed8191cd00f01037a035127dd4ffdf9dbe3a174b94fc06ca8cea99e03ef9",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0013",
+        "reread_block_ids": [
+          "p0013-b0001",
+          "p0013-b0002",
+          "p0013-b0004",
+          "p0013-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0013-b0001",
+          "p0013-b0002",
+          "p0013-b0004",
+          "p0013-b0005"
+        ]
+      },
+      "notes": "Verified Title Page ('NEW YORK / ALFRED A. KNOPF / 1923') and library 'WITHDRAWN' stamp."
+    },
+    "21": {
+      "page_number": 21,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "d73d96b61bed661499be588dc8693584fac9549c310028ac017570b01e1d3834",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0021",
+        "reread_block_ids": [
+          "p0021-b0001",
+          "p0021-b0002",
+          "p0021-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0021-b0001",
+          "p0021-b0002",
+          "p0021-b0003"
+        ]
+      },
+      "notes": "Verified 'Plescheyev' spelling and Dec 22, 1849 Peter and Paul Fortress opening."
+    },
+    "28": {
+      "page_number": 28,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "b7e000cd5b39daad4dc57c02cd69f2aa5a7b58ca40a3ea94b7ffa570c649a5dc",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0028",
+        "reread_block_ids": [
+          "p0028-b0003",
+          "p0028-b0004",
+          "p0028-b0005",
+          "p0028-b0006",
+          "p0028-b0007",
+          "p0028-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0028-b0003",
+          "p0028-b0004",
+          "p0028-b0005",
+          "p0028-b0006",
+          "p0028-b0007",
+          "p0028-b0008"
+        ]
+      },
+      "notes": "Verified 'Dec. 22, 1849.' addendum ('At my arrest several books...') continues single Fortress letter to Mihail."
+    },
+    "29": {
+      "page_number": 29,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "9b5d1ffef57792ade950e7d57af2728c526ac507f2422e1ddb58c81856f4a15d",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0029",
+        "reread_block_ids": [
+          "p0029-b0003",
+          "p0029-b0004",
+          "p0029-b0005",
+          "p0029-b0006",
+          "p0029-b0007",
+          "p0029-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0029-b0003",
+          "p0029-b0004",
+          "p0029-b0005",
+          "p0029-b0006",
+          "p0029-b0007",
+          "p0029-b0008"
+        ]
+      },
+      "notes": "Verified closing '—Your F. Dostoevsky.' and 'On the margins :' postscripts."
+    },
+    "129": {
+      "page_number": 129,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "8bd16ece2037a8f969eac4b8c7ef3e7615b63a1011aa8aca4a9d8f854b7bd279",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0129",
+        "reread_block_ids": [
+          "p0129-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0129-b0003"
+        ]
+      },
+      "notes": "Confirmed 'Sèvres' (U+00E8) printed diacritic in Anna Dostoevsky's Reminiscences."
+    },
+    "187": {
+      "page_number": 187,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "b80206c7c7a943fb43cdd4869a29e7a897ebac51df9d14873fdb77f378bc6dbe",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0187",
+        "reread_block_ids": [
+          "p0187-b0003",
+          "p0187-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0187-b0003",
+          "p0187-b0004"
+        ]
+      },
+      "notes": "Confirmed broken type on line 14 reads 'preface.' unambiguously."
+    },
+    "188": {
+      "page_number": 188,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "31cd9203f7dab6350f6dd377112ac654d164bed4518dc0ca68e1462f80a9e6f3",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0188",
+        "reread_block_ids": [
+          "p0188-b0001",
+          "p0188-b0002",
+          "p0188-b0003",
+          "p0188-b0004",
+          "p0188-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0188-b0001",
+          "p0188-b0002",
+          "p0188-b0003",
+          "p0188-b0004",
+          "p0188-b0005"
+        ]
+      },
+      "notes": "Confirmed genuine 1923 compositor erratum '(During May and June, 1888, from Moscow...)' printed verbatim above May 23-24, 1880."
+    },
+    "195": {
+      "page_number": 195,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "72b577113a665f0e5d6d7ea147567be8103fc3efc30087e53736d0e965517727",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0195",
+        "reread_block_ids": [
+          "p0195-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0195-b0003"
+        ]
+      },
+      "notes": "Verified postscript 'P.S.—(May 25, 2 o'clock...)' breaks mid-phrase '...fixed between' onto p. 196."
+    },
+    "196": {
+      "page_number": 196,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "00981f2c069d0423e63cca2aaca5a6917b414ac7485ce24122c67a3f8d3c024d",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0196",
+        "reread_block_ids": [
+          "p0196-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0196-b0003"
+        ]
+      },
+      "notes": "Verified top of p. 196 ('the first and fifth of June...') continues Wife Letter II postscript."
+    },
+    "203": {
+      "page_number": 203,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "e2e9bc97a45b78d14384ba864bcdba47c0317d0b380bc96cf48dc6682f480e68",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0203",
+        "reread_block_ids": [
+          "p0203-b0003",
+          "p0203-b0004",
+          "p0203-b0005",
+          "p0203-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0203-b0003",
+          "p0203-b0004",
+          "p0203-b0005",
+          "p0203-b0006"
+        ]
+      },
+      "notes": "Verified Wife Letter III P.S. before margin addition on p. 204."
+    },
+    "204": {
+      "page_number": 204,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "2a9f173ef86a50cf7fec4bda7ca51df5732510dbf3ee6239d321ae2e178323f0",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0204",
+        "reread_block_ids": [
+          "p0204-b0003",
+          "p0204-b0004",
+          "p0204-b0005",
+          "p0204-b0006",
+          "p0204-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0204-b0003",
+          "p0204-b0004",
+          "p0204-b0005",
+          "p0204-b0006",
+          "p0204-b0007"
+        ]
+      },
+      "notes": "Verified '[On the margin is the following.] I made a good speech.' belongs to Wife Letter III before Letter IV."
+    },
+    "222": {
+      "page_number": 222,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "74b5d4c490c33c5efe29968f126d398419fe7c4b6b7b85500b3e9054450325dd",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0222",
+        "reread_block_ids": [
+          "p0222-b0003",
+          "p0222-b0004",
+          "p0222-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0222-b0003",
+          "p0222-b0004",
+          "p0222-b0005"
+        ]
+      },
+      "notes": "Verified 'May 30-31, 1 a.m.' right-aligned timestamp continues Wife Letter VII rather than opening a separate letter."
+    },
+    "280": {
+      "page_number": 280,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "f05ba9f91c4161f3b167f5605a3931c8db82df8ead3d8057844568fca30f85aa",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0280",
+        "reread_block_ids": [
+          "p0280-b0001",
+          "p0280-b0002",
+          "p0280-b0003",
+          "p0280-b0004",
+          "p0280-b0005",
+          "p0280-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0280-b0001",
+          "p0280-b0002",
+          "p0280-b0003",
+          "p0280-b0004",
+          "p0280-b0005",
+          "p0280-b0006"
+        ]
+      },
+      "notes": "Confirmed line-broken heading 'POBIEDONOSZEV'S LETTERS TO ALEX- / ANDER III' and Letter I opening."
+    },
+    "282": {
+      "page_number": 282,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "6061d31d39e1f88f39783d7fab837d16b3ba71ba9653fda2cf1fbb9ac320121b",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0282",
+        "reread_block_ids": [
+          "p0282-b0001"
+        ],
+        "confirmed_block_ids": [
+          "p0282-b0001"
+        ]
+      },
+      "notes": "Verified blank verso of p. 281 containing only faint mirrored show-through; classified as noise."
+    },
+    "289": {
+      "page_number": 289,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "7e4b922dc7174d4f46297f5ac0b75ce95c0aac915d6f2063387a80d0a341f4fb",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0289",
+        "reread_block_ids": [
+          "p0289-b0003",
+          "p0289-b0004",
+          "p0289-b0005",
+          "p0289-b0006",
+          "p0289-b0007",
+          "p0289-b0008",
+          "p0289-b0009",
+          "p0289-b0010"
+        ],
+        "confirmed_block_ids": [
+          "p0289-b0003",
+          "p0289-b0004",
+          "p0289-b0005",
+          "p0289-b0006",
+          "p0289-b0007",
+          "p0289-b0008",
+          "p0289-b0009",
+          "p0289-b0010"
+        ]
+      },
+      "notes": "Verified zoomed crop of line 5 smudge: 'Gatzuk' (matching italicized 'Gatzuk's' on line 6, no 'c')."
+    },
+    "295": {
+      "page_number": 295,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "f515a17a5048fc62613816e40f3af850ae15a9cb75ed105a573950913f9657ee",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0295",
+        "reread_block_ids": [
+          "p0295-b0003",
+          "p0295-b0004",
+          "p0295-b0005",
+          "p0295-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0295-b0003",
+          "p0295-b0004",
+          "p0295-b0005",
+          "p0295-b0006"
+        ]
+      },
+      "notes": "Confirmed 'Mille Âmes' (U+00C2) printed diacritic and opening of Plescheyev Biographical Index entry."
+    },
+    "296": {
+      "page_number": 296,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "744e1a48498b402ff33438e190f4578208400900b67cf350c4182a46b86187dd",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0296",
+        "reread_block_ids": [
+          "p0296-b0003",
+          "p0296-b0004",
+          "p0296-b0005",
+          "p0296-b0006",
+          "p0296-b0007",
+          "p0296-b0008",
+          "p0296-b0009",
+          "p0296-b0010",
+          "p0296-b0011",
+          "p0296-b0012",
+          "p0296-b0013",
+          "p0296-b0014",
+          "p0296-b0015",
+          "p0296-b0016",
+          "p0296-b0017",
+          "p0296-b0018"
+        ],
+        "confirmed_block_ids": [
+          "p0296-b0003",
+          "p0296-b0004",
+          "p0296-b0005",
+          "p0296-b0006",
+          "p0296-b0007",
+          "p0296-b0008",
+          "p0296-b0009",
+          "p0296-b0010",
+          "p0296-b0011",
+          "p0296-b0012",
+          "p0296-b0013",
+          "p0296-b0014",
+          "p0296-b0015",
+          "p0296-b0016",
+          "p0296-b0017",
+          "p0296-b0018"
+        ]
+      },
+      "notes": "Verified 1850 Ministry decrees are quoted in single quotes inside Biographical Index (Plescheyev entry)."
+    },
+    "297": {
+      "page_number": 297,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "501327921ac9389cc663437784f973df185d7b2a0f392433de4b1ea34379d4a7",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0297",
+        "reread_block_ids": [
+          "p0297-b0003",
+          "p0297-b0004",
+          "p0297-b0005",
+          "p0297-b0006",
+          "p0297-b0007",
+          "p0297-b0008",
+          "p0297-b0009"
+        ],
+        "confirmed_block_ids": [
+          "p0297-b0003",
+          "p0297-b0004",
+          "p0297-b0005",
+          "p0297-b0006",
+          "p0297-b0007",
+          "p0297-b0008",
+          "p0297-b0009"
+        ]
+      },
+      "notes": "Verified multi-signatory closing ('Count Perovsky', 'V. Safonov', 'Rudnev') of quoted 1850 Ministry decree inside Biographical Index."
+    },
+    "304": {
+      "page_number": 304,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "7ebdacdf5b80e71ac614d6eeeb4fbb150063540fca8633932c629c609103ddbf",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0304",
+        "reread_block_ids": [
+          "p0304-b0001"
+        ],
+        "confirmed_block_ids": [
+          "p0304-b0001"
+        ]
+      },
+      "notes": "Verified full-page rotated facsimile of Dostoevsky's MS. ('Life of a Great Sinner') is classified as illustration."
+    },
+    "305": {
+      "page_number": 305,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T09:10:27.961071+00:00",
+      "source_page_sha256": "36f9826960af80048d88ea2db7c182d03e1eda7de91464e4a6a84f1658e8ab7e",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0305",
+        "reread_block_ids": [],
+        "confirmed_block_ids": []
+      },
+      "notes": "Verified blank endpaper leaf."
+    }
+  }
+}

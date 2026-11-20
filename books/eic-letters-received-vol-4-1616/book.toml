@@ -1,0 +1,21 @@
+[book]
+book_id = "eic-letters-received-vol-4-1616"
+title = "Letters Received by the East India Company from Its Servants in the East, Vol. IV: 1616"
+author_or_editor = "East India Company, William Foster (ed.)"
+authors = ["East India Company", "William Foster (ed.)"]
+publication_year = 1900
+subtitle = ""
+imprint = "London: Sampson Low, Marston & Company"
+collection = "indian-epistolary-heritage"
+language = "en"
+declared_scripts = ["Latin"]
+profile = "claude_sonnet_epistolary"
+active_run_id = "canonical-sonnet55-batch-v1"
+
+[source]
+archive_id = "lettersreceivedb04east"
+source_pdf = "sources/lettersreceivedb04east/lettersreceivedb04east.originals.pdf"
+source_pdf_sha256 = "1accabdea74e0b91269697fc772b78259db171ebcb60cabe511223ef5f9be14b"
+
+[extraction]
+profile = "claude_sonnet_epistolary"

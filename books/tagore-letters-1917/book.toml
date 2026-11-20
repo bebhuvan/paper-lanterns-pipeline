@@ -1,0 +1,21 @@
+[book]
+book_id = "tagore-letters-1917"
+title = "Letters"
+author_or_editor = "Rabindranath Tagore"
+authors = ["Rabindranath Tagore"]
+publication_year = 1917
+subtitle = "Extracts from Old Letters of Rabindranath Tagore"
+imprint = "New York: The Macmillan Company, 1917"
+collection = "indian-epistolary-heritage"
+language = "en"
+declared_scripts = ["Latin", "European diacritics", "IAST"]
+profile = "claude_sonnet_epistolary"
+active_run_id = "canonical-sonnet55-batch-v1"
+
+[source]
+archive_id = "letters00tago"
+source_pdf = "sources/letters00tago/letters00tago.originals.pdf"
+source_pdf_sha256 = "eb824e5fed1beecb370d277ad15175917e3bde6880732a4bfaa8a5b30b54cd83"
+
+[extraction]
+profile = "claude_sonnet_epistolary"

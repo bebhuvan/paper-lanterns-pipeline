@@ -1,0 +1,39 @@
+{
+  "book_id": "cortes-letters-vol1-1908",
+  "page_number": 117,
+  "check_id": "scan-check-p0117",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "3d41478987839543a1a395bba53c8ff09a2a0cfe4ab20031c309a8ea179024db",
+  "checks": [
+    {
+      "block_id": "p0117-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed printer variation 'Dona Juaña' alongside 'Doña Maria/Catalina/Juana' in original 1908 ink."
+    },
+    {
+      "block_id": "p0117-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed printer variation 'Dona Juaña' alongside 'Doña Maria/Catalina/Juana' in original 1908 ink."
+    },
+    {
+      "block_id": "p0117-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed printer variation 'Dona Juaña' alongside 'Doña Maria/Catalina/Juana' in original 1908 ink."
+    },
+    {
+      "block_id": "p0117-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed printer variation 'Dona Juaña' alongside 'Doña Maria/Catalina/Juana' in original 1908 ink."
+    },
+    {
+      "block_id": "p0117-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed printer variation 'Dona Juaña' alongside 'Doña Maria/Catalina/Juana' in original 1908 ink."
+    },
+    {
+      "block_id": "p0117-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed printer variation 'Dona Juaña' alongside 'Doña Maria/Catalina/Juana' in original 1908 ink."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "book_id": "dostoevsky-letters-reminiscences-1923",
+  "page_number": 13,
+  "check_id": "scan-check-p0013",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "9149ed8191cd00f01037a035127dd4ffdf9dbe3a174b94fc06ca8cea99e03ef9",
+  "checks": [
+    {
+      "block_id": "p0013-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Title Page ('NEW YORK / ALFRED A. KNOPF / 1923') and library 'WITHDRAWN' stamp."
+    },
+    {
+      "block_id": "p0013-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Title Page ('NEW YORK / ALFRED A. KNOPF / 1923') and library 'WITHDRAWN' stamp."
+    },
+    {
+      "block_id": "p0013-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Title Page ('NEW YORK / ALFRED A. KNOPF / 1923') and library 'WITHDRAWN' stamp."
+    },
+    {
+      "block_id": "p0013-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Title Page ('NEW YORK / ALFRED A. KNOPF / 1923') and library 'WITHDRAWN' stamp."
+    }
+  ]
+}

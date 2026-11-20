@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-6-1617b",
+  "page_number": 13,
+  "check_id": "vol6-scan-check-p0013",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "5369cd57833a8fea82001bf6a0c86bb96ed2c153aa251c76be180b4a0e2958ef",
+  "checked_at": "2026-11-17T20:23:38.959834+00:00",
+  "checks": [
+    {
+      "block_id": "p0013-b0009",
+      "token": "diacritic_drift_advisory",
+      "verdict": "printed_as_read",
+      "note": "Verified compositor diacritic spelling variant preserved verbatim."
+    }
+  ]
+}

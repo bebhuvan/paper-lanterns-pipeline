@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://paperlanterns.org/schemas/letter_map.schema.json",
+  "title": "LetterMapOverrides",
+  "description": "Canonical block-level epistolary boundary and metadata overrides stored in books/<book_id>/letter_map.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "default": "1.0.0"
+    },
+    "book_id": {
+      "type": ["string", "null"]
+    },
+    "force_split_before_block_ids": {
+      "type": "array",
+      "description": "Block IDs (e.g. 'p0014-b0005') where a new top-level LetterUnit MUST begin.",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "forbid_split_before_block_ids": {
+      "type": "array",
+      "description": "Block IDs where a top-level LetterUnit split MUST NOT occur (e.g. quoted enclosures, postscripts, bottom datelines).",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "enclosure_block_ranges": {
+      "type": "array",
+      "description": "Explicit block ranges representing nested enclosed letters inside a parent letter.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["start_block_id", "end_block_id"],
+        "properties": {
+          "start_block_id": { "type": "string" },
+          "end_block_id": { "type": "string" },
+          "note": { "type": ["string", "null"] }
+        }
+      },
+      "default": []
+    },
+    "explicit_letters": {
+      "type": "array",
+      "description": "Human-curated or adjudicated metadata overrides keyed by letter_id, sequence_index, or start_block_id.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "letter_id": { "type": ["string", "null"] },
+          "slug": { "type": ["string", "null"] },
+          "sequence_index": { "type": ["integer", "null"], "minimum": 0 },
+          "start_block_id": { "type": ["string", "null"] },
+          "end_block_id": { "type": ["string", "null"] },
+          "block_ids": {
+            "type": ["array", "null"],
+            "items": { "type": "string" }
+          },
+          "letter_number_label": { "type": ["string", "null"] },
+          "header_tagged": { "type": ["string", "null"] },
+          "sender_display": { "type": ["string", "null"] },
+          "recipient_display": { "type": ["string", "null"] },
+          "dateline_tagged": { "type": ["string", "null"] },
+          "dateline_plain": { "type": ["string", "null"] },
+          "dateline_position": {
+            "type": ["string", "null"],
+            "enum": ["top", "bottom", "inline", "absent", null]
+          },
+          "languages": {
+            "type": ["array", "null"],
+            "items": { "type": "string" }
+          },
+          "boundary_confidence": {
+            "type": ["string", "null"],
+            "enum": ["high", "adjudicated", "human_mapped", "ambiguous", null]
+          },
+          "reviewer": { "type": ["string", "null"] },
+          "updated_at": { "type": ["string", "null"] },
+          "note": { "type": ["string", "null"] }
+        }
+      },
+      "default": []
+    },
+    "notes": {
+      "type": ["string", "null"]
+    }
+  }
+}

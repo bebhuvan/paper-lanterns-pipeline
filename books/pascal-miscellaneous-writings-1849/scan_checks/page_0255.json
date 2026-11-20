@@ -1,0 +1,69 @@
+{
+  "book_id": "pascal-miscellaneous-writings-1849",
+  "page_number": 255,
+  "check_id": "scan-check-p0255",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "4f3a4ab84744cebc50e8a95006e301e25ac2991983d0dbbddf4581785bedd673",
+  "checks": [
+    {
+      "block_id": "p0255-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified XL. '+' MS prefix and two-paragraph '*' footnote (p0255-b0013 + p0255-b0014) at bottom of page."
+    },
+    {
+      "block_id": "p0255-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified XL. '+' MS prefix and two-paragraph '*' footnote (p0255-b0013 + p0255-b0014) at bottom of page."
+    },
+    {
+      "block_id": "p0255-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified XL. '+' MS prefix and two-paragraph '*' footnote (p0255-b0013 + p0255-b0014) at bottom of page."
+    },
+    {
+      "block_id": "p0255-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified XL. '+' MS prefix and two-paragraph '*' footnote (p0255-b0013 + p0255-b0014) at bottom of page."
+    },
+    {
+      "block_id": "p0255-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified XL. '+' MS prefix and two-paragraph '*' footnote (p0255-b0013 + p0255-b0014) at bottom of page."
+    },
+    {
+      "block_id": "p0255-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified XL. '+' MS prefix and two-paragraph '*' footnote (p0255-b0013 + p0255-b0014) at bottom of page."
+    },
+    {
+      "block_id": "p0255-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified XL. '+' MS prefix and two-paragraph '*' footnote (p0255-b0013 + p0255-b0014) at bottom of page."
+    },
+    {
+      "block_id": "p0255-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified XL. '+' MS prefix and two-paragraph '*' footnote (p0255-b0013 + p0255-b0014) at bottom of page."
+    },
+    {
+      "block_id": "p0255-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified XL. '+' MS prefix and two-paragraph '*' footnote (p0255-b0013 + p0255-b0014) at bottom of page."
+    },
+    {
+      "block_id": "p0255-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified XL. '+' MS prefix and two-paragraph '*' footnote (p0255-b0013 + p0255-b0014) at bottom of page."
+    },
+    {
+      "block_id": "p0255-b0013",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified XL. '+' MS prefix and two-paragraph '*' footnote (p0255-b0013 + p0255-b0014) at bottom of page."
+    },
+    {
+      "block_id": "p0255-b0014",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified XL. '+' MS prefix and two-paragraph '*' footnote (p0255-b0013 + p0255-b0014) at bottom of page."
+    }
+  ]
+}

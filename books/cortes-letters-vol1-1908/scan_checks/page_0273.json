@@ -1,0 +1,44 @@
+{
+  "book_id": "cortes-letters-vol1-1908",
+  "page_number": 273,
+  "check_id": "scan-check-p0273",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "df580d0618b0f6e22b504e2a1707bfa47f01b402bb6c640a159e94ce176dbcf4",
+  "checks": [
+    {
+      "block_id": "p0273-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Identified compositor mismatch between inline callout '1' and footnote '56' on folio 249; linked note 56."
+    },
+    {
+      "block_id": "p0273-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Identified compositor mismatch between inline callout '1' and footnote '56' on folio 249; linked note 56."
+    },
+    {
+      "block_id": "p0273-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Identified compositor mismatch between inline callout '1' and footnote '56' on folio 249; linked note 56."
+    },
+    {
+      "block_id": "p0273-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Identified compositor mismatch between inline callout '1' and footnote '56' on folio 249; linked note 56."
+    },
+    {
+      "block_id": "p0273-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Identified compositor mismatch between inline callout '1' and footnote '56' on folio 249; linked note 56."
+    },
+    {
+      "block_id": "p0273-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Identified compositor mismatch between inline callout '1' and footnote '56' on folio 249; linked note 56."
+    },
+    {
+      "block_id": "p0273-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Identified compositor mismatch between inline callout '1' and footnote '56' on folio 249; linked note 56."
+    }
+  ]
+}

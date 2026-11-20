@@ -1,0 +1,34 @@
+{
+  "book_id": "hugo-letters-vol2-1898",
+  "page_number": 185,
+  "check_id": "scan-check-p0185",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "c1f643c710b53157188e815b1069385fd484025f1dd482299a053ef0532b147a",
+  "checks": [
+    {
+      "block_id": "p0185-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'España' ñ on p. 185 (folio 171) and pencilled running header."
+    },
+    {
+      "block_id": "p0185-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'España' ñ on p. 185 (folio 171) and pencilled running header."
+    },
+    {
+      "block_id": "p0185-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'España' ñ on p. 185 (folio 171) and pencilled running header."
+    },
+    {
+      "block_id": "p0185-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'España' ñ on p. 185 (folio 171) and pencilled running header."
+    },
+    {
+      "block_id": "p0185-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'España' ñ on p. 185 (folio 171) and pencilled running header."
+    }
+  ]
+}

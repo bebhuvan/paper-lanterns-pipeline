@@ -1,0 +1,21 @@
+[book]
+book_id = "newton-bentley-1756"
+title = "Four Letters from Sir Isaac Newton to Doctor Bentley, Containing Some Arguments in Proof of a Deity"
+author_or_editor = "Sir Isaac Newton"
+authors = ["Sir Isaac Newton"]
+publication_year = 1756
+subtitle = ""
+imprint = ""
+collection = "scientific-and-philosophical-letters"
+language = "en"
+declared_scripts = []
+profile = "archaic_18c_epistolary"
+active_run_id = "canonical-v1-1756"
+
+[source]
+archive_id = "fourlettersfroms00newt"
+source_pdf = "sources/newton-bentley-letters-1756.pdf"
+source_pdf_sha256 = ""
+
+[extraction]
+profile = "archaic_18c_epistolary"

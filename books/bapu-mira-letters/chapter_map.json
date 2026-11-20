@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "bapu-mira-letters",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Half-Title, Frontispiece & Title Page",
+      "start_page": 1,
+      "end_page": 10
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Preface & Background",
+      "start_page": 11,
+      "end_page": 18
+    },
+    {
+      "kind": "chapter",
+      "title": "Bapu's Letters to Mira (1924–1948)",
+      "start_page": 19,
+      "end_page": 399
+    },
+    {
+      "kind": "backmatter",
+      "title": "They Have Become One (Memorial Epilogue)",
+      "start_page": 400,
+      "end_page": 401
+    },
+    {
+      "kind": "backmatter",
+      "title": "Erratum & Publisher's Advertisements",
+      "start_page": 402,
+      "end_page": 406
+    }
+  ]
+}

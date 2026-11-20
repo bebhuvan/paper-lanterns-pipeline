@@ -1,0 +1,958 @@
+{
+  "version": "proof-ledger-v2",
+  "book_id": "poe-whitman-last-letters-1909",
+  "updated_at": "2026-11-17T17:22:28.829439+00:00",
+  "pages": {
+    "8": {
+      "page_number": 8,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "e5b51d5339dbefcbf35553d9d5085cac61238668a71aa7915e97bfe6f91b4a1f",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0008",
+        "reread_block_ids": [
+          "p0008-b0001"
+        ],
+        "confirmed_block_ids": [
+          "p0008-b0001"
+        ]
+      },
+      "notes": "Verified genuine portrait frontispiece plate of Edgar Allan Poe."
+    },
+    "11": {
+      "page_number": 11,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "24f654e1164538c0d26918bdd4f69d481f2e7b2f43fb3c35a950375fe70ef2b0",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0011",
+        "reread_block_ids": [
+          "p0011-b0001"
+        ],
+        "confirmed_block_ids": [
+          "p0011-b0001"
+        ]
+      },
+      "notes": "Verified dedication plate typography."
+    },
+    "13": {
+      "page_number": 13,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "92114946cc55b61ff69f787db8df18c1e6da8919300b53c3e478dcf5e565986b",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0013",
+        "reread_block_ids": [
+          "p0013-b0002",
+          "p0013-b0003",
+          "p0013-b0004",
+          "p0013-b0005",
+          "p0013-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0013-b0002",
+          "p0013-b0003",
+          "p0013-b0004",
+          "p0013-b0005",
+          "p0013-b0006"
+        ]
+      },
+      "notes": "Verified PREFACE floral ornament dropped and historical diacritic 'Héloïse'."
+    },
+    "15": {
+      "page_number": 15,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "99acc6d928f94ec76e3ac641d00947f23563e7bdb5b03d3c196cb12bade1e08e",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0015",
+        "reread_block_ids": [
+          "p0015-b0002",
+          "p0015-b0003",
+          "p0015-b0004",
+          "p0015-b0005",
+          "p0015-b0006",
+          "p0015-b0007",
+          "p0015-b0008",
+          "p0015-b0009",
+          "p0015-b0010",
+          "p0015-b0011",
+          "p0015-b0012",
+          "p0015-b0013",
+          "p0015-b0014"
+        ],
+        "confirmed_block_ids": [
+          "p0015-b0002",
+          "p0015-b0003",
+          "p0015-b0004",
+          "p0015-b0005",
+          "p0015-b0006",
+          "p0015-b0007",
+          "p0015-b0008",
+          "p0015-b0009",
+          "p0015-b0010",
+          "p0015-b0011",
+          "p0015-b0012",
+          "p0015-b0013",
+          "p0015-b0014"
+        ]
+      },
+      "notes": "Verified CONTENTS poppy headpiece dropped and all 9 letter entries + front/back titles."
+    },
+    "16": {
+      "page_number": 16,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "872ea72e2e9cc54b915956b74a9c374173b2f2e862cbe779f248cff8b8e33412",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0016",
+        "reread_block_ids": [
+          "p0016-b0001",
+          "p0016-b0002",
+          "p0016-b0003",
+          "p0016-b0004",
+          "p0016-b0005",
+          "p0016-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0016-b0001",
+          "p0016-b0002",
+          "p0016-b0003",
+          "p0016-b0004",
+          "p0016-b0005",
+          "p0016-b0006"
+        ]
+      },
+      "notes": "Verified Contents continuation entries (Request for Banns, Marriage Contract, Poe to Mrs. Clemm) and floral tailpiece dropped."
+    },
+    "19": {
+      "page_number": 19,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "448c6ef56d436210f7310a3779dae9287413a7d11bfbae51229dfcd8228cc1ad",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0019",
+        "reread_block_ids": [
+          "p0019-b0002",
+          "p0019-b0003",
+          "p0019-b0004",
+          "p0019-b0005",
+          "p0019-b0006",
+          "p0019-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0019-b0002",
+          "p0019-b0003",
+          "p0019-b0004",
+          "p0019-b0005",
+          "p0019-b0006",
+          "p0019-b0007"
+        ]
+      },
+      "notes": "Verified INTRODUCTION floral ornament dropped, 'INTRODUCTION' heading, and prose."
+    },
+    "21": {
+      "page_number": 21,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "c0b0791bfde01595fd9f82e923cf9b5c81e1783cbd75f4e80329d8a1f374a5d0",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0021",
+        "reread_block_ids": [
+          "p0021-b0001",
+          "p0021-b0002",
+          "p0021-b0003",
+          "p0021-b0004",
+          "p0021-b0005",
+          "p0021-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0021-b0001",
+          "p0021-b0002",
+          "p0021-b0003",
+          "p0021-b0004",
+          "p0021-b0005",
+          "p0021-b0006"
+        ]
+      },
+      "notes": "Verified 'Poë' diaeresis in footnote 1 and prose ending Introduction."
+    },
+    "23": {
+      "page_number": 23,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "da482c9088537ae12a9bb196e6eb5831b3dccc54a308b1d8ee4195c698f71ecc",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0023",
+        "reread_block_ids": [
+          "p0023-b0002",
+          "p0023-b0003",
+          "p0023-b0004",
+          "p0023-b0005",
+          "p0023-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0023-b0002",
+          "p0023-b0003",
+          "p0023-b0004",
+          "p0023-b0005",
+          "p0023-b0006"
+        ]
+      },
+      "notes": "Verified FIRST LETTER floral headpiece dropped, header, dateline, and drop-cap opening."
+    },
+    "25": {
+      "page_number": 25,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "0e46005334f584b5b280cb26f19467e68b3e7975822c25ea6802de538c423a3d",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0025",
+        "reread_block_ids": [
+          "p0025-b0001"
+        ],
+        "confirmed_block_ids": [
+          "p0025-b0001"
+        ]
+      },
+      "notes": "Verified genuine portrait plate of Sarah Helen Whitman."
+    },
+    "39": {
+      "page_number": 39,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "c1fe410e9d3fcc21402843f28577b5fc20103eb5197372a343349972df31bda8",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0039",
+        "reread_block_ids": [
+          "p0039-b0002",
+          "p0039-b0003",
+          "p0039-b0004",
+          "p0039-b0005",
+          "p0039-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0039-b0002",
+          "p0039-b0003",
+          "p0039-b0004",
+          "p0039-b0005",
+          "p0039-b0006"
+        ]
+      },
+      "notes": "Verified SECOND LETTER floral headpiece dropped and Oct. 18, 1848 dateline."
+    },
+    "50": {
+      "page_number": 50,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "93beb67700d5416a5cc34592c71893c52891f7b3c4789d8e50695ca918524ca1",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0050",
+        "reread_block_ids": [
+          "p0050-b0002",
+          "p0050-b0003",
+          "p0050-b0004",
+          "p0050-b0005",
+          "p0050-b0006",
+          "p0050-b0007",
+          "p0050-b0008",
+          "p0050-b0009"
+        ],
+        "confirmed_block_ids": [
+          "p0050-b0002",
+          "p0050-b0003",
+          "p0050-b0004",
+          "p0050-b0005",
+          "p0050-b0006",
+          "p0050-b0007",
+          "p0050-b0008",
+          "p0050-b0009"
+        ]
+      },
+      "notes": "Verified THIRD LETTER headpiece dropped, bottom dateline Tuesday Nov 7., and editorial note."
+    },
+    "51": {
+      "page_number": 51,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "f22eeee21d418b220933f0750c58ba3b6242f552249253d32f5276aa9511e24e",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0051",
+        "reread_block_ids": [
+          "p0051-b0001",
+          "p0051-b0002",
+          "p0051-b0003",
+          "p0051-b0004",
+          "p0051-b0005",
+          "p0051-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0051-b0001",
+          "p0051-b0002",
+          "p0051-b0003",
+          "p0051-b0004",
+          "p0051-b0005",
+          "p0051-b0006"
+        ]
+      },
+      "notes": "Verified brown envelope endorsement kept within Third Letter."
+    },
+    "52": {
+      "page_number": 52,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "87c21ebeccaae6442912eb4fe8a5a0904ba35510807fc5642ce38478a9da05e8",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0052",
+        "reread_block_ids": [
+          "p0052-b0002",
+          "p0052-b0003",
+          "p0052-b0004",
+          "p0052-b0005",
+          "p0052-b0006",
+          "p0052-b0007",
+          "p0052-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0052-b0002",
+          "p0052-b0003",
+          "p0052-b0004",
+          "p0052-b0005",
+          "p0052-b0006",
+          "p0052-b0007",
+          "p0052-b0008"
+        ]
+      },
+      "notes": "Verified FOURTH LETTER headpiece dropped and Nov. 14th, 1848 opening."
+    },
+    "54": {
+      "page_number": 54,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "e9c4215123a62610e1d3f34fdc2275f675a85b5977c65bcef490698185de265c",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0054",
+        "reread_block_ids": [
+          "p0054-b0002",
+          "p0054-b0003",
+          "p0054-b0004",
+          "p0054-b0005",
+          "p0054-b0006",
+          "p0054-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0054-b0002",
+          "p0054-b0003",
+          "p0054-b0004",
+          "p0054-b0005",
+          "p0054-b0006",
+          "p0054-b0007"
+        ]
+      },
+      "notes": "Verified FIFTH LETTER rose headpiece dropped and Wednesday Morning—the 22d. Nov. opening."
+    },
+    "56": {
+      "page_number": 56,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "3687021c55499d5bc8a858b03c61331a9ffa5b5ee72954d50b86295ab36f5284",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0056",
+        "reread_block_ids": [
+          "p0056-b0002",
+          "p0056-b0003",
+          "p0056-b0004",
+          "p0056-b0005",
+          "p0056-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0056-b0002",
+          "p0056-b0003",
+          "p0056-b0004",
+          "p0056-b0005",
+          "p0056-b0006"
+        ]
+      },
+      "notes": "Verified SIXTH LETTER floral headpiece dropped and Friday the 24th. opening."
+    },
+    "59": {
+      "page_number": 59,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "311a8d834d35952dd0a67eab40cfba38feb534a1952011721b3469e5bab9db1a",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0059",
+        "reread_block_ids": [
+          "p0059-b0001",
+          "p0059-b0002",
+          "p0059-b0003",
+          "p0059-b0004",
+          "p0059-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0059-b0001",
+          "p0059-b0002",
+          "p0059-b0003",
+          "p0059-b0004",
+          "p0059-b0005"
+        ]
+      },
+      "notes": "Verified 'Alpha Lyræ' ligature and Vergilian spelling in Sixth Letter."
+    },
+    "60": {
+      "page_number": 60,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "646a59a9f45e5b302718eddea64f481f3ea4860194f49cf8d716f53f187ded78",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0060",
+        "reread_block_ids": [
+          "p0060-b0001",
+          "p0060-b0002",
+          "p0060-b0003",
+          "p0060-b0004",
+          "p0060-b0005",
+          "p0060-b0006",
+          "p0060-b0007",
+          "p0060-b0008",
+          "p0060-b0009",
+          "p0060-b0010",
+          "p0060-b0011"
+        ],
+        "confirmed_block_ids": [
+          "p0060-b0001",
+          "p0060-b0002",
+          "p0060-b0003",
+          "p0060-b0004",
+          "p0060-b0005",
+          "p0060-b0006",
+          "p0060-b0007",
+          "p0060-b0008",
+          "p0060-b0009",
+          "p0060-b0010",
+          "p0060-b0011"
+        ]
+      },
+      "notes": "Verified Sixth Letter postscript and Fordham November 24th. 1848 endorsement kept unified."
+    },
+    "61": {
+      "page_number": 61,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "b310979290d1a0cdeefcb63a85dbc2befbfcd556adc21fbbee176ea8b329811b",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0061",
+        "reread_block_ids": [
+          "p0061-b0002",
+          "p0061-b0003",
+          "p0061-b0004",
+          "p0061-b0005",
+          "p0061-b0006",
+          "p0061-b0007",
+          "p0061-b0008",
+          "p0061-b0009"
+        ],
+        "confirmed_block_ids": [
+          "p0061-b0002",
+          "p0061-b0003",
+          "p0061-b0004",
+          "p0061-b0005",
+          "p0061-b0006",
+          "p0061-b0007",
+          "p0061-b0008",
+          "p0061-b0009"
+        ]
+      },
+      "notes": "Verified SEVENTH LETTER rose headpiece dropped and Sunday evening 26. opening + verse."
+    },
+    "63": {
+      "page_number": 63,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "53b584324ec0da38af8278dde60f2d310dfb867935b2e75b07b031e956f4fa12",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0063",
+        "reread_block_ids": [
+          "p0063-b0001",
+          "p0063-b0002",
+          "p0063-b0003",
+          "p0063-b0004",
+          "p0063-b0005",
+          "p0063-b0006",
+          "p0063-b0007",
+          "p0063-b0008",
+          "p0063-b0009"
+        ],
+        "confirmed_block_ids": [
+          "p0063-b0001",
+          "p0063-b0002",
+          "p0063-b0003",
+          "p0063-b0004",
+          "p0063-b0005",
+          "p0063-b0006",
+          "p0063-b0007",
+          "p0063-b0008",
+          "p0063-b0009"
+        ]
+      },
+      "notes": "Verified Seventh Letter enclosure blockquote and P.S. continuation."
+    },
+    "64": {
+      "page_number": 64,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "ea169a3f69c91a74aaed75007289358a2d319cff817211c48cebded095bbca2d",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0064",
+        "reread_block_ids": [
+          "p0064-b0002",
+          "p0064-b0003",
+          "p0064-b0004",
+          "p0064-b0005",
+          "p0064-b0006",
+          "p0064-b0007",
+          "p0064-b0008",
+          "p0064-b0009",
+          "p0064-b0010"
+        ],
+        "confirmed_block_ids": [
+          "p0064-b0002",
+          "p0064-b0003",
+          "p0064-b0004",
+          "p0064-b0005",
+          "p0064-b0006",
+          "p0064-b0007",
+          "p0064-b0008",
+          "p0064-b0009",
+          "p0064-b0010"
+        ]
+      },
+      "notes": "Verified EIGHTH LETTER floral headpiece dropped, Dec. 17, 1848.1 / Saturday, 2 P.M. dateline, and cascading signature."
+    },
+    "65": {
+      "page_number": 65,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "48502913b7c7cf8758bb133275df0e2089a06e36904a4732005f278e8d12aea6",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0065",
+        "reread_block_ids": [
+          "p0065-b0002",
+          "p0065-b0003",
+          "p0065-b0004",
+          "p0065-b0005",
+          "p0065-b0006",
+          "p0065-b0007",
+          "p0065-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0065-b0002",
+          "p0065-b0003",
+          "p0065-b0004",
+          "p0065-b0005",
+          "p0065-b0006",
+          "p0065-b0007",
+          "p0065-b0008"
+        ]
+      },
+      "notes": "Verified NINTH AND LAST LETTER floral headpiece dropped and fragmentary January 1849 text."
+    },
+    "66": {
+      "page_number": 66,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "c3d89f3366fce7926f9a9dcdad588ce614a7ebda06b5fc89abb17a2c5ab46693",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0066",
+        "reread_block_ids": [
+          "p0066-b0002",
+          "p0066-b0003",
+          "p0066-b0004",
+          "p0066-b0005",
+          "p0066-b0006",
+          "p0066-b0007",
+          "p0066-b0009"
+        ],
+        "confirmed_block_ids": [
+          "p0066-b0002",
+          "p0066-b0003",
+          "p0066-b0004",
+          "p0066-b0005",
+          "p0066-b0006",
+          "p0066-b0007",
+          "p0066-b0009"
+        ]
+      },
+      "notes": "Verified REQUEST FOR BANNS floral headpiece and tailpiece dropped."
+    },
+    "67": {
+      "page_number": 67,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "06f8f0fadf0c4b8948aedc9bfbaacc4ac67747ce8218d5172f60bb4fad97ef51",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0067",
+        "reread_block_ids": [
+          "p0067-b0002",
+          "p0067-b0003",
+          "p0067-b0004",
+          "p0067-b0005",
+          "p0067-b0006",
+          "p0067-b0007",
+          "p0067-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0067-b0002",
+          "p0067-b0003",
+          "p0067-b0004",
+          "p0067-b0005",
+          "p0067-b0006",
+          "p0067-b0007",
+          "p0067-b0008"
+        ]
+      },
+      "notes": "Verified Marriage Contract floral headpiece dropped and Tillinghast estate schedule start."
+    },
+    "68": {
+      "page_number": 68,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "7bf440bdb50dc59ed0d8b5665b9e8ce76e32f48b22f80f702988ae82f01e81e2",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0068",
+        "reread_block_ids": [
+          "p0068-b0001",
+          "p0068-b0002",
+          "p0068-b0003",
+          "p0068-b0004",
+          "p0068-b0005",
+          "p0068-b0006",
+          "p0068-b0007",
+          "p0068-b0008",
+          "p0068-b0009"
+        ],
+        "confirmed_block_ids": [
+          "p0068-b0001",
+          "p0068-b0002",
+          "p0068-b0003",
+          "p0068-b0004",
+          "p0068-b0005",
+          "p0068-b0006",
+          "p0068-b0007",
+          "p0068-b0008",
+          "p0068-b0009"
+        ]
+      },
+      "notes": "Verified Benjamin Allen notes list_item continuation and second/third legal instruments unified."
+    },
+    "69": {
+      "page_number": 69,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "52060bdc3e6094df7cb94abeca69c0119c77e94ed33706c5811d0af148e56117",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0069",
+        "reread_block_ids": [
+          "p0069-b0001",
+          "p0069-b0002",
+          "p0069-b0003",
+          "p0069-b0004",
+          "p0069-b0005",
+          "p0069-b0006",
+          "p0069-b0007",
+          "p0069-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0069-b0001",
+          "p0069-b0002",
+          "p0069-b0003",
+          "p0069-b0004",
+          "p0069-b0005",
+          "p0069-b0006",
+          "p0069-b0007",
+          "p0069-b0008"
+        ]
+      },
+      "notes": "Verified Marriage Contract Poe assent dateline Providence December 22 1848 and dual signatures."
+    },
+    "70": {
+      "page_number": 70,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "401685aa689e151b905287ef34d3f520a9e526b7ad83c8342e3731419f114064",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0070",
+        "reread_block_ids": [
+          "p0070-b0002",
+          "p0070-b0003",
+          "p0070-b0004",
+          "p0070-b0005",
+          "p0070-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0070-b0002",
+          "p0070-b0003",
+          "p0070-b0004",
+          "p0070-b0005",
+          "p0070-b0006"
+        ]
+      },
+      "notes": "Verified POE TO MRS. CLEMM floral headpiece dropped and undated note."
+    },
+    "71": {
+      "page_number": 71,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T17:22:28.829439+00:00",
+      "source_page_sha256": "c7314bd7139dbb9186484c6d5460144794e649a00385d4eefc8830182bd8bf12",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0071",
+        "reread_block_ids": [],
+        "confirmed_block_ids": []
+      },
+      "notes": "Verified Knickerbocker Press printer's colophon mark dropped as scanner_residue."
+    }
+  }
+}

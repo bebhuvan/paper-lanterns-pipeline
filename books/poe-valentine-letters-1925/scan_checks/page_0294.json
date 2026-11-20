@@ -1,0 +1,54 @@
+{
+  "book_id": "poe-valentine-letters-1925",
+  "page_number": 294,
+  "check_id": "scan-check-p0294",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "dce39481bd406f65016d03842a8bef86251460997c3f55170b3edf720e52af10",
+  "checks": [
+    {
+      "block_id": "p0294-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Blank circular postmark illustration dropped on reverse of Letter XXIV; John Allan endorsement & postscript conserved."
+    },
+    {
+      "block_id": "p0294-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Blank circular postmark illustration dropped on reverse of Letter XXIV; John Allan endorsement & postscript conserved."
+    },
+    {
+      "block_id": "p0294-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Blank circular postmark illustration dropped on reverse of Letter XXIV; John Allan endorsement & postscript conserved."
+    },
+    {
+      "block_id": "p0294-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Blank circular postmark illustration dropped on reverse of Letter XXIV; John Allan endorsement & postscript conserved."
+    },
+    {
+      "block_id": "p0294-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Blank circular postmark illustration dropped on reverse of Letter XXIV; John Allan endorsement & postscript conserved."
+    },
+    {
+      "block_id": "p0294-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Blank circular postmark illustration dropped on reverse of Letter XXIV; John Allan endorsement & postscript conserved."
+    },
+    {
+      "block_id": "p0294-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Blank circular postmark illustration dropped on reverse of Letter XXIV; John Allan endorsement & postscript conserved."
+    },
+    {
+      "block_id": "p0294-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Blank circular postmark illustration dropped on reverse of Letter XXIV; John Allan endorsement & postscript conserved."
+    },
+    {
+      "block_id": "p0294-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Blank circular postmark illustration dropped on reverse of Letter XXIV; John Allan endorsement & postscript conserved."
+    }
+  ]
+}

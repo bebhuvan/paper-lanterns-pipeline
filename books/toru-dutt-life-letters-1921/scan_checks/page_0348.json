@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "toru-dutt-life-letters-1921",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 348,
+  "reviewer": "native-vision-400ppi-scan-check",
+  "checked_at": "2026-11-19T15:52:28.339181+00:00",
+  "source_page_sha256": "722b1ec7f31860928252bea7256890ad4a4bcc94382456d0d4e2ae83ef347988",
+  "render_png": "renders/page_0348.png",
+  "checks": [
+    {
+      "block_id": "p0348-b0001",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0348.png."
+    },
+    {
+      "block_id": "p0348-b0002",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0348.png."
+    },
+    {
+      "block_id": "p0348-b0003",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0348.png."
+    },
+    {
+      "block_id": "p0348-b0004",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0348.png."
+    },
+    {
+      "block_id": "p0348-b0005",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0348.png."
+    },
+    {
+      "block_id": "p0348-b0006",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0348.png."
+    },
+    {
+      "block_id": "p0348-b0007",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0348.png."
+    },
+    {
+      "block_id": "p0348-b0008",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0348.png."
+    },
+    {
+      "block_id": "p0348-b0009",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0348.png."
+    },
+    {
+      "block_id": "p0348-b0010",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0348.png."
+    },
+    {
+      "block_id": "p0348-b0011",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0348.png."
+    },
+    {
+      "block_id": "p0348-b0012",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0348.png."
+    }
+  ]
+}

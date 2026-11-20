@@ -1,0 +1,20 @@
+[book]
+book_id = "goethe-zelter"
+title = "Goethe's Letters to Zelter"
+author_or_editor = "Johann Wolfgang von Goethe"
+authors = ["Johann Wolfgang von Goethe"]
+publication_year = 1887
+subtitle = ""
+imprint = ""
+collection = "world-correspondence"
+language = "en"
+declared_scripts = []
+profile = "polyglot_epistolary"
+
+[source]
+archive_id = "goetheslettersto00goet"
+source_pdf = "sources/goethe-letters-to-zelter.pdf"
+source_pdf_sha256 = ""
+
+[extraction]
+profile = "polyglot_epistolary"

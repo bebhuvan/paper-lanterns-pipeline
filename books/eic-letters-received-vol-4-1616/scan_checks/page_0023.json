@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-4-1616",
+  "page_number": 23,
+  "check_id": "eic-letters-received-vol-4-1616-p0023",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "94688f97abf76fe12ab7da56298e5c3bb50fd564eb130b2d7cd039c36e4a2acb",
+  "checked_at": "2026-11-17T21:16:06.113382+00:00",
+  "checks": [
+    {
+      "block_id": "p0023-b0005",
+      "token": "Europeërs",
+      "verdict": "printed_as_read",
+      "note": "Verified on sheet_vol4_a_glyphs_fn.png: prints Dutch 'Europeërs' with diaeresis."
+    }
+  ]
+}

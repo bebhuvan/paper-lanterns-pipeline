@@ -1,0 +1,169 @@
+{
+  "english_epistolary": {
+    "description": "Standard 19th- and 20th-century English correspondence with moderate apparatus and occasional European loanwords.",
+    "primary": "gemini/gemini-3.8-flash",
+    "primary_provider": "gemini",
+    "primary_model": "gemini-3.8-flash",
+    "fallback_chain": [
+      "gemini/gemini-3.6-flash",
+      "qwen_cloud/qwen4-max",
+      "anthropic/claude-sonnet-5-5"
+    ],
+    "hotspot_model": "gemini/gemini-4-argon",
+    "boundary_model": "gemini/gemini-4-hydrogen",
+    "decision_model": "gemini/gemini-decision-1",
+    "media_resolution": "MEDIA_RESOLUTION_HIGH",
+    "render_dpi": 300,
+    "thinking_level": "low",
+    "use_scanline_prefix": false,
+    "enable_context_cache": true
+  },
+  "polyglot_epistolary": {
+    "description": "Multilingual and diacritic-dense correspondence across Latin, German, French, Russian, Greek, and Italian.",
+    "primary": "gemini/gemini-4-hydrogen",
+    "primary_provider": "gemini",
+    "primary_model": "gemini-4-hydrogen",
+    "fallback_chain": [
+      "qwen_cloud/qwen4-max",
+      "anthropic/claude-sonnet-5-5",
+      "gemini/gemini-3.8-flash"
+    ],
+    "hotspot_model": "anthropic/claude-opus-5-5",
+    "boundary_model": "gemini/gemini-4-hydrogen",
+    "decision_model": "gemini/gemini-decision-1",
+    "media_resolution": "MEDIA_RESOLUTION_ULTRA_HIGH",
+    "render_dpi": 350,
+    "thinking_level": "low",
+    "use_scanline_prefix": false,
+    "enable_context_cache": true
+  },
+  "indic_and_oriental_epistolary": {
+    "description": "Correspondence with Sanskrit, IAST, Hunterian/Jonesian transliteration, Devanagari, Bengali, Urdu, Arabic, or Persian passages.",
+    "primary": "gemini/gemini-4-hydrogen",
+    "primary_provider": "gemini",
+    "primary_model": "gemini-4-hydrogen",
+    "fallback_chain": [
+      "qwen_cloud/qwen4-max",
+      "anthropic/claude-opus-5-5",
+      "anthropic/claude-sonnet-5-5"
+    ],
+    "hotspot_model": "gemini/gemini-4-argon",
+    "boundary_model": "gemini/gemini-4-hydrogen",
+    "decision_model": "gemini/gemini-decision-1",
+    "media_resolution": "MEDIA_RESOLUTION_ULTRA_HIGH",
+    "render_dpi": 350,
+    "thinking_level": "low",
+    "use_scanline_prefix": false,
+    "enable_context_cache": true
+  },
+  "archaic_18c_epistolary": {
+    "description": "Early modern and 18th-century correspondence preserving medial long-s (ſ), lexical ligatures (æ/œ), cascading valedictions, marginalia, and mathematical/scientific notation.",
+    "primary": "gemini/gemini-4-hydrogen",
+    "primary_provider": "gemini",
+    "primary_model": "gemini-4-hydrogen",
+    "fallback_chain": [
+      "anthropic/claude-opus-5-5",
+      "qwen_cloud/qwen4-max",
+      "gemini/gemini-3.8-flash"
+    ],
+    "hotspot_model": "anthropic/claude-opus-5-5",
+    "boundary_model": "gemini/gemini-4-hydrogen",
+    "decision_model": "gemini/gemini-decision-1",
+    "media_resolution": "MEDIA_RESOLUTION_ULTRA_HIGH",
+    "render_dpi": 400,
+    "thinking_level": "low",
+    "use_scanline_prefix": false,
+    "enable_context_cache": true
+  },
+  "recitation_shielded": {
+    "description": "Public-domain literary classics prone to VLM memorization/RECITATION stops; uses proactive [L01] scanline prefixing and immediate cross-family fallback.",
+    "primary": "gemini/gemini-3.8-flash",
+    "primary_provider": "gemini",
+    "primary_model": "gemini-3.8-flash",
+    "fallback_chain": [
+      "qwen_cloud/qwen4-max",
+      "anthropic/claude-sonnet-5-5",
+      "qwen_cloud/qwen3.8-flash"
+    ],
+    "hotspot_model": "gemini/gemini-4-argon",
+    "boundary_model": "gemini/gemini-4-hydrogen",
+    "decision_model": "gemini/gemini-decision-1",
+    "media_resolution": "MEDIA_RESOLUTION_HIGH",
+    "render_dpi": 300,
+    "thinking_level": "low",
+    "use_scanline_prefix": true,
+    "enable_context_cache": true
+  },
+  "qwen4_epistolary": {
+    "description": "Qwen 4 flagship multimodal extraction via QwenCloud Global ($1.413/$4.24 per 1M, $0.071 cached) with low reasoning effort and cross-family fallbacks.",
+    "primary": "qwen_cloud/qwen4-max",
+    "primary_provider": "qwen_cloud",
+    "primary_model": "qwen4-max",
+    "fallback_chain": [
+      "gemini/gemini-4-hydrogen",
+      "anthropic/claude-sonnet-5-5"
+    ],
+    "hotspot_model": "anthropic/claude-opus-5-5",
+    "boundary_model": "qwen_cloud/qwen4-max",
+    "decision_model": "gemini/gemini-decision-1",
+    "media_resolution": "MEDIA_RESOLUTION_HIGH",
+    "render_dpi": 350,
+    "thinking_level": "low",
+    "use_scanline_prefix": false,
+    "enable_context_cache": true
+  },
+  "claude_opus_scholarly": {
+    "description": "Maximum-accuracy scholarly diplomatic extraction on Claude Opus 5.5 with constrained JSON schema decoding and prompt caching.",
+    "primary": "anthropic/claude-opus-5-5",
+    "primary_provider": "anthropic",
+    "primary_model": "claude-opus-5-5",
+    "fallback_chain": [
+      "gemini/gemini-4-hydrogen",
+      "qwen_cloud/qwen4-max"
+    ],
+    "hotspot_model": "anthropic/claude-opus-5-5",
+    "boundary_model": "anthropic/claude-sonnet-5-5",
+    "decision_model": "gemini/gemini-decision-1",
+    "media_resolution": "MEDIA_RESOLUTION_ULTRA_HIGH",
+    "render_dpi": 350,
+    "thinking_level": "low",
+    "use_scanline_prefix": false,
+    "enable_context_cache": true
+  },
+  "claude_sonnet_epistolary": {
+    "description": "Balanced speed-and-fidelity Claude Sonnet 5.5 extraction with constrained JSON schema decoding, between_tools minimal thinking, and 0.05x cache hits.",
+    "primary": "anthropic/claude-sonnet-5-5",
+    "primary_provider": "anthropic",
+    "primary_model": "claude-sonnet-5-5",
+    "fallback_chain": [
+      "gemini/gemini-3.8-flash",
+      "qwen_cloud/qwen4-max"
+    ],
+    "hotspot_model": "anthropic/claude-opus-5-5",
+    "boundary_model": "anthropic/claude-sonnet-5-5",
+    "decision_model": "gemini/gemini-decision-1",
+    "media_resolution": "MEDIA_RESOLUTION_HIGH",
+    "render_dpi": 350,
+    "thinking_level": "low",
+    "use_scanline_prefix": false,
+    "enable_context_cache": true
+  },
+  "claude_haiku_fast": {
+    "description": "Ultra-low-cost ($0.10/$0.50 per 1M) high-throughput extraction on Claude Haiku 5.5 with constrained JSON schema decoding.",
+    "primary": "anthropic/claude-haiku-5-5",
+    "primary_provider": "anthropic",
+    "primary_model": "claude-haiku-5-5",
+    "fallback_chain": [
+      "anthropic/claude-sonnet-5-5",
+      "gemini/gemini-3.8-flash"
+    ],
+    "hotspot_model": "anthropic/claude-sonnet-5-5",
+    "boundary_model": "anthropic/claude-sonnet-5-5",
+    "decision_model": "gemini/gemini-decision-1",
+    "media_resolution": "MEDIA_RESOLUTION_HIGH",
+    "render_dpi": 300,
+    "thinking_level": "low",
+    "use_scanline_prefix": false,
+    "enable_context_cache": true
+  }
+}

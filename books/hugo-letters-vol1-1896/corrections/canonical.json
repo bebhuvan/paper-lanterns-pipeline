@@ -1,0 +1,225 @@
+{
+  "version": "correction-v2",
+  "book_id": "hugo-letters-vol1-1896",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "generated_by": "scan-check",
+  "created_at": "2026-11-17T20:28:44.535861+00:00",
+  "corrections": [
+    {
+      "correction_id": "hugo1-p0010-b0001-frontispiece",
+      "page_number": 10,
+      "block_id": "p0010-b0001",
+      "op": "set_text",
+      "replacement_tagged_text": "Portrait engraving of Victor Hugo signed 'Devéria 1826', with facsimile signature 'Victor Hugo'.",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 10: Engraved artist signature 'Devéria 1826' sits cleanly above university perforation holes."
+    },
+    {
+      "correction_id": "hugo1-p0011-b0005-pressmark",
+      "page_number": 11,
+      "block_id": "p0011-b0005",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 11: Riverside Press woodcut printer device on title page; reclassify as scanner_residue to avoid fake [Illustration]."
+    },
+    {
+      "correction_id": "hugo1-p0011-b0006-motto",
+      "page_number": 11,
+      "block_id": "p0011-b0006",
+      "op": "set_text",
+      "replacement_type": "imprint",
+      "replacement_tagged_text": "Tout bien ou rien. The Riverside Press",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 11: Capture full Riverside Press motto and convert block type to imprint."
+    },
+    {
+      "correction_id": "hugo1-p0143-b0007-ogonek",
+      "page_number": 143,
+      "block_id": "p0143-b0007",
+      "op": "set_text",
+      "replacement_tagged_text": "Last July, when the <i>Comédie Française</i> wished to put on the stage the first drama that I had written, <i>Marion de Lorme,</i> I applied to M. de Martignac, who was then Minister, for exemption from the jurisdiction of the censorship, and for permission to submit to the Minister's censorship alone, a favor which he had already granted to several dramatic authors. This is how I explained to him verbally and in writing what harm he might do me by handing over my play to the censors.",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 143 (folio 129): Fix spurious U+012F ogonek glyph artifact in 'Comédie Française'."
+    },
+    {
+      "correction_id": "hugo1-p0168-b0008-ordinal",
+      "page_number": 168,
+      "block_id": "p0168-b0008",
+      "op": "set_text",
+      "replacement_tagged_text": "<sc>François</sc> Ier. . . . . M. <sc>Bocage.</sc>",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 168 (folio 154): French ordinal 'Ier' is not a footnote callout; render without <sup> to clear unmatched_callout."
+    },
+    {
+      "correction_id": "hugo1-p0213-b0006-tear",
+      "page_number": 213,
+      "block_id": "p0213-b0006",
+      "op": "set_text",
+      "replacement_tagged_text": "Now, would it be possible to add a page to your admirable article, it does not matter where, at the end, for instance, about the edition itself, and the new prefaces, especially that to the <i>Dernier jour d'un condamné,</i> which is of some length if not importance and saying that when the new edition of <i>Notre-Da[me] de Paris</i> appears, the paper will notice it again, as w[ell] as the three new chapters, which are very long, an[d in] which Louis XI. figures? This is in the ma[tter]",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 213 (folio 199): Physical lower-right leaf corner tear removes outer characters; mark lacunae cleanly in editorial brackets."
+    },
+    {
+      "correction_id": "hugo1-p0214-b0015-tear",
+      "page_number": 214,
+      "block_id": "p0214-b0015",
+      "op": "set_text",
+      "replacement_tagged_text": "<sup>1</sup> After the events of June, 1832, in consequence of the insurrection, [Par]is was placed in a state of siege; there were fears at one time of a [sangui]nary reaction, and there was some talk of inserting a signed protest [in the] <i>National.</i> (Sainte-Beuve, <i>Portraits contemporains,</i> 1870.)",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 214 (folio 200): Lower-left leaf corner tear; scan reads '...inary reaction,' -> '[sangui]nary reaction,' (fixing hallucinated 'reactionary')."
+    },
+    {
+      "correction_id": "hugo1-p0219-b0015-fn",
+      "page_number": 219,
+      "block_id": "p0219-b0015",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 219 (folio 205): Closing valediction of Léopoldine Hugo's original French text inside Footnote 1."
+    },
+    {
+      "correction_id": "hugo1-p0219-b0016-fn",
+      "page_number": 219,
+      "block_id": "p0219-b0016",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 219 (folio 205): Closing signature of Léopoldine Hugo's original French text inside Footnote 1."
+    },
+    {
+      "correction_id": "hugo1-p0231-b0008-valed",
+      "page_number": 231,
+      "block_id": "p0231-b0008",
+      "op": "set_type",
+      "replacement_type": "valediction",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 231 (folio 217): 'Your own daddy,' is valediction before signature 'V.' in Part V Letter IV."
+    },
+    {
+      "correction_id": "hugo1-p0232-b0006-vi",
+      "page_number": 232,
+      "block_id": "p0232-b0006",
+      "op": "set_text",
+      "replacement_tagged_text": "VI.",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Normalize lowercase small-caps Roman numeral '<sc>vi.</sc>' to 'VI.' for clean letter numbering."
+    },
+    {
+      "correction_id": "hugo1-p0257-b0001-plate",
+      "page_number": 257,
+      "block_id": "p0257-b0001",
+      "op": "set_text",
+      "replacement_tagged_text": "Autograph illustrated letter of Victor Hugo from the Pyrenees, mentioning 'la Rochelle', corresponding to Letter XXXI (p. 242).",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 257: Facing autograph letter plate with Hugo's Pyrenees mountain ink drawing."
+    },
+    {
+      "correction_id": "hugo1-p0257-b0002-drop",
+      "page_number": 257,
+      "block_id": "p0257-b0002",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 257: Drop partial illegible cursive transcript from facsimile image plate (preserved in facing English translation on p. 242 and in plate image)."
+    },
+    {
+      "correction_id": "hugo1-p0257-b0003-drop",
+      "page_number": 257,
+      "block_id": "p0257-b0003",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 257: Drop partial illegible cursive marginal postscript from facsimile image plate."
+    },
+    {
+      "correction_id": "hugo1-p0257-b0004-drop",
+      "page_number": 257,
+      "block_id": "p0257-b0004",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 257: Drop placeholder illegible note from facsimile image plate."
+    },
+    {
+      "correction_id": "hugo1-p0285-b0002-i",
+      "page_number": 285,
+      "block_id": "p0285-b0002",
+      "op": "set_text",
+      "replacement_tagged_text": "I.",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 285 (folio 269): Normalize '<sc>i.</sc>' to 'I.' in Appendix II."
+    },
+    {
+      "correction_id": "hugo1-p0286-b0006-encl",
+      "page_number": 286,
+      "block_id": "p0286-b0006",
+      "op": "set_type",
+      "replacement_type": "heading",
+      "replacement_transition": "starts_enclosure",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check pp. 285-287: Verse epistle 'À Raynouard, auteur des Templiers.' belongs enclosed/appended inside Appendix II Letter I."
+    },
+    {
+      "correction_id": "hugo1-p0287-b0003-encl-end",
+      "page_number": 287,
+      "block_id": "p0287-b0003",
+      "op": "set_transition",
+      "replacement_transition": "ends_enclosure",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 287: Final stanza of 'À Raynouard' concludes the Letter I verse enclosure before Letter II."
+    },
+    {
+      "correction_id": "hugo1-p0298-b0014-lib",
+      "page_number": 298,
+      "block_id": "p0298-b0014",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "UC Berkeley rear due-date library slip form code mislabeled imprint; classify as scanner_residue."
+    },
+    {
+      "correction_id": "hugo1-p0298-b0015-lib",
+      "page_number": 298,
+      "block_id": "p0298-b0015",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "UC Berkeley rear due-date library slip institution stamp; classify as scanner_residue."
+    },
+    {
+      "correction_id": "hugo1-p0298-b0016-lib",
+      "page_number": 298,
+      "block_id": "p0298-b0016",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "UC Berkeley rear due-date library slip form code; classify as scanner_residue."
+    },
+    {
+      "correction_id": "hugo1-p0156-b0006-lix",
+      "page_number": 156,
+      "block_id": "p0156-b0006",
+      "op": "set_text",
+      "replacement_tagged_text": "LIX.",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Normalize lowercase small-caps Roman numeral '<sc>lix.</sc>' to 'LIX.' for clean letter numbering."
+    }
+  ]
+}

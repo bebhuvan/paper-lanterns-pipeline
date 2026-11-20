@@ -1,0 +1,16 @@
+{
+  "book_id": "tipu-sultan-select-letters-1811",
+  "page_number": 362,
+  "check_id": "tipu-sultan-select-letters-1811-p0362",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "99242534bb369ac1ea73768e433379647ce539ffcce8527fb9678e1c4275f40d",
+  "checked_at": "2026-11-17T21:31:14.948331+00:00",
+  "checks": [
+    {
+      "block_id": "p0362-b0008",
+      "token": "Kilaadar",
+      "verdict": "printed_as_read",
+      "note": "Printed unaccented Kilaadar."
+    }
+  ]
+}

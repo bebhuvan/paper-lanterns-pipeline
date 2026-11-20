@@ -1,0 +1,29 @@
+{
+  "book_id": "gandhi-famous-letters-1947",
+  "page_number": 96,
+  "check_id": "scan-check-p0096",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "98fc1ca3f18f7f079fea3f278c34e20695a5cef67d9bed3eef3e4563dbf43915",
+  "checks": [
+    {
+      "block_id": "p0096-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified To the Nation opening preserving printed compositor typo 'Viceory' verbatim."
+    },
+    {
+      "block_id": "p0096-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified To the Nation opening preserving printed compositor typo 'Viceory' verbatim."
+    },
+    {
+      "block_id": "p0096-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified To the Nation opening preserving printed compositor typo 'Viceory' verbatim."
+    },
+    {
+      "block_id": "p0096-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified To the Nation opening preserving printed compositor typo 'Viceory' verbatim."
+    }
+  ]
+}

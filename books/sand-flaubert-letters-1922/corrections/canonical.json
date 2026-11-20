@@ -1,0 +1,64 @@
+{
+  "version": "correction-v2",
+  "book_id": "sand-flaubert-letters-1922",
+  "run_id": "canonical-hydrogen-batch-v1",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "generated_by": "scan-check",
+  "created_at": "2026-11-18T00:12:11.822557+00:00",
+  "corrections": [
+    {
+      "correction_id": "sand-p0009-b0006-duckworth",
+      "page_number": 9,
+      "block_id": "p0009-b0006",
+      "op": "set_text",
+      "replacement_type": "imprint",
+      "replacement_tagged_text": "DESORMAIS",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 9: Duckworth printer device motto 'DESORMAIS' converted to imprint to avoid blank illustration."
+    },
+    {
+      "correction_id": "sand-p0011-b0003-pref-sig",
+      "page_number": 11,
+      "block_id": "p0011-b0003",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "replacement_transition": "none",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 11: Translator initials 'A. L. McKenzie.' closing Prefatory Note, not an epistle."
+    },
+    {
+      "correction_id": "sand-p0041-b0004-intro-sig",
+      "page_number": 41,
+      "block_id": "p0041-b0004",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "replacement_transition": "none",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Introduction author signature 'Stuart P. Sherman', not an epistle."
+    },
+    {
+      "correction_id": "sand-p0144-b0008-1868",
+      "page_number": 144,
+      "block_id": "p0144-b0008",
+      "op": "set_text",
+      "replacement_tagged_text": "Paris, 10 September, 1868",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 144 (folio 100): Pixel-verified printed year '1868' in Letter LXXXIX (faded serif on '8' misread as '3')."
+    },
+    {
+      "correction_id": "sand-p0335-b0007-cruchard",
+      "page_number": 335,
+      "block_id": "p0335-b0007",
+      "op": "set_type",
+      "replacement_type": "body",
+      "replacement_transition": "none",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 335 (folio 291): Humorous apposition line beneath 'Gustave Flaubert' signature inside Letter CCLVI."
+    }
+  ]
+}

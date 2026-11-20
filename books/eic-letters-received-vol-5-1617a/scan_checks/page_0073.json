@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-5-1617a",
+  "page_number": 73,
+  "check_id": "vol5-scan-check-p0073",
+  "reviewer": "native-vision-250to450ppi-scan-check",
+  "source_page_sha256": "0f5269d3cedbc01f8ed74ffc20dd686ab28818b5ee8eaa55a2d1e46480483752",
+  "checked_at": "2026-11-17T17:58:00.757804+00:00",
+  "checks": [
+    {
+      "block_id": "p0073-b0009",
+      "token": "Cp p. 7.",
+      "verdict": "printed_as_read",
+      "note": "250-DPI scan confirms superscript '1' dropped/uninked before 'Cp p. 7.' at bottom-left footnote."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "book_id": "tipu-sultan-select-letters-1811",
+  "page_number": 555,
+  "check_id": "tipu-sultan-select-letters-1811-p0555",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "bcc7df211174ad7e627c916587386a51bc77051c56d0db5735491c89b7409f1f",
+  "checked_at": "2026-11-17T21:31:14.948331+00:00",
+  "checks": [
+    {
+      "block_id": "p0555-b0006",
+      "token": "the 5th of the month Rubbâny",
+      "verdict": "printed_as_read",
+      "note": "Manuscript interlinear erased date rendered with <sup>, not a footnote callout."
+    }
+  ]
+}

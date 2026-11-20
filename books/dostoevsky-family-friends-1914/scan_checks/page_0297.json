@@ -1,0 +1,54 @@
+{
+  "book_id": "dostoevsky-family-friends-1914",
+  "page_number": 297,
+  "check_id": "scan-check-p0297",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "118396a9ec76cfa5c5e276faaa711150ce538ec964e9817be3252e5aadf0ec17",
+  "checks": [
+    {
+      "block_id": "p0297-b0003",
+      "verdict": "corrected_ocr_roman_numeral",
+      "note": "Scan check folio 255: corrected VLM Roman numeral typo 'LXXXVI' to printed 'LXXVI' ('To I. S. Aksakov')."
+    },
+    {
+      "block_id": "p0297-b0004",
+      "verdict": "corrected_ocr_roman_numeral",
+      "note": "Scan check folio 255: corrected VLM Roman numeral typo 'LXXXVI' to printed 'LXXVI' ('To I. S. Aksakov')."
+    },
+    {
+      "block_id": "p0297-b0005",
+      "verdict": "corrected_ocr_roman_numeral",
+      "note": "Scan check folio 255: corrected VLM Roman numeral typo 'LXXXVI' to printed 'LXXVI' ('To I. S. Aksakov')."
+    },
+    {
+      "block_id": "p0297-b0006",
+      "verdict": "corrected_ocr_roman_numeral",
+      "note": "Scan check folio 255: corrected VLM Roman numeral typo 'LXXXVI' to printed 'LXXVI' ('To I. S. Aksakov')."
+    },
+    {
+      "block_id": "p0297-b0007",
+      "verdict": "corrected_ocr_roman_numeral",
+      "note": "Scan check folio 255: corrected VLM Roman numeral typo 'LXXXVI' to printed 'LXXVI' ('To I. S. Aksakov')."
+    },
+    {
+      "block_id": "p0297-b0008",
+      "verdict": "corrected_ocr_roman_numeral",
+      "note": "Scan check folio 255: corrected VLM Roman numeral typo 'LXXXVI' to printed 'LXXVI' ('To I. S. Aksakov')."
+    },
+    {
+      "block_id": "p0297-b0009",
+      "verdict": "corrected_ocr_roman_numeral",
+      "note": "Scan check folio 255: corrected VLM Roman numeral typo 'LXXXVI' to printed 'LXXVI' ('To I. S. Aksakov')."
+    },
+    {
+      "block_id": "p0297-b0010",
+      "verdict": "corrected_ocr_roman_numeral",
+      "note": "Scan check folio 255: corrected VLM Roman numeral typo 'LXXXVI' to printed 'LXXVI' ('To I. S. Aksakov')."
+    },
+    {
+      "block_id": "p0297-b0011",
+      "verdict": "corrected_ocr_roman_numeral",
+      "note": "Scan check folio 255: corrected VLM Roman numeral typo 'LXXXVI' to printed 'LXXVI' ('To I. S. Aksakov')."
+    }
+  ]
+}

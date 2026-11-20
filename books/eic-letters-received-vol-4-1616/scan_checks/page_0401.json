@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-4-1616",
+  "page_number": 401,
+  "check_id": "eic-letters-received-vol-4-1616-p0401",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "41dab78571d409aa8963026717a96af903e1209edd4862d01dc3bfd28f9d420e",
+  "checked_at": "2026-11-17T21:16:06.113382+00:00",
+  "checks": [
+    {
+      "block_id": "p0401-b0004",
+      "token": "mamudis",
+      "verdict": "printed_as_read",
+      "note": "Verified on sheet_vol4_e_edge.png: Index prints unaccented 'mamudis'."
+    }
+  ]
+}

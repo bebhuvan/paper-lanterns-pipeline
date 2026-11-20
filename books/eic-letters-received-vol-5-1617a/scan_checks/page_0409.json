@@ -1,0 +1,22 @@
+{
+  "book_id": "eic-letters-received-vol-5-1617a",
+  "page_number": 409,
+  "check_id": "vol5-scan-check-p0409",
+  "reviewer": "native-vision-250to450ppi-scan-check",
+  "source_page_sha256": "345dad60151e3c30a02313aeac21278230d0c26cda699cd002ec63c0523e035a",
+  "checked_at": "2026-11-17T17:58:00.757804+00:00",
+  "checks": [
+    {
+      "block_id": "p0409-b0004",
+      "token": "Malwa",
+      "verdict": "printed_as_read",
+      "note": "450-DPI crop confirms Index literally prints 'Malwa' without diacritics."
+    },
+    {
+      "block_id": "p0409-b0006",
+      "token": "Mandu",
+      "verdict": "printed_as_read",
+      "note": "450-DPI crop confirms Index literally prints 'Mandoa (Mandu)' without diacritics."
+    }
+  ]
+}

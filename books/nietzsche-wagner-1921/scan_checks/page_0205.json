@@ -1,0 +1,14 @@
+{
+  "book_id": "nietzsche-wagner-1921",
+  "page_number": 205,
+  "check_id": "scan-check-p0205",
+  "reviewer": "native-vision-400ppi-scan-check",
+  "source_page_sha256": "92c87cfbc267229810c1ed3e6b4fbd639e11dc9b87a218cb733eaa8079e9ea35",
+  "checks": [
+    {
+      "block_id": "p0205-b0002",
+      "verdict": "corrected_from_scan",
+      "note": "400-PPI scan confirms faint 'w' in 'would attach particular value' is legible."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "cortes-letters-vol1-1908",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Half-Title, Limitation, Portrait & Title Page",
+      "start_page": 1,
+      "end_page": 12
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Preface",
+      "start_page": 13,
+      "end_page": 16
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents & Illustrations",
+      "start_page": 17,
+      "end_page": 20
+    },
+    {
+      "kind": "chapter",
+      "title": "Biographical Note (Chapters I–IV)",
+      "start_page": 21,
+      "end_page": 94
+    },
+    {
+      "kind": "appendix",
+      "title": "Last Will and Testament of Fernando Cortes",
+      "start_page": 95,
+      "end_page": 118
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Bibliographical Note",
+      "start_page": 119,
+      "end_page": 140
+    },
+    {
+      "kind": "chapter",
+      "title": "First Letter, July 10, 1519",
+      "start_page": 141,
+      "end_page": 192
+    },
+    {
+      "kind": "appendix",
+      "title": "Appendices to the First Letter (I–IV)",
+      "start_page": 193,
+      "end_page": 202
+    },
+    {
+      "kind": "chapter",
+      "title": "Second Letter, October 30, 1520",
+      "start_page": 203,
+      "end_page": 348
+    },
+    {
+      "kind": "appendix",
+      "title": "Appendices to the Second Letter (I–VII)",
+      "start_page": 349,
+      "end_page": 382
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "dostoevsky-family-friends-1914",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Half-Title, Frontispiece & Title Page",
+      "start_page": 1,
+      "end_page": 8
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Translator's Preface",
+      "start_page": 9,
+      "end_page": 10
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents",
+      "start_page": 11,
+      "end_page": 13
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Illustrations",
+      "start_page": 14,
+      "end_page": 16
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Chronological Table of Dostoevsky's Life",
+      "start_page": 17,
+      "end_page": 22
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters of Fyodor Michailovitch Dostoevsky to his Family and Friends",
+      "start_page": 23,
+      "end_page": 302
+    },
+    {
+      "kind": "chapter",
+      "title": "Recollections of Dostoevsky: By D. V. Grigorovitch (1837–1846)",
+      "start_page": 303,
+      "end_page": 314
+    },
+    {
+      "kind": "chapter",
+      "title": "Recollections of Dostoevsky: By A. P. Milyukov (1848–1849)",
+      "start_page": 315,
+      "end_page": 325
+    },
+    {
+      "kind": "chapter",
+      "title": "Recollections of Dostoevsky: By P. K. Martyanov (1850–1854)",
+      "start_page": 326,
+      "end_page": 332
+    },
+    {
+      "kind": "chapter",
+      "title": "Recollections of Dostoevsky: By Baron Alexander Vrangel (1854–1865)",
+      "start_page": 333,
+      "end_page": 366
+    },
+    {
+      "kind": "chapter",
+      "title": "Recollections of Dostoevsky: By Sophie Kovalevsky (1866)",
+      "start_page": 367,
+      "end_page": 378
+    },
+    {
+      "kind": "chapter",
+      "title": "Dostoevsky in the Judgment of his Contemporaries",
+      "start_page": 379,
+      "end_page": 388
+    },
+    {
+      "kind": "index",
+      "title": "Index",
+      "start_page": 389,
+      "end_page": 398
+    }
+  ]
+}

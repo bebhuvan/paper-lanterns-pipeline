@@ -1,0 +1,21 @@
+[book]
+book_id = "bapu-mira-letters"
+title = "Bapu's Letters to Mira [1924-1948]"
+author_or_editor = "M. K. Gandhi"
+authors = ["M. K. Gandhi"]
+publication_year = 1949
+subtitle = ""
+imprint = "Ahmedabad: Navajivan Publishing House"
+collection = "indian-epistolary-heritage"
+language = "en"
+declared_scripts = ["Latin", "Devanagari"]
+profile = "indic_and_oriental_epistolary"
+active_run_id = "canonical-hydrogen-batch-v1"
+
+[source]
+archive_id = "bapusletterstomi00gand"
+source_pdf = "sources/bapusletterstomi00gand/bapusletterstomi00gand.originals.pdf"
+source_pdf_sha256 = "4196bd2da3891973ddf001fccfe94be411b86e2725d001bac955f34df0f00d27"
+
+[extraction]
+profile = "indic_and_oriental_epistolary"

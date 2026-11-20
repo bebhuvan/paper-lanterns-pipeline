@@ -1,0 +1,28 @@
+{
+  "book_id": "eic-letters-received-vol-6-1617b",
+  "page_number": 379,
+  "check_id": "vol6-scan-check-p0379",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "59c13b32a3d8a7ec964d3f974f94653c77c47149815ebf2f2be3c7e814002357",
+  "checked_at": "2026-11-17T20:23:38.959834+00:00",
+  "checks": [
+    {
+      "block_id": "p0379-b0007",
+      "token": "Jahan",
+      "verdict": "printed_as_read",
+      "note": "Verified index proper-noun spelling."
+    },
+    {
+      "block_id": "p0379-b0009",
+      "token": "diacritic_drift_advisory",
+      "verdict": "printed_as_read",
+      "note": "Verified compositor diacritic spelling variant preserved verbatim."
+    },
+    {
+      "block_id": "p0379-b0008",
+      "token": "diacritic_drift_advisory",
+      "verdict": "printed_as_read",
+      "note": "Verified compositor diacritic spelling variant preserved verbatim."
+    }
+  ]
+}

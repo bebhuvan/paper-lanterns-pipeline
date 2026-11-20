@@ -1,0 +1,14 @@
+{
+  "book_id": "dostoevsky-letters-reminiscences-1923",
+  "page_number": 196,
+  "check_id": "scan-check-p0196",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "00981f2c069d0423e63cca2aaca5a6917b414ac7485ce24122c67a3f8d3c024d",
+  "checks": [
+    {
+      "block_id": "p0196-b0003",
+      "verdict": "confirmed_epistolary_continuity",
+      "note": "Verified top of p. 196 ('the first and fifth of June...') continues Wife Letter II postscript."
+    }
+  ]
+}

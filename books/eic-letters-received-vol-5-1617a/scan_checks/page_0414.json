@@ -1,0 +1,22 @@
+{
+  "book_id": "eic-letters-received-vol-5-1617a",
+  "page_number": 414,
+  "check_id": "vol5-scan-check-p0414",
+  "reviewer": "native-vision-250to450ppi-scan-check",
+  "source_page_sha256": "1b8084d00e24faac664b771875cfdb16da1e91a4d39ff13ded7ff02a6938eca8",
+  "checked_at": "2026-11-17T17:58:00.757804+00:00",
+  "checks": [
+    {
+      "block_id": "p0414-b0046",
+      "token": "Shahbandar",
+      "verdict": "printed_as_read",
+      "note": "450-DPI crop confirms Index literally prints 'Shahbandar' without diacritics."
+    },
+    {
+      "block_id": "p0414-b0047",
+      "token": "Shahi",
+      "verdict": "printed_as_read",
+      "note": "450-DPI crop confirms Index literally prints 'Shahi' without diacritics."
+    }
+  ]
+}

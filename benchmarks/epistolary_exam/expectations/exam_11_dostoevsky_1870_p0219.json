@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "exam_id": "exam_11_dostoevsky_1870_p0219",
+  "split": "held_out",
+  "source_pdf": "Letters of Fyodor Michailovitch Dostoevsky to his family and friends.pdf",
+  "source_page_number": 219,
+  "archive_id": "lettersoffyodorm00dostrich",
+  "book_title": "Letters of Fyodor Michailovitch Dostoevsky to His Family and Friends",
+  "year": 1914,
+  "era": "19c",
+  "languages": [
+    "en",
+    "ru-Latn"
+  ],
+  "profile": "polyglot_epistolary",
+  "quirk_tags": [
+    "age_bracket_running_header",
+    "unsigned_excerpt_close",
+    "dual_calendar_bracketed_dateline",
+    "inline_editorial_translation_brackets",
+    "russian_transliteration",
+    "handwritten_pencil_margin_noise"
+  ],
+  "expected_printed_folio": "183",
+  "acceptable_printed_folios": [
+    "183"
+  ],
+  "expected_letter_segments_on_page": 2,
+  "expected_new_letter_starts": 1,
+  "continues_from_prev_page": true,
+  "continues_to_next_page": true,
+  "has_margin_note": false,
+  "has_editorial_block": false,
+  "has_enclosure": false,
+  "has_postscript": false,
+  "has_address_block": false,
+  "jbig2_source_risk": true,
+  "expected_block_types_present": [
+    "body",
+    "letter_header",
+    "dateline",
+    "footnote"
+  ],
+  "expected_footnote_labels": [
+    "1"
+  ],
+  "must_preserve_verbatim": [
+    "Gontscharov",
+    "LII",
+    "To Apollon Nikolayevitch Maikov",
+    "February 12 [24], 1870",
+    "Raskolnikov",
+    "Crime and Punishment",
+    "The Possessed."
+  ],
+  "must_not_modernize_or_leak": [
+    "Goncharov",
+    "TELEGRAMS AND THALERS"
+  ],
+  "notes": "Running header 'ÆT. 48] TELEGRAMS AND THALERS 183', unsigned excerpt close '. . .', transition to Letter LII with Julian/Gregorian dateline 'February 12 [24], 1870.', inline bracketed translation, and right-margin pencil bracket.",
+  "page_image": "pages/exam_11_dostoevsky_1870_p0219.png",
+  "page_sha256": "f311110a6f5c90ab6f47bd4f4af343998e3dd026cd8b08835ecd1812f02e1f79",
+  "pixel_size": [
+    1049,
+    1721
+  ],
+  "pixel_verified": true,
+  "case_id": "exam_11_dostoevsky_1870_p0219",
+  "id": "exam_11_dostoevsky_1870_p0219",
+  "expected_letter_count": 2,
+  "must_contain_exact": [
+    "Gontscharov",
+    "LII",
+    "To Apollon Nikolayevitch Maikov",
+    "February 12 [24], 1870",
+    "Raskolnikov",
+    "Crime and Punishment",
+    "The Possessed."
+  ],
+  "verbatim_substrings": [
+    "Gontscharov",
+    "LII",
+    "To Apollon Nikolayevitch Maikov",
+    "February 12 [24], 1870",
+    "Raskolnikov",
+    "Crime and Punishment",
+    "The Possessed."
+  ],
+  "expect_margin_note": false,
+  "expect_editorial": false
+}

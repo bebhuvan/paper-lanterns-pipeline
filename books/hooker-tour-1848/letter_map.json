@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "hooker-tour-1848",
+  "force_split_before_block_ids": [],
+  "forbid_split_before_block_ids": [],
+  "enclosure_block_ranges": [],
+  "explicit_letters": [
+    {
+      "start_block_id": "p0017-b0006",
+      "boundary_confidence": "adjudicated",
+      "reviewer": "archival-pixel-audit",
+      "updated_at": "2026-11-16T08:12:00Z",
+      "note": "Verified across renders/page_0017.png, page_0036.png ('(To be continued.)' serial break), page_0037.png, and page_0047.png: Cairo, Dec. 7th, 1847 is a single continuous 31-page Egypt-to-Suez journal-letter extract closing immediately before Aden, Dec. 19th."
+    }
+  ],
+  "notes": "All 6 letter extracts verified against Wellcome Library b30361126 scan leaves."
+}

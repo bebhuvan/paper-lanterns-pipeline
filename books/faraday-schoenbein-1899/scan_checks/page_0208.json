@@ -1,0 +1,79 @@
+{
+  "book_id": "faraday-schoenbein-1899",
+  "page_number": 208,
+  "check_id": "scan-check-p0208",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "aca55c92b6b4a712bf46e2201fecda2ba8ebba7c2d8115fb8f9d8201c3480e02",
+  "checks": [
+    {
+      "block_id": "p0208-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed footnote 3 prints compositor-misset Greek 'ὄξων' and 'ὄξειν' (with xi) and 'ō/zōn' verbatim."
+    },
+    {
+      "block_id": "p0208-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed footnote 3 prints compositor-misset Greek 'ὄξων' and 'ὄξειν' (with xi) and 'ō/zōn' verbatim."
+    },
+    {
+      "block_id": "p0208-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed footnote 3 prints compositor-misset Greek 'ὄξων' and 'ὄξειν' (with xi) and 'ō/zōn' verbatim."
+    },
+    {
+      "block_id": "p0208-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed footnote 3 prints compositor-misset Greek 'ὄξων' and 'ὄξειν' (with xi) and 'ō/zōn' verbatim."
+    },
+    {
+      "block_id": "p0208-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed footnote 3 prints compositor-misset Greek 'ὄξων' and 'ὄξειν' (with xi) and 'ō/zōn' verbatim."
+    },
+    {
+      "block_id": "p0208-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed footnote 3 prints compositor-misset Greek 'ὄξων' and 'ὄξειν' (with xi) and 'ō/zōn' verbatim."
+    },
+    {
+      "block_id": "p0208-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed footnote 3 prints compositor-misset Greek 'ὄξων' and 'ὄξειν' (with xi) and 'ō/zōn' verbatim."
+    },
+    {
+      "block_id": "p0208-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed footnote 3 prints compositor-misset Greek 'ὄξων' and 'ὄξειν' (with xi) and 'ō/zōn' verbatim."
+    },
+    {
+      "block_id": "p0208-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed footnote 3 prints compositor-misset Greek 'ὄξων' and 'ὄξειν' (with xi) and 'ō/zōn' verbatim."
+    },
+    {
+      "block_id": "p0208-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed footnote 3 prints compositor-misset Greek 'ὄξων' and 'ὄξειν' (with xi) and 'ō/zōn' verbatim."
+    },
+    {
+      "block_id": "p0208-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed footnote 3 prints compositor-misset Greek 'ὄξων' and 'ὄξειν' (with xi) and 'ō/zōn' verbatim."
+    },
+    {
+      "block_id": "p0208-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed footnote 3 prints compositor-misset Greek 'ὄξων' and 'ὄξειν' (with xi) and 'ō/zōn' verbatim."
+    },
+    {
+      "block_id": "p0208-b0013",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed footnote 3 prints compositor-misset Greek 'ὄξων' and 'ὄξειν' (with xi) and 'ō/zōn' verbatim."
+    },
+    {
+      "block_id": "p0208-b0014",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed footnote 3 prints compositor-misset Greek 'ὄξων' and 'ὄξειν' (with xi) and 'ō/zōn' verbatim."
+    }
+  ]
+}

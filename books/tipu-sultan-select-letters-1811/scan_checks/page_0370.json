@@ -1,0 +1,16 @@
+{
+  "book_id": "tipu-sultan-select-letters-1811",
+  "page_number": 370,
+  "check_id": "tipu-sultan-select-letters-1811-p0370",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "c8aa2a34e1b4c99205fd184031580eece0a0c91dd6be80887ae1c77e8eab8e49",
+  "checked_at": "2026-11-17T21:31:14.948331+00:00",
+  "checks": [
+    {
+      "block_id": "p0370-b0004",
+      "token": "Foujdar",
+      "verdict": "printed_as_read",
+      "note": "Printed unaccented Foujdar."
+    }
+  ]
+}

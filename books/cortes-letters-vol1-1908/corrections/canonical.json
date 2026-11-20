@@ -1,0 +1,147 @@
+{
+  "version": "correction-v2",
+  "book_id": "cortes-letters-vol1-1908",
+  "run_id": "canonical-hydrogen-batch-v1",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "generated_by": "scan-check",
+  "created_at": "2026-11-17T22:41:27.174910+00:00",
+  "corrections": [
+    {
+      "correction_id": "cortes1-p0001-b0002-cover",
+      "page_number": 1,
+      "block_id": "p0001-b0002",
+      "op": "set_text",
+      "replacement_tagged_text": "Gold-embossed Cortes Coat-of-Arms on front cover",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 1: Describe gold-stamped coat of arms listed in Illustrations ('Cortes Coat-of-Arms ... On cover')."
+    },
+    {
+      "correction_id": "cortes1-p0010-b0001-frontispiece",
+      "page_number": 10,
+      "block_id": "p0010-b0001",
+      "op": "set_text",
+      "replacement_tagged_text": "Engraved portrait of Hernan Cortes after Titian by Ferdinand Selma",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 10: Provide archival description for frontispiece engraving."
+    },
+    {
+      "correction_id": "cortes1-p0016-b0005-pref-sig",
+      "page_number": 16,
+      "block_id": "p0016-b0005",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "replacement_transition": "none",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Editor signature closing Preface, not a separate epistle."
+    },
+    {
+      "correction_id": "cortes1-p0016-b0006-pref-date",
+      "page_number": 16,
+      "block_id": "p0016-b0006",
+      "op": "set_type",
+      "replacement_type": "editorial",
+      "replacement_transition": "none",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Editor dateline closing Preface, not a separate epistle."
+    },
+    {
+      "correction_id": "cortes1-p0088-b0007-calvo",
+      "page_number": 88,
+      "block_id": "p0088-b0007",
+      "op": "set_text",
+      "replacement_tagged_text": "(Andres Calvo, <i>Los Tres Siglos de Mexico.</i>)",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 88 (folio 68): Pixel-verified printed italic 'de' in 'Los Tres Siglos de Mexico' (broken 'e' glyph read as schwa)."
+    },
+    {
+      "correction_id": "cortes1-p0107-b0005-mojica",
+      "page_number": 107,
+      "block_id": "p0107-b0005",
+      "op": "set_type",
+      "replacement_type": "body",
+      "replacement_transition": "none",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 107 (folio 87): Notary acceptance inside Article XXII of Last Will and Testament, not an epistle split."
+    },
+    {
+      "correction_id": "cortes1-p0118-b0006-mojica-val",
+      "page_number": 118,
+      "block_id": "p0118-b0006",
+      "op": "set_type",
+      "replacement_type": "body",
+      "replacement_transition": "none",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 118 (folio 98): Closing attestation inside Last Will and Testament codicil."
+    },
+    {
+      "correction_id": "cortes1-p0118-b0007-mojica-sig",
+      "page_number": 118,
+      "block_id": "p0118-b0007",
+      "op": "set_type",
+      "replacement_type": "body",
+      "replacement_transition": "none",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 118 (folio 98): Notary signature closing Last Will and Testament codicil."
+    },
+    {
+      "correction_id": "cortes1-p0141-b0001-halftitle",
+      "page_number": 141,
+      "block_id": "p0141-b0001",
+      "op": "set_type",
+      "replacement_type": "heading",
+      "replacement_transition": "none",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 141: Half-title divider leaf before First Letter on p. 143."
+    },
+    {
+      "correction_id": "cortes1-p0203-b0001-halftitle",
+      "page_number": 203,
+      "block_id": "p0203-b0001",
+      "op": "set_type",
+      "replacement_type": "heading",
+      "replacement_transition": "none",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Half-title divider leaf before Second Letter on p. 205."
+    },
+    {
+      "correction_id": "cortes1-p0215-b0004-fn2",
+      "page_number": 215,
+      "block_id": "p0215-b0004",
+      "op": "set_text",
+      "replacement_tagged_text": "I learned from my prisoners, how they had arrived at a river,<sup>1</sup> which is some thirty leagues down the coast, after passing Almeria, and had had a good reception there from the natives, and had traded for some provisions, and seen some gold which the Indians wore, although it was scarce, that they had obtained by trading, as much as three thousand <i>castellanos</i><sup>2</sup> worth of gold, and that they had not landed, but had seen certain towns on the banks of the river so near, that they could distinguish them well from the ships, and that there were no buildings of stone, the houses being of thatch, but very high and well built. All this I knew more fully afterwards, through",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 215 (folio 193): Remediate 1908 compositor duplicate callout (printed '1' twice; second note at foot of page is '2')."
+    },
+    {
+      "correction_id": "cortes1-p0273-b0005-fn56",
+      "page_number": 273,
+      "block_id": "p0273-b0005",
+      "op": "set_text",
+      "replacement_tagged_text": "This lord, called Cacamazin,<sup>56</sup> rebelled, after the imprisonment of Montezuma, as well against the service of Your Highness, to which he had offered himself, as against Montezuma. Although he was required many times to obey the royal mandates of Your Majesty, he never complied, for, besides my sending to require him, Montezuma also sent to summon him, but he answered that, if anything was wanted of him, they should come to his country, and that there he would show what he was worth, and the service he was obliged to render. According to my information, he had gathered a multitude of warriors well prepared for action. As I was unable to",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 273 (folio 249): Remediate 1908 compositor callout/footnote mismatch (inline printed '1' corresponds to bottom footnote '56. While Cacamatzin...')."
+    },
+    {
+      "correction_id": "cortes1-p0323-b0004-thereabouts",
+      "page_number": 323,
+      "block_id": "p0323-b0004",
+      "op": "set_text",
+      "replacement_tagged_text": "The next morning, one hour after daybreak, I departed in the order already mentioned, taking my vanguard and rear-guard in good order; and on all sides we were followed by the enemy, yelling, and raising the whole country, which is thickly populated. The horsemen, although we were few attacked them, but did little harm amongst them, because, the ground being rough, they would retreat to the hills. In this manner, we marched that day along some lakes,<sup>1</sup> till we reached a populous town, where we thought to have some skirmish with the townspeople. When we arrived there, they abandoned it, and went to some other towns thereabouts in the neighbourhood. I rested there that day and the next, not only",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 323 (folio 299): Pixel-verified paper speck above 'u' in 'thereabouts'; no umlaut printed."
+    }
+  ]
+}

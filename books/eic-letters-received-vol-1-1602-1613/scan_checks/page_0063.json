@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-1-1602-1613",
+  "page_number": 63,
+  "check_id": "vol1-scan-check-p0063",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "eae1d2d1aa428776f4f1ddd6025599092619e1f8776dad496f5b3767f16102b0",
+  "checked_at": "2026-11-17T20:13:15.909303+00:00",
+  "checks": [
+    {
+      "block_id": "p0063-b0008",
+      "token": "p^r",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0063.png: printed superscript abbreviation 'pʳ' (per)."
+    }
+  ]
+}

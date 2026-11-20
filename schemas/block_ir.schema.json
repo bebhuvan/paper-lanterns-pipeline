@@ -1,0 +1,262 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://paperlanterns.org/schemas/block_ir.schema.json",
+  "title": "BlockIRAndPageIR",
+  "description": "Normalized diplomatic BlockIR and PageIR contracts with provenance and SHA-256 lineage.",
+  "$defs": {
+    "BlockType": {
+      "type": "string",
+      "enum": [
+        "running_header",
+        "folio",
+        "heading",
+        "letter_header",
+        "dateline",
+        "salutation",
+        "body",
+        "blockquote",
+        "verse",
+        "valediction",
+        "signature",
+        "postscript",
+        "address_block",
+        "editorial",
+        "ornamental_break",
+        "list_item",
+        "toc_entry",
+        "index_entry",
+        "table_caption",
+        "table_row",
+        "footnote",
+        "margin_note",
+        "illustration",
+        "caption",
+        "epigraph",
+        "imprint",
+        "scanner_residue",
+        "noise"
+      ]
+    },
+    "BlockAlignment": {
+      "type": "string",
+      "enum": [
+        "left",
+        "center",
+        "right",
+        "indented",
+        "cascading",
+        "inline",
+        "two_column_left",
+        "two_column_right"
+      ]
+    },
+    "EpistolaryTransition": {
+      "type": "string",
+      "enum": [
+        "none",
+        "starts_new_letter",
+        "starts_enclosure",
+        "ends_enclosure"
+      ]
+    },
+    "StyleSpan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tag", "start", "end"],
+      "properties": {
+        "tag": {
+          "type": "string",
+          "enum": ["i", "b", "sc", "sup", "sub", "unclear"]
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "TableCell": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text"],
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "colspan": {
+          "type": "integer",
+          "minimum": 1,
+          "default": 1
+        },
+        "rowspan": {
+          "type": "integer",
+          "minimum": 1,
+          "default": 1
+        }
+      }
+    },
+    "BlockIR": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "block_id",
+        "page_number",
+        "reading_order",
+        "type",
+        "bbox",
+        "tagged_text",
+        "plain_text"
+      ],
+      "properties": {
+        "block_id": {
+          "type": "string"
+        },
+        "page_number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "reading_order": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "printed_folio": {
+          "type": ["string", "null"]
+        },
+        "type": {
+          "$ref": "#/$defs/BlockType"
+        },
+        "bbox": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1000
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "tagged_text": {
+          "type": "string"
+        },
+        "plain_text": {
+          "type": "string"
+        },
+        "spans": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/StyleSpan"
+          }
+        },
+        "alignment": {
+          "$ref": "#/$defs/BlockAlignment"
+        },
+        "epistolary_transition": {
+          "$ref": "#/$defs/EpistolaryTransition"
+        },
+        "line_breaks_preserved": {
+          "type": "boolean"
+        },
+        "heading_level": {
+          "type": ["integer", "null"],
+          "minimum": 1,
+          "maximum": 6
+        },
+        "note_label": {
+          "type": ["string", "null"]
+        },
+        "continues_from_prev": {
+          "type": "boolean"
+        },
+        "continues_to_next": {
+          "type": "boolean"
+        },
+        "table_role": {
+          "type": ["string", "null"]
+        },
+        "cells": {
+          "type": ["array", "null"],
+          "items": {
+            "$ref": "#/$defs/TableCell"
+          }
+        },
+        "provenance_provider": {
+          "type": "string"
+        },
+        "provenance_model": {
+          "type": "string"
+        },
+        "provenance_harness": {
+          "type": "string"
+        },
+        "source_page_sha256": {
+          "type": "string"
+        }
+      }
+    },
+    "PageIR": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["page_number", "blocks"],
+      "properties": {
+        "page_number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "printed_folio": {
+          "type": ["string", "null"]
+        },
+        "page_orientation": {
+          "type": "string"
+        },
+        "warning_codes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "failed_closed": {
+          "type": "boolean"
+        },
+        "failure_reason": {
+          "type": ["string", "null"]
+        },
+        "source_page_sha256": {
+          "type": "string"
+        },
+        "blocks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/BlockIR"
+          }
+        },
+        "provider": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "harness": {
+          "type": "string"
+        },
+        "rescued": {
+          "type": "boolean"
+        },
+        "cost_usd": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "$ref": "#/$defs/PageIR"
+    },
+    {
+      "$ref": "#/$defs/BlockIR"
+    }
+  ]
+}

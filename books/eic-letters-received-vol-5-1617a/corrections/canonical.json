@@ -1,0 +1,1269 @@
+{
+  "version": "correction-v2",
+  "book_id": "eic-letters-received-vol-5-1617a",
+  "created_at": "2026-11-17T17:57:12.744970+00:00",
+  "corrections": [
+    {
+      "correction_id": "corr-0001",
+      "page_number": 18,
+      "block_id": "p0018-b0003",
+      "anchor_text": "second in command. Connock reached Ispahán, the capital, on March 24; but found, to his disappointment, that Sháh Abbás ",
+      "op": "drop_residue",
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Duplicate leaf photographing pp. xii-xiii (already captured on leaves 16).",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0002",
+      "page_number": 18,
+      "block_id": "p0018-b0004",
+      "anchor_text": "Here, however, came in the usual jealousies and quarrels. Barker, who had been second at Surat at the time of Connock's ",
+      "op": "drop_residue",
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Duplicate leaf photographing pp. xii-xiii (already captured on leaves 16).",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0003",
+      "page_number": 18,
+      "block_id": "p0018-b0005",
+      "anchor_text": "1 Probably the Imám Kúlí Khán, the trusted lieutenant of Shái Abbás, who had bestowed upon him the government of the pro",
+      "op": "drop_residue",
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Duplicate leaf photographing pp. xii-xiii (already captured on leaves 16).",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0004",
+      "page_number": 19,
+      "block_id": "p0019-b0003",
+      "anchor_text": "stock of merchandise. They reached Ispahán on May 10, and were warmly welcomed by the impatient Connock. Pley—an ‘ancien",
+      "op": "drop_residue",
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Duplicate leaf photographing pp. xii-xiii (already captured on leaves 17).",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0005",
+      "page_number": 19,
+      "block_id": "p0019-b0004",
+      "anchor_text": "While Connock was waiting at Ispahán, jealously watched by the friars, who, there as elsewhere, were practically agents ",
+      "op": "drop_residue",
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Duplicate leaf photographing pp. xii-xiii (already captured on leaves 17).",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0006",
+      "page_number": 69,
+      "block_id": "p0069-b0010",
+      "anchor_text": "Macao",
+      "op": "set_text",
+      "replacement_tagged_text": "<unclear>Ma</unclear>cao",
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Top edge of 'Ma' clipped/torn in original print; 'cao' fully legible, footnote 3 on Amacau.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0007",
+      "page_number": 70,
+      "block_id": "p0070-b0010",
+      "anchor_text": "No 424 adds: 'Codgskin Dono, the Secretary, was very earnest with me to write into England for five or six brass falcons",
+      "op": "set_text",
+      "replacement_tagged_text": "No 424 adds: 'Codgskin Dono, the Secretary, was very earnest with me to write into England for five or six brass falcons or falconets; and I told him he might have such cast here. But he answered me he had rather have one that was cast in England than ten of those that were cast in Japon. So it may please you to send some; for he is the greatest man in the Empire next to the Emperor.'",
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "450-DPI crop confirms 'cast' (minor metal-type nick in 's').",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0008",
+      "page_number": 100,
+      "block_id": "p0100-b0003",
+      "anchor_text": "found that there would arise some profit in sending hither of those goods; whereupon dispeed1 hither 12 cwt. of quicksil",
+      "op": "set_text",
+      "replacement_tagged_text": "found that there would arise some profit in sending hither of those goods; whereupon dispeed<sup>1</sup> hither 12 cwt. of quicksilver, 100 elephants' teeth and some 500 mands of lead; all which goods I have sold at these prices, viz.",
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "450-DPI crop confirms '500 mands of lead'.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0009",
+      "page_number": 100,
+      "block_id": "p0100-b0010",
+      "anchor_text": "A marginal note (apparently intended as a memorandum in replying to this letter) asks 'why the 3000l. was not rather rem",
+      "op": "set_text",
+      "replacement_tagged_text": "A marginal note (apparently intended as a memorandum in replying to this letter) asks 'why the 3000<i>l.</i> was not rather remitted seasonably to Agra to be investe there in hard indigo.'",
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "450-DPI crop confirms literal printed form 'to be investe' (final 'd' omitted/uninked in 1901 impression).",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0010",
+      "page_number": 221,
+      "block_id": "p0221-b0009",
+      "anchor_text": "Endorsed (by Roe): Lucas Anth [eunis]. Mesolapatam,a March 21, 1616 [1617].",
+      "op": "set_text",
+      "replacement_tagged_text": "<i>Endorsed (by Roe):</i> Lucas Anth [eunis]. Mesolapatam, March 21, 1616 [1617].",
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "250-DPI page scan shows vertical paper crease/speck next to comma, not superscript 'a'.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0011",
+      "page_number": 222,
+      "block_id": "p0222-b0004",
+      "anchor_text": "Of the fleet anno 1615,1 after a dangerous fight outward-bound with a Portugal carrack, the Globe is now, by God's good ",
+      "op": "set_text",
+      "replacement_tagged_text": "Of the fleet anno 1615,<sup>1</sup> after a dangerous fight outward-bound with a Portugal carrack, the Globe is now, by God's good providence, with her lading safely arrived, having from the Cape brought in her company, weak, leak[y], and evil governed, the Peppercorn of Captain Kiling his fleet. In which conflict, the death of the General excepted, they received but small hurt, unless the weak performance of the fight, and all blameworthy neglect in possessing themselves of so great and rich a prize, offering and in a manner thrusting itself into their hands, may by imature and ripe judgments be summed and brought unto the denomination of loss.",
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "450-DPI crop across diagonal crease confirms 'imature'. 450-DPI crop across diagonal crease confirms 'denomination'.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0012",
+      "page_number": 222,
+      "block_id": "p0222-b0005",
+      "anchor_text": "Whilst the fleet anchored in Swalley Road there came a letter from Mesolopotan,2 requiring some small ship to be sent th",
+      "op": "set_text",
+      "replacement_tagged_text": "Whilst the fleet anchored in Swalley Road there came a letter from Mesolopotan,<sup>2</sup> requiring some small ship to be sent thither for transportation of Mr. Lucas<sup>3</sup> and such goods as he had prepared for the Southward. Whereupon at the first it was thought expedient that some of the lesser ships should thither be dispeeded for effecting and bringing of that business to pass; but afterwards Captain Pepwell, understanding how beneficial, in regard of private gain, a voyage from thence unto Bantham might prove unto some particular persons, having sent the Unicorn for the coast of Summatra, resolved with the Charles and James in person to go thither himself, that in these two ships he might be sure of sufficient stowage for three hundred tons of goods, a thing strange and greatly distasted by the wiser sort for a ship of the Charles her burthen upon no occasion so far to be endangered in needless coasting to and again. Of the remainder of that fleet, I mean the Rose and Swan, you are no doubt fully certified by the Dragon's arrival.",
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "450-DPI crop across diagonal crease confirms every letter legible on p0222-b0005.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0013",
+      "page_number": 222,
+      "block_id": "p0222-b0006",
+      "anchor_text": "In the Mogull his country, my Lord Ambassador lives as he can, although his entertainment be nothing answerable either t",
+      "op": "set_text",
+      "replacement_tagged_text": "In the Mogull his country, my Lord Ambassador lives as he can, although his entertainment be nothing answerable either to the worth of the man or honour of his employment. For there be two things which make ambassadors gracious and acceptable in the eyes of foreign princes; a necessary relation and reference between the two kingdoms, or some great utility and profit re-dounding from the one to the other; both which greatly wanting",
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "450-DPI crop across diagonal crease confirms every letter legible on p0222-b0006.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0014",
+      "page_number": 289,
+      "block_id": "p0289-b0003",
+      "anchor_text": "hath by his treasurer (his chiefest favourite) proffered us one, two or three thousand bales of silk, by us freely to be",
+      "op": "set_text",
+      "replacement_tagged_text": "hath by his treasurer (his chiefest favourite) proffered us one, two or three thousand bales of silk, by us freely to be shipped hence on condition we engage ourselves for payment and satisfaction in one or two the ensuing years, and the same in spices, sugar, cloth, tin, and other English, Southern, and India (by him required) commodities. We, not daring undergo so weighty a burthen without order, have thereof advised into England. We rest assured both of their performance thence and of their like order for you to furnish with spices, Suratt with sugar, thereby enabling us to so weighty an undertaking. Accordingly (pleasing it you) in the interim supply us in some small measure, if not altogether equal to our requests, when you otherwise doing we cannot expect that by order from England these yet many months from you to be relieved ; which, together with our small expected capital from any other parts for this year or two (you failing), will cause our so hopeful business and trade to decay even in its infancy, or to our much grief we shall see it at a stand. And, what not least considerable, we shall put in censure and endanger our credits with this prince and people, who by our adversary, the Portingall, are informed that we are such as trade not, we are not merchants but thieves and sea-robbers, who under pretence of merchandizing do entrap and despoil the ships and subjects of the princes of India and the Southern parts ; as now we do no less aim (as falsely they give out and persuade to believe) to obtain of this King, under colour of proffered benefit by trade, to fortify at Jasques, the entrance of the Persian Gulf: when then and there we will retire ourselves and decay the now storehouse for trade, the famous island of Ormuz, by reprisal of its intercourse of shipping, to no little damage to the wonted refreshment and benefit by trade generally yielded to these kingdoms and empire. Hereof, as of what else needful, having at large advised to the Agent and factory of Suratt, we have desired that copies thence be sent you of what your knowledge may be yet fitting ; nothing doubting, Sir, but you either have or speedily and willingly will give beginning to our relief, by sending us in part (if not in all) the yearly by us desired for commodities from your parts.",
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "450-DPI crop confirms 'famous' (faint top bowls of 'a','o').",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0015",
+      "page_number": 291,
+      "block_id": "p0291-b0012",
+      "anchor_text": "GOOD Cousin, In all kind manner I salute you, etc. In my last unto you2 from Mogustan I certified you of our arrival in ",
+      "op": "set_text",
+      "replacement_tagged_text": "GOOD Cousin, In all kind manner I salute you, etc. In my last unto you<sup>2</sup> from Mogustan I certified you of our arrival in Jasquis, and how the Governor of that province seemed at the first, by many outward tokens of friendship, to be right glad of our coming into those parts; but after both he and the Chan's receiver had drawn from us what gifts and presents they could, and being by the Portugals with greater gifts bribed, began by cunning shifts there to detain us, to the end the Portugalles (if by any means possible) might disappoint us of our hopeful and wished end. We doubting what might be the event of these their designs, Mr. Connock immediately hereupon departed for Sirash, to the end he might",
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "450-DPI crop confirms 'could'.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0016",
+      "page_number": 336,
+      "block_id": "p0336-b0004",
+      "anchor_text": "He2 is so turbulent and proud a fellow, and hath so over-weening a conceit of himself, that at Surrat they were right gl",
+      "op": "set_text",
+      "replacement_tagged_text": "He<sup>2</sup> is so turbulent and proud a fellow, and hath so over-weening a conceit of himself, that at Surrat they were right glad to be rid of him. In his jollity he will glory how he opposed all the factors in that kingdom; he made them write and re-write their letters at his pleasure. He presumeth much upon my Lord.<sup>3</sup> As I have heard my Lord is much offended that this employment goeth forward, who wrote to the General of the fleet<sup>4</sup> for divers unanswerable reasons it was not fit this year to proceed (not expressing any).",
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "250-DPI page scan confirms superscript '3' ('Roe.'), not '8'.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0017",
+      "page_number": 389,
+      "block_id": "p0389-b0005",
+      "anchor_text": "WORSHIPFUL President, These are to certify unto you that after our business despatched at Macasser we set sail for Polor",
+      "op": "set_text",
+      "replacement_tagged_text": "WORSHIPFUL President, These are to certify unto you that after our business despatched at Macasser we set sail for Poloronne according to our commission, and the 23rd of December arrived there. And so, going forward in our directions, first we inquired of the estate of the country. So we found the inhabitants so weak for want of victuals, not able to continue longer than one month but that it pleased God to send us thither within that time to relieve them. Secondly, I demanded what contracts had passed betwixt the Hollanders and them. They plainly told me not any but in way of trade, which the Hollanders have violated themselves in betraying upwards of a hundred of them. So we demanded of them whether they would deliver up their country to the King's Majesty of England and acknowledge themselves his true and lawful subjects. They did it, as by their surrender delivered us, which the Hollanders have taken in my countore<sup>2</sup> in the Swan; the very same I send you newly made.<sup>3</sup> So this being made, we went forwards in our business. So on the 3rd of January there came in three Holland ships and laid themselves a purpose to fight with us, as we have proved since, [and as ?] at their coming in we saw by their laying theirselves about us. Their manner of their coming in was thus: they laid themselves within a stone's cast of our ships, not once hailing of us; so we saw their pride; we hailed them to know their intents of coming to us. They replied they came to make good cheer. So we made our ship ready for all essays in the best manner we could. So according to our commission I sent them a letter, the effect thereof certifying unto them that the island of Poloronne was surrendered unto our King's Majesty of England, which I showed the captain<sup>4</sup> the surrender,",
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "450-DPI crop confirms literal printed editorial brackets '[and as ?]' by William Foster.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0018",
+      "page_number": 399,
+      "block_id": "p0399-b0003",
+      "anchor_text": "Barnes, John, 73\nBaroch. See Broach\nBarton, Henry, murdered by Gregory Lillington, 128\nBatman. See Weights and Measures\n",
+      "op": "set_text",
+      "replacement_tagged_text": "Barnes, John, 73\nBaroch. <i>See</i> Broach\nBarton, Henry, murdered by Gregory Lillington, 128\nBatman. <i>See</i> Weights and Measures\nBaylie, John, 1 , his death, 1<i>n</i>, 8, 70 ; his will, 70\nBayes, 54, 104\nBead-maker, 313\nBell, Robert, 292<i>n</i>\nBell, William, 58, 62, 101, 119, 138, 195<i>n</i>, 196, 198, 199, 209<i>n</i>, 229, 249, 252, 254, 255, 260, 261, 279, 287, 293 ; letter to the E. I. C. from, 42–43 ; sails for Jask, 100, 151, 177 ; letter from George Pley to, 211–212 ; letter from Edward Connock to, 215–217 ; detained at Shiraz by Thomas Barker, 229, 292\nBengal, possibilities of trade in, 173\nBenjamin, 225\nBentarro, 171\nBerkeley, George, 174, 271<i>n</i>, 272, 296, 314 ; letter from Nicholas Ufflett to, 188 ; letters from Kellum Throgmorton to, 225–227, 307–308 ; letter from George Jackson to, 305–307\nBest, Captain Thomas, 90, 106\nBickford, James, present at a consultation held in Surat, 85, 90 ; letter to Sir Thomas Smythe from, 133–136\nBiddulph, William, 337 ; at Ajmere, 29 ; letter from, 87\nBijapur, 24<i>n</i>, 174, 204<i>n</i>, 323<i>n</i>, 324\nBillinge, Richard, 73\nBills of exchange, 21, 64, 173\nBird, John, quartermaster of the ‘James,’ his mutinous behaviour, 139, 140, 158, 159, 162, 163, 164\nBlackcoller, Henry, deserts from the ‘Thomas,’ 48\nBlackston, Thomas, 71\nBlundeston, William, 43\nBoapollapote, 225<i>n</i>\nBoeton, English pursued by the Dutch take refuge at, 352<i>n</i>\nBona Speranza, Cape. <i>See</i> Good Hope, Cape of\nBorax, 115",
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "450-DPI crop confirms 'Nicholas Ufflett', not 'Uffiett'.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0019",
+      "page_number": 73,
+      "block_id": "p0073-b0009",
+      "anchor_text": "Cp p. 7.",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "replacement_alignment": "left",
+      "replacement_note_label": "1",
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Footnote 1 at bottom-left ('Cp p. 7.'; superscript '1' dropped in 1901 impression) misclassified as folio.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0020",
+      "page_number": 61,
+      "block_id": "p0061-b0007",
+      "anchor_text": "2 'At Bantam ' (No. 424). 3 ' Mr. Jacob Speck ' (No. 424).",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0061-b0007-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> 'At Bantam ' (No. 424)."
+        },
+        {
+          "block_id": "p0061-b0007-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "3",
+          "tagged_text": "<sup>3</sup> ' Mr. Jacob Speck ' (No. 424)."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0021",
+      "page_number": 61,
+      "block_id": "p0061-b0008",
+      "anchor_text": "4 ' At Bantam ' (No. 424). 5 ' Which goeth from hence for Bantam ' (No. 424).",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0061-b0008-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "4",
+          "tagged_text": "<sup>4</sup> ' At Bantam ' (No. 424)."
+        },
+        {
+          "block_id": "p0061-b0008-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "5",
+          "tagged_text": "<sup>5</sup> ' Which goeth from hence for Bantam ' (No. 424)."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0022",
+      "page_number": 61,
+      "block_id": "p0061-b0010",
+      "anchor_text": "7 Port. mestiço, half-caste. 8 See vol. ii., p. 68, etc.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0061-b0010-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "7",
+          "tagged_text": "<sup>7</sup> Port. <i>mestiço</i>, half-caste."
+        },
+        {
+          "block_id": "p0061-b0010-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "8",
+          "tagged_text": "<sup>8</sup> See vol. ii., p. 68, etc."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0023",
+      "page_number": 93,
+      "block_id": "p0093-b0012",
+      "anchor_text": "1 See p. 28.        2 ' More of such an able and honest man's life ' (No. 424).",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0093-b0012-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "1",
+          "tagged_text": "<sup>1</sup> See p. 28."
+        },
+        {
+          "block_id": "p0093-b0012-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> ' More of such an able and honest man's life ' (No. 424)."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0024",
+      "page_number": 101,
+      "block_id": "p0101-b0011",
+      "anchor_text": "1 See also p. 89 2 Pintado, a 'painted' or 'spotted' cloth, i.e., chintz. 3 Roe.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0101-b0011-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "1",
+          "tagged_text": "<sup>1</sup> See also p. 89"
+        },
+        {
+          "block_id": "p0101-b0011-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> <i>Pintado</i>, a 'painted' or 'spotted' cloth, <i>i.e.</i>, chintz."
+        },
+        {
+          "block_id": "p0101-b0011-s3",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "3",
+          "tagged_text": "<sup>3</sup> Roe."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0025",
+      "page_number": 110,
+      "block_id": "p0110-b0011",
+      "anchor_text": "1 Larins (see vol. i., p. 337).    2 Hindustán.    3 Mate of the James (see p. 67).",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0110-b0011-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "1",
+          "tagged_text": "<sup>1</sup> Larins (see vol. i., p. 337)."
+        },
+        {
+          "block_id": "p0110-b0011-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> Hindustán."
+        },
+        {
+          "block_id": "p0110-b0011-s3",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "3",
+          "tagged_text": "<sup>3</sup> Mate of the <i>James</i> (see p. 67)."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0026",
+      "page_number": 134,
+      "block_id": "p0134-b0008",
+      "anchor_text": "Cp vol. iv., pp. 331, 351.     2 A further omission.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0134-b0008-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "1",
+          "tagged_text": "Cp vol. iv., pp. 331, 351."
+        },
+        {
+          "block_id": "p0134-b0008-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> A further omission."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0027",
+      "page_number": 137,
+      "block_id": "p0137-b0009",
+      "anchor_text": "2 Not extant 3 See note on p 302 of vol. iii",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0137-b0009-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> Not extant"
+        },
+        {
+          "block_id": "p0137-b0009-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "3",
+          "tagged_text": "<sup>3</sup> See note on p 302 of vol. iii"
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0028",
+      "page_number": 147,
+      "block_id": "p0147-b0009",
+      "anchor_text": "1 See pp. 42, 56, 60, 65. 2 Larins (see vol. i., p 337)",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0147-b0009-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "1",
+          "tagged_text": "<sup>1</sup> See pp. 42, 56, 60, 65."
+        },
+        {
+          "block_id": "p0147-b0009-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> Larins (see vol. i., p 337)"
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0029",
+      "page_number": 157,
+      "block_id": "p0157-b0009",
+      "anchor_text": "3 See p 64 4 Not extant. 5 See p 56 6 See p. 60.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0157-b0009-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "3",
+          "tagged_text": "<sup>3</sup> See p 64"
+        },
+        {
+          "block_id": "p0157-b0009-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "4",
+          "tagged_text": "<sup>4</sup> Not extant."
+        },
+        {
+          "block_id": "p0157-b0009-s3",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "5",
+          "tagged_text": "<sup>5</sup> See p 56"
+        },
+        {
+          "block_id": "p0157-b0009-s4",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "6",
+          "tagged_text": "<sup>6</sup> See p. 60."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0030",
+      "page_number": 161,
+      "block_id": "p0161-b0010",
+      "anchor_text": "2 Bengal is probably meant. 3 See p. 91. 4 See vol. iv., p. 19.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0161-b0010-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> Bengal is probably meant."
+        },
+        {
+          "block_id": "p0161-b0010-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "3",
+          "tagged_text": "<sup>3</sup> See p. 91."
+        },
+        {
+          "block_id": "p0161-b0010-s3",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "4",
+          "tagged_text": "<sup>4</sup> See vol. iv., p. 19."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0031",
+      "page_number": 163,
+      "block_id": "p0163-b0009",
+      "anchor_text": "1 The Portuguese homeward-bound vessels. 2 Turban cloths. 3 See p. 81.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0163-b0009-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "1",
+          "tagged_text": "<sup>1</sup> The Portuguese homeward-bound vessels."
+        },
+        {
+          "block_id": "p0163-b0009-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> Turban cloths."
+        },
+        {
+          "block_id": "p0163-b0009-s3",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "3",
+          "tagged_text": "<sup>3</sup> See p. 81."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0032",
+      "page_number": 213,
+      "block_id": "p0213-b0006",
+      "anchor_text": "1 See pp. 93, 96. 2 Apparently some native refugee from the Bandas. 3 Cp. p. 99",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0213-b0006-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "1",
+          "tagged_text": "<sup>1</sup> See pp. 93, 96."
+        },
+        {
+          "block_id": "p0213-b0006-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> Apparently some native refugee from the Bandas."
+        },
+        {
+          "block_id": "p0213-b0006-s3",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "3",
+          "tagged_text": "<sup>3</sup> Cp. p. 99"
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0033",
+      "page_number": 237,
+      "block_id": "p0237-b0006",
+      "anchor_text": "1 Exactions (see p. 77). 2 Referring to the high profits made on these commodities",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0237-b0006-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "1",
+          "tagged_text": "<sup>1</sup> Exactions (see p. 77)."
+        },
+        {
+          "block_id": "p0237-b0006-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> Referring to the high profits made on these commodities"
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0034",
+      "page_number": 249,
+      "block_id": "p0249-b0008",
+      "anchor_text": "1 See p. 208, and Roe's letter in the Appendix (No. vi.). 2 See The Embassy, p. 391.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0249-b0008-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "1",
+          "tagged_text": "<sup>1</sup> See p. 208, and Roe's letter in the Appendix (No. vi.)."
+        },
+        {
+          "block_id": "p0249-b0008-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> See <i>The Embassy</i>, p. 391."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0035",
+      "page_number": 268,
+      "block_id": "p0268-b0011",
+      "anchor_text": "2 William Martin (see p. 91). 3 Nathaniel Martin. 4 See vol. iv., p. 82.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0268-b0011-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> William Martin (see p. 91)."
+        },
+        {
+          "block_id": "p0268-b0011-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "3",
+          "tagged_text": "<sup>3</sup> Nathaniel Martin."
+        },
+        {
+          "block_id": "p0268-b0011-s3",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "4",
+          "tagged_text": "<sup>4</sup> See vol. iv., p. 82."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0036",
+      "page_number": 271,
+      "block_id": "p0271-b0014",
+      "anchor_text": "3 The coyan of rice contains about two tons (vol. iii., p. 320). 4 See vol. iv., p. 215.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0271-b0014-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "3",
+          "tagged_text": "<sup>3</sup> The <i>coyan</i> of rice contains about two tons (vol. iii., p. 320)."
+        },
+        {
+          "block_id": "p0271-b0014-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "4",
+          "tagged_text": "<sup>4</sup> See vol. iv., p. 215."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0037",
+      "page_number": 272,
+      "block_id": "p0272-b0006",
+      "anchor_text": "1 Alexander, the master of the Attendant. 2 Not extant. 3 Pulo Run.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0272-b0006-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "1",
+          "tagged_text": "<sup>1</sup> Alexander, the master of the <i>Attendant</i>."
+        },
+        {
+          "block_id": "p0272-b0006-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> Not extant."
+        },
+        {
+          "block_id": "p0272-b0006-s3",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "3",
+          "tagged_text": "<sup>3</sup> Pulo Run."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0038",
+      "page_number": 274,
+      "block_id": "p0274-b0011",
+      "anchor_text": "2 See pp. 56–66.    3 Not extant.    4 Jask.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0274-b0011-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> See pp. 56–66."
+        },
+        {
+          "block_id": "p0274-b0011-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "3",
+          "tagged_text": "<sup>3</sup> Not extant."
+        },
+        {
+          "block_id": "p0274-b0011-s3",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "4",
+          "tagged_text": "<sup>4</sup> Jask."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0039",
+      "page_number": 307,
+      "block_id": "p0307-b0011",
+      "anchor_text": "Not extant.        4 At Siam.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0307-b0011-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "3",
+          "tagged_text": "Not extant."
+        },
+        {
+          "block_id": "p0307-b0011-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "4",
+          "tagged_text": "<sup>4</sup> At Siam."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0040",
+      "page_number": 307,
+      "block_id": "p0307-b0012",
+      "anchor_text": "A Japanese trader, on whose junk the Siam factors had laded a consignment of skins for Japan (see vol. iv., pp. 88, 305)",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0307-b0012-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "5",
+          "tagged_text": "A Japanese trader, on whose junk the Siam factors had laded a consignment of skins for Japan (see vol. iv., pp. 88, 305)."
+        },
+        {
+          "block_id": "p0307-b0012-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "6",
+          "tagged_text": "<sup>6</sup> Shoby."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0041",
+      "page_number": 308,
+      "block_id": "p0308-b0012",
+      "anchor_text": "2 Not extant 3 Iron hooks shaped like the letter S. 4 Vanes.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0308-b0012-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> Not extant"
+        },
+        {
+          "block_id": "p0308-b0012-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "3",
+          "tagged_text": "<sup>3</sup> Iron hooks shaped like the letter S."
+        },
+        {
+          "block_id": "p0308-b0012-s3",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "4",
+          "tagged_text": "<sup>4</sup> Vanes."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0042",
+      "page_number": 314,
+      "block_id": "p0314-b0011",
+      "anchor_text": "1 Cp. vol iv., pp. 150, 260, 268. 2 See note on p. 212 of vol. iv.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0314-b0011-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "1",
+          "tagged_text": "<sup>1</sup> Cp. vol iv., pp. 150, 260, 268."
+        },
+        {
+          "block_id": "p0314-b0011-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> See note on p. 212 of vol. iv."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0043",
+      "page_number": 315,
+      "block_id": "p0315-b0011",
+      "anchor_text": "Polhill and Smyth were the second and third merchants on the Unicorn: Everard appears to have come from Bantam with Mill",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0315-b0011-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": null,
+          "tagged_text": "Polhill and Smyth were the second and third merchants on the <i>Unicorn</i>: Everard appears to have come from Bantam with Millward. For Dego (Fernandez), see the note on p. 30."
+        },
+        {
+          "block_id": "p0315-b0011-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> Cp. vol. iii, p. xxii."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0044",
+      "page_number": 329,
+      "block_id": "p0329-b0008",
+      "anchor_text": "A ship of Marseilles 4 To be regarded as hostages.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0329-b0008-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "3",
+          "tagged_text": "A ship of Marseilles"
+        },
+        {
+          "block_id": "p0329-b0008-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "4",
+          "tagged_text": "<sup>4</sup> To be regarded as hostages."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0045",
+      "page_number": 334,
+      "block_id": "p0334-b0009",
+      "anchor_text": "1 The Turkish ell. 2 See p. 50. 3 This should be 'the 8th of the past month' (see p. 219).",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0334-b0009-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "1",
+          "tagged_text": "<sup>1</sup> The Turkish ell."
+        },
+        {
+          "block_id": "p0334-b0009-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> See p. 50."
+        },
+        {
+          "block_id": "p0334-b0009-s3",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "3",
+          "tagged_text": "<sup>3</sup> This should be 'the 8th of the past month' (see p. 219)."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0046",
+      "page_number": 334,
+      "block_id": "p0334-b0010",
+      "anchor_text": "4 See p. 283 5 Silk of Láhiján, in Gílán.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0334-b0010-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "4",
+          "tagged_text": "<sup>4</sup> See p. 283"
+        },
+        {
+          "block_id": "p0334-b0010-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "5",
+          "tagged_text": "<sup>5</sup> Silk of Láhiján, in Gílán."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0047",
+      "page_number": 336,
+      "block_id": "p0336-b0007",
+      "anchor_text": "2 Barker     3 Roe.     4 See vol. iv, Introduction, p. xxxv.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0336-b0007-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> Barker"
+        },
+        {
+          "block_id": "p0336-b0007-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "3",
+          "tagged_text": "<sup>3</sup> Roe."
+        },
+        {
+          "block_id": "p0336-b0007-s3",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "4",
+          "tagged_text": "<sup>4</sup> See vol. iv, Introduction, p. xxxv."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0048",
+      "page_number": 339,
+      "block_id": "p0339-b0008",
+      "anchor_text": "See p. 322. 5 Cp. p. 174. 6 Ceylon.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0339-b0008-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "4",
+          "tagged_text": "See p. 322."
+        },
+        {
+          "block_id": "p0339-b0008-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "5",
+          "tagged_text": "<sup>5</sup> Cp. p. 174."
+        },
+        {
+          "block_id": "p0339-b0008-s3",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "6",
+          "tagged_text": "<sup>6</sup> Ceylon."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0049",
+      "page_number": 357,
+      "block_id": "p0357-b0013",
+      "anchor_text": "1 Not extant 2 The Protector, who was the virtual ruler of the kingdom.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0357-b0013-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "1",
+          "tagged_text": "<sup>1</sup> Not extant"
+        },
+        {
+          "block_id": "p0357-b0013-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> The Protector, who was the virtual ruler of the kingdom."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0050",
+      "page_number": 366,
+      "block_id": "p0366-b0012",
+      "anchor_text": "1 See vol. iv., p. 350. 2 See pp. 50 and 327. 3 To the Surat factors (see p. 325).",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0366-b0012-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "1",
+          "tagged_text": "<sup>1</sup> See vol. iv., p. 350."
+        },
+        {
+          "block_id": "p0366-b0012-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> See pp. 50 and 327."
+        },
+        {
+          "block_id": "p0366-b0012-s3",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "3",
+          "tagged_text": "<sup>3</sup> To the Surat factors (see p. 325)."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0051",
+      "page_number": 366,
+      "block_id": "p0366-b0014",
+      "anchor_text": "5 This place has not been identified. The letter speaks of it as being forty leagues up country from Masulıpatam 6 'Jan ",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0366-b0014-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "5",
+          "tagged_text": "<sup>5</sup> This place has not been identified. The letter speaks of it as being forty leagues up country from Masulıpatam"
+        },
+        {
+          "block_id": "p0366-b0014-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "6",
+          "tagged_text": "<sup>6</sup> 'Jan 6' at the end of the copy."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0052",
+      "page_number": 369,
+      "block_id": "p0369-b0010",
+      "anchor_text": "The Royal 'Camp' (Pers. lashkar, or, more strictly, lashkar-gáh). 3 See p. 51.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0369-b0010-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "The Royal 'Camp' (Pers. <i>lashkar</i>, or, more strictly, <i>lashkar-gáh</i>)."
+        },
+        {
+          "block_id": "p0369-b0010-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "3",
+          "tagged_text": "<sup>3</sup> See p. 51."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    },
+    {
+      "correction_id": "corr-0053",
+      "page_number": 371,
+      "block_id": "p0371-b0009",
+      "anchor_text": "2 Jask.     3 See p. 321.     4 At Burhánpúr     5 See p. 113.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0371-b0009-s1",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "2",
+          "tagged_text": "<sup>2</sup> Jask."
+        },
+        {
+          "block_id": "p0371-b0009-s2",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "3",
+          "tagged_text": "<sup>3</sup> See p. 321."
+        },
+        {
+          "block_id": "p0371-b0009-s3",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "4",
+          "tagged_text": "<sup>4</sup> At Burhánpúr"
+        },
+        {
+          "block_id": "p0371-b0009-s4",
+          "type": "footnote",
+          "alignment": "left",
+          "note_label": "5",
+          "tagged_text": "<sup>5</sup> See p. 113."
+        }
+      ],
+      "source": "human",
+      "reviewer": "native-vision-250to450ppi-scan-check",
+      "note": "Split side-by-side footnotes printed on shared baseline so every inline callout resolves.",
+      "created_at": "2026-11-17T17:57:12.744970+00:00"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "nineteenth-century-letters-1919",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 152,
+  "reviewer": "native-vision-500ppi-scan-check",
+  "checked_at": "2026-11-19T05:39:15.954462+00:00",
+  "source_page_sha256": "b799ed2a59fb1fc2eceea5650a00eeedbfe717361816a998c30c3e58c32bf01f",
+  "render_png": "renders/page_0152.png",
+  "checks": [
+    {
+      "block_id": "p0152-b0001",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0152.png."
+    },
+    {
+      "block_id": "p0152-b0002",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0152.png."
+    },
+    {
+      "block_id": "p0152-b0003",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0152.png."
+    },
+    {
+      "block_id": "p0152-b0004",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0152.png."
+    },
+    {
+      "block_id": "p0152-b0005",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0152.png."
+    },
+    {
+      "block_id": "p0152-b0006",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0152.png."
+    },
+    {
+      "block_id": "p0152-b0007",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0152.png."
+    },
+    {
+      "block_id": "p0152-b0008",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0152.png."
+    },
+    {
+      "block_id": "p0152-b0009",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0152.png."
+    },
+    {
+      "block_id": "p0152-b0010",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0152.png."
+    },
+    {
+      "block_id": "p0152-b0011",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0152.png."
+    },
+    {
+      "block_id": "p0152-b0012",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0152.png."
+    },
+    {
+      "block_id": "p0152-b0013",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0152.png."
+    },
+    {
+      "block_id": "p0152-b0014",
+      "status": "corrected",
+      "note": "Inspected on 500 PPI PNG renders/page_0152.png."
+    },
+    {
+      "block_id": "p0152-b0015",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0152.png."
+    },
+    {
+      "block_id": "p0152-b0016",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0152.png."
+    }
+  ]
+}

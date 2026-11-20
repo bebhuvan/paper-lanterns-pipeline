@@ -1,0 +1,16 @@
+{
+  "book_id": "tipu-sultan-select-letters-1811",
+  "page_number": 529,
+  "check_id": "tipu-sultan-select-letters-1811-p0529",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "3227e369751cbf48c0ae43bd2368f9c787b6b77acc9aa3457b7c43c2a7b9db54",
+  "checked_at": "2026-11-17T21:31:14.948331+00:00",
+  "checks": [
+    {
+      "block_id": "p0529-b0007",
+      "token": "Hukm",
+      "verdict": "printed_as_read",
+      "note": "Printed unaccented Hukm-nâmeh."
+    }
+  ]
+}

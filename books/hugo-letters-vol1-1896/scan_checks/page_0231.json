@@ -1,0 +1,94 @@
+{
+  "book_id": "hugo-letters-vol1-1896",
+  "page_number": 231,
+  "check_id": "scan-check-p0231",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "a751ad2e6c793db5c21ef1e35beb6e531bed9d048f3052a8430045434f6891a9",
+  "checks": [
+    {
+      "block_id": "p0231-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified valediction 'Your own daddy,' and V. before Part V Letter V (p. 231, folio 217)."
+    },
+    {
+      "block_id": "p0231-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified valediction 'Your own daddy,' and V. before Part V Letter V (p. 231, folio 217)."
+    },
+    {
+      "block_id": "p0231-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified valediction 'Your own daddy,' and V. before Part V Letter V (p. 231, folio 217)."
+    },
+    {
+      "block_id": "p0231-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified valediction 'Your own daddy,' and V. before Part V Letter V (p. 231, folio 217)."
+    },
+    {
+      "block_id": "p0231-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified valediction 'Your own daddy,' and V. before Part V Letter V (p. 231, folio 217)."
+    },
+    {
+      "block_id": "p0231-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified valediction 'Your own daddy,' and V. before Part V Letter V (p. 231, folio 217)."
+    },
+    {
+      "block_id": "p0231-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified valediction 'Your own daddy,' and V. before Part V Letter V (p. 231, folio 217)."
+    },
+    {
+      "block_id": "p0231-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified valediction 'Your own daddy,' and V. before Part V Letter V (p. 231, folio 217)."
+    },
+    {
+      "block_id": "p0231-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified valediction 'Your own daddy,' and V. before Part V Letter V (p. 231, folio 217)."
+    },
+    {
+      "block_id": "p0231-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified valediction 'Your own daddy,' and V. before Part V Letter V (p. 231, folio 217)."
+    },
+    {
+      "block_id": "p0231-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified valediction 'Your own daddy,' and V. before Part V Letter V (p. 231, folio 217)."
+    },
+    {
+      "block_id": "p0231-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified valediction 'Your own daddy,' and V. before Part V Letter V (p. 231, folio 217)."
+    },
+    {
+      "block_id": "p0231-b0013",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified valediction 'Your own daddy,' and V. before Part V Letter V (p. 231, folio 217)."
+    },
+    {
+      "block_id": "p0231-b0014",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified valediction 'Your own daddy,' and V. before Part V Letter V (p. 231, folio 217)."
+    },
+    {
+      "block_id": "p0231-b0015",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified valediction 'Your own daddy,' and V. before Part V Letter V (p. 231, folio 217)."
+    },
+    {
+      "block_id": "p0231-b0016",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified valediction 'Your own daddy,' and V. before Part V Letter V (p. 231, folio 217)."
+    },
+    {
+      "block_id": "p0231-b0017",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified valediction 'Your own daddy,' and V. before Part V Letter V (p. 231, folio 217)."
+    }
+  ]
+}

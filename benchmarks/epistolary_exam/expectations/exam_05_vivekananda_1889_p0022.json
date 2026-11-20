@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "exam_id": "exam_05_vivekananda_1889_p0022",
+  "split": "tuning",
+  "source_pdf": "Letters-Of-Swami-Vivekananda_text.pdf",
+  "source_page_number": 22,
+  "archive_id": "LettersOfSwamiVivekananda",
+  "book_title": "Letters of Swami Vivekananda",
+  "year": 1940,
+  "era": "19c_20c",
+  "languages": [
+    "en",
+    "sa"
+  ],
+  "profile": "indic_and_oriental_epistolary",
+  "quirk_tags": [
+    "multiscript_devanagari_sanskrit",
+    "iast_circumflex_diacritics",
+    "inline_return_address_and_close",
+    "mixed_symbol_and_numeric_callouts",
+    "cross_page_split_footnote"
+  ],
+  "expected_printed_folio": "7",
+  "acceptable_printed_folios": [
+    "7"
+  ],
+  "expected_letter_segments_on_page": 2,
+  "expected_new_letter_starts": 1,
+  "continues_from_prev_page": true,
+  "continues_to_next_page": true,
+  "has_margin_note": false,
+  "has_editorial_block": false,
+  "has_enclosure": false,
+  "has_postscript": false,
+  "has_address_block": false,
+  "jbig2_source_risk": false,
+  "expected_block_types_present": [
+    "verse",
+    "body",
+    "letter_header",
+    "dateline",
+    "footnote"
+  ],
+  "expected_footnote_labels": [
+    "1",
+    "2"
+  ],
+  "must_preserve_verbatim": [
+    "समुद्रमापः प्रविशन्ति",
+    "शान्तिमाप्नोति न कामकामी",
+    "Baghbazar, Calcutta",
+    "(8)",
+    "Satyakâma",
+    "Jabâlâ",
+    "Jânashruti",
+    "Vedanta-Sutras"
+  ],
+  "must_not_modernize_or_leak": [
+    "Satyakama",
+    "Jabala",
+    "Janashruti"
+  ],
+  "notes": "4-line Devanagari Sanskrit Gita sloka with callout 1, inline address + em-dash signature, transition to Letter (8), circumflex Sanskrit transliteration, and footnote 2 splitting across page bottom ('explana-').",
+  "page_image": "pages/exam_05_vivekananda_1889_p0022.png",
+  "page_sha256": "d5b1cfb15f7eb6798c102413422cb6ed03d63a1091e714b650bf291d5ce27b25",
+  "pixel_size": [
+    1061,
+    1498
+  ],
+  "pixel_verified": true,
+  "case_id": "exam_05_vivekananda_1889_p0022",
+  "id": "exam_05_vivekananda_1889_p0022",
+  "expected_letter_count": 2,
+  "must_contain_exact": [
+    "समुद्रमापः प्रविशन्ति",
+    "शान्तिमाप्नोति न कामकामी",
+    "Baghbazar, Calcutta",
+    "(8)",
+    "Satyakâma",
+    "Jabâlâ",
+    "Jânashruti",
+    "Vedanta-Sutras"
+  ],
+  "verbatim_substrings": [
+    "समुद्रमापः प्रविशन्ति",
+    "शान्तिमाप्नोति न कामकामी",
+    "Baghbazar, Calcutta",
+    "(8)",
+    "Satyakâma",
+    "Jabâlâ",
+    "Jânashruti",
+    "Vedanta-Sutras"
+  ],
+  "expect_margin_note": false,
+  "expect_editorial": false
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "old-love-letters-1883",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 133,
+  "reviewer": "native-vision-350ppi-scan-check",
+  "checked_at": "2026-11-19T04:13:56.272219+00:00",
+  "source_page_sha256": "569ddf64579e1be301d1a91a5cd20856bc403f185adc1059f66151e2fe0a7bc6",
+  "render_png": "renders/page_0133.png",
+  "checks": [
+    {
+      "block_id": "p0133-b0003",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0133.png."
+    },
+    {
+      "block_id": "p0133-b0004",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0133.png."
+    }
+  ],
+  "correction_ids": []
+}

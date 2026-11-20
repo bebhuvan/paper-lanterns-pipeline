@@ -1,0 +1,21 @@
+[book]
+book_id = "gandhi-famous-letters-1947"
+title = "Famous Letters of Mahatma Gandhi"
+author_or_editor = "M. K. Gandhi (comp. & ed. R. L. Khipple)"
+authors = ["M. K. Gandhi", "R. L. Khipple (ed.)"]
+publication_year = 1947
+subtitle = "Compiled and Edited by R. L. Khipple, M.A."
+imprint = "Lahore: The Indian Printing Works, Kacheri Road"
+collection = "indian-epistolary-heritage"
+language = "en"
+declared_scripts = ["Latin"]
+profile = "claude_sonnet_epistolary"
+active_run_id = "canonical-sonnet55-batch-v1"
+
+[source]
+archive_id = "in.ernet.dli.2015.208999"
+source_pdf = "sources/in.ernet.dli.2015.208999/in.ernet.dli.2015.208999.originals.pdf"
+source_pdf_sha256 = "617c0187d5b547d58ab359d3e6c117ea40b8fd74cc4a0b56c6297ff4f1eb0ad8"
+
+[extraction]
+profile = "claude_sonnet_epistolary"

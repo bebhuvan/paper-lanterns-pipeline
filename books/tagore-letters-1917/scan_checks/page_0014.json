@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "tagore-letters-1917",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 14,
+  "reviewer": "native-vision-400ppi-scan-check",
+  "checked_at": "2026-11-19T13:31:44.915220+00:00",
+  "source_page_sha256": "7d31a82c2b28cc58c89344d6b362f0e2e810df050c46511f5df654174d3b865c",
+  "render_png": "renders/page_0014.png",
+  "checks": [
+    {
+      "block_id": "p0014-b0001",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0014.png."
+    },
+    {
+      "block_id": "p0014-b0002",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0014.png."
+    },
+    {
+      "block_id": "p0014-b0003",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0014.png."
+    },
+    {
+      "block_id": "p0014-b0004",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0014.png."
+    },
+    {
+      "block_id": "p0014-b0005",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0014.png."
+    }
+  ],
+  "correction_ids": []
+}

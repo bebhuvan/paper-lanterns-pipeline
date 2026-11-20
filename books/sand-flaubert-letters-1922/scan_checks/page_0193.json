@@ -1,0 +1,69 @@
+{
+  "book_id": "sand-flaubert-letters-1922",
+  "page_number": 193,
+  "check_id": "scan-check-p0193",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "b9e470ee137d5a3973b33fbab13411377712f51af450b07b110b8e2d8398ea14",
+  "checks": [
+    {
+      "block_id": "p0193-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CXXXIX closing 'G. S.' plus daughter-in-law Lina's postscript."
+    },
+    {
+      "block_id": "p0193-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CXXXIX closing 'G. S.' plus daughter-in-law Lina's postscript."
+    },
+    {
+      "block_id": "p0193-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CXXXIX closing 'G. S.' plus daughter-in-law Lina's postscript."
+    },
+    {
+      "block_id": "p0193-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CXXXIX closing 'G. S.' plus daughter-in-law Lina's postscript."
+    },
+    {
+      "block_id": "p0193-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CXXXIX closing 'G. S.' plus daughter-in-law Lina's postscript."
+    },
+    {
+      "block_id": "p0193-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CXXXIX closing 'G. S.' plus daughter-in-law Lina's postscript."
+    },
+    {
+      "block_id": "p0193-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CXXXIX closing 'G. S.' plus daughter-in-law Lina's postscript."
+    },
+    {
+      "block_id": "p0193-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CXXXIX closing 'G. S.' plus daughter-in-law Lina's postscript."
+    },
+    {
+      "block_id": "p0193-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CXXXIX closing 'G. S.' plus daughter-in-law Lina's postscript."
+    },
+    {
+      "block_id": "p0193-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CXXXIX closing 'G. S.' plus daughter-in-law Lina's postscript."
+    },
+    {
+      "block_id": "p0193-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CXXXIX closing 'G. S.' plus daughter-in-law Lina's postscript."
+    },
+    {
+      "block_id": "p0193-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter CXXXIX closing 'G. S.' plus daughter-in-law Lina's postscript."
+    }
+  ]
+}

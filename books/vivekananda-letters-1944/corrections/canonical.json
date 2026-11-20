@@ -1,0 +1,1238 @@
+{
+  "version": "correction-v2",
+  "book_id": "vivekananda-letters-1944",
+  "run_id": "canonical-hydrogen-batch-v1",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "generated_by": "scan-check",
+  "created_at": "2026-11-18T01:02:52.334093+00:00",
+  "corrections": [
+    {
+      "correction_id": "viv-p0008-b0002-emblem",
+      "page_number": 8,
+      "block_id": "p0008-b0002",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 8: Descriptive label for Advaita Ashrama emblem (hansa/lotus crest).",
+      "replacement_type": "imprint",
+      "replacement_tagged_text": "Ramakrishna Order Emblem"
+    },
+    {
+      "correction_id": "viv-p0015-b0001-portrait",
+      "page_number": 15,
+      "block_id": "p0015-b0001",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 15: Descriptive caption for frontispiece photogravure portrait of Swami Vivekananda.",
+      "replacement_tagged_text": "Photogravure portrait of Swami Vivekananda"
+    },
+    {
+      "correction_id": "viv-p0012-b0004-preface",
+      "page_number": 12,
+      "block_id": "p0012-b0004",
+      "op": "set_type",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 12: Editorial signature 'THE EDITOR' closing First Edition Preface, not an epistle.",
+      "replacement_type": "editorial",
+      "replacement_transition": "none"
+    },
+    {
+      "correction_id": "viv-p0012-b0005-preface",
+      "page_number": 12,
+      "block_id": "p0012-b0005",
+      "op": "set_type",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 12: Editorial dateline closing First Edition Preface, not an epistle.",
+      "replacement_type": "editorial",
+      "replacement_transition": "none"
+    },
+    {
+      "correction_id": "viv-p0012-b0008-preface",
+      "page_number": 12,
+      "block_id": "p0012-b0008",
+      "op": "set_type",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 12: Editorial date 'February, 1942' closing Second Edition Preface, not an epistle.",
+      "replacement_type": "editorial",
+      "replacement_transition": "none"
+    },
+    {
+      "correction_id": "viv-p0012-b0011-preface",
+      "page_number": 12,
+      "block_id": "p0012-b0011",
+      "op": "set_type",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 12: Editorial date 'May, 1948' closing Fourth Edition Preface, not an epistle.",
+      "replacement_type": "editorial",
+      "replacement_transition": "none"
+    },
+    {
+      "correction_id": "viv-p0017-b0003-trans",
+      "page_number": 17,
+      "block_id": "p0017-b0003",
+      "op": "set_type",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Restore starts_new_letter transition on numbered letter header.",
+      "replacement_type": "letter_header",
+      "replacement_transition": "starts_new_letter"
+    },
+    {
+      "correction_id": "viv-p0017-b0004",
+      "page_number": 17,
+      "block_id": "p0017-b0004",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Brindaban</sc>,*\n<i>20th Aug., 1888.</i>"
+    },
+    {
+      "correction_id": "viv-p0017-b0007",
+      "page_number": 17,
+      "block_id": "p0017-b0007",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>The Baranagore Math</sc>,*\n<i>19th Nov., 1888.</i>"
+    },
+    {
+      "correction_id": "viv-p0018-b0006",
+      "page_number": 18,
+      "block_id": "p0018-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Baranagore</sc>,*\n<i>4th Feb., 1889.</i>"
+    },
+    {
+      "correction_id": "viv-p0019-b0006",
+      "page_number": 19,
+      "block_id": "p0019-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Baranagore,</sc>*\n<i>26th June, 1889.</i>"
+    },
+    {
+      "correction_id": "viv-p0020-b0005",
+      "page_number": 20,
+      "block_id": "p0020-b0005",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Baghbazar, Calcutta,</sc>*\n<i>4th July, 1889.</i>"
+    },
+    {
+      "correction_id": "viv-p0022-b0008",
+      "page_number": 22,
+      "block_id": "p0022-b0008",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Baranagore, Calcutta,</sc>*\n<i>7th Aug., 1889.</i>"
+    },
+    {
+      "correction_id": "viv-p0023-b0007",
+      "page_number": 23,
+      "block_id": "p0023-b0007",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 23 (fol. 8): Uninked 'Ya' before 'jna' at bottom-left margin resolved from visible 'jna' in scan.",
+      "replacement_tagged_text": "<sup>1</sup> “The Shudra is not conceived of as a performer of [Ya]jna or Vedic sacrifices.”—Taittiriya Samhitâ, VII. i. 1. 6."
+    },
+    {
+      "correction_id": "viv-p0023-b0008",
+      "page_number": 23,
+      "block_id": "p0023-b0008",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 23 (fol. 8): Resolved '<unclear>bout</unclear>' to 'about' (preserving compositor 'Vasa').",
+      "replacement_tagged_text": "<sup>2</sup> “This is the first aphorism in the Vedanta-Sutras of Vasa, It means. ‘Now then commences hence the enquiry about Brahman.’”"
+    },
+    {
+      "correction_id": "viv-p0024-b0006",
+      "page_number": 24,
+      "block_id": "p0024-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Baranagore</sc>,*\n<i>17th Aug., 1889.</i>"
+    },
+    {
+      "correction_id": "viv-p0028-b0009",
+      "page_number": 28,
+      "block_id": "p0028-b0009",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Baghbazar, Calcutta</sc>,*\n<i>2nd Sept., 1889.</i>"
+    },
+    {
+      "correction_id": "viv-p0029-b0006",
+      "page_number": 29,
+      "block_id": "p0029-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>BAGHBAZAR</sc>,*\n<i>3rd Dec., 1889.</i>"
+    },
+    {
+      "correction_id": "viv-p0029-b0011",
+      "page_number": 29,
+      "block_id": "p0029-b0011",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>BARANAGORE, CALCUTTA</sc>,*\n<i>13th Dec., 1889.</i>"
+    },
+    {
+      "correction_id": "viv-p0030-b0006",
+      "page_number": 30,
+      "block_id": "p0030-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Baidyanath</sc>,*\n<i>24th Dec., 1889.</i>"
+    },
+    {
+      "correction_id": "viv-p0032-b0004",
+      "page_number": 32,
+      "block_id": "p0032-b0004",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Baidyanath,</sc>*\n<i>26th Dec., 1889.</i>"
+    },
+    {
+      "correction_id": "viv-p0032-b0009",
+      "page_number": 32,
+      "block_id": "p0032-b0009",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Allahabad,</sc>*\n<i>30th Dec., 1889.</i>"
+    },
+    {
+      "correction_id": "viv-p0033-b0008",
+      "page_number": 33,
+      "block_id": "p0033-b0008",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Allahabad</sc>,*\n<i>5th January, 1890.</i>"
+    },
+    {
+      "correction_id": "viv-p0034-b0006",
+      "page_number": 34,
+      "block_id": "p0034-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Allahabad</sc>,*\n<i>5th January</i>, 1890."
+    },
+    {
+      "correction_id": "viv-p0035-b0008",
+      "page_number": 35,
+      "block_id": "p0035-b0008",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "C/o <sc>BABU SATISHCHANDRA MUKHERJI</sc>,*\n<sc>GORABAZAR, GHAZIPUR</sc>,\n<i>24th Jan., 1890.</i>"
+    },
+    {
+      "correction_id": "viv-p0036-b0009",
+      "page_number": 36,
+      "block_id": "p0036-b0009",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Ghazipur</sc>,*\n<i>30th Jan., 1890.</i>"
+    },
+    {
+      "correction_id": "viv-p0038-b0005",
+      "page_number": 38,
+      "block_id": "p0038-b0005",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Ghazipur,</sc>*\n<i>31st Jan., 1890.</i>"
+    },
+    {
+      "correction_id": "viv-p0038-b0010",
+      "page_number": 38,
+      "block_id": "p0038-b0010",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Ghazipur,</sc>*\n<i>4th Feb., 1890.</i>"
+    },
+    {
+      "correction_id": "viv-p0040-b0007",
+      "page_number": 40,
+      "block_id": "p0040-b0007",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>GHAZIPUR</sc>,*\n<i>13th Feb.</i>, 1890."
+    },
+    {
+      "correction_id": "viv-p0041-b0004-trans",
+      "page_number": 41,
+      "block_id": "p0041-b0004",
+      "op": "set_type",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Restore starts_new_letter transition on numbered letter header.",
+      "replacement_type": "letter_header",
+      "replacement_transition": "starts_new_letter"
+    },
+    {
+      "correction_id": "viv-p0041-b0008-trans",
+      "page_number": 41,
+      "block_id": "p0041-b0008",
+      "op": "set_type",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Restore starts_new_letter transition on numbered letter header.",
+      "replacement_type": "letter_header",
+      "replacement_transition": "starts_new_letter"
+    },
+    {
+      "correction_id": "viv-p0041-b0009",
+      "page_number": 41,
+      "block_id": "p0041-b0009",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>C/o Satish Mukherji,</sc>*\n<sc>Gorabazar, Ghazipur,</sc>\n<i>14th Feb., 1890.</i>"
+    },
+    {
+      "correction_id": "viv-p0043-b0007",
+      "page_number": 43,
+      "block_id": "p0043-b0007",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>GHAZIPUR</sc>,*\n<i>14th Feb., 1890.</i>"
+    },
+    {
+      "correction_id": "viv-p0044-b0003-trans",
+      "page_number": 44,
+      "block_id": "p0044-b0003",
+      "op": "set_type",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Restore starts_new_letter transition on numbered letter header.",
+      "replacement_type": "letter_header",
+      "replacement_transition": "starts_new_letter"
+    },
+    {
+      "correction_id": "viv-p0044-b0004",
+      "page_number": 44,
+      "block_id": "p0044-b0004",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Ghazipur,</sc>*\n<i>Feb., 1890.</i>"
+    },
+    {
+      "correction_id": "viv-p0044-b0006-trans",
+      "page_number": 44,
+      "block_id": "p0044-b0006",
+      "op": "set_type",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Restore starts_new_letter transition on numbered letter header.",
+      "replacement_type": "letter_header",
+      "replacement_transition": "starts_new_letter"
+    },
+    {
+      "correction_id": "viv-p0044-b0007",
+      "page_number": 44,
+      "block_id": "p0044-b0007",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Ghazipur,</sc>*\n<i>February, 1890.</i>"
+    },
+    {
+      "correction_id": "viv-p0048-b0007",
+      "page_number": 48,
+      "block_id": "p0048-b0007",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 48 (fol. 33): Resolved '<unclear>ल्प</unclear>' to Devanagari conjunct 'ल्प' (चिन्ताशून्यमदैन्यमल्पमशनं).",
+      "replacement_tagged_text": "चिन्ताशून्यमदैन्यमल्पमशनं पानं सरिद्वारिषु\nस्वातन्त्र्येण निरङ्कुशा स्थितिरभीर्निद्रा श्मशाने वने ।\nवस्त्रं क्षालनशोषणादिरहितं दिग्वास्तु शय्या मही\nसञ्चारो निगमान्तवीथीषु विदां क्रीडा परे ब्रह्मणि ॥"
+    },
+    {
+      "correction_id": "viv-p0049-b0009",
+      "page_number": 49,
+      "block_id": "p0049-b0009",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>GHAZIPUR</sc>,*\n<i>25th Feb.</i>, 1890."
+    },
+    {
+      "correction_id": "viv-p0050-b0006",
+      "page_number": 50,
+      "block_id": "p0050-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Ghazipur</sc>,*\n<i>March, 1890.</i>"
+    },
+    {
+      "correction_id": "viv-p0051-b0009",
+      "page_number": 51,
+      "block_id": "p0051-b0009",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Normalize literal backslash-n escape to real newline.",
+      "replacement_tagged_text": "<sc>Ghazipur,</sc>*\n<i>3rd March, 1890.</i>"
+    },
+    {
+      "correction_id": "viv-p0055-b0005",
+      "page_number": 55,
+      "block_id": "p0055-b0005",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Ghazipur</sc>,*\n<i>8th March</i>, 1890."
+    },
+    {
+      "correction_id": "viv-p0055-b0010",
+      "page_number": 55,
+      "block_id": "p0055-b0010",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Ghazipur</sc>,*\n<i>15th March</i>, 1890."
+    },
+    {
+      "correction_id": "viv-p0056-b0006",
+      "page_number": 56,
+      "block_id": "p0056-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Ghazipur</sc>,*\n<i>15th March, 1890.</i>"
+    },
+    {
+      "correction_id": "viv-p0057-b0005",
+      "page_number": 57,
+      "block_id": "p0057-b0005",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Ghazipur</sc>,*\n<i>March, 1890.</i>"
+    },
+    {
+      "correction_id": "viv-p0059-b0007",
+      "page_number": 59,
+      "block_id": "p0059-b0007",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Ghazipur</sc>,*\n<i>2nd April, 1890.</i>"
+    },
+    {
+      "correction_id": "viv-p0060-b0009",
+      "page_number": 60,
+      "block_id": "p0060-b0009",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>BARANAGORE</sc>,*\n<i>10th May, 1890.</i>"
+    },
+    {
+      "correction_id": "viv-p0061-b0005",
+      "page_number": 61,
+      "block_id": "p0061-b0005",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "57, <sc>Ramkanta Bose’s Street,</sc>*\n<sc>Baghbazar, Calcutta,</sc>\n<i>26th May, 1890.</i>"
+    },
+    {
+      "correction_id": "viv-p0073-b0006",
+      "page_number": 73,
+      "block_id": "p0073-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Bombay</sc>,*\n<i>24th May, 1893.</i>"
+    },
+    {
+      "correction_id": "viv-p0087-b0009",
+      "page_number": 87,
+      "block_id": "p0087-b0009",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Normalize literal backslash-n escape to real newline.",
+      "replacement_tagged_text": "<sc>Chicago</sc>,\n<i>2nd Nov.</i>, 1893."
+    },
+    {
+      "correction_id": "viv-p0093-b0005",
+      "page_number": 93,
+      "block_id": "p0093-b0005",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Normalize literal backslash-n escape to real newline. Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>C/o George W. Hale, Esq.,</sc>*\n541, <sc>Dearborn Avenue, Chicago,</sc>\n<i>28th December, 1893.</i>"
+    },
+    {
+      "correction_id": "viv-p0109-b0005",
+      "page_number": 109,
+      "block_id": "p0109-b0005",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "C/<sc>o</sc> G<sc>eorge</sc> W. H<sc>ale</sc>,*\n541, D<sc>earborn</sc> A<sc>venue</sc>,\nC<sc>hicago</sc>,\n<i>19th March, 1894.</i>"
+    },
+    {
+      "correction_id": "viv-p0115-b0007",
+      "page_number": 115,
+      "block_id": "p0115-b0007",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Normalize literal backslash-n escape to real newline.",
+      "replacement_tagged_text": "<sc>New York</sc>,\n<i>9th April, 1894.</i>"
+    },
+    {
+      "correction_id": "viv-p0140-b0005",
+      "page_number": 140,
+      "block_id": "p0140-b0005",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>New York</sc>,*\n<i>25th September, 1894.</i>"
+    },
+    {
+      "correction_id": "viv-p0153-b0011",
+      "page_number": 153,
+      "block_id": "p0153-b0011",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>BALTIMORE, U. S. A.,</sc>*\n<i>22nd October, 1894.</i>"
+    },
+    {
+      "correction_id": "viv-p0169-b0007-trans",
+      "page_number": 169,
+      "block_id": "p0169-b0007",
+      "op": "set_type",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Restore starts_new_letter transition on numbered letter header.",
+      "replacement_type": "letter_header",
+      "replacement_transition": "starts_new_letter"
+    },
+    {
+      "correction_id": "viv-p0175-b0006",
+      "page_number": 175,
+      "block_id": "p0175-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<i>1894.</i>*"
+    },
+    {
+      "correction_id": "viv-p0181-b0006",
+      "page_number": 181,
+      "block_id": "p0181-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "C/o <sc>George W. Hale</sc>,*\n541, <sc>Dearborn Avenue</sc>, <sc>Chicago</sc>,\n<i>1894.</i>"
+    },
+    {
+      "correction_id": "viv-p0186-b0010",
+      "page_number": 186,
+      "block_id": "p0186-b0010",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<i>1894.</i>*"
+    },
+    {
+      "correction_id": "viv-p0188-b0003",
+      "page_number": 188,
+      "block_id": "p0188-b0003",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 188 (fol. 173): Resolved '<unclear>s</unclear>ay' to 'say'.",
+      "replacement_tagged_text": "You have read मातृदेवो भव, पितृदेवो भव —“Look upon your mother as God, look upon your father as God,”—but I say, दरिद्रदेवो भव, मूर्खदेवो भव—The poor, the illiterate, the ignorant, the afflicted—let these be your God. Know that service to these alone is the highest religion.—Ever yours, with blessings, <sc>Vivekananda.</sc>"
+    },
+    {
+      "correction_id": "viv-p0194-b0007",
+      "page_number": 194,
+      "block_id": "p0194-b0007",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 194 (fol. 179): Align inline callout '1' with Devanagari footnote marker '१' printed in fn-p0194-1.",
+      "replacement_tagged_text": ". . . “It is not the building that makes the home, but it is the wife that makes it,”<sup>१</sup> says a Sanskrit poet, and how true it is ! The roof that affords you shelter from heat and cold and rain is not to be judged by the pillars that support it—the finest Corinthian columns though they be, but by the real spirit-pillar who is the centre, the real support of the home—the woman. Judged by that standard, the American home will not suffer in comparison with any home in the world."
+    },
+    {
+      "correction_id": "viv-p0196-b0006",
+      "page_number": 196,
+      "block_id": "p0196-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "U. S. A.,*\n<i>1894.</i>"
+    },
+    {
+      "correction_id": "viv-p0200-b0004-trans",
+      "page_number": 200,
+      "block_id": "p0200-b0004",
+      "op": "set_type",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Restore starts_new_letter transition on numbered letter header.",
+      "replacement_type": "letter_header",
+      "replacement_transition": "starts_new_letter"
+    },
+    {
+      "correction_id": "viv-p0200-b0005",
+      "page_number": 200,
+      "block_id": "p0200-b0005",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "U. S. A.,*\n<i>1894.</i>"
+    },
+    {
+      "correction_id": "viv-p0205-b0004",
+      "page_number": 205,
+      "block_id": "p0205-b0004",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<i>1894.</i>*"
+    },
+    {
+      "correction_id": "viv-p0229-b0009",
+      "page_number": 229,
+      "block_id": "p0229-b0009",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "U. S. A.,*\n<i>11th April</i>, 1895."
+    },
+    {
+      "correction_id": "viv-p0232-b0004",
+      "page_number": 232,
+      "block_id": "p0232-b0004",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 232 (fol. 217): Resolved 're<unclear>al</unclear>isation' to 'realisation'.",
+      "replacement_tagged_text": "Perfect sincerity, holiness, gigantic intellect, and an all-conquering will. Let only a handful of men work with these, and the whole world will be revolutionised. I did a good deal of platform work in this country last year, and received plenty of applause, but found that I was only working for myself. It is the patient upbuilding of character, the intense struggle to <i>realise</i> the truth, which alone will tell, in the future of humanity. So this year I am hoping to work along this line—training up to practical Advaita realisation a small band of men and women. I do not know how far I shall succeed. The West is the field for work, if a man wants to benefit humanity, rather than his own particular sect or country. I agree perfectly as to your idea of a magazine. But I have no business capacity at all, to do these things. I can teach, and preach, and sometimes write. But I have intense faith in Truth. The Lord will send help and hands to work with me. Only let me be perfectly pure, perfectly sincere, and perfectly unselfish."
+    },
+    {
+      "correction_id": "viv-p0232-b0006",
+      "page_number": 232,
+      "block_id": "p0232-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Normalize literal backslash-n escape to real newline.",
+      "replacement_tagged_text": "(123)\n<i>To The Same</i>"
+    },
+    {
+      "correction_id": "viv-p0232-b0007",
+      "page_number": 232,
+      "block_id": "p0232-b0007",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Normalize literal backslash-n escape to real newline.",
+      "replacement_tagged_text": "19, <sc>W. 38th St.,</sc>\n<sc>New York.</sc>"
+    },
+    {
+      "correction_id": "viv-p0234-b0007",
+      "page_number": 234,
+      "block_id": "p0234-b0007",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 234 (fol. 219): Ink speck above 'o' in 'you' misread as 'yóu'.",
+      "replacement_tagged_text": "I am only glad that you have such a great opinion about Miss Hamlin. I for one am glad to know that you will help her, for she requires it. But, mother, through the mercy of Ramakrishna, my instinct “sizes up” almost infallibly a human face as soon as I see it, and the result is this : you may do anything you please with my affairs, <i>I</i> <i>will not even murmur</i>—I will be only too glad to take Miss Farmer’s advice, in spite of ghosts and spooks. Behind the spooks I <i>see</i> a heart of immense love, only covered with a thin film of <i>laudable</i> ambition—even that is bound to vanish in a few years. Even I will allow"
+    },
+    {
+      "correction_id": "viv-p0243-b0010",
+      "page_number": 243,
+      "block_id": "p0243-b0010",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<i>1895.</i>*"
+    },
+    {
+      "correction_id": "viv-p0269-b0006",
+      "page_number": 269,
+      "block_id": "p0269-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "C/o <sc>E. T. Sturdy, Esq.</sc>,*\n<sc>High View, etc.</sc>,\n<i>1895.</i>"
+    },
+    {
+      "correction_id": "viv-p0272-b0009",
+      "page_number": 272,
+      "block_id": "p0272-b0009",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>C/O E. T. STURDY, ESQ.</sc>,*\n<sc>HIGH VIEW, CAVERSHAM, READING</sc>,\n<i>4th October</i>, 1895."
+    },
+    {
+      "correction_id": "viv-p0275-b0004-trans",
+      "page_number": 275,
+      "block_id": "p0275-b0004",
+      "op": "set_type",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Restore starts_new_letter transition on numbered letter header.",
+      "replacement_type": "letter_header",
+      "replacement_transition": "starts_new_letter"
+    },
+    {
+      "correction_id": "viv-p0275-b0007-trans",
+      "page_number": 275,
+      "block_id": "p0275-b0007",
+      "op": "set_type",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Restore starts_new_letter transition on numbered letter header.",
+      "replacement_type": "letter_header",
+      "replacement_transition": "starts_new_letter"
+    },
+    {
+      "correction_id": "viv-p0277-b0009",
+      "page_number": 277,
+      "block_id": "p0277-b0009",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>C/o E. T. Sturdy, Esq.</sc>.,*\n<sc>High View, Caversham,</sc>\n<sc>Reading, England,</sc>\n<i>1895.</i>"
+    },
+    {
+      "correction_id": "viv-p0280-b0004-trans",
+      "page_number": 280,
+      "block_id": "p0280-b0004",
+      "op": "set_type",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Restore starts_new_letter transition on numbered letter header.",
+      "replacement_type": "letter_header",
+      "replacement_transition": "starts_new_letter"
+    },
+    {
+      "correction_id": "viv-p0280-b0005",
+      "page_number": 280,
+      "block_id": "p0280-b0005",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>London</sc>,*\n<i>13th Nov., 1895.</i>"
+    },
+    {
+      "correction_id": "viv-p0283-b0007",
+      "page_number": 283,
+      "block_id": "p0283-b0007",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>C/o E. T. Sturdy, Esq.,</sc>*\n<sc>Reading, Caversham,</sc>\n<sc>England,</sc>\n<i>1895.</i>"
+    },
+    {
+      "correction_id": "viv-p0286-b0006",
+      "page_number": 286,
+      "block_id": "p0286-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 286 (fol. 271): Resolved '<unclear>best</unclear>' to 'best'.",
+      "replacement_tagged_text": "This month notices are out for the four Sunday lectures. The lectures for the first week of February in Brooklyn are being arranged by Dr. Janes and others.— Yours with best wishes, <sc>Vivekananda</sc>."
+    },
+    {
+      "correction_id": "viv-p0292-b0007",
+      "page_number": 292,
+      "block_id": "p0292-b0007",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<i>1895.</i>*"
+    },
+    {
+      "correction_id": "viv-p0295-b0009",
+      "page_number": 295,
+      "block_id": "p0295-b0009",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "U. S. A.,*\n<i>1895.</i>"
+    },
+    {
+      "correction_id": "viv-p0307-b0003",
+      "page_number": 307,
+      "block_id": "p0307-b0003",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 307 (fol. 292): Resolved '<unclear>.</unclear>' after 'infinite' to '.'.",
+      "replacement_tagged_text": "being in a hurry? You shall all travel the whole world. Courage! Brother Tarak has a great capacity for work within him. Hence I expect much of him. . . . You remember, I suppose, how after Sri Ramakrishna’s passing away, all forsook us as so many worthless, ragged boys. Only people like Balaram, Suresh, Master and Chuni Babu were our friends at that hour of need. And we shall never be able to repay our debts to them. . . . Tell Chuni Babu in private that he has nothing to fear, that those who are protected by the Lord must be above fear. I am a puny man, but the glories of the Lord are infinite. माभैः माभैः—discard fear. Let not your faith be shaken. . . . Has danger any power over one whom the Lord has taken into His fold?—Ever yours, <sc>Vivekananda</sc>."
+    },
+    {
+      "correction_id": "viv-p0318-b0009",
+      "page_number": 318,
+      "block_id": "p0318-b0009",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Boston</sc>,*\n<i>22nd March, 1896.</i>"
+    },
+    {
+      "correction_id": "viv-p0323-b0006",
+      "page_number": 323,
+      "block_id": "p0323-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>New York</sc>,*\n<i>14th April, 1896.</i>"
+    },
+    {
+      "correction_id": "viv-p0324-b0005",
+      "page_number": 324,
+      "block_id": "p0324-b0005",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>HIGH VIEW, CAVERSHAM</sc>,*\n<sc>READING</sc>,\n<i>27th April, 1896.</i>"
+    },
+    {
+      "correction_id": "viv-p0340-b0006-trans",
+      "page_number": 340,
+      "block_id": "p0340-b0006",
+      "op": "set_type",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Restore starts_new_letter transition on numbered letter header.",
+      "replacement_type": "letter_header",
+      "replacement_transition": "starts_new_letter"
+    },
+    {
+      "correction_id": "viv-p0355-b0005",
+      "page_number": 355,
+      "block_id": "p0355-b0005",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "C/o E. T. <sc>Sturdy</sc>, <sc>Esq.</sc>,*\n<sc>High View</sc>,\n<sc>Caversham, Reading</sc>,\n<i>1896</i>."
+    },
+    {
+      "correction_id": "viv-p0358-b0008",
+      "page_number": 358,
+      "block_id": "p0358-b0008",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "C/o <sc>E. T. Sturdy, Esq.,</sc>*\n<sc>High View, Caversham,</sc>\n<sc>Reading, England,</sc>\n<i>1896.</i>"
+    },
+    {
+      "correction_id": "viv-p0368-b0005",
+      "page_number": 368,
+      "block_id": "p0368-b0005",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Normalize literal backslash-n escape to real newline.",
+      "replacement_tagged_text": "<sc>14, GREYCOAT GARDENS,</sc>\n<sc>WESTMINSTER, S.W.,</sc>\n<i>11th November, 1896.</i>"
+    },
+    {
+      "correction_id": "viv-p0368-b0009",
+      "page_number": 368,
+      "block_id": "p0368-b0009",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Normalize literal backslash-n escape to real newline.",
+      "replacement_tagged_text": "<sc>GREYCOAT GARDENS,</sc>\n<sc>WESTMINSTER, S.W.,</sc>\n<i>13th November, 1896.</i>"
+    },
+    {
+      "correction_id": "viv-p0379-b0006",
+      "page_number": 379,
+      "block_id": "p0379-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Rose Bank,</sc>*\n<sc>The Maharaja of Burdwan's House,</sc>\n<sc>Darjeeling,</sc>\n<i>6th April, 1897.</i>"
+    },
+    {
+      "correction_id": "viv-p0381-b0006-trans",
+      "page_number": 381,
+      "block_id": "p0381-b0006",
+      "op": "set_type",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Restore starts_new_letter transition on numbered letter header.",
+      "replacement_type": "letter_header",
+      "replacement_transition": "starts_new_letter"
+    },
+    {
+      "correction_id": "viv-p0381-b0007",
+      "page_number": 381,
+      "block_id": "p0381-b0007",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Darjeeling,</sc>*\nC/o <sc>M. N. Banerjee, Esq.,</sc>\n<i>24th April</i>, 1897."
+    },
+    {
+      "correction_id": "viv-p0396-b0007",
+      "page_number": 396,
+      "block_id": "p0396-b0007",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Almora</sc>,*\n<i>30th May, 1897.</i>"
+    },
+    {
+      "correction_id": "viv-p0400-b0003",
+      "page_number": 400,
+      "block_id": "p0400-b0003",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 400 (fol. 385): Dust speck between 'is' and 'very' misread as 'is.very'.",
+      "replacement_tagged_text": "The idea that the Samhitas are the only Vedas is very recent and has been started by the late Swami Dayananda. This opinion has not got any hold on the orthodox population."
+    },
+    {
+      "correction_id": "viv-p0401-b0006",
+      "page_number": 401,
+      "block_id": "p0401-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 401 (fol. 386): Align inline callout '1' with Devanagari footnote marker '१' printed in fn-p0401-1.",
+      "replacement_tagged_text": "The Bengali interpretation that you have done of the Shloka यावानर्थः etc.,<sup>१</sup> does not seem to me to be right."
+    },
+    {
+      "correction_id": "viv-p0404-b0009",
+      "page_number": 404,
+      "block_id": "p0404-b0009",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Almora</sc>,*\n<i>15th June, 1897.</i>"
+    },
+    {
+      "correction_id": "viv-p0406-b0009",
+      "page_number": 406,
+      "block_id": "p0406-b0009",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Almora</sc>,*\n<i>20th June</i>, 1897."
+    },
+    {
+      "correction_id": "viv-p0407-b0010",
+      "page_number": 407,
+      "block_id": "p0407-b0010",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Almora</sc>,*\n<i>30th June, 1897.</i>"
+    },
+    {
+      "correction_id": "viv-p0416-b0004",
+      "page_number": 416,
+      "block_id": "p0416-b0004",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 416 (fol. 401): Resolved '(25<unclear>1</unclear>)' to '(251)'.",
+      "replacement_tagged_text": "(251)"
+    },
+    {
+      "correction_id": "viv-p0422-b0006",
+      "page_number": 422,
+      "block_id": "p0422-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Almora</sc>,*\n<i>24th July, 1897.</i>"
+    },
+    {
+      "correction_id": "viv-p0430-b0005",
+      "page_number": 430,
+      "block_id": "p0430-b0005",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<i>10th October, 1897.</i>*"
+    },
+    {
+      "correction_id": "viv-p0431-b0005",
+      "page_number": 431,
+      "block_id": "p0431-b0005",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Murree</sc>,*\n<i>10th October, 1897.</i>"
+    },
+    {
+      "correction_id": "viv-p0431-b0010",
+      "page_number": 431,
+      "block_id": "p0431-b0010",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Murree</sc>,*\n<i>10th October, 1897.</i>"
+    },
+    {
+      "correction_id": "viv-p0434-b0007",
+      "page_number": 434,
+      "block_id": "p0434-b0007",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Lahore</sc>,*\n<i>15th November, 1897.</i>"
+    },
+    {
+      "correction_id": "viv-p0435-b0007",
+      "page_number": 435,
+      "block_id": "p0435-b0007",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Dehra Dun,</sc>*\n<i>24th November, 1897.</i>"
+    },
+    {
+      "correction_id": "viv-p0444-b0011",
+      "page_number": 444,
+      "block_id": "p0444-b0011",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>BELUR MATH</sc>,*\n<i>16th April, 1899.</i>"
+    },
+    {
+      "correction_id": "viv-p0446-b0006",
+      "page_number": 446,
+      "block_id": "p0446-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Normalize literal backslash-n escape to real newline.",
+      "replacement_tagged_text": "<sc>RIDGELY</sc>,\n<i>2nd September</i>, 1899."
+    },
+    {
+      "correction_id": "viv-p0446-b0010",
+      "page_number": 446,
+      "block_id": "p0446-b0010",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Normalize literal backslash-n escape to real newline.",
+      "replacement_tagged_text": "<sc>RIDGELY MANOR</sc>,\n<i>14th Sept.</i>, 1899."
+    },
+    {
+      "correction_id": "viv-p0449-b0004",
+      "page_number": 449,
+      "block_id": "p0449-b0004",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Normalize literal backslash-n escape to real newline.",
+      "replacement_tagged_text": "<sc>New York</sc>,\n<i>15th November</i>, 1899."
+    },
+    {
+      "correction_id": "viv-p0449-b0006",
+      "page_number": 449,
+      "block_id": "p0449-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Normalize literal backslash-n escape to real newline.",
+      "replacement_tagged_text": "<i>(283)</i>\n<i>To Sister Nivedita</i>"
+    },
+    {
+      "correction_id": "viv-p0449-b0007",
+      "page_number": 449,
+      "block_id": "p0449-b0007",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Normalize literal backslash-n escape to real newline.",
+      "replacement_tagged_text": "<sc>Los Angeles</sc>,\n<i>6th December</i>, 1899."
+    },
+    {
+      "correction_id": "viv-p0452-b0006-trans",
+      "page_number": 452,
+      "block_id": "p0452-b0006",
+      "op": "set_type",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Restore starts_new_letter transition on numbered letter header.",
+      "replacement_type": "letter_header",
+      "replacement_transition": "starts_new_letter"
+    },
+    {
+      "correction_id": "viv-p0455-b0005",
+      "page_number": 455,
+      "block_id": "p0455-b0005",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>California,</sc>*\n<i>21st February, 1900.</i>"
+    },
+    {
+      "correction_id": "viv-p0471-b0005",
+      "page_number": 471,
+      "block_id": "p0471-b0005",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>Da Forest P. O.</sc>,*\n<sc>Santa Clara Co.</sc>,\n6, <sc>Place des Etats Unis</sc>,\n<sc>Paris, France</sc>,\n<i>1st September, 1900.</i>"
+    },
+    {
+      "correction_id": "viv-p0472-b0011",
+      "page_number": 472,
+      "block_id": "p0472-b0011",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "6, <sc>Place des Etats Unis.</sc>*"
+    },
+    {
+      "correction_id": "viv-p0475-b0006",
+      "page_number": 475,
+      "block_id": "p0475-b0006",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Preserve Bengali-translation asterisk verbatim without superscript callout matching after p. 16 (fn-p0016-*).",
+      "replacement_tagged_text": "<sc>DEOGHAR, VAIDYANATH</sc>,*\nC/o <sc>BABU PRIYANATH MUKHERJI</sc>,\n<i>23rd Dec., 1900.</i>"
+    },
+    {
+      "correction_id": "viv-p0502-b0007",
+      "page_number": 502,
+      "block_id": "p0502-b0007",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 502 (fol. 487): Cross-checked with fol. 113 (p0128-b0004 'Mrs. Figs'); faintly inked serif read as '7' in '113'.",
+      "replacement_tagged_text": "Figs, Mrs., 113"
+    },
+    {
+      "correction_id": "viv-p0502-b0024",
+      "page_number": 502,
+      "block_id": "p0502-b0024",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 502 (fol. 487): Resolved '<unclear>212</unclear>' to '212'.",
+      "replacement_tagged_text": "—in oneself, 84, 102, 121, 131, 143, 212, 367, 368, 407"
+    },
+    {
+      "correction_id": "viv-p0506-b0014",
+      "page_number": 506,
+      "block_id": "p0506-b0014",
+      "op": "set_text",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 506 (fol. 491): Resolved 'S<unclear>w</unclear>ami' to 'Swami'.",
+      "replacement_tagged_text": "Latu, <i>see</i> Swami Adbhutananda"
+    }
+  ]
+}

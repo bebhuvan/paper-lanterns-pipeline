@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "nineteenth-century-letters-1919",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 506,
+  "reviewer": "native-vision-500ppi-scan-check",
+  "checked_at": "2026-11-19T05:39:15.954462+00:00",
+  "source_page_sha256": "f34d55608473e81275489c4a2194f706659dd6a1ea7d098dfa4665f2ed0761db",
+  "render_png": "renders/page_0506.png",
+  "checks": [
+    {
+      "block_id": "p0506-b0001",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0506.png."
+    },
+    {
+      "block_id": "p0506-b0002",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0506.png."
+    },
+    {
+      "block_id": "p0506-b0003",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0506.png."
+    },
+    {
+      "block_id": "p0506-b0004",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0506.png."
+    },
+    {
+      "block_id": "p0506-b0005",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0506.png."
+    },
+    {
+      "block_id": "p0506-b0006",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0506.png."
+    },
+    {
+      "block_id": "p0506-b0007",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0506.png."
+    },
+    {
+      "block_id": "p0506-b0008",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0506.png."
+    },
+    {
+      "block_id": "p0506-b0009",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0506.png."
+    },
+    {
+      "block_id": "p0506-b0010",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0506.png."
+    }
+  ]
+}

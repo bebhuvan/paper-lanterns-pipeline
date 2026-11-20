@@ -1,0 +1,977 @@
+{
+  "version": "correction-v2",
+  "book_id": "eic-letters-received-vol-6-1617b",
+  "created_at": "2026-11-18T06:11:30.893186+00:00",
+  "corrections": [
+    {
+      "correction_id": "v6-p0061-b0004-clear-to",
+      "page_number": 61,
+      "block_id_hint": "p0061-b0004",
+      "anchor_text": "Now as concerning your letters sent per the Thomas and Advice, they were not so well liked or accepted as haply they were meant or would have been had Captain Jourden continued still Agent. They were said to be copious, but not compendious; large, but stuffed with idle and needless matter, ill-beseeming one of your place, years, and experience; as with the credit and hopes of Captain China,1 the merit and applause of Mr. Sayers, and the commendations of your countryman Eatton, and other suchlike stuff now out of my memory. For the first of them, his endeavours are had in suspicion and accounted as bent to none other end than to deceive you; and it is disagrees not with my opinion, for never yet, having dealt with many, could I find an honest and faithful Chinesa; and it is not to be marvelled at, they serving so faithless and fraudulent a master as is the devil, who, being the father of deceit, cannot but have inspired his disciples with his rules of perdition.2 And for the second, which is Mr. Sayers, he is not adjudged meritorious for anything he did towards the saving of the junk,3 he being reported to be a man neither of art, judgment or knowledge that way, but all that was done to be the divine and determinate providence of the all directing Power to save junk, goods, and men, and consequently he amongst the rest was saved [whom ?] you would have accounted a saviour. Lastly, for your country [man, his ?] commendations had been better delivered by others than by [you ?      ] be done purposely to bring him in grace with the [          ] to disgrace others that",
+      "op": "set_text",
+      "replacement_tagged_text": "Now as concerning your letters sent per the Thomas and Advice, they were not so well liked or accepted as haply they were meant or would have been had Captain Jourden continued still Agent. They were said to be copious, but not compendious; large, but stuffed with idle and needless matter, ill-beseeming one of your place, years, and experience; as with the credit and hopes of Captain China,<sup>1</sup> the merit and applause of Mr. Sayers, and the commendations of your countryman Eatton, and other suchlike stuff now out of my memory. For the first of them, his endeavours are had in suspicion and accounted as bent to none other end than to deceive you; and it is disagrees not with my opinion, for never yet, having dealt with many, could I find an honest and faithful Chinesa; and it is not to be marvelled at, they serving so faithless and fraudulent a master as is the devil, who, being the father of deceit, cannot but have inspired his disciples with his rules of perdition.<sup>2</sup> And for the second, which is Mr. Sayers, he is not adjudged meritorious for anything he did towards the saving of the junk,<sup>3</sup> he being reported to be a man neither of art, judgment or knowledge that way, but all that was done to be the divine and determinate providence of the all directing Power to save junk, goods, and men, and consequently he amongst the rest was saved [whom ?] you would have accounted a saviour. Lastly, for your country [man, his ?] commendations had been better delivered by others than by [you ?      ] be done purposely to bring him in grace with the [          ] to disgrace others that",
+      "reviewer": "visual-audit",
+      "note": "Verified on page_0061.png: reads 'to' cleanly despite tiny nick in 'o'.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0360-b0011-frac-15-25",
+      "page_number": 360,
+      "block_id_hint": "p0360-b0011",
+      "anchor_text": "The first portion (here omitted) narrates the departure of the French ship from Bantam on 1⁄2§ December, 1617, and her subsequent troubles owing to bad weather.",
+      "op": "set_text",
+      "replacement_tagged_text": "The first portion (here omitted) narrates the departure of the French ship from Bantam on 15⁄25 December, 1617, and her subsequent troubles owing to bad weather.",
+      "reviewer": "visual-audit",
+      "note": "Verified on page_0360.png: footnote 1 prints '15/25 December, 1617'.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0361-b0003-refusgie",
+      "page_number": 361,
+      "block_id_hint": "p0361-b0003",
+      "anchor_text": "pourquoy lez Flammenz ont prins les dict navires c’est que ayant attendu de une vois de beaucoup des dicts Flamens disent qu’ils ont guerre mortelle contre les Bandanois et qu’ils ont deffendu aux Angloiz de ne les assister ny pretter aulcune provision, tant de guerre que de bouche, a piene de guerre mortelle contra les dicts Angloiz. Les Flammens avoient trouvé ses deux navires chargez du dict provisions, l’auroient pris comme leurs, ayant deffendu, mesmes que ceulx de l’isle de Banda se sont donnes au roy d’Angleterre, et pour tesmoignage de ce des principaulx de l’isle de Banda, entre aultre le frere du roy de Banda, lequel roy fut tué en guerre par lez Flamenz c’est refusgïé avecq sa compagnie a Bantam a la maison des dicts Angloiz, prennant le roy d’Angleterre pour roy et protecteur. Voila la orriginal de la guerre entre les Flamens et les Angloiz aux Mollucquaz.",
+      "op": "set_text",
+      "replacement_tagged_text": "pourquoy lez Flammenz ont prins les dict navires c’est que ayant attendu de une vois de beaucoup des dicts Flamens disent qu’ils ont guerre mortelle contre les Bandanois et qu’ils ont deffendu aux Angloiz de ne les assister ny pretter aulcune provision, tant de guerre que de bouche, a piene de guerre mortelle contra les dicts Angloiz. Les Flammens avoient trouvé ses deux navires chargez du dict provisions, l’auroient pris comme leurs, ayant deffendu, mesmes que ceulx de l’isle de Banda se sont donnes au roy d’Angleterre, et pour tesmoignage de ce des principaulx de l’isle de Banda, entre aultre le frere du roy de Banda, lequel roy fut tué en guerre par lez Flamenz c’est refusgié avecq sa compagnie a Bantam a la maison des dicts Angloiz, prennant le roy d’Angleterre pour roy et protecteur. Voila la orriginal de la guerre entre les Flamens et les Angloiz aux Mollucquaz.",
+      "reviewer": "visual-audit",
+      "note": "Verified on page_0361.png: prints standard Roman 'i' in 'refusgié' (no diaeresis).",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0365-b0001-clear-s",
+      "page_number": 365,
+      "block_id_hint": "p0365-b0001",
+      "anchor_text": "Tabriz Kazvin E P E R S Ispahan Basra Gom ARABI Mocha Aden KOREA JAPAN Jeddo Miako Osaka Hirado Nagasaki Liu Kiu Is FORMOSA Manilla PPINE ISLANDS Siao Ternate Tidore Bachian Gilolo CELEBES MOLUCCAS Ceram Boeroe Amboyna Banda Is Boeton Timor Comoro Is MADAGASCAR",
+      "op": "set_text",
+      "replacement_tagged_text": "<i>Tabriz</i> <i>Kazvin</i> E P E R S Ispahan Basra Gom ARABI Mocha Aden KOREA JAPAN Jeddo Miako Osaka Hirado Nagasaki Liu Kiu I<sup>s</sup> FORMOSA Manilla PPINE ISLANDS Siao Ternate Tidore Bachian Gilolo CELEBES MOLUCCAS Ceram Boeroe Amboyna Banda I<sup>s</sup> Boeton Timor Comoro I<sup>s</sup> MADAGASCAR",
+      "reviewer": "visual-audit",
+      "note": "Verified on page_0365.png: map label reads 'P E R S [IA]' cut at fold.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0078-b0005-council-signer-body",
+      "page_number": 78,
+      "block_id_hint": "p0078-b0005",
+      "anchor_text": "James Fernandus.",
+      "op": "set_type",
+      "replacement_type": "body",
+      "reviewer": "visual-audit",
+      "note": "Verified on page_0078.png: individual council member opinion signature within consultation No. 518.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0078-b0007-council-signer-body",
+      "page_number": 78,
+      "block_id_hint": "p0078-b0007",
+      "anchor_text": "Richard Hide.",
+      "op": "set_type",
+      "replacement_type": "body",
+      "reviewer": "visual-audit",
+      "note": "Verified on page_0078.png: individual council member opinion signature within consultation No. 518.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0078-b0009-council-signer-body",
+      "page_number": 78,
+      "block_id_hint": "p0078-b0009",
+      "anchor_text": "Walter Bennett.",
+      "op": "set_type",
+      "replacement_type": "body",
+      "reviewer": "visual-audit",
+      "note": "Verified on page_0078.png: individual council member opinion signature within consultation No. 518.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0161-b0007-ps-sig",
+      "page_number": 161,
+      "block_id_hint": "p0161-b0007",
+      "anchor_text": "Tho. Roe.",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "reviewer": "visual-audit",
+      "note": "Verified on page_0161.png: postscript approval and co-signatures on No. 545.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0161-b0008-ps-sig",
+      "page_number": 161,
+      "block_id_hint": "p0161-b0008",
+      "anchor_text": "Martin Pring.\nTho. Kerridge.",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "reviewer": "visual-audit",
+      "note": "Verified on page_0161.png: postscript approval and co-signatures on No. 545.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0162-cosig-merge",
+      "page_number": 162,
+      "block_id_hint": "p0162-b0006",
+      "anchor_text": "Martin Pring.\nAndrew Shilling.3\nRowland Coytmore.\nNath. Salmon.\nRobert Adames.\nJohn Hatch.4",
+      "op": "set_text",
+      "replacement_tagged_text": "Martin Pring.\nAndrew Shilling.<sup>3</sup>\nRowland Coytmore.\nNath. Salmon.\nRobert Adames.\nJohn Hatch.<sup>4</sup>\nJohn Shrive.\nRichard Swan.\nThomas Kinge.\nEdw. Monox.\nMath. Duke.",
+      "replacement_type": "signature",
+      "reviewer": "visual-audit",
+      "note": "Verified on page_0162.png: merge 2-column consultation signatures of No. 546.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0162-b0007-drop-merged",
+      "page_number": 162,
+      "block_id_hint": "p0162-b0007",
+      "anchor_text": "John Shrive.\nRichard Swan.\nThomas Kinge.\nEdw. Monox.\nMath. Duke.",
+      "op": "drop_residue",
+      "reviewer": "visual-audit",
+      "note": "2nd signature column merged into p0162-b0006.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0055-b0009-split-fn",
+      "page_number": 55,
+      "block_id_hint": "p0055-b0009",
+      "anchor_text": "In April, 1610.     5 Macao.     6 Grogram.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0055-b0009-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> In April, 1610.",
+          "note_label": "4"
+        },
+        {
+          "block_id": "p0055-b0009-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>5</sup> Macao.",
+          "note_label": "5"
+        },
+        {
+          "block_id": "p0055-b0009-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>6</sup> Grogram.",
+          "note_label": "6"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0056-b0012-split-fn",
+      "page_number": 56,
+      "block_id_hint": "p0056-b0012",
+      "anchor_text": "3 Silver.                    4 Not extant.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0056-b0012-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> Silver.",
+          "note_label": "3"
+        },
+        {
+          "block_id": "p0056-b0012-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> Not extant.",
+          "note_label": "4"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0063-b0010-split-fn",
+      "page_number": 63,
+      "block_id_hint": "p0063-b0010",
+      "anchor_text": "1 The Dutch.          2 Wickham.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0063-b0010-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> The Dutch.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0063-b0010-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> Wickham.",
+          "note_label": "2"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0088-b0009-split-fn",
+      "page_number": 88,
+      "block_id_hint": "p0088-b0009",
+      "anchor_text": "This King.\t2 See vol. v., p. xviii.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0088-b0009-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> This King.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0088-b0009-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> See vol. v., p. xviii.",
+          "note_label": "2"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0100-b0007-split-fn",
+      "page_number": 100,
+      "block_id_hint": "p0100-b0007",
+      "anchor_text": "Vol. v., p. 60.  4 Natal.  5 See vol. v., p. 174.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0100-b0007-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> Vol. v., p. 60.",
+          "note_label": "3"
+        },
+        {
+          "block_id": "p0100-b0007-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> Natal.",
+          "note_label": "4"
+        },
+        {
+          "block_id": "p0100-b0007-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>5</sup> See vol. v., p. 174.",
+          "note_label": "5"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0138-b0009-split-fn",
+      "page_number": 138,
+      "block_id_hint": "p0138-b0009",
+      "anchor_text": "1 Ayuthia (vol. v., p. 265). 2 Not extant. 3 See vol. v., p. 300.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0138-b0009-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> Ayuthia (vol. v., p. 265).",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0138-b0009-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> Not extant.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0138-b0009-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> See vol. v., p. 300.",
+          "note_label": "3"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0142-b0013-split-fn",
+      "page_number": 142,
+      "block_id_hint": "p0142-b0013",
+      "anchor_text": "6 I.e., the prisoners taken in the Swan and Defence. George Cokayne.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0142-b0013-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>6</sup> <i>I.e.</i>, the prisoners taken in the <i>Swan</i> and <i>Defence</i>.",
+          "note_label": "6"
+        },
+        {
+          "block_id": "p0142-b0013-s2",
+          "type": "footnote",
+          "tagged_text": "George Cokayne.",
+          "note_label": "8"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0142-b0016-split-fn",
+      "page_number": 142,
+      "block_id_hint": "p0142-b0016",
+      "anchor_text": "7 Vessel bringing advices.\n9 Henry Bates.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0142-b0016-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>7</sup> Vessel bringing advices.",
+          "note_label": "7"
+        },
+        {
+          "block_id": "p0142-b0016-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>9</sup> Henry Bates.",
+          "note_label": "9"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0148-b0005-split-fn",
+      "page_number": 148,
+      "block_id_hint": "p0148-b0005",
+      "anchor_text": "1 See vol. v., p. 233.   2 Pley.   3 From Shírāz.   4 See p. 32,",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0148-b0005-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> See vol. v., p. 233.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0148-b0005-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> Pley.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0148-b0005-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> From Shírāz.",
+          "note_label": "3"
+        },
+        {
+          "block_id": "p0148-b0005-s4",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> See p. 32,",
+          "note_label": "4"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0178-b0007-split-fn",
+      "page_number": 178,
+      "block_id_hint": "p0178-b0007",
+      "anchor_text": "2 Order in writing (see vol. iii., p. 322). 3 To Agra. 4 Cp. p. 119.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0178-b0007-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> Order in writing (see vol. iii., p. 322).",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0178-b0007-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> To Agra.",
+          "note_label": "3"
+        },
+        {
+          "block_id": "p0178-b0007-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> Cp. p. 119.",
+          "note_label": "4"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0193-b0009-split-fn",
+      "page_number": 193,
+      "block_id_hint": "p0193-b0009",
+      "anchor_text": "1 Copy only. 2 See p. 141. 3 See p. 140.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0193-b0009-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> Copy only.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0193-b0009-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> See p. 141.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0193-b0009-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> See p. 140.",
+          "note_label": "3"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0193-b0010-split-fn",
+      "page_number": 193,
+      "block_id_hint": "p0193-b0010",
+      "anchor_text": "4 Referring to their doubts whether they might proceed without waiting for his formal sanction (see p. 95). 5 Of the Company.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0193-b0010-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> Referring to their doubts whether they might proceed without waiting for his formal sanction (see p. 95).",
+          "note_label": "4"
+        },
+        {
+          "block_id": "p0193-b0010-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>5</sup> Of the Company.",
+          "note_label": "5"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0198-b0007-split-fn",
+      "page_number": 198,
+      "block_id_hint": "p0198-b0007",
+      "anchor_text": "The Company's letter to the Surat Factors (not extant).  2 I.e., at Bantam.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0198-b0007-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> The Company's letter to the Surat Factors (not extant).",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0198-b0007-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> <i>I.e.</i>, at Bantam.",
+          "note_label": "2"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0198-b0008-split-fn",
+      "page_number": 198,
+      "block_id_hint": "p0198-b0008",
+      "anchor_text": "I.e., ships (cp. p. 129, and The Embassy, pp. 408, 409).  4 Diul-Sind (Láribandar).",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0198-b0008-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> <i>I.e.</i>, ships (cp. p. 129, and <i>The Embassy</i>, pp. 408, 409).",
+          "note_label": "3"
+        },
+        {
+          "block_id": "p0198-b0008-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> Diul-Sind (Láribandar).",
+          "note_label": "4"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0204-b0011-split-fn",
+      "page_number": 204,
+      "block_id_hint": "p0204-b0011",
+      "anchor_text": "2 Of Calicut. 3 Ceylon.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0204-b0011-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> Of Calicut.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0204-b0011-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> Ceylon.",
+          "note_label": "3"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0214-b0008-split-fn",
+      "page_number": 214,
+      "block_id_hint": "p0214-b0008",
+      "anchor_text": "Prize.    4 Sofala.    5 Cp. p. 153    6 Deccan.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0214-b0008-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> Prize.",
+          "note_label": "3"
+        },
+        {
+          "block_id": "p0214-b0008-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> Sofala.",
+          "note_label": "4"
+        },
+        {
+          "block_id": "p0214-b0008-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>5</sup> Cp. p. 153",
+          "note_label": "5"
+        },
+        {
+          "block_id": "p0214-b0008-s4",
+          "type": "footnote",
+          "tagged_text": "<sup>6</sup> Deccan.",
+          "note_label": "6"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0224-b0007-split-fn",
+      "page_number": 224,
+      "block_id_hint": "p0224-b0007",
+      "anchor_text": "2 See p. 114. 3 The Trade's Increase, Sir Henry Middleton's flagship.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0224-b0007-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> See p. 114.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0224-b0007-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> The <i>Trade's Increase,</i> Sir Henry Middleton's flagship.",
+          "note_label": "3"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0227-b0009-split-fn",
+      "page_number": 227,
+      "block_id_hint": "p0227-b0009",
+      "anchor_text": "1 See p. 169.     2 See p. 170.     3 See p. 4.     4 See p. 169.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0227-b0009-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> See p. 169.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0227-b0009-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> See p. 170.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0227-b0009-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> See p. 4.",
+          "note_label": "3"
+        },
+        {
+          "block_id": "p0227-b0009-s4",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> See p. 169.",
+          "note_label": "4"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0256-b0016-split-fn",
+      "page_number": 256,
+      "block_id_hint": "p0256-b0016",
+      "anchor_text": "1 Copy only. Printed (in part) in The Embassy, p. 446.      2 Not extant.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0256-b0016-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> Copy only. Printed (in part) in <i>The Embassy</i>, p. 446.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0256-b0016-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> Not extant.",
+          "note_label": "2"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0261-b0013-split-fn",
+      "page_number": 261,
+      "block_id_hint": "p0261-b0013",
+      "anchor_text": "Inkstand. 6 Priced at. 7 Not extant. 8 See p. 208. 9 Cp. p. 241.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0261-b0013-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>5</sup> Inkstand.",
+          "note_label": "5"
+        },
+        {
+          "block_id": "p0261-b0013-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>6</sup> Priced at.",
+          "note_label": "6"
+        },
+        {
+          "block_id": "p0261-b0013-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>7</sup> Not extant.",
+          "note_label": "7"
+        },
+        {
+          "block_id": "p0261-b0013-s4",
+          "type": "footnote",
+          "tagged_text": "<sup>8</sup> See p. 208.",
+          "note_label": "8"
+        },
+        {
+          "block_id": "p0261-b0013-s5",
+          "type": "footnote",
+          "tagged_text": "<sup>9</sup> Cp. p. 241.",
+          "note_label": "9"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0262-b0009-split-fn",
+      "page_number": 262,
+      "block_id_hint": "p0262-b0009",
+      "anchor_text": "2 Raised.  3 Lac.  4 To proceed to Ahmadábád.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0262-b0009-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> Raised.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0262-b0009-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> Lac.",
+          "note_label": "3"
+        },
+        {
+          "block_id": "p0262-b0009-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> To proceed to Ahmadábád.",
+          "note_label": "4"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0266-b0007-split-fn",
+      "page_number": 266,
+      "block_id_hint": "p0266-b0007",
+      "anchor_text": "1 See p. 133.     2 Salbank.     3 Golconda. See p. 135.     4 The ?",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0266-b0007-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> See p. 133.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0266-b0007-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> Salbank.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0266-b0007-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> Golconda. See p. 135.",
+          "note_label": "3"
+        },
+        {
+          "block_id": "p0266-b0007-s4",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> The ?",
+          "note_label": "4"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0320-b0007-split-fn",
+      "page_number": 320,
+      "block_id_hint": "p0320-b0007",
+      "anchor_text": "At Fumboni. Domoni (see p. 172).",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0320-b0007-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> At Fumboni.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0320-b0007-s2",
+          "type": "footnote",
+          "tagged_text": "Domoni (see p. 172).",
+          "note_label": "2"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0330-b0007-split-fn",
+      "page_number": 330,
+      "block_id_hint": "p0330-b0007",
+      "anchor_text": "1 Gatan, on the road from Jask to Minau, about 43 miles from the former town (see A Journey from Shiraz to Jashk, by J. R. Preece: Royal Geogr. Soc. Supplementary Papers, vol. i., pt. iii.). 2 Not extant. 3 Blundeston (see vol. v., p. 43).",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0330-b0007-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> Gatan, on the road from Jask to Minau, about 43 miles from the former town (see <i>A Journey from Shiraz to Jashk,</i> by J. R. Preece: <i>Royal Geogr. Soc. Supplementary Papers,</i> vol. i., pt. iii.).",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0330-b0007-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> Not extant.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0330-b0007-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> Blundeston (see vol. v., p. 43).",
+          "note_label": "3"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0338-b0008-split-fn",
+      "page_number": 338,
+      "block_id_hint": "p0338-b0008",
+      "anchor_text": "2 This letter was sent by the Hound, which was bound for Bantam.  3 Cape Verde.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0338-b0008-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> This letter was sent by the <i>Hound,</i> which was bound for Bantam.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0338-b0008-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> Cape Verde.",
+          "note_label": "3"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0338-b0009-split-fn",
+      "page_number": 338,
+      "block_id_hint": "p0338-b0009",
+      "anchor_text": "4 Tornadoes, which were always expected near the Line.  5 See p. 121.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0338-b0009-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> Tornadoes, which were always expected near the Line.",
+          "note_label": "4"
+        },
+        {
+          "block_id": "p0338-b0009-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>5</sup> See p. 121.",
+          "note_label": "5"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0340-b0011-split-fn",
+      "page_number": 340,
+      "block_id_hint": "p0340-b0011",
+      "anchor_text": "1 The Hound's. 3 Raid. 4 See vol. iii., p. 295.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0340-b0011-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> The <i>Hound's.</i>",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0340-b0011-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> Raid.",
+          "note_label": "3"
+        },
+        {
+          "block_id": "p0340-b0011-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>4</sup> See vol. iii., p. 295.",
+          "note_label": "4"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0350-b0005-split-fn",
+      "page_number": 350,
+      "block_id_hint": "p0350-b0005",
+      "anchor_text": "2 MS. ' luggish.' 3 Narbadá.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0350-b0005-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> MS. ' luggish.'",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0350-b0005-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> Narbadá.",
+          "note_label": "3"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0352-b0005-split-fn",
+      "page_number": 352,
+      "block_id_hint": "p0352-b0005",
+      "anchor_text": "1 See vol. v., p. 204. 2 Of the fleet. 3 Irádat Khán, of whom see vol. v., p. 276.",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0352-b0005-s1",
+          "type": "footnote",
+          "tagged_text": "<sup>1</sup> See vol. v., p. 204.",
+          "note_label": "1"
+        },
+        {
+          "block_id": "p0352-b0005-s2",
+          "type": "footnote",
+          "tagged_text": "<sup>2</sup> Of the fleet.",
+          "note_label": "2"
+        },
+        {
+          "block_id": "p0352-b0005-s3",
+          "type": "footnote",
+          "tagged_text": "<sup>3</sup> Irádat Khán, of whom see vol. v., p. 276.",
+          "note_label": "3"
+        }
+      ],
+      "reviewer": "visual-audit",
+      "note": "Split multi-column/multi-baseline footnote block into individual notes.",
+      "created_at": "2026-11-17T20:23:38.959834+00:00"
+    },
+    {
+      "correction_id": "v6-p0267-b0004-merge-ob",
+      "page_number": 267,
+      "block_id_hint": "p0267-b0004",
+      "anchor_text": "1 I.e., 4½d. One string held 2,000 pearls, invoiced as costing 4½d. each (Court Factory Journal).",
+      "op": "set_text",
+      "replacement_tagged_text": "<sup>1</sup> <i>I.e.</i>, 4½<i>d.</i> One string held 2,000 pearls, invoiced as costing 4½<i>d.</i> each (<i>Court Factory Journal</i>).\n\n'Ob.' (<i>i.e.</i>, obolus) was generally used for 'a halfpenny.' In Falstaff's tavern reckoning the 'one halfpennyworth of bread' which went to an 'intolerable deal of sack' was set down as 'Item, Bread . . . ob.'",
+      "reviewer": "visual-audit",
+      "note": "Verified on page_0267.png: p0267-b0005 is the second paragraph of Footnote 1, not Footnote 2.",
+      "created_at": "2026-11-18T02:13:00+00:00"
+    },
+    {
+      "correction_id": "v6-p0267-b0005-drop-folded",
+      "page_number": 267,
+      "block_id_hint": "p0267-b0005",
+      "anchor_text": "'Ob.' (i.e., obolus) was generally used for 'a halfpenny.' In Falstaff's tavern reckoning the 'one halfpennyworth of bread' which went to an 'intolerable deal of sack' was set down as 'Item, Bread . . . ob.'",
+      "op": "drop_residue",
+      "reviewer": "visual-audit",
+      "note": "Folded into p0267-b0004 (second paragraph of Footnote 1).",
+      "created_at": "2026-11-18T02:13:00+00:00"
+    },
+    {
+      "correction_id": "v6-p0340-b0010-fn1",
+      "page_number": 340,
+      "block_id_hint": "p0340-b0010",
+      "anchor_text": "Apparently ' fly ' is here equivalent to a 'demon,'",
+      "op": "set_type",
+      "replacement_type": "footnote",
+      "replacement_note_label": "1",
+      "reviewer": "visual-audit",
+      "note": "Verified on page_0340.png: explicit Footnote 1 type and label for p0340-b0010.",
+      "created_at": "2026-11-18T02:13:00+00:00"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-3-1615",
+  "page_number": 380,
+  "check_id": "vol3-scan-check-p0380",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "52fa59926ec2d3f2c942a3b992774554c43efa5f7c6963187b0bcf33baa88be5",
+  "checked_at": "2026-11-18T02:22:00+00:00",
+  "checks": [
+    {
+      "block_id": "p0380-b0007",
+      "token": "ô",
+      "verdict": "printed_as_read",
+      "note": "Verified on cropped PNG render: character 'ô' is genuinely printed."
+    }
+  ]
+}

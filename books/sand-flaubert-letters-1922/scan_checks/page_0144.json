@@ -1,0 +1,59 @@
+{
+  "book_id": "sand-flaubert-letters-1922",
+  "page_number": 144,
+  "check_id": "scan-check-p0144",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "75697c75e4a028b5b58fb25a3d824961d48c494c0eae894b927a48b36150a4ff",
+  "checks": [
+    {
+      "block_id": "p0144-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Fixed faded '1868' serif misread as '1863' in Letter LXXXIX dateline on folio 100."
+    },
+    {
+      "block_id": "p0144-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Fixed faded '1868' serif misread as '1863' in Letter LXXXIX dateline on folio 100."
+    },
+    {
+      "block_id": "p0144-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Fixed faded '1868' serif misread as '1863' in Letter LXXXIX dateline on folio 100."
+    },
+    {
+      "block_id": "p0144-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Fixed faded '1868' serif misread as '1863' in Letter LXXXIX dateline on folio 100."
+    },
+    {
+      "block_id": "p0144-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Fixed faded '1868' serif misread as '1863' in Letter LXXXIX dateline on folio 100."
+    },
+    {
+      "block_id": "p0144-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Fixed faded '1868' serif misread as '1863' in Letter LXXXIX dateline on folio 100."
+    },
+    {
+      "block_id": "p0144-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Fixed faded '1868' serif misread as '1863' in Letter LXXXIX dateline on folio 100."
+    },
+    {
+      "block_id": "p0144-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Fixed faded '1868' serif misread as '1863' in Letter LXXXIX dateline on folio 100."
+    },
+    {
+      "block_id": "p0144-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Fixed faded '1868' serif misread as '1863' in Letter LXXXIX dateline on folio 100."
+    },
+    {
+      "block_id": "p0144-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Fixed faded '1868' serif misread as '1863' in Letter LXXXIX dateline on folio 100."
+    }
+  ]
+}

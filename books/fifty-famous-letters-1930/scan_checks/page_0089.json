@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "fifty-famous-letters-1930",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 89,
+  "reviewer": "native-vision-350ppi-scan-check",
+  "checked_at": "2026-11-19T06:33:11.386533+00:00",
+  "source_page_sha256": "f066fa22a8b1b5aef7517f040a273c0567d8074fa852180c20b89f4ec778b868",
+  "render_png": "renders/page_0089.png",
+  "checks": [
+    {
+      "block_id": "p0089-b0001",
+      "status": "corrected",
+      "note": "Inspected on 350 DPI PNG renders/page_0089.png."
+    },
+    {
+      "block_id": "p0089-b0002",
+      "status": "corrected",
+      "note": "Inspected on 350 DPI PNG renders/page_0089.png."
+    },
+    {
+      "block_id": "p0089-b0003",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0089.png."
+    },
+    {
+      "block_id": "p0089-b0004",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0089.png."
+    },
+    {
+      "block_id": "p0089-b0005",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0089.png."
+    },
+    {
+      "block_id": "p0089-b0006",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0089.png."
+    },
+    {
+      "block_id": "p0089-b0007",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0089.png."
+    }
+  ],
+  "correction_ids": [
+    "corr-tr-start-p0089-b0001",
+    "corr-tr-none-p0089-b0002"
+  ]
+}

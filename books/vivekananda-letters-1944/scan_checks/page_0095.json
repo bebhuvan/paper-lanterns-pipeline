@@ -1,0 +1,69 @@
+{
+  "book_id": "vivekananda-letters-1944",
+  "page_number": 95,
+  "check_id": "scan-check-p0095",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "798c618a1608020d7fcf98be2cf0b65d8ec4158f9b8cd6105222c52e4f93373e",
+  "checks": [
+    {
+      "block_id": "p0095-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (55) To Sj. D. R. Balaji Rao with centered multi-line subtitle."
+    },
+    {
+      "block_id": "p0095-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (55) To Sj. D. R. Balaji Rao with centered multi-line subtitle."
+    },
+    {
+      "block_id": "p0095-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (55) To Sj. D. R. Balaji Rao with centered multi-line subtitle."
+    },
+    {
+      "block_id": "p0095-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (55) To Sj. D. R. Balaji Rao with centered multi-line subtitle."
+    },
+    {
+      "block_id": "p0095-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (55) To Sj. D. R. Balaji Rao with centered multi-line subtitle."
+    },
+    {
+      "block_id": "p0095-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (55) To Sj. D. R. Balaji Rao with centered multi-line subtitle."
+    },
+    {
+      "block_id": "p0095-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (55) To Sj. D. R. Balaji Rao with centered multi-line subtitle."
+    },
+    {
+      "block_id": "p0095-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (55) To Sj. D. R. Balaji Rao with centered multi-line subtitle."
+    },
+    {
+      "block_id": "p0095-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (55) To Sj. D. R. Balaji Rao with centered multi-line subtitle."
+    },
+    {
+      "block_id": "p0095-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (55) To Sj. D. R. Balaji Rao with centered multi-line subtitle."
+    },
+    {
+      "block_id": "p0095-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (55) To Sj. D. R. Balaji Rao with centered multi-line subtitle."
+    },
+    {
+      "block_id": "p0095-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (55) To Sj. D. R. Balaji Rao with centered multi-line subtitle."
+    }
+  ]
+}

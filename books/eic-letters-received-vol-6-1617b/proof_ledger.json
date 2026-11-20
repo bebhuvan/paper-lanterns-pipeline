@@ -1,0 +1,781 @@
+{
+  "version": "proof-ledger-v2",
+  "book_id": "eic-letters-received-vol-6-1617b",
+  "updated_at": "2026-11-17T20:42:44.903639+00:00",
+  "pages": {
+    "13": {
+      "page_number": 13,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:23:39.991169+00:00",
+      "source_page_sha256": "5369cd57833a8fea82001bf6a0c86bb96ed2c153aa251c76be180b4a0e2958ef",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0013",
+        "reread_block_ids": [
+          "p0013-b0009"
+        ],
+        "confirmed_block_ids": [
+          "p0013-b0009"
+        ]
+      },
+      "notes": null
+    },
+    "14": {
+      "page_number": 14,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:23:41.673267+00:00",
+      "source_page_sha256": "f3b09b7196a0aa804ba3802d1406b975ad3e12836f1ca9dd3dd4647865140a04",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0014",
+        "reread_block_ids": [
+          "p0014-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0014-b0007"
+        ]
+      },
+      "notes": null
+    },
+    "18": {
+      "page_number": 18,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:23:43.513185+00:00",
+      "source_page_sha256": "80c7eeb1c8a871cdaa3f6a7e3821e39fefba531428d0ab2d21410709b7b8a3a0",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0018",
+        "reread_block_ids": [
+          "p0018-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0018-b0003"
+        ]
+      },
+      "notes": null
+    },
+    "22": {
+      "page_number": 22,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:23:45.772699+00:00",
+      "source_page_sha256": "50c6b1702b12d885b4bb4ee0c8d4af58fb2c828142c618d29d1bf729a5250497",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0022",
+        "reread_block_ids": [
+          "p0022-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0022-b0004"
+        ]
+      },
+      "notes": null
+    },
+    "23": {
+      "page_number": 23,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:23:48.346176+00:00",
+      "source_page_sha256": "28fa573a5b6d8581c792c1f43fa2718d563c1458fae02685ade8df58a921e96a",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0023",
+        "reread_block_ids": [
+          "p0023-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0023-b0004"
+        ]
+      },
+      "notes": null
+    },
+    "25": {
+      "page_number": 25,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:23:51.666455+00:00",
+      "source_page_sha256": "f1aada3827ee44d40a112d4396dee9e40401f8c43dac882d4fc50c047dc07c21",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0025",
+        "reread_block_ids": [
+          "p0025-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0025-b0004"
+        ]
+      },
+      "notes": null
+    },
+    "67": {
+      "page_number": 67,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:23:54.989309+00:00",
+      "source_page_sha256": "d5a62f177de4aa5f39d424bd8ad999c4cd252d66dea64146ccd3b71f7c9e33e9",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0067",
+        "reread_block_ids": [
+          "p0067-b0014"
+        ],
+        "confirmed_block_ids": [
+          "p0067-b0014"
+        ]
+      },
+      "notes": null
+    },
+    "114": {
+      "page_number": 114,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:23:57.905513+00:00",
+      "source_page_sha256": "fa2bbcd589f78ecc447a4dc5897f6654c758bf71605e66630d5971d4c74c1693",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0114",
+        "reread_block_ids": [
+          "p0114-b0012",
+          "p0114-b0017"
+        ],
+        "confirmed_block_ids": [
+          "p0114-b0012",
+          "p0114-b0017"
+        ]
+      },
+      "notes": null
+    },
+    "142": {
+      "page_number": 142,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:42:39.230088+00:00",
+      "source_page_sha256": "e635e87e06b15cf8106b3e84e31aa008946a1a009083ceab2735fa3498a33dca",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0142",
+        "reread_block_ids": [
+          "p0142-b0006",
+          "p0142-b0013",
+          "p0142-b0013-s2"
+        ],
+        "confirmed_block_ids": [
+          "p0142-b0006",
+          "p0142-b0013",
+          "p0142-b0013-s2"
+        ]
+      },
+      "notes": null
+    },
+    "151": {
+      "page_number": 151,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:24:02.585623+00:00",
+      "source_page_sha256": "f07aca526befd4a4ca8947cf9e5dea0c5b6cd90687d0573415220d8dd8f27851",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0151",
+        "reread_block_ids": [
+          "p0151-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0151-b0003"
+        ]
+      },
+      "notes": null
+    },
+    "164": {
+      "page_number": 164,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:24:04.777500+00:00",
+      "source_page_sha256": "8e2b75181e800fc2ab50229649508a4d15b1777ceeb15e645438e87bca60f7bc",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0164",
+        "reread_block_ids": [
+          "p0164-b0014"
+        ],
+        "confirmed_block_ids": [
+          "p0164-b0014"
+        ]
+      },
+      "notes": null
+    },
+    "169": {
+      "page_number": 169,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:24:06.762286+00:00",
+      "source_page_sha256": "9d335dab069b79b931c5ebbd801331c5a0091dc46f30e503c626be16060f5b0c",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0169",
+        "reread_block_ids": [
+          "p0169-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0169-b0007"
+        ]
+      },
+      "notes": null
+    },
+    "232": {
+      "page_number": 232,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:24:08.971159+00:00",
+      "source_page_sha256": "ed9a16a3b4124feb68d5d8b8d1fd4475d25e3e60b45309def088362dd2ea328e",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0232",
+        "reread_block_ids": [
+          "p0232-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0232-b0004"
+        ]
+      },
+      "notes": null
+    },
+    "234": {
+      "page_number": 234,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:24:11.127440+00:00",
+      "source_page_sha256": "5aa4315c55db5ef0e15983542a0fc378b06354b8a7845be6619499c4321b101c",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0234",
+        "reread_block_ids": [
+          "p0234-b0003",
+          "p0234-b0004",
+          "p0234-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0234-b0003",
+          "p0234-b0004",
+          "p0234-b0005"
+        ]
+      },
+      "notes": null
+    },
+    "236": {
+      "page_number": 236,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:24:13.211606+00:00",
+      "source_page_sha256": "e2cb4d2ca0ff42dc8d9aa237daefe1b9bd166f489c56306cd83c511d879e5df5",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0236",
+        "reread_block_ids": [
+          "p0236-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0236-b0004"
+        ]
+      },
+      "notes": null
+    },
+    "256": {
+      "page_number": 256,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:24:15.097898+00:00",
+      "source_page_sha256": "e6515730571a2e9b1a3f1bee0058a928b3438bbe67a2a239f7fffe2845f66c39",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0256",
+        "reread_block_ids": [
+          "p0256-b0018"
+        ],
+        "confirmed_block_ids": [
+          "p0256-b0018"
+        ]
+      },
+      "notes": null
+    },
+    "261": {
+      "page_number": 261,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:24:16.887747+00:00",
+      "source_page_sha256": "7831b1e2b192d2023d9d6f8036ba246e0a9080011e1b86596aa76790d58c8c3c",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0261",
+        "reread_block_ids": [
+          "p0261-b0012"
+        ],
+        "confirmed_block_ids": [
+          "p0261-b0012"
+        ]
+      },
+      "notes": null
+    },
+    "262": {
+      "page_number": 262,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:24:18.689136+00:00",
+      "source_page_sha256": "ada9ff1bcec20835b5297038db8c9822a0880b9c4a282973e5d31c69772caac8",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0262",
+        "reread_block_ids": [
+          "p0262-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0262-b0008"
+        ]
+      },
+      "notes": null
+    },
+    "271": {
+      "page_number": 271,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:24:20.581226+00:00",
+      "source_page_sha256": "26b12e93c8927a2e5f0bcc9cdaf87bb6a4c8288eddda1016731621f14a2ca7fd",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0271",
+        "reread_block_ids": [
+          "p0271-b0009"
+        ],
+        "confirmed_block_ids": [
+          "p0271-b0009"
+        ]
+      },
+      "notes": null
+    },
+    "320": {
+      "page_number": 320,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:42:42.196150+00:00",
+      "source_page_sha256": "c85f89f39706df3d2bc66df29de5055f3e7d849d03a5f7251ce8d0a8735572cf",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0320",
+        "reread_block_ids": [
+          "p0320-b0003",
+          "p0320-b0007",
+          "p0320-b0007-s2"
+        ],
+        "confirmed_block_ids": [
+          "p0320-b0003",
+          "p0320-b0007",
+          "p0320-b0007-s2"
+        ]
+      },
+      "notes": null
+    },
+    "325": {
+      "page_number": 325,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:24:24.503272+00:00",
+      "source_page_sha256": "9533a3e37f3e94ca1c9748025b2b1cb7b66139e2891f4dacab36d13c811809f6",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0325",
+        "reread_block_ids": [
+          "p0325-b0009"
+        ],
+        "confirmed_block_ids": [
+          "p0325-b0009"
+        ]
+      },
+      "notes": null
+    },
+    "340": {
+      "page_number": 340,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:42:44.903489+00:00",
+      "source_page_sha256": "d08f03a16cef9b17733511d3bdc1d3715e73482e8a7f80a5df4c553662234103",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0340",
+        "reread_block_ids": [
+          "p0340-b0002",
+          "p0340-b0011-s1"
+        ],
+        "confirmed_block_ids": [
+          "p0340-b0002",
+          "p0340-b0011-s1"
+        ]
+      },
+      "notes": null
+    },
+    "360": {
+      "page_number": 360,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:24:28.146648+00:00",
+      "source_page_sha256": "6541fe736b6714224a6cd94cf93c6e05f68631b99a4317c41d7c91199331b293",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0360",
+        "reread_block_ids": [
+          "p0360-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0360-b0006"
+        ]
+      },
+      "notes": null
+    },
+    "365": {
+      "page_number": 365,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:24:29.945647+00:00",
+      "source_page_sha256": "755efc055c6f68ff7fcccc92714b57ddf432b83ae39eb2a6fa7015d4948db5c5",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0365",
+        "reread_block_ids": [
+          "p0365-b0001",
+          "p0365-b0002"
+        ],
+        "confirmed_block_ids": [
+          "p0365-b0001",
+          "p0365-b0002"
+        ]
+      },
+      "notes": null
+    },
+    "366": {
+      "page_number": 366,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:24:31.740149+00:00",
+      "source_page_sha256": "9ae88f452cb1c8fc8f145a8e5273b838d62c91a47308dacf57c0a9f0180f9919",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0366",
+        "reread_block_ids": [
+          "p0366-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0366-b0003"
+        ]
+      },
+      "notes": null
+    },
+    "378": {
+      "page_number": 378,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:24:33.544745+00:00",
+      "source_page_sha256": "e937b5d3c9ced2ded62d15dd316054c6e0b401d9734cc4f05de32f2300bf7921",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0378",
+        "reread_block_ids": [
+          "p0378-b0008",
+          "p0378-b0036"
+        ],
+        "confirmed_block_ids": [
+          "p0378-b0008",
+          "p0378-b0036"
+        ]
+      },
+      "notes": null
+    },
+    "379": {
+      "page_number": 379,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:24:35.376999+00:00",
+      "source_page_sha256": "59c13b32a3d8a7ec964d3f974f94653c77c47149815ebf2f2be3c7e814002357",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0379",
+        "reread_block_ids": [
+          "p0379-b0007",
+          "p0379-b0008",
+          "p0379-b0009"
+        ],
+        "confirmed_block_ids": [
+          "p0379-b0007",
+          "p0379-b0008",
+          "p0379-b0009"
+        ]
+      },
+      "notes": null
+    },
+    "380": {
+      "page_number": 380,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:24:37.306187+00:00",
+      "source_page_sha256": "27f1b28ca5fe8cc46bcaa5c842a4873432f19e5218116039bb7d141feb092e99",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0380",
+        "reread_block_ids": [
+          "p0380-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0380-b0003"
+        ]
+      },
+      "notes": null
+    },
+    "381": {
+      "page_number": 381,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:24:39.438904+00:00",
+      "source_page_sha256": "594f18f46c242b0c25cc88812e16a406671a64667a7af814bd6ced4a3feceafb",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0381",
+        "reread_block_ids": [
+          "p0381-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0381-b0003"
+        ]
+      },
+      "notes": null
+    },
+    "382": {
+      "page_number": 382,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "visual-audit",
+      "verified_at": "2026-11-17T20:24:40.459040+00:00",
+      "source_page_sha256": "9742c3f0865ae136c3ef33bc1d0898e8c86d66d3f5165c67feaade26eef9a198",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "vol6-scan-check-p0382",
+        "reread_block_ids": [
+          "p0382-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0382-b0004"
+        ]
+      },
+      "notes": null
+    }
+  }
+}

@@ -1,0 +1,1532 @@
+{
+  "version": "proof-ledger-v2",
+  "book_id": "faraday-schoenbein-1899",
+  "updated_at": "2026-11-18T10:51:36.070114+00:00",
+  "pages": {
+    "5": {
+      "page_number": 5,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "1792f5ee502bc7e17dbbe70090cadc64d859b9e792460cf352e840e244e50154",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0005",
+        "reread_block_ids": [
+          "p0005-b0001",
+          "p0005-b0002"
+        ],
+        "confirmed_block_ids": [
+          "p0005-b0001",
+          "p0005-b0002"
+        ]
+      },
+      "notes": "Confirmed half-title prints 'LETTERS OF FARADAY AND SCHŒNBEIN' verbatim."
+    },
+    "9": {
+      "page_number": 9,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "4165ffbc93150e258f898bbd727deebf50d2d2d7f3b9c913d1d297ff54f183b1",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0009",
+        "reread_block_ids": [
+          "p0009-b0001",
+          "p0009-b0002"
+        ],
+        "confirmed_block_ids": [
+          "p0009-b0001",
+          "p0009-b0002"
+        ]
+      },
+      "notes": "Confirmed frontispiece Faraday portrait + 'M Faraday' facsimile caption (retyped to caption)."
+    },
+    "11": {
+      "page_number": 11,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "a4ac6ae2fc236cef70160f1275bc7b5ee014279eac3f5e582c25ae803fbc66f9",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0011",
+        "reread_block_ids": [
+          "p0011-b0001",
+          "p0011-b0002",
+          "p0011-b0003",
+          "p0011-b0004",
+          "p0011-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0011-b0001",
+          "p0011-b0002",
+          "p0011-b0003",
+          "p0011-b0004",
+          "p0011-b0005"
+        ]
+      },
+      "notes": "Confirmed title page 'correspondence', 'BÂLE', and imprint ink verbatim."
+    },
+    "24": {
+      "page_number": 24,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "b1ce6ab01c117313c955252bcb7fb429867036a99da7462ef2f9207e8c1b8d3c",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0024",
+        "reread_block_ids": [
+          "p0024-b0001",
+          "p0024-b0002",
+          "p0024-b0003",
+          "p0024-b0004",
+          "p0024-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0024-b0002",
+          "p0024-b0003",
+          "p0024-b0004",
+          "p0024-b0005"
+        ]
+      },
+      "notes": "Confirmed Kahlbaum Introduction closing ('Georg W. A. Kahlbaum.', 'Bâle, September, 15th, 1899.') stays in frontmatter."
+    },
+    "25": {
+      "page_number": 25,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "8996be3d2c1d886b810cba8f3dd455105758f5a4c70f5af73e0fdb574abcbfe0",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0025",
+        "reread_block_ids": [
+          "p0025-b0001",
+          "p0025-b0002",
+          "p0025-b0003",
+          "p0025-b0004",
+          "p0025-b0005",
+          "p0025-b0006",
+          "p0025-b0007",
+          "p0025-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0025-b0002",
+          "p0025-b0003",
+          "p0025-b0004",
+          "p0025-b0005",
+          "p0025-b0006",
+          "p0025-b0007"
+        ]
+      },
+      "notes": "Confirmed Letter 1 opening and 'Les voici.' / footnotes 1-2 verbatim."
+    },
+    "30": {
+      "page_number": 30,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "8639e827656105cfd722e4f0d6c1f039a6f8ddeec2ad9e9285c310c18abdc0e4",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0030",
+        "reread_block_ids": [
+          "p0030-b0001",
+          "p0030-b0002",
+          "p0030-b0003",
+          "p0030-b0004",
+          "p0030-b0005",
+          "p0030-b0006",
+          "p0030-b0007",
+          "p0030-b0008",
+          "p0030-b0009",
+          "p0030-b0010"
+        ],
+        "confirmed_block_ids": [
+          "p0030-b0002",
+          "p0030-b0003",
+          "p0030-b0004",
+          "p0030-b0005",
+          "p0030-b0006",
+          "p0030-b0007",
+          "p0030-b0008",
+          "p0030-b0009",
+          "p0030-b0010"
+        ]
+      },
+      "notes": "Confirmed 'C. T.(?) SCHOENBEIN,' is genuine 1899 printer ink."
+    },
+    "45": {
+      "page_number": 45,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "7bfe8128d5dce64010eca586ab61bb9b20ab0c85773696fd8ebb31d6a6a8ebf8",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0045",
+        "reread_block_ids": [
+          "p0045-b0001",
+          "p0045-b0002",
+          "p0045-b0003",
+          "p0045-b0004",
+          "p0045-b0005",
+          "p0045-b0006",
+          "p0045-b0007",
+          "p0045-b0008",
+          "p0045-b0009",
+          "p0045-b0010",
+          "p0045-b0011",
+          "p0045-b0012",
+          "p0045-b0013",
+          "p0045-b0014"
+        ],
+        "confirmed_block_ids": [
+          "p0045-b0002",
+          "p0045-b0003",
+          "p0045-b0004",
+          "p0045-b0005",
+          "p0045-b0006",
+          "p0045-b0007",
+          "p0045-b0008",
+          "p0045-b0009",
+          "p0045-b0010",
+          "p0045-b0011",
+          "p0045-b0012",
+          "p0045-b0013",
+          "p0045-b0014"
+        ]
+      },
+      "notes": "Confirmed 'D<sup>R.</sup> <sc>Schoenbein.</sc>', 'N<sup>o</sup>', and Faraday reply header verbatim."
+    },
+    "57": {
+      "page_number": 57,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "a5234d1d6da367ab6d271d0423de6cfb629792e0791f017ff3ae38d02c69b202",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0057",
+        "reread_block_ids": [
+          "p0057-b0001",
+          "p0057-b0002",
+          "p0057-b0003",
+          "p0057-b0004",
+          "p0057-b0005",
+          "p0057-b0006",
+          "p0057-b0007",
+          "p0057-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0057-b0002",
+          "p0057-b0003",
+          "p0057-b0004",
+          "p0057-b0005",
+          "p0057-b0006",
+          "p0057-b0007"
+        ]
+      },
+      "notes": "Confirmed unaccented 'Trans. Elect. Soc.' (p0057-b0007) is genuine 1899 printer ink."
+    },
+    "59": {
+      "page_number": 59,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "986ce88d0ec640de1ee85a142bafbbf38cca800e9df968fc3bc4d91bc3de1eda",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0059",
+        "reread_block_ids": [
+          "p0059-b0001",
+          "p0059-b0002",
+          "p0059-b0003",
+          "p0059-b0004",
+          "p0059-b0005",
+          "p0059-b0006",
+          "p0059-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0059-b0002",
+          "p0059-b0003",
+          "p0059-b0004",
+          "p0059-b0005",
+          "p0059-b0006",
+          "p0059-b0007"
+        ]
+      },
+      "notes": "Confirmed 'Dominique François' (ç) and 'favo[u]rable' brackets verbatim."
+    },
+    "63": {
+      "page_number": 63,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "619caaa73f7f1ca971bd924c43c4d550d674e26954b6e6054e9d0afc6cc22a75",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0063",
+        "reread_block_ids": [
+          "p0063-b0001",
+          "p0063-b0002",
+          "p0063-b0003",
+          "p0063-b0004",
+          "p0063-b0005",
+          "p0063-b0006",
+          "p0063-b0007",
+          "p0063-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0063-b0002",
+          "p0063-b0003",
+          "p0063-b0004",
+          "p0063-b0005",
+          "p0063-b0006",
+          "p0063-b0007",
+          "p0063-b0008"
+        ]
+      },
+      "notes": "Confirmed 'Über das Verhalten' (Ü) and footnote ink verbatim."
+    },
+    "88": {
+      "page_number": 88,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "482f3186c32e4d203cba9335b366c99e5a39d8a306173ebb5283eef79c7c53d5",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0088",
+        "reread_block_ids": [
+          "p0088-b0001",
+          "p0088-b0002",
+          "p0088-b0003",
+          "p0088-b0004",
+          "p0088-b0005",
+          "p0088-b0006",
+          "p0088-b0007",
+          "p0088-b0008",
+          "p0088-b0009",
+          "p0088-b0010"
+        ],
+        "confirmed_block_ids": [
+          "p0088-b0002",
+          "p0088-b0003",
+          "p0088-b0004",
+          "p0088-b0005",
+          "p0088-b0006",
+          "p0088-b0007",
+          "p0088-b0008",
+          "p0088-b0009",
+          "p0088-b0010"
+        ]
+      },
+      "notes": "Confirmed '29th. April.' continuation is a postscript within April 8, 1839 letter."
+    },
+    "93": {
+      "page_number": 93,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "1e4d4a314fd98ab29d9882a739edf9951e21fc2e9716f4271cdda40f202ad214",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0093",
+        "reread_block_ids": [
+          "p0093-b0001",
+          "p0093-b0002",
+          "p0093-b0003",
+          "p0093-b0004",
+          "p0093-b0005",
+          "p0093-b0006",
+          "p0093-b0007",
+          "p0093-b0008",
+          "p0093-b0009",
+          "p0093-b0010",
+          "p0093-b0011",
+          "p0093-b0012",
+          "p0093-b0013",
+          "p0093-b0014",
+          "p0093-b0015",
+          "p0093-b0016",
+          "p0093-b0017",
+          "p0093-b0018"
+        ],
+        "confirmed_block_ids": [
+          "p0093-b0002",
+          "p0093-b0003",
+          "p0093-b0004",
+          "p0093-b0005",
+          "p0093-b0006",
+          "p0093-b0007",
+          "p0093-b0008",
+          "p0093-b0009",
+          "p0093-b0010",
+          "p0093-b0011",
+          "p0093-b0012",
+          "p0093-b0013",
+          "p0093-b0014",
+          "p0093-b0015",
+          "p0093-b0016",
+          "p0093-b0017",
+          "p0093-b0018"
+        ]
+      },
+      "notes": "Confirmed unaccented 'Bibliotheque Universelle' (p0093-b0011) is genuine 1899 printer ink."
+    },
+    "97": {
+      "page_number": 97,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "99dfa6a53e71f3b599f1fd56d6d042dd1517c12253a5f1c1954f288a93acbb40",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0097",
+        "reread_block_ids": [
+          "p0097-b0001",
+          "p0097-b0002",
+          "p0097-b0003",
+          "p0097-b0004",
+          "p0097-b0005",
+          "p0097-b0006",
+          "p0097-b0007",
+          "p0097-b0008",
+          "p0097-b0009",
+          "p0097-b0010"
+        ],
+        "confirmed_block_ids": [
+          "p0097-b0002",
+          "p0097-b0003",
+          "p0097-b0004",
+          "p0097-b0005",
+          "p0097-b0006",
+          "p0097-b0007",
+          "p0097-b0008",
+          "p0097-b0009",
+          "p0097-b0010"
+        ]
+      },
+      "notes": "Confirmed Greek 'α)' list marker verbatim."
+    },
+    "98": {
+      "page_number": 98,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "627fcada401e0167aff157fd9fa7a72cb356c9ab9cff7979af9bb6691f41a6ef",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0098",
+        "reread_block_ids": [
+          "p0098-b0001",
+          "p0098-b0002",
+          "p0098-b0003",
+          "p0098-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0098-b0002",
+          "p0098-b0003",
+          "p0098-b0004"
+        ]
+      },
+      "notes": "Confirmed Greek 'β)', 'δ)' list markers and electrical prose verbatim."
+    },
+    "100": {
+      "page_number": 100,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "34189aa04ebfacee08d669cdf4808c489a2651285487c423b309696c13a0c776",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0100",
+        "reread_block_ids": [
+          "p0100-b0001",
+          "p0100-b0002",
+          "p0100-b0003",
+          "p0100-b0004",
+          "p0100-b0005",
+          "p0100-b0006",
+          "p0100-b0007",
+          "p0100-b0008",
+          "p0100-b0009",
+          "p0100-b0010"
+        ],
+        "confirmed_block_ids": [
+          "p0100-b0002",
+          "p0100-b0003",
+          "p0100-b0004",
+          "p0100-b0005",
+          "p0100-b0006",
+          "p0100-b0007",
+          "p0100-b0008",
+          "p0100-b0009",
+          "p0100-b0010"
+        ]
+      },
+      "notes": "Confirmed '170<sup>0</sup>', vulgar fractions '1½', '⅓', '¹/₉', and compositors' 'piece'/'peace' footnotes verbatim."
+    },
+    "116": {
+      "page_number": 116,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "ba73ea50f2a18d421fc26091ff1fd8390c6db1f62fd536c51186e1f7b938df1d",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0116",
+        "reread_block_ids": [
+          "p0116-b0001",
+          "p0116-b0002",
+          "p0116-b0003",
+          "p0116-b0004",
+          "p0116-b0005",
+          "p0116-b0006",
+          "p0116-b0007",
+          "p0116-b0008",
+          "p0116-b0009",
+          "p0116-b0010",
+          "p0116-b0011",
+          "p0116-b0012",
+          "p0116-b0013",
+          "p0116-b0014"
+        ],
+        "confirmed_block_ids": [
+          "p0116-b0002",
+          "p0116-b0003",
+          "p0116-b0004",
+          "p0116-b0005",
+          "p0116-b0006",
+          "p0116-b0007",
+          "p0116-b0008",
+          "p0116-b0009",
+          "p0116-b0010",
+          "p0116-b0011",
+          "p0116-b0012",
+          "p0116-b0013",
+          "p0116-b0014"
+        ]
+      },
+      "notes": "Confirmed 'l’Électr.' and signed postscript 'Your friend S.' verbatim."
+    },
+    "119": {
+      "page_number": 119,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "0ec3283584f272534d2106c5297d26cede6c6dbcdb9b282c8f6dddeb9d58c320",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0119",
+        "reread_block_ids": [
+          "p0119-b0001",
+          "p0119-b0002",
+          "p0119-b0003",
+          "p0119-b0004",
+          "p0119-b0005",
+          "p0119-b0006",
+          "p0119-b0007",
+          "p0119-b0008",
+          "p0119-b0009",
+          "p0119-b0010"
+        ],
+        "confirmed_block_ids": [
+          "p0119-b0002",
+          "p0119-b0003",
+          "p0119-b0004",
+          "p0119-b0005",
+          "p0119-b0006",
+          "p0119-b0007",
+          "p0119-b0008",
+          "p0119-b0009",
+          "p0119-b0010"
+        ]
+      },
+      "notes": "Confirmed 'Mr. Worringer' / 'S.' bearer note is a postscript within July 8, 1842 letter."
+    },
+    "129": {
+      "page_number": 129,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "1d97f103b6854aca779e3932f547b8730be8eb9e4f49726480af947730033d30",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0129",
+        "reread_block_ids": [
+          "p0129-b0001",
+          "p0129-b0002",
+          "p0129-b0003",
+          "p0129-b0004",
+          "p0129-b0005",
+          "p0129-b0006",
+          "p0129-b0007",
+          "p0129-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0129-b0002",
+          "p0129-b0003",
+          "p0129-b0004",
+          "p0129-b0005",
+          "p0129-b0006",
+          "p0129-b0007",
+          "p0129-b0008"
+        ]
+      },
+      "notes": "Confirmed 'l’électricité' and compositor 'negatve' typo verbatim."
+    },
+    "190": {
+      "page_number": 190,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "541eca39303290da6de0ae42a1e20461f86524dc87d49fbad07d92fcdbb6c3e1",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0190",
+        "reread_block_ids": [
+          "p0190-b0001",
+          "p0190-b0002",
+          "p0190-b0003",
+          "p0190-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0190-b0002",
+          "p0190-b0003",
+          "p0190-b0004"
+        ]
+      },
+      "notes": "Confirmed Berzelius 'S⃛ + Ṅ.' (U+1E44) and stacked nitrosyl sulphuric acid formula verbatim."
+    },
+    "203": {
+      "page_number": 203,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "be97539e60bbde86869975cf6769cece5d68398ffeef918eea6ba3c86f9fe9a2",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0203",
+        "reread_block_ids": [
+          "p0203-b0001",
+          "p0203-b0002",
+          "p0203-b0003",
+          "p0203-b0004",
+          "p0203-b0005",
+          "p0203-b0006",
+          "p0203-b0007",
+          "p0203-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0203-b0002",
+          "p0203-b0003",
+          "p0203-b0004",
+          "p0203-b0005",
+          "p0203-b0006",
+          "p0203-b0007",
+          "p0203-b0008"
+        ]
+      },
+      "notes": "Confirmed Sarah Faraday's signed note 'S. Faraday.' is a postscript within March 17, 1848 letter."
+    },
+    "208": {
+      "page_number": 208,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "aca55c92b6b4a712bf46e2201fecda2ba8ebba7c2d8115fb8f9d8201c3480e02",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0208",
+        "reread_block_ids": [
+          "p0208-b0001",
+          "p0208-b0002",
+          "p0208-b0003",
+          "p0208-b0004",
+          "p0208-b0005",
+          "p0208-b0006",
+          "p0208-b0007",
+          "p0208-b0008",
+          "p0208-b0009",
+          "p0208-b0010",
+          "p0208-b0011",
+          "p0208-b0012",
+          "p0208-b0013",
+          "p0208-b0014"
+        ],
+        "confirmed_block_ids": [
+          "p0208-b0002",
+          "p0208-b0003",
+          "p0208-b0004",
+          "p0208-b0005",
+          "p0208-b0006",
+          "p0208-b0007",
+          "p0208-b0008",
+          "p0208-b0009",
+          "p0208-b0010",
+          "p0208-b0011",
+          "p0208-b0012",
+          "p0208-b0013",
+          "p0208-b0014"
+        ]
+      },
+      "notes": "Confirmed footnote 3 prints compositor-misset Greek 'ὄξων' and 'ὄξειν' (with xi) and 'ō/zōn' verbatim."
+    },
+    "235": {
+      "page_number": 235,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "f585cda693ee52fbada77caf8cc67a18da7b06ee2527adce02d68f8eed243468",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0235",
+        "reread_block_ids": [
+          "p0235-b0001",
+          "p0235-b0002",
+          "p0235-b0003",
+          "p0235-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0235-b0002",
+          "p0235-b0003",
+          "p0235-b0004"
+        ]
+      },
+      "notes": "Confirmed NO² / Fe² O³ chemical superscripts vs footnote callouts 1-2."
+    },
+    "237": {
+      "page_number": 237,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "7b392ce067a17babdeaeb606ea31d107723ad4775d585cdbc6383e19a065ce8c",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0237",
+        "reread_block_ids": [
+          "p0237-b0001",
+          "p0237-b0002",
+          "p0237-b0003",
+          "p0237-b0004",
+          "p0237-b0005",
+          "p0237-b0006",
+          "p0237-b0007",
+          "p0237-b0008",
+          "p0237-b0009"
+        ],
+        "confirmed_block_ids": [
+          "p0237-b0002",
+          "p0237-b0003",
+          "p0237-b0004",
+          "p0237-b0005",
+          "p0237-b0006",
+          "p0237-b0007",
+          "p0237-b0008",
+          "p0237-b0009"
+        ]
+      },
+      "notes": "Confirmed HO³ chemical superscript vs footnotes 1-4."
+    },
+    "240": {
+      "page_number": 240,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "3840b05890b056a22274d99fbbabd82610b6728e2804243844814e8afc5db848",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0240",
+        "reread_block_ids": [
+          "p0240-b0001",
+          "p0240-b0002",
+          "p0240-b0003",
+          "p0240-b0004",
+          "p0240-b0005",
+          "p0240-b0006",
+          "p0240-b0007",
+          "p0240-b0008",
+          "p0240-b0009",
+          "p0240-b0010",
+          "p0240-b0011"
+        ],
+        "confirmed_block_ids": [
+          "p0240-b0002",
+          "p0240-b0003",
+          "p0240-b0004",
+          "p0240-b0005",
+          "p0240-b0006",
+          "p0240-b0007",
+          "p0240-b0008",
+          "p0240-b0009",
+          "p0240-b0010",
+          "p0240-b0011"
+        ]
+      },
+      "notes": "Confirmed HO³ chemical superscript and O̊ sign vs footnotes 1-2."
+    },
+    "247": {
+      "page_number": 247,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "a188ef3d0d3186965cbbd928e22ee491d93e773e595bedd9ef01c54c5df3f373",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0247",
+        "reread_block_ids": [
+          "p0247-b0001",
+          "p0247-b0002",
+          "p0247-b0003",
+          "p0247-b0004",
+          "p0247-b0005",
+          "p0247-b0006",
+          "p0247-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0247-b0002",
+          "p0247-b0003",
+          "p0247-b0004",
+          "p0247-b0005",
+          "p0247-b0006",
+          "p0247-b0007"
+        ]
+      },
+      "notes": "Confirmed SO² chemical superscript vs footnote 1."
+    },
+    "256": {
+      "page_number": 256,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "6b586be0626c2eba1c6e7321bf5dc53efb49cea113fa5f1a76d61d90040c1435",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0256",
+        "reread_block_ids": [
+          "p0256-b0001",
+          "p0256-b0002",
+          "p0256-b0003",
+          "p0256-b0004",
+          "p0256-b0005",
+          "p0256-b0006",
+          "p0256-b0007",
+          "p0256-b0008",
+          "p0256-b0009",
+          "p0256-b0010"
+        ],
+        "confirmed_block_ids": [
+          "p0256-b0002",
+          "p0256-b0003",
+          "p0256-b0004",
+          "p0256-b0005",
+          "p0256-b0006",
+          "p0256-b0007",
+          "p0256-b0008",
+          "p0256-b0009",
+          "p0256-b0010"
+        ]
+      },
+      "notes": "Confirmed superscript tabular letter dates (Octʳ, Janʸ, Febʸ, S⁶) verbatim."
+    },
+    "264": {
+      "page_number": 264,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "efb4048a58d7950284c1e053db63c8d385b1e98811498e16594e53db8a10251e",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0264",
+        "reread_block_ids": [
+          "p0264-b0001",
+          "p0264-b0002",
+          "p0264-b0003",
+          "p0264-b0004",
+          "p0264-b0005",
+          "p0264-b0006",
+          "p0264-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0264-b0002",
+          "p0264-b0003",
+          "p0264-b0004",
+          "p0264-b0005",
+          "p0264-b0006",
+          "p0264-b0007"
+        ]
+      },
+      "notes": "Confirmed '“Spécialités”' / '“spécialités”' capitalization and accent verbatim."
+    },
+    "269": {
+      "page_number": 269,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "9d644acaf9793583923e315e74f347301390f1fc052acd11cf66eb5d48923a7c",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0269",
+        "reread_block_ids": [
+          "p0269-b0001",
+          "p0269-b0002",
+          "p0269-b0003",
+          "p0269-b0004",
+          "p0269-b0005",
+          "p0269-b0006",
+          "p0269-b0007",
+          "p0269-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0269-b0002",
+          "p0269-b0003",
+          "p0269-b0004",
+          "p0269-b0005",
+          "p0269-b0006",
+          "p0269-b0007",
+          "p0269-b0008"
+        ]
+      },
+      "notes": "Confirmed NO² chemical superscript, O̊ sign, and footnote 'à l'état' ink verbatim."
+    },
+    "270": {
+      "page_number": 270,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "b21c925b7f2ee4ce239fe9924df5458f4589c142a4717c821de7100ef58d6cd2",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0270",
+        "reread_block_ids": [
+          "p0270-b0001",
+          "p0270-b0002",
+          "p0270-b0003",
+          "p0270-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0270-b0002",
+          "p0270-b0003",
+          "p0270-b0004"
+        ]
+      },
+      "notes": "Confirmed AgO̊² chemical superscript vs footnote 1."
+    },
+    "271": {
+      "page_number": 271,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "6bf13daff7920519d38316a40a7cea97bdc55b570f2bba622d41ab1668f91ee9",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0271",
+        "reread_block_ids": [
+          "p0271-b0001",
+          "p0271-b0002",
+          "p0271-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0271-b0002",
+          "p0271-b0003"
+        ]
+      },
+      "notes": "Confirmed SO³ and AgO² chemical superscripts and O̊ signs verbatim."
+    },
+    "320": {
+      "page_number": 320,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "78e2518e1954df4b0595fe1eee2af3aadbb2402e87fdd298c4cb9a0330da3a13",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0320",
+        "reread_block_ids": [
+          "p0320-b0001",
+          "p0320-b0002",
+          "p0320-b0003",
+          "p0320-b0004",
+          "p0320-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0320-b0002",
+          "p0320-b0003",
+          "p0320-b0004",
+          "p0320-b0005"
+        ]
+      },
+      "notes": "Confirmed acid-damaged undated fragment + footnote 1 ('about November, 1857') verbatim."
+    },
+    "325": {
+      "page_number": 325,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "b00a9cd987e2768798c56a8983263eb210c53d7d6d2cb5a70690613a4e3adb8b",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0325",
+        "reread_block_ids": [
+          "p0325-b0001",
+          "p0325-b0002",
+          "p0325-b0003",
+          "p0325-b0004",
+          "p0325-b0005",
+          "p0325-b0006",
+          "p0325-b0007",
+          "p0325-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0325-b0002",
+          "p0325-b0003",
+          "p0325-b0004",
+          "p0325-b0005",
+          "p0325-b0006",
+          "p0325-b0007",
+          "p0325-b0008"
+        ]
+      },
+      "notes": "Confirmed polar oxygen signs (⊕̊ + ⊖̊ = O.) verbatim."
+    },
+    "326": {
+      "page_number": 326,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "6be9d2e1db266c2dd1526b7c3f6ebc2042e754307f230edb04b5690c22ee7924",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0326",
+        "reread_block_ids": [
+          "p0326-b0001",
+          "p0326-b0002",
+          "p0326-b0003",
+          "p0326-b0004",
+          "p0326-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0326-b0002",
+          "p0326-b0003",
+          "p0326-b0004",
+          "p0326-b0005"
+        ]
+      },
+      "notes": "Confirmed Mn² O² and polar oxygen signs (⊕̊, ⊖̊) verbatim."
+    },
+    "327": {
+      "page_number": 327,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "91331d1c558ce5000522dae7962938f7184ebbd14a52d6d0f4206aad62f28886",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0327",
+        "reread_block_ids": [
+          "p0327-b0001",
+          "p0327-b0002",
+          "p0327-b0003",
+          "p0327-b0004",
+          "p0327-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0327-b0002",
+          "p0327-b0003",
+          "p0327-b0004",
+          "p0327-b0005"
+        ]
+      },
+      "notes": "Confirmed Ba O², HO², Pb O², Mn O², Ag ⊕̊², AgO² chemical superscripts verbatim."
+    },
+    "328": {
+      "page_number": 328,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "0ba538fd30ab097e711a870e82e1301b9112ea0313b02283456e28c931a3a223",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0328",
+        "reread_block_ids": [
+          "p0328-b0001",
+          "p0328-b0002",
+          "p0328-b0003",
+          "p0328-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0328-b0002",
+          "p0328-b0003",
+          "p0328-b0004"
+        ]
+      },
+      "notes": "Confirmed HO² and polar oxygen signs verbatim."
+    },
+    "330": {
+      "page_number": 330,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "c5c5ac94627c5e0fb4948b991aa0d6735d5d9fa55b1e364322c11e77e5654483",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0330",
+        "reread_block_ids": [
+          "p0330-b0001",
+          "p0330-b0002",
+          "p0330-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0330-b0002",
+          "p0330-b0003"
+        ]
+      },
+      "notes": "Confirmed HO² and polar oxygen signs verbatim."
+    },
+    "331": {
+      "page_number": 331,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "051f720f7c370187081b8e52e612fcba1fdc38b5cee4496904bba491fce875db",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0331",
+        "reread_block_ids": [
+          "p0331-b0001",
+          "p0331-b0002",
+          "p0331-b0003",
+          "p0331-b0004",
+          "p0331-b0005",
+          "p0331-b0006",
+          "p0331-b0007",
+          "p0331-b0008",
+          "p0331-b0009",
+          "p0331-b0010",
+          "p0331-b0011"
+        ],
+        "confirmed_block_ids": [
+          "p0331-b0002",
+          "p0331-b0003",
+          "p0331-b0004",
+          "p0331-b0005",
+          "p0331-b0006",
+          "p0331-b0007",
+          "p0331-b0008",
+          "p0331-b0009",
+          "p0331-b0010",
+          "p0331-b0011"
+        ]
+      },
+      "notes": "Confirmed Greek 'ὄζειν' (with zeta) and compositor 'will he remembered' typo verbatim."
+    },
+    "345": {
+      "page_number": 345,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "a1e36ca6a234bdefe7623817fe1dc0c6ba2a3bff88d694e19e9784085a8cbc61",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0345",
+        "reread_block_ids": [
+          "p0345-b0001",
+          "p0345-b0002",
+          "p0345-b0003",
+          "p0345-b0004",
+          "p0345-b0005",
+          "p0345-b0006",
+          "p0345-b0007",
+          "p0345-b0008",
+          "p0345-b0009",
+          "p0345-b0010",
+          "p0345-b0011",
+          "p0345-b0012",
+          "p0345-b0013",
+          "p0345-b0014",
+          "p0345-b0015",
+          "p0345-b0016",
+          "p0345-b0017",
+          "p0345-b0018"
+        ],
+        "confirmed_block_ids": [
+          "p0345-b0002",
+          "p0345-b0003",
+          "p0345-b0004",
+          "p0345-b0005",
+          "p0345-b0006",
+          "p0345-b0007",
+          "p0345-b0008",
+          "p0345-b0009",
+          "p0345-b0010",
+          "p0345-b0011",
+          "p0345-b0012",
+          "p0345-b0013",
+          "p0345-b0014",
+          "p0345-b0015",
+          "p0345-b0016",
+          "p0345-b0017"
+        ]
+      },
+      "notes": "Confirmed Emilie Schoenbein's Stamford Hill note and Faraday's death endorsement verbatim."
+    },
+    "380": {
+      "page_number": 380,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "317a28c26373298141dfa795a04221652d7857cc0ebd6105f5991918684bddb3",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0380",
+        "reread_block_ids": [
+          "p0380-b0001",
+          "p0380-b0002",
+          "p0380-b0003",
+          "p0380-b0004",
+          "p0380-b0005",
+          "p0380-b0006",
+          "p0380-b0007",
+          "p0380-b0008",
+          "p0380-b0009",
+          "p0380-b0010",
+          "p0380-b0011",
+          "p0380-b0012",
+          "p0380-b0013",
+          "p0380-b0014",
+          "p0380-b0015",
+          "p0380-b0016",
+          "p0380-b0017"
+        ],
+        "confirmed_block_ids": [
+          "p0380-b0002",
+          "p0380-b0003",
+          "p0380-b0004",
+          "p0380-b0005",
+          "p0380-b0006",
+          "p0380-b0007",
+          "p0380-b0008",
+          "p0380-b0009",
+          "p0380-b0010",
+          "p0380-b0011",
+          "p0380-b0012",
+          "p0380-b0013",
+          "p0380-b0014",
+          "p0380-b0015",
+          "p0380-b0016",
+          "p0380-b0017"
+        ]
+      },
+      "notes": "Confirmed Faraday's final undated letter and editorial framing verbatim; fixed literal \\n in valediction."
+    },
+    "406": {
+      "page_number": 406,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T10:51:36.070114+00:00",
+      "source_page_sha256": "cd0267a34dfb756135fbaa03f351883f574452bf60be741fcb7401eb813a4125",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0406",
+        "reread_block_ids": [
+          "p0406-b0001",
+          "p0406-b0002",
+          "p0406-b0003",
+          "p0406-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0406-b0001",
+          "p0406-b0002",
+          "p0406-b0003",
+          "p0406-b0004"
+        ]
+      },
+      "notes": "Confirmed UC Berkeley circulation slip classified cleanly as scanner_residue."
+    }
+  }
+}

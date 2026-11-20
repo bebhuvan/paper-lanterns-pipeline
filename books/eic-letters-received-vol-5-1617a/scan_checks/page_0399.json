@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-5-1617a",
+  "page_number": 399,
+  "check_id": "vol5-scan-check-p0399",
+  "reviewer": "native-vision-250to450ppi-scan-check",
+  "source_page_sha256": "9ac270e67cf50c864180857db4e2eaeb4b75d4d09acdd7304d292a2970b335b1",
+  "checked_at": "2026-11-17T17:58:00.757804+00:00",
+  "checks": [
+    {
+      "block_id": "p0399-b0003",
+      "token": "Bijapur",
+      "verdict": "printed_as_read",
+      "note": "450-DPI crop confirms Index literally prints 'Bijapur' without diacritics ('Uffiett' also corrected to 'Ufflett')."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "book_id": "rukaat-i-alamgiri-aurangzeb-1908",
+  "page_number": 190,
+  "check_id": "scan-check-p0190",
+  "reviewer": "native-vision-400ppi-scan-check",
+  "source_page_sha256": "0f7f819821edbf0ea02b7cdb7d28de763982b6ac442cf9e3b8f8350006e204d8",
+  "checks": [
+    {
+      "block_id": "p0190-b0015",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "400-PPI scan check on p. 190: confirms 1908 Bombay unaccented/variant orthography printed verbatim."
+    },
+    {
+      "block_id": "p0190-b0028",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "400-PPI scan check on p. 190: confirms 1908 Bombay unaccented/variant orthography printed verbatim."
+    },
+    {
+      "block_id": "p0190-b0029",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "400-PPI scan check on p. 190: confirms 1908 Bombay unaccented/variant orthography printed verbatim."
+    },
+    {
+      "block_id": "p0190-b0036",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "400-PPI scan check on p. 190: confirms 1908 Bombay unaccented/variant orthography printed verbatim."
+    }
+  ]
+}

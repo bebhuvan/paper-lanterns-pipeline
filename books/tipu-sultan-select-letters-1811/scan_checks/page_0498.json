@@ -1,0 +1,16 @@
+{
+  "book_id": "tipu-sultan-select-letters-1811",
+  "page_number": 498,
+  "check_id": "tipu-sultan-select-letters-1811-p0498",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "9d984a73e31fe1cdfc6fb7b3ae970d66ae720c0d27c17a3fe5466f92a3cc505e",
+  "checked_at": "2026-11-17T21:31:14.948331+00:00",
+  "checks": [
+    {
+      "block_id": "p0498-b0005",
+      "token": "Piadehs",
+      "verdict": "printed_as_read",
+      "note": "Printed unaccented Piadehs."
+    }
+  ]
+}

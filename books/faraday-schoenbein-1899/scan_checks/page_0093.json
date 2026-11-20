@@ -1,0 +1,99 @@
+{
+  "book_id": "faraday-schoenbein-1899",
+  "page_number": 93,
+  "check_id": "scan-check-p0093",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "1e4d4a314fd98ab29d9882a739edf9951e21fc2e9716f4271cdda40f202ad214",
+  "checks": [
+    {
+      "block_id": "p0093-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Bibliotheque Universelle' (p0093-b0011) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0093-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Bibliotheque Universelle' (p0093-b0011) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0093-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Bibliotheque Universelle' (p0093-b0011) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0093-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Bibliotheque Universelle' (p0093-b0011) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0093-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Bibliotheque Universelle' (p0093-b0011) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0093-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Bibliotheque Universelle' (p0093-b0011) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0093-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Bibliotheque Universelle' (p0093-b0011) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0093-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Bibliotheque Universelle' (p0093-b0011) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0093-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Bibliotheque Universelle' (p0093-b0011) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0093-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Bibliotheque Universelle' (p0093-b0011) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0093-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Bibliotheque Universelle' (p0093-b0011) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0093-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Bibliotheque Universelle' (p0093-b0011) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0093-b0013",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Bibliotheque Universelle' (p0093-b0011) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0093-b0014",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Bibliotheque Universelle' (p0093-b0011) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0093-b0015",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Bibliotheque Universelle' (p0093-b0011) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0093-b0016",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Bibliotheque Universelle' (p0093-b0011) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0093-b0017",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Bibliotheque Universelle' (p0093-b0011) is genuine 1899 printer ink."
+    },
+    {
+      "block_id": "p0093-b0018",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unaccented 'Bibliotheque Universelle' (p0093-b0011) is genuine 1899 printer ink."
+    }
+  ]
+}

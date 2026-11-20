@@ -1,0 +1,21 @@
+[book]
+book_id = "selected-english-letters-1914"
+title = "Selected English Letters"
+author_or_editor = "Claude M. Fuess (ed.)"
+authors = ["Claude M. Fuess (ed.)"]
+publication_year = 1914
+subtitle = "Edited by Claude M. Fuess, Ph.D."
+imprint = "Boston, New York, Chicago: Houghton Mifflin Company / The Riverside Press Cambridge, 1914"
+collection = "world-correspondence"
+language = "en"
+declared_scripts = ["Latin", "European diacritics"]
+profile = "claude_sonnet_epistolary"
+active_run_id = "canonical-sonnet55-batch-v1"
+
+[source]
+archive_id = "selectedenglishl00fues"
+source_pdf = "sources/selectedenglishl00fues/selectedenglishl00fues.originals.pdf"
+source_pdf_sha256 = "e2607a047f19cb1b773117478e087c5e79957ab8558cf2f7f919cbde63675ba5"
+
+[extraction]
+profile = "claude_sonnet_epistolary"

@@ -1,0 +1,34 @@
+{
+  "book_id": "pascal-miscellaneous-writings-1849",
+  "page_number": 122,
+  "check_id": "scan-check-p0122",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "f716bc185deac87dd87f957ef6ebf8983291af6db5407fc351faa745fe76de45",
+  "checks": [
+    {
+      "block_id": "p0122-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified italic unaccented 'Eloge' printed literally on scan ('for the Eloge by which the Work is introduced')."
+    },
+    {
+      "block_id": "p0122-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified italic unaccented 'Eloge' printed literally on scan ('for the Eloge by which the Work is introduced')."
+    },
+    {
+      "block_id": "p0122-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified italic unaccented 'Eloge' printed literally on scan ('for the Eloge by which the Work is introduced')."
+    },
+    {
+      "block_id": "p0122-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified italic unaccented 'Eloge' printed literally on scan ('for the Eloge by which the Work is introduced')."
+    },
+    {
+      "block_id": "p0122-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified italic unaccented 'Eloge' printed literally on scan ('for the Eloge by which the Work is introduced')."
+    }
+  ]
+}

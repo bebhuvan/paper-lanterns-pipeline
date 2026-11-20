@@ -1,0 +1,59 @@
+{
+  "book_id": "vivekananda-letters-1944",
+  "page_number": 307,
+  "check_id": "scan-check-p0307",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "1a77a2434e666677937dd273c028752f8eb185dd195e9b5e359142fc28a99404",
+  "checks": [
+    {
+      "block_id": "p0307-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Devanagari 'माभैः माभैः' and resolved '<unclear>.</unclear>' period."
+    },
+    {
+      "block_id": "p0307-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Devanagari 'माभैः माभैः' and resolved '<unclear>.</unclear>' period."
+    },
+    {
+      "block_id": "p0307-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Devanagari 'माभैः माभैः' and resolved '<unclear>.</unclear>' period."
+    },
+    {
+      "block_id": "p0307-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Devanagari 'माभैः माभैः' and resolved '<unclear>.</unclear>' period."
+    },
+    {
+      "block_id": "p0307-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Devanagari 'माभैः माभैः' and resolved '<unclear>.</unclear>' period."
+    },
+    {
+      "block_id": "p0307-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Devanagari 'माभैः माभैः' and resolved '<unclear>.</unclear>' period."
+    },
+    {
+      "block_id": "p0307-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Devanagari 'माभैः माभैः' and resolved '<unclear>.</unclear>' period."
+    },
+    {
+      "block_id": "p0307-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Devanagari 'माभैः माभैः' and resolved '<unclear>.</unclear>' period."
+    },
+    {
+      "block_id": "p0307-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Devanagari 'माभैः माभैः' and resolved '<unclear>.</unclear>' period."
+    },
+    {
+      "block_id": "p0307-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Devanagari 'माभैः माभैः' and resolved '<unclear>.</unclear>' period."
+    }
+  ]
+}

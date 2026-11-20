@@ -1,0 +1,170 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://paperlanterns.org/schemas/page_extract_wire.schema.json",
+  "title": "PageExtractWire",
+  "description": "Lean VLM diplomatic observation contract for a single scanned correspondence page.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["printed_folio", "warning_codes", "blocks"],
+  "properties": {
+    "printed_folio": {
+      "type": ["string", "null"],
+      "description": "Exact page number or folio printed on the leaf (e.g. 'xii', '42', '[14]'), or null if unnumbered."
+    },
+    "page_orientation": {
+      "type": "string",
+      "enum": ["upright", "rotated_cw_90", "rotated_ccw_90", "upside_down"],
+      "default": "upright",
+      "description": "Observed physical orientation of the printed text on the scan."
+    },
+    "warning_codes": {
+      "type": "array",
+      "description": "Page-level archival observation flags (e.g. blank_page, tissue_guard, illegible_region, clipped_margin, dense_apparatus, two_tier_apparatus, multi_letter_page, sideways_table, multi_column, handwritten_annotation, archaic_orthography, mixed_scripts, jbig2_risk).",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blocks": {
+      "type": "array",
+      "description": "All visual regions on the page in exact diplomatic reading order.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "bbox", "text"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "Semantic archival block role: margin_note for outer-margin shoulder chronology/age notes (e.g. '1831. Æt. 39.'); address_block for superscriptions, postal marks, and recipient endorsements (e.g. 'Ansd. 12 May'); table_caption/table_row/toc_entry for Calendar or Register of Letters.",
+            "enum": [
+              "running_header",
+              "folio",
+              "heading",
+              "letter_header",
+              "dateline",
+              "salutation",
+              "body",
+              "blockquote",
+              "verse",
+              "valediction",
+              "signature",
+              "postscript",
+              "address_block",
+              "editorial",
+              "ornamental_break",
+              "list_item",
+              "toc_entry",
+              "index_entry",
+              "table_caption",
+              "table_row",
+              "footnote",
+              "margin_note",
+              "illustration",
+              "caption",
+              "epigraph",
+              "imprint",
+              "scanner_residue",
+              "noise"
+            ]
+          },
+          "bbox": {
+            "type": "array",
+            "description": "Normalized [x0, y0, x1, y1] bounding box coordinates in 0..1000 scale (preserving left vs right outer margin side for margin_note shoulder notes).",
+            "items": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "text": {
+            "type": "string",
+            "description": "100% verbatim diplomatic transcription using ONLY constrained inline tags: <i>, <b>, <sc>, <sup>, <sub>, <unclear>. Preserve archaic orthography, medial long-s (ſ), ligatures (æ, œ), cipher/redaction dashes (M——, ***), and editorial brackets ([? 1848], [torn], [sic]) exactly as printed."
+          },
+          "alignment": {
+            "type": "string",
+            "enum": [
+              "left",
+              "center",
+              "right",
+              "indented",
+              "cascading",
+              "inline",
+              "two_column_left",
+              "two_column_right"
+            ],
+            "default": "left",
+            "description": "Printed spatial layout of the block (use 'cascading' for stepped multi-line valedictions/signatures, 'right' for right-aligned datelines/signatures)."
+          },
+          "epistolary_transition": {
+            "type": "string",
+            "enum": [
+              "none",
+              "starts_new_letter",
+              "starts_enclosure",
+              "ends_enclosure"
+            ],
+            "default": "none",
+            "description": "Structural transition: 'starts_new_letter' at the opening block of every top-level letter, telegram, postcard, or short note (including multiple per page); 'starts_enclosure' and 'ends_enclosure' for nested quoted letters/documents enclosed inside a parent letter."
+          },
+          "line_breaks_preserved": {
+            "type": "boolean",
+            "default": false,
+            "description": "True when printed line breaks carry structural/typographic meaning (verse, cascading valedictions, multi-line datelines, address blocks, signatures, telegrams)."
+          },
+          "heading_level": {
+            "type": ["integer", "null"],
+            "minimum": 1,
+            "maximum": 6,
+            "description": "Heading hierarchy level (1=part/chapter, 2=major section, 3=subsection, 4=minor subheading), or null."
+          },
+          "note_label": {
+            "type": ["string", "null"],
+            "description": "Exact printed marker opening a footnote or margin note, supporting two-tier apparatus on the same page (e.g. textual variant letters 'a', 'b', 'c' alongside explanatory numbers '1', '2', '3' or resetting symbols '*', '†', '‡', '§', '‖', '¶'), or null if unlabelled continuation."
+          },
+          "continues_from_prev": {
+            "type": "boolean",
+            "default": false,
+            "description": "True when this paragraph, footnote, or table continues directly from the previous page or column."
+          },
+          "continues_to_next": {
+            "type": "boolean",
+            "default": false,
+            "description": "True when this paragraph, footnote, or table breaks mid-sentence or mid-unit at the bottom of the page."
+          },
+          "table_role": {
+            "type": ["string", "null"],
+            "enum": ["header", "subheader", "data", "subtotal", "total", null],
+            "description": "Structural role of a table_row block (including Calendar / Register of Letters tables), or null."
+          },
+          "cells": {
+            "type": ["array", "null"],
+            "description": "Structured left-to-right cells for table_row blocks, or null.",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["text"],
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "colspan": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 32,
+                  "default": 1
+                },
+                "rowspan": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 32,
+                  "default": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

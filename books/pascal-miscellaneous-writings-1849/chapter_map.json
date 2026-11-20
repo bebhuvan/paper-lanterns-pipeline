@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "pascal-miscellaneous-writings-1849",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Half-Title & Title Page",
+      "start_page": 1,
+      "end_page": 8
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Table of Contents",
+      "start_page": 9,
+      "end_page": 12
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Introduction",
+      "start_page": 13,
+      "end_page": 50
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters",
+      "start_page": 51,
+      "end_page": 118
+    },
+    {
+      "kind": "chapter",
+      "title": "Treatise on the Geometrical Spirit; Spirit of Geometry & Intellectual Acuteness",
+      "start_page": 119,
+      "end_page": 152
+    },
+    {
+      "kind": "chapter",
+      "title": "A Preface to the Treatise on Vacuum; or, On Authority in Matters of Philosophy",
+      "start_page": 153,
+      "end_page": 170
+    },
+    {
+      "kind": "chapter",
+      "title": "On the Passion of Love",
+      "start_page": 171,
+      "end_page": 194
+    },
+    {
+      "kind": "chapter",
+      "title": "On the Art of Persuasion, or Eloquence",
+      "start_page": 195,
+      "end_page": 218
+    },
+    {
+      "kind": "chapter",
+      "title": "Thoughts on Eloquence and Style",
+      "start_page": 219,
+      "end_page": 236
+    },
+    {
+      "kind": "chapter",
+      "title": "Miscellaneous Thoughts",
+      "start_page": 237,
+      "end_page": 300
+    },
+    {
+      "kind": "chapter",
+      "title": "Conversations of Pascal: On the Condition of the Great; Epictetus and Montaigne; Detached Conversations",
+      "start_page": 301,
+      "end_page": 352
+    },
+    {
+      "kind": "chapter",
+      "title": "Thoughts on the Jesuits and the Jansenists; Thoughts and Notes for the Provincial Letters",
+      "start_page": 353,
+      "end_page": 416
+    },
+    {
+      "kind": "chapter",
+      "title": "Thoughts on the Pope and the Church; Reflections on Converts",
+      "start_page": 417,
+      "end_page": 440
+    },
+    {
+      "kind": "chapter",
+      "title": "Conversation on His Work on Religion",
+      "start_page": 441,
+      "end_page": 450
+    },
+    {
+      "kind": "chapter",
+      "title": "Conclusion",
+      "start_page": 451,
+      "end_page": 458
+    },
+    {
+      "kind": "index",
+      "title": "Index",
+      "start_page": 459,
+      "end_page": 460
+    },
+    {
+      "kind": "appendix",
+      "title": "Publisher's Advertisements",
+      "start_page": 461,
+      "end_page": 468
+    }
+  ]
+}

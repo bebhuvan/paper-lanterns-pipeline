@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-4-1616",
+  "page_number": 17,
+  "check_id": "eic-letters-received-vol-4-1616-p0017",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "bedf5f973dec16de8bc28cd19231d4dd0b807738ce4506a87c3e0ef6f1f89e8e",
+  "checked_at": "2026-11-17T21:16:06.113382+00:00",
+  "checks": [
+    {
+      "block_id": "p0017-b0005",
+      "token": "Gujarati",
+      "verdict": "printed_as_read",
+      "note": "Intro prints unaccented 'Gujarati'."
+    }
+  ]
+}

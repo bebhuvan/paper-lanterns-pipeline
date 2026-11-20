@@ -1,0 +1,54 @@
+{
+  "book_id": "vivekananda-letters-1944",
+  "page_number": 194,
+  "check_id": "scan-check-p0194",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "0d6c5bdacb9ba893f2feee3076f4e3614183f18755298adb0af0d28705d904d1",
+  "checks": [
+    {
+      "block_id": "p0194-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (101) Maharaja of Khetri, Sanskrit footnote numeral '१', and aligned body callout '१'."
+    },
+    {
+      "block_id": "p0194-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (101) Maharaja of Khetri, Sanskrit footnote numeral '१', and aligned body callout '१'."
+    },
+    {
+      "block_id": "p0194-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (101) Maharaja of Khetri, Sanskrit footnote numeral '१', and aligned body callout '१'."
+    },
+    {
+      "block_id": "p0194-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (101) Maharaja of Khetri, Sanskrit footnote numeral '१', and aligned body callout '१'."
+    },
+    {
+      "block_id": "p0194-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (101) Maharaja of Khetri, Sanskrit footnote numeral '१', and aligned body callout '१'."
+    },
+    {
+      "block_id": "p0194-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (101) Maharaja of Khetri, Sanskrit footnote numeral '१', and aligned body callout '१'."
+    },
+    {
+      "block_id": "p0194-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (101) Maharaja of Khetri, Sanskrit footnote numeral '१', and aligned body callout '१'."
+    },
+    {
+      "block_id": "p0194-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (101) Maharaja of Khetri, Sanskrit footnote numeral '१', and aligned body callout '१'."
+    },
+    {
+      "block_id": "p0194-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter (101) Maharaja of Khetri, Sanskrit footnote numeral '१', and aligned body callout '१'."
+    }
+  ]
+}

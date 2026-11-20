@@ -1,0 +1,14 @@
+{
+  "book_id": "nietzsche-wagner-1921",
+  "page_number": 109,
+  "check_id": "scan-check-p0109",
+  "reviewer": "native-vision-400ppi-scan-check",
+  "source_page_sha256": "1d865e6443444ff5eeb332865dacdfd3cc2081445ebe04cbd74deafb0d95faec",
+  "checks": [
+    {
+      "block_id": "p0109-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "400-PPI scan confirms Greek quotation 'Χαίρετε Δαίμονες.' verbatim."
+    }
+  ]
+}

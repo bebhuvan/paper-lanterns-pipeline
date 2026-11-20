@@ -1,0 +1,805 @@
+{
+  "version": "proof-ledger-v2",
+  "book_id": "pascal-provincial-letters-1847",
+  "updated_at": "2026-11-17T13:38:19.172203+00:00",
+  "pages": {
+    "8": {
+      "page_number": 8,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "ae43946085a39b502587d86b0c199b7d6a72b93cb6206b69700f7d0f7f661d41",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0008",
+        "reread_block_ids": [
+          "p0008-b0002",
+          "p0008-b0003",
+          "p0008-b0004",
+          "p0008-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0008-b0002",
+          "p0008-b0003",
+          "p0008-b0004",
+          "p0008-b0005"
+        ],
+        "notes": "Verified Frontispiece 'PASCAL.' portrait and 'Standidge & Cº Litho, London.' imprint (replaced superscript 'o' with ordinal)."
+      }
+    },
+    "9": {
+      "page_number": 9,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "a8461dbe242e5a163a7371ccaf49525f1bab779e43724255dc51ddfcd2e31e1a",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0009",
+        "reread_block_ids": [
+          "p0009-b0001",
+          "p0009-b0002",
+          "p0009-b0003",
+          "p0009-b0005",
+          "p0009-b0006",
+          "p0009-b0007",
+          "p0009-b0008",
+          "p0009-b0009",
+          "p0009-b0010",
+          "p0009-b0011",
+          "p0009-b0012"
+        ],
+        "confirmed_block_ids": [
+          "p0009-b0001",
+          "p0009-b0002",
+          "p0009-b0003",
+          "p0009-b0005",
+          "p0009-b0006",
+          "p0009-b0007",
+          "p0009-b0008",
+          "p0009-b0009",
+          "p0009-b0010",
+          "p0009-b0011",
+          "p0009-b0012"
+        ],
+        "notes": "Verified Title Page epigraph '—FAUGERE.' literally unaccented in small-caps metal type."
+      }
+    },
+    "14": {
+      "page_number": 14,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "99e68284aed843410757999d74a7ab180a962082590ae5db91062f179843cb53",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0014",
+        "reread_block_ids": [
+          "p0014-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0014-b0003"
+        ],
+        "notes": "Verified Translator's Preface p.viii; marked dropped lead type in 'resistless  orce' as '[f]orce'."
+      }
+    },
+    "113": {
+      "page_number": 113,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "eb14001a2e83e4a389c455a9847462c85203c6fadfe19a291471d3133966a94f",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0113",
+        "reread_block_ids": [
+          "p0113-b0003",
+          "p0113-b0004",
+          "p0113-b0005",
+          "p0113-b0006",
+          "p0113-b0007",
+          "p0113-b0008",
+          "p0113-b0009"
+        ],
+        "confirmed_block_ids": [
+          "p0113-b0003",
+          "p0113-b0004",
+          "p0113-b0005",
+          "p0113-b0006",
+          "p0113-b0007",
+          "p0113-b0008",
+          "p0113-b0009"
+        ],
+        "notes": "Verified boundary between end of Letter II and 'Reply of the Provincial to the two preceding Letters from his Friend.'"
+      }
+    },
+    "114": {
+      "page_number": 114,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "21d0341b2a0073a3f27d4bfdbb06954343f8e1f894d41ac396100c02e1bbba0f",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0114",
+        "reread_block_ids": [
+          "p0114-b0003",
+          "p0114-b0004",
+          "p0114-b0005",
+          "p0114-b0006",
+          "p0114-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0114-b0003",
+          "p0114-b0004",
+          "p0114-b0005",
+          "p0114-b0006",
+          "p0114-b0007"
+        ],
+        "notes": "Verified end of 'Reply of the Provincial' and Translator footnote on authorship."
+      }
+    },
+    "146": {
+      "page_number": 146,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "eca71b49e0835ac33dbbb3d0306aefeec7371e394407f5fe5ec9c3dfee682a3d",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0146",
+        "reread_block_ids": [
+          "p0146-b0003",
+          "p0146-b0004",
+          "p0146-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0146-b0003",
+          "p0146-b0004",
+          "p0146-b0005"
+        ],
+        "notes": "Verified 'Pére Petau' literally printed accented 'Pére' and unaccented 'Petau' on p.60."
+      }
+    },
+    "176": {
+      "page_number": 176,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "5adc22b90af35990c77618b2f978859e6575ab1566fd161e7e89eb74ed22f4ac",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0176",
+        "reread_block_ids": [
+          "p0176-b0003",
+          "p0176-b0004",
+          "p0176-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0176-b0003",
+          "p0176-b0004",
+          "p0176-b0005"
+        ],
+        "notes": "Verified 'Castrus Palaüs' (ü) and 'Peré Escobar' literally printed in Letter VI."
+      }
+    },
+    "263": {
+      "page_number": 263,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "fdcd246c654cb55b864f363363bebab9e81f4de5abc2a3e37911c77f6e21aa01",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0263",
+        "reread_block_ids": [
+          "p0263-b0001",
+          "p0263-b0002",
+          "p0263-b0003",
+          "p0263-b0004",
+          "p0263-b0005",
+          "p0263-b0006",
+          "p0263-b0007",
+          "p0263-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0263-b0001",
+          "p0263-b0002",
+          "p0263-b0003",
+          "p0263-b0004",
+          "p0263-b0005",
+          "p0263-b0006",
+          "p0263-b0007",
+          "p0263-b0008"
+        ],
+        "notes": "Verified Letter XI heading literally printed 'PERES LE MOINE AND GARASSE.' without grave accent on small caps."
+      }
+    },
+    "302": {
+      "page_number": 302,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "b94fa120688b3bd0c66b26bdd3099ab22e3d45985b4e0cfa6bbafac5a30cafb4",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0302",
+        "reread_block_ids": [
+          "p0302-b0002",
+          "p0302-b0003",
+          "p0302-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0302-b0002",
+          "p0302-b0003",
+          "p0302-b0004"
+        ],
+        "notes": "Verified 'quantúm' (ú) and footnote '* ‘ Vivre avec honneur.) Fr.)' (verbatim unpaired parenthesis)."
+      }
+    },
+    "322": {
+      "page_number": 322,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "0169b908aa47329dcf4112f8a49a9dac40744ec45f7bdec286e016fcc51d09c3",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0322",
+        "reread_block_ids": [
+          "p0322-b0003",
+          "p0322-b0004",
+          "p0322-b0005",
+          "p0322-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0322-b0003",
+          "p0322-b0004",
+          "p0322-b0005",
+          "p0322-b0006"
+        ],
+        "notes": "Verified two-paragraph footnote ('*' French Editor and '*_*' Translator note coalesced under fn-p0322-1)."
+      }
+    },
+    "510": {
+      "page_number": 510,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "72a96902a066f44a301b3622b6074897327a477fbbde26b0080fbd83412133dd",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0510",
+        "reread_block_ids": [
+          "p0510-b0002"
+        ],
+        "confirmed_block_ids": [
+          "p0510-b0002"
+        ],
+        "notes": "Verified blank verso leaf with only faint mirror show-through from p.509; dropped spurious bleed-through hallucination."
+      }
+    },
+    "515": {
+      "page_number": 515,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "c592c6288326d92783329748031e2aef0da3ad6c23cc7ee456aa05175b85fa52",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0515",
+        "reread_block_ids": [
+          "p0515-b0003",
+          "p0515-b0004",
+          "p0515-b0005",
+          "p0515-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0515-b0003",
+          "p0515-b0004",
+          "p0515-b0005",
+          "p0515-b0006"
+        ],
+        "notes": "Verified Appendix No. I 'Sentence of the Bishops and Doctors' signatory list (official document, not a letter)."
+      }
+    },
+    "516": {
+      "page_number": 516,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "9ced83de484ec9444b99e7e5df0a450e180a7f77cea3b0169b03f83abb238381",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0516",
+        "reread_block_ids": [
+          "p0516-b0003",
+          "p0516-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0516-b0003",
+          "p0516-b0004"
+        ],
+        "notes": "Verified Appendix No. I 'Decree of the Council of State against the Letters to a Provincial.'"
+      }
+    },
+    "517": {
+      "page_number": 517,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "561bcdc066949c1c0a59185ed223f5b83a498b32a98fd4e3a8a69280ba791249",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0517",
+        "reread_block_ids": [
+          "p0517-b0003",
+          "p0517-b0004",
+          "p0517-b0005",
+          "p0517-b0006",
+          "p0517-b0007",
+          "p0517-b0008",
+          "p0517-b0009"
+        ],
+        "confirmed_block_ids": [
+          "p0517-b0003",
+          "p0517-b0004",
+          "p0517-b0005",
+          "p0517-b0006",
+          "p0517-b0007",
+          "p0517-b0008",
+          "p0517-b0009"
+        ],
+        "notes": "Verified '(Signed) PHILIPPEAUX.' closing Royal Council Decree and beginning of No. II ARNAULD."
+      }
+    },
+    "528": {
+      "page_number": 528,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "10c55116397d1d690614cab4cb5453d5273fb1bfb99d20bbd4f7025244d039ce",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0528",
+        "reread_block_ids": [
+          "p0528-b0003",
+          "p0528-b0004",
+          "p0528-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0528-b0003",
+          "p0528-b0004",
+          "p0528-b0005"
+        ],
+        "notes": "Verified Arnauld biographical extract letter to Princess de Guimené in Appendix No. II."
+      }
+    },
+    "532": {
+      "page_number": 532,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "247e4fba5f6bff3b3bb7a717c6cb01a1ce46973dcec50dbdf7228c76f24cb959",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0532",
+        "reread_block_ids": [
+          "p0532-b0003",
+          "p0532-b0004",
+          "p0532-b0005",
+          "p0532-b0006",
+          "p0532-b0007",
+          "p0532-b0008",
+          "p0532-b0009",
+          "p0532-b0010"
+        ],
+        "confirmed_block_ids": [
+          "p0532-b0003",
+          "p0532-b0004",
+          "p0532-b0005",
+          "p0532-b0006",
+          "p0532-b0007",
+          "p0532-b0008",
+          "p0532-b0009",
+          "p0532-b0010"
+        ],
+        "notes": "Verified Appendix No. IV No. IV heading and cross-page continued footnote on Duchess de Longueville from p.531."
+      }
+    },
+    "552": {
+      "page_number": 552,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "757626779cf086b2d7ef42d50d10399408749fd365e994ecb0dbdf5bb8324160",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0552",
+        "reread_block_ids": [
+          "p0552-b0002",
+          "p0552-b0003",
+          "p0552-b0004",
+          "p0552-b0005",
+          "p0552-b0006",
+          "p0552-b0007",
+          "p0552-b0008",
+          "p0552-b0009",
+          "p0552-b0010",
+          "p0552-b0011",
+          "p0552-b0012"
+        ],
+        "confirmed_block_ids": [
+          "p0552-b0002",
+          "p0552-b0003",
+          "p0552-b0004",
+          "p0552-b0005",
+          "p0552-b0006",
+          "p0552-b0007",
+          "p0552-b0008",
+          "p0552-b0009",
+          "p0552-b0010",
+          "p0552-b0011",
+          "p0552-b0012"
+        ],
+        "notes": "Verified Appendix No. XI 'Writing found on the person of Pascal' (Memorial) and sub-note '(a)' coalesced under §."
+      }
+    },
+    "553": {
+      "page_number": 553,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "27e923691ee23d16ac254a6eb748312ab4c7b78ff5939cd40a72d8359354759d",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0553",
+        "reread_block_ids": [
+          "p0553-b0001"
+        ],
+        "confirmed_block_ids": [
+          "p0553-b0001"
+        ],
+        "notes": "Verified blank verso backing lithograph facsimile plate; dropped faint show-through noise."
+      }
+    },
+    "554": {
+      "page_number": 554,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "d6479358af9445c14024b869e84b140bcb73b27d63464f928fdb578f6074ed7f",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0554",
+        "reread_block_ids": [
+          "p0554-b0001",
+          "p0554-b0002",
+          "p0554-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0554-b0001",
+          "p0554-b0002",
+          "p0554-b0003"
+        ],
+        "notes": "Verified lithographic facsimile plate of Pascal's autograph MS 'Pensées sur les Jesuits' and 'imile by Standidge & Cº.'."
+      }
+    },
+    "555": {
+      "page_number": 555,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "0f1d995e7aef1d59c29bddb8f76ef42e41213272cba4eb6a873d7619b7382d58",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0555",
+        "reread_block_ids": [
+          "p0555-b0003",
+          "p0555-b0004",
+          "p0555-b0005",
+          "p0555-b0006",
+          "p0555-b0007",
+          "p0555-b0008",
+          "p0555-b0009",
+          "p0555-b0010"
+        ],
+        "confirmed_block_ids": [
+          "p0555-b0003",
+          "p0555-b0004",
+          "p0555-b0005",
+          "p0555-b0006",
+          "p0555-b0007",
+          "p0555-b0008",
+          "p0555-b0009",
+          "p0555-b0010"
+        ],
+        "notes": "Verified Appendix No. XII transcription of p.554 autograph plate and introduction to Epitaphs."
+      }
+    },
+    "556": {
+      "page_number": 556,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "f3aa0f1f8b86623d3bb80e04f17bef6bca1bc3ea16ed45a1142cc76003152b69",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0556",
+        "reread_block_ids": [
+          "p0556-b0003",
+          "p0556-b0004",
+          "p0556-b0005",
+          "p0556-b0006",
+          "p0556-b0007",
+          "p0556-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0556-b0003",
+          "p0556-b0004",
+          "p0556-b0005",
+          "p0556-b0006",
+          "p0556-b0007",
+          "p0556-b0008"
+        ],
+        "notes": "Verified Latin & Greek Epitaphs ('ΩΛΕΤΟ ΠΑΣΚΑΛΙΟΣ. ΦΕΥ! ΦΕΥ! ΠΕΝΘΟΣ ΟΞΟΝ!') on p.468."
+      }
+    },
+    "559": {
+      "page_number": 559,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "52f12c202782e1ffaa0d563aa1b8fe7985bc7df2b2600478c40bbafda84b2a2d",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0559",
+        "reread_block_ids": [
+          "p0559-b0003",
+          "p0559-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0559-b0003",
+          "p0559-b0004"
+        ],
+        "notes": "Verified English Epitaph paraphrase tablet; marked dropped lead type in 'themse  es' as 'themse[lv]es'."
+      }
+    },
+    "560": {
+      "page_number": 560,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "d6492ebeb58f3ab612309612d942cf063f0de51ca175298ecc454c8af1bd0e01",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0560",
+        "reread_block_ids": [
+          "p0560-b0001"
+        ],
+        "confirmed_block_ids": [
+          "p0560-b0001"
+        ],
+        "notes": "Verified blank verso backing framed Epitaph page; dropped show-through noise."
+      }
+    },
+    "564": {
+      "page_number": 564,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T13:38:19.172203+00:00",
+      "source_page_sha256": "92c012b3466fc6bc9a77ac88078174692c66ef0ea6ec465f477a2a9eea73e7f9",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0564",
+        "reread_block_ids": [
+          "p0564-b0003",
+          "p0564-b0004",
+          "p0564-b0005",
+          "p0564-b0006",
+          "p0564-b0007",
+          "p0564-b0008",
+          "p0564-b0009",
+          "p0564-b0010",
+          "p0564-b0011",
+          "p0564-b0012",
+          "p0564-b0013",
+          "p0564-b0014",
+          "p0564-b0015",
+          "p0564-b0016",
+          "p0564-b0017",
+          "p0564-b0018",
+          "p0564-b0019"
+        ],
+        "confirmed_block_ids": [
+          "p0564-b0003",
+          "p0564-b0004",
+          "p0564-b0005",
+          "p0564-b0006",
+          "p0564-b0007",
+          "p0564-b0008",
+          "p0564-b0009",
+          "p0564-b0010",
+          "p0564-b0011",
+          "p0564-b0012",
+          "p0564-b0013",
+          "p0564-b0014",
+          "p0564-b0015",
+          "p0564-b0016",
+          "p0564-b0017",
+          "p0564-b0018",
+          "p0564-b0019"
+        ],
+        "notes": "Verified Index entry for 'Le Moine'; corrected paper speck above 'e' in 'Praises of Modesty' (not macron ē)."
+      }
+    }
+  }
+}

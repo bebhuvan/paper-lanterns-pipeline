@@ -1,0 +1,49 @@
+{
+  "book_id": "hugo-letters-vol1-1896",
+  "page_number": 285,
+  "check_id": "scan-check-p0285",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "7d53368180efad0a7c471cefbca39c1591f312aa4a2e49a922f4fc181abe0b51",
+  "checks": [
+    {
+      "block_id": "p0285-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Appendix II Letter I. To M. Raynouard (p. 285, folio 269)."
+    },
+    {
+      "block_id": "p0285-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Appendix II Letter I. To M. Raynouard (p. 285, folio 269)."
+    },
+    {
+      "block_id": "p0285-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Appendix II Letter I. To M. Raynouard (p. 285, folio 269)."
+    },
+    {
+      "block_id": "p0285-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Appendix II Letter I. To M. Raynouard (p. 285, folio 269)."
+    },
+    {
+      "block_id": "p0285-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Appendix II Letter I. To M. Raynouard (p. 285, folio 269)."
+    },
+    {
+      "block_id": "p0285-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Appendix II Letter I. To M. Raynouard (p. 285, folio 269)."
+    },
+    {
+      "block_id": "p0285-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Appendix II Letter I. To M. Raynouard (p. 285, folio 269)."
+    },
+    {
+      "block_id": "p0285-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Appendix II Letter I. To M. Raynouard (p. 285, folio 269)."
+    }
+  ]
+}

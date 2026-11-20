@@ -1,0 +1,19 @@
+{
+  "book_id": "dostoevsky-family-friends-1914",
+  "page_number": 307,
+  "check_id": "scan-check-p0307",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "16bf1b3b8d6a570f58cadfc90b5e8f2475860e37aa4089def86e01da9f7f6d15",
+  "checks": [
+    {
+      "block_id": "p0307-b0001",
+      "verdict": "confirmed_illustration_facsimile",
+      "note": "Verified 1838 Russian letter handwriting facsimile classified purely as illustration + caption."
+    },
+    {
+      "block_id": "p0307-b0002",
+      "verdict": "confirmed_illustration_facsimile",
+      "note": "Verified 1838 Russian letter handwriting facsimile classified purely as illustration + caption."
+    }
+  ]
+}

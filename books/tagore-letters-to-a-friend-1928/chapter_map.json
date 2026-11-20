@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "tagore-letters-to-a-friend-1928",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Frontmatter, Dedication, Preface & Contents",
+      "start_page": 1,
+      "end_page": 14
+    },
+    {
+      "kind": "chapter",
+      "title": "An Essay on the Bengal Renaissance (by C. F. Andrews)",
+      "start_page": 15,
+      "end_page": 22
+    },
+    {
+      "kind": "chapter",
+      "title": "An Essay on the Personality of Tagore (by C. F. Andrews)",
+      "start_page": 23,
+      "end_page": 36
+    },
+    {
+      "kind": "frontmatter",
+      "title": "List of Indian Places, Words, and Phrases with Their Meaning",
+      "start_page": 37,
+      "end_page": 38
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter I (August 1913 – May 1914)",
+      "start_page": 39,
+      "end_page": 49
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter II (October 1914 – February 1915)",
+      "start_page": 50,
+      "end_page": 59
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter III (June – September 1915)",
+      "start_page": 60,
+      "end_page": 71
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter IV (October 1915 – December 1918)",
+      "start_page": 72,
+      "end_page": 86
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter V (May – October 1920)",
+      "start_page": 87,
+      "end_page": 103
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter VI (October 1920 – February 1921)",
+      "start_page": 104,
+      "end_page": 129
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter VII (February – March 1921)",
+      "start_page": 130,
+      "end_page": 158
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter VIII (April – July 1921)",
+      "start_page": 159,
+      "end_page": 196
+    },
+    {
+      "kind": "chapter",
+      "title": "Appendix I: Letter to the Manchester Guardian (1923)",
+      "start_page": 197,
+      "end_page": 198
+    },
+    {
+      "kind": "chapter",
+      "title": "Appendix II: Letter to W. W. Pearson (1923)",
+      "start_page": 199,
+      "end_page": 201
+    },
+    {
+      "kind": "index",
+      "title": "Index of Names",
+      "start_page": 202,
+      "end_page": 204
+    },
+    {
+      "kind": "backmatter",
+      "title": "Publisher's Catalogue & Endpapers",
+      "start_page": 205,
+      "end_page": 212
+    }
+  ]
+}

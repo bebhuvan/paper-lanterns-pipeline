@@ -1,0 +1,956 @@
+{
+  "version": "proof-ledger-v2",
+  "book_id": "cortes-letters-vol1-1908",
+  "updated_at": "2026-11-17T22:41:27.174910+00:00",
+  "pages": {
+    "1": {
+      "page_number": 1,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "36186f351316d054311029540d74c67220ae149baa6318db311234ce213c50b3",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0001",
+        "reread_block_ids": [
+          "p0001-b0001",
+          "p0001-b0002"
+        ],
+        "confirmed_block_ids": [
+          "p0001-b0001",
+          "p0001-b0002"
+        ]
+      },
+      "notes": "Verified University of Toronto Library barcode sticker and gold-embossed Cortes Coat-of-Arms on front cover."
+    },
+    "10": {
+      "page_number": 10,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "85950358941397db2785a3284508759f5034429f545c737bfca12e439807cef1",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0010",
+        "reread_block_ids": [
+          "p0010-b0001",
+          "p0010-b0002"
+        ],
+        "confirmed_block_ids": [
+          "p0010-b0001",
+          "p0010-b0002"
+        ]
+      },
+      "notes": "Verified Ferdinand Selma engraving of Hernan Cortes after Titian."
+    },
+    "11": {
+      "page_number": 11,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "5bb77fd6905d68e45eac5aaebb816a53f495f40a67ca7b19237a5041e243dd29",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0011",
+        "reread_block_ids": [
+          "p0011-b0001",
+          "p0011-b0002",
+          "p0011-b0003",
+          "p0011-b0004",
+          "p0011-b0005",
+          "p0011-b0006",
+          "p0011-b0007",
+          "p0011-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0011-b0001",
+          "p0011-b0002",
+          "p0011-b0003",
+          "p0011-b0004",
+          "p0011-b0005",
+          "p0011-b0006",
+          "p0011-b0007",
+          "p0011-b0008"
+        ]
+      },
+      "notes": "Verified full title page and Library of Toronto acquisition pencil mark (scanner_residue)."
+    },
+    "15": {
+      "page_number": 15,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "94182d04db7b1bacb5c31fe6878767b5f7d6a5d8baa84324b2bfafe6520eb5c7",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0015",
+        "reread_block_ids": [
+          "p0015-b0001",
+          "p0015-b0002",
+          "p0015-b0003",
+          "p0015-b0004",
+          "p0015-b0005",
+          "p0015-b0006",
+          "p0015-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0015-b0001",
+          "p0015-b0002",
+          "p0015-b0003",
+          "p0015-b0004",
+          "p0015-b0005",
+          "p0015-b0006",
+          "p0015-b0007"
+        ]
+      },
+      "notes": "Confirmed 'Historia de Nueva Espana' printed without tilde in original 1908 type."
+    },
+    "16": {
+      "page_number": 16,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "5edd11f45917c0bf0f718193499b492fbddb08bb15a7b13fda883414a4085f12",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0016",
+        "reread_block_ids": [
+          "p0016-b0001",
+          "p0016-b0002",
+          "p0016-b0003",
+          "p0016-b0004",
+          "p0016-b0005",
+          "p0016-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0016-b0001",
+          "p0016-b0002",
+          "p0016-b0003",
+          "p0016-b0004",
+          "p0016-b0005",
+          "p0016-b0006"
+        ]
+      },
+      "notes": "Confirmed Francis A. MacNutt signature and Palazzo Pamphilj, Rome dateline closing Preface."
+    },
+    "81": {
+      "page_number": 81,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "53b798df35aa81ecaf385c3f69b359cf75b2ce8db70b05f912070ac0d8f21435",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0081",
+        "reread_block_ids": [
+          "p0081-b0001",
+          "p0081-b0002",
+          "p0081-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0081-b0001",
+          "p0081-b0002",
+          "p0081-b0003"
+        ]
+      },
+      "notes": "Confirmed 'Essai sur les Mœurs' ligature verbatim on folio 61."
+    },
+    "82": {
+      "page_number": 82,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "bbd55fde490fa052e88dccf5837bc9950d2419b7cfd4a8ec206b59915d942f4b",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0082",
+        "reread_block_ids": [
+          "p0082-b0001",
+          "p0082-b0002",
+          "p0082-b0003",
+          "p0082-b0004",
+          "p0082-b0005",
+          "p0082-b0006",
+          "p0082-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0082-b0001",
+          "p0082-b0002",
+          "p0082-b0003",
+          "p0082-b0004",
+          "p0082-b0005",
+          "p0082-b0006",
+          "p0082-b0007"
+        ]
+      },
+      "notes": "Confirmed opening of Cortes's 1544 letter to Emperor Charles V inside Biographical Note Ch. IV."
+    },
+    "86": {
+      "page_number": 86,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "5eb43156860763df68b3119c9024cbbc9ade51d3c1f2654b96ec184830ffe485",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0086",
+        "reread_block_ids": [
+          "p0086-b0001",
+          "p0086-b0002",
+          "p0086-b0003",
+          "p0086-b0004",
+          "p0086-b0005",
+          "p0086-b0006",
+          "p0086-b0007",
+          "p0086-b0008",
+          "p0086-b0009",
+          "p0086-b0010"
+        ],
+        "confirmed_block_ids": [
+          "p0086-b0001",
+          "p0086-b0002",
+          "p0086-b0003",
+          "p0086-b0004",
+          "p0086-b0005",
+          "p0086-b0006",
+          "p0086-b0007",
+          "p0086-b0008",
+          "p0086-b0009",
+          "p0086-b0010"
+        ]
+      },
+      "notes": "Confirmed closing Valladolid 1544 dateline and signature 'The Marques del Valle.'"
+    },
+    "88": {
+      "page_number": 88,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "df4bddd27dda2744f3814b0d0a7955a8d37c49e4f6a379d1fa6c15faee148831",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0088",
+        "reread_block_ids": [
+          "p0088-b0001",
+          "p0088-b0002",
+          "p0088-b0003",
+          "p0088-b0004",
+          "p0088-b0005",
+          "p0088-b0006",
+          "p0088-b0007",
+          "p0088-b0008",
+          "p0088-b0009",
+          "p0088-b0010"
+        ],
+        "confirmed_block_ids": [
+          "p0088-b0001",
+          "p0088-b0002",
+          "p0088-b0003",
+          "p0088-b0004",
+          "p0088-b0005",
+          "p0088-b0006",
+          "p0088-b0007",
+          "p0088-b0008",
+          "p0088-b0009",
+          "p0088-b0010"
+        ]
+      },
+      "notes": "Corrected broken 'e' dust read 'dǝ' to printed italic 'de' in 'Los Tres Siglos de Mexico'."
+    },
+    "107": {
+      "page_number": 107,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "fb6f2bd0b7f285db8debd7bf37dafd5d296bbb836970dcdce8cfc8da24d0cf95",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0107",
+        "reread_block_ids": [
+          "p0107-b0001",
+          "p0107-b0002",
+          "p0107-b0003",
+          "p0107-b0004",
+          "p0107-b0005",
+          "p0107-b0006",
+          "p0107-b0007",
+          "p0107-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0107-b0001",
+          "p0107-b0002",
+          "p0107-b0003",
+          "p0107-b0004",
+          "p0107-b0005",
+          "p0107-b0006",
+          "p0107-b0007",
+          "p0107-b0008"
+        ]
+      },
+      "notes": "Confirmed Melchor de Mojica notary acceptance inside Article XXII of Last Will and Testament (not an epistle split)."
+    },
+    "117": {
+      "page_number": 117,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "3d41478987839543a1a395bba53c8ff09a2a0cfe4ab20031c309a8ea179024db",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0117",
+        "reread_block_ids": [
+          "p0117-b0001",
+          "p0117-b0002",
+          "p0117-b0003",
+          "p0117-b0004",
+          "p0117-b0005",
+          "p0117-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0117-b0001",
+          "p0117-b0002",
+          "p0117-b0003",
+          "p0117-b0004",
+          "p0117-b0005",
+          "p0117-b0006"
+        ]
+      },
+      "notes": "Confirmed printer variation 'Dona Juaña' alongside 'Doña Maria/Catalina/Juana' in original 1908 ink."
+    },
+    "118": {
+      "page_number": 118,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "fb79a03e9092713f82b1041d65c26f5d4103ebf78cad8b9f8783497e254715ee",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0118",
+        "reread_block_ids": [
+          "p0118-b0001",
+          "p0118-b0002",
+          "p0118-b0003",
+          "p0118-b0004",
+          "p0118-b0005",
+          "p0118-b0006",
+          "p0118-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0118-b0001",
+          "p0118-b0002",
+          "p0118-b0003",
+          "p0118-b0004",
+          "p0118-b0005",
+          "p0118-b0006",
+          "p0118-b0007"
+        ]
+      },
+      "notes": "Confirmed Melchor Mojica closing attestation of Last Will and Testament codicil."
+    },
+    "123": {
+      "page_number": 123,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "bdbd6530dc9c1f06c2a088b15b00893bdadbcc880246a596c0287828be29c86e",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0123",
+        "reread_block_ids": [
+          "p0123-b0001",
+          "p0123-b0002",
+          "p0123-b0003",
+          "p0123-b0004",
+          "p0123-b0005",
+          "p0123-b0006",
+          "p0123-b0007",
+          "p0123-b0008",
+          "p0123-b0009",
+          "p0123-b0010"
+        ],
+        "confirmed_block_ids": [
+          "p0123-b0001",
+          "p0123-b0002",
+          "p0123-b0003",
+          "p0123-b0004",
+          "p0123-b0005",
+          "p0123-b0006",
+          "p0123-b0007",
+          "p0123-b0008",
+          "p0123-b0009",
+          "p0123-b0010"
+        ]
+      },
+      "notes": "Confirmed 'Forlì' grave accent printed verbatim on folio 103."
+    },
+    "141": {
+      "page_number": 141,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "529a55fddf4cdb3027ced4910bdc681bc4c02defe1aa9a6e9196d81dff28911f",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0141",
+        "reread_block_ids": [
+          "p0141-b0001",
+          "p0141-b0002"
+        ],
+        "confirmed_block_ids": [
+          "p0141-b0001",
+          "p0141-b0002"
+        ]
+      },
+      "notes": "Half-title divider leaf FIRST LETTER reclassified to heading."
+    },
+    "143": {
+      "page_number": 143,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "99300c141971914799ab4b99529e7e405b3e073e7f492b8dd83e3a3ceffc4291",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0143",
+        "reread_block_ids": [
+          "p0143-b0001",
+          "p0143-b0002",
+          "p0143-b0003",
+          "p0143-b0004",
+          "p0143-b0005",
+          "p0143-b0006",
+          "p0143-b0007",
+          "p0143-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0143-b0001",
+          "p0143-b0002",
+          "p0143-b0003",
+          "p0143-b0004",
+          "p0143-b0005",
+          "p0143-b0006",
+          "p0143-b0007",
+          "p0143-b0008"
+        ]
+      },
+      "notes": "Confirmed opening of First Letter (July 10, 1519) with three bottom footnotes."
+    },
+    "191": {
+      "page_number": 191,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "f76f648d149ff822ec03c7c717563482b05583f50d9b456a6698efc571fa03f0",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0191",
+        "reread_block_ids": [
+          "p0191-b0001",
+          "p0191-b0002",
+          "p0191-b0003",
+          "p0191-b0004",
+          "p0191-b0005",
+          "p0191-b0006",
+          "p0191-b0007",
+          "p0191-b0008",
+          "p0191-b0009"
+        ],
+        "confirmed_block_ids": [
+          "p0191-b0001",
+          "p0191-b0002",
+          "p0191-b0003",
+          "p0191-b0004",
+          "p0191-b0005",
+          "p0191-b0006",
+          "p0191-b0007",
+          "p0191-b0008",
+          "p0191-b0009"
+        ]
+      },
+      "notes": "Confirmed Vera Cruz closing dateline and treasure inventory concluding First Letter."
+    },
+    "205": {
+      "page_number": 205,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "acca401681f9f590d71c849bea1cd448f485b855b184af8f294d4611f8fe6fc9",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0205",
+        "reread_block_ids": [
+          "p0205-b0001",
+          "p0205-b0002",
+          "p0205-b0003",
+          "p0205-b0004",
+          "p0205-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0205-b0001",
+          "p0205-b0002",
+          "p0205-b0003",
+          "p0205-b0004",
+          "p0205-b0005"
+        ]
+      },
+      "notes": "Confirmed Second Letter (October 30, 1520) opening intact despite faint page-surface rub around 'gives [an] account'."
+    },
+    "209": {
+      "page_number": 209,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "f2cf3357073b58c38cc74f43a1b32ebbb725e6e37301c31512f9ee698a3d159a",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0209",
+        "reread_block_ids": [
+          "p0209-b0001",
+          "p0209-b0002",
+          "p0209-b0003",
+          "p0209-b0004",
+          "p0209-b0005",
+          "p0209-b0006",
+          "p0209-b0007",
+          "p0209-b0008",
+          "p0209-b0009",
+          "p0209-b0010",
+          "p0209-b0011",
+          "p0209-b0012",
+          "p0209-b0013",
+          "p0209-b0014",
+          "p0209-b0015",
+          "p0209-b0016",
+          "p0209-b0017",
+          "p0209-b0018",
+          "p0209-b0019",
+          "p0209-b0020",
+          "p0209-b0021",
+          "p0209-b0022",
+          "p0209-b0023",
+          "p0209-b0024",
+          "p0209-b0025",
+          "p0209-b0026",
+          "p0209-b0027",
+          "p0209-b0028",
+          "p0209-b0029",
+          "p0209-b0030",
+          "p0209-b0031",
+          "p0209-b0032",
+          "p0209-b0033"
+        ],
+        "confirmed_block_ids": [
+          "p0209-b0001",
+          "p0209-b0002",
+          "p0209-b0003",
+          "p0209-b0004",
+          "p0209-b0005",
+          "p0209-b0006",
+          "p0209-b0007",
+          "p0209-b0008",
+          "p0209-b0009",
+          "p0209-b0010",
+          "p0209-b0011",
+          "p0209-b0012",
+          "p0209-b0013",
+          "p0209-b0014",
+          "p0209-b0015",
+          "p0209-b0016",
+          "p0209-b0017",
+          "p0209-b0018",
+          "p0209-b0019",
+          "p0209-b0020",
+          "p0209-b0021",
+          "p0209-b0022",
+          "p0209-b0023",
+          "p0209-b0024",
+          "p0209-b0025",
+          "p0209-b0026",
+          "p0209-b0027",
+          "p0209-b0028",
+          "p0209-b0029",
+          "p0209-b0030",
+          "p0209-b0031",
+          "p0209-b0032",
+          "p0209-b0033"
+        ]
+      },
+      "notes": "Confirmed Plan of Mexico-Tenochtitlan plate and numbered legend 1..31."
+    },
+    "215": {
+      "page_number": 215,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "aef4713439a25c45d976890dedcc5e261bb9fa768dbc4c795aef3979c2a1bbc4",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0215",
+        "reread_block_ids": [
+          "p0215-b0001",
+          "p0215-b0002",
+          "p0215-b0003",
+          "p0215-b0004",
+          "p0215-b0005",
+          "p0215-b0006",
+          "p0215-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0215-b0001",
+          "p0215-b0002",
+          "p0215-b0003",
+          "p0215-b0004",
+          "p0215-b0005",
+          "p0215-b0006",
+          "p0215-b0007"
+        ]
+      },
+      "notes": "Identified compositor duplicate callout ('¹' printed twice on folio 193 for notes 1 and 2); linked footnote 2."
+    },
+    "223": {
+      "page_number": 223,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "aa7e724f4dcc1e68bc3d353bfb515a9c36d4afda83b5ac259574d1f216543a79",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0223",
+        "reread_block_ids": [
+          "p0223-b0001",
+          "p0223-b0002"
+        ],
+        "confirmed_block_ids": [
+          "p0223-b0001",
+          "p0223-b0002"
+        ]
+      },
+      "notes": "Confirmed rotated engraving 'Uscio delle muraglie delle Città' / 'THE WALL OF TLASCALA'."
+    },
+    "254": {
+      "page_number": 254,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "e93a5c703771f0b2b146f39ef07784fa8685025338610aa6539449e2d0a59366",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0254",
+        "reread_block_ids": [
+          "p0254-b0001",
+          "p0254-b0002",
+          "p0254-b0003",
+          "p0254-b0004",
+          "p0254-b0005",
+          "p0254-b0006",
+          "p0254-b0007",
+          "p0254-b0008",
+          "p0254-b0009"
+        ],
+        "confirmed_block_ids": [
+          "p0254-b0001",
+          "p0254-b0002",
+          "p0254-b0003",
+          "p0254-b0004",
+          "p0254-b0005",
+          "p0254-b0006",
+          "p0254-b0007",
+          "p0254-b0008",
+          "p0254-b0009"
+        ]
+      },
+      "notes": "Confirmed printed diaeresis in 'zoölogical' on folio 230."
+    },
+    "273": {
+      "page_number": 273,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "df580d0618b0f6e22b504e2a1707bfa47f01b402bb6c640a159e94ce176dbcf4",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0273",
+        "reread_block_ids": [
+          "p0273-b0001",
+          "p0273-b0002",
+          "p0273-b0003",
+          "p0273-b0004",
+          "p0273-b0005",
+          "p0273-b0006",
+          "p0273-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0273-b0001",
+          "p0273-b0002",
+          "p0273-b0003",
+          "p0273-b0004",
+          "p0273-b0005",
+          "p0273-b0006",
+          "p0273-b0007"
+        ]
+      },
+      "notes": "Identified compositor mismatch between inline callout '1' and footnote '56' on folio 249; linked note 56."
+    },
+    "323": {
+      "page_number": 323,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "7afce5bc8be732391dd6e30d3919bc643bb843794e4a38227ef8f05c99b4a5ab",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0323",
+        "reread_block_ids": [
+          "p0323-b0001",
+          "p0323-b0002",
+          "p0323-b0003",
+          "p0323-b0004",
+          "p0323-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0323-b0001",
+          "p0323-b0002",
+          "p0323-b0003",
+          "p0323-b0004",
+          "p0323-b0005"
+        ]
+      },
+      "notes": "Corrected paper speck above 'u' in 'thereaboüts' to 'thereabouts' on folio 299."
+    },
+    "347": {
+      "page_number": 347,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "4f401eb0e3d4407b572267c2c07cd18f3760a1cd863222ccb36bd2d649b75635",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0347",
+        "reread_block_ids": [
+          "p0347-b0001",
+          "p0347-b0002",
+          "p0347-b0003",
+          "p0347-b0004",
+          "p0347-b0005",
+          "p0347-b0006",
+          "p0347-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0347-b0001",
+          "p0347-b0002",
+          "p0347-b0003",
+          "p0347-b0004",
+          "p0347-b0005",
+          "p0347-b0006",
+          "p0347-b0007"
+        ]
+      },
+      "notes": "Confirmed 'Fernan Cortes' closing and 1522 Cromberger postscript 'Note.¹' concluding Second Letter."
+    },
+    "356": {
+      "page_number": 356,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-17T22:41:27.174910+00:00",
+      "source_page_sha256": "29cff2bc534460b8949e4141ef23f437177e815e1e429f37ddf1f43f885f5d51",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0356",
+        "reread_block_ids": [
+          "p0356-b0001",
+          "p0356-b0002",
+          "p0356-b0003",
+          "p0356-b0004",
+          "p0356-b0005",
+          "p0356-b0006",
+          "p0356-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0356-b0001",
+          "p0356-b0002",
+          "p0356-b0003",
+          "p0356-b0004",
+          "p0356-b0005",
+          "p0356-b0006",
+          "p0356-b0007"
+        ]
+      },
+      "notes": "Confirmed printed accents 'façades' and 'naïveté' on folio 332."
+    }
+  }
+}

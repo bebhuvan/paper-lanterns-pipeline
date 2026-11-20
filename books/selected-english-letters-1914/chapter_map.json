@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "selected-english-letters-1914",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Cover, Title Page & Copyright",
+      "start_page": 1,
+      "end_page": 6
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents",
+      "start_page": 7,
+      "end_page": 8
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Introductory",
+      "start_page": 9,
+      "end_page": 14
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters I–VIII: Paston, Sidney, Bacon, Swift, Addison, Steele & Pope (1478–1728)",
+      "start_page": 15,
+      "end_page": 26
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters IX–XVII: Montagu, Chesterfield, Franklin, Johnson, Walpole, Goldsmith & Cowper (1717–1786)",
+      "start_page": 27,
+      "end_page": 48
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters XVIII–XXVII: Adams, Burns, Scott, Sydney Smith, Coleridge, Lamb, Haydon & Byron (1787–1824)",
+      "start_page": 49,
+      "end_page": 65
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters XXVIII–XLII: Shelley, Carlyle, Hood, Macaulay, Jane Carlyle, Sterling, Whittier, Lincoln, Holmes, FitzGerald & Thackeray (1820–1876)",
+      "start_page": 66,
+      "end_page": 90
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters XLIII–LII: Dickens, Browning, Brontë, Hoar, Thoreau, Ruskin, Lowell, Leland & Aldrich (1837–1899)",
+      "start_page": 91,
+      "end_page": 109
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters LIII–LX: Stevenson, Hearn, Moody, Eliot, van Dyke & Modern Business Letters (1880–1913)",
+      "start_page": 110,
+      "end_page": 125
+    },
+    {
+      "kind": "backmatter",
+      "title": "Notes",
+      "start_page": 126,
+      "end_page": 129
+    },
+    {
+      "kind": "backmatter",
+      "title": "Publisher's Catalog & Preservation Endpapers",
+      "start_page": 130,
+      "end_page": 136
+    }
+  ]
+}

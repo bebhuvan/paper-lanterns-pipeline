@@ -1,0 +1,49 @@
+{
+  "book_id": "cortes-letters-vol1-1908",
+  "page_number": 107,
+  "check_id": "scan-check-p0107",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "fb6f2bd0b7f285db8debd7bf37dafd5d296bbb836970dcdce8cfc8da24d0cf95",
+  "checks": [
+    {
+      "block_id": "p0107-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Melchor de Mojica notary acceptance inside Article XXII of Last Will and Testament (not an epistle split)."
+    },
+    {
+      "block_id": "p0107-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Melchor de Mojica notary acceptance inside Article XXII of Last Will and Testament (not an epistle split)."
+    },
+    {
+      "block_id": "p0107-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Melchor de Mojica notary acceptance inside Article XXII of Last Will and Testament (not an epistle split)."
+    },
+    {
+      "block_id": "p0107-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Melchor de Mojica notary acceptance inside Article XXII of Last Will and Testament (not an epistle split)."
+    },
+    {
+      "block_id": "p0107-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Melchor de Mojica notary acceptance inside Article XXII of Last Will and Testament (not an epistle split)."
+    },
+    {
+      "block_id": "p0107-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Melchor de Mojica notary acceptance inside Article XXII of Last Will and Testament (not an epistle split)."
+    },
+    {
+      "block_id": "p0107-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Melchor de Mojica notary acceptance inside Article XXII of Last Will and Testament (not an epistle split)."
+    },
+    {
+      "block_id": "p0107-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Melchor de Mojica notary acceptance inside Article XXII of Last Will and Testament (not an epistle split)."
+    }
+  ]
+}

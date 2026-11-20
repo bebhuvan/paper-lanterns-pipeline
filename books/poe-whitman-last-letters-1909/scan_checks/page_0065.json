@@ -1,0 +1,44 @@
+{
+  "book_id": "poe-whitman-last-letters-1909",
+  "page_number": 65,
+  "check_id": "scan-check-p0065",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "48502913b7c7cf8758bb133275df0e2089a06e36904a4732005f278e8d12aea6",
+  "checks": [
+    {
+      "block_id": "p0065-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified NINTH AND LAST LETTER floral headpiece dropped and fragmentary January 1849 text."
+    },
+    {
+      "block_id": "p0065-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified NINTH AND LAST LETTER floral headpiece dropped and fragmentary January 1849 text."
+    },
+    {
+      "block_id": "p0065-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified NINTH AND LAST LETTER floral headpiece dropped and fragmentary January 1849 text."
+    },
+    {
+      "block_id": "p0065-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified NINTH AND LAST LETTER floral headpiece dropped and fragmentary January 1849 text."
+    },
+    {
+      "block_id": "p0065-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified NINTH AND LAST LETTER floral headpiece dropped and fragmentary January 1849 text."
+    },
+    {
+      "block_id": "p0065-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified NINTH AND LAST LETTER floral headpiece dropped and fragmentary January 1849 text."
+    },
+    {
+      "block_id": "p0065-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified NINTH AND LAST LETTER floral headpiece dropped and fragmentary January 1849 text."
+    }
+  ]
+}

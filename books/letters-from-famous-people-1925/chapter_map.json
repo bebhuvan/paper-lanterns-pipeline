@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "letters-from-famous-people-1925",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Cover, Front Endpapers & Fly-Title",
+      "start_page": 1,
+      "end_page": 6
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Title Page & Copyright",
+      "start_page": 7,
+      "end_page": 8
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Preface",
+      "start_page": 9,
+      "end_page": 10
+    },
+    {
+      "kind": "index",
+      "title": "List of Contributors",
+      "start_page": 11,
+      "end_page": 21
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Half-Title",
+      "start_page": 22,
+      "end_page": 24
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters: Abdullah to Clark (A–C)",
+      "start_page": 25,
+      "end_page": 84
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters: Claudy to Fiske (C–F)",
+      "start_page": 85,
+      "end_page": 126
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters: Folks to Hall (F–H)",
+      "start_page": 127,
+      "end_page": 155
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters: Hare to MacGregor (H–M)",
+      "start_page": 156,
+      "end_page": 205
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters: MacNider to Ray (M–R)",
+      "start_page": 206,
+      "end_page": 263
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters: Rea to Sykes (R–S)",
+      "start_page": 264,
+      "end_page": 314
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters: Tarkington to Zukor (T–Z)",
+      "start_page": 315,
+      "end_page": 356
+    },
+    {
+      "kind": "index",
+      "title": "Brief Biographies of Contributors",
+      "start_page": 357,
+      "end_page": 386
+    },
+    {
+      "kind": "backmatter",
+      "title": "Preservation Endpapers",
+      "start_page": 387,
+      "end_page": 392
+    }
+  ]
+}

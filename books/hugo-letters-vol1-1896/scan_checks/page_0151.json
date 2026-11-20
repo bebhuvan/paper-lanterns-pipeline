@@ -1,0 +1,54 @@
+{
+  "book_id": "hugo-letters-vol1-1896",
+  "page_number": 151,
+  "check_id": "scan-check-p0151",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "7ec995fe2ebbaee4c06d61b81d722982cd21def95d2981c6a700342835e68c17",
+  "checks": [
+    {
+      "block_id": "p0151-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Part III LIII. to Armand Carrel on p. 151 (folio 137)."
+    },
+    {
+      "block_id": "p0151-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Part III LIII. to Armand Carrel on p. 151 (folio 137)."
+    },
+    {
+      "block_id": "p0151-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Part III LIII. to Armand Carrel on p. 151 (folio 137)."
+    },
+    {
+      "block_id": "p0151-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Part III LIII. to Armand Carrel on p. 151 (folio 137)."
+    },
+    {
+      "block_id": "p0151-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Part III LIII. to Armand Carrel on p. 151 (folio 137)."
+    },
+    {
+      "block_id": "p0151-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Part III LIII. to Armand Carrel on p. 151 (folio 137)."
+    },
+    {
+      "block_id": "p0151-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Part III LIII. to Armand Carrel on p. 151 (folio 137)."
+    },
+    {
+      "block_id": "p0151-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Part III LIII. to Armand Carrel on p. 151 (folio 137)."
+    },
+    {
+      "block_id": "p0151-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Part III LIII. to Armand Carrel on p. 151 (folio 137)."
+    }
+  ]
+}

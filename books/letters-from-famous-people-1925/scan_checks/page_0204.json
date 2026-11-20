@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "letters-from-famous-people-1925",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 204,
+  "reviewer": "native-vision-350ppi-scan-check",
+  "checked_at": "2026-11-19T06:46:11.101499+00:00",
+  "source_page_sha256": "7f6bdabe8806a02c9d8f0f29ec7548b4993258c2d9f9c2263d854422e572ae37",
+  "render_png": "renders/page_0204.png",
+  "checks": [
+    {
+      "block_id": "p0204-b0001",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0204.png."
+    },
+    {
+      "block_id": "p0204-b0002",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0204.png."
+    },
+    {
+      "block_id": "p0204-b0003",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0204.png."
+    },
+    {
+      "block_id": "p0204-b0004",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0204.png."
+    },
+    {
+      "block_id": "p0204-b0005",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0204.png."
+    },
+    {
+      "block_id": "p0204-b0006",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0204.png."
+    },
+    {
+      "block_id": "p0204-b0007",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0204.png."
+    }
+  ],
+  "correction_ids": []
+}

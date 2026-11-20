@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-1-1602-1613",
+  "page_number": 236,
+  "check_id": "vol1-scan-check-p0236",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "2bf2738399c9e0b302c55f931c149e7e18874e16506d3376bd2560ba3f966f67",
+  "checked_at": "2026-11-17T20:13:15.909303+00:00",
+  "checks": [
+    {
+      "block_id": "p0236-b0003",
+      "token": "¼th",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0236.png: printed stacked fraction ¼ encoded with <sup>1</sup>."
+    }
+  ]
+}

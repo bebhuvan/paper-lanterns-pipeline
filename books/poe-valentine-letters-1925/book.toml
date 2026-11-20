@@ -1,0 +1,22 @@
+[book]
+book_id = "poe-valentine-letters-1925"
+title = "Edgar Allan Poe Letters Till Now Unpublished, in the Valentine Museum, Richmond, Virginia"
+author_or_editor = "Edgar Allan Poe (ed. Mary Newton Stanard)"
+authors = ["Edgar Allan Poe", "Mary Newton Stanard (ed.)"]
+publication_year = 1925
+subtitle = "With Introductory Essay and Commentary by Mary Newton Stanard"
+imprint = "Philadelphia & London: J. B. Lippincott Company, 1925"
+collection = "world-correspondence"
+language = "en"
+declared_scripts = ["Latin", "European diacritics"]
+profile = "polyglot_epistolary"
+active_run_id = "canonical-hydrogen-batch-v1"
+
+[source]
+archive_id = "in.ernet.dli.2015.88404"
+source_pdf = "sources/in.ernet.dli.2015.88404/in.ernet.dli.2015.88404.originals.pdf"
+source_pdf_sha256 = "a199aaefc840ee1fa405051845e0a57b415f1c306c50a3798f6327d962b32a68"
+
+[extraction]
+profile = "polyglot_epistolary"
+render_dpi = 350

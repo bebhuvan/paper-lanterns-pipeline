@@ -1,0 +1,1027 @@
+{
+  "version": "proof-ledger-v2",
+  "book_id": "bapu-mira-letters",
+  "updated_at": "2026-11-18T14:07:56.043944+00:00",
+  "pages": {
+    "1": {
+      "page_number": 1,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "febd238784bcd79461854b0a47a191be04d1ee5e8ff9180be9b108544a457b36",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0001",
+        "reread_block_ids": [
+          "p0001-b0001",
+          "p0001-b0002",
+          "p0001-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0001-b0001",
+          "p0001-b0002",
+          "p0001-b0003"
+        ]
+      },
+      "notes": "Confirmed torn beige dust jacket + blue cloth cover title; resolved torn <unclear> spans."
+    },
+    "8": {
+      "page_number": 8,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "7fb0dbdf0f4987220e303e7c3d363aa38d41cf49b3e0e1e7608042900f0456ec",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0008",
+        "reread_block_ids": [
+          "p0008-b0001",
+          "p0008-b0002"
+        ],
+        "confirmed_block_ids": [
+          "p0008-b0001",
+          "p0008-b0002"
+        ]
+      },
+      "notes": "Confirmed frontispiece photograph of Gandhi emerging from Sevagram cottage and caption."
+    },
+    "9": {
+      "page_number": 9,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "81e6a077f0d664238c34b98f15e7f3ba742532ebde3b45ee0aeda460bc527119",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0009",
+        "reread_block_ids": [
+          "p0009-b0001",
+          "p0009-b0002",
+          "p0009-b0003",
+          "p0009-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0009-b0001",
+          "p0009-b0002",
+          "p0009-b0003",
+          "p0009-b0004"
+        ]
+      },
+      "notes": "Confirmed title page typography and Navajivan Gujarati logo ('નવજીવન', 'જ' U+0A9C) verbatim."
+    },
+    "10": {
+      "page_number": 10,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "02047b45b2395377745a03fd4d0c1c391622febe1b4717d9c354cabd5f3fe98f",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0010",
+        "reread_block_ids": [
+          "p0010-b0001",
+          "p0010-b0002"
+        ],
+        "confirmed_block_ids": [
+          "p0010-b0001",
+          "p0010-b0002"
+        ]
+      },
+      "notes": "Confirmed 1949 imprint, Navajivan seal, and colophon."
+    },
+    "11": {
+      "page_number": 11,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "2db8e0573246c16fa9d0b83fd449f6b154d8ca12ff895aaae567cd5bce22f8a5",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0011",
+        "reread_block_ids": [
+          "p0011-b0001",
+          "p0011-b0002",
+          "p0011-b0003",
+          "p0011-b0004",
+          "p0011-b0005",
+          "p0011-b0006",
+          "p0011-b0007",
+          "p0011-b0008",
+          "p0011-b0009",
+          "p0011-b0010"
+        ],
+        "confirmed_block_ids": [
+          "p0011-b0001",
+          "p0011-b0002",
+          "p0011-b0003",
+          "p0011-b0004",
+          "p0011-b0005",
+          "p0011-b0006",
+          "p0011-b0007",
+          "p0011-b0008",
+          "p0011-b0009"
+        ]
+      },
+      "notes": "Confirmed Preface opening and folio 1."
+    },
+    "19": {
+      "page_number": 19,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "481c24dd6653981ce3b5e849df1004f83d93f48dedbcb39beacb0e16a207a855",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0019",
+        "reread_block_ids": [
+          "p0019-b0001",
+          "p0019-b0002",
+          "p0019-b0003",
+          "p0019-b0004",
+          "p0019-b0005",
+          "p0019-b0006",
+          "p0019-b0007",
+          "p0019-b0008",
+          "p0019-b0009",
+          "p0019-b0010",
+          "p0019-b0011"
+        ],
+        "confirmed_block_ids": [
+          "p0019-b0001",
+          "p0019-b0002",
+          "p0019-b0003",
+          "p0019-b0004",
+          "p0019-b0005",
+          "p0019-b0006",
+          "p0019-b0007",
+          "p0019-b0008",
+          "p0019-b0009",
+          "p0019-b0010"
+        ]
+      },
+      "notes": "Confirmed Letter 1 ('Post Card', 31-12-'24, M. K. Gandhi -> Miss Madeleine Slade) verbatim."
+    },
+    "25": {
+      "page_number": 25,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "53e09d30c72f3d23e5e8b65475803af98c4db36cb80c3e09312ab850b5a7cd1d",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0025",
+        "reread_block_ids": [
+          "p0025-b0001",
+          "p0025-b0002",
+          "p0025-b0003",
+          "p0025-b0004",
+          "p0025-b0005",
+          "p0025-b0006",
+          "p0025-b0007",
+          "p0025-b0008",
+          "p0025-b0009",
+          "p0025-b0010",
+          "p0025-b0011",
+          "p0025-b0012",
+          "p0025-b0013"
+        ],
+        "confirmed_block_ids": [
+          "p0025-b0001",
+          "p0025-b0002",
+          "p0025-b0003",
+          "p0025-b0004",
+          "p0025-b0005",
+          "p0025-b0006",
+          "p0025-b0007",
+          "p0025-b0008",
+          "p0025-b0009",
+          "p0025-b0010",
+          "p0025-b0011",
+          "p0025-b0012"
+        ]
+      },
+      "notes": "Confirmed Letter 7 Devanagari etymology ('चि.', 'चिरंजीवी', 'ज' U+091C) verbatim."
+    },
+    "67": {
+      "page_number": 67,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "3dd8c7a971cf8dda81e6685f06f77c23c0a701205c89e729b51f8f223f0d446b",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0067",
+        "reread_block_ids": [
+          "p0067-b0001",
+          "p0067-b0002",
+          "p0067-b0003",
+          "p0067-b0004",
+          "p0067-b0005",
+          "p0067-b0006",
+          "p0067-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0067-b0001",
+          "p0067-b0002",
+          "p0067-b0003",
+          "p0067-b0004",
+          "p0067-b0005",
+          "p0067-b0006"
+        ]
+      },
+      "notes": "Confirmed 'B.' postscript signature on printed p. 57 ('In Hindi.' footnote)."
+    },
+    "73": {
+      "page_number": 73,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "9c6339ac001c5b0f1195e8c2cd299dd51142ff15bf8b892689ed9e67682ede3d",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0073",
+        "reread_block_ids": [
+          "p0073-b0001",
+          "p0073-b0002",
+          "p0073-b0003",
+          "p0073-b0004",
+          "p0073-b0005",
+          "p0073-b0006",
+          "p0073-b0007"
+        ],
+        "confirmed_block_ids": [
+          "p0073-b0001",
+          "p0073-b0002",
+          "p0073-b0003",
+          "p0073-b0004",
+          "p0073-b0005",
+          "p0073-b0006"
+        ]
+      },
+      "notes": "Confirmed postal address block on printed p. 63; fixed literal \\n escapes."
+    },
+    "163": {
+      "page_number": 163,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "3437f360a48d4174109ba155f29d5c1d1f833b760ae3abc0d1f5851d3474e21f",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0163",
+        "reread_block_ids": [
+          "p0163-b0001",
+          "p0163-b0002",
+          "p0163-b0003",
+          "p0163-b0004",
+          "p0163-b0005",
+          "p0163-b0006",
+          "p0163-b0007",
+          "p0163-b0008",
+          "p0163-b0009",
+          "p0163-b0010"
+        ],
+        "confirmed_block_ids": [
+          "p0163-b0001",
+          "p0163-b0002",
+          "p0163-b0003",
+          "p0163-b0004",
+          "p0163-b0005",
+          "p0163-b0006",
+          "p0163-b0007",
+          "p0163-b0008",
+          "p0163-b0009"
+        ]
+      },
+      "notes": "Confirmed Gita Note Devanagari 'ॐ' (U+0950) and 25-1-'31 continuation inside Letter 130."
+    },
+    "167": {
+      "page_number": 167,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "c25a925bd9c77cb7a70cb48d4a7c898155cda5b3c14110d5fb6374bba0306702",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0167",
+        "reread_block_ids": [
+          "p0167-b0001",
+          "p0167-b0002",
+          "p0167-b0003",
+          "p0167-b0004",
+          "p0167-b0005",
+          "p0167-b0006",
+          "p0167-b0007",
+          "p0167-b0008",
+          "p0167-b0009",
+          "p0167-b0010",
+          "p0167-b0011",
+          "p0167-b0012"
+        ],
+        "confirmed_block_ids": [
+          "p0167-b0001",
+          "p0167-b0002",
+          "p0167-b0003",
+          "p0167-b0004",
+          "p0167-b0005",
+          "p0167-b0006",
+          "p0167-b0007",
+          "p0167-b0008",
+          "p0167-b0009",
+          "p0167-b0010",
+          "p0167-b0011"
+        ]
+      },
+      "notes": "Confirmed 'Simla*' callout and restored leading '*' marker on footnote block p0167-b0011."
+    },
+    "185": {
+      "page_number": 185,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "a18d9056099e3570631d6bc87882adbe105faf263ceff1d7e18d2b9e02ce8167",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0185",
+        "reread_block_ids": [
+          "p0185-b0001",
+          "p0185-b0002",
+          "p0185-b0003",
+          "p0185-b0004",
+          "p0185-b0005",
+          "p0185-b0006",
+          "p0185-b0007",
+          "p0185-b0008",
+          "p0185-b0009",
+          "p0185-b0010",
+          "p0185-b0011"
+        ],
+        "confirmed_block_ids": [
+          "p0185-b0001",
+          "p0185-b0002",
+          "p0185-b0003",
+          "p0185-b0004",
+          "p0185-b0005",
+          "p0185-b0006",
+          "p0185-b0007",
+          "p0185-b0008",
+          "p0185-b0009",
+          "p0185-b0010"
+        ]
+      },
+      "notes": "Confirmed Letter 148 printed 'correspondenees' (compositor typo documented in p. 402 Erratum) verbatim."
+    },
+    "217": {
+      "page_number": 217,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "887509f7b80f534884a353796c409b654803a6945fe000515ad6c4bf422fa1b1",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0217",
+        "reread_block_ids": [
+          "p0217-b0001",
+          "p0217-b0002",
+          "p0217-b0003",
+          "p0217-b0004",
+          "p0217-b0005",
+          "p0217-b0006",
+          "p0217-b0007",
+          "p0217-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0217-b0001",
+          "p0217-b0002",
+          "p0217-b0003",
+          "p0217-b0004",
+          "p0217-b0005",
+          "p0217-b0006",
+          "p0217-b0007"
+        ]
+      },
+      "notes": "Confirmed Letter 169 Devanagari 'खारेक.*' ('ख' U+0916) and footnote '* छोहारा.' verbatim."
+    },
+    "231": {
+      "page_number": 231,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "0e7ea78afb708fe37b1fef33232b0a6741bb5aa585cd53cf5ef0aef0f4dc44cf",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0231",
+        "reread_block_ids": [
+          "p0231-b0001",
+          "p0231-b0002",
+          "p0231-b0003",
+          "p0231-b0004",
+          "p0231-b0005",
+          "p0231-b0006",
+          "p0231-b0007",
+          "p0231-b0008",
+          "p0231-b0009"
+        ],
+        "confirmed_block_ids": [
+          "p0231-b0001",
+          "p0231-b0002",
+          "p0231-b0003",
+          "p0231-b0004",
+          "p0231-b0005",
+          "p0231-b0006",
+          "p0231-b0007",
+          "p0231-b0008"
+        ]
+      },
+      "notes": "Confirmed Devanagari 'औषध' ('औ' U+0914) in dietary letter verbatim."
+    },
+    "269": {
+      "page_number": 269,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "7a569205388da47ef9961b9b7e6d475890ee3345c501dcff1098295efa062f70",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0269",
+        "reread_block_ids": [
+          "p0269-b0001",
+          "p0269-b0002",
+          "p0269-b0003",
+          "p0269-b0004",
+          "p0269-b0005",
+          "p0269-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0269-b0001",
+          "p0269-b0002",
+          "p0269-b0003",
+          "p0269-b0004",
+          "p0269-b0005"
+        ]
+      },
+      "notes": "Confirmed left-hand autograph facsimile of Letter 207 ('24 4 33') and caption verbatim."
+    },
+    "270": {
+      "page_number": 270,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "a50f17f4e5d40977709bca6e4566e1feb2d438a8dabfc22890206f30e4f643f2",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0270",
+        "reread_block_ids": [
+          "p0270-b0001",
+          "p0270-b0002",
+          "p0270-b0003",
+          "p0270-b0004",
+          "p0270-b0005",
+          "p0270-b0006",
+          "p0270-b0007",
+          "p0270-b0008",
+          "p0270-b0009",
+          "p0270-b0010"
+        ],
+        "confirmed_block_ids": [
+          "p0270-b0001",
+          "p0270-b0002",
+          "p0270-b0003",
+          "p0270-b0004",
+          "p0270-b0005",
+          "p0270-b0006",
+          "p0270-b0007",
+          "p0270-b0008",
+          "p0270-b0009"
+        ]
+      },
+      "notes": "Confirmed unnumbered 4-5-'33 letter on printed p. 260 and purificatory fast footnote verbatim."
+    },
+    "292": {
+      "page_number": 292,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "a8cc4cff154d453b12c36ae8a0cd6e345bb5c96579356fc3c505a0054cb0c499",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0292",
+        "reread_block_ids": [
+          "p0292-b0001",
+          "p0292-b0002",
+          "p0292-b0003",
+          "p0292-b0004",
+          "p0292-b0005",
+          "p0292-b0006",
+          "p0292-b0007",
+          "p0292-b0008",
+          "p0292-b0009",
+          "p0292-b0010",
+          "p0292-b0011",
+          "p0292-b0012",
+          "p0292-b0013",
+          "p0292-b0014"
+        ],
+        "confirmed_block_ids": [
+          "p0292-b0001",
+          "p0292-b0002",
+          "p0292-b0003",
+          "p0292-b0004",
+          "p0292-b0005",
+          "p0292-b0006",
+          "p0292-b0007",
+          "p0292-b0008",
+          "p0292-b0009",
+          "p0292-b0010",
+          "p0292-b0011",
+          "p0292-b0012",
+          "p0292-b0013"
+        ]
+      },
+      "notes": "Confirmed Letter 234 '16-8-'34 / Not revised' closer and footnote verbatim."
+    },
+    "295": {
+      "page_number": 295,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "18595efee1f17c442715ef07148b9d26cfbd1bc0482d2743df2751fbcafd9914",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0295",
+        "reread_block_ids": [
+          "p0295-b0001",
+          "p0295-b0002",
+          "p0295-b0003",
+          "p0295-b0004",
+          "p0295-b0005",
+          "p0295-b0006",
+          "p0295-b0007",
+          "p0295-b0008",
+          "p0295-b0009",
+          "p0295-b0010",
+          "p0295-b0011",
+          "p0295-b0012",
+          "p0295-b0013",
+          "p0295-b0014"
+        ],
+        "confirmed_block_ids": [
+          "p0295-b0001",
+          "p0295-b0002",
+          "p0295-b0003",
+          "p0295-b0004",
+          "p0295-b0005",
+          "p0295-b0006",
+          "p0295-b0007",
+          "p0295-b0008",
+          "p0295-b0009",
+          "p0295-b0010",
+          "p0295-b0011",
+          "p0295-b0012",
+          "p0295-b0013"
+        ]
+      },
+      "notes": "Confirmed Letter 239 dateline and footnote on printed p. 285; fixed literal \\n escape."
+    },
+    "314": {
+      "page_number": 314,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "c0743998377052b5a53005711fd547d04d6b9c054ebe3fd0d62ccb2ebce12899",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0314",
+        "reread_block_ids": [
+          "p0314-b0001",
+          "p0314-b0002"
+        ],
+        "confirmed_block_ids": [
+          "p0314-b0001"
+        ]
+      },
+      "notes": "Confirmed full-page layout diagram of Segaon ('304') correctly classified as illustration plate."
+    },
+    "331": {
+      "page_number": 331,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "7f8cdade172d9aef7bff45b4d15d3c5b7a8608f67505be667a64af6f9e8d2dc4",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0331",
+        "reread_block_ids": [
+          "p0331-b0001",
+          "p0331-b0002",
+          "p0331-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0331-b0001",
+          "p0331-b0002",
+          "p0331-b0003"
+        ]
+      },
+      "notes": "Confirmed Balwant Singh & calf photograph plate and 'Page 318' caption."
+    },
+    "366": {
+      "page_number": 366,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "595a7d4a95ec81be593e51028017102bc87b74ab736467fbce692060de03718d",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0366",
+        "reread_block_ids": [
+          "p0366-b0001",
+          "p0366-b0002",
+          "p0366-b0003",
+          "p0366-b0004",
+          "p0366-b0005",
+          "p0366-b0006",
+          "p0366-b0007",
+          "p0366-b0008",
+          "p0366-b0009",
+          "p0366-b0010",
+          "p0366-b0011",
+          "p0366-b0012",
+          "p0366-b0013"
+        ],
+        "confirmed_block_ids": [
+          "p0366-b0001",
+          "p0366-b0002",
+          "p0366-b0003",
+          "p0366-b0004",
+          "p0366-b0005",
+          "p0366-b0006",
+          "p0366-b0007",
+          "p0366-b0008",
+          "p0366-b0009",
+          "p0366-b0010",
+          "p0366-b0011",
+          "p0366-b0012"
+        ]
+      },
+      "notes": "Confirmed unnumbered 'Postcard' (Sevagram, 18-5-'42) between Letters 357 and 358."
+    },
+    "371": {
+      "page_number": 371,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "87013199e0618c4d6f1ee4d3d79bf05f90aa7805c44c9447b1f33a8fe861632f",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0371",
+        "reread_block_ids": [
+          "p0371-b0001",
+          "p0371-b0002",
+          "p0371-b0003",
+          "p0371-b0004",
+          "p0371-b0005",
+          "p0371-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0371-b0001",
+          "p0371-b0002",
+          "p0371-b0003",
+          "p0371-b0004",
+          "p0371-b0005"
+        ]
+      },
+      "notes": "Confirmed closing of Mirabehn's enclosed Orissa report ('Mira') belonging inside Letter 358."
+    },
+    "376": {
+      "page_number": 376,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "2af94007a5da542dc03591da28ed481387f5dd5e41c6a4e4d7f1cc74e2afcc3a",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0376",
+        "reread_block_ids": [
+          "p0376-b0001",
+          "p0376-b0002",
+          "p0376-b0003",
+          "p0376-b0004",
+          "p0376-b0005",
+          "p0376-b0006",
+          "p0376-b0007",
+          "p0376-b0008",
+          "p0376-b0009",
+          "p0376-b0010",
+          "p0376-b0011",
+          "p0376-b0012",
+          "p0376-b0013",
+          "p0376-b0014"
+        ],
+        "confirmed_block_ids": [
+          "p0376-b0001",
+          "p0376-b0002",
+          "p0376-b0003",
+          "p0376-b0004",
+          "p0376-b0005",
+          "p0376-b0006",
+          "p0376-b0007",
+          "p0376-b0008",
+          "p0376-b0009",
+          "p0376-b0010",
+          "p0376-b0011",
+          "p0376-b0012",
+          "p0376-b0013"
+        ]
+      },
+      "notes": "Confirmed unnumbered 'Postcard' (Sevagram, Wardha, 3-8-'44) before Letter 362 and footnotes."
+    },
+    "390": {
+      "page_number": 390,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "ab4097384fab46a299f706c47a2ac69b2916211961692e63d19190cbe46a1bd3",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0390",
+        "reread_block_ids": [
+          "p0390-b0001",
+          "p0390-b0002",
+          "p0390-b0003",
+          "p0390-b0004"
+        ],
+        "confirmed_block_ids": [
+          "p0390-b0001",
+          "p0390-b0002",
+          "p0390-b0003"
+        ]
+      },
+      "notes": "Confirmed Birla House photograph plate and 'Page 382' caption."
+    },
+    "399": {
+      "page_number": 399,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "b46403b92f840820c08c144edab422a452782d5a0a0944d14576236ad6581efd",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0399",
+        "reread_block_ids": [
+          "p0399-b0001",
+          "p0399-b0002",
+          "p0399-b0003",
+          "p0399-b0004",
+          "p0399-b0005"
+        ],
+        "confirmed_block_ids": [
+          "p0399-b0001",
+          "p0399-b0002",
+          "p0399-b0003",
+          "p0399-b0004"
+        ]
+      },
+      "notes": "Confirmed autograph postcard facsimile of Letter 386 in Gujarati/English and resolved <unclear>H.</unclear> -> H."
+    },
+    "400": {
+      "page_number": 400,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "54184ad45fc5e6101d1be4572ce6339aae3205a7a0131d56bef81e4e82ace287",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0400",
+        "reread_block_ids": [
+          "p0400-b0001",
+          "p0400-b0002",
+          "p0400-b0003",
+          "p0400-b0004",
+          "p0400-b0005",
+          "p0400-b0006",
+          "p0400-b0007",
+          "p0400-b0008"
+        ],
+        "confirmed_block_ids": [
+          "p0400-b0001",
+          "p0400-b0002",
+          "p0400-b0003",
+          "p0400-b0004",
+          "p0400-b0005",
+          "p0400-b0006",
+          "p0400-b0007"
+        ]
+      },
+      "notes": "Confirmed Mirabehn's Memorial Epilogue 'THEY HAVE BECOME ONE' opening in backmatter."
+    },
+    "402": {
+      "page_number": 402,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-350ppi-scan-check",
+      "verified_at": "2026-11-18T14:07:56.043944+00:00",
+      "source_page_sha256": "5467dc51c0986601cea685b19d19ec4a1907186399a29e409bb4938167d01421",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0402",
+        "reread_block_ids": [
+          "p0402-b0001",
+          "p0402-b0002"
+        ],
+        "confirmed_block_ids": [
+          "p0402-b0001",
+          "p0402-b0002"
+        ]
+      },
+      "notes": "Confirmed 'ERRATUM' block ('On page 175, line 6, read Correspondees for Correspondenees.') verbatim."
+    }
+  }
+}

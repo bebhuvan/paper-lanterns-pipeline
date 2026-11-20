@@ -1,0 +1,59 @@
+{
+  "book_id": "pascal-miscellaneous-writings-1849",
+  "page_number": 394,
+  "check_id": "scan-check-p0394",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "34ad20a11f19571d050c754d265135e8fef034c36127f07b312674183162fdac",
+  "checks": [
+    {
+      "block_id": "p0394-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'circumferatur.' in italic Latin column with slightly raised glyph 'r' (not a superscript callout)."
+    },
+    {
+      "block_id": "p0394-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'circumferatur.' in italic Latin column with slightly raised glyph 'r' (not a superscript callout)."
+    },
+    {
+      "block_id": "p0394-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'circumferatur.' in italic Latin column with slightly raised glyph 'r' (not a superscript callout)."
+    },
+    {
+      "block_id": "p0394-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'circumferatur.' in italic Latin column with slightly raised glyph 'r' (not a superscript callout)."
+    },
+    {
+      "block_id": "p0394-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'circumferatur.' in italic Latin column with slightly raised glyph 'r' (not a superscript callout)."
+    },
+    {
+      "block_id": "p0394-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'circumferatur.' in italic Latin column with slightly raised glyph 'r' (not a superscript callout)."
+    },
+    {
+      "block_id": "p0394-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'circumferatur.' in italic Latin column with slightly raised glyph 'r' (not a superscript callout)."
+    },
+    {
+      "block_id": "p0394-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'circumferatur.' in italic Latin column with slightly raised glyph 'r' (not a superscript callout)."
+    },
+    {
+      "block_id": "p0394-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'circumferatur.' in italic Latin column with slightly raised glyph 'r' (not a superscript callout)."
+    },
+    {
+      "block_id": "p0394-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'circumferatur.' in italic Latin column with slightly raised glyph 'r' (not a superscript callout)."
+    }
+  ]
+}

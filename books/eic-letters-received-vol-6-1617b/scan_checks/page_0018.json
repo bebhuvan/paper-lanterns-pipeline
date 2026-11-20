@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-6-1617b",
+  "page_number": 18,
+  "check_id": "vol6-scan-check-p0018",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "80c7eeb1c8a871cdaa3f6a7e3821e39fefba531428d0ab2d21410709b7b8a3a0",
+  "checked_at": "2026-11-17T20:23:38.959834+00:00",
+  "checks": [
+    {
+      "block_id": "p0018-b0003",
+      "token": "viâ",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0018.png: printed 'viâ'."
+    }
+  ]
+}

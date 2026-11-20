@@ -1,0 +1,64 @@
+{
+  "book_id": "eic-letters-received-vol-3-1615",
+  "page_number": 386,
+  "check_id": "vol3-scan-check-p0386",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "eb65dd4f17e27b32d23df0a79e89146b1dd0135a6bf4f02eb09cd40b699a12dc",
+  "checked_at": "2026-11-18T02:30:00+00:00",
+  "checks": [
+    {
+      "block_id": "p0386-b0003",
+      "token": "^2",
+      "verdict": "printed_as_read",
+      "note": "Verified on NOTES. page scans (pp. 343-388): printed superscript endnote number."
+    },
+    {
+      "block_id": "p0386-b0004",
+      "token": "^3",
+      "verdict": "printed_as_read",
+      "note": "Verified on NOTES. page scans (pp. 343-388): printed superscript endnote number."
+    },
+    {
+      "block_id": "p0386-b0005",
+      "token": "^4",
+      "verdict": "printed_as_read",
+      "note": "Verified on NOTES. page scans (pp. 343-388): printed superscript endnote number."
+    },
+    {
+      "block_id": "p0386-b0007",
+      "token": "^1",
+      "verdict": "printed_as_read",
+      "note": "Verified on NOTES. page scans (pp. 343-388): printed superscript endnote number."
+    },
+    {
+      "block_id": "p0386-b0008",
+      "token": "^2",
+      "verdict": "printed_as_read",
+      "note": "Verified on NOTES. page scans (pp. 343-388): printed superscript endnote number."
+    },
+    {
+      "block_id": "p0386-b0009",
+      "token": "^3",
+      "verdict": "printed_as_read",
+      "note": "Verified on NOTES. page scans (pp. 343-388): printed superscript endnote number."
+    },
+    {
+      "block_id": "p0386-b0010",
+      "token": "^4",
+      "verdict": "printed_as_read",
+      "note": "Verified on NOTES. page scans (pp. 343-388): printed superscript endnote number."
+    },
+    {
+      "block_id": "p0386-b0012",
+      "token": "^1",
+      "verdict": "printed_as_read",
+      "note": "Verified on NOTES. page scans (pp. 343-388): printed superscript endnote number."
+    },
+    {
+      "block_id": "p0386-b0013",
+      "token": "^2",
+      "verdict": "printed_as_read",
+      "note": "Verified on NOTES. page scans (pp. 343-388): printed superscript endnote number."
+    }
+  ]
+}

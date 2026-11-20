@@ -1,0 +1,24 @@
+{
+  "book_id": "selected-english-letters-1914",
+  "page_number": 6,
+  "check_id": "scan-check-p0006",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "8ba5799b36d471d72750e81e8038b3f5824cb5ae83dc2ef560ac392dc8ad5acc",
+  "checks": [
+    {
+      "block_id": "p0006-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 1914 copyright page, acknowledgments, Riverside Press Cambridge U.S.A., and Library of Congress deposit stamp."
+    },
+    {
+      "block_id": "p0006-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 1914 copyright page, acknowledgments, Riverside Press Cambridge U.S.A., and Library of Congress deposit stamp."
+    },
+    {
+      "block_id": "p0006-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 1914 copyright page, acknowledgments, Riverside Press Cambridge U.S.A., and Library of Congress deposit stamp."
+    }
+  ]
+}

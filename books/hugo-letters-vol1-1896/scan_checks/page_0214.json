@@ -1,0 +1,84 @@
+{
+  "book_id": "hugo-letters-vol1-1896",
+  "page_number": 214,
+  "check_id": "scan-check-p0214",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "49df5969ce495681163a3e494700a3da0262600dceba6037eb19cdf9c455b0c7",
+  "checks": [
+    {
+      "block_id": "p0214-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified diagonal lower-left tear in footnote on p. 214 (folio 200): '[Par]is' and '[sangui]nary reaction,'."
+    },
+    {
+      "block_id": "p0214-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified diagonal lower-left tear in footnote on p. 214 (folio 200): '[Par]is' and '[sangui]nary reaction,'."
+    },
+    {
+      "block_id": "p0214-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified diagonal lower-left tear in footnote on p. 214 (folio 200): '[Par]is' and '[sangui]nary reaction,'."
+    },
+    {
+      "block_id": "p0214-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified diagonal lower-left tear in footnote on p. 214 (folio 200): '[Par]is' and '[sangui]nary reaction,'."
+    },
+    {
+      "block_id": "p0214-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified diagonal lower-left tear in footnote on p. 214 (folio 200): '[Par]is' and '[sangui]nary reaction,'."
+    },
+    {
+      "block_id": "p0214-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified diagonal lower-left tear in footnote on p. 214 (folio 200): '[Par]is' and '[sangui]nary reaction,'."
+    },
+    {
+      "block_id": "p0214-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified diagonal lower-left tear in footnote on p. 214 (folio 200): '[Par]is' and '[sangui]nary reaction,'."
+    },
+    {
+      "block_id": "p0214-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified diagonal lower-left tear in footnote on p. 214 (folio 200): '[Par]is' and '[sangui]nary reaction,'."
+    },
+    {
+      "block_id": "p0214-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified diagonal lower-left tear in footnote on p. 214 (folio 200): '[Par]is' and '[sangui]nary reaction,'."
+    },
+    {
+      "block_id": "p0214-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified diagonal lower-left tear in footnote on p. 214 (folio 200): '[Par]is' and '[sangui]nary reaction,'."
+    },
+    {
+      "block_id": "p0214-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified diagonal lower-left tear in footnote on p. 214 (folio 200): '[Par]is' and '[sangui]nary reaction,'."
+    },
+    {
+      "block_id": "p0214-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified diagonal lower-left tear in footnote on p. 214 (folio 200): '[Par]is' and '[sangui]nary reaction,'."
+    },
+    {
+      "block_id": "p0214-b0013",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified diagonal lower-left tear in footnote on p. 214 (folio 200): '[Par]is' and '[sangui]nary reaction,'."
+    },
+    {
+      "block_id": "p0214-b0014",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified diagonal lower-left tear in footnote on p. 214 (folio 200): '[Par]is' and '[sangui]nary reaction,'."
+    },
+    {
+      "block_id": "p0214-b0015",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified diagonal lower-left tear in footnote on p. 214 (folio 200): '[Par]is' and '[sangui]nary reaction,'."
+    }
+  ]
+}

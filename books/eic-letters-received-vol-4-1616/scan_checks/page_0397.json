@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-4-1616",
+  "page_number": 397,
+  "check_id": "eic-letters-received-vol-4-1616-p0397",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "bfbfad475bee059f75268e878e6d40ec56345b3d92711d39c78c3187c79cbe90",
+  "checked_at": "2026-11-17T21:16:06.113382+00:00",
+  "checks": [
+    {
+      "block_id": "p0397-b0005",
+      "token": "Abbas",
+      "verdict": "printed_as_read",
+      "note": "Index prints headwords unaccented ('Abbas, Shah')."
+    }
+  ]
+}

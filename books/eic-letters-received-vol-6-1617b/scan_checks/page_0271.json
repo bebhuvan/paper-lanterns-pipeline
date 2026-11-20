@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-6-1617b",
+  "page_number": 271,
+  "check_id": "vol6-scan-check-p0271",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "26b12e93c8927a2e5f0bcc9cdaf87bb6a4c8288eddda1016731621f14a2ca7fd",
+  "checked_at": "2026-11-17T20:23:38.959834+00:00",
+  "checks": [
+    {
+      "block_id": "p0271-b0009",
+      "token": "3 See vol. v.",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0271.png: footnote 3 printed at bottom without inline '3' in body text."
+    }
+  ]
+}

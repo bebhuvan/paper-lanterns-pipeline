@@ -1,0 +1,82 @@
+{
+  "version": "proof-ledger-v2",
+  "book_id": "voltaire-in-his-letters-1919",
+  "updated_at": "2026-11-16T12:40:32.249767+00:00",
+  "pages": {
+    "8": {
+      "page_number": 8,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-500ppi-scan-check",
+      "verified_at": "2026-11-16T12:40:32.236660+00:00",
+      "source_page_sha256": "843327903d8be90306bc47d390585749156c0e2d7be1b0cdfcb3cb03b393953c",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0008",
+        "reread_block_ids": [
+          "p0008-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0008-b0003"
+        ]
+      },
+      "notes": null
+    },
+    "140": {
+      "page_number": 140,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-500ppi-scan-check",
+      "verified_at": "2026-11-16T12:40:32.243322+00:00",
+      "source_page_sha256": "4916f556aef4fe27d87cb75e2265583cf107c3f24113a6333fea3fb195f2ca41",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0140",
+        "reread_block_ids": [
+          "p0140-b0003"
+        ],
+        "confirmed_block_ids": [
+          "p0140-b0003"
+        ]
+      },
+      "notes": null
+    },
+    "247": {
+      "page_number": 247,
+      "status": "machine_reread",
+      "signoff_method": "scan_check",
+      "p1_reviewer_id": null,
+      "p1_verified_at": null,
+      "p2_verifier_id": null,
+      "p2_verified_at": null,
+      "reviewer": "native-vision-500ppi-scan-check",
+      "verified_at": "2026-11-16T12:40:32.249734+00:00",
+      "source_page_sha256": "891128069f68954ddb67e8c939907303d0159dd59ce42f0bb319664e7806ad7d",
+      "page_text_sha256": null,
+      "attestation": null,
+      "evidence": {
+        "kind": "scan_check",
+        "verify_id": "scan-check-p0247",
+        "reread_block_ids": [
+          "p0247-b0006"
+        ],
+        "confirmed_block_ids": [
+          "p0247-b0006"
+        ]
+      },
+      "notes": null
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "book_id": "faraday-schoenbein-1899",
+  "page_number": 119,
+  "check_id": "scan-check-p0119",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "0ec3283584f272534d2106c5297d26cede6c6dbcdb9b282c8f6dddeb9d58c320",
+  "checks": [
+    {
+      "block_id": "p0119-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Mr. Worringer' / 'S.' bearer note is a postscript within July 8, 1842 letter."
+    },
+    {
+      "block_id": "p0119-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Mr. Worringer' / 'S.' bearer note is a postscript within July 8, 1842 letter."
+    },
+    {
+      "block_id": "p0119-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Mr. Worringer' / 'S.' bearer note is a postscript within July 8, 1842 letter."
+    },
+    {
+      "block_id": "p0119-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Mr. Worringer' / 'S.' bearer note is a postscript within July 8, 1842 letter."
+    },
+    {
+      "block_id": "p0119-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Mr. Worringer' / 'S.' bearer note is a postscript within July 8, 1842 letter."
+    },
+    {
+      "block_id": "p0119-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Mr. Worringer' / 'S.' bearer note is a postscript within July 8, 1842 letter."
+    },
+    {
+      "block_id": "p0119-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Mr. Worringer' / 'S.' bearer note is a postscript within July 8, 1842 letter."
+    },
+    {
+      "block_id": "p0119-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Mr. Worringer' / 'S.' bearer note is a postscript within July 8, 1842 letter."
+    },
+    {
+      "block_id": "p0119-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Mr. Worringer' / 'S.' bearer note is a postscript within July 8, 1842 letter."
+    },
+    {
+      "block_id": "p0119-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed 'Mr. Worringer' / 'S.' bearer note is a postscript within July 8, 1842 letter."
+    }
+  ]
+}

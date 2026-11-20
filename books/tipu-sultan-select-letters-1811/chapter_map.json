@@ -1,0 +1,64 @@
+{
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Title Page and Dedication",
+      "start_block_id": "p0005-b0001",
+      "end_block_id": "p0011-b0006"
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Advertisement",
+      "start_block_id": "p0013-b0001",
+      "end_block_id": "p0016-b0003"
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Preface",
+      "start_block_id": "p0017-b0001",
+      "end_block_id": "p0033-b0003"
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Remarks Explanatory of the Kalendar of Tippoo Sultan",
+      "start_block_id": "p0034-b0002",
+      "end_block_id": "p0045-b0004"
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents",
+      "start_block_id": "p0047-b0001",
+      "end_block_id": "p0059-b0029"
+    },
+    {
+      "kind": "epistolary_part",
+      "title": "Select Letters of Tippoo Sultan (Letters I–CCCCXXXV)",
+      "start_block_id": "p0061-b0001",
+      "end_block_id": "p0543-b0006"
+    },
+    {
+      "kind": "appendix",
+      "title": "Postscript",
+      "start_block_id": "p0544-b0003",
+      "end_block_id": "p0550-b0006"
+    },
+    {
+      "kind": "appendix",
+      "title": "Appendix A–L",
+      "start_block_id": "p0551-b0001",
+      "end_block_id": "p0660-b0006"
+    },
+    {
+      "kind": "index",
+      "title": "Index",
+      "start_block_id": "p0661-b0001",
+      "end_block_id": "p0663-b0053"
+    },
+    {
+      "kind": "backmatter",
+      "title": "Errata, Alterations and Additions",
+      "start_block_id": "p0664-b0001",
+      "end_block_id": "p0664-b0085"
+    }
+  ]
+}

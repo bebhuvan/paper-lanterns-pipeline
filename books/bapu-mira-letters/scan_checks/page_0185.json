@@ -1,0 +1,64 @@
+{
+  "book_id": "bapu-mira-letters",
+  "page_number": 185,
+  "check_id": "scan-check-p0185",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "a18d9056099e3570631d6bc87882adbe105faf263ceff1d7e18d2b9e02ce8167",
+  "checks": [
+    {
+      "block_id": "p0185-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 148 printed 'correspondenees' (compositor typo documented in p. 402 Erratum) verbatim."
+    },
+    {
+      "block_id": "p0185-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 148 printed 'correspondenees' (compositor typo documented in p. 402 Erratum) verbatim."
+    },
+    {
+      "block_id": "p0185-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 148 printed 'correspondenees' (compositor typo documented in p. 402 Erratum) verbatim."
+    },
+    {
+      "block_id": "p0185-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 148 printed 'correspondenees' (compositor typo documented in p. 402 Erratum) verbatim."
+    },
+    {
+      "block_id": "p0185-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 148 printed 'correspondenees' (compositor typo documented in p. 402 Erratum) verbatim."
+    },
+    {
+      "block_id": "p0185-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 148 printed 'correspondenees' (compositor typo documented in p. 402 Erratum) verbatim."
+    },
+    {
+      "block_id": "p0185-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 148 printed 'correspondenees' (compositor typo documented in p. 402 Erratum) verbatim."
+    },
+    {
+      "block_id": "p0185-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 148 printed 'correspondenees' (compositor typo documented in p. 402 Erratum) verbatim."
+    },
+    {
+      "block_id": "p0185-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 148 printed 'correspondenees' (compositor typo documented in p. 402 Erratum) verbatim."
+    },
+    {
+      "block_id": "p0185-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 148 printed 'correspondenees' (compositor typo documented in p. 402 Erratum) verbatim."
+    },
+    {
+      "block_id": "p0185-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 148 printed 'correspondenees' (compositor typo documented in p. 402 Erratum) verbatim."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "tagore-letters-1917",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 9,
+  "reviewer": "native-vision-400ppi-scan-check",
+  "checked_at": "2026-11-19T13:31:44.915220+00:00",
+  "source_page_sha256": "7480f44604feee939f520c21057d3c61147607f6fc888dc5769d16b82df9e725",
+  "render_png": "renders/page_0009.png",
+  "checks": [
+    {
+      "block_id": "p0009-b0001",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0009.png."
+    },
+    {
+      "block_id": "p0009-b0002",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0009.png."
+    },
+    {
+      "block_id": "p0009-b0003",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0009.png."
+    },
+    {
+      "block_id": "p0009-b0004",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0009.png."
+    },
+    {
+      "block_id": "p0009-b0005",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0009.png."
+    },
+    {
+      "block_id": "p0009-b0006",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0009.png."
+    },
+    {
+      "block_id": "p0009-b0007",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0009.png."
+    }
+  ],
+  "correction_ids": [
+    "corr-p0009-aswattha"
+  ]
+}

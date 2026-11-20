@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "mill-letters-vol1-1910",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Frontmatter & Title Pages",
+      "start_page": 1,
+      "end_page": 12
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Preface, Contents & List of Illustrations",
+      "start_page": 13,
+      "end_page": 18
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Introduction (by Hugh S. R. Elliot)",
+      "start_page": 19,
+      "end_page": 46
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Some Notes on the Private Life of John Stuart Mill (by Mary Taylor)",
+      "start_page": 47,
+      "end_page": 54
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter I: 1829–1832",
+      "start_page": 55,
+      "end_page": 90
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter II: 1833",
+      "start_page": 91,
+      "end_page": 140
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter III: 1834–1844",
+      "start_page": 141,
+      "end_page": 183
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter IV: 1847–1851",
+      "start_page": 184,
+      "end_page": 224
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter V: 1852–1856",
+      "start_page": 225,
+      "end_page": 253
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter VI: 1857–1859",
+      "start_page": 254,
+      "end_page": 295
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter VII: 1860–1862",
+      "start_page": 296,
+      "end_page": 332
+    },
+    {
+      "kind": "chapter",
+      "title": "Chapter VIII: 1863",
+      "start_page": 333,
+      "end_page": 374
+    },
+    {
+      "kind": "backmatter",
+      "title": "Endpapers & Library Card",
+      "start_page": 375,
+      "end_page": 378
+    }
+  ]
+}

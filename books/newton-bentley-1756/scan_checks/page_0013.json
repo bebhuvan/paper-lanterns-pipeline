@@ -1,0 +1,95 @@
+{
+  "version": "scan-check-v1",
+  "page_number": 13,
+  "reviewer": "qa-adversary",
+  "checked_at": "2026-11-16T02:30:18.088481+00:00",
+  "notes": "Pixel-verified native-vision check on 1756 scan: preserved ſtrong/adviſable/ſleep/moſt, 3-line cascading italic valediction, bottom-left dateline, and exact comma after letterspaced IS. NEWTON,.",
+  "wire": {
+    "printed_folio": "[ 11 ]",
+    "page_orientation": "upright",
+    "warning_codes": [
+      "archaic_orthography"
+    ],
+    "blocks": [
+      {
+        "type": "folio",
+        "bbox": [
+          448,
+          36,
+          560,
+          65
+        ],
+        "text": "[ 11 ]",
+        "alignment": "center"
+      },
+      {
+        "type": "body",
+        "bbox": [
+          162,
+          85,
+          848,
+          240
+        ],
+        "text": "There is yet another Argument for a Deity, which I take to be a very ſtrong one, but till the Principles on which it is grounded are better received, I think it more adviſable to let it ſleep.",
+        "alignment": "indented"
+      },
+      {
+        "type": "valediction",
+        "bbox": [
+          247,
+          278,
+          745,
+          427
+        ],
+        "text": "<i>I am,</i>\n<i>Your moſt humble Servant,</i>\n<i>to command,</i>",
+        "alignment": "cascading",
+        "line_breaks_preserved": true
+      },
+      {
+        "type": "dateline",
+        "bbox": [
+          146,
+          444,
+          405,
+          487
+        ],
+        "text": "Cambridge,\nDecemb. 10, 1692.",
+        "alignment": "left",
+        "line_breaks_preserved": true
+      },
+      {
+        "type": "signature",
+        "bbox": [
+          518,
+          513,
+          847,
+          543
+        ],
+        "text": "<sc>Is. Newton,</sc>",
+        "alignment": "right"
+      },
+      {
+        "type": "folio",
+        "bbox": [
+          427,
+          833,
+          498,
+          851
+        ],
+        "text": "C 2",
+        "alignment": "center"
+      },
+      {
+        "type": "folio",
+        "bbox": [
+          724,
+          826,
+          857,
+          847
+        ],
+        "text": "LET-",
+        "alignment": "right"
+      }
+    ]
+  }
+}

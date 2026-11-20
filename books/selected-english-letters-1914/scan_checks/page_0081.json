@@ -1,0 +1,44 @@
+{
+  "book_id": "selected-english-letters-1914",
+  "page_number": 81,
+  "check_id": "scan-check-p0081",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "b0b2a504f473d6fdd4a5c56eb0c439292e4fb09fe995a4f6384d064ed0f47da1",
+  "checks": [
+    {
+      "block_id": "p0081-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XXXVII closing ('mcney' broken-ink 'o' -> 'money') and Letter XXXVIII opening (Lincoln to Greeley)."
+    },
+    {
+      "block_id": "p0081-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XXXVII closing ('mcney' broken-ink 'o' -> 'money') and Letter XXXVIII opening (Lincoln to Greeley)."
+    },
+    {
+      "block_id": "p0081-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XXXVII closing ('mcney' broken-ink 'o' -> 'money') and Letter XXXVIII opening (Lincoln to Greeley)."
+    },
+    {
+      "block_id": "p0081-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XXXVII closing ('mcney' broken-ink 'o' -> 'money') and Letter XXXVIII opening (Lincoln to Greeley)."
+    },
+    {
+      "block_id": "p0081-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XXXVII closing ('mcney' broken-ink 'o' -> 'money') and Letter XXXVIII opening (Lincoln to Greeley)."
+    },
+    {
+      "block_id": "p0081-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XXXVII closing ('mcney' broken-ink 'o' -> 'money') and Letter XXXVIII opening (Lincoln to Greeley)."
+    },
+    {
+      "block_id": "p0081-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter XXXVII closing ('mcney' broken-ink 'o' -> 'money') and Letter XXXVIII opening (Lincoln to Greeley)."
+    }
+  ]
+}

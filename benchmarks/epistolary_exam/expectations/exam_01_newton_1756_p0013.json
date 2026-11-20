@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "exam_id": "exam_01_newton_1756_p0013",
+  "split": "tuning",
+  "source_pdf": "newton-bentley-letters-1756.pdf",
+  "source_page_number": 13,
+  "archive_id": "fourlettersfroms00newt",
+  "book_title": "Four Letters from Sir Isaac Newton to Doctor Bentley",
+  "year": 1756,
+  "era": "18c",
+  "languages": [
+    "en"
+  ],
+  "profile": "archaic_18c_epistolary",
+  "quirk_tags": [
+    "long_s_orthography",
+    "cascading_valediction",
+    "bottom_left_dateline",
+    "small_caps_signature",
+    "catchword_and_signature_mark"
+  ],
+  "expected_printed_folio": "11",
+  "acceptable_printed_folios": [
+    "11",
+    "[ 11 ]",
+    "[11]"
+  ],
+  "expected_letter_segments_on_page": 1,
+  "expected_new_letter_starts": 0,
+  "continues_from_prev_page": true,
+  "continues_to_next_page": false,
+  "has_margin_note": false,
+  "has_editorial_block": false,
+  "has_enclosure": false,
+  "has_postscript": false,
+  "has_address_block": false,
+  "jbig2_source_risk": true,
+  "expected_block_types_present": [
+    "body",
+    "valediction",
+    "dateline",
+    "signature"
+  ],
+  "expected_footnote_labels": [],
+  "must_preserve_verbatim": [
+    "ſtrong",
+    "adviſable",
+    "ſleep",
+    "Your moſt humble Servant",
+    "Decemb. 10, 1692",
+    "NEWTON"
+  ],
+  "must_not_modernize_or_leak": [
+    "strong",
+    "advisable",
+    "most humble",
+    "LET-"
+  ],
+  "notes": "18th-c. cascading 3-line italic valediction, bottom-left dateline above right-aligned signature, long-s ſ, bottom gathering mark 'C 2' and catchword 'LET-'.",
+  "page_image": "pages/exam_01_newton_1756_p0013.png",
+  "page_sha256": "ade3f35662c4a602ab939d37cd0a196149d43bf375bac57f0fa8d980d67ebbce",
+  "pixel_size": [
+    1287,
+    2249
+  ],
+  "pixel_verified": true,
+  "case_id": "exam_01_newton_1756_p0013",
+  "id": "exam_01_newton_1756_p0013",
+  "expected_letter_count": 1,
+  "must_contain_exact": [
+    "ſtrong",
+    "adviſable",
+    "ſleep",
+    "Your moſt humble Servant",
+    "Decemb. 10, 1692",
+    "NEWTON"
+  ],
+  "verbatim_substrings": [
+    "ſtrong",
+    "adviſable",
+    "ſleep",
+    "Your moſt humble Servant",
+    "Decemb. 10, 1692",
+    "NEWTON"
+  ],
+  "expect_margin_note": false,
+  "expect_editorial": false
+}

@@ -1,0 +1,124 @@
+{
+  "book_id": "vivekananda-letters-1944",
+  "page_number": 514,
+  "check_id": "scan-check-p0514",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "708f531766394bf61ea17298f6f0f78f353ab4579f25bd846997a6bcb3e03248",
+  "checks": [
+    {
+      "block_id": "p0514-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0013",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0014",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0015",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0016",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0017",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0018",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0019",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0020",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0021",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0022",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    },
+    {
+      "block_id": "p0514-b0023",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Index compositor spelling 'Vamachara'."
+    }
+  ]
+}

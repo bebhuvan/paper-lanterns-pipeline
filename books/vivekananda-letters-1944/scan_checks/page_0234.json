@@ -1,0 +1,44 @@
+{
+  "book_id": "vivekananda-letters-1944",
+  "page_number": 234,
+  "check_id": "scan-check-p0234",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "6ebebc07986a7fc0cebae8a29c1aca27c26e4d32f46cc7fbcf2c442cd24817ac",
+  "checks": [
+    {
+      "block_id": "p0234-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Kurma Puran Devanagari and corrected ink speck above 'o' in 'yóu' -> 'you'."
+    },
+    {
+      "block_id": "p0234-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Kurma Puran Devanagari and corrected ink speck above 'o' in 'yóu' -> 'you'."
+    },
+    {
+      "block_id": "p0234-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Kurma Puran Devanagari and corrected ink speck above 'o' in 'yóu' -> 'you'."
+    },
+    {
+      "block_id": "p0234-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Kurma Puran Devanagari and corrected ink speck above 'o' in 'yóu' -> 'you'."
+    },
+    {
+      "block_id": "p0234-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Kurma Puran Devanagari and corrected ink speck above 'o' in 'yóu' -> 'you'."
+    },
+    {
+      "block_id": "p0234-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Kurma Puran Devanagari and corrected ink speck above 'o' in 'yóu' -> 'you'."
+    },
+    {
+      "block_id": "p0234-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Kurma Puran Devanagari and corrected ink speck above 'o' in 'yóu' -> 'you'."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "gandhi-famous-letters-1947",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Cover Blurb, Title Page & Imprint",
+      "start_page": 1,
+      "end_page": 7
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Introduction (R. L. Khipple)",
+      "start_page": 8,
+      "end_page": 9
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Table of Contents",
+      "start_page": 10,
+      "end_page": 11
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Mahatma Gandhi: A Short Biographical Sketch",
+      "start_page": 12,
+      "end_page": 15
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters to Lord Chelmsford (1918–1920)",
+      "start_page": 16,
+      "end_page": 28
+    },
+    {
+      "kind": "chapter",
+      "title": "To Every Englishman Living in India (1920–1921)",
+      "start_page": 29,
+      "end_page": 41
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters of the Non-Co-operation Movement (1921–1922)",
+      "start_page": 42,
+      "end_page": 58
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters to Lord Irwin (1930)",
+      "start_page": 59,
+      "end_page": 78
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters to the Inmates of Sabarmati Ashram (1930)",
+      "start_page": 79,
+      "end_page": 84
+    },
+    {
+      "kind": "chapter",
+      "title": "Correspondence with Lord Willingdon & To the Nation (1931–1932)",
+      "start_page": 85,
+      "end_page": 98
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters on the Communal Award: Sir Samuel Hoare & Ramsay MacDonald (1932)",
+      "start_page": 99,
+      "end_page": 109
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters to M. A. Jinnah, Generalissimo Chiang Kai Sheck & the People of America (1938–1942)",
+      "start_page": 110,
+      "end_page": 122
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters to the Viceroy & Home Department During the 1942–1943 Movement",
+      "start_page": 123,
+      "end_page": 151
+    },
+    {
+      "kind": "backmatter",
+      "title": "Rear Flyleaves & Library Slip",
+      "start_page": 152,
+      "end_page": 154
+    }
+  ]
+}

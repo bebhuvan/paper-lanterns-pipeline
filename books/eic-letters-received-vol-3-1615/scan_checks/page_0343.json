@@ -1,0 +1,28 @@
+{
+  "book_id": "eic-letters-received-vol-3-1615",
+  "page_number": 343,
+  "check_id": "vol3-scan-check-p0343",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "1d6a48c331baa012c7ddd32e79a07b71c0d0cf18e48ba568f31f1bf8184f179a",
+  "checked_at": "2026-11-18T02:30:00+00:00",
+  "checks": [
+    {
+      "block_id": "p0343-b0004",
+      "token": "^1",
+      "verdict": "printed_as_read",
+      "note": "Verified on NOTES. page scans (pp. 343-388): printed superscript endnote number."
+    },
+    {
+      "block_id": "p0343-b0005",
+      "token": "^2",
+      "verdict": "printed_as_read",
+      "note": "Verified on NOTES. page scans (pp. 343-388): printed superscript endnote number."
+    },
+    {
+      "block_id": "p0343-b0007",
+      "token": "^1",
+      "verdict": "printed_as_read",
+      "note": "Verified on NOTES. page scans (pp. 343-388): printed superscript endnote number."
+    }
+  ]
+}

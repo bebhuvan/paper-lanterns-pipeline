@@ -1,0 +1,58 @@
+{
+  "version": "correction-v2",
+  "book_id": "tagore-letters-1917",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "reviewer": "native-vision-400ppi-scan-check",
+  "generated_by": "scan-check",
+  "created_at": "2026-11-19T13:31:44.915220+00:00",
+  "corrections": [
+    {
+      "correction_id": "corr-p0009-aswattha",
+      "page_number": 9,
+      "block_id": "p0009-b0004",
+      "anchor_text": "A fine road runs from Cuttack to Puri. It rises high out of the fields on either side, and is shaded with great big trees, mostly mangoes, which in this season are in flower, charging the air with their cloying fragrance. It passes by village after village surrounded with groves of mango, as-wattha, cocoanut and day palm.",
+      "op": "set_text",
+      "replacement_tagged_text": "A fine road runs from Cuttack to Puri. It rises high out of the fields on either side, and is shaded with great big trees, mostly mangoes, which in this season are in flower, charging the air with their cloying fragrance. It passes by village after village surrounded with groves of mango, <i>aswattha,</i> cocoanut and day palm.",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "source": "machine",
+      "note": "Join line-wrap hyphenated Italic word 'as- / wattha' -> 'aswattha' verified on page_0009.png.",
+      "created_at": "2026-11-19T13:31:44.915220+00:00"
+    },
+    {
+      "correction_id": "corr-p0010-year-1893",
+      "page_number": 10,
+      "block_id": "p0010-b0004",
+      "anchor_text": "Balia,\n11th March: 893.",
+      "op": "set_text",
+      "replacement_tagged_text": "<sc>Balia</sc>,\n<i>11th March: 1893.</i>",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "source": "machine",
+      "note": "Restore faint italic digit '1' in '1893.' misread as '893.' on page_0010.png.",
+      "created_at": "2026-11-19T13:31:44.915220+00:00"
+    },
+    {
+      "correction_id": "corr-p0021-the-type",
+      "page_number": 21,
+      "block_id": "p0021-b0006",
+      "anchor_text": "But the sun shines forth again, though the clouds are still banked up in the West.",
+      "op": "set_text",
+      "replacement_tagged_text": "But the sun shines forth again, though the clouds are still banked up in the West.",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "source": "machine",
+      "note": "Fix raised slipped metal-type 'e' in 'the' misread as superscript footnote callout 'th<sup>e</sup>' on page_0021.png.",
+      "created_at": "2026-11-19T13:31:44.915220+00:00"
+    },
+    {
+      "correction_id": "corr-p0023-idem-dateline",
+      "page_number": 23,
+      "block_id": "p0023-b0004",
+      "anchor_text": "Idem.",
+      "op": "set_type",
+      "replacement_type": "dateline",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "source": "machine",
+      "note": "Retype right-aligned '<sc>Idem.</sc>' under letter header (80) from salutation to dateline.",
+      "created_at": "2026-11-19T13:31:44.915220+00:00"
+    }
+  ]
+}

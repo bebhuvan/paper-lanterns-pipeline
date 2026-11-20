@@ -1,0 +1,22 @@
+[book]
+book_id = "pascal-provincial-letters-1847"
+title = "The Provincial Letters of Pascal"
+author_or_editor = "Blaise Pascal (tr. George Pearce)"
+authors = ["Blaise Pascal", "George Pearce (tr. & ed.)", "Abel-François Villemain"]
+publication_year = 1847
+subtitle = "With an Essay on Pascal, Considered as a Writer and Moralist, by M. Villemain; Newly Translated by George Pearce"
+imprint = "London: Longman, Brown, Green, and Longmans, 1847"
+collection = "scientific-and-philosophical-letters"
+language = "en"
+declared_scripts = ["Latin", "European diacritics", "Greek"]
+profile = "claude_sonnet_epistolary"
+active_run_id = "canonical-sonnet55-batch-v1"
+
+[source]
+archive_id = "provincialletter00pasc_1"
+source_pdf = "sources/provincialletter00pasc_1/provincialletter00pasc_1.originals.pdf"
+source_pdf_sha256 = "b981c0db52a82e24099176d1608c1b945bea0ce4a909dd094849159185844853"
+
+[extraction]
+profile = "claude_sonnet_epistolary"
+render_dpi = 350

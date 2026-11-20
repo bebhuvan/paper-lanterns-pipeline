@@ -1,0 +1,16 @@
+{
+  "book_id": "tipu-sultan-select-letters-1811",
+  "page_number": 569,
+  "check_id": "tipu-sultan-select-letters-1811-p0569",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "acec4516de81176f280556f8ea655d697c6675a1cce6e52129ced2305b336674",
+  "checked_at": "2026-11-17T21:31:14.948331+00:00",
+  "checks": [
+    {
+      "block_id": "p0569-b0011",
+      "token": "dæmon",
+      "verdict": "printed_as_read",
+      "note": "Genuine 'æ' ligature printed in 'an Ethiopian dæmon'."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "book_id": "tipu-sultan-select-letters-1811",
+  "page_number": 645,
+  "check_id": "tipu-sultan-select-letters-1811-p0645",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "ef19f7a745a7459475921fd98195c03abc6d6148038c3b7a67fff181cb8ce02d",
+  "checked_at": "2026-11-17T21:31:14.948331+00:00",
+  "checks": [
+    {
+      "block_id": "p0645-b0005",
+      "token": "d°",
+      "verdict": "printed_as_read",
+      "note": "Printed tabular abbreviation d<sup>o</sup> / d.<sup>o</sup> (ditto), not a footnote callout."
+    }
+  ]
+}

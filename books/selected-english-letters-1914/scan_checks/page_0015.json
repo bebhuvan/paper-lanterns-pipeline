@@ -1,0 +1,49 @@
+{
+  "book_id": "selected-english-letters-1914",
+  "page_number": 15,
+  "check_id": "scan-check-p0015",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "a56d999b66b5122f27cbaa3373df6bf281c22f1df7ec5b8f4af62c17c95fbbbf",
+  "checks": [
+    {
+      "block_id": "p0015-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter I (William Paston, Junior to John Paston, Nov. 7, 1478) and period spellings ('holydays', 'corse', 'maketh')."
+    },
+    {
+      "block_id": "p0015-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter I (William Paston, Junior to John Paston, Nov. 7, 1478) and period spellings ('holydays', 'corse', 'maketh')."
+    },
+    {
+      "block_id": "p0015-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter I (William Paston, Junior to John Paston, Nov. 7, 1478) and period spellings ('holydays', 'corse', 'maketh')."
+    },
+    {
+      "block_id": "p0015-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter I (William Paston, Junior to John Paston, Nov. 7, 1478) and period spellings ('holydays', 'corse', 'maketh')."
+    },
+    {
+      "block_id": "p0015-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter I (William Paston, Junior to John Paston, Nov. 7, 1478) and period spellings ('holydays', 'corse', 'maketh')."
+    },
+    {
+      "block_id": "p0015-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter I (William Paston, Junior to John Paston, Nov. 7, 1478) and period spellings ('holydays', 'corse', 'maketh')."
+    },
+    {
+      "block_id": "p0015-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter I (William Paston, Junior to John Paston, Nov. 7, 1478) and period spellings ('holydays', 'corse', 'maketh')."
+    },
+    {
+      "block_id": "p0015-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Letter I (William Paston, Junior to John Paston, Nov. 7, 1478) and period spellings ('holydays', 'corse', 'maketh')."
+    }
+  ]
+}

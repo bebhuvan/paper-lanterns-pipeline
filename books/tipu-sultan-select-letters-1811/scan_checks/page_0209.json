@@ -1,0 +1,16 @@
+{
+  "book_id": "tipu-sultan-select-letters-1811",
+  "page_number": 209,
+  "check_id": "tipu-sultan-select-letters-1811-p0209",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "324f3452021312aba5ebed94d264113281c56559123860c86e83bd52711701f2",
+  "checked_at": "2026-11-17T21:31:14.948331+00:00",
+  "checks": [
+    {
+      "block_id": "p0209-b0003",
+      "token": "Islamism",
+      "verdict": "printed_as_read",
+      "note": "Printed unaccented Islamism."
+    }
+  ]
+}

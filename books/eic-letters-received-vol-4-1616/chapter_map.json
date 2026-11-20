@@ -1,0 +1,46 @@
+{
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Preliminaries & Title-Page",
+      "start_block_id": "p0005-b0001",
+      "end_block_id": "p0007-b0011"
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents & Appendix List",
+      "start_block_id": "p0009-b0002",
+      "end_block_id": "p0014-b0021"
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Introduction",
+      "start_block_id": "p0015-b0001",
+      "end_block_id": "p0040-b0004"
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters Received: 1616 (Nos. 332–423)",
+      "start_block_id": "p0041-b0002",
+      "end_block_id": "p0330-b0010"
+    },
+    {
+      "kind": "chapter",
+      "title": "Appendix (Nos. I–VIII)",
+      "start_block_id": "p0331-b0001",
+      "end_block_id": "p0395-b0006"
+    },
+    {
+      "kind": "backmatter",
+      "title": "Addendum",
+      "start_block_id": "p0396-b0003",
+      "end_block_id": "p0396-b0008"
+    },
+    {
+      "kind": "index",
+      "title": "Index & Colophon",
+      "start_block_id": "p0397-b0001",
+      "end_block_id": "p0420-b0001"
+    }
+  ]
+}

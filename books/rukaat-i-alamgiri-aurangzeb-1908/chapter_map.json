@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "rukaat-i-alamgiri-aurangzeb-1908",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Half-Title & Title Page",
+      "start_page": 1,
+      "end_page": 6
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Preface",
+      "start_page": 7,
+      "end_page": 10
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents",
+      "start_page": 11,
+      "end_page": 12
+    },
+    {
+      "kind": "chapter",
+      "title": "Introduction",
+      "start_page": 13,
+      "end_page": 14
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters to Sultan Mahammad Mūazzam, Sháh Alam Bahádūr, the Crown Prince",
+      "start_page": 15,
+      "end_page": 22
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters to Prince Mahammad A’azam Sháh Bahádūr",
+      "start_page": 23,
+      "end_page": 84
+    },
+    {
+      "kind": "chapter",
+      "title": "Letter to Kám Bakhsha",
+      "start_page": 85,
+      "end_page": 86
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters to Prince Mahammad Ma’az-ūd-Din Bahádūr",
+      "start_page": 87,
+      "end_page": 88
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters to Prince Mahammad Bidár Bakhta",
+      "start_page": 89,
+      "end_page": 95
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters to Mahammad Azim-ūd-Din Bahádūr",
+      "start_page": 96,
+      "end_page": 98
+    },
+    {
+      "kind": "chapter",
+      "title": "Letter to Amir-ūl-Umará Sháyasta Khán, Governor of Akbarábád",
+      "start_page": 99,
+      "end_page": 101
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters to Umadat-ūl-Mūlk, Madár-ūl-Mahám, Asad Khán",
+      "start_page": 102,
+      "end_page": 161
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters to Gházi-ūd-Din Khán Bahádūr Firūz Jang",
+      "start_page": 162,
+      "end_page": 164
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters to Zūl Fikár Khán Bahádūr Nasrat Jang",
+      "start_page": 165,
+      "end_page": 170
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters to Mirzá Sadr-ūd-Din Mahammad Khán Safavi, Second Paymaster",
+      "start_page": 171,
+      "end_page": 172
+    },
+    {
+      "kind": "chapter",
+      "title": "Letter to A’akel Khán, Fort-keeper and Governor of the Capital of Sháh Jehán Abád",
+      "start_page": 173,
+      "end_page": 173
+    },
+    {
+      "kind": "chapter",
+      "title": "Letter to Hamid-ūd-Din Khán Bahádūr",
+      "start_page": 174,
+      "end_page": 174
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters to Inayát Alláh Khán",
+      "start_page": 175,
+      "end_page": 180
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters to Asad Khán",
+      "start_page": 181,
+      "end_page": 184
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters to Abdūl Kásim Khán",
+      "start_page": 185,
+      "end_page": 186
+    },
+    {
+      "kind": "chapter",
+      "title": "Letter to Afazal Khán",
+      "start_page": 187,
+      "end_page": 188
+    },
+    {
+      "kind": "index",
+      "title": "Index",
+      "start_page": 189,
+      "end_page": 200
+    }
+  ]
+}

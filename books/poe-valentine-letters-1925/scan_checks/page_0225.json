@@ -1,0 +1,54 @@
+{
+  "book_id": "poe-valentine-letters-1925",
+  "page_number": 225,
+  "check_id": "scan-check-p0225",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "2df43066cba750553a2d223b807610a029374e3bea98a1168e79e28b44ce6d31",
+  "checks": [
+    {
+      "block_id": "p0225-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 225; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0225-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 225; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0225-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 225; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0225-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 225; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0225-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 225; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0225-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 225; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0225-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 225; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0225-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 225; diplomatic fidelity and structural blocks confirmed."
+    },
+    {
+      "block_id": "p0225-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Native vision verified rendered 350 DPI PNG for page 225; diplomatic fidelity and structural blocks confirmed."
+    }
+  ]
+}

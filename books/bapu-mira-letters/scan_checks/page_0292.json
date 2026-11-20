@@ -1,0 +1,79 @@
+{
+  "book_id": "bapu-mira-letters",
+  "page_number": 292,
+  "check_id": "scan-check-p0292",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "a8cc4cff154d453b12c36ae8a0cd6e345bb5c96579356fc3c505a0054cb0c499",
+  "checks": [
+    {
+      "block_id": "p0292-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 234 '16-8-'34 / Not revised' closer and footnote verbatim."
+    },
+    {
+      "block_id": "p0292-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 234 '16-8-'34 / Not revised' closer and footnote verbatim."
+    },
+    {
+      "block_id": "p0292-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 234 '16-8-'34 / Not revised' closer and footnote verbatim."
+    },
+    {
+      "block_id": "p0292-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 234 '16-8-'34 / Not revised' closer and footnote verbatim."
+    },
+    {
+      "block_id": "p0292-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 234 '16-8-'34 / Not revised' closer and footnote verbatim."
+    },
+    {
+      "block_id": "p0292-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 234 '16-8-'34 / Not revised' closer and footnote verbatim."
+    },
+    {
+      "block_id": "p0292-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 234 '16-8-'34 / Not revised' closer and footnote verbatim."
+    },
+    {
+      "block_id": "p0292-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 234 '16-8-'34 / Not revised' closer and footnote verbatim."
+    },
+    {
+      "block_id": "p0292-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 234 '16-8-'34 / Not revised' closer and footnote verbatim."
+    },
+    {
+      "block_id": "p0292-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 234 '16-8-'34 / Not revised' closer and footnote verbatim."
+    },
+    {
+      "block_id": "p0292-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 234 '16-8-'34 / Not revised' closer and footnote verbatim."
+    },
+    {
+      "block_id": "p0292-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 234 '16-8-'34 / Not revised' closer and footnote verbatim."
+    },
+    {
+      "block_id": "p0292-b0013",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 234 '16-8-'34 / Not revised' closer and footnote verbatim."
+    },
+    {
+      "block_id": "p0292-b0014",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed Letter 234 '16-8-'34 / Not revised' closer and footnote verbatim."
+    }
+  ]
+}

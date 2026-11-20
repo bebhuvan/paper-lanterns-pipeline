@@ -1,0 +1,29 @@
+{
+  "book_id": "pascal-provincial-letters-1847",
+  "page_number": 8,
+  "check_id": "scan-check-p0008",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "ae43946085a39b502587d86b0c199b7d6a72b93cb6206b69700f7d0f7f661d41",
+  "checks": [
+    {
+      "block_id": "p0008-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Frontispiece 'PASCAL.' portrait and 'Standidge & Cº Litho, London.' imprint (replaced superscript 'o' with ordinal)."
+    },
+    {
+      "block_id": "p0008-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Frontispiece 'PASCAL.' portrait and 'Standidge & Cº Litho, London.' imprint (replaced superscript 'o' with ordinal)."
+    },
+    {
+      "block_id": "p0008-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Frontispiece 'PASCAL.' portrait and 'Standidge & Cº Litho, London.' imprint (replaced superscript 'o' with ordinal)."
+    },
+    {
+      "block_id": "p0008-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Frontispiece 'PASCAL.' portrait and 'Standidge & Cº Litho, London.' imprint (replaced superscript 'o' with ordinal)."
+    }
+  ]
+}

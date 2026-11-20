@@ -1,0 +1,21 @@
+[book]
+book_id = "mill-letters-vol1-1910"
+title = "The Letters of John Stuart Mill, Vol. I"
+author_or_editor = "John Stuart Mill, Hugh S. R. Elliot (ed.)"
+authors = ["John Stuart Mill", "Hugh S. R. Elliot (ed.)"]
+publication_year = 1910
+subtitle = "Edited, with an Introduction, by Hugh S. R. Elliot"
+imprint = "London: Longmans, Green and Co., 1910"
+collection = "scientific-and-philosophical-letters"
+language = "en"
+declared_scripts = ["Latin", "European diacritics"]
+profile = "claude_sonnet_epistolary"
+active_run_id = "canonical-sonnet55-batch-v1"
+
+[source]
+archive_id = "lettersofjsmill01milluoft"
+source_pdf = "sources/lettersofjsmill01milluoft/lettersofjsmill01milluoft.originals.pdf"
+source_pdf_sha256 = "a254f4d3afcac7cdeb57a307db3b959bf12e2607c2ab23e49c59ce7cb459f70b"
+
+[extraction]
+profile = "claude_sonnet_epistolary"

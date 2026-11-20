@@ -1,0 +1,19 @@
+{
+  "book_id": "cortes-letters-vol1-1908",
+  "page_number": 1,
+  "check_id": "scan-check-p0001",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "36186f351316d054311029540d74c67220ae149baa6318db311234ce213c50b3",
+  "checks": [
+    {
+      "block_id": "p0001-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified University of Toronto Library barcode sticker and gold-embossed Cortes Coat-of-Arms on front cover."
+    },
+    {
+      "block_id": "p0001-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified University of Toronto Library barcode sticker and gold-embossed Cortes Coat-of-Arms on front cover."
+    }
+  ]
+}

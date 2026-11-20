@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "humboldt-varnhagen-letters-1860",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Frontmatter, Portrait & Title Pages",
+      "start_page": 1,
+      "end_page": 14
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents",
+      "start_page": 15,
+      "end_page": 20
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Preface (by Ludmilla Assing)",
+      "start_page": 21,
+      "end_page": 24
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters 1–48 (1827–1840)",
+      "start_page": 25,
+      "end_page": 100
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters 49–75 (1840–1844)",
+      "start_page": 101,
+      "end_page": 155
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters 76–134 (1844–1849)",
+      "start_page": 156,
+      "end_page": 257
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters 135–168 (1849–1855)",
+      "start_page": 258,
+      "end_page": 320
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters 169–225 (1856–1858)",
+      "start_page": 321,
+      "end_page": 410
+    },
+    {
+      "kind": "index",
+      "title": "Alphabetical Index of Persons Alluded To",
+      "start_page": 411,
+      "end_page": 416
+    },
+    {
+      "kind": "backmatter",
+      "title": "Newspaper Clipping, Publisher's Catalogue & Endpapers",
+      "start_page": 417,
+      "end_page": 430
+    }
+  ]
+}

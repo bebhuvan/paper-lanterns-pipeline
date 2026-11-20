@@ -1,0 +1,44 @@
+{
+  "book_id": "pascal-miscellaneous-writings-1849",
+  "page_number": 265,
+  "check_id": "scan-check-p0265",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "18df5461c118b4a7fe48273316d19386943d9dd54dc8b2c33415376ad86d6298",
+  "checks": [
+    {
+      "block_id": "p0265-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefixes on 'LXIX. +' and 'LXX. +'; only '*' footnote at bottom of page."
+    },
+    {
+      "block_id": "p0265-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefixes on 'LXIX. +' and 'LXX. +'; only '*' footnote at bottom of page."
+    },
+    {
+      "block_id": "p0265-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefixes on 'LXIX. +' and 'LXX. +'; only '*' footnote at bottom of page."
+    },
+    {
+      "block_id": "p0265-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefixes on 'LXIX. +' and 'LXX. +'; only '*' footnote at bottom of page."
+    },
+    {
+      "block_id": "p0265-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefixes on 'LXIX. +' and 'LXX. +'; only '*' footnote at bottom of page."
+    },
+    {
+      "block_id": "p0265-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefixes on 'LXIX. +' and 'LXX. +'; only '*' footnote at bottom of page."
+    },
+    {
+      "block_id": "p0265-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefixes on 'LXIX. +' and 'LXX. +'; only '*' footnote at bottom of page."
+    }
+  ]
+}

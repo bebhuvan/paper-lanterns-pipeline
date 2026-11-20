@@ -1,0 +1,21 @@
+[book]
+book_id = "letters-from-famous-people-1925"
+title = "Letters from Famous People"
+author_or_editor = "Sharpless Dobson Green (comp.)"
+authors = ["Sharpless Dobson Green (comp.)"]
+publication_year = 1925
+subtitle = ""
+imprint = "New York; Chicago; San Francisco; Boston; London: The Gregg Publishing Company, 1925"
+collection = "world-correspondence"
+language = "en"
+declared_scripts = ["Latin", "European diacritics"]
+profile = "claude_sonnet_epistolary"
+active_run_id = "canonical-sonnet55-batch-v1"
+
+[source]
+archive_id = "lettersfromfamou0000shar"
+source_pdf = "sources/lettersfromfamou0000shar/lettersfromfamou0000shar.originals.pdf"
+source_pdf_sha256 = "8f741b83a781d84f6cc6d3369cd5ffb63a60daf3f935858e03e8cc3517684632"
+
+[extraction]
+profile = "claude_sonnet_epistolary"

@@ -1,0 +1,44 @@
+{
+  "book_id": "poe-whitman-last-letters-1909",
+  "page_number": 67,
+  "check_id": "scan-check-p0067",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "06f8f0fadf0c4b8948aedc9bfbaacc4ac67747ce8218d5172f60bb4fad97ef51",
+  "checks": [
+    {
+      "block_id": "p0067-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Marriage Contract floral headpiece dropped and Tillinghast estate schedule start."
+    },
+    {
+      "block_id": "p0067-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Marriage Contract floral headpiece dropped and Tillinghast estate schedule start."
+    },
+    {
+      "block_id": "p0067-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Marriage Contract floral headpiece dropped and Tillinghast estate schedule start."
+    },
+    {
+      "block_id": "p0067-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Marriage Contract floral headpiece dropped and Tillinghast estate schedule start."
+    },
+    {
+      "block_id": "p0067-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Marriage Contract floral headpiece dropped and Tillinghast estate schedule start."
+    },
+    {
+      "block_id": "p0067-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Marriage Contract floral headpiece dropped and Tillinghast estate schedule start."
+    },
+    {
+      "block_id": "p0067-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Marriage Contract floral headpiece dropped and Tillinghast estate schedule start."
+    }
+  ]
+}

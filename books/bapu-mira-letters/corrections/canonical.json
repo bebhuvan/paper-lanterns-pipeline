@@ -1,0 +1,83 @@
+{
+  "version": "correction-v2",
+  "book_id": "bapu-mira-letters",
+  "run_id": "canonical-hydrogen-batch-v1",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "generated_by": "scan-check",
+  "created_at": "2026-11-18T14:07:56.043944+00:00",
+  "corrections": [
+    {
+      "correction_id": "corr-p0001-b0001-set_text",
+      "page_number": 1,
+      "block_id": "p0001-b0001",
+      "anchor_text": "ETTERS TO MIRA",
+      "op": "set_text",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "source": "machine",
+      "note": "Resolve torn dust-jacket/cover <unclear> spans against 350 PPI cover scan.",
+      "created_at": "2026-11-18T14:07:56.043944+00:00",
+      "replacement_tagged_text": "B[A]PU'S LE[...]\nETTERS TO MIRA\n[ 1924-1948 ]"
+    },
+    {
+      "correction_id": "corr-p0067-b0004-set_type",
+      "page_number": 67,
+      "block_id": "p0067-b0004",
+      "anchor_text": "B.",
+      "op": "set_type",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "source": "machine",
+      "note": "Postscript signature 'B.' following Bapu's primary signature.",
+      "created_at": "2026-11-18T14:07:56.043944+00:00",
+      "replacement_type": "postscript"
+    },
+    {
+      "correction_id": "corr-p0073-b0006-set_text",
+      "page_number": 73,
+      "block_id": "p0073-b0006",
+      "anchor_text": "Shri Miraben",
+      "op": "set_text",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "source": "machine",
+      "note": "Replace literal backslash-n escapes with real newlines in postal address.",
+      "created_at": "2026-11-18T14:07:56.043944+00:00",
+      "replacement_tagged_text": "Shri Miraben,\nC/o Seth Jamnalal Bajaj,\nKalbadevi Road, Bombay."
+    },
+    {
+      "correction_id": "corr-p0167-b0011-set_text",
+      "page_number": 167,
+      "block_id": "p0167-b0011",
+      "anchor_text": "For discussions with Lord Willingdon",
+      "op": "set_text",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "source": "machine",
+      "note": "Restore dropped '*' marker on Simla Round Table Conference footnote.",
+      "created_at": "2026-11-18T14:07:56.043944+00:00",
+      "replacement_tagged_text": "* For discussions with Lord Willingdon regarding the question of Bapu attending the Round Table Conference.",
+      "replacement_note_label": "*"
+    },
+    {
+      "correction_id": "corr-p0295-b0011-set_text",
+      "page_number": 295,
+      "block_id": "p0295-b0011",
+      "anchor_text": "On the train to Bombay",
+      "op": "set_text",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "source": "machine",
+      "note": "Replace literal backslash-n escape with real newline in dateline.",
+      "created_at": "2026-11-18T14:07:56.043944+00:00",
+      "replacement_tagged_text": "On the train to Bombay,\n20-10-'34"
+    },
+    {
+      "correction_id": "corr-p0399-b0003-set_text",
+      "page_number": 399,
+      "block_id": "p0399-b0003",
+      "anchor_text": "All anxiety is over",
+      "op": "set_text",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "source": "machine",
+      "note": "Resolve <unclear>H.</unclear> against autograph postcard facsimile scan.",
+      "created_at": "2026-11-18T14:07:56.043944+00:00",
+      "replacement_tagged_text": "your note. All anxiety is over. I hope you got my letter dictated during the fast I was working top speed. your note for H. will receive attention."
+    }
+  ]
+}

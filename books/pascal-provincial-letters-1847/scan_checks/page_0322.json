@@ -1,0 +1,29 @@
+{
+  "book_id": "pascal-provincial-letters-1847",
+  "page_number": 322,
+  "check_id": "scan-check-p0322",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "0169b908aa47329dcf4112f8a49a9dac40744ec45f7bdec286e016fcc51d09c3",
+  "checks": [
+    {
+      "block_id": "p0322-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified two-paragraph footnote ('*' French Editor and '*_*' Translator note coalesced under fn-p0322-1)."
+    },
+    {
+      "block_id": "p0322-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified two-paragraph footnote ('*' French Editor and '*_*' Translator note coalesced under fn-p0322-1)."
+    },
+    {
+      "block_id": "p0322-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified two-paragraph footnote ('*' French Editor and '*_*' Translator note coalesced under fn-p0322-1)."
+    },
+    {
+      "block_id": "p0322-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified two-paragraph footnote ('*' French Editor and '*_*' Translator note coalesced under fn-p0322-1)."
+    }
+  ]
+}

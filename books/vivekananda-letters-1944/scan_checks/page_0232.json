@@ -1,0 +1,49 @@
+{
+  "book_id": "vivekananda-letters-1944",
+  "page_number": 232,
+  "check_id": "scan-check-p0232",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "122c0ece8eb056bda65894ad6ef7f039190a2618334a8aca1877f102587e0e55",
+  "checks": [
+    {
+      "block_id": "p0232-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified combined block '(123)\\nTo The Same', Letter (123) start, and resolved 'realisation'."
+    },
+    {
+      "block_id": "p0232-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified combined block '(123)\\nTo The Same', Letter (123) start, and resolved 'realisation'."
+    },
+    {
+      "block_id": "p0232-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified combined block '(123)\\nTo The Same', Letter (123) start, and resolved 'realisation'."
+    },
+    {
+      "block_id": "p0232-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified combined block '(123)\\nTo The Same', Letter (123) start, and resolved 'realisation'."
+    },
+    {
+      "block_id": "p0232-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified combined block '(123)\\nTo The Same', Letter (123) start, and resolved 'realisation'."
+    },
+    {
+      "block_id": "p0232-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified combined block '(123)\\nTo The Same', Letter (123) start, and resolved 'realisation'."
+    },
+    {
+      "block_id": "p0232-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified combined block '(123)\\nTo The Same', Letter (123) start, and resolved 'realisation'."
+    },
+    {
+      "block_id": "p0232-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified combined block '(123)\\nTo The Same', Letter (123) start, and resolved 'realisation'."
+    }
+  ]
+}

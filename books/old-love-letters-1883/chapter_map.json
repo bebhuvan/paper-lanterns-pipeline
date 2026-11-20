@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "old-love-letters-1883",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Cover, Title Page & Copyright",
+      "start_page": 1,
+      "end_page": 8
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Dedication",
+      "start_page": 9,
+      "end_page": 10
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Introductory & Note",
+      "start_page": 11,
+      "end_page": 18
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents",
+      "start_page": 19,
+      "end_page": 24
+    },
+    {
+      "kind": "chapter",
+      "title": "Part I: Letters of Poets and Men of Letters \u2014 Otway to Sterne",
+      "start_page": 25,
+      "end_page": 106
+    },
+    {
+      "kind": "chapter",
+      "title": "Part I (cont.): Johnson, Walpole, Burns, Wollstonecraft, Shelley, Byron, Scott, Hunt, Keats & Hazlitt",
+      "start_page": 107,
+      "end_page": 200
+    },
+    {
+      "kind": "chapter",
+      "title": "Part II: Letters of Royal Personages",
+      "start_page": 201,
+      "end_page": 244
+    },
+    {
+      "kind": "chapter",
+      "title": "Part III: Letters of Statesmen, Military Men, and Men of Affairs \u2014 Paston Letters to Burr",
+      "start_page": 245,
+      "end_page": 339
+    },
+    {
+      "kind": "chapter",
+      "title": "Part III (cont.): Lord Nelson and Lady Hamilton",
+      "start_page": 340,
+      "end_page": 346
+    },
+    {
+      "kind": "backmatter",
+      "title": "Preservation Endpapers",
+      "start_page": 347,
+      "end_page": 352
+    }
+  ]
+}

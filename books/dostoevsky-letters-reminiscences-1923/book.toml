@@ -1,0 +1,22 @@
+[book]
+book_id = "dostoevsky-letters-reminiscences-1923"
+title = "Dostoevsky: Letters and Reminiscences"
+author_or_editor = "Fyodor Dostoevsky (tr. S. S. Koteliansky & J. Middleton Murry)"
+authors = ["Fyodor Dostoevsky", "S. S. Koteliansky (tr.)", "J. Middleton Murry (tr.)"]
+publication_year = 1923
+subtitle = "Translated from the Russian by S. S. Koteliansky and J. Middleton Murry"
+imprint = "New York: Alfred A. Knopf / London: Chatto & Windus, 1923"
+collection = "world-correspondence"
+language = "en"
+declared_scripts = ["Latin", "European diacritics"]
+profile = "claude_sonnet_epistolary"
+active_run_id = "canonical-sonnet55-batch-v1"
+
+[source]
+archive_id = "bwb_P8-ADV-479"
+source_pdf = "sources/bwb_P8-ADV-479/bwb_P8-ADV-479.originals.pdf"
+source_pdf_sha256 = "78b530fabfda883df59a7c1a04bbb88a8f65f7d41583f587d56bca52d883115b"
+
+[extraction]
+profile = "claude_sonnet_epistolary"
+render_dpi = 350

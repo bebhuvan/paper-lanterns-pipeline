@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "nineteenth-century-letters-1919",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 363,
+  "reviewer": "native-vision-500ppi-scan-check",
+  "checked_at": "2026-11-19T05:39:15.954462+00:00",
+  "source_page_sha256": "9dc1ee0e14e563f26c81339f0a0ec37385dbeee0b92e059ff0f1ddf1f5ea405d",
+  "render_png": "renders/page_0363.png",
+  "checks": [
+    {
+      "block_id": "p0363-b0001",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0363.png."
+    },
+    {
+      "block_id": "p0363-b0002",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0363.png."
+    },
+    {
+      "block_id": "p0363-b0003",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0363.png."
+    },
+    {
+      "block_id": "p0363-b0004",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0363.png."
+    },
+    {
+      "block_id": "p0363-b0005",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0363.png."
+    },
+    {
+      "block_id": "p0363-b0006",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0363.png."
+    },
+    {
+      "block_id": "p0363-b0007",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0363.png."
+    },
+    {
+      "block_id": "p0363-b0008",
+      "status": "corrected",
+      "note": "Inspected on 500 PPI PNG renders/page_0363.png."
+    },
+    {
+      "block_id": "p0363-b0009",
+      "status": "corrected",
+      "note": "Inspected on 500 PPI PNG renders/page_0363.png."
+    },
+    {
+      "block_id": "p0363-b0010",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0363.png."
+    },
+    {
+      "block_id": "p0363-b0011",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0363.png."
+    },
+    {
+      "block_id": "p0363-b0012",
+      "status": "verified",
+      "note": "Inspected on 500 PPI PNG renders/page_0363.png."
+    }
+  ]
+}

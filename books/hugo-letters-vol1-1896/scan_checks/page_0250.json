@@ -1,0 +1,49 @@
+{
+  "book_id": "hugo-letters-vol1-1896",
+  "page_number": 250,
+  "check_id": "scan-check-p0250",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "b4176e955072f64f38741968895ed49d156a28396425b4288e160b8a633dc86b",
+  "checks": [
+    {
+      "block_id": "p0250-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Part V XXVI. ending 'V.' at bottom of p. 250 (folio 236)."
+    },
+    {
+      "block_id": "p0250-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Part V XXVI. ending 'V.' at bottom of p. 250 (folio 236)."
+    },
+    {
+      "block_id": "p0250-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Part V XXVI. ending 'V.' at bottom of p. 250 (folio 236)."
+    },
+    {
+      "block_id": "p0250-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Part V XXVI. ending 'V.' at bottom of p. 250 (folio 236)."
+    },
+    {
+      "block_id": "p0250-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Part V XXVI. ending 'V.' at bottom of p. 250 (folio 236)."
+    },
+    {
+      "block_id": "p0250-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Part V XXVI. ending 'V.' at bottom of p. 250 (folio 236)."
+    },
+    {
+      "block_id": "p0250-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Part V XXVI. ending 'V.' at bottom of p. 250 (folio 236)."
+    },
+    {
+      "block_id": "p0250-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified Part V XXVI. ending 'V.' at bottom of p. 250 (folio 236)."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "book_id": "eic-letters-received-vol-6-1617b",
+  "page_number": 320,
+  "check_id": "vol6-scan-check-p0320",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "c85f89f39706df3d2bc66df29de5055f3e7d849d03a5f7251ce8d0a8735572cf",
+  "checked_at": "2026-11-17T20:23:38.959834+00:00",
+  "checks": [
+    {
+      "block_id": "p0320-b0007",
+      "token": "Domoni",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0320.png: compositor omitted label '2' before 'Domoni (see p. 172).'"
+    },
+    {
+      "block_id": "p0320-b0003",
+      "token": "Demon,^2",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0320.png: callout 2 refers to unlabelled footnote Domoni (see p. 172)."
+    },
+    {
+      "block_id": "p0320-b0007-s2",
+      "token": "Domoni",
+      "verdict": "printed_as_read",
+      "note": "Verified on page_0320.png: compositor omitted label 2 before Domoni (see p. 172)."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "toru-dutt-life-letters-1921",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 383,
+  "reviewer": "native-vision-400ppi-scan-check",
+  "checked_at": "2026-11-19T15:52:28.339181+00:00",
+  "source_page_sha256": "ec2077edc4ef7ebb46723c6b52f0fd2f2c41e2bc79af964f1f8defe91e44b584",
+  "render_png": "renders/page_0383.png",
+  "checks": [
+    {
+      "block_id": "p0383-b0001",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0383.png."
+    },
+    {
+      "block_id": "p0383-b0002",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0383.png."
+    },
+    {
+      "block_id": "p0383-b0003",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0383.png."
+    },
+    {
+      "block_id": "p0383-b0004",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0383.png."
+    }
+  ]
+}

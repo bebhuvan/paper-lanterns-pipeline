@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "pascal-provincial-letters-1847",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Half-Title, Frontispiece & Title Page",
+      "start_page": 1,
+      "end_page": 10
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Translator's Preface",
+      "start_page": 11,
+      "end_page": 16
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Table of Contents & Errata",
+      "start_page": 17,
+      "end_page": 24
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Notice of M. Villemain",
+      "start_page": 25,
+      "end_page": 31
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Essay on Pascal, Considered as a Writer and a Moralist, by M. Villemain",
+      "start_page": 32,
+      "end_page": 54
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Memoir of Pascal",
+      "start_page": 55,
+      "end_page": 86
+    },
+    {
+      "kind": "chapter",
+      "title": "Provincial Letters",
+      "start_page": 87,
+      "end_page": 510
+    },
+    {
+      "kind": "appendix",
+      "title": "Appendix",
+      "start_page": 511,
+      "end_page": 560
+    },
+    {
+      "kind": "index",
+      "title": "Index",
+      "start_page": 561,
+      "end_page": 570
+    }
+  ]
+}

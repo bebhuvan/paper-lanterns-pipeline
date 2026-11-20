@@ -1,0 +1,44 @@
+{
+  "book_id": "rukaat-i-alamgiri-aurangzeb-1908",
+  "page_number": 194,
+  "check_id": "scan-check-p0194",
+  "reviewer": "native-vision-400ppi-scan-check",
+  "source_page_sha256": "8e562c74f23fa8fd0f42de68ed2ee4919c936efaed44a4902c72f97bf371a984",
+  "checks": [
+    {
+      "block_id": "p0194-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "400-PPI scan check on p. 194: confirms 1908 Bombay unaccented/variant orthography printed verbatim."
+    },
+    {
+      "block_id": "p0194-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "400-PPI scan check on p. 194: confirms 1908 Bombay unaccented/variant orthography printed verbatim."
+    },
+    {
+      "block_id": "p0194-b0017",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "400-PPI scan check on p. 194: confirms 1908 Bombay unaccented/variant orthography printed verbatim."
+    },
+    {
+      "block_id": "p0194-b0020",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "400-PPI scan check on p. 194: confirms 1908 Bombay unaccented/variant orthography printed verbatim."
+    },
+    {
+      "block_id": "p0194-b0047",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "400-PPI scan check on p. 194: confirms 1908 Bombay unaccented/variant orthography printed verbatim."
+    },
+    {
+      "block_id": "p0194-b0052",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "400-PPI scan check on p. 194: confirms 1908 Bombay unaccented/variant orthography printed verbatim."
+    },
+    {
+      "block_id": "p0194-b0055",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "400-PPI scan check on p. 194: confirms 1908 Bombay unaccented/variant orthography printed verbatim."
+    }
+  ]
+}

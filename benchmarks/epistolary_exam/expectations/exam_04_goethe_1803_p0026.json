@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "exam_id": "exam_04_goethe_1803_p0026",
+  "split": "tuning",
+  "source_pdf": "Goethe's letters to Zelter.pdf",
+  "source_page_number": 26,
+  "archive_id": "goetheslettersto00goet",
+  "book_title": "Goethe's Letters to Zelter",
+  "year": 1887,
+  "era": "19c",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "profile": "polyglot_epistolary",
+  "quirk_tags": [
+    "unchaptered_epistolary",
+    "post_signature_enclosure",
+    "german_diacritics_inline",
+    "spaced_ellipsis"
+  ],
+  "expected_printed_folio": "12",
+  "acceptable_printed_folios": [
+    "12"
+  ],
+  "expected_letter_segments_on_page": 1,
+  "expected_new_letter_starts": 0,
+  "continues_from_prev_page": true,
+  "continues_to_next_page": true,
+  "has_margin_note": false,
+  "has_editorial_block": false,
+  "has_enclosure": true,
+  "has_postscript": false,
+  "has_address_block": false,
+  "jbig2_source_risk": true,
+  "expected_block_types_present": [
+    "body",
+    "signature"
+  ],
+  "expected_footnote_labels": [],
+  "must_preserve_verbatim": [
+    "Natürliche Tochter",
+    "Concert-Meister",
+    "Lauchstädt",
+    "GOETHE.",
+    "ENCLOSURE.",
+    "Braut von Messina"
+  ],
+  "must_not_modernize_or_leak": [
+    "Naturliche Tochter",
+    "Lauchstadt",
+    "GOETHE’S LETTERS"
+  ],
+  "notes": "Post-signature 'ENCLOSURE.' on the same page after 'GOETHE.' — must stay attached to the parent LetterUnit (has_enclosure=True) rather than splitting into a second letter.",
+  "page_image": "pages/exam_04_goethe_1803_p0026.png",
+  "page_sha256": "6fef62c4881dabfab84045c7515c19af66b02cc278f7524bc326533a7ba82768",
+  "pixel_size": [
+    1129,
+    1853
+  ],
+  "pixel_verified": true,
+  "case_id": "exam_04_goethe_1803_p0026",
+  "id": "exam_04_goethe_1803_p0026",
+  "expected_letter_count": 1,
+  "must_contain_exact": [
+    "Natürliche Tochter",
+    "Concert-Meister",
+    "Lauchstädt",
+    "GOETHE.",
+    "ENCLOSURE.",
+    "Braut von Messina"
+  ],
+  "verbatim_substrings": [
+    "Natürliche Tochter",
+    "Concert-Meister",
+    "Lauchstädt",
+    "GOETHE.",
+    "ENCLOSURE.",
+    "Braut von Messina"
+  ],
+  "expect_margin_note": false,
+  "expect_editorial": false
+}

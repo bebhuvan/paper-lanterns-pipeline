@@ -1,0 +1,20 @@
+[book]
+book_id = "gandhi-sardar-patel"
+title = "Letters to Sardar Vallabhbhai Patel"
+author_or_editor = "M. K. Gandhi"
+authors = ["M. K. Gandhi"]
+publication_year = 1957
+subtitle = ""
+imprint = ""
+collection = "indian-epistolary-heritage"
+language = "en"
+declared_scripts = []
+profile = "indic_and_oriental_epistolary"
+
+[source]
+archive_id = ""
+source_pdf = "sources/letters-to-sardar-vallabhbhai-patel-gandhi.pdf"
+source_pdf_sha256 = ""
+
+[extraction]
+profile = "indic_and_oriental_epistolary"

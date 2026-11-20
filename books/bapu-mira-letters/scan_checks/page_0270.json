@@ -1,0 +1,59 @@
+{
+  "book_id": "bapu-mira-letters",
+  "page_number": 270,
+  "check_id": "scan-check-p0270",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "a50f17f4e5d40977709bca6e4566e1feb2d438a8dabfc22890206f30e4f643f2",
+  "checks": [
+    {
+      "block_id": "p0270-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unnumbered 4-5-'33 letter on printed p. 260 and purificatory fast footnote verbatim."
+    },
+    {
+      "block_id": "p0270-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unnumbered 4-5-'33 letter on printed p. 260 and purificatory fast footnote verbatim."
+    },
+    {
+      "block_id": "p0270-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unnumbered 4-5-'33 letter on printed p. 260 and purificatory fast footnote verbatim."
+    },
+    {
+      "block_id": "p0270-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unnumbered 4-5-'33 letter on printed p. 260 and purificatory fast footnote verbatim."
+    },
+    {
+      "block_id": "p0270-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unnumbered 4-5-'33 letter on printed p. 260 and purificatory fast footnote verbatim."
+    },
+    {
+      "block_id": "p0270-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unnumbered 4-5-'33 letter on printed p. 260 and purificatory fast footnote verbatim."
+    },
+    {
+      "block_id": "p0270-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unnumbered 4-5-'33 letter on printed p. 260 and purificatory fast footnote verbatim."
+    },
+    {
+      "block_id": "p0270-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unnumbered 4-5-'33 letter on printed p. 260 and purificatory fast footnote verbatim."
+    },
+    {
+      "block_id": "p0270-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unnumbered 4-5-'33 letter on printed p. 260 and purificatory fast footnote verbatim."
+    },
+    {
+      "block_id": "p0270-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Confirmed unnumbered 4-5-'33 letter on printed p. 260 and purificatory fast footnote verbatim."
+    }
+  ]
+}

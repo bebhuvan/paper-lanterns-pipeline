@@ -1,0 +1,19 @@
+{
+  "book_id": "dostoevsky-family-friends-1914",
+  "page_number": 67,
+  "check_id": "scan-check-p0067",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "67dbe9e8ee8f0d8ca77919160bb59dcda4954f742f3aa2bf9d356aa006367634",
+  "checks": [
+    {
+      "block_id": "p0067-b0001",
+      "verdict": "confirmed_portrait_plate_cyrillic",
+      "note": "Verified Oval-framed portrait photograph of Michael Dostoevsky with Cyrillic signature 'М. М. Достоевскій' and caption 'MICHAEL DOSTOEVSKY.'"
+    },
+    {
+      "block_id": "p0067-b0002",
+      "verdict": "confirmed_portrait_plate_cyrillic",
+      "note": "Verified Oval-framed portrait photograph of Michael Dostoevsky with Cyrillic signature 'М. М. Достоевскій' and caption 'MICHAEL DOSTOEVSKY.'"
+    }
+  ]
+}

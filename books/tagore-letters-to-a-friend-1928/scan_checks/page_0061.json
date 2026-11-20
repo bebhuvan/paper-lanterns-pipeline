@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "tagore-letters-to-a-friend-1928",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 61,
+  "reviewer": "native-vision-500ppi-scan-check",
+  "checked_at": "2026-11-19T14:06:56.659895+00:00",
+  "source_page_sha256": "e125484823f9dfa327da433ae3a6aff41af4a882120f9a7543e6c41f1088d213",
+  "render_png": "renders/page_0061.png",
+  "checks": [
+    {
+      "block_id": "p0061-b0001",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0061.png."
+    },
+    {
+      "block_id": "p0061-b0002",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0061.png."
+    },
+    {
+      "block_id": "p0061-b0003",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0061.png."
+    },
+    {
+      "block_id": "p0061-b0004",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0061.png."
+    },
+    {
+      "block_id": "p0061-b0005",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0061.png."
+    }
+  ],
+  "correction_ids": [
+    "corr-p0061-maharshi",
+    "corr-p0061-him"
+  ]
+}

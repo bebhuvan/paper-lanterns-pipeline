@@ -1,0 +1,111 @@
+{
+  "version": "correction-v2",
+  "book_id": "hugo-letters-vol2-1898",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "generated_by": "scan-check",
+  "created_at": "2026-11-17T18:54:44.611090+00:00",
+  "corrections": [
+    {
+      "correction_id": "hugo2-p0009-b0004-pressmark",
+      "page_number": 9,
+      "block_id": "p0009-b0004",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 9: Riverside Press woodcut printer device on title page; reclassify as scanner_residue to avoid fake [Illustration on p. 9]."
+    },
+    {
+      "correction_id": "hugo2-p0009-b0005-motto",
+      "page_number": 9,
+      "block_id": "p0009-b0005",
+      "op": "set_text",
+      "replacement_type": "imprint",
+      "replacement_tagged_text": "Tout bien ou rien. The Riverside Press",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 9: Fix vertically arranged scroll motto 'Tout bien ou rien.' + 'The Riverside Press' on title-page emblem and set type=imprint."
+    },
+    {
+      "correction_id": "hugo2-p0129-b0005-unclear",
+      "page_number": 129,
+      "block_id": "p0129-b0005",
+      "op": "set_text",
+      "replacement_tagged_text": "<sc>Here</sc> we are, my dear friend, in a delightful spot ; everything is lovely and charming. You pass from a wood to a group of rocks, from a garden to a reef, from a meadow to the sea. The inhabitants are well disposed towards refugees. You can see France from the coast.",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 129 (folio 115): Clear pencil line under 'in a delightful' clearly reads 'in a delightful'."
+    },
+    {
+      "correction_id": "hugo2-p0172-b0003-pencil",
+      "page_number": 172,
+      "block_id": "p0172-b0003",
+      "op": "drop_residue",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 172 (folio 158): Handwritten reader pencil annotation '<unclear>tkl</unclear>' in left margin beside 'All souls are white before God.'; drop as scanner_residue."
+    },
+    {
+      "correction_id": "hugo2-p0175-b0006-encl-head",
+      "page_number": 175,
+      "block_id": "p0175-b0006",
+      "op": "set_type",
+      "replacement_type": "heading",
+      "replacement_transition": "starts_enclosure",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 175 (folio 161): '<sc>À Charles Ribeyrolles.</sc>' introduces the enclosed epitaph at the end of Letter XLII."
+    },
+    {
+      "correction_id": "hugo2-p0175-b0007-encl-end",
+      "page_number": 175,
+      "block_id": "p0175-b0007",
+      "op": "set_transition",
+      "replacement_transition": "ends_enclosure",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 175 (folio 161): Six-line French verse epitaph ends the Letter XLII enclosure before Letter XLIII."
+    },
+    {
+      "correction_id": "hugo2-p0237-b0004-cx",
+      "page_number": 237,
+      "block_id": "p0237-b0004",
+      "op": "set_text",
+      "replacement_tagged_text": "CX.",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Normalize lowercase small-caps Roman numeral '<sc>cx.</sc>' to 'CX.' for clean letter numbering."
+    },
+    {
+      "correction_id": "hugo2-p0237-b0010-cxi",
+      "page_number": 237,
+      "block_id": "p0237-b0010",
+      "op": "set_text",
+      "replacement_tagged_text": "CXI.",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Normalize lowercase small-caps Roman numeral '<sc>cxi.</sc>' to 'CXI.' for clean letter numbering."
+    },
+    {
+      "correction_id": "hugo2-p0247-b0005-sig",
+      "page_number": 247,
+      "block_id": "p0247-b0005",
+      "op": "set_type",
+      "replacement_type": "signature",
+      "replacement_transition": "none",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 247 (folio 233): Right-aligned 'V.' is Victor Hugo's initial signature inside Letter CXXIII to Paul Meurice, not Roman numeral V."
+    },
+    {
+      "correction_id": "hugo2-p0247-b0006-ps",
+      "page_number": 247,
+      "block_id": "p0247-b0006",
+      "op": "set_type",
+      "replacement_type": "postscript",
+      "source": "machine",
+      "reviewer": "native-vision-350ppi-scan-check",
+      "note": "Scan check p. 247 (folio 233): Closing paragraph below 'V.' signature is a postscript within Letter CXXIII."
+    }
+  ]
+}

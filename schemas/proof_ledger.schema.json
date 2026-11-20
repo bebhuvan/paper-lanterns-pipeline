@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://paperlanterns.org/schemas/proof_ledger.schema.json",
+  "title": "ProofLedger",
+  "description": "Page-level Distributed Proofreaders (P1 -> P2) sign-off and machine-verification ledger stored in books/<book_id>/proof_ledger.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "book_id", "pages"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "enum": ["proof-ledger-v1", "proof-ledger-v2", "1.0.0"]
+    },
+    "book_id": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": ["string", "null"]
+    },
+    "pages": {
+      "type": "object",
+      "description": "Map of 1-based page_number string -> page proofing provenance record.",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["page_number", "status"],
+        "properties": {
+          "page_number": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "unproofed",
+              "p1_proofed",
+              "verified",
+              "machine_reread",
+              "needs_review"
+            ]
+          },
+          "signoff_method": {
+            "type": "string",
+            "enum": ["human", "machine_reread", "scan_check", "unreviewed"],
+            "default": "unreviewed"
+          },
+          "p1_reviewer_id": {
+            "type": ["string", "null"]
+          },
+          "p1_verified_at": {
+            "type": ["string", "null"]
+          },
+          "p2_verifier_id": {
+            "type": ["string", "null"]
+          },
+          "p2_verified_at": {
+            "type": ["string", "null"]
+          },
+          "reviewer": {
+            "type": ["string", "null"]
+          },
+          "verified_at": {
+            "type": ["string", "null"]
+          },
+          "source_page_sha256": {
+            "type": ["string", "null"]
+          },
+          "page_text_sha256": {
+            "type": ["string", "null"]
+          },
+          "attestation": {
+            "type": ["object", "null"]
+          },
+          "evidence": {
+            "type": ["object", "null"]
+          },
+          "notes": {
+            "type": ["string", "null"]
+          }
+        }
+      }
+    }
+  }
+}

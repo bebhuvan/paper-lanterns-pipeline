@@ -1,0 +1,74 @@
+{
+  "book_id": "hugo-letters-vol2-1898",
+  "page_number": 233,
+  "check_id": "scan-check-p0233",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "f14c31084a5ac5a4ae7fcfba0b131ae6f6d00890991e694dcf361b7c0aa92797",
+  "checks": [
+    {
+      "block_id": "p0233-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'Où' grave accent in Dernier jour d'un condamné quotation on p. 233 (folio 219)."
+    },
+    {
+      "block_id": "p0233-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'Où' grave accent in Dernier jour d'un condamné quotation on p. 233 (folio 219)."
+    },
+    {
+      "block_id": "p0233-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'Où' grave accent in Dernier jour d'un condamné quotation on p. 233 (folio 219)."
+    },
+    {
+      "block_id": "p0233-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'Où' grave accent in Dernier jour d'un condamné quotation on p. 233 (folio 219)."
+    },
+    {
+      "block_id": "p0233-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'Où' grave accent in Dernier jour d'un condamné quotation on p. 233 (folio 219)."
+    },
+    {
+      "block_id": "p0233-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'Où' grave accent in Dernier jour d'un condamné quotation on p. 233 (folio 219)."
+    },
+    {
+      "block_id": "p0233-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'Où' grave accent in Dernier jour d'un condamné quotation on p. 233 (folio 219)."
+    },
+    {
+      "block_id": "p0233-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'Où' grave accent in Dernier jour d'un condamné quotation on p. 233 (folio 219)."
+    },
+    {
+      "block_id": "p0233-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'Où' grave accent in Dernier jour d'un condamné quotation on p. 233 (folio 219)."
+    },
+    {
+      "block_id": "p0233-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'Où' grave accent in Dernier jour d'un condamné quotation on p. 233 (folio 219)."
+    },
+    {
+      "block_id": "p0233-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'Où' grave accent in Dernier jour d'un condamné quotation on p. 233 (folio 219)."
+    },
+    {
+      "block_id": "p0233-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'Où' grave accent in Dernier jour d'un condamné quotation on p. 233 (folio 219)."
+    },
+    {
+      "block_id": "p0233-b0013",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 'Où' grave accent in Dernier jour d'un condamné quotation on p. 233 (folio 219)."
+    }
+  ]
+}

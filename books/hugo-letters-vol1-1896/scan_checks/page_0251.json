@@ -1,0 +1,69 @@
+{
+  "book_id": "hugo-letters-vol1-1896",
+  "page_number": 251,
+  "check_id": "scan-check-p0251",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "f0bb547d1c2662c731b44b11ff0dfbef7aabb165944f20612f74a22c1a041779",
+  "checks": [
+    {
+      "block_id": "p0251-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified paired note to Charles Vacquerie ('My love to you, dear Charles. V.') inside XXVI before XXVII (p. 251, folio 237)."
+    },
+    {
+      "block_id": "p0251-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified paired note to Charles Vacquerie ('My love to you, dear Charles. V.') inside XXVI before XXVII (p. 251, folio 237)."
+    },
+    {
+      "block_id": "p0251-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified paired note to Charles Vacquerie ('My love to you, dear Charles. V.') inside XXVI before XXVII (p. 251, folio 237)."
+    },
+    {
+      "block_id": "p0251-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified paired note to Charles Vacquerie ('My love to you, dear Charles. V.') inside XXVI before XXVII (p. 251, folio 237)."
+    },
+    {
+      "block_id": "p0251-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified paired note to Charles Vacquerie ('My love to you, dear Charles. V.') inside XXVI before XXVII (p. 251, folio 237)."
+    },
+    {
+      "block_id": "p0251-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified paired note to Charles Vacquerie ('My love to you, dear Charles. V.') inside XXVI before XXVII (p. 251, folio 237)."
+    },
+    {
+      "block_id": "p0251-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified paired note to Charles Vacquerie ('My love to you, dear Charles. V.') inside XXVI before XXVII (p. 251, folio 237)."
+    },
+    {
+      "block_id": "p0251-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified paired note to Charles Vacquerie ('My love to you, dear Charles. V.') inside XXVI before XXVII (p. 251, folio 237)."
+    },
+    {
+      "block_id": "p0251-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified paired note to Charles Vacquerie ('My love to you, dear Charles. V.') inside XXVI before XXVII (p. 251, folio 237)."
+    },
+    {
+      "block_id": "p0251-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified paired note to Charles Vacquerie ('My love to you, dear Charles. V.') inside XXVI before XXVII (p. 251, folio 237)."
+    },
+    {
+      "block_id": "p0251-b0011",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified paired note to Charles Vacquerie ('My love to you, dear Charles. V.') inside XXVI before XXVII (p. 251, folio 237)."
+    },
+    {
+      "block_id": "p0251-b0012",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified paired note to Charles Vacquerie ('My love to you, dear Charles. V.') inside XXVI before XXVII (p. 251, folio 237)."
+    }
+  ]
+}

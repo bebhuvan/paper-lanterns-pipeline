@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "tolstoy-essays-letters-1903",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Half-Title & Title Page",
+      "start_page": 1,
+      "end_page": 8
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Preface",
+      "start_page": 9,
+      "end_page": 10
+    },
+    {
+      "kind": "frontmatter",
+      "title": "Contents",
+      "start_page": 11,
+      "end_page": 12
+    },
+    {
+      "kind": "chapter",
+      "title": "I. Industry and Idleness",
+      "start_page": 13,
+      "end_page": 27
+    },
+    {
+      "kind": "chapter",
+      "title": "II. Why Do Men Stupefy Themselves?",
+      "start_page": 28,
+      "end_page": 47
+    },
+    {
+      "kind": "chapter",
+      "title": "III. An Afterword to ‘The Kreutzer Sonata’",
+      "start_page": 48,
+      "end_page": 64
+    },
+    {
+      "kind": "chapter",
+      "title": "IV. The First Step",
+      "start_page": 65,
+      "end_page": 105
+    },
+    {
+      "kind": "chapter",
+      "title": "V. Non-Acting",
+      "start_page": 106,
+      "end_page": 134
+    },
+    {
+      "kind": "chapter",
+      "title": "VI. An Afterword to an Account of Relief Supplied to the Famine-Stricken",
+      "start_page": 135,
+      "end_page": 139
+    },
+    {
+      "kind": "chapter",
+      "title": "VII. Religion and Morality",
+      "start_page": 140,
+      "end_page": 166
+    },
+    {
+      "kind": "chapter",
+      "title": "VIII. Reason and Religion: A Letter to an Inquirer",
+      "start_page": 167,
+      "end_page": 171
+    },
+    {
+      "kind": "chapter",
+      "title": "IX. Shame!",
+      "start_page": 172,
+      "end_page": 178
+    },
+    {
+      "kind": "chapter",
+      "title": "X. Letter to Peter Verígin, the Doukhobór Leader—I",
+      "start_page": 179,
+      "end_page": 182
+    },
+    {
+      "kind": "chapter",
+      "title": "XI. Letter to Peter Verígin, the Doukhobór Leader—II",
+      "start_page": 183,
+      "end_page": 188
+    },
+    {
+      "kind": "chapter",
+      "title": "XII. Letter on Non-Resistance: To Ernest H. Crosby, of New York",
+      "start_page": 189,
+      "end_page": 200
+    },
+    {
+      "kind": "chapter",
+      "title": "XIII. How to Read the Gospels, and What Is Essential in Them",
+      "start_page": 201,
+      "end_page": 204
+    },
+    {
+      "kind": "chapter",
+      "title": "XIV. A Letter to Russian Liberals",
+      "start_page": 205,
+      "end_page": 221
+    },
+    {
+      "kind": "chapter",
+      "title": "XV. Timothy Bóndaref",
+      "start_page": 222,
+      "end_page": 224
+    },
+    {
+      "kind": "chapter",
+      "title": "XVI. Letters on Henry George",
+      "start_page": 225,
+      "end_page": 230
+    },
+    {
+      "kind": "chapter",
+      "title": "XVII. Modern Science",
+      "start_page": 231,
+      "end_page": 241
+    },
+    {
+      "kind": "chapter",
+      "title": "XVIII. Letter to a Non-Commissioned Officer",
+      "start_page": 242,
+      "end_page": 249
+    },
+    {
+      "kind": "chapter",
+      "title": "XIX. Patriotism and Government",
+      "start_page": 250,
+      "end_page": 273
+    },
+    {
+      "kind": "chapter",
+      "title": "XX. ‘Thou Shalt Not Kill’",
+      "start_page": 274,
+      "end_page": 281
+    },
+    {
+      "kind": "chapter",
+      "title": "XXI. To the Tsar and His Assistants",
+      "start_page": 282,
+      "end_page": 288
+    },
+    {
+      "kind": "chapter",
+      "title": "XXII. A Reply to the Synod’s Edict of Excommunication",
+      "start_page": 289,
+      "end_page": 299
+    },
+    {
+      "kind": "chapter",
+      "title": "XXIII. What Is Religion, and Wherein Lies Its Essence?",
+      "start_page": 300,
+      "end_page": 349
+    },
+    {
+      "kind": "chapter",
+      "title": "XXIV. Letter on Education",
+      "start_page": 350,
+      "end_page": 352
+    },
+    {
+      "kind": "chapter",
+      "title": "XXV. An Appeal to the Clergy",
+      "start_page": 353,
+      "end_page": 376
+    },
+    {
+      "kind": "chapter",
+      "title": "XXVI. Thoughts Selected from Private Letters",
+      "start_page": 377,
+      "end_page": 381
+    },
+    {
+      "kind": "index",
+      "title": "Index",
+      "start_page": 382,
+      "end_page": 388
+    }
+  ]
+}

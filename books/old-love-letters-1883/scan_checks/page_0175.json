@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "old-love-letters-1883",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 175,
+  "reviewer": "native-vision-350ppi-scan-check",
+  "checked_at": "2026-11-19T04:13:56.272219+00:00",
+  "source_page_sha256": "cd2e4350581e12ce1c122c2ee6a91cf375e6436bed4e294d49e882b5a448283a",
+  "render_png": "renders/page_0175.png",
+  "checks": [
+    {
+      "block_id": "p0175-b0003",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0175.png."
+    },
+    {
+      "block_id": "p0175-b0005",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0175.png."
+    },
+    {
+      "block_id": "p0175-b0006",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0175.png."
+    },
+    {
+      "block_id": "p0175-b0007",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0175.png."
+    },
+    {
+      "block_id": "p0175-b0008",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0175.png."
+    },
+    {
+      "block_id": "p0175-b0009",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0175.png."
+    },
+    {
+      "block_id": "p0175-b0011",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0175.png."
+    },
+    {
+      "block_id": "p0175-b0012",
+      "status": "verified",
+      "note": "Inspected on 350 DPI PNG renders/page_0175.png."
+    }
+  ],
+  "correction_ids": []
+}

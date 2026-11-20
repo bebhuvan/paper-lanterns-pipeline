@@ -1,0 +1,34 @@
+{
+  "book_id": "gandhi-famous-letters-1947",
+  "page_number": 123,
+  "check_id": "scan-check-p0123",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "79ad090c669df3b86dbdcbb0c0ac1127ffcabb628158af86abc97e71add55d8e",
+  "checks": [
+    {
+      "block_id": "p0123-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 1942 Movement section heading, 1st Letter label, and editorial note verbatim."
+    },
+    {
+      "block_id": "p0123-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 1942 Movement section heading, 1st Letter label, and editorial note verbatim."
+    },
+    {
+      "block_id": "p0123-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 1942 Movement section heading, 1st Letter label, and editorial note verbatim."
+    },
+    {
+      "block_id": "p0123-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 1942 Movement section heading, 1st Letter label, and editorial note verbatim."
+    },
+    {
+      "block_id": "p0123-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified 1942 Movement section heading, 1st Letter label, and editorial note verbatim."
+    }
+  ]
+}

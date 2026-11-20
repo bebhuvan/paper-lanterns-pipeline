@@ -1,0 +1,16 @@
+{
+  "book_id": "eic-letters-received-vol-5-1617a",
+  "page_number": 389,
+  "check_id": "vol5-scan-check-p0389",
+  "reviewer": "native-vision-250to450ppi-scan-check",
+  "source_page_sha256": "5de6fef5bfe550eae064874efe3ba2947790d52d3fc67eca1841b2c81f29584c",
+  "checked_at": "2026-11-17T17:58:00.757804+00:00",
+  "checks": [
+    {
+      "block_id": "p0389-b0005",
+      "token": "[and as ?]",
+      "verdict": "printed_as_read",
+      "note": "450-DPI crop confirms literal printed Foster bracketed conjecture '[and as ?]'"
+    }
+  ]
+}

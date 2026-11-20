@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "mill-letters-vol1-1910",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 317,
+  "reviewer": "native-vision-400ppi-scan-check",
+  "checked_at": "2026-11-19T15:16:46.579443+00:00",
+  "source_page_sha256": "2578b948254a2c62735fd3d8b8857c134dab2d5a419d544169bbafc918a5eee1",
+  "render_png": "renders/page_0317.png",
+  "checks": [
+    {
+      "block_id": "p0317-b0001",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0317.png."
+    },
+    {
+      "block_id": "p0317-b0002",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0317.png."
+    },
+    {
+      "block_id": "p0317-b0003",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0317.png."
+    },
+    {
+      "block_id": "p0317-b0004",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0317.png."
+    },
+    {
+      "block_id": "p0317-b0005",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0317.png."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "version": "correction-v2",
+  "book_id": "schumann-letters-1907",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "reviewer": "native-vision-400ppi-scan-check",
+  "generated_by": "scan-check",
+  "created_at": "2026-11-19T14:23:21.486723+00:00",
+  "corrections": [
+    {
+      "correction_id": "corr-p0124-quad-speck",
+      "page_number": 124,
+      "block_id": "p0124-b0003",
+      "anchor_text": "way. The piece is indeed over, but the curtain does not fall. I should like to mention, too, that I fitted the words to the music, and not vice versa, else were it a ‘mad beginning.’ Only the last number—by a freak of fortune similar to the first—was inspired by Jean Paul. One more question: Do not the Papillons explain· themselves? It interests me to know.",
+      "op": "set_text",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "source": "machine",
+      "note": "Remove raised space quad mark in 'explain·themselves' -> 'explain themselves' verified on page_0124.png.",
+      "created_at": "2026-11-19T14:23:21.486723+00:00",
+      "replacement_tagged_text": "way. The piece is indeed over, but the curtain does not fall. I should like to mention, too, that I fitted the words to the music, and not <i>vice versa,</i> else were it a ‘mad beginning.’ Only the last number—by a freak of fortune similar to the first—was inspired by Jean Paul. One more question: Do not the <i>Papillons</i> explain· themselves? It interests me to know."
+    },
+    {
+      "correction_id": "corr-p0097-letter27-split",
+      "page_number": 97,
+      "block_id": "p0097-b0006",
+      "anchor_text": "27.",
+      "op": "set_transition",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "source": "machine",
+      "note": "Mark numbered enclosed letter '27. To Clara Wieck' as starts_new_letter verified on page_0097.png.",
+      "created_at": "2026-11-19T14:23:21.486723+00:00",
+      "replacement_transition": "starts_new_letter"
+    },
+    {
+      "correction_id": "corr-p0216-monday19-tr",
+      "page_number": 216,
+      "block_id": "p0216-b0006",
+      "anchor_text": "Monday, March 19.",
+      "op": "set_transition",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "source": "machine",
+      "note": "Clear starts_new_letter from journal continuation dateline 'Monday, March 19.' inside Letter 75.",
+      "created_at": "2026-11-19T14:23:21.486723+00:00",
+      "replacement_transition": "none"
+    },
+    {
+      "correction_id": "corr-p0310-postscript-type",
+      "page_number": 310,
+      "block_id": "p0310-b0010",
+      "anchor_text": "I have begun to collect and arrange my ideas on the young eagle. Much as I should like to assist him in his first public flight, I fear that my personal attachment is too great to admit of an impartial consideration of the lights and shadows of his plumage. When I come to a conclusion, which",
+      "op": "set_type",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "source": "machine",
+      "note": "Retype unsigned continuation paragraph after R. Sch. in Letter 129 as postscript verified on page_0310.png.",
+      "created_at": "2026-11-19T14:23:21.486723+00:00",
+      "replacement_type": "postscript"
+    },
+    {
+      "correction_id": "corr-p0310-postscript-tr",
+      "page_number": 310,
+      "block_id": "p0310-b0010",
+      "anchor_text": "I have begun to collect and arrange my ideas on the young eagle. Much as I should like to assist him in his first public flight, I fear that my personal attachment is too great to admit of an impartial consideration of the lights and shadows of his plumage. When I come to a conclusion, which",
+      "op": "set_transition",
+      "reviewer": "native-vision-400ppi-scan-check",
+      "source": "machine",
+      "note": "Clear false starts_new_letter from Letter 129 postscript on page_0310.png.",
+      "created_at": "2026-11-19T14:23:21.486723+00:00",
+      "replacement_transition": "none"
+    }
+  ]
+}

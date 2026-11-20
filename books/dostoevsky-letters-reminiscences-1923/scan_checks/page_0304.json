@@ -1,0 +1,14 @@
+{
+  "book_id": "dostoevsky-letters-reminiscences-1923",
+  "page_number": 304,
+  "check_id": "scan-check-p0304",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "7ebdacdf5b80e71ac614d6eeeb4fbb150063540fca8633932c629c609103ddbf",
+  "checks": [
+    {
+      "block_id": "p0304-b0001",
+      "verdict": "confirmed_illustration_facsimile",
+      "note": "Verified full-page rotated facsimile of Dostoevsky's MS. ('Life of a Great Sinner') is classified as illustration."
+    }
+  ]
+}

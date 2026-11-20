@@ -1,0 +1,22 @@
+{
+  "book_id": "tipu-sultan-select-letters-1811",
+  "page_number": 109,
+  "check_id": "tipu-sultan-select-letters-1811-p0109",
+  "reviewer": "visual-audit",
+  "source_page_sha256": "6cf7c285f9874694108e3caa67763d60aec70c2a80311a7818fc7c62445a5f25",
+  "checked_at": "2026-11-17T21:31:14.948331+00:00",
+  "checks": [
+    {
+      "block_id": "p0109-b0004",
+      "token": "Cutwal",
+      "verdict": "printed_as_read",
+      "note": "Printed unaccented 'the said Cutwal' on p0109."
+    },
+    {
+      "block_id": "p0109-b0005",
+      "token": "Shahnoor",
+      "verdict": "printed_as_read",
+      "note": "Printed unaccented Shahnoor on p0109."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "book_id": "pascal-provincial-letters-1847",
+  "page_number": 554,
+  "check_id": "scan-check-p0554",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "d6479358af9445c14024b869e84b140bcb73b27d63464f928fdb578f6074ed7f",
+  "checks": [
+    {
+      "block_id": "p0554-b0001",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified lithographic facsimile plate of Pascal's autograph MS 'Pensées sur les Jesuits' and 'imile by Standidge & Cº.'."
+    },
+    {
+      "block_id": "p0554-b0002",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified lithographic facsimile plate of Pascal's autograph MS 'Pensées sur les Jesuits' and 'imile by Standidge & Cº.'."
+    },
+    {
+      "block_id": "p0554-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified lithographic facsimile plate of Pascal's autograph MS 'Pensées sur les Jesuits' and 'imile by Standidge & Cº.'."
+    }
+  ]
+}

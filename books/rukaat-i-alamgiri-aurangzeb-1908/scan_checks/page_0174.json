@@ -1,0 +1,19 @@
+{
+  "book_id": "rukaat-i-alamgiri-aurangzeb-1908",
+  "page_number": 174,
+  "check_id": "scan-check-p0174",
+  "reviewer": "native-vision-400ppi-scan-check",
+  "source_page_sha256": "9bdb2c0fafae3087ef669381c47cc369a911f70caf6a22839ebe6c6cd4b195d3",
+  "checks": [
+    {
+      "block_id": "p0174-b0002",
+      "verdict": "corrected_from_scan",
+      "note": "400-PPI scan confirms separate section heading and letter header on p. 174."
+    },
+    {
+      "block_id": "p0174-b0003",
+      "verdict": "corrected_from_scan",
+      "note": "400-PPI scan confirms separate section heading and letter header on p. 174."
+    }
+  ]
+}

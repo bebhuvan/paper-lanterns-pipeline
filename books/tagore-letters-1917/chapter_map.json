@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "tagore-letters-1917",
+  "sections": [
+    {
+      "kind": "frontmatter",
+      "title": "Cover, Title Page & Copyright",
+      "start_page": 1,
+      "end_page": 4
+    },
+    {
+      "kind": "chapter",
+      "title": "Letters (68)–(80): Cuttack, Puri, Balia, Tiran, Calcutta & Shelidah (February–May 1893)",
+      "start_page": 5,
+      "end_page": 23
+    },
+    {
+      "kind": "backmatter",
+      "title": "Blank Leaves & Preservation Endpapers",
+      "start_page": 24,
+      "end_page": 26
+    }
+  ]
+}

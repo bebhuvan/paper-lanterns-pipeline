@@ -1,0 +1,49 @@
+{
+  "book_id": "pascal-miscellaneous-writings-1849",
+  "page_number": 423,
+  "check_id": "scan-check-p0423",
+  "reviewer": "native-vision-350ppi-scan-check",
+  "source_page_sha256": "f0752ad7033bd73afcc3d04b01b541e4f010a405f25635ea3949423f82fffb39",
+  "checks": [
+    {
+      "block_id": "p0423-b0003",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefixes on 'VII. +' blockquote and bare leading '† . . . . 23 q. 5.' callout."
+    },
+    {
+      "block_id": "p0423-b0004",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefixes on 'VII. +' blockquote and bare leading '† . . . . 23 q. 5.' callout."
+    },
+    {
+      "block_id": "p0423-b0005",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefixes on 'VII. +' blockquote and bare leading '† . . . . 23 q. 5.' callout."
+    },
+    {
+      "block_id": "p0423-b0006",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefixes on 'VII. +' blockquote and bare leading '† . . . . 23 q. 5.' callout."
+    },
+    {
+      "block_id": "p0423-b0007",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefixes on 'VII. +' blockquote and bare leading '† . . . . 23 q. 5.' callout."
+    },
+    {
+      "block_id": "p0423-b0008",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefixes on 'VII. +' blockquote and bare leading '† . . . . 23 q. 5.' callout."
+    },
+    {
+      "block_id": "p0423-b0009",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefixes on 'VII. +' blockquote and bare leading '† . . . . 23 q. 5.' callout."
+    },
+    {
+      "block_id": "p0423-b0010",
+      "verdict": "confirmed_original_compositor_ink",
+      "note": "Verified '+' MS prefixes on 'VII. +' blockquote and bare leading '† . . . . 23 q. 5.' callout."
+    }
+  ]
+}

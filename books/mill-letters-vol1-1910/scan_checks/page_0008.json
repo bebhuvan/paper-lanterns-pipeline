@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "mill-letters-vol1-1910",
+  "run_id": "canonical-sonnet55-batch-v1",
+  "page_number": 8,
+  "reviewer": "native-vision-400ppi-scan-check",
+  "checked_at": "2026-11-19T15:16:46.579443+00:00",
+  "source_page_sha256": "8e9d28185ce3f58c1b9fded8ad34ff728192655be0e26f2ae3eb147a9f856ae6",
+  "render_png": "renders/page_0008.png",
+  "checks": [
+    {
+      "block_id": "p0008-b0001",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0008.png."
+    },
+    {
+      "block_id": "p0008-b0002",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0008.png."
+    },
+    {
+      "block_id": "p0008-b0003",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0008.png."
+    },
+    {
+      "block_id": "p0008-b0004",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0008.png."
+    },
+    {
+      "block_id": "p0008-b0005",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0008.png."
+    },
+    {
+      "block_id": "p0008-b0006",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0008.png."
+    },
+    {
+      "block_id": "p0008-b0007",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0008.png."
+    },
+    {
+      "block_id": "p0008-b0008",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0008.png."
+    },
+    {
+      "block_id": "p0008-b0009",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0008.png."
+    },
+    {
+      "block_id": "p0008-b0010",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0008.png."
+    },
+    {
+      "block_id": "p0008-b0011",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0008.png."
+    },
+    {
+      "block_id": "p0008-b0012",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0008.png."
+    },
+    {
+      "block_id": "p0008-b0013",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0008.png."
+    },
+    {
+      "block_id": "p0008-b0014",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0008.png."
+    },
+    {
+      "block_id": "p0008-b0015",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0008.png."
+    },
+    {
+      "block_id": "p0008-b0016",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0008.png."
+    },
+    {
+      "block_id": "p0008-b0017",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0008.png."
+    },
+    {
+      "block_id": "p0008-b0018",
+      "status": "verified",
+      "note": "Inspected on PNG renders/page_0008.png."
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "version": "correction-v2",
+  "book_id": "rukaat-i-alamgiri-aurangzeb-1908",
+  "run_id": "canonical-hydrogen-v1",
+  "reviewer": "native-vision-400ppi-scan-check",
+  "generated_by": "scan-check",
+  "created_at": "2026-11-17T03:31:07.095435+00:00",
+  "corrections": [
+    {
+      "correction_id": "aur-p0082-b0002-callout3",
+      "page_number": 82,
+      "block_id": "p0082-b0002",
+      "op": "set_text",
+      "replacement_tagged_text": "impudence and misbehaviour of Hidáyat Keesh–i–Punjábi who, having drunk wine, walked on the enlightened tomb of Sháh Bandeh Naváz Gisū Daráz<sup>2</sup> and (thus) displayed his low spirit. When that wicked man had gone to that (holy) place in a drunken state, you ought to have sent your servants with an order to bind him hand and foot and to bring him (before you); and then having placed him in front, you ought to have sent him to me along with mace-bearers<sup>3</sup>. Evidently partiality should not be allowed to the reporter; for this, I have sent (to you) strict mace-bearers in order to bind the accursed (Punjábi) and to bring him (before me).",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 82 (folio 70): compositor dropped subscript sort 3 on mace-bearers3 is footnote callout 3 matching fn 3 on p. 82."
+    },
+    {
+      "correction_id": "aur-p0171-b0009-under",
+      "page_number": 171,
+      "block_id": "p0171-b0009",
+      "op": "set_text",
+      "replacement_tagged_text": "2. A Hindu of the tribe of Khatri of Lahore. He served under Aurungzebe who conferred on him the title of Ikhalas Khan. He was well versed in Persian. In the time of Farukh Shiar he was raised to the rank of 7000. He wrote the history of that emperor (Farukh Shiar) and called it ‘Bádsháh Námeh.’",
+      "source": "machine",
+      "note": "600-DPI crop check on p. 171 (folio 159) fn. 2: faint right-margin ink on \"under\" is unambiguously \"under\"."
+    },
+    {
+      "correction_id": "aur-p0085-b0002-split",
+      "page_number": 85,
+      "block_id": "p0085-b0002",
+      "op": "split_block",
+      "split_blocks": [
+        {
+          "block_id": "p0085-b0002-s1",
+          "type": "heading",
+          "heading_level": 2,
+          "alignment": "center",
+          "epistolary_transition": "none",
+          "line_breaks_preserved": true,
+          "tagged_text": "<b>Letter addressed to</b>\nKám Bakhsha<sup>1</sup>."
+        },
+        {
+          "block_id": "p0085-b0002-s2",
+          "type": "letter_header",
+          "alignment": "center",
+          "epistolary_transition": "starts_new_letter",
+          "line_breaks_preserved": true,
+          "tagged_text": "1707. LETTER LXXIII<sup>2</sup>."
+        }
+      ],
+      "source": "machine",
+      "note": "400-PPI scan check on p. 85 (folio 73): separate recipient section heading from letter header 1707. LETTER LXXIII2."
+    },
+    {
+      "correction_id": "aur-p0099-b0002-heading",
+      "page_number": 99,
+      "block_id": "p0099-b0002",
+      "op": "set_type",
+      "replacement_type": "heading",
+      "replacement_transition": "none",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 99 (folio 87): recipient section heading before 1659. LETTER XCI."
+    },
+    {
+      "correction_id": "aur-p0099-b0003-start",
+      "page_number": 99,
+      "block_id": "p0099-b0003",
+      "op": "set_transition",
+      "replacement_transition": "starts_new_letter",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 99 (folio 87): 1659. LETTER XCI. opens the letter."
+    },
+    {
+      "correction_id": "aur-p0173-b0002-heading",
+      "page_number": 173,
+      "block_id": "p0173-b0002",
+      "op": "set_type",
+      "replacement_type": "heading",
+      "replacement_transition": "none",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 173 (folio 161): recipient section heading before 1662. LETTER CLXVII."
+    },
+    {
+      "correction_id": "aur-p0173-b0003-start",
+      "page_number": 173,
+      "block_id": "p0173-b0003",
+      "op": "set_transition",
+      "replacement_transition": "starts_new_letter",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 173 (folio 161): 1662. LETTER CLXVII. opens the letter."
+    },
+    {
+      "correction_id": "aur-p0174-b0002-heading",
+      "page_number": 174,
+      "block_id": "p0174-b0002",
+      "op": "set_type",
+      "replacement_type": "heading",
+      "replacement_transition": "none",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 174 (folio 162): recipient section heading before LETTER CLXVIII."
+    },
+    {
+      "correction_id": "aur-p0174-b0003-start",
+      "page_number": 174,
+      "block_id": "p0174-b0003",
+      "op": "set_transition",
+      "replacement_transition": "starts_new_letter",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 174 (folio 162): LETTER CLXVIII. opens the letter."
+    },
+    {
+      "correction_id": "aur-p0187-b0002-heading",
+      "page_number": 187,
+      "block_id": "p0187-b0002",
+      "op": "set_type",
+      "replacement_type": "heading",
+      "replacement_transition": "none",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 187 (folio 175): mandate heading line 1."
+    },
+    {
+      "correction_id": "aur-p0187-b0003-heading",
+      "page_number": 187,
+      "block_id": "p0187-b0003",
+      "op": "set_type",
+      "replacement_type": "heading",
+      "replacement_transition": "none",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 187 (folio 175): mandate heading line 2 (addressee)."
+    },
+    {
+      "correction_id": "aur-p0187-b0004-start",
+      "page_number": 187,
+      "block_id": "p0187-b0004",
+      "op": "set_transition",
+      "replacement_transition": "starts_new_letter",
+      "source": "machine",
+      "note": "400-PPI scan check on p. 187 (folio 175): LETTER CLXXXI.1 opens the letter."
+    }
+  ]
+}
