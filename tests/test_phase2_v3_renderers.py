@@ -444,3 +444,100 @@ def test_compiled_gate_strict_v3_standards_catches_planted_defects(tmp_path: Pat
     assert "tei_placeholder_unknown_correspondent" in codes
     assert "epub_hardcoded_paper_theme" in codes
     assert "epub_non_monotone_page_order" in codes
+
+
+def test_heading_clamp_resets_after_h2_return(tmp_path: Path) -> None:
+    """Returning to an h2 heading after an h3 must reset max_next_h so a later h3 does not jump to h4."""
+    pages = [
+        make_page(
+            1,
+            [
+                make_block("p0001-b0001", 1, "heading", "FRONTMATTER", heading_level=1),
+                make_block("p0001-b0002", 1, "body", "Opening paragraph."),
+                make_block("p0001-b0003", 1, "heading", "MAIN TITLE", heading_level=1),
+                make_block("p0001-b0004", 1, "heading", "SUBTITLE", heading_level=2),
+                make_block("p0001-b0005", 1, "heading", "ANOTHER TITLE", heading_level=1),
+                make_block("p0001-b0006", 1, "heading", "SECTION DETAIL", heading_level=3),
+                make_block("p0001-b0007", 1, "body", "Prose after headings."),
+            ],
+            printed_folio="1",
+        )
+    ]
+    plan = {
+        "sections": [
+            {
+                "kind": "frontmatter",
+                "title_plain": "FRONTMATTER",
+                "start_block_id": "p0001-b0001",
+                "end_block_id": "p0001-b0007",
+                "units": [
+                    {"kind": "apparatus", "start_block_id": "p0001-b0001", "end_block_id": "p0001-b0007"}
+                ],
+            }
+        ]
+    }
+    ast = compile_collection_ast(pages, book_id="heading-reset-test", title="Heading Reset Test", structure_plan=plan)
+    ed_dir = tmp_path / "edition"
+    render_complete_edition(ast, ed_dir, include_proofing=True)
+
+    sec_html = next((ed_dir / "web" / "sections").glob("*.html")).read_text(encoding="utf-8")
+    assert '<h2 id="p0001-b0005"' in sec_html
+    assert '<h3 id="p0001-b0006"' in sec_html
+    assert "<h4" not in sec_html
+
+    gate = validate_compiled_edition(ed_dir, ast, require_proofing=True, strict_standards=True, run_external_tools=False)
+    assert gate["ok"], gate["errors"]
+
+
+def test_literal_bracket_page_crossref_not_parsed_as_pagebreak(tmp_path: Path) -> None:
+    """Printed editorial cross-references like [p. 112] must stay literal text and never steal id='page-112'."""
+    pages = [
+        make_page(
+            1,
+            [
+                make_block("p0001-b0001", 1, "heading", "INTRODUCTION", heading_level=1),
+                make_block("p0001-b0002", 1, "body", "As the editor noted (he wrote [p. 112], and continued)."),
+            ],
+            printed_folio="i",
+        ),
+        make_page(
+            112,
+            [
+                make_block("p0112-b0001", 112, "letter_header", "LETTER X", epistolary_transition="starts_new_letter"),
+                make_block("p0112-b0002", 112, "body", "Actual page 112 content."),
+            ],
+            printed_folio="112",
+        ),
+    ]
+    ast = compile_collection_ast(pages, book_id="crossref-test", title="Crossref Test")
+    ed_dir = tmp_path / "edition"
+    render_complete_edition(ast, ed_dir, include_proofing=True)
+
+    sec_html = next((ed_dir / "web" / "sections").glob("*.html")).read_text(encoding="utf-8")
+    assert "he wrote [p. 112], and continued" in sec_html
+    assert sec_html.count('id="page-112"') == 1
+
+    tei_xml = (ed_dir / "tei" / "crossref-test.tei.xml").read_text(encoding="utf-8")
+    assert "he wrote [p. 112], and continued" in tei_xml
+    assert tei_xml.count('<pb xml:id="page-112"') == 1
+
+    gate = validate_compiled_edition(ed_dir, ast, require_proofing=True, strict_standards=True, run_external_tools=False)
+    assert gate["ok"], gate["errors"]
+
+
+def test_cli_validate_edition_serializes_validation_findings(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """`lanterns validate-edition` must JSON-serialize ValidationFinding objects on failing editions."""
+    from lanterns.cli import main as cli_main
+
+    bad_dir = tmp_path / "bad_edition"
+    bad_dir.mkdir(parents=True)
+    rc = cli_main(["--root", str(tmp_path), "validate-edition", "--edition-dir", str(bad_dir)])
+    assert rc == 1
+    out = capsys.readouterr().out
+    payload = json.loads(out)
+    assert payload["ok"] is False
+    assert payload["checked"] == 1
+    assert payload["results"][0]["findings"]

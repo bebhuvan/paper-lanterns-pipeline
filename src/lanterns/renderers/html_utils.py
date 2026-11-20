@@ -43,7 +43,6 @@ READER_STRICT_CSP = (
 
 _PLACEHOLDER_NOTE_RE = re.compile(r"\[\[NOTE:([^:\]]+):(?:(\d+):)?([^\]]+)\]\]")
 _PLACEHOLDER_FOLIO_RE = re.compile(r"\[\[(?:FN)?FOLIO:(\d+):([^\]]*)\]\]")
-_BRACKET_FOLIO_RE = re.compile(r"\[p\.\s*([^\]]+?)\]")
 
 HTML_TAG_OPEN: dict[str, str] = {
     "i": "<i>",
@@ -221,11 +220,10 @@ def _render_text_chunk_html(
     proof_href_prefix: str | None,
     epub: bool,
 ) -> str:
-    """Escape plain text while turning explicit `[[NOTE:...]]`, `[[FOLIO:...]]`, and `[p. N]` markers into HTML."""
+    """Escape plain text while turning explicit `[[NOTE:...]]` and `[[FOLIO:...]]` markers into HTML."""
     pattern = re.compile(
         r"\[\[NOTE:([^:\]]+):(?:(\d+):)?([^\]]+)\]\]"
         r"|\[\[(?:FN)?FOLIO:(\d+):([^\]]*)\]\]"
-        r"|\[p\.\s*([^\]]+?)\]"
     )
     out: list[str] = []
     last = 0
@@ -239,24 +237,12 @@ def _render_text_chunk_html(
                 out.append(_format_fnref_html(fn_id, label, ref_registry, epub=epub))
             else:
                 out.append(f"<sup>{html.escape(label, quote=False)}</sup>")
-        elif match.group(4) is not None:
+        else:
             pnum = int(match.group(4))
             out.append(
                 _format_folio_html(
                     pnum,
                     match.group(5),
-                    seen_page_ids=seen_page_ids,
-                    proof_href_prefix=proof_href_prefix,
-                    epub=epub,
-                )
-            )
-        else:
-            fol_str = match.group(6).strip()
-            pnum = (folio_to_page or {}).get(fol_str, default_page)
-            out.append(
-                _format_folio_html(
-                    pnum,
-                    fol_str,
                     seen_page_ids=seen_page_ids,
                     proof_href_prefix=proof_href_prefix,
                     epub=epub,
@@ -977,7 +963,7 @@ def render_block_stream_html(
                     max_heading_level=max_next_h,
                 )
             )
-            max_next_h = min(6, max(max_next_h, used_lvl + 1))
+            max_next_h = min(6, used_lvl + 1)
             idx += 1
             continue
         out.append(

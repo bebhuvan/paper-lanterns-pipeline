@@ -29,7 +29,14 @@ from lanterns.renderers import (
 
 
 def _print_json(payload: Any) -> None:
-    print(json.dumps(payload, ensure_ascii=False, indent=2))
+    print(
+        json.dumps(
+            payload,
+            ensure_ascii=False,
+            indent=2,
+            default=lambda o: o.model_dump(mode="json") if hasattr(o, "model_dump") else str(o),
+        )
+    )
 
 
 def _cmd_init_book(args: argparse.Namespace, repo: RepoPaths) -> int:

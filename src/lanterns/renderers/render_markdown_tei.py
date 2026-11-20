@@ -45,7 +45,6 @@ from lanterns.renderers.html_utils import (
 _TEI_TEXT_MARKER_RE = re.compile(
     r"\[\[NOTE:([^:\]]+):(?:(\d+):)?([^\]]+)\]\]"
     r"|\[\[(?:FN)?FOLIO:(\d+):([^\]]*)\]\]"
-    r"|\[p\.\s*([^\]]+?)\]"
 )
 _W3C_DATE_RE = re.compile(r"^\d{4}(?:-(?:0[1-9]|1[0-2])(?:-(?:0[1-9]|[12]\d|3[01]))?)?$")
 
@@ -268,7 +267,7 @@ def _tei_escape_chunk(chunk: str, ctx: _TeiCtx) -> str:
                 out.append(f'<ref xml:id="{rid}" type="noteref" target="#{tid}">{html.escape(lbl, quote=False)}</ref>')
             else:
                 out.append(f'<hi rend="sup">{html.escape(lbl, quote=False)}</hi>')
-        elif match.group(4) is not None:
+        else:
             pnum = int(match.group(4))
             fol = html.escape(match.group(5) or str(pnum), quote=True)
             id_attr = ""
@@ -277,9 +276,6 @@ def _tei_escape_chunk(chunk: str, ctx: _TeiCtx) -> str:
                 pid = _unique_xml_id(f"page-{pnum}", ctx.used_ids)
                 id_attr = f' xml:id="{pid}"'
             out.append(f'<pb{id_attr} n="{fol}"/>')
-        else:
-            fol = html.escape(match.group(6).strip(), quote=True)
-            out.append(f'<pb n="{fol}"/>')
     if last < len(chunk):
         out.append(html.escape(chunk[last:], quote=False))
     return "".join(out)
