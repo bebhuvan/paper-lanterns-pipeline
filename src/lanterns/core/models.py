@@ -30,6 +30,7 @@ BlockType = Literal[
     "footnote",
     "margin_note",
     "illustration",
+    "facsimile_plate",
     "caption",
     "epigraph",
     "imprint",
@@ -55,7 +56,7 @@ EpistolaryTransition = Literal[
     "ends_enclosure",
 ]
 
-StyleTag = Literal["i", "b", "sc", "sup", "sub", "unclear"]
+StyleTag = Literal["i", "b", "sc", "sup", "sub", "unclear", "fnref"]
 DatelinePosition = Literal["top", "bottom", "inline", "absent"]
 BoundaryConfidence = Literal["high", "adjudicated", "human_mapped", "ambiguous"]
 SectionKind = Literal["frontmatter", "chapter", "epistolary_part", "appendix", "index", "backmatter"]
@@ -98,7 +99,7 @@ class PageExtractWire(BaseModel):
 
 
 class StyleSpan(BaseModel):
-    tag: Literal["i", "b", "sc", "sup", "sub", "unclear"]
+    tag: StyleTag
     start: int
     end: int
 

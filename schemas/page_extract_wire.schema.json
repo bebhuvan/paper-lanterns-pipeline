@@ -59,6 +59,7 @@
               "footnote",
               "margin_note",
               "illustration",
+              "facsimile_plate",
               "caption",
               "epigraph",
               "imprint",
@@ -79,7 +80,7 @@
           },
           "text": {
             "type": "string",
-            "description": "100% verbatim diplomatic transcription using ONLY constrained inline tags: <i>, <b>, <sc>, <sup>, <sub>, <unclear>. Preserve archaic orthography, medial long-s (ſ), ligatures (æ, œ), cipher/redaction dashes (M——, ***), and editorial brackets ([? 1848], [torn], [sic]) exactly as printed."
+            "description": "100% verbatim diplomatic transcription using ONLY constrained inline tags: <i>, <b>, <sc>, <fnref> (exclusively for footnote/endnote/variant callout markers), <sup> (purely typographic superscripts like yᵉ, Sʳ, dº, 5ᵗʰ), <sub>, <unclear>. Preserve archaic orthography, medial long-s (ſ), ligatures (æ, œ), cipher/redaction dashes (M——, ***), and editorial brackets ([? 1848], [torn], [sic]) exactly as printed."
           },
           "alignment": {
             "type": "string",

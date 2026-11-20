@@ -20,7 +20,7 @@ from typing import Any
 from lanterns.core.models import BlockIR, FootnoteItem
 from lanterns.core.tags import split_tagged_lines_balanced
 
-ALLOWED_INLINE_TAGS: frozenset[str] = frozenset({"i", "b", "sc", "sup", "sub", "unclear"})
+ALLOWED_INLINE_TAGS: frozenset[str] = frozenset({"i", "b", "sc", "fnref", "sup", "sub", "unclear"})
 
 READER_STRICT_CSP = (
     "default-src 'self'; "
@@ -34,7 +34,7 @@ READER_STRICT_CSP = (
     "form-action 'none'"
 )
 
-_INLINE_TOKEN_RE = re.compile(r"(</?(?:i|b|sc|sup|sub|unclear)>)")
+_INLINE_TOKEN_RE = re.compile(r"(</?(?:i|b|sc|fnref|sup|sub|unclear)>)")
 _PLACEHOLDER_NOTE_RE = re.compile(r"\[\[NOTE:([^:\]]+):(?:(\d+):)?([^\]]+)\]\]")
 _PLACEHOLDER_FOLIO_RE = re.compile(r"\[\[(?:FN)?FOLIO:(\d+):([^\]]*)\]\]")
 _BRACKET_FOLIO_RE = re.compile(r"\[p\.\s*([^\]]+?)\]")
@@ -44,6 +44,7 @@ HTML_TAG_OPEN: dict[str, str] = {
     "i": "<i>",
     "b": "<b>",
     "sc": '<span class="small-caps">',
+    "fnref": '<sup class="fn-ref">',
     "sup": "<sup>",
     "sub": "<sub>",
     "unclear": '<span class="unclear" title="Uncertain reading in source scan">',
@@ -53,6 +54,7 @@ HTML_TAG_CLOSE: dict[str, str] = {
     "i": "</i>",
     "b": "</b>",
     "sc": "</span>",
+    "fnref": "</sup>",
     "sup": "</sup>",
     "sub": "</sub>",
     "unclear": "</span>",
@@ -62,6 +64,7 @@ TEI_TAG_OPEN: dict[str, str] = {
     "i": '<hi rend="italic">',
     "b": '<hi rend="bold">',
     "sc": '<hi rend="smallcaps">',
+    "fnref": '<hi rend="sup">',
     "sup": '<hi rend="sup">',
     "sub": '<hi rend="sub">',
     "unclear": "<unclear>",
@@ -71,6 +74,7 @@ TEI_TAG_CLOSE: dict[str, str] = {
     "i": "</hi>",
     "b": "</hi>",
     "sc": "</hi>",
+    "fnref": "</hi>",
     "sup": "</hi>",
     "sub": "</hi>",
     "unclear": "</unclear>",
@@ -80,6 +84,7 @@ MD_TAG_OPEN: dict[str, str] = {
     "i": "*",
     "b": "**",
     "sc": '<span class="small-caps">',
+    "fnref": "<sup>",
     "sup": "<sup>",
     "sub": "<sub>",
     "unclear": "<mark>",
@@ -89,6 +94,7 @@ MD_TAG_CLOSE: dict[str, str] = {
     "i": "*",
     "b": "**",
     "sc": "</span>",
+    "fnref": "</sup>",
     "sup": "</sup>",
     "sub": "</sub>",
     "unclear": "</mark>",
@@ -116,6 +122,7 @@ BLOCK_TYPE_CLASS: dict[str, str] = {
     "footnote": "block-footnote",
     "margin_note": "block-margin-note",
     "illustration": "block-illustration",
+    "facsimile_plate": "block-facsimile-plate",
     "caption": "block-caption",
     "epigraph": "block-epigraph",
     "imprint": "block-imprint",
@@ -369,10 +376,10 @@ def _render_single_line_html(
         kind, val = tokens[idx]
         if (
             kind == "open"
-            and val == "sup"
+            and val in {"fnref", "sup"}
             and idx + 2 < len(tokens)
             and tokens[idx + 1][0] == "text"
-            and tokens[idx + 2] == ("close", "sup")
+            and tokens[idx + 2] == ("close", val)
         ):
             sup_txt = tokens[idx + 1][1]
             note_match = _PLACEHOLDER_NOTE_RE.fullmatch(sup_txt.strip())
@@ -643,8 +650,9 @@ def render_single_block_html(
     if block.type == "margin_note":
         side_cls = "margin-right" if (block.bbox and block.bbox[0] >= 500) else "margin-left"
         return f'<aside id="{bid}" class="{cls} {side_cls}" role="note">{inner}</aside>'
-    if block.type == "illustration":
-        desc = inner or html.escape(f"[Illustration on p. {block.printed_folio or block.page_number}]")
+    if block.type in {"illustration", "facsimile_plate"}:
+        label = "Facsimile plate" if block.type == "facsimile_plate" else "Illustration"
+        desc = inner or html.escape(f"[{label} on p. {block.printed_folio or block.page_number}]")
         return f'<figure id="{bid}" class="{cls}"><figcaption>{desc}</figcaption></figure>'
     return f'<p id="{bid}" class="{cls}">{inner}</p>'
 
@@ -652,7 +660,7 @@ def render_single_block_html(
 _LEADING_BRACKET_FOLIO_RE = re.compile(r"^\s*\[p\.\s*([^\]]+?)\]\s*")
 _COALESCE_TYPES: frozenset[str] = frozenset({"body", "blockquote", "editorial"})
 _COMPAT_PROSE_TYPES: frozenset[str] = frozenset({"body", "editorial"})
-_FLOAT_TYPES: frozenset[str] = frozenset({"illustration", "caption", "margin_note"})
+_FLOAT_TYPES: frozenset[str] = frozenset({"illustration", "facsimile_plate", "caption", "margin_note"})
 _SKIP_STREAM_TYPES: frozenset[str] = frozenset({"running_header", "folio", "scanner_residue", "noise", "footnote"})
 
 

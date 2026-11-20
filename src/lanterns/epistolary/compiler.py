@@ -48,12 +48,12 @@ from lanterns.epistolary.segmentation import segment_epistolary_collection
 CONTINUABLE_PROSE_TYPES = frozenset(
     {"body", "blockquote", "editorial", "postscript", "list_item", "index_entry", "salutation"}
 )
-FLOAT_BLOCK_TYPES = frozenset({"illustration", "caption", "margin_note"})
+FLOAT_BLOCK_TYPES = frozenset({"illustration", "facsimile_plate", "caption", "margin_note"})
 _COMPAT_PROSE_TYPES = frozenset({"body", "editorial"})
 SYMBOL_NOTE_LABELS = frozenset({"*", "**", "†", "‡", "§", "‖", "||", "¶"})
-_LEADING_SUP_RE = re.compile(r"^\s*<sup>\s*([^<]+?)\s*</sup>\s*")
+_LEADING_SUP_RE = re.compile(r"^\s*<(?:sup|fnref)>\s*([^<]+?)\s*</(?:sup|fnref)>\s*")
 _LEADING_WORD_NO_TAG_RE = re.compile(r"^([^\s<]+)(?:\s+(.*))?$", re.DOTALL)
-_TRAILING_HYPHEN_RE = re.compile(r"([-‐])((?:</(?:i|b|sc|sup|sub|unclear)>)*)\s*$")
+_TRAILING_HYPHEN_RE = re.compile(r"([-‐])((?:</(?:i|b|sc|fnref|sup|sub|unclear)>)*)\s*$")
 _ENDNOTE_PAGE_RE = re.compile(r"^Pages?\s+(\d+|[ivxlcdm]+)\b", re.IGNORECASE)
 _LEGEND_CARRIER_TYPES = frozenset({"dateline", "letter_header", "salutation"})
 
@@ -232,6 +232,42 @@ def _stitch_footnote_segment(
     )
     assembled.append(new_fn)
     return new_fn
+
+
+def _promote_attested_legacy_sup_callouts(
+    pages: list[PageIR],
+    footnotes: dict[str, FootnoteItem],
+) -> list[PageIR]:
+    fns_by_page: dict[int, set[str]] = {}
+    for fn in footnotes.values():
+        if lbl := normalize_note_label(fn.label):
+            fns_by_page.setdefault(fn.origin_page, set()).add(lbl)
+    out: list[PageIR] = []
+    for page in pages:
+        window = {
+            lbl
+            for off in (-1, 0, 1)
+            for lbl in fns_by_page.get(page.page_number + off, ())
+        } | {normalize_note_label(b.note_label) for b in page.blocks if b.type == "margin_note" and b.note_label}
+        present = {
+            normalize_note_label(m)
+            for b in page.blocks
+            if b.type not in FURNITURE_BLOCK_TYPES and b.type != "footnote"
+            for m in extract_inline_markers(b.tagged_text)
+        }
+        missing = [lbl for lbl in sorted(window - present) if len(lbl) == 1 and lbl.isalpha()]
+        if page.failed_closed or not missing:
+            out.append(page)
+            continue
+        pat = re.compile(r"<sup>\s*(" + "|".join(re.escape(x) for x in missing) + r")\s*</sup>")
+        new_blocks: list[BlockIR] = []
+        for blk in page.blocks:
+            if blk.type not in FURNITURE_BLOCK_TYPES and blk.type != "footnote" and pat.search(blk.tagged_text):
+                t_str, p_str, sp_list = parse_tagged_text(pat.sub(r"<fnref>\1</fnref>", blk.tagged_text))
+                blk = blk.model_copy(update={"tagged_text": t_str, "plain_text": p_str, "spans": sp_list})
+            new_blocks.append(blk)
+        out.append(page.model_copy(update={"blocks": new_blocks}))
+    return out
 
 
 def _stitch_footnotes(pages: list[PageIR]) -> dict[str, FootnoteItem]:
@@ -679,6 +715,7 @@ def compile_collection_ast(
     eff_chapter_map = chapter_map if chapter_map is not None else load_chapter_map(book_id, repo_root=repo_root)
 
     footnotes = _stitch_footnotes(folio_pages)
+    folio_pages = _promote_attested_legacy_sup_callouts(folio_pages, footnotes)
     refs_by_block, fn_findings = _link_callouts_to_footnotes(folio_pages, footnotes)
     joined_content_blocks = _apply_cross_page_prose_joins(folio_pages, witness_dir=witness_dir)
 

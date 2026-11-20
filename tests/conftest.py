@@ -49,7 +49,9 @@ def make_block(
 ) -> BlockIR:
     import re
 
-    derived_plain = plain_text if plain_text is not None else re.sub(r"</?(?:i|b|sc|sup|sub|unclear)>", "", tagged_text)
+    derived_plain = (
+        plain_text if plain_text is not None else re.sub(r"</?(?:i|b|sc|fnref|sup|sub|unclear)>", "", tagged_text)
+    )
     return BlockIR(
         block_id=block_id,
         page_number=page_number,

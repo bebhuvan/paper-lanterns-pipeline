@@ -1,6 +1,6 @@
 """Deterministic parser and safe HTML/XML helpers for constrained inline tags.
 
-Allowed inline tags: `<i>`, `<b>`, `<sc>`, `<sup>`, `<sub>`, `<unclear>`
+Allowed inline tags: `<i>`, `<b>`, `<sc>`, `<fnref>`, `<sup>`, `<sub>`, `<unclear>`
 (synonyms `<em>` -> `i` and `<strong>` -> `b` are canonicalized on parse).
 """
 
@@ -14,7 +14,7 @@ from typing import Any, Literal, cast
 from lanterns.core.models import StyleSpan
 from lanterns.core.unicode_norm import normalize_diplomatic_text
 
-TagLiteral = Literal["i", "b", "sc", "sup", "sub", "unclear"]
+TagLiteral = Literal["i", "b", "sc", "fnref", "sup", "sub", "unclear"]
 
 RAW_TAG_MAP: dict[str, TagLiteral] = {
     "i": "i",
@@ -22,6 +22,7 @@ RAW_TAG_MAP: dict[str, TagLiteral] = {
     "b": "b",
     "strong": "b",
     "sc": "sc",
+    "fnref": "fnref",
     "sup": "sup",
     "sub": "sub",
     "unclear": "unclear",
@@ -31,58 +32,17 @@ _TAG_RANK: dict[str, int] = {
     "b": 1,
     "i": 2,
     "sc": 3,
-    "sup": 4,
-    "sub": 5,
-    "unclear": 6,
+    "fnref": 4,
+    "sup": 5,
+    "sub": 6,
+    "unclear": 7,
 }
 
-_TAG_TOKEN_RE = re.compile(r"<(/?)(i|em|b|strong|sc|sup|sub|unclear)\s*>", re.IGNORECASE)
+_TAG_TOKEN_RE = re.compile(r"<(/?)(i|em|b|strong|sc|fnref|sup|sub|unclear)\s*>", re.IGNORECASE)
 _ANY_ANGLE_TAG_RE = re.compile(r"</?([A-Za-z][A-Za-z0-9_-]*)(?:\s[^>]*)?>")
 _HTML_BR_RE = re.compile(r"<br\s*/?>", re.IGNORECASE)
 _SMALL_CAPS_SPAN_RE = re.compile(r"<span\b[^>]*(?:small[-_ ]?caps|\bsc\b)[^>]*>([\s\S]*?)</span>", re.IGNORECASE)
 _BARE_SPAN_TAG_RE = re.compile(r"</?span(?:\s[^>]*)?>", re.IGNORECASE)
-
-_ORDINAL_SUP_SUFFIXES = frozenset(
-    {"0", "st", "nd", "rd", "th", "d", "o", "m", "er", "re", "e", "en", "li", "me", "eme", "ème", "to", "vo", "mo"}
-)
-_ABBREV_SUP_PAIRS: dict[str, frozenset[str]] = {
-    "a": frozenset({"o"}),
-    "c": frozenset({"n", "o", "ie"}),
-    "d": frozenset({"o", "r"}),
-    "f": frozenset({"o", "os"}),
-    "ff": frozenset({"o", "os"}),
-    "i": frozenset({"s"}),
-    "r": frozenset({"o"}),
-    "v": frozenset({"o"}),
-    "n": frozenset({"o", "os"}),
-    "p": frozenset({"r"}),
-    "m": frozenset({"me", "lle", "gr", "r", "r.", "o"}),
-    "mme": frozenset({"s"}),
-    "mlle": frozenset({"s"}),
-    "s": frozenset({"r", "t", "te"}),
-    "st": frozenset({"e"}),
-    "dr": frozenset({"r", "s"}),
-    "jan": frozenset({"y"}),
-    "feb": frozenset({"y"}),
-    "sep": frozenset({"r"}),
-    "sept": frozenset({"r"}),
-    "oct": frozenset({"r"}),
-    "nov": frozenset({"r"}),
-    "dec": frozenset({"r"}),
-    "rich": frozenset({"d"}),
-    "rev": frozenset({"d"}),
-    "cie": frozenset({"ie"}),
-    "sig": frozenset({"r"}),
-    "weigh": frozenset({"g"}),
-    "w": frozenset({"g"}),
-    "wors": frozenset({"m"}),
-    "sq": frozenset({"re"}),
-    "j": frozenset({"no"}),
-    "ch": frozenset({"s"}),
-    "estab": frozenset({"t"}),
-    "geograph": frozenset({"l"}),
-    "y": frozenset({"e", "t", "m"}),
-}
 
 
 def escape_html(text: str, *, quote: bool = True) -> str:
@@ -266,35 +226,26 @@ def _is_non_callout_superscript(
     cleaned: str,
     spans: list[StyleSpan] | None = None,
 ) -> bool:
-    """Return True when `<sup>...</sup>` is an ordinal, fraction, currency/abbrev, gloss, or shelfmark."""
-    if len(cleaned) > 6 or " " in cleaned:
+    """Return True when legacy `<sup>...</sup>` is a typographic contraction, ordinal, fraction, or exponent."""
+    if not cleaned or len(cleaned) > 6 or " " in cleaned or cleaned == "0":
         return True
-    after = plain_text[span_end:].lstrip(" ")
-    if after.startswith(("/", "\u2044", "\u2215")):
-        return True
-    before = plain_text[:span_start]
-    low = cleaned.lower().rstrip(".")
-    if low in _ORDINAL_SUP_SUFFIXES and before and before[-1].isdigit():
-        return True
-    if low in {"li", "s", "d"} and re.search(r"(?:\d|\b[ivxlcdm]{1,6}|/\.)$", before, re.IGNORECASE):
+    if plain_text[span_end:].lstrip(" ").startswith(("/", "\u2044", "\u2215")):
         return True
     if spans and cleaned.isdigit() and any(s.tag == "sub" and (s.end == span_start or s.start == span_end) for s in spans):
         return True
-    if re.search(r"[A-Z]{2,}$", before) and re.fullmatch(r"[ivx]{1,4}", cleaned):
-        return True
-    m_stem = re.search(r"(?:^|[\s(\[«\"'“‘.])([A-Za-z]{1,8})\.?$", before)
-    if m_stem and (
-        low in _ABBREV_SUP_PAIRS.get(m_stem.group(1).lower(), frozenset())
-        or (low.isalpha() and len(low) >= 2)
-    ):
-        return True
+    alpha = cleaned.rstrip(".")
+    if alpha.isalpha():
+        if len(alpha) >= 2:
+            return True
+        if span_start > 0 and (plain_text[span_start - 1].isalnum() or plain_text[span_start - 1] in "./"):
+            return True
     return False
 
 
 _SIDE_BY_SIDE_FN_SPLIT_RE = re.compile(
-    r"(?:\s{2,}|\n|(?<=[.!?])\s+)\s*(?=<sup>\s*(?:\d+|[a-zA-Z]|[*†‡§‖¶]+)\s*</sup>)"
+    r"(?:\s{2,}|\n|(?<=[.!?])\s+)\s*(?=<(?:sup|fnref)>\s*(?:\d+|[a-zA-Z]|[*†‡§‖¶]+)\s*</(?:sup|fnref)>)"
 )
-_PLAIN_NOTE_LEAD_SUP_RE = re.compile(r"^\s*<sup>\s*([^<]+?)\s*</sup>")
+_PLAIN_NOTE_LEAD_SUP_RE = re.compile(r"^\s*<(?:sup|fnref)>\s*([^<]+?)\s*</(?:sup|fnref)>")
 
 
 def split_side_by_side_footnote_tagged(tagged_text: str) -> list[tuple[str | None, str]]:
@@ -310,32 +261,27 @@ def split_side_by_side_footnote_tagged(tagged_text: str) -> list[tuple[str | Non
     return out
 
 
+def _callout_label_for_span(plain_text: str, span: StyleSpan, spans: list[StyleSpan]) -> str | None:
+    if span.tag not in {"fnref", "sup"}:
+        return None
+    cleaned = plain_text[span.start : span.end].strip().strip("()[]")
+    if not cleaned:
+        return None
+    if span.tag == "sup" and _is_non_callout_superscript(plain_text, span.start, span.end, cleaned, spans):
+        return None
+    return cleaned
+
+
 def extract_inline_markers(tagged_text: str) -> list[str]:
-    """Extract inline `<sup>...</sup>` footnote callout labels, excluding ordinals/abbreviations/fractions."""
+    """Extract inline `<fnref>` and eligible legacy `<sup>` footnote callout labels."""
     _, plain_text, spans = parse_tagged_text(tagged_text)
-    markers: list[str] = []
-    for span in spans:
-        if span.tag != "sup":
-            continue
-        cleaned = plain_text[span.start : span.end].strip().strip("()[]")
-        if not cleaned or _is_non_callout_superscript(plain_text, span.start, span.end, cleaned, spans):
-            continue
-        markers.append(cleaned)
-    return markers
+    return [lbl for s in spans if (lbl := _callout_label_for_span(plain_text, s, spans)) is not None]
 
 
 def strip_footnote_callouts_plain(tagged_text: str) -> str:
-    """Return `plain_text` with inline `<sup>` footnote callouts stripped cleanly."""
+    """Return `plain_text` with inline `<fnref>` and legacy footnote callouts stripped cleanly."""
     _, plain_text, spans = parse_tagged_text(tagged_text)
-    drop_ranges = [
-        (s.start, s.end)
-        for s in spans
-        if s.tag == "sup"
-        and plain_text[s.start : s.end].strip().strip("()[]")
-        and not _is_non_callout_superscript(
-            plain_text, s.start, s.end, plain_text[s.start : s.end].strip().strip("()[]"), spans
-        )
-    ]
+    drop_ranges = [(s.start, s.end) for s in spans if _callout_label_for_span(plain_text, s, spans) is not None]
     if not drop_ranges:
         return plain_text
     out: list[str] = []
@@ -351,14 +297,14 @@ def strip_footnote_callouts_plain(tagged_text: str) -> str:
     return re.sub(r"[ \t]{2,}", " ", "".join(out)).strip()
 
 
-_GLUED_DIGITS_ALPHA_RE = re.compile(r"(?<=[A-Za-z\u00C0-\u024F]{2})\d{1,2}\b")
-_GLUED_DIGITS_PUNCT_RE = re.compile(r"(?<=[A-Za-z\u00C0-\u024F]{2}[,;!?)\]])\d{1,2}\b")
-_GLUED_DIGITS_PERIOD_RE = re.compile(r"(?<=[A-Za-z\u00C0-\u024F]{3}\.)\d{1,2}(?=\s|$|[)\],;!?])")
+_GLUED_DIGITS_ALPHA_RE = re.compile(r"(?<=[A-Za-z\u00C0-\u024F][a-z\u00DF-\u00F6\u00F8-\u024F])\d{1,2}\b")
+_GLUED_DIGITS_PUNCT_RE = re.compile(r"(?<=[A-Za-z\u00C0-\u024F][a-z\u00DF-\u00F6\u00F8-\u024F][,;!?)\]])\d{1,2}\b")
+_GLUED_DIGITS_PERIOD_RE = re.compile(r"(?<=[A-Za-z\u00C0-\u024F][a-z\u00DF-\u00F6\u00F8-\u024F]{2}\.)\d{1,2}(?=\s|$|[)\],;!?])")
 _GLUED_DIGITS_YEAR_RE = re.compile(r"(?<=\b(?:1[4-9]\d{2}|20\d{2})\.)[1-9]\d?(?=\s|$|[)\],;!?])")
 
 
 def strip_glued_footnote_digits(text: str) -> str:
-    """Strip untagged footnote callout digits glued to >=2-letter words, clause punct, or 4-digit years."""
+    """Strip untagged footnote callout digits glued to words, clause punct, or 4-digit years (preserving postal/formula codes)."""
     if not text:
         return text
     out = _GLUED_DIGITS_ALPHA_RE.sub("", text)
@@ -372,7 +318,7 @@ _ENDNOTE_ROW_FOLIO_RE = re.compile(
     r"^\s*(?:(?:PAGE|<sc>\s*Page\s*</sc>)\s+)?(\d+|[ivxlcdm]+)\s+(\d+|[A-Za-z])\.\s+([\s\S]+)$",
     re.IGNORECASE,
 )
-_SUP_TAG_MASK_RE = re.compile(r"<sup>.*?</sup>", re.DOTALL | re.IGNORECASE)
+_SUP_TAG_MASK_RE = re.compile(r"<(?:sup|fnref)>.*?</(?:sup|fnref)>", re.DOTALL | re.IGNORECASE)
 _CIPHER_INITIAL_RE = re.compile(r"(?:^|[\s(\[\"“‘>])[A-Z]\.?$")
 
 
@@ -382,7 +328,7 @@ def promote_bare_symbol_in_tagged(
     *,
     max_replacements: int = 0,
 ) -> tuple[str, bool]:
-    """Promote bare footnote symbols (`Chiapé*`) to `<sup>*</sup>`, skipping cipher asterisks (`Mr. B*`, `***`)."""
+    """Promote bare footnote symbols (`Chiapé*`) to `<fnref>*</fnref>`, skipping cipher asterisks (`Mr. B*`, `***`)."""
     if not sym or sym not in tagged_text:
         return tagged_text, False
     esc = re.escape(sym)
@@ -404,7 +350,7 @@ def promote_bare_symbol_in_tagged(
             if _CIPHER_INITIAL_RE.search(prefix) or after.startswith(("—", "–")):
                 continue
         out.append(tagged_text[cursor:m_start])
-        out.append(f"<sup>{sym}</sup>")
+        out.append(f"<fnref>{sym}</fnref>")
         cursor = m_end
         replaced += 1
     if not replaced:

@@ -425,7 +425,13 @@ def _editorial_run_precedes_boundary(
     directives: _MapDirectives,
 ) -> bool:
     idx = start_idx
-    while idx < len(sec_blocks) and sec_blocks[idx].type in {"editorial", "ornamental_break", "illustration", "caption"}:
+    while idx < len(sec_blocks) and sec_blocks[idx].type in {
+        "editorial",
+        "ornamental_break",
+        "illustration",
+        "facsimile_plate",
+        "caption",
+    }:
         idx += 1
     if idx >= len(sec_blocks):
         return True
@@ -524,7 +530,7 @@ def _handle_active_block(
     blk = sec_blocks[idx]
     next_blk = sec_blocks[idx + 1] if idx + 1 < len(sec_blocks) else None
 
-    is_post_head = blk.type in {"heading", "illustration", "caption"} and (
+    is_post_head = blk.type in {"heading", "illustration", "facsimile_plate", "caption"} and (
         blk.heading_level == 1
         or (state.has_closer and _editorial_run_precedes_boundary(sec_blocks, idx, directives))
         or (

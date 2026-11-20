@@ -785,6 +785,7 @@ PROOFING_JS = """/* Paper Lanterns v2 — Safe-DOM Distributed Proofreaders (P1 
       ["i", "<i>", "</i>"],
       ["b", "<b>", "</b>"],
       ["sc", "<sc>", "</sc>"],
+      ["fnref", "<fnref>", "</fnref>"],
       ["sup", "<sup>", "</sup>"],
       ["sub", "<sub>", "</sub>"],
       ["unclear", "<unclear>", "</unclear>"]

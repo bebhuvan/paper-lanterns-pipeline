@@ -85,10 +85,10 @@ def _inline_markdown(tagged_text: str, block_footnotes: list[FootnoteItem] | Non
         kind, val = tokens[idx]
         if (
             kind == "open"
-            and val == "sup"
+            and val in {"fnref", "sup"}
             and idx + 2 < len(tokens)
             and tokens[idx + 1][0] == "text"
-            and tokens[idx + 2] == ("close", "sup")
+            and tokens[idx + 2] == ("close", val)
         ):
             lbl = tokens[idx + 1][1].strip().strip("[]()")
             bucket = fn_queue.get(lbl)

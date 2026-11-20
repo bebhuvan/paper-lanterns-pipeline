@@ -30,6 +30,7 @@
         "footnote",
         "margin_note",
         "illustration",
+        "facsimile_plate",
         "caption",
         "epigraph",
         "imprint",
@@ -66,7 +67,7 @@
       "properties": {
         "tag": {
           "type": "string",
-          "enum": ["i", "b", "sc", "sup", "sub", "unclear"]
+          "enum": ["i", "b", "sc", "sup", "sub", "unclear", "fnref"]
         },
         "start": {
           "type": "integer",

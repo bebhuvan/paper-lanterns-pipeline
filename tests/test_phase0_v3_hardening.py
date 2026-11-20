@@ -599,7 +599,7 @@ def test_m3_bare_symbol_promotion_guards_ciphers_and_satisfied_footnotes() -> No
         assert changed is False and out == cipher
 
     promo, hit = promote_bare_symbol_in_tagged("Chiapé* wrote yesterday.", "*")
-    assert hit is True and promo == "Chiapé<sup>*</sup> wrote yesterday."
+    assert hit is True and promo == "Chiapé<fnref>*</fnref> wrote yesterday."
 
     # Page already has `<sup>*</sup>` satisfying its `*` footnote -> leave cipher `B*` alone
     page = make_page(

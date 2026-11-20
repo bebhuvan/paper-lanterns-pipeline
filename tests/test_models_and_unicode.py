@@ -198,7 +198,7 @@ class TestModelsAndSchemaParity:
 
     def test_invalid_block_type_or_style_tag_rejected(self) -> None:
         assert FURNITURE_BLOCK_TYPES == frozenset({"running_header", "folio", "scanner_residue", "noise"})
-        assert STYLE_TAGS == ("i", "b", "sc", "sup", "sub", "unclear")
+        assert STYLE_TAGS == ("i", "b", "sc", "sup", "sub", "unclear", "fnref")
         with pytest.raises(ValidationError):
             WireBlock(type="invented_block_type", bbox=[0, 0, 10, 10], text="bad")  # type: ignore[arg-type]
         with pytest.raises(ValidationError):

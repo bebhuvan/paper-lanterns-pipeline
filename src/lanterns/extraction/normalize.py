@@ -40,9 +40,9 @@ _LEADING_SCANLINE_MARKER_RE = re.compile(r"(?m)^[ \t]*\[L\d{1,3}\][ \t]*")
 _TYPO_FN_SYMBOLS = frozenset({"*", "**", "†", "††", "‡", "§", "‖", "¶"})
 _LEADING_PLAIN_SYMBOL_RE = re.compile(r"^\s*([*†‡§‖¶]{1,2})\s+\S")
 _LEADING_NOTE_MARKER_RE = re.compile(
-    r"^\s*(?:<sup>\s*([*†‡§‖¶]+|\d+|[a-zA-Z])\s*</sup>|([*†‡§‖¶]+|\d+[.)](?=\s)|[a-zA-Z]\)))\s*"
+    r"^\s*(?:<(?:sup|fnref)>\s*([*†‡§‖¶]+|\d+|[a-zA-Z])\s*</(?:sup|fnref)>|([*†‡§‖¶]+|\d+[.)](?=\s)|[a-zA-Z]\)))\s*"
 )
-_LABEL_TAG_RE = re.compile(r"</?(?:sup|sub|i|b|sc|unclear)>", re.IGNORECASE)
+_LABEL_TAG_RE = re.compile(r"</?(?:fnref|sup|sub|i|b|sc|unclear)>", re.IGNORECASE)
 _LINE_BREAK_EPISTOLARY_TYPES = frozenset(
     {"dateline", "salutation", "valediction", "signature", "address_block", "verse", "epigraph"}
 )

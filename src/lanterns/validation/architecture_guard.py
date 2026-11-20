@@ -100,7 +100,7 @@ FORBIDDEN_RENDERER_DEFS = frozenset(
 _UNSAFE_DOM_SINKS = ("inner" + "HTML", "outer" + "HTML", "insertAdjacent" + "HTML")
 _REGEX_CALL_NAMES = frozenset({"compile", "search", "match", "fullmatch", "findall", "finditer", "sub", "split"})
 _WORD_EXTRACT_RE = re.compile(r"[A-Za-z]{4,}")
-ALLOWED_REGEX_TOKENS_STRICT = frozenset({"ivxlcdm", "unclear", "folio", "fnfolio", "note", "pages"})
+ALLOWED_REGEX_TOKENS_STRICT = frozenset({"ivxlcdm", "unclear", "fnref", "folio", "fnfolio", "note", "pages"})
 ALLOWED_METADATA_HEADER_TOKENS = ALLOWED_REGEX_TOKENS_STRICT | frozenset(
     {
         "letter",
