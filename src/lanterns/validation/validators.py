@@ -191,12 +191,57 @@ def control_char_or_mojibake(ast: CollectionAST) -> list[ValidationFinding]:
     return findings
 
 
+_EDGE_FOLIO_BLOCK_TYPES = frozenset({"body", "editorial", "signature", "dateline"})
+_TOP_HEADER_BLOCK_TYPES = frozenset({"body", "editorial", "heading", "letter_header", "dateline"})
+
+
+def _check_edge_folio_leak(
+    page_number: int,
+    blk: BlockIR,
+    idx: int,
+    total_content: int,
+    confirmed: set[str],
+) -> ValidationFinding | None:
+    if blk.type not in _EDGE_FOLIO_BLOCK_TYPES:
+        return None
+    txt = _strip_folio_prefix(blk.plain_text)
+    y0 = blk.bbox[1] if len(blk.bbox) >= 4 else 500
+    y1 = blk.bbox[3] if len(blk.bbox) >= 4 else 500
+    at_edge = idx == 0 or idx == total_content - 1 or y0 <= 115 or y1 >= 885
+    if not (at_edge and _BARE_PAGE_NUM_RE.match(txt)):
+        return None
+    extreme = y0 <= 90 or y1 >= 910
+    sev = "info" if blk.block_id in confirmed else ("blocker" if extreme else "warning")
+    return ValidationFinding(
+        code="furniture_leak",
+        severity=sev,
+        page_number=page_number,
+        block_id=blk.block_id,
+        message=f"Bare folio numeral {txt!r} leaked as {blk.type} text at page margin.",
+        evidence={"text": txt, "bbox": blk.bbox, "block_type": blk.type},
+    )
+
+
+def _collect_top_header_candidate(
+    page_number: int,
+    blk: BlockIR,
+    idx: int,
+    top_headers: dict[str, list[tuple[int, str]]],
+) -> None:
+    if idx != 0 or blk.type not in _TOP_HEADER_BLOCK_TYPES:
+        return
+    txt = _strip_folio_prefix(blk.plain_text)
+    y0 = blk.bbox[1] if len(blk.bbox) >= 4 else 500
+    if y0 <= 120 and "\n" not in txt and 3 <= len(txt) <= 80 and not _BARE_PAGE_NUM_RE.match(txt):
+        top_headers[txt.casefold()].append((page_number, blk.block_id))
+
+
 def furniture_leak(
     ast: CollectionAST,
     *,
     confirmed_block_ids: set[str] | None = None,
 ) -> list[ValidationFinding]:
-    """Flag bare page numbers or repeated running headers leaked as body blocks."""
+    """Flag bare page numbers or repeated running headers leaked as content blocks."""
     confirmed = confirmed_block_ids or set()
     findings: list[ValidationFinding] = []
     top_headers: dict[str, list[tuple[int, str]]] = defaultdict(list)
@@ -205,30 +250,11 @@ def furniture_leak(
         if page.failed_closed:
             continue
         content = [b for b in page.blocks if b.type not in FURNITURE_BLOCK_TYPES]
-        if not content:
-            continue
         for idx, blk in enumerate(content):
-            if blk.type != "body":
-                continue
-            txt = _strip_folio_prefix(blk.plain_text)
-            y0 = blk.bbox[1] if len(blk.bbox) >= 4 else 500
-            y1 = blk.bbox[3] if len(blk.bbox) >= 4 else 500
-            at_edge = idx == 0 or idx == len(content) - 1 or y0 <= 115 or y1 >= 885
-            if at_edge and _BARE_PAGE_NUM_RE.match(txt):
-                extreme = y0 <= 90 or y1 >= 910
-                sev = "info" if blk.block_id in confirmed else ("blocker" if extreme else "warning")
-                findings.append(
-                    ValidationFinding(
-                        code="furniture_leak",
-                        severity=sev,
-                        page_number=page.page_number,
-                        block_id=blk.block_id,
-                        message=f"Bare folio numeral {txt!r} leaked as body text at page margin.",
-                        evidence={"text": txt, "bbox": blk.bbox},
-                    )
-                )
-            if idx == 0 and y0 <= 120 and "\n" not in txt and 3 <= len(txt) <= 80:
-                top_headers[txt.casefold()].append((page.page_number, blk.block_id))
+            leak = _check_edge_folio_leak(page.page_number, blk, idx, len(content), confirmed)
+            if leak is not None:
+                findings.append(leak)
+            _collect_top_header_candidate(page.page_number, blk, idx, top_headers)
 
     for norm_hdr, locs in top_headers.items():
         if len(locs) >= 3:
@@ -240,7 +266,7 @@ def furniture_leak(
                         severity=sev,
                         page_number=pnum,
                         block_id=bid,
-                        message=f"Repeated top-of-page header ({len(locs)}x) leaked as body block.",
+                        message=f"Repeated top-of-page header ({len(locs)}x) leaked as content block.",
                         evidence={"normalized_header": norm_hdr, "occurrences": len(locs)},
                     )
                 )
@@ -322,8 +348,13 @@ def footnote_parity(
     return findings
 
 
-def epistolary_boundary_anomalies(ast: CollectionAST) -> list[ValidationFinding]:
+def epistolary_boundary_anomalies(
+    ast: CollectionAST,
+    *,
+    confirmed_block_ids: set[str] | None = None,
+) -> list[ValidationFinding]:
     """Flag ambiguous boundaries, oversized (>25p) unheaded letters, and multiple signatures without enclosure."""
+    confirmed = confirmed_block_ids or set()
     findings: list[ValidationFinding] = []
     is_sparse_slice = bool(ast.total_pages and len(ast.pages) < ast.total_pages)
     for lu in ast.letters:
@@ -343,13 +374,13 @@ def epistolary_boundary_anomalies(ast: CollectionAST) -> list[ValidationFinding]
         span_pages = extracted_pages_in_letter if is_sparse_slice else (lu.end_page - lu.start_page + 1)
         if (
             span_pages > 25
-            and lu.boundary_confidence not in {"human_mapped", "adjudicated"}
             and not any(b.type == "heading" for b in lu.blocks)
         ):
+            ov_sev = "info" if (lu.boundary_confidence == "adjudicated" or (first_bid and first_bid in confirmed)) else "warning"
             findings.append(
                 ValidationFinding(
                     code="oversized_letter_unit",
-                    severity="warning",
+                    severity=ov_sev,
                     page_number=lu.start_page,
                     block_id=first_bid,
                     letter_id=lu.letter_id,
@@ -359,11 +390,16 @@ def epistolary_boundary_anomalies(ast: CollectionAST) -> list[ValidationFinding]
             )
         first_ps_idx = next((i for i, b in enumerate(lu.blocks) if b.type == "postscript"), len(lu.blocks))
         sig_blocks = [b for b in lu.blocks[:first_ps_idx] if b.type == "signature"]
-        if len(sig_blocks) >= 2 and not lu.metadata.has_enclosure and lu.boundary_confidence != "human_mapped":
+        if len(sig_blocks) >= 2 and not lu.metadata.has_enclosure:
+            sig_sev = (
+                "info"
+                if (lu.boundary_confidence == "adjudicated" or sig_blocks[1].block_id in confirmed)
+                else "warning"
+            )
             findings.append(
                 ValidationFinding(
                     code="multiple_signatures_without_enclosure",
-                    severity="warning",
+                    severity=sig_sev,
                     page_number=sig_blocks[1].page_number,
                     block_id=sig_blocks[1].block_id,
                     letter_id=lu.letter_id,
@@ -390,6 +426,8 @@ def _detect_diacritic_drift(
 
     for blk in content_blocks:
         for tok in _WORD_TOKEN_RE.findall(_strip_folio_prefix(blk.plain_text)):
+            if tok.isupper():
+                continue
             stem = _strip_combining_ascii(tok).casefold()
             if len(stem) < 4:
                 continue
@@ -414,14 +452,15 @@ def _detect_diacritic_drift(
                     evidence={"forms": dict(counts)},
                 )
             )
-        if not accented or not bare:
+        cap_acc = {f: c for f, c in accented.items() if f[0].isupper()}
+        cap_bare = {f: c for f, c in bare.items() if f[0].isupper()}
+        if not cap_acc or not cap_bare:
             continue
-        acc_total = sum(accented.values())
-        bare_total = sum(bare.values())
-        sample_form = next(iter(accented))
-        if sample_form[0].isupper() and acc_total >= 3 and bare_total <= 2 and acc_total >= bare_total * 2:
-            dom = max(accented.items(), key=lambda kv: kv[1])[0]
-            for b_form in bare:
+        acc_total = sum(cap_acc.values())
+        bare_total = sum(cap_bare.values())
+        if acc_total >= 3 and bare_total <= 2 and acc_total >= bare_total * 2:
+            dom = max(cap_acc.items(), key=lambda kv: kv[1])[0]
+            for b_form in cap_bare:
                 for pnum, bid in locs[(stem, b_form)]:
                     sev = "info" if bid in confirmed else "warning"
                     findings.append(
@@ -533,7 +572,7 @@ def run_ast_validators(
     findings.extend(control_char_or_mojibake(ast))
     findings.extend(furniture_leak(ast, confirmed_block_ids=confirmed))
     findings.extend(footnote_parity(ast, confirmed_block_ids=human_confirmed))
-    findings.extend(epistolary_boundary_anomalies(ast))
+    findings.extend(epistolary_boundary_anomalies(ast, confirmed_block_ids=human_confirmed))
     findings.extend(diacritic_and_script_integrity(ast, confirmed_block_ids=confirmed))
     ast.findings = findings
     return findings

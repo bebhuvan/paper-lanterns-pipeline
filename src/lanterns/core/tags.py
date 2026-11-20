@@ -372,6 +372,45 @@ _ENDNOTE_ROW_FOLIO_RE = re.compile(
     r"^\s*(?:(?:PAGE|<sc>\s*Page\s*</sc>)\s+)?(\d+|[ivxlcdm]+)\s+(\d+|[A-Za-z])\.\s+([\s\S]+)$",
     re.IGNORECASE,
 )
+_SUP_TAG_MASK_RE = re.compile(r"<sup>.*?</sup>", re.DOTALL | re.IGNORECASE)
+_CIPHER_INITIAL_RE = re.compile(r"(?:^|[\s(\[\"“‘>])[A-Z]\.?$")
+
+
+def promote_bare_symbol_in_tagged(
+    tagged_text: str,
+    sym: str,
+    *,
+    max_replacements: int = 0,
+) -> tuple[str, bool]:
+    """Promote bare footnote symbols (`Chiapé*`) to `<sup>*</sup>`, skipping cipher asterisks (`Mr. B*`, `***`)."""
+    if not sym or sym not in tagged_text:
+        return tagged_text, False
+    esc = re.escape(sym)
+    first_ch = re.escape(sym[0])
+    pat = re.compile(
+        rf"(?:[\w.,;:!?'\"“”‘’)\]]|</(?:i|b|sc|unclear)>)[ \t]?({esc})(?!{first_ch})(?![ \t]*{first_ch})"
+    )
+    masked = _SUP_TAG_MASK_RE.sub(lambda m: " " * len(m.group(0)), tagged_text)
+    out: list[str] = []
+    cursor = 0
+    replaced = 0
+    for match in pat.finditer(masked):
+        if max_replacements > 0 and replaced >= max_replacements:
+            break
+        m_start, m_end = match.start(1), match.end(1)
+        if sym == "*":
+            prefix = tagged_text[: match.start(1)].rstrip(" \t")
+            after = tagged_text[m_end:].lstrip(" \t")
+            if _CIPHER_INITIAL_RE.search(prefix) or after.startswith(("—", "–")):
+                continue
+        out.append(tagged_text[cursor:m_start])
+        out.append(f"<sup>{sym}</sup>")
+        cursor = m_end
+        replaced += 1
+    if not replaced:
+        return tagged_text, False
+    out.append(tagged_text[cursor:])
+    return "".join(out), True
 
 
 def resolve_endnote_row_target(

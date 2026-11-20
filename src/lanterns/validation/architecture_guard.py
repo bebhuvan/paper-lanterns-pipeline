@@ -637,13 +637,24 @@ def _token_present_in_surfaces(token: str, surfaces: tuple[str, str, str, str]) 
     return norm_tok in surfaces[2] or norm_tok in surfaces[3]
 
 
+def _normalize_exam_folio(val: Any) -> str | None:
+    if val is None:
+        return None
+    txt = re.sub(r"</?unclear>", "", str(val), flags=re.IGNORECASE).strip()
+    txt = re.sub(r"^(?:p\.?|page)\s*", "", txt, flags=re.IGNORECASE).strip(" []().—–-")
+    return txt or None
+
+
 def _score_single_exam_case(
     case: dict[str, Any],
     expect_doc: dict[str, Any],
     pred_page: PageIR | None,
+    *,
+    cid: str = "",
+    require_prediction: bool = False,
 ) -> tuple[bool, list[str]]:
     if pred_page is None:
-        return True, []
+        return (False, [f"missing prediction {cid}.json"]) if require_prediction else (True, [])
     ast_out = compile_collection_ast([pred_page], book_id=str(case.get("book_id") or "exam"))
     reasons: list[str] = []
 
@@ -651,6 +662,14 @@ def _score_single_exam_case(
         reasons.append(f"letters={len(ast_out.letters)} != expected {expect_doc['expected_letter_count']}")
     if "min_letters" in expect_doc and len(ast_out.letters) < int(expect_doc["min_letters"]):
         reasons.append(f"letters={len(ast_out.letters)} < min_letters {expect_doc['min_letters']}")
+
+    if "acceptable_printed_folios" in expect_doc or "expected_printed_folio" in expect_doc:
+        raw_acc = expect_doc.get("acceptable_printed_folios")
+        if raw_acc is None:
+            raw_acc = [expect_doc.get("expected_printed_folio")]
+        acc_norm = {_normalize_exam_folio(v) for v in raw_acc}
+        if _normalize_exam_folio(pred_page.printed_folio) not in acc_norm:
+            reasons.append(f"printed_folio={pred_page.printed_folio!r} not in acceptable {raw_acc!r}")
 
     full_plain = "\n".join(b.plain_text for b in pred_page.blocks)
     sc_visual = "\n".join(_render_sc_visual_plain(b) for b in pred_page.blocks)
@@ -676,28 +695,11 @@ def _score_single_exam_case(
     return len(reasons) == 0, reasons
 
 
-def evaluate_epistolary_exam(
-    repo_root: str | Path | None = None,
-    *,
-    exam_dir: str | Path | None = None,
-    predictions_dir: str | Path | None = None,
-) -> dict[str, Any]:
-    """Validate and score `benchmarks/epistolary_exam/` across disjoint `tuning` and `held_out` splits."""
-    repo = RepoPaths.from_root(repo_root)
-    edir = Path(exam_dir) if exam_dir is not None else (repo.benchmarks_dir / "epistolary_exam")
-    manifest_path = edir / "manifest.json"
-    if not manifest_path.is_file():
-        return {
-            "ok": True,
-            "manifest_present": False,
-            "tuning": {"total": 0, "passed": 0, "pass_rate": 1.0},
-            "held_out": {"total": 0, "passed": 0, "pass_rate": 1.0},
-            "generalization_gap": 0.0,
-            "failures": [],
-        }
-
-    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    cases = manifest.get("cases") or manifest.get("pages") or []
+def _evaluate_exam_cases(
+    cases: list[dict[str, Any]],
+    edir: Path,
+    pdir: Path | None,
+) -> tuple[dict[str, dict[str, int]], list[dict[str, Any]]]:
     failures: list[dict[str, Any]] = []
     split_ids: dict[str, set[str]] = {"tuning": set(), "held_out": set()}
     split_stats: dict[str, dict[str, int]] = {
@@ -705,7 +707,6 @@ def evaluate_epistolary_exam(
         "held_out": {"total": 0, "passed": 0},
     }
 
-    pdir = Path(predictions_dir) if predictions_dir is not None else None
     for idx, case in enumerate(cases):
         cid = str(case.get("case_id") or case.get("id") or f"case_{idx + 1}")
         split = str(case.get("split") or "")
@@ -719,11 +720,11 @@ def evaluate_epistolary_exam(
         exp_path = edir / str(exp_rel)
         expect_doc = json.loads(exp_path.read_text(encoding="utf-8")) if exp_path.is_file() else dict(case)
 
-        pred_page: PageIR | None = None
-        if pdir is not None and (pdir / f"{cid}.json").is_file():
-            pred_page = PageIR.model_validate_json((pdir / f"{cid}.json").read_text(encoding="utf-8"))
-
-        passed, reasons = _score_single_exam_case(case, expect_doc, pred_page)
+        if pdir is None:
+            continue
+        pred_file = pdir / f"{cid}.json"
+        pred_page = PageIR.model_validate_json(pred_file.read_text(encoding="utf-8")) if pred_file.is_file() else None
+        passed, reasons = _score_single_exam_case(case, expect_doc, pred_page, cid=cid, require_prediction=True)
         if passed:
             split_stats[split]["passed"] += 1
         else:
@@ -734,18 +735,70 @@ def evaluate_epistolary_exam(
         failures.append({"case_id": overlap[0], "message": f"Tuning/held_out split leakage on {overlap}"})
     if not split_ids["tuning"] or not split_ids["held_out"]:
         failures.append({"case_id": "manifest", "message": "Exam manifest must populate both 'tuning' and 'held_out' splits."})
+    return split_stats, failures
+
+
+def evaluate_epistolary_exam(
+    repo_root: str | Path | None = None,
+    *,
+    exam_dir: str | Path | None = None,
+    predictions_dir: str | Path | None = None,
+    require_predictions: bool = False,
+) -> dict[str, Any]:
+    """Validate and score `benchmarks/epistolary_exam/` across disjoint `tuning` and `held_out` splits."""
+    repo = RepoPaths.from_root(repo_root)
+    edir = Path(exam_dir) if exam_dir is not None else (repo.benchmarks_dir / "epistolary_exam")
+    manifest_path = edir / "manifest.json"
+    pdir = Path(predictions_dir) if predictions_dir is not None else None
+    if not manifest_path.is_file():
+        def_rate = None if pdir is None else 1.0
+        return {
+            "ok": not require_predictions,
+            "manifest_present": False,
+            "vacuous": pdir is None,
+            "mode": "manifest_only" if pdir is None else "predictions",
+            "tuning": {"total": 0, "passed": 0, "pass_rate": def_rate},
+            "held_out": {"total": 0, "passed": 0, "pass_rate": def_rate},
+            "generalization_gap": None if pdir is None else 0.0,
+            "failures": [],
+        }
+
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    cases = manifest.get("cases") or manifest.get("pages") or []
+    split_stats, failures = _evaluate_exam_cases(cases, edir, pdir)
+
+    if pdir is None:
+        if require_predictions:
+            failures.append(
+                {
+                    "case_id": "predictions_dir",
+                    "message": "Refusing vacuous benchmark run: pass --predictions-dir with PageIR predictions.",
+                }
+            )
+        return {
+            "ok": len(failures) == 0,
+            "manifest_present": True,
+            "vacuous": True,
+            "mode": "manifest_only",
+            "tuning": {**split_stats["tuning"], "pass_rate": None},
+            "held_out": {**split_stats["held_out"], "pass_rate": None},
+            "generalization_gap": None,
+            "failures": failures,
+        }
 
     t_tot = max(1, split_stats["tuning"]["total"])
     h_tot = max(1, split_stats["held_out"]["total"])
     t_rate = round(split_stats["tuning"]["passed"] / t_tot, 4) if split_stats["tuning"]["total"] else 0.0
     h_rate = round(split_stats["held_out"]["passed"] / h_tot, 4) if split_stats["held_out"]["total"] else 0.0
     gap = round(t_rate - h_rate, 4)
-    if pdir is not None and gap > 0.25:
+    if gap > 0.25:
         failures.append({"case_id": "generalization_gap", "message": f"Overfitting detected: tuning={t_rate} vs held_out={h_rate} (gap={gap})"})
 
     return {
         "ok": len(failures) == 0,
         "manifest_present": True,
+        "vacuous": False,
+        "mode": "predictions",
         "tuning": {**split_stats["tuning"], "pass_rate": t_rate},
         "held_out": {**split_stats["held_out"], "pass_rate": h_rate},
         "generalization_gap": gap,

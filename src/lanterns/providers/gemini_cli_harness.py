@@ -25,8 +25,14 @@ from lanterns.providers.base import (
 _FENCE_RE = re.compile(r"^\s*```(?:json)?\s*|\s*```\s*$", re.IGNORECASE)
 
 
+def scan_override_path(book_dir: str | Path, page_number: int) -> Path:
+    return Path(book_dir) / "scan_overrides" / f"page_{page_number:04d}.json"
+
+
 def scan_check_path(book_dir: str | Path, page_number: int) -> Path:
-    return Path(book_dir) / "scan_checks" / f"page_{page_number:04d}.json"
+    override = scan_override_path(book_dir, page_number)
+    legacy = Path(book_dir) / "scan_checks" / f"page_{page_number:04d}.json"
+    return legacy if (not override.is_file() and legacy.is_file()) else override
 
 
 def _coerce_scan_check_to_wire(payload: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any]]:
@@ -73,11 +79,23 @@ def load_native_scan_check(
     *,
     validate_schema: bool = True,
 ) -> ProviderSuccess | None:
-    """Load a committed native-vision scan check (`books/<book_id>/scan_checks/page_NNNN.json`) if present."""
+    """Load a committed wire scan override (`books/<book_id>/scan_overrides/page_NNNN.json`) if present."""
     path = scan_check_path(book_dir, page_number)
     if not path.is_file():
         return None
     raw = json.loads(path.read_text(encoding="utf-8"))
+    if (
+        isinstance(raw, dict)
+        and "checks" in raw
+        and not isinstance(raw.get("wire"), dict)
+        and not (
+            isinstance(raw.get("blocks"), list)
+            and raw["blocks"]
+            and isinstance(raw["blocks"][0], dict)
+            and "tagged_text" in raw["blocks"][0]
+        )
+    ):
+        return None
     wire_data, meta = _coerce_scan_check_to_wire(raw)
     prov = {
         "provider": "gemini_cli",
@@ -110,8 +128,8 @@ def save_native_scan_check(
     reviewer: str = "native-vision-agent",
     notes: str = "",
 ) -> Path:
-    """Validate and atomically persist a native-vision scan check under `books/<book_id>/scan_checks/`."""
-    target = scan_check_path(book_dir, page_number)
+    """Validate and atomically persist a native-vision scan override under `books/<book_id>/scan_overrides/`."""
+    target = scan_override_path(book_dir, page_number)
     dummy_req = ProviderRequest(prompt="", schema_name="page_extract_wire")
     err = validate_wire_if_requested(dummy_req, wire_data, raw_response=wire_data, provenance={})
     if err is not None:

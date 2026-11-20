@@ -28,6 +28,7 @@ from lanterns.core.paths import RepoPaths
 from lanterns.core.tags import (
     extract_inline_markers,
     parse_tagged_text,
+    promote_bare_symbol_in_tagged,
     resolve_endnote_row_target,
     split_side_by_side_footnote_tagged,
 )
@@ -53,7 +54,6 @@ SYMBOL_NOTE_LABELS = frozenset({"*", "**", "†", "‡", "§", "‖", "||", "¶"
 _LEADING_SUP_RE = re.compile(r"^\s*<sup>\s*([^<]+?)\s*</sup>\s*")
 _LEADING_WORD_NO_TAG_RE = re.compile(r"^([^\s<]+)(?:\s+(.*))?$", re.DOTALL)
 _TRAILING_HYPHEN_RE = re.compile(r"([-‐])((?:</(?:i|b|sc|sup|sub|unclear)>)*)\s*$")
-_SUP_SPAN_MASK_RE = re.compile(r"<sup>.*?</sup>", re.DOTALL)
 _ENDNOTE_PAGE_RE = re.compile(r"^Pages?\s+(\d+|[ivxlcdm]+)\b", re.IGNORECASE)
 _LEGEND_CARRIER_TYPES = frozenset({"dateline", "letter_header", "salutation"})
 
@@ -99,36 +99,23 @@ def _join_hyphenated_tagged(left_tagged: str, right_tagged: str) -> str:
     return f"{left_tagged.rstrip()} {right_tagged.lstrip()}".strip()
 
 
-def _promote_bare_symbol_in_tagged(tagged_text: str, sym: str) -> tuple[str, bool]:
-    esc = re.escape(sym)
-    first_ch = re.escape(sym[0])
-    pat = re.compile(rf"(?:[\w.,;:!?'\"“”‘’)\]]|</(?:i|b|sc|unclear)>)[ \t]?({esc})(?!{first_ch})(?![ \t]*{first_ch})")
-    masked = _SUP_SPAN_MASK_RE.sub(lambda m: " " * len(m.group(0)), tagged_text)
-    matches = list(pat.finditer(masked))
-    if not matches:
-        return tagged_text, False
-    parts: list[str] = []
-    cursor = 0
-    for match in matches:
-        parts.append(tagged_text[cursor : match.start(1)])
-        parts.append(f"<sup>{sym}</sup>")
-        cursor = match.end(1)
-    parts.append(tagged_text[cursor:])
-    return "".join(parts), True
-
-
 def _promote_page_symbol_callouts(pages: list[PageIR]) -> list[PageIR]:
     promoted_pages: list[PageIR] = []
     for page in pages:
         if page.failed_closed:
             promoted_pages.append(page)
             continue
+        existing_sups: set[str] = set()
+        for blk in page.blocks:
+            if blk.type not in FURNITURE_BLOCK_TYPES and blk.type != "footnote":
+                existing_sups.update(extract_inline_markers(blk.tagged_text))
         syms = sorted(
             {
                 normalize_note_label(b.note_label)
                 for b in page.blocks
                 if b.type == "footnote" and normalize_note_label(b.note_label) in SYMBOL_NOTE_LABELS
-            },
+            }
+            - existing_sups,
             key=len,
             reverse=True,
         )
@@ -146,7 +133,7 @@ def _promote_page_symbol_callouts(pages: list[PageIR]) -> list[PageIR]:
             for sym in syms:
                 if sym == own_lbl:
                     continue
-                curr_tagged, hit = _promote_bare_symbol_in_tagged(curr_tagged, sym)
+                curr_tagged, hit = promote_bare_symbol_in_tagged(curr_tagged, sym)
                 changed = changed or hit
             if changed:
                 t_str, p_str, sp_list = parse_tagged_text(curr_tagged)

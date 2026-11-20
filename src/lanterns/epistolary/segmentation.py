@@ -541,7 +541,12 @@ def _handle_active_block(
         return
 
     if blk.type == "ornamental_break":
-        opens_after = next_blk is None or _is_epistolary_signal(next_blk, directives) or next_blk.type in {"editorial", "heading"}
+        opens_after = (
+            next_blk is None
+            or next_blk.type in (EPISTOLARY_OPENER_TYPES | {"editorial", "heading"})
+            or next_blk.epistolary_transition == "starts_new_letter"
+            or next_blk.block_id in directives.force_split
+        )
         if state.has_closer or opens_after:
             state.close_active_letter()
             state.saw_ornamental_break = True

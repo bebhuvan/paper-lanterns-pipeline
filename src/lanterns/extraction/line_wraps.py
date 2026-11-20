@@ -8,6 +8,7 @@ cascading valedictions, signatures, address blocks, and verse.
 from __future__ import annotations
 
 import re
+import unicodedata
 from collections import Counter
 from pathlib import Path
 from typing import Any
@@ -16,7 +17,7 @@ from lanterns.core.models import BlockIR, PageIR
 from lanterns.core.tags import parse_tagged_text
 
 DEHYPHENATABLE_PROSE_TYPES: frozenset[str] = frozenset(
-    {"body", "blockquote", "editorial", "postscript", "footnote", "margin_note", "list_item"}
+    {"body", "blockquote", "editorial", "postscript", "footnote", "margin_note", "list_item", "index_entry", "toc_entry"}
 )
 
 _CARDINAL_TENS = frozenset({"twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"})
@@ -41,18 +42,19 @@ _CLITIC_PARTICLES = frozenset({"i", "e", "ul", "al", "el", "ud", "ad", "un", "ur
 _SUSPENDED_CONJUNCTIONS = frozenset({"and", "or", "nor", "to", "et", "und", "ou", "oder"})
 
 _LETTERS = r"[^\W\d_]+"
+_HYPHENS = r"[-‐­⸗]"
 _INLINE_TAG_NAME = r"(?:i|b|sc|unclear)"
-_TOKEN_RE = re.compile(rf"{_LETTERS}(?:[-‐]{_LETTERS})*")
+_TOKEN_RE = re.compile(rf"{_LETTERS}(?:[-‐⸗]{_LETTERS})*")
 _HYPHEN_INSIDE_CLOSE_TAG_RE = re.compile(
-    rf"({_LETTERS})([-‐­])(</{_INLINE_TAG_NAME}>)(?=[ \t]*(?:\n|[ \t]+{_LETTERS}))",
+    rf"({_LETTERS})({_HYPHENS})(</{_INLINE_TAG_NAME}>)(?=[ \t]*(?:\n|[ \t]+{_LETTERS}))",
     re.IGNORECASE,
 )
 _TAGGED_HYPHEN_WRAP_RE = re.compile(
-    rf"({_LETTERS})(</{_INLINE_TAG_NAME}>)?([-‐­])[ \t]*(?:\n[ \t]*|[ \t]+)(<{_INLINE_TAG_NAME}>)?({_LETTERS})",
+    rf"({_LETTERS})(</{_INLINE_TAG_NAME}>)?({_HYPHENS})[ \t]*(?:\n[ \t]*|[ \t]+)(<{_INLINE_TAG_NAME}>)?({_LETTERS})",
     re.IGNORECASE,
 )
-_ADJACENT_LEFT_HYPHEN_RE = re.compile(rf"{_LETTERS}[-‐](?:</?{_INLINE_TAG_NAME}>)*$", re.IGNORECASE)
-_ADJACENT_RIGHT_HYPHEN_RE = re.compile(rf"^(?:</?{_INLINE_TAG_NAME}>)*[-‐]{_LETTERS}", re.IGNORECASE)
+_ADJACENT_LEFT_HYPHEN_RE = re.compile(rf"{_LETTERS}[-‐⸗](?:</?{_INLINE_TAG_NAME}>)*$", re.IGNORECASE)
+_ADJACENT_RIGHT_HYPHEN_RE = re.compile(rf"^(?:</?{_INLINE_TAG_NAME}>)*[-‐⸗]{_LETTERS}", re.IGNORECASE)
 
 
 def _same_style_boundary(close_tag: str | None, open_tag: str | None) -> bool:
@@ -77,9 +79,9 @@ def count_corpus_word_forms(
             for line in blk.plain_text.splitlines():
                 stripped = line.rstrip()
                 # Ignore physical line-end hyphens when building reference attestation counts
-                clean_line = re.sub(rf"{_LETTERS}[-‐­]\s*$", "", stripped)
+                clean_line = re.sub(rf"{_LETTERS}{_HYPHENS}\s*$", "", stripped)
                 for tok in _TOKEN_RE.findall(clean_line):
-                    cf = tok.casefold().replace("‐", "-")
+                    cf = tok.casefold().replace("‐", "-").replace("⸗", "-")
                     if "-" in cf:
                         hyphenated[cf] += 1
                     elif len(cf) >= 4:
@@ -89,9 +91,9 @@ def count_corpus_word_forms(
         if wpath_dir.is_dir():
             for wfile in sorted(wpath_dir.glob("*.txt")):
                 for line in wfile.read_text(encoding="utf-8", errors="ignore").splitlines():
-                    clean_line = re.sub(rf"{_LETTERS}[-‐­]\s*$", "", line.rstrip())
+                    clean_line = re.sub(rf"{_LETTERS}{_HYPHENS}\s*$", "", line.rstrip())
                     for tok in _TOKEN_RE.findall(clean_line):
-                        cf = tok.casefold().replace("‐", "-")
+                        cf = tok.casefold().replace("‐", "-").replace("⸗", "-")
                         if "-" not in cf and len(cf) >= 4:
                             joined[cf] += 1
     return joined, hyphenated
@@ -108,6 +110,12 @@ def _is_structural_compound(left: str, right: str) -> tuple[bool, str]:
     if right[:1].isupper() and not left.isupper():
         return True, "capitalized_second_element"
     return False, ""
+
+
+def _is_alpha_with_marks(tok: str) -> bool:
+    return bool(tok) and any(ch.isalpha() for ch in tok) and all(
+        ch.isalpha() or unicodedata.category(ch).startswith("M") for ch in tok
+    )
 
 
 def judge_hyphen_wrap(
@@ -133,7 +141,7 @@ def judge_hyphen_wrap(
     is_comp, reason = _is_structural_compound(left, right)
     if is_comp:
         return "keep", reason
-    if left.isalpha() and right.isalpha() and len(left) >= 2 and len(right) >= 2 and right.islower():
+    if _is_alpha_with_marks(left) and _is_alpha_with_marks(right) and len(left) >= 2 and len(right) >= 2 and right.islower():
         return "join", "morphological_soft_wrap"
     return "keep", "conservative_retain"
 
@@ -142,7 +150,7 @@ def merge_hyphenated_tagged_pair(left_tagged: str, right_tagged: str) -> tuple[s
     """Join a cross-page hyphenated boundary `(left_tagged, right_tagged)` diplomatically when soft-wrapped."""
     lt = left_tagged.rstrip()
     rt = right_tagged.lstrip()
-    m_left = re.search(rf"({_LETTERS})([-‐­])((?:</{_INLINE_TAG_NAME}>)*)$", lt, re.IGNORECASE)
+    m_left = re.search(rf"({_LETTERS})({_HYPHENS})((?:</{_INLINE_TAG_NAME}>)*)$", lt, re.IGNORECASE)
     if not m_left:
         return lt, rt, False
     left_word = m_left.group(1)
@@ -170,7 +178,7 @@ def _resolve_single_block(
 ) -> BlockIR:
     if blk.line_breaks_preserved or blk.type not in DEHYPHENATABLE_PROSE_TYPES:
         return blk
-    if "\n" not in blk.tagged_text and "-" not in blk.tagged_text and "‐" not in blk.tagged_text and "­" not in blk.tagged_text:
+    if not any(ch in blk.tagged_text for ch in ("\n", "-", "‐", "\xad", "⸗")):
         return blk
 
     prepped = _HYPHEN_INSIDE_CLOSE_TAG_RE.sub(r"\1\3\2", blk.tagged_text)
@@ -215,7 +223,7 @@ def _resolve_single_block(
 
 
 _INLINE_SOFT_WRAP_RE = re.compile(
-    rf"(?<![-‐])(?P<left>{_LETTERS})(?P<close></{_INLINE_TAG_NAME}>)?[-‐](?P<open><{_INLINE_TAG_NAME}>)?(?P<right>{_LETTERS})(?![-‐])"
+    rf"(?<![-‐⸗])(?P<left>{_LETTERS})(?P<close></{_INLINE_TAG_NAME}>)?[-‐⸗](?P<open><{_INLINE_TAG_NAME}>)?(?P<right>{_LETTERS})(?![-‐⸗])"
 )
 
 
@@ -260,13 +268,13 @@ def dedup_or_join_cross_page_tagged(
     """Resolve cross-page hyphen joins via `judge_hyphen_wrap` or deduplicate printed catchwords."""
     l_raw = left_tagged.rstrip()
     r_raw = right_tagged.lstrip()
-    hyph_m = re.search(rf"({_LETTERS})[-‐­]((?:</[a-z]+>)*)\s*$", l_raw)
+    hyph_m = re.search(rf"({_LETTERS}){_HYPHENS}((?:</[a-z]+>)*)\s*$", l_raw)
     word_m = re.match(
-        r"^((?:<[a-z]+>)*)(?:[“\"‘']\s*)?([a-z\u00DF-\u00F6\u00F8-\u024F][A-Za-z\u00C0-\u024F']*)\b(.*)$",
+        rf"^((?:<[a-z]+>)*)(?:[“\"‘']\s*)?({_LETTERS})(.*)$",
         r_raw,
-        re.DOTALL,
+        re.DOTALL | re.IGNORECASE,
     )
-    if hyph_m and word_m and len(hyph_m.group(1)) >= 2:
+    if hyph_m and word_m and len(hyph_m.group(1)) >= 2 and word_m.group(2)[0].islower():
         left_frag = hyph_m.group(1)
         right_frag = word_m.group(2)
         verdict, _ = judge_hyphen_wrap(left_frag, right_frag, joined_counts, hyphen_counts)

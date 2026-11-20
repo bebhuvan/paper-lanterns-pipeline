@@ -567,19 +567,85 @@ def record_machine_reread(
     return {"skipped_human": False, "record": rec}
 
 
+def _explicit_letter_key(item: dict[str, Any]) -> tuple[str, ...]:
+    lid = str(item.get("letter_id") or "").strip()
+    if lid:
+        return ("id", lid)
+    return ("span", str(item.get("start_block_id") or ""), str(item.get("end_block_id") or ""))
+
+
 def _merge_letter_map_patch(book_id: str, patch: dict[str, Any], repo_root: str | Path | None) -> None:
     current = load_letter_map(book_id, repo_root=repo_root)
-    force_ids = list(dict.fromkeys([*(current.get("force_split_before_block_ids") or []), *(patch.get("force_split_before_block_ids") or [])]))
-    forbid_ids = list(dict.fromkeys([*(current.get("forbid_split_before_block_ids") or []), *(patch.get("forbid_split_before_block_ids") or [])]))
-    explicit = [*(current.get("explicit_letters") or []), *(patch.get("explicit_letters") or [])]
+    force_ids = list(
+        dict.fromkeys([*(current.get("force_split_before_block_ids") or []), *(patch.get("force_split_before_block_ids") or [])])
+    )
+    forbid_ids = list(
+        dict.fromkeys([*(current.get("forbid_split_before_block_ids") or []), *(patch.get("forbid_split_before_block_ids") or [])])
+    )
+    enc_map = {
+        (str(r.get("start_block_id") or ""), str(r.get("end_block_id") or "")): dict(r)
+        for r in [*(current.get("enclosure_block_ranges") or []), *(patch.get("enclosure_block_ranges") or [])]
+        if isinstance(r, dict)
+    }
+    exp_map = {
+        _explicit_letter_key(item): dict(item)
+        for item in [*(current.get("explicit_letters") or []), *(patch.get("explicit_letters") or [])]
+        if isinstance(item, dict)
+    }
     current.update(
         {
             "force_split_before_block_ids": force_ids,
             "forbid_split_before_block_ids": forbid_ids,
-            "explicit_letters": explicit,
+            "enclosure_block_ranges": list(enc_map.values()),
+            "explicit_letters": list(exp_map.values()),
         }
     )
     save_letter_map(book_id, current, repo_root=repo_root)
+
+
+def _blocks_doc_to_wire(doc: dict[str, Any]) -> dict[str, Any]:
+    if isinstance(doc.get("wire"), dict):
+        return dict(doc["wire"])
+    wire_blocks = [
+        {
+            "type": b.get("type", "body"),
+            "bbox": list(b.get("bbox") or [0, 0, 1000, 1000]),
+            "text": str(b.get("text") or b.get("tagged_text") or b.get("plain_text") or ""),
+            "alignment": b.get("alignment", "left"),
+            "epistolary_transition": b.get("epistolary_transition", "none"),
+            "line_breaks_preserved": bool(b.get("line_breaks_preserved", False)),
+            "heading_level": b.get("heading_level"),
+            "note_label": b.get("note_label"),
+            "continues_from_prev": bool(b.get("continues_from_prev", False)),
+            "continues_to_next": bool(b.get("continues_to_next", False)),
+            "table_role": b.get("table_role"),
+            "cells": b.get("cells"),
+        }
+        for b in (doc.get("blocks") or [])
+        if isinstance(b, dict)
+    ]
+    return {
+        "printed_folio": doc.get("printed_folio"),
+        "page_orientation": doc.get("page_orientation", "upright"),
+        "warning_codes": list(doc.get("warning_codes") or []),
+        "blocks": wire_blocks,
+    }
+
+
+def _upsert_audit_check_jsonl(audit_path: Path, entry: dict[str, Any]) -> None:
+    audit_path.parent.mkdir(parents=True, exist_ok=True)
+    key = (int(entry.get("page_number") or 0), str(entry.get("check_id") or ""))
+    records: list[dict[str, Any]] = []
+    if audit_path.is_file():
+        for ln in audit_path.read_text(encoding="utf-8").splitlines():
+            if ln.strip():
+                rec = json.loads(ln)
+                if (int(rec.get("page_number") or 0), str(rec.get("check_id") or "")) != key:
+                    records.append(rec)
+    records.append(entry)
+    records.sort(key=lambda r: (int(r.get("page_number") or 0), str(r.get("check_id") or "")))
+    text = "\n".join(json.dumps(r, ensure_ascii=False) for r in records) + "\n"
+    audit_path.write_text(text, encoding="utf-8")
 
 
 def _ingest_scan_check_payload(
@@ -589,8 +655,26 @@ def _ingest_scan_check_payload(
     pages_by_num: dict[int, PageIR],
     repo_root: str | Path | None,
 ) -> dict[str, Any]:
+    repo = RepoPaths.from_root(repo_root)
     pnum = int(doc["page_number"])
+    reviewer = str(doc.get("reviewer") or "native-vision-scan-check")
+    if isinstance(doc.get("wire"), dict) or isinstance(doc.get("blocks"), list):
+        wire_data = _blocks_doc_to_wire(doc)
+        _validate_if_schema_present("page_extract_wire", wire_data, repo)
+        envelope = {
+            "version": "scan-check-v1",
+            "page_number": pnum,
+            "reviewer": reviewer,
+            "checked_at": str(doc.get("checked_at") or datetime.now(timezone.utc).isoformat()),
+            "notes": str(doc.get("notes") or ""),
+            "wire": wire_data,
+        }
+        atomic_write_json(repo.scan_overrides_dir(book_id) / f"page_{pnum:04d}.json", envelope)
+
     checks = doc.get("checks") or []
+    if checks:
+        _upsert_audit_check_jsonl(repo.audit_checks_path(book_id), dict(doc))
+
     confirmed = [
         str(c["block_id"])
         for c in checks
@@ -609,7 +693,7 @@ def _ingest_scan_check_payload(
         reread_block_ids=all_checked,
         method="scan_check",
         verify_id=str(doc.get("check_id") or ppath.stem),
-        reviewer=str(doc.get("reviewer") or "native-vision-scan-check"),
+        reviewer=reviewer,
         repo_root=repo_root,
     )
     return {
@@ -638,7 +722,7 @@ def intake_proposal(
         raise ValueError(f"Proposal book_id {doc['book_id']!r} does not match target book_id {book_id!r}")
 
     pages_by_num = {p.page_number: p for p in (pages or [])}
-    if doc.get("version") != CORRECTION_VERSION and "page_number" in doc and ("checks" in doc or "blocks" in doc):
+    if doc.get("version") != CORRECTION_VERSION and "page_number" in doc and ("checks" in doc or "blocks" in doc or "wire" in doc):
         return _ingest_scan_check_payload(book_id, doc, ppath, pages_by_num, repo_root)
 
     _validate_if_schema_present("correction_v2", doc, repo)

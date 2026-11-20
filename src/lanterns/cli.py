@@ -51,7 +51,7 @@ def _cmd_init_book(args: argparse.Namespace, repo: RepoPaths) -> int:
     )
     saved_path = cfg.save(paths=repo)
     (repo.corrections_dir(cfg.book_id)).mkdir(parents=True, exist_ok=True)
-    (repo.scan_checks_dir(cfg.book_id)).mkdir(parents=True, exist_ok=True)
+    (repo.scan_overrides_dir(cfg.book_id)).mkdir(parents=True, exist_ok=True)
     _print_json({"ok": True, "book_id": cfg.book_id, "book_toml": str(saved_path)})
     return 0
 
@@ -410,6 +410,7 @@ def _cmd_benchmark(args: argparse.Namespace, repo: RepoPaths) -> int:
         repo.root,
         exam_dir=args.exam_dir,
         predictions_dir=args.predictions_dir,
+        require_predictions=not getattr(args, "validate_manifest_only", False),
     )
     _print_json(res)
     return 0 if res.get("ok", True) else 1
@@ -511,6 +512,11 @@ def _register_ops_subparsers(sub: Any) -> None:
     p_bm = sub.add_parser("benchmark", help="Score tuning vs held-out epistolary exam generalization")
     p_bm.add_argument("--exam-dir", default=None)
     p_bm.add_argument("--predictions-dir", default=None)
+    p_bm.add_argument(
+        "--validate-manifest-only",
+        action="store_true",
+        help="Validate exam splits and expectations without scoring PageIR predictions",
+    )
 
 
 def build_parser() -> argparse.ArgumentParser:

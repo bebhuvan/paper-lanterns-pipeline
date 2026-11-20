@@ -27,7 +27,7 @@ from lanterns.core.models import (
     PageIR,
     TableCell,
 )
-from lanterns.core.tags import extract_inline_markers, parse_tagged_text
+from lanterns.core.tags import extract_inline_markers, parse_tagged_text, promote_bare_symbol_in_tagged
 from lanterns.core.unicode_norm import (
     CONTROL_CHARS_WARNING,
     is_binder_signature,
@@ -266,39 +266,8 @@ def _build_single_block_ir(
     return blk, eff_folio
 
 
-_SUP_SPLIT_RE = re.compile(r"(<sup>.*?</sup>)", re.DOTALL | re.IGNORECASE)
-
-
-def _symbol_callout_regex(sym: str) -> re.Pattern[str]:
-    esc = re.escape(sym)
-    tail = r"(?=$|[\s.,;:!?)”\"’\]—–\-<|])"
-    if sym in {"*", "**"}:
-        return re.compile(rf"(?<=[\w.,;:!?)”\"’\]>])([ \t]?)(?<!\*)({esc})(?!\*)(?![ \t]*\*){tail}")
-    if sym in {"§", "¶"}:
-        return re.compile(rf"(?<=[\w.,;:!?)”\"’\]>])([ \t]?)({esc})(?!\s*\d){tail}")
-    return re.compile(rf"(?<=[\w.,;:!?)”\"’\]>])([ \t]?)({esc}){tail}")
-
-
 def _wrap_one_bare_symbol(tagged: str, sym: str) -> tuple[str, bool]:
-    if sym not in tagged:
-        return tagged, False
-    pat = _symbol_callout_regex(sym)
-    parts = _SUP_SPLIT_RE.split(tagged)
-    replaced = False
-    out: list[str] = []
-    for idx, chunk in enumerate(parts):
-        if idx % 2 == 1 or replaced or sym not in chunk:
-            out.append(chunk)
-            continue
-        new_chunk, count = pat.subn(
-            lambda m: f"{m.group(1)}<sup>{m.group(2)}</sup>",
-            chunk,
-            count=1,
-        )
-        if count > 0:
-            replaced = True
-        out.append(new_chunk)
-    return "".join(out), replaced
+    return promote_bare_symbol_in_tagged(tagged, sym, max_replacements=1)
 
 
 def _promote_bare_symbol_callouts(blocks: list[BlockIR]) -> list[BlockIR]:
@@ -414,10 +383,19 @@ def solve_monotonic_folios(pages: list[PageIR]) -> list[PageIR]:
     if dom_count < 2:
         return pages
     first_arabic = min(arabic_obs)
+    last_arabic = max(arabic_obs)
 
     updated_pages: list[PageIR] = []
     for page in pages:
-        if page.failed_closed or page.printed_folio or page.page_number < first_arabic:
+        has_content = any(b.type not in FURNITURE_BLOCK_TYPES for b in page.blocks)
+        if (
+            page.failed_closed
+            or page.printed_folio
+            or page.page_number < first_arabic
+            or page.page_number > last_arabic
+            or "blank_page" in page.warning_codes
+            or not has_content
+        ):
             updated_pages.append(page)
             continue
         inferred = page.page_number - dominant_offset

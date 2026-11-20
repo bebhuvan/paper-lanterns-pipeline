@@ -90,6 +90,12 @@ class RepoPaths:
     def scan_checks_dir(self, book_id: str) -> Path:
         return self.book_dir(book_id) / "scan_checks"
 
+    def scan_overrides_dir(self, book_id: str) -> Path:
+        return self.book_dir(book_id) / "scan_overrides"
+
+    def audit_checks_path(self, book_id: str) -> Path:
+        return self.book_dir(book_id) / "audit_checks.jsonl"
+
     def corrections_dir(self, book_id: str) -> Path:
         return self.book_dir(book_id) / "corrections"
 

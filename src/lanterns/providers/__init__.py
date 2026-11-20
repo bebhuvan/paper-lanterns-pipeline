@@ -28,6 +28,7 @@ from lanterns.providers.gemini_cli_harness import (
     load_native_scan_check,
     save_native_scan_check,
     scan_check_path,
+    scan_override_path,
 )
 from lanterns.providers.openai_compat import OpenAICompatProvider
 from lanterns.providers.router import (
@@ -74,6 +75,7 @@ __all__ = [
     "normalize_media_resolution",
     "save_native_scan_check",
     "scan_check_path",
+    "scan_override_path",
     "split_image_two_horizontal_bands",
     "validate_gemini_model_name",
 ]
