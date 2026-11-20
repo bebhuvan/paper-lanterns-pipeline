@@ -151,7 +151,7 @@ def _resolve_span_ids(exp: dict[str, Any], blocks: list[BlockIR], id_to_idx: dic
         return [str(x) for x in exp["block_ids"]]
     s_id = str(exp.get("start_block_id") or "")
     e_id = str(exp.get("end_block_id") or "")
-    return _slice_block_range(blocks, id_to_idx, s_id, e_id) or ([s_id] if s_id else [])
+    return _slice_block_range(blocks, id_to_idx, s_id, e_id)
 
 
 def _build_map_directives(blocks: list[BlockIR], letter_map: dict[str, Any] | None) -> _MapDirectives:
@@ -174,9 +174,11 @@ def _build_map_directives(blocks: list[BlockIR], letter_map: dict[str, Any] | No
     directives.explicit_by_seq = {int(exp["sequence_index"]): exp for exp in exps if exp.get("sequence_index") is not None}
     for exp in exps:
         span_ids = _resolve_span_ids(exp, blocks, id_to_idx)
+        s_id = (span_ids and span_ids[0]) or str(exp.get("start_block_id") or "")
+        if s_id:
+            directives.force_split.add(s_id)
+            directives.explicit_by_start_block[s_id] = exp
         if span_ids:
-            directives.force_split.add(span_ids[0])
-            directives.explicit_by_start_block[span_ids[0]] = exp
             directives.forbid_split.update(span_ids[1:])
             directives.force_close_after.add(span_ids[-1])
     return directives

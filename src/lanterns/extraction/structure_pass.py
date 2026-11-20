@@ -321,7 +321,8 @@ def _run_single_provider_call(
     is_mock = getattr(provider, "name", prov_name) == "mock"
     if ledger is not None and not is_mock:
         est = conservative_call_reservation_usd(prov_name, model_name, root=str(repo_root) if repo_root else None)
-        reserved = ledger.acquire_slot(min(est, 0.05))
+        slot_cap = 0.015 if (prov_name == "gemini" and "flash" in model_name) else min(est, 0.04)
+        reserved = ledger.acquire_slot(min(est, slot_cap))
     res = provider.generate(req)
     prov_meta = res.provenance or {}
     call_cost = _resolve_call_cost(prov_name, model_name, prov_meta, req.settings.get("service_tier"), repo_root)

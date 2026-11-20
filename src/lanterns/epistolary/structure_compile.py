@@ -17,6 +17,7 @@ from lanterns.core.models import (
     ChildSpan,
     ChildSpanKind,
     CorrespondentRef,
+    EpistolaryMetadata,
     LetterUnit,
     SectionItem,
     SectionKind,
@@ -97,36 +98,45 @@ def _flush_block_run_units(
 def populate_section_units_from_items(
     sections: list[BookSection],
     letters_by_id: dict[str, LetterUnit],
+    all_letters: list[LetterUnit] | None = None,
 ) -> None:
     """Populate 100%-conserving `sec.units` in source order from legacy `sec.items` (`$0` offline path)."""
+    by_first_bid = {
+        lu.blocks[0].block_id: lu for lu in (all_letters or letters_by_id.values()) if lu.blocks
+    }
     u_seq, c_seq = 0, 0
     for sec in sections:
         sec_units: list[StructuralUnit] = []
         for item in sec.items:
-            lu = letters_by_id.get(str(item.letter_id or ""))
-            if item.kind == "letter" and lu is not None and lu.blocks:
+            blks = item.blocks
+            lu = (blks and by_first_bid.get(blks[0].block_id)) or letters_by_id.get(str(item.letter_id or ""))
+            if item.kind == "letter" and blks:
                 u_seq += 1
-                children, c_seq = (lu.children, c_seq) if lu.children else _derive_enclosure_children(lu.blocks, c_seq)
-                lu.children = children
+                meta = (lu and lu.metadata) or EpistolaryMetadata()
+                children, c_seq = (
+                    (lu.children, c_seq) if (lu is not None and lu.children) else _derive_enclosure_children(blks, c_seq)
+                )
+                if lu is not None:
+                    lu.children = children
                 sec_units.append(
                     StructuralUnit(
                         unit_id=f"unit-{u_seq:04d}",
                         kind="letter",
-                        start_anchor=make_boundary_anchor(lu.blocks[0]),
-                        end_anchor=make_boundary_anchor(lu.blocks[-1]),
-                        block_ids=[b.block_id for b in lu.blocks],
+                        start_anchor=make_boundary_anchor(blks[0]),
+                        end_anchor=make_boundary_anchor(blks[-1]),
+                        block_ids=[b.block_id for b in blks],
                         children=children,
-                        label=lu.metadata.letter_number_label,
-                        senders=list(lu.metadata.senders),
-                        recipients=list(lu.metadata.recipients),
-                        place=lu.metadata.place,
-                        date_raw=lu.metadata.dateline_plain,
-                        date_iso=lu.metadata.date_iso,
-                        footnote_ids=list(lu.footnote_ids),
+                        label=meta.letter_number_label,
+                        senders=list(meta.senders),
+                        recipients=list(meta.recipients),
+                        place=meta.place,
+                        date_raw=meta.dateline_plain,
+                        date_iso=meta.date_iso,
+                        footnote_ids=list((lu and lu.footnote_ids) or ()),
                     )
                 )
-            elif item.blocks:
-                run_units, u_seq = _flush_block_run_units(sec.kind, item.blocks, u_seq)
+            elif blks:
+                run_units, u_seq = _flush_block_run_units(sec.kind, blks, u_seq)
                 sec_units.extend(run_units)
         sec.units = sec_units
 

@@ -534,3 +534,42 @@ def test_compile_collection_ast_from_structure_plan_offline_fallback_and_cli(
     assert rc == 0 and out_file.is_file()
     loaded_plan = json.loads(out_file.read_text(encoding="utf-8"))
     assert sum(len(s["units"]) for s in loaded_plan["sections"]) >= 1
+
+
+def test_explicit_letter_missing_end_block_preserves_full_span_and_units(tmp_path: Path) -> None:
+    """Explicit letter with present start_block_id and dropped end_block_id must not truncate at block 1."""
+    from lanterns.epistolary.compiler import compile_collection_ast
+    from lanterns.validation.validators import source_block_coverage
+
+    pages = [
+        make_page(
+            1,
+            [
+                make_block("p0001-b0001", 1, "letter_header", "No. I.", epistolary_transition="starts_new_letter"),
+                make_block("p0001-b0002", 1, "salutation", "Worshipfull,"),
+                make_block("p0001-b0003", 1, "body", "First paragraph of the letter."),
+                make_block("p0001-b0004", 1, "body", "Second paragraph that must remain inside letter 1."),
+                make_block("p0001-b0005", 1, "signature", "Your servant, John.", alignment="right"),
+            ],
+            printed_folio="1",
+        )
+    ]
+    letter_map = {
+        "schema_version": "1.0.0",
+        "book_id": "eic-span-test",
+        "explicit_letters": [
+            {
+                "letter_id": "letter-0001",
+                "sequence_index": 1,
+                "start_block_id": "p0001-b0001",
+                "end_block_id": "p0001-b0099-dropped",
+            }
+        ],
+    }
+    ast = compile_collection_ast(pages, book_id="eic-span-test", letter_map=letter_map, structure_plan={})
+    assert source_block_coverage(ast) == []
+    assert len(ast.letters) == 1
+    assert ast.letters[0].block_ids == [f"p0001-b000{i}" for i in range(1, 6)]
+    assert len(ast.sections[0].units) == 1
+    assert ast.sections[0].units[0].kind == "letter"
+    assert ast.sections[0].units[0].block_ids == [f"p0001-b000{i}" for i in range(1, 6)]

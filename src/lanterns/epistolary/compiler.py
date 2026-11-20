@@ -499,7 +499,7 @@ def compile_collection_ast(
             letter_map=eff_letter_map,
             chapter_map=eff_chapter_map,
         )
-        populate_section_units_from_items(sections, {lu.letter_id: lu for lu in letters})
+        populate_section_units_from_items(sections, {lu.letter_id: lu for lu in letters}, all_letters=letters)
     _project_dual_footnotes(sections, letters, footnotes, refs_by_block)
 
     model_breakdown = dict(
