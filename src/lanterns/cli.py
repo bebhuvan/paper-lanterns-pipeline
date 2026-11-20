@@ -331,7 +331,12 @@ def _cmd_validate_edition(args: argparse.Namespace, repo: RepoPaths) -> int:
             if ast_file.is_file()
             else None
         )
-        res = validate_compiled_edition(ed_dir, ast_obj, require_proofing=not args.skip_proofing)
+        res = validate_compiled_edition(
+            ed_dir,
+            ast_obj,
+            require_proofing=not args.skip_proofing,
+            run_external_tools=bool(args.external_tools),
+        )
         results.append(res)
         if not res.get("ok", False):
             all_ok = False
@@ -536,6 +541,7 @@ def _register_ops_subparsers(sub: Any) -> None:
     p_val.add_argument("--edition-dir", default=None)
     p_val.add_argument("--all", action="store_true")
     p_val.add_argument("--skip-proofing", action="store_true")
+    p_val.add_argument("--external-tools", action="store_true", help="Run xmllint tei_all.rng and EPUBCheck 5.1.0")
 
     p_ps = sub.add_parser("proof-site", help="Build safe-DOM Distributed Proofreaders (P1 -> P2) Studio")
     p_ps.add_argument("book_id")

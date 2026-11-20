@@ -647,7 +647,7 @@ def _render_tei_section(
         inner = _render_tei_div_blocks(ublks, list(u_children), ctx)
         if not inner:
             continue
-        if ukind == "letter" and lu is not None and lu.letter_id in corresp_id_by_letter:
+        if lu is not None and lu.letter_id in corresp_id_by_letter:
             cid = corresp_id_by_letter[lu.letter_id]
             div_id = _unique_xml_id(f"div-{cid}", ctx.used_ids)
             sec_children.append(f'<div xml:id="{html.escape(div_id, quote=True)}" type="letter" corresp="#{html.escape(cid, quote=True)}">\n{inner}\n</div>')

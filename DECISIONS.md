@@ -1,6 +1,6 @@
 # Architectural Decision Records (DECISIONS.md)
 
-Append-only record of foundational architectural choices in **Paper Lanterns v2**, why they were made, and what alternatives were rejected. To revise a decision, append a new numbered ADR referencing the superseded entry.
+Append-only record of foundational architectural choices in **Paper Lanterns**, why they were made, and what alternatives were rejected. To revise a decision, append a new numbered ADR referencing the superseded entry.
 
 ---
 
@@ -184,6 +184,40 @@ Append-only record of foundational architectural choices in **Paper Lanterns v2*
   5. **Header Recipient Precedence & EIC Metadata Cleanup (`epistolary/metadata.py`, `books/eic-letters-received-vol-{1,3,4,6}-*/letter_map.json`):** Prioritize `hdr_recipient` over `address_block` docketing endorsements in `extract_epistolary_metadata` and clean `83` noisy script-generated `sender_display`/`recipient_display` overrides across the EIC volumes.
 - **Why:** Zero-`letter_map.json` ablation proved that primary VLM extraction already achieves `99.8%` letter-start recall (`2,811/2,816`) and `0` validation warnings stem from cross-page seam myopia (`16/22` came from `tags.py` superscript contractions, `1/22` from `validators.py` missing `margin_note` labels, and `5/22` are pixel-verified historical printer errata). Meanwhile, `2-model` verification across `Erasmus`, `Goethe–Zelter`, `Faraday`, `Bapu–Mira`, and `Gandhi–Patel` (`$0.3505` experiment spend) confirmed strong cross-family agreement while surfacing exact model-specific edge cases (such as `bapu-mira-letters` p. 26 unnumbered post-signature `B.` block and `faraday-letters` p. 88 `1813` shoulder note labelling).
 - **Rejected:** Suppressing `word<sup>alpha</sup>` callouts unconditionally when no same-page footnote matches (which would hide genuinely dropped alphabetic footnotes); adding a separate VLM page-turn seam pass when deterministic `CONTINUABLE_PROSE_TYPES` + `dedup_or_join_cross_page_tagged` resolved all `6` remaining cross-page broken words at `$0.00` spend.
+
+---
+
+## D20. v3 Phase 0 Security, Provenance Split, Archive.org BookReader & Documentation Consolidation (2026-11-20)
+
+- **Decision:** Superseding `D7`, `D8`, and `D10` on specific operational details:
+  1. **Strict CSP, Partial `--pages` Conservation & Relay Lease Enforcement:** Ship `<meta http-equiv="Content-Security-Policy">` on Proofing Studio, merge partial `--pages` runs into existing `ir/pages.json` + `ir/blocks.json` without wiping untouched pages, enforce matching `lease_token` on `P1` relay submissions, and prohibit `P1` overwrites of existing `p1_proofed`/`verified` rows in `workers/proofing_relay/src/index.js`.
+  2. **Model & Provenance Hygiene:** Retire `gemini-4-argon` from all active profiles (`gemini/gemini-4-hydrogen` Batch + symmetric `anthropic/claude-sonnet-5-5` fallback, reserving `[L01]` strictly for Tier-2 `RECITATION`/content-filter rescue), split full-page Wire overrides (`books/<id>/scan_overrides/page_NNNN.json`) from append-only audit logs (`books/<id>/audit_checks.jsonl`), and switch Archive.org scan URLs to BookReader `/page/n{k}_w{width}.jpg` (`0` leaf drift across `38/38` IA books vs. broken IIIF `${leaf_index}`).
+  3. **Single-Owner Documentation Consolidation (`ops/doctor.py`):** Consolidate `docs/` to 3 core files (`FOUNDER_INTENT_AND_MANIFESTO.md`, unified `ARCHITECTURE.md`, and cross-book R&D-only `LAB_NOTEBOOK.md` + `docs/reference/{gemini-api,claude-api}/`) and forbid `.agents/rules/*.md` so `AGENTS.md` is the sole normative constitution.
+- **Why:** Pre-v3 adversarial audit and two-session Gemini 4 Carbon falsification (`$1.2392` lab spend) exposed silent partial-run wipes, IIIF leaf drift on `34/38` IA volumes, mixed `scan_checks/` schemas, and `52%` documentation duplication.
+- **Rejected:** DualWitness `3.8-flash + haiku-5-5` (`E3` falsified: `39.24%` block disagreement and correlated paragraph-collapse errors); padding static prompts `> 4,096` tokens (`E4a` falsified); global `2,500` visual-token cap on Sonnet (`E4b` falsified: corrupted `Evêque -> Évêque`).
+
+---
+
+## D21. v3 Phase 1 `<fnref>` vs `<sup>` Wire Separation, Conserved `StructuralUnit` AST & 3-Tier Structure Pass (2026-11-20)
+
+- **Decision:** Superseding `D2` and `D6`:
+  1. **Wire `<fnref>` vs `<sup>` + `facsimile_plate`:** Add `<fnref>` for footnote/endnote callouts and `facsimile_plate` for photographed manuscript leaves on `PageExtractWire`; delete `_ABBREV_SUP_PAIRS` and `_ORDINAL_SUP_SUFFIXES` from `core/tags.py` (which mutilated `Robᵗ -> Rob`), retaining a deterministic attested-page-footnote `<sup>` fallback in `epistolary/compiler.py` for legacy runs.
+  2. **Dual Conserved `StructuralUnit` + `ChildSpan` AST & `BoundaryAnchor` Rebaser:** Extend `CollectionAST` with `BookSection.units` (`letter`, `letter_excerpt`, `narrative`, `editorial_bridge`, `document`, `apparatus`), `ChildSpan` (`enclosure`, `postscript`, `quoted_verse`, `attachment`, `endorsement`), typed `CorrespondentRef` (`person` | `org`), `language`/`text_direction`/`series_id`/`volume_number`, and `rebase_boundary_anchor` (`(page_number, block_id, bbox_y0, anchor_text_prefix)` surviving single-page re-extractions and block splits/merges). Enforce 100% block conservation across both `sec.items` and `sec.units` (`39/39` Wave-1 books conserved at `$0.00`). Only standalone `unit.kind == "letter"` projects into `ast.letters`, keeping inline *Life & Letters* `letter_excerpt` quotes in-place inside `sec.units`.
+  3. **Three-Tier Whole-Book Structure Pass (`extraction/structure_pass.py`):** Implement `lanterns structure` executing Pass 2A (`gemini-3.8-flash` `SectionPlan`), Pass 2B (parallel `60`-page sub-batched `gemini-3.8-flash` compact 10-tuples preserving quoted/`:`-preceded body blocks, Flex -> Standard timeout fallback), and Pass 2C (`gemini-decision-1` `v1beta` `criteria` dict over 450-DPI cropped boundary strips, escalating `< 0.85` confidence to `gemini-4-hydrogen`), keeping `epistolary/` 100% VLM-free (`epistolary: 158 <= 160` branches).
+- **Why:** Verified live across `4` adversarial gate volumes (`1,704` pages: `toru-dutt`, `fifty-famous`, `bapu-mira`, `tipu-sultan`) with `0` coverage blockers, `max_call_output_tokens <= 6,440 < 65,536` on 670p `tipu-sultan`, autonomous separation of Mira's Orissa report (`document` `unit-0382`), Socrates's biography (`editorial_bridge` `unit-0007`), and `toru-dutt` p. 348 bereavement quotes (`letter_excerpt`).
+- **Rejected:** Monolithic whole-book JSON output (overflows `65,536` output tokens on `400+` letter books); `110`-page unanchored sliding windows; promoting short `letter_excerpt` quotes into standalone `LetterUnit`s.
+
+---
+
+## D22. v3 Phase 2 Standards-Valid TEI P5, EPUB 3.3, DPUB-ARIA, WCAG & `compiled_gate` Enforcement (2026-11-20)
+
+- **Decision:** Overhaul `src/lanterns/renderers/` (`199 <= 230` branches, `McCabe <= 18`) and `src/lanterns/validation/compiled_gate.py`:
+  1. **TEI P5 (`tei_all.rng`) + CMIF `<correspDesc>` (`render_markdown_tei.py`):** Enforce strict `<div>` tessellation across `sec.units`, unified `<opener>` and `<closer>` (including post-body `<dateline>` and `<address><addrLine>`), multi-paragraph/signed `<postscript>`, per-line `<lg><l>` (zero `<lb/>` inside `<l>`), `<floatingText type="enclosure">` for `ChildSpan`, multi-paragraph `<note><p>...</p></note>`, dynamic `xml:lang`, and CMIF `<correspDesc>` (`<persName>`/`<orgName>`, `<placeName>`, validated W3C `@when`, zero literal `"Unknown"`).
+  2. **EPUB 3.3, DPUB-ARIA 1.1, WCAG & `NAV-011` (`html_utils.py`, `render_epub.py`, `render_book_web.py`, `render_letters.py`):** Emit intermediate float-page `[[FOLIO:...]]` markers in `coalesce_continued_blocks` plus page-turn anchors inside multi-page `<li>` and `<tr>` cells and extract `nav.xhtml` `page-list` in exact DOM order (eliminating `NAV-011` inversions); preserve mid-table `table_role="header"` subheaders inside `<tbody>`; emit `<h2>` apparatus headings, clamped `<h1> -> <h2> -> <h3>` hierarchy, multi-paragraph footnotes, and per-citation `role="doc-backlink"` links (`↩¹`, `↩²`) without invalid `<li role="doc-footnote">`; ship dark-mode-safe `EDITORIAL_EPUB_CSS` (zero hardcoded `#faf7f2`), OPF `schema:accessibility*` + `belongs-to-collection` + RTL `dir="rtl"`/`page-progression-direction="rtl"`, diplomatic roman `.block-verse`/`.block-salutation`/`.block-signature` CSS, and full `sec.units` Web search indexing.
+  3. **Automated `compiled_gate.py` Enforcement:** Gate v3 editions (`renderer_version == "3.0.0"`) on deterministic TEI tessellation/`divTop`/`divBottom`, EPUB `NAV-011`/OPF a11y/dark-theme CSS, and HTML WCAG/ARIA rules, plus subprocess `xmllint --relaxng tei_all.rng` and `EPUBCheck v5.1.0` via `--external-tools`.
+- **Why:** Verified with **`0` errors and `0` warnings** across all `5` compiled flagship volumes (`toru-dutt-life-letters-1921`, `newton-bentley-1756`, `tipu-sultan-select-letters-1811`, `bapu-mira-letters`, `mill-letters-vol1-1910` — `1,900` pages, `1,402` units, `1,070` letters, `1,639` footnotes) under official `tei_all.rng` and `EPUBCheck v5.1.0`.
+- **Rejected:** Regex scraping of `#page-N` IDs inside `renderers/`; hoisting mid-table subheaders into `<thead>`; shipping hardcoded day-theme `#faf7f2` backgrounds inside EPUB `OEBPS/styles.css`.
+
 
 
 

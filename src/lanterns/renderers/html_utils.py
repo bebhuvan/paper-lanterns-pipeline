@@ -407,7 +407,7 @@ def iter_section_render_units(
         out: list[tuple[str, list[BlockIR], LetterUnit | None, StructuralUnit | None]] = []
         for unit in section.units:
             blks = [block_lookup[bid] for bid in unit.block_ids if bid in block_lookup]
-            lu = (unit.kind == "letter" and blks and by_start.get(blks[0].block_id)) or None
+            lu = (blks and by_start.get(blks[0].block_id)) or None
             out.append((unit.kind, blks, lu, unit))
         return out
     fallback: list[tuple[str, list[BlockIR], LetterUnit | None, StructuralUnit | None]] = []

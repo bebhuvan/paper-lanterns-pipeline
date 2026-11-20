@@ -334,7 +334,7 @@ def compile_from_structure_plan(
             )
             sec_units.append(unit_obj)
 
-            if ukind in {"letter", "letter_excerpt"}:
+            if ukind == "letter":
                 l_seq += 1
                 lid = f"letter-{l_seq:04d}"
                 meta = extract_epistolary_metadata(ublks, enclosure_block_ids={bid for ch in children for bid in ch.block_ids})

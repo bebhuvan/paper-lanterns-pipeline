@@ -40,3 +40,22 @@ Reproducible scripts, raw wires, crop PNGs, and `cost_ledger.jsonl` preserved in
 | **E4b** | Global `2,500` visual-token cap on `claude-sonnet-5-5` | `4` / `$0.0170` | **KILLED GLOBALLY:** Saved `$0.80/350p` Batch but corrupted diplomatic cap-accent fidelity on `toru_p75` (`Evêque -> Évêque`). Keep `4,784` vt default. |
 | **E4c** | Multimodal `gemini-decision-1` (`v1beta`, `0` out-tokens) + cropped boundary strips | `12` / `$0.0018` | **PROVEN (`12/12 = 100%`):** `$0.000146`/boundary (`1.5¢` / 100 seams); wire `< 0.85` confidence (`2/12` cases) to escalate to `gemini-4-hydrogen`. |
 | **IA** | Archive.org BookReader `/page/n{k}` vs. IIIF `${leaf_index}` across `38/38` IA books | `$0.0000` | **BookReader PROVEN (`0` leaf drift, pixel MAD `0.3–2.2`); IIIF `${leaf_index}` BROKEN** (`+1..+11` leaf drift on `34/38` books, HTTP 500 on `11/38` `_0001.jp2` books). |
+
+---
+
+## 4. v3 Phase 1 & Phase 2 Architecture Verification Benchmarks (`2026-11-20`, `D21–D22`)
+
+Artifacts preserved in gitignored `workspace/experiments/_phase1_gate_canary/` (`cost_ledger*.jsonl`, `phase1_canary_summary.json`, `_boundary_strips/`) and `workspace/builds/previews/_phase2_flagship/`:
+
+1. **`$0` 39-Book Offline Block Conservation Gate (`13,385` pages):** `39/39` canonical runs compiled into `CollectionAST` v3 (`sec.items` + `sec.units` + `ChildSpan`) with `0` `source_block_coverage` blockers and `100%` `collection_ast.schema.json` validity at `$0.00` API spend.
+2. **Live 4-Book Pass 2A/2B/2C Canary (`1,704` pages; `$0.898520` across the 4 completed plans, `$1.202216` total including initial Flex-timeout diagnostic retries before adding `75s -> 90s` Flex-to-Standard fallback):**
+
+| Archetype Volume | Pages | Sections / Units | Standalone Letters | Max Sub-Batch Out-Tokens | Pass 2C (`decision-1` / Escalated) | Plan Spend | Structural Trap Verified (`0` Blockers) |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: | :--- |
+| `toru-dutt-life-letters-1921` (*Life & Letters*) | `408` | `15` / `153` | `75` (+`19` `letter_excerpt`) | `2,842` | `12` / `12` | `$0.098896` | p. `348` bereavement quotes separated into `letter_excerpt`s (`unit-0121/0123/0125`) interleaved with `narrative`; `42` `ChildSpan`s |
+| `fifty-famous-letters-1930` (*Anthology*) | `220` | `3` / `126` | `62` (+`56` `editorial_bridge`) | `4,942` | `8` / `2` | `$0.078712` | `56` 3rd-person biographies separated from letters (incl. p. `29` Socrates bio `unit-0007` vs. letter `unit-0008`) |
+| `bapu-mira-letters` (*394-letter enclosures*) | `406` | `4` / `419` | `394` (+`4` `document`) | `4,842` | `8` / `5` | `$0.298325` | p. `367` Mira's Orissa flood report separated cleanly as `document` `unit-0382` (`24` blocks) after `9`-block letter `unit-0381` |
+| `tipu-sultan-select-letters-1811` (*670p scale*) | `670` | `5` / `638` | `434` (+`174` `editorial_bridge`, `14` `document`) | `6,440` (`<10%` of `65,536`) | `1` / `0` | `$0.422587` | Zero output-token truncation on 670-page volume via `60`-page section sub-batching |
+
+3. **5-Flagship Official `tei_all.rng` + `EPUBCheck v5.1.0` + `DPUB-ARIA` + `WCAG` + `NAV-011` Gate (`$0.00` compile spend):** Across `toru-dutt-life-letters-1921` (`408`p), `newton-bentley-1756` (`38`p), `tipu-sultan-select-letters-1811` (`670`p, `1,300` footnotes), `bapu-mira-letters` (`406`p), and `mill-letters-vol1-1910` (`378`p) — **`1,900` pages, `1,402` units, `1,070` letters, `1,639` footnotes**: **`5/5` passed `xmllint --noout --relaxng tei_all.rng` and W3C `EPUBCheck v5.1.0` (`0 fatals / 0 errors / 0 warnings`)**.
+

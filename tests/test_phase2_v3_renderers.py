@@ -21,6 +21,7 @@ from lanterns.epistolary.compiler import compile_collection_ast
 from lanterns.renderers import render_complete_edition
 from lanterns.renderers.render_letters import render_letters_edition
 from lanterns.renderers.render_markdown_tei import render_markdown_and_tei
+from lanterns.validation.compiled_gate import validate_compiled_edition
 from tests.conftest import make_block, make_page
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -365,3 +366,81 @@ def test_epub33_dpub_aria_wcag_nav011_tables_dark_css_and_epubcheck(tmp_path: Pa
         assert "No errors or warnings detected" in combined, f"EPUBCheck emitted warnings:\n{combined}"
     else:
         pytest.skip("Java / EPUBCheck v5.1.0 not present")
+
+
+def test_compiled_gate_strict_v3_standards_catches_planted_defects(tmp_path: Path) -> None:
+    """Verify compiled_gate passes clean v3 editions (including external tools) and catches planted
+    TEI tessellation, Unknown correspondent, <lb/> in <l>, EPUB NAV-011 / hardcoded theme, WCAG skip, and <li role='doc-footnote'>."""
+    pages = [
+        make_page(
+            1,
+            [
+                make_block("p0001-b0001", 1, "heading", "CHAPTER I", heading_level=1),
+                make_block("p0001-b0002", 1, "letter_header", "LETTER I", epistolary_transition="starts_new_letter"),
+                make_block("p0001-b0003", 1, "body", "First leaf text.<fnref>1</fnref>"),
+                make_block("p0001-b0004", 1, "footnote", "Note one.", note_label="1"),
+            ],
+            printed_folio="1",
+        ),
+        make_page(
+            2,
+            [
+                make_block("p0002-b0001", 2, "body", "Second leaf text."),
+            ],
+            printed_folio="2",
+        ),
+    ]
+    ast = compile_collection_ast(pages, book_id="gate-v3-test", title="Gate V3 Test")
+    ed_dir = tmp_path / "edition"
+    render_complete_edition(ast, ed_dir, include_proofing=True)
+
+    has_ext = bool(shutil.which("xmllint") and TEI_RNG_PATH.is_file() and _resolve_epubcheck_cmd(ed_dir / "epub" / "gate-v3-test.epub"))
+    clean_res = validate_compiled_edition(ed_dir, ast, require_proofing=True, strict_standards=True, run_external_tools=has_ext)
+    assert clean_res["ok"], f"Clean v3 edition failed compiled_gate: {clean_res['errors']}"
+
+    # Plant defects across Web HTML, TEI XML, and EPUB archive
+    sec_html_path = next((ed_dir / "web" / "sections").glob("*.html"))
+    sec_html_path.write_text(
+        sec_html_path.read_text(encoding="utf-8")
+        .replace('<h2 id="', '<h4 id="', 1)
+        .replace('<li id="fn-', '<li role="doc-footnote" id="fn-', 1),
+        encoding="utf-8",
+    )
+
+    tei_path = ed_dir / "tei" / "gate-v3-test.tei.xml"
+    tei_orig = tei_path.read_text(encoding="utf-8")
+    assert '<div xml:id="div-letter-' in tei_orig
+    tei_bad = tei_orig.replace(
+        '<div xml:id="div-letter-',
+        '<p>Untessellated stray paragraph</p><div xml:id="div-letter-',
+        1,
+    ).replace(
+        "</correspDesc>",
+        '<correspAction type="sent"><persName>Unknown</persName></correspAction></correspDesc>',
+        1,
+    )
+    tei_path.write_text(tei_bad, encoding="utf-8")
+
+    epub_path = ed_dir / "epub" / "gate-v3-test.epub"
+    tampered_epub = ed_dir / "epub" / "tampered.epub"
+    with zipfile.ZipFile(epub_path, "r") as zin, zipfile.ZipFile(tampered_epub, "w") as zout:
+        for item in zin.infolist():
+            data = zin.read(item.filename)
+            if item.filename == "OEBPS/styles.css":
+                data = data + b"\nbody { background: #faf7f2; }\n"
+            elif item.filename.startswith("OEBPS/sec-") and item.filename.endswith(".xhtml"):
+                txt = data.decode("utf-8")
+                txt = txt.replace('id="page-1"', 'id="page-TMP"').replace('id="page-2"', 'id="page-1"').replace('id="page-TMP"', 'id="page-2"')
+                data = txt.encode("utf-8")
+            zout.writestr(item, data)
+    tampered_epub.replace(epub_path)
+
+    bad_res = validate_compiled_edition(ed_dir, ast, require_proofing=True, strict_standards=True, run_external_tools=False)
+    assert not bad_res["ok"]
+    codes = {e["code"] for e in bad_res["errors"]}
+    assert "heading_level_skip" in codes
+    assert "invalid_li_doc_footnote" in codes
+    assert "tei_div_tessellation_violation" in codes
+    assert "tei_placeholder_unknown_correspondent" in codes
+    assert "epub_hardcoded_paper_theme" in codes
+    assert "epub_non_monotone_page_order" in codes
