@@ -20,13 +20,11 @@ from lanterns.core.config import BookConfig
 from lanterns.core.env import load_env
 from lanterns.core.hashes import sha256_file
 from lanterns.core.paths import RepoPaths
+from lanterns.ops import garbage_collect_workspace, generate_catalog_status, run_doctor
 from lanterns.renderers import (
-    garbage_collect_workspace,
-    generate_catalog_status,
     render_complete_edition,
     render_edition_report,
     render_proofing_studio,
-    run_doctor,
 )
 
 

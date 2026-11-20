@@ -28,6 +28,12 @@ LETTER_BODY_TYPES = frozenset({"body", "verse", "blockquote", "list_item", "tabl
 _ROMAN_FOLIO_RE = re.compile(r"^[ivxlcdm]+$", re.IGNORECASE)
 
 
+def _pop_slice(buf: list[BlockIR], start: int) -> list[BlockIR]:
+    out = list(buf[start:])
+    del buf[start:]
+    return out
+
+
 @dataclass
 class _MapDirectives:
     force_split: set[str] = field(default_factory=set)
@@ -67,44 +73,28 @@ class _StreamState:
 
     def pop_leading_margin_notes(self, page_number: int) -> list[BlockIR]:
         if self.active_blocks:
-            tail: list[BlockIR] = []
             idx = len(self.active_blocks) - 1
             while idx >= 0 and self.active_blocks[idx].type == "margin_note" and self.active_blocks[idx].page_number == page_number:
-                tail.append(self.active_blocks[idx])
                 idx -= 1
-            if tail and idx >= 0:
-                prev_non_margin = self.active_blocks[idx]
-                if self.has_closer or prev_non_margin.page_number < page_number:
-                    del self.active_blocks[idx + 1 :]
-                    tail.reverse()
-                    return tail
-            return []
+            can_detach = idx >= 0 and (self.has_closer or self.active_blocks[idx].page_number < page_number)
+            return _pop_slice(self.active_blocks, idx + 1) if can_detach else []
         if self.pending_prose and all(b.type == "margin_note" and b.page_number == page_number for b in self.pending_prose):
-            notes = list(self.pending_prose)
-            self.pending_prose.clear()
-            return notes
-        if self.pending_non_letter:
-            idx = len(self.pending_non_letter) - 1
-            while idx >= 0 and self.pending_non_letter[idx].type == "margin_note" and self.pending_non_letter[idx].page_number == page_number:
-                idx -= 1
-            if idx < len(self.pending_non_letter) - 1:
-                notes = list(self.pending_non_letter[idx + 1 :])
-                del self.pending_non_letter[idx + 1 :]
-                return notes
-        return []
+            return _pop_slice(self.pending_prose, 0)
+        idx = len(self.pending_non_letter) - 1
+        while idx >= 0 and self.pending_non_letter[idx].type == "margin_note" and self.pending_non_letter[idx].page_number == page_number:
+            idx -= 1
+        return _pop_slice(self.pending_non_letter, idx + 1)
 
     def resolve_pending_prose(self, sec_kind: SectionKind) -> None:
         if not self.pending_prose:
             return
-        is_mid_volume_continuation = (
+        is_mid_vol = (
             sec_kind == "epistolary_part"
             and not self.raw_letters
             and any(b.type in LETTER_BODY_TYPES and b.page_number > 1 for b in self.pending_prose)
         )
-        if is_mid_volume_continuation:
-            prose = list(self.pending_prose)
-            self.pending_prose.clear()
-            self.start_letter(prose, confidence="ambiguous")
+        if is_mid_vol:
+            self.start_letter(_pop_slice(self.pending_prose, 0), confidence="ambiguous")
             self.close_active_letter()
         else:
             self.flush_pending_prose_as_blocks()
@@ -113,19 +103,14 @@ class _StreamState:
         if not self.active_blocks:
             return
         self.flush_non_letter()
-        idx = len(self.raw_letters)
-        placeholder_id = f"__raw_letter_{idx}__"
+        placeholder_id = f"__raw_letter_{len(self.raw_letters)}__"
         blocks_copy = list(self.active_blocks)
         self.raw_letters.append((blocks_copy, self.confidence))
         self.items.append(SectionItem(kind="letter", letter_id=placeholder_id, blocks=blocks_copy))
         self.active_blocks.clear()
         self.enclosure_depth = 0
-        self.has_body = False
-        self.has_closer = False
-        self.has_dateline = False
-        self.in_postscript = False
+        self.has_body = self.has_closer = self.has_dateline = self.in_postscript = self.saw_ornamental_break = False
         self.confidence = "high"
-        self.saw_ornamental_break = False
 
     def start_letter(self, initial: list[BlockIR], confidence: BoundaryConfidence = "high") -> None:
         self.close_active_letter()
@@ -136,27 +121,37 @@ class _StreamState:
             self.append_to_letter(blk)
 
     def append_to_letter(self, blk: BlockIR) -> None:
+        is_enc_start = blk.epistolary_transition == "starts_enclosure" and bool(self.active_blocks)
         self.active_blocks.append(blk)
-        if blk.epistolary_transition == "starts_enclosure" and len(self.active_blocks) > 1:
-            self.enclosure_depth += 1
+        self.enclosure_depth += int(is_enc_start)
         if blk.epistolary_transition == "ends_enclosure" and self.enclosure_depth > 0:
             self.enclosure_depth -= 1
         if self.enclosure_depth == 0:
-            is_editorial_quote = (
+            is_ed_quote = (
                 blk.type == "blockquote"
-                and not self.has_body
-                and not self.has_dateline
+                and not (self.has_body or self.has_dateline)
                 and len(self.active_blocks) >= 2
                 and self.active_blocks[-2].type == "editorial"
             )
-            if blk.type in LETTER_BODY_TYPES and not is_editorial_quote:
-                self.has_body = True
-            if blk.type in {"valediction", "signature"}:
-                self.has_closer = True
-            if blk.type == "dateline":
-                self.has_dateline = True
-            if blk.type == "postscript":
-                self.in_postscript = True
+            self.has_body = self.has_body or (blk.type in LETTER_BODY_TYPES and not is_ed_quote)
+            self.has_closer = self.has_closer or blk.type in {"valediction", "signature"}
+            self.has_dateline = self.has_dateline or blk.type == "dateline"
+            self.in_postscript = self.in_postscript or blk.type == "postscript"
+
+
+def _slice_block_range(blocks: list[BlockIR], id_to_idx: dict[str, int], start_id: str, end_id: str) -> list[str]:
+    s_i, e_i = id_to_idx.get(start_id), id_to_idx.get(end_id)
+    if s_i is not None and e_i is not None and s_i <= e_i:
+        return [b.block_id for b in blocks[s_i : e_i + 1]]
+    return []
+
+
+def _resolve_span_ids(exp: dict[str, Any], blocks: list[BlockIR], id_to_idx: dict[str, int]) -> list[str]:
+    if isinstance(exp.get("block_ids"), list) and exp["block_ids"]:
+        return [str(x) for x in exp["block_ids"]]
+    s_id = str(exp.get("start_block_id") or "")
+    e_id = str(exp.get("end_block_id") or "")
+    return _slice_block_range(blocks, id_to_idx, s_id, e_id) or ([s_id] if s_id else [])
 
 
 def _build_map_directives(blocks: list[BlockIR], letter_map: dict[str, Any] | None) -> _MapDirectives:
@@ -165,37 +160,25 @@ def _build_map_directives(blocks: list[BlockIR], letter_map: dict[str, Any] | No
         return directives
     directives.force_split = {str(x) for x in (letter_map.get("force_split_before_block_ids") or [])}
     directives.forbid_split = {str(x) for x in (letter_map.get("forbid_split_before_block_ids") or [])}
-
     id_to_idx = {b.block_id: idx for idx, b in enumerate(blocks)}
-    for rng in letter_map.get("enclosure_block_ranges") or []:
-        s_idx = id_to_idx.get(str(rng.get("start_block_id") or ""))
-        e_idx = id_to_idx.get(str(rng.get("end_block_id") or ""))
-        if s_idx is not None and e_idx is not None and s_idx <= e_idx:
-            for blk in blocks[s_idx : e_idx + 1]:
-                directives.enclosure_ids.add(blk.block_id)
+    directives.enclosure_ids = {
+        bid
+        for rng in (letter_map.get("enclosure_block_ranges") or [])
+        for bid in _slice_block_range(
+            blocks, id_to_idx, str(rng.get("start_block_id") or ""), str(rng.get("end_block_id") or "")
+        )
+    }
 
-    for exp in letter_map.get("explicit_letters") or []:
-        if exp.get("letter_id"):
-            directives.explicit_by_id[str(exp["letter_id"])] = exp
-        if exp.get("sequence_index") is not None:
-            directives.explicit_by_seq[int(exp["sequence_index"])] = exp
-        exp_bids = exp.get("block_ids")
-        if isinstance(exp_bids, list) and exp_bids:
-            first_id = str(exp_bids[0])
-            directives.force_split.add(first_id)
-            directives.explicit_by_start_block[first_id] = exp
-            for inner_id in exp_bids[1:]:
-                directives.forbid_split.add(str(inner_id))
-            directives.force_close_after.add(str(exp_bids[-1]))
-        elif exp.get("start_block_id"):
-            s_id = str(exp["start_block_id"])
-            directives.force_split.add(s_id)
-            directives.explicit_by_start_block[s_id] = exp
-            e_id = str(exp.get("end_block_id") or "")
-            if s_id in id_to_idx and e_id in id_to_idx and id_to_idx[s_id] <= id_to_idx[e_id]:
-                for blk in blocks[id_to_idx[s_id] + 1 : id_to_idx[e_id] + 1]:
-                    directives.forbid_split.add(blk.block_id)
-                directives.force_close_after.add(e_id)
+    exps = list(letter_map.get("explicit_letters") or [])
+    directives.explicit_by_id = {str(exp["letter_id"]): exp for exp in exps if exp.get("letter_id")}
+    directives.explicit_by_seq = {int(exp["sequence_index"]): exp for exp in exps if exp.get("sequence_index") is not None}
+    for exp in exps:
+        span_ids = _resolve_span_ids(exp, blocks, id_to_idx)
+        if span_ids:
+            directives.force_split.add(span_ids[0])
+            directives.explicit_by_start_block[span_ids[0]] = exp
+            directives.forbid_split.update(span_ids[1:])
+            directives.force_close_after.add(span_ids[-1])
     return directives
 
 
@@ -224,43 +207,38 @@ def _slice_unchaptered_sections(
 ) -> list[tuple[SectionKind, str, str, list[BlockIR]]]:
     first_ep = next((i for i, b in enumerate(blocks) if _is_epistolary_signal(b, directives)), None)
     if first_ep is None:
-        if any(b.type == "index_entry" for b in blocks):
-            return [("index", "Index", "Index", list(blocks))]
-        if any(b.type in {"imprint", "toc_entry"} or _is_roman_frontmatter_block(b) for b in blocks):
-            return [("frontmatter", "Frontmatter", "Frontmatter", list(blocks))]
-        title = book_title or "Correspondence"
-        return [("epistolary_part", title, title, list(blocks))]
+        is_idx = any(b.type == "index_entry" for b in blocks)
+        is_fm = any(b.type in {"imprint", "toc_entry"} or _is_roman_frontmatter_block(b) for b in blocks)
+        kind, title = next(
+            ((k, t) for cond, k, t in ((is_idx, "index", "Index"), (is_fm, "frontmatter", "Frontmatter")) if cond),
+            ("epistolary_part", book_title or "Correspondence"),
+        )
+        return [(kind, title, title, list(blocks))]
 
     ep_start_page = blocks[first_ep].page_number
-    fm_cut = 0
-    for idx in range(first_ep):
-        blk = blocks[idx]
-        if blk.type in {"imprint", "toc_entry"} or (
-            _is_roman_frontmatter_block(blk) and blk.page_number < ep_start_page
-        ):
-            fm_cut = idx + 1
-    while fm_cut < first_ep and blocks[fm_cut - 1 : fm_cut] and blocks[fm_cut].page_number == blocks[fm_cut - 1].page_number and blocks[fm_cut].type != "editorial":
+    fm_cut = max(
+        (
+            idx + 1
+            for idx, blk in enumerate(blocks[:first_ep])
+            if blk.type in {"imprint", "toc_entry"} or (_is_roman_frontmatter_block(blk) and blk.page_number < ep_start_page)
+        ),
+        default=0,
+    )
+    while 0 < fm_cut < first_ep and blocks[fm_cut].page_number == blocks[fm_cut - 1].page_number and blocks[fm_cut].type != "editorial":
         fm_cut += 1
 
     last_ep = max(i for i, b in enumerate(blocks) if _is_epistolary_signal(b, directives))
-    idx_cut = next(
-        (i for i in range(last_ep + 1, len(blocks)) if blocks[i].type == "index_entry"),
-        len(blocks),
-    )
-    if idx_cut < len(blocks) and idx_cut > last_ep + 1 and blocks[idx_cut - 1].type == "heading":
-        idx_cut -= 1
+    idx_cut = next((i for i in range(last_ep + 1, len(blocks)) if blocks[i].type == "index_entry"), len(blocks))
+    idx_cut -= int(last_ep + 1 < idx_cut < len(blocks) and blocks[idx_cut - 1].type == "heading")
 
-    out: list[tuple[SectionKind, str, str, list[BlockIR]]] = []
-    if fm_cut > 0:
-        out.append(("frontmatter", "Frontmatter", "Frontmatter", blocks[:fm_cut]))
-    ep_slice = blocks[fm_cut:idx_cut]
-    if ep_slice:
-        title = book_title or "Correspondence"
-        out.append(("epistolary_part", title, title, ep_slice))
+    raw_parts: list[tuple[SectionKind, str, str, list[BlockIR]]] = [
+        ("frontmatter", "Frontmatter", "Frontmatter", blocks[:fm_cut]),
+        ("epistolary_part", book_title or "Correspondence", book_title or "Correspondence", blocks[fm_cut:idx_cut]),
+    ]
+    out = [item for item in raw_parts if item[3]]
     if idx_cut < len(blocks):
         tail = blocks[idx_cut:]
-        h_blk = tail[0] if tail[0].type == "heading" else None
-        t_tag, t_pln = (h_blk.tagged_text, h_blk.plain_text) if h_blk else ("Index", "Index")
+        t_tag, t_pln = (tail[0].tagged_text, tail[0].plain_text) if tail[0].type == "heading" else ("Index", "Index")
         out.append(("index", t_tag, t_pln, tail))
     return out
 
@@ -272,11 +250,11 @@ def _is_frontmatter_slice(
     last_fm_cue: int | None,
     first_ep_slice: int | None,
 ) -> bool:
-    if fm_cues[idx] or (last_fm_cue is not None and idx <= last_fm_cue):
-        return True
-    if first_ep_slice is not None and idx < first_ep_slice:
-        return not any(_is_arabic_folio_block(b) for b in sl_blks)
-    return False
+    return (
+        fm_cues[idx]
+        or (last_fm_cue is not None and idx <= last_fm_cue)
+        or (first_ep_slice is not None and idx < first_ep_slice and not any(_is_arabic_folio_block(b) for b in sl_blks))
+    )
 
 
 def _slice_has_true_epistolary_start(
@@ -286,14 +264,11 @@ def _slice_has_true_epistolary_start(
     directives: _MapDirectives,
 ) -> bool:
     is_pre_arabic_fm = (last_toc_slice is not None and idx <= last_toc_slice) or (
-        any(_is_roman_frontmatter_block(b) for b in sl_blks)
-        and not any(_is_arabic_folio_block(b) for b in sl_blks)
+        any(_is_roman_frontmatter_block(b) for b in sl_blks) and not any(_is_arabic_folio_block(b) for b in sl_blks)
     )
     if is_pre_arabic_fm:
         return any(
-            b.type == "letter_header"
-            or b.epistolary_transition == "starts_new_letter"
-            or b.block_id in directives.force_split
+            b.type == "letter_header" or b.epistolary_transition == "starts_new_letter" or b.block_id in directives.force_split
             for b in sl_blks
         )
     return any(_is_epistolary_signal(b, directives) for b in sl_blks)
@@ -307,33 +282,23 @@ def _classify_h1_slices(
         (i for i, (_, _, sl_blks) in enumerate(raw_slices) if any(b.type == "toc_entry" for b in sl_blks)),
         default=None,
     )
-    has_ep = [
-        _slice_has_true_epistolary_start(i, sl_blks, last_toc_slice, directives)
-        for i, (_, _, sl_blks) in enumerate(raw_slices)
-    ]
+    has_ep = [_slice_has_true_epistolary_start(i, sl_blks, last_toc_slice, directives) for i, (_, _, sl_blks) in enumerate(raw_slices)]
     first_ep_slice = next((i for i, flag in enumerate(has_ep) if flag), None)
     last_ep_slice = max((i for i, flag in enumerate(has_ep) if flag), default=None)
     fm_cues = [
-        any(b.type in {"imprint", "toc_entry"} or _is_roman_frontmatter_block(b) for b in sl_blks)
-        and not has_ep[i]
+        any(b.type in {"imprint", "toc_entry"} or _is_roman_frontmatter_block(b) for b in sl_blks) and not has_ep[i]
         for i, (_, _, sl_blks) in enumerate(raw_slices)
     ]
-    last_fm_cue = max(
-        (i for i, flag in enumerate(fm_cues) if flag and (first_ep_slice is None or i < first_ep_slice)),
-        default=None,
-    )
+    last_fm_cue = max((i for i, flag in enumerate(fm_cues) if flag and (first_ep_slice is None or i < first_ep_slice)), default=None)
 
     typed: list[tuple[SectionKind, str, str, list[BlockIR]]] = []
     for idx, (t_tag, t_pln, sl_blks) in enumerate(raw_slices):
-        has_index = any(b.type == "index_entry" for b in sl_blks) and not has_ep[idx]
-        if has_index:
-            kind: SectionKind = "index"
-        elif _is_frontmatter_slice(idx, sl_blks, fm_cues, last_fm_cue, first_ep_slice):
-            kind = "frontmatter"
-        elif last_ep_slice is not None and idx > last_ep_slice and any(b.type == "imprint" for b in sl_blks):
-            kind = "backmatter"
-        else:
-            kind = "chapter"
+        kind_specs: tuple[tuple[bool, SectionKind], ...] = (
+            (any(b.type == "index_entry" for b in sl_blks) and not has_ep[idx], "index"),
+            (_is_frontmatter_slice(idx, sl_blks, fm_cues, last_fm_cue, first_ep_slice), "frontmatter"),
+            (last_ep_slice is not None and idx > last_ep_slice and any(b.type == "imprint" for b in sl_blks), "backmatter"),
+        )
+        kind: SectionKind = next((k for cond, k in kind_specs if cond), "chapter")
         typed.append((kind, t_tag, t_pln, sl_blks))
     return typed
 
@@ -346,25 +311,21 @@ def _find_h1_section_starts(
     idx = 0
     while idx < len(blocks):
         blk = blocks[idx]
-        if blk.type == "heading" and blk.heading_level == 1 and blk.block_id not in enclosure_ids:
-            end_run = idx
-            last_h1 = idx
-            while (
-                end_run + 1 < len(blocks)
-                and blocks[end_run + 1].type == "heading"
-                and blocks[end_run + 1].page_number == blk.page_number
-                and blocks[end_run + 1].block_id not in enclosure_ids
-            ):
-                end_run += 1
-                if blocks[end_run].heading_level == 1:
-                    last_h1 = end_run
-            span = blocks[idx : last_h1 + 1]
-            t_tag = " ".join(" ".join(b.tagged_text.split()) for b in span)
-            t_pln = " ".join(" ".join(b.plain_text.split()) for b in span)
-            starts.append((idx, t_tag, t_pln))
-            idx = last_h1 + 1
+        if not (blk.type == "heading" and blk.heading_level == 1 and blk.block_id not in enclosure_ids):
+            idx += 1
             continue
-        idx += 1
+        end_run = last_h1 = idx
+        while (
+            end_run + 1 < len(blocks)
+            and blocks[end_run + 1].type == "heading"
+            and blocks[end_run + 1].page_number == blk.page_number
+            and blocks[end_run + 1].block_id not in enclosure_ids
+        ):
+            end_run += 1
+            last_h1 = end_run if blocks[end_run].heading_level == 1 else last_h1
+        span = blocks[idx : last_h1 + 1]
+        starts.append((idx, " ".join(" ".join(b.tagged_text.split()) for b in span), " ".join(" ".join(b.plain_text.split()) for b in span)))
+        idx = last_h1 + 1
     return starts
 
 
@@ -385,10 +346,9 @@ def _partition_sections(
             kind = cast(SectionKind, str(spec.get("kind") or "chapter"))
             title_p = str(spec.get("title") or "Section")
             title_t = str(spec.get("title_tagged") or title_p)
-            if spec.get("start_block_id") in id_to_idx:
-                s_i = id_to_idx[str(spec["start_block_id"])]
-                e_i = id_to_idx.get(str(spec.get("end_block_id") or ""), len(blocks) - 1) + 1
-                sl = blocks[s_i:e_i]
+            s_id = str(spec.get("start_block_id") or "")
+            if s_id in id_to_idx:
+                sl = blocks[id_to_idx[s_id] : id_to_idx.get(str(spec.get("end_block_id") or ""), len(blocks) - 1) + 1]
             else:
                 sp, ep = int(spec["start_page"]), int(spec["end_page"])
                 sl = [b for b in blocks if sp <= b.page_number <= ep]
@@ -404,17 +364,15 @@ def _partition_sections(
     out: list[tuple[SectionKind, str, str, list[BlockIR]]] = []
     if h1_starts[0][0] > 0:
         lead = blocks[: h1_starts[0][0]]
-        if any(_is_epistolary_signal(b, directives) for b in lead):
-            title = book_title or "Correspondence"
-            out.append(("epistolary_part", title, title, lead))
-        else:
-            out.append(("frontmatter", "Frontmatter", "Frontmatter", lead))
+        title = book_title or "Correspondence"
+        lead_choices: dict[bool, tuple[SectionKind, str, str, list[BlockIR]]] = {
+            True: ("epistolary_part", title, title, lead),
+            False: ("frontmatter", "Frontmatter", "Frontmatter", lead),
+        }
+        out.append(lead_choices[any(_is_epistolary_signal(b, directives) for b in lead)])
 
-    raw_h1: list[tuple[str, str, list[BlockIR]]] = []
-    for pos_i, (start_idx, t_tag, t_pln) in enumerate(h1_starts):
-        end_idx = h1_starts[pos_i + 1][0] if pos_i + 1 < len(h1_starts) else len(blocks)
-        raw_h1.append((t_tag, t_pln, blocks[start_idx:end_idx]))
-
+    end_bounds = [*[s[0] for s in h1_starts[1:]], len(blocks)]
+    raw_h1 = [(t_tag, t_pln, blocks[s_i:e_i]) for (s_i, t_tag, t_pln), e_i in zip(h1_starts, end_bounds, strict=True)]
     out.extend(_classify_h1_slices(raw_h1, directives))
     return out
 
@@ -501,22 +459,19 @@ def _handle_inactive_block(
 
     if blk.type in {"valediction", "signature"} and state.pending_prose:
         conf: BoundaryConfidence = "high" if state.saw_ornamental_break else "ambiguous"
-        prose = list(state.pending_prose)
-        state.pending_prose.clear()
-        state.start_letter([*prose, blk], confidence=conf)
+        state.start_letter([*_pop_slice(state.pending_prose, 0), blk], confidence=conf)
         return
 
-    if blk.type in {"body", "verse", "blockquote"} and sec_kind in {"chapter", "epistolary_part"}:
-        state.pending_prose.append(blk)
-        return
-
-    if blk.type == "margin_note" and sec_kind in {"chapter", "epistolary_part"} and (state.pending_prose or blk.page_number > 1):
+    is_chapter_prose = sec_kind in {"chapter", "epistolary_part"} and (
+        blk.type in {"body", "verse", "blockquote"}
+        or (blk.type == "margin_note" and (bool(state.pending_prose) or blk.page_number > 1))
+    )
+    if is_chapter_prose:
         state.pending_prose.append(blk)
         return
 
     state.resolve_pending_prose(sec_kind)
-    if blk.type == "ornamental_break":
-        state.saw_ornamental_break = True
+    state.saw_ornamental_break = state.saw_ornamental_break or blk.type == "ornamental_break"
     state.pending_non_letter.append(blk)
 
 
@@ -557,55 +512,34 @@ def _handle_active_block(
             state.close_active_letter()
             state.saw_ornamental_break = True
             state.pending_non_letter.append(blk)
-        else:
-            state.append_to_letter(blk)
-        return
-
-    if blk.type == "editorial":
+            return
+    elif blk.type == "editorial":
         is_body_cont = (
-            blk.continues_from_prev
-            and bool(state.active_blocks)
-            and state.active_blocks[-1].type in LETTER_BODY_TYPES
+            blk.continues_from_prev and bool(state.active_blocks) and state.active_blocks[-1].type in LETTER_BODY_TYPES
         )
-        if is_body_cont or (not state.has_body and not state.has_closer):
-            state.append_to_letter(blk)
-        elif state.has_closer or _editorial_run_precedes_boundary(sec_blocks, idx, directives):
+        if not is_body_cont and (state.has_closer or ((state.has_body or state.has_closer) and _editorial_run_precedes_boundary(sec_blocks, idx, directives))):
             state.close_active_letter()
             state.pending_non_letter.append(blk)
-        else:
-            state.append_to_letter(blk)
-        return
-
-    if (blk.type == "letter_header" and (state.has_body or state.has_closer)) or (
+            return
+    elif (blk.type == "letter_header" and (state.has_body or state.has_closer)) or (
         blk.type == "salutation" and state.has_closer
-    ):
+    ) or (blk.type == "dateline" and _is_dateline_split_candidate(state) and not _is_bottom_dateline(state, next_blk, directives)):
         lead_margins = state.pop_leading_margin_notes(blk.page_number)
         state.start_letter([*lead_margins, blk], confidence="high")
         return
-
-    if blk.type == "dateline" and _is_dateline_split_candidate(state):
-        if _is_bottom_dateline(state, next_blk, directives):
-            state.append_to_letter(blk)
-        else:
-            lead_margins = state.pop_leading_margin_notes(blk.page_number)
-            state.start_letter([*lead_margins, blk], confidence="high")
-        return
-
-    if state.has_closer and not state.in_postscript and blk.type in {"body", "verse"}:
-        if (
+    elif state.has_closer and not state.in_postscript and blk.type in {"body", "verse"}:
+        continues_ps = (
             next_blk is None
             or next_blk.type in {"signature", "valediction", "postscript", "ornamental_break", "letter_header", "heading", "editorial"}
             or next_blk.epistolary_transition == "starts_new_letter"
-        ):
+        )
+        if continues_ps:
             state.in_postscript = True
-            state.append_to_letter(blk)
-            return
-        state.close_active_letter()
-        if sec_kind in {"chapter", "epistolary_part"}:
-            state.pending_prose.append(blk)
         else:
-            state.pending_non_letter.append(blk)
-        return
+            state.close_active_letter()
+            target_buf = state.pending_prose if sec_kind in {"chapter", "epistolary_part"} else state.pending_non_letter
+            target_buf.append(blk)
+            return
 
     state.append_to_letter(blk)
 
@@ -620,29 +554,23 @@ def _segment_section_blocks(
         next_blk = sec_blocks[idx + 1] if idx + 1 < len(sec_blocks) else None
         bid = blk.block_id
         is_forbid = bid in directives.forbid_split or bid in directives.enclosure_ids
+        is_forced_start = bid in directives.force_split or (
+            blk.epistolary_transition == "starts_new_letter"
+            and not is_forbid
+            and not (_continues_header_only_letter(state, blk) or (blk.type == "postscript" and bool(state.active_blocks)))
+        )
 
-        if bid in directives.force_split:
+        if is_forced_start:
             lead_margins = state.pop_leading_margin_notes(blk.page_number)
             state.resolve_pending_prose(sec_kind)
-            state.start_letter([*lead_margins, blk], confidence="human_mapped")
-        elif blk.epistolary_transition == "starts_new_letter" and not is_forbid:
-            if _continues_header_only_letter(state, blk) or (blk.type == "postscript" and state.active_blocks):
-                state.append_to_letter(blk)
-            else:
-                lead_margins = state.pop_leading_margin_notes(blk.page_number)
-                state.resolve_pending_prose(sec_kind)
-                state.start_letter([*lead_margins, blk], confidence="high")
+            state.start_letter([*lead_margins, blk], confidence="human_mapped" if bid in directives.force_split else "high")
         elif is_forbid:
-            if not state.active_blocks and state.pending_prose:
-                prose = list(state.pending_prose)
-                state.pending_prose.clear()
-                state.start_letter(prose, confidence="human_mapped")
-            if state.active_blocks:
+            if not state.active_blocks:
+                state.start_letter([*_pop_slice(state.pending_prose, 0), blk], confidence="human_mapped")
+            else:
                 if bid in directives.forbid_split:
                     state.confidence = "human_mapped"
                 state.append_to_letter(blk)
-            else:
-                state.start_letter([blk], confidence="human_mapped")
         elif state.active_blocks and (state.enclosure_depth > 0 or blk.epistolary_transition == "starts_enclosure"):
             state.append_to_letter(blk)
         elif not state.active_blocks:
@@ -660,6 +588,11 @@ def _segment_section_blocks(
     return state.items, state.raw_letters
 
 
+def _append_framing_ids(letter: LetterUnit, attr: str, ed_ids: list[str]) -> None:
+    cur = getattr(letter, attr)
+    setattr(letter, attr, list(dict.fromkeys([*cur, *ed_ids])))
+
+
 def _attach_framing_side(
     prev_lu: LetterUnit | None,
     next_lu: LetterUnit | None,
@@ -669,9 +602,9 @@ def _attach_framing_side(
         return
     ed_ids = [b.block_id for b in blocks if b.type == "editorial" or (b.type == "heading" and b.heading_level != 1)]
     if prev_lu is None and next_lu is not None:
-        next_lu.preceding_editorial_block_ids = list(dict.fromkeys([*next_lu.preceding_editorial_block_ids, *ed_ids]))
+        _append_framing_ids(next_lu, "preceding_editorial_block_ids", ed_ids)
     elif next_lu is None and prev_lu is not None:
-        prev_lu.following_editorial_block_ids = list(dict.fromkeys([*prev_lu.following_editorial_block_ids, *ed_ids]))
+        _append_framing_ids(prev_lu, "following_editorial_block_ids", ed_ids)
     elif prev_lu is not None and next_lu is not None:
         orn_idx = next(
             (
@@ -691,9 +624,19 @@ def _attach_framing_side(
         elif any(b.type == "heading" and b.heading_level != 1 for b in blocks) or (
             blocks[-1].page_number == prev_lu.end_page and next_lu.start_page > prev_lu.end_page
         ):
-            prev_lu.following_editorial_block_ids = list(dict.fromkeys([*prev_lu.following_editorial_block_ids, *ed_ids]))
+            _append_framing_ids(prev_lu, "following_editorial_block_ids", ed_ids)
         else:
-            next_lu.preceding_editorial_block_ids = list(dict.fromkeys([*next_lu.preceding_editorial_block_ids, *ed_ids]))
+            _append_framing_ids(next_lu, "preceding_editorial_block_ids", ed_ids)
+
+
+def _adjacent_letter(
+    items: list[SectionItem],
+    pos: int,
+    letters_by_id: dict[str, LetterUnit],
+) -> LetterUnit | None:
+    if 0 <= pos < len(items) and items[pos].kind == "letter":
+        return letters_by_id.get(str(items[pos].letter_id))
+    return None
 
 
 def _link_editorial_framing(
@@ -703,17 +646,11 @@ def _link_editorial_framing(
     for idx, item in enumerate(items):
         if item.kind != "blocks":
             continue
-        prev_lu = (
-            letters_by_id.get(str(items[idx - 1].letter_id))
-            if idx > 0 and items[idx - 1].kind == "letter"
-            else None
+        _attach_framing_side(
+            _adjacent_letter(items, idx - 1, letters_by_id),
+            _adjacent_letter(items, idx + 1, letters_by_id),
+            item.blocks,
         )
-        next_lu = (
-            letters_by_id.get(str(items[idx + 1].letter_id))
-            if idx + 1 < len(items) and items[idx + 1].kind == "letter"
-            else None
-        )
-        _attach_framing_side(prev_lu, next_lu, item.blocks)
 
 
 def _assign_unavailable_pages(
@@ -723,18 +660,15 @@ def _assign_unavailable_pages(
 ) -> None:
     if not sections:
         return
-    min_p = min(all_page_numbers) if all_page_numbers else 1
-    max_p = max(all_page_numbers) if all_page_numbers else 1
-    sections[0].start_page = min(sections[0].start_page, min_p)
-    sections[-1].end_page = max(sections[-1].end_page, max_p)
+    sections[0].start_page = min(sections[0].start_page, min(all_page_numbers, default=1))
+    sections[-1].end_page = max(sections[-1].end_page, max(all_page_numbers, default=1))
     for pnum in sorted(failed_pages):
         target = next((s for s in sections if s.start_page <= pnum <= s.end_page), None) or min(
             sections, key=lambda s: min(abs(s.start_page - pnum), abs(s.end_page - pnum))
         )
         target.start_page = min(target.start_page, pnum)
         target.end_page = max(target.end_page, pnum)
-        if pnum not in target.unavailable_pages:
-            target.unavailable_pages.append(pnum)
+        target.unavailable_pages = list(dict.fromkeys([*target.unavailable_pages, pnum]))
 
 
 def segment_epistolary_collection(

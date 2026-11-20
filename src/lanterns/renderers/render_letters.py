@@ -9,7 +9,6 @@ INVARIANT: Self-contained per-letter footnotes; safe DOM (createElement/textCont
 from __future__ import annotations
 
 import html
-import re
 import shutil
 from pathlib import Path
 from typing import Any
@@ -17,8 +16,6 @@ from typing import Any
 from lanterns.core.models import BlockIR, CollectionAST, FootnoteItem, LetterUnit
 from lanterns.renderers.html_utils import (
     EDITORIAL_SHARED_CSS,
-    MD_TAG_CLOSE,
-    MD_TAG_OPEN,
     READER_STRICT_CSP,
     atomic_write_json,
     atomic_write_text,
@@ -27,9 +24,12 @@ from lanterns.renderers.html_utils import (
     footnotes_by_block_map,
     render_block_stream_html,
     render_footnotes_apparatus_html,
+    render_inline_markdown,
+    render_optional_links,
+    render_pager_slot,
+    resolve_has_local_scans,
     sanitize_xml_id,
     strip_constrained_tags,
-    tokenize_tagged_text,
 )
 from lanterns.renderers.render_book_web import (
     build_folio_to_page_map,
@@ -74,39 +74,7 @@ def _yaml_quote(value: str | None) -> str:
     return f'"{escaped}"'
 
 
-def _inline_markdown(tagged_text: str, block_footnotes: list[FootnoteItem] | None = None) -> str:
-    fn_queue: dict[str, list[str]] = {}
-    for fn in block_footnotes or []:
-        fn_queue.setdefault(fn.label.strip().strip("[]()"), []).append(fn.footnote_id)
-    tokens = tokenize_tagged_text(tagged_text)
-    out: list[str] = []
-    idx = 0
-    while idx < len(tokens):
-        kind, val = tokens[idx]
-        if (
-            kind == "open"
-            and val in {"fnref", "sup"}
-            and idx + 2 < len(tokens)
-            and tokens[idx + 1][0] == "text"
-            and tokens[idx + 2] == ("close", val)
-        ):
-            lbl = tokens[idx + 1][1].strip().strip("[]()")
-            bucket = fn_queue.get(lbl)
-            if bucket:
-                fid = bucket.pop(0)
-                out.append(f"[^{fid}]")
-                idx += 3
-                continue
-        if kind == "open":
-            out.append(MD_TAG_OPEN[val])
-        elif kind == "close":
-            out.append(MD_TAG_CLOSE[val])
-        else:
-            cleaned = re.sub(r"\[\[(?:FN)?FOLIO:\d+:[^\]]*\]\]\s*", "", val)
-            cleaned = re.sub(r"\[\[NOTE:([^:\]]+):(?:\d+:)?[^\]]+\]\]", r"[^\1]", cleaned)
-            out.append(cleaned)
-        idx += 1
-    return "".join(out)
+_inline_markdown = render_inline_markdown
 
 
 def _render_letter_markdown(letter: LetterUnit, ast: CollectionAST, block_lookup: dict[str, BlockIR]) -> str:
@@ -140,21 +108,15 @@ def _render_letter_markdown(letter: LetterUnit, ast: CollectionAST, block_lookup
         lines.append("")
 
     merged_blocks, fn_by_blk = coalesce_continued_blocks(letter.blocks, fn_by_blk, include_folio_tokens=False)
+    md_prefix = {"letter_header": "# ", "heading": "## ", "blockquote": "> ", "epigraph": "> "}
     for blk in merged_blocks:
         text_md = _inline_markdown(blk.tagged_text, fn_by_blk.get(blk.block_id))
-        if blk.type == "letter_header":
-            lines.append(f"# {text_md}\n")
-        elif blk.type == "heading":
-            lines.append(f"## {text_md}\n")
-        elif blk.type in {"blockquote", "epigraph"}:
-            lines.append(f"> {text_md}\n")
-        elif blk.type == "verse" or blk.line_breaks_preserved:
-            v_lines = text_md.split("\n")
-            lines.append("  \n".join(v_lines) + "\n")
-        elif blk.type == "ornamental_break":
+        if blk.type == "ornamental_break":
             lines.append("* * *\n")
         else:
-            lines.append(f"{text_md}\n")
+            pref = md_prefix.get(blk.type, "")
+            body = "  \n".join(text_md.split("\n")) if (not pref and (blk.type == "verse" or blk.line_breaks_preserved)) else text_md
+            lines.append(f"{pref}{body}\n")
 
     foll_blocks = [block_lookup[bid] for bid in letter.following_editorial_block_ids if bid in block_lookup]
     if foll_blocks:
@@ -262,32 +224,36 @@ def _render_standalone_letter_html(
     )
 
     display_heading = _letter_display_title(letter)
-    book_deep_link = (
-        f'<a href="../web/sections/{html.escape(sec_stem, quote=True)}.html#{html.escape(letter_dom_anchor(letter.letter_id), quote=True)}">'
-        "Read in Complete Book</a>"
-        if has_book_web
-        else ""
+    book_deep_link = render_optional_links(
+        (
+            (
+                has_book_web,
+                f'<a href="../web/sections/{html.escape(sec_stem, quote=True)}.html#{html.escape(letter_dom_anchor(letter.letter_id), quote=True)}">'
+                "Read in Complete Book</a>",
+            ),
+        )
     )
-    proof_deep_link = (
-        f'<a href="../proofing/index.html#page-{letter.start_page}">Verify Source Scan (p. {html.escape(letter.start_folio or str(letter.start_page))})</a>'
-        if has_proofing
-        else ""
+    proof_deep_link = render_optional_links(
+        (
+            (
+                has_proofing,
+                f'<a href="../proofing/index.html#page-{letter.start_page}">Verify Source Scan (p. {html.escape(letter.start_folio or str(letter.start_page))})</a>',
+            ),
+        )
     )
-    prev_nav = (
-        f'<a href="{html.escape(prev_letter.slug, quote=True)}.html">← Letter #{prev_letter.sequence_index}</a>'
-        if prev_letter
-        else "<span></span>"
+    prev_nav = render_pager_slot(
+        prev_letter and f"{prev_letter.slug}.html",
+        prev_letter and f"← Letter #{prev_letter.sequence_index}",
     )
-    next_nav = (
-        f'<a href="{html.escape(next_letter.slug, quote=True)}.html">Letter #{next_letter.sequence_index} →</a>'
-        if next_letter
-        else "<span></span>"
+    next_nav = render_pager_slot(
+        next_letter and f"{next_letter.slug}.html",
+        next_letter and f"Letter #{next_letter.sequence_index} →",
     )
 
     archive_attr = html.escape(ast.archive_id or "", quote=True)
     csp_escaped = html.escape(READER_STRICT_CSP, quote=True)
-    drawer_html = build_scan_dialog_html() if has_book_web else ""
-    drawer_js = '<script src="../web/reader.js" defer></script>' if has_book_web else ""
+    drawer_html = render_optional_links(((has_book_web, build_scan_dialog_html()),))
+    drawer_js = render_optional_links(((has_book_web, '<script src="../web/reader.js" defer></script>'),))
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -560,11 +526,7 @@ def render_letters_edition(
     letters_dir = ed_root / "letters"
     shutil.rmtree(letters_dir, ignore_errors=True)
     letters_dir.mkdir(parents=True, exist_ok=True)
-    local_scans_flag = (
-        any(p.suffix.lower() in {".png", ".webp", ".jpg", ".jpeg"} for p in (ed_root / "proofing" / "scans").glob("page_*.*"))
-        if has_local_scans is None
-        else has_local_scans
-    )
+    local_scans_flag = resolve_has_local_scans(ed_root, has_local_scans)
 
     atomic_write_text(letters_dir / "styles.css", EDITORIAL_SHARED_CSS)
     atomic_write_text(letters_dir / "letters.js", LETTERS_CATALOG_JS)

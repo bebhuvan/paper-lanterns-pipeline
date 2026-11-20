@@ -217,6 +217,49 @@ class BookConfig:
             extraction_overrides=ext,
         )
 
+    @classmethod
+    def resolve_collection_defaults(
+        cls,
+        book_id: str,
+        *,
+        title: str = "",
+        collection: str = "world-correspondence",
+        author_or_editor: str = "",
+        year: int | None = None,
+        archive_id: str | None = None,
+        active_run_id: str = "manual",
+        repo_root: str | Path | None = None,
+    ) -> dict[str, Any]:
+        """Resolve book.toml metadata overrides with sensible defaults."""
+        repo = RepoPaths.from_root(repo_root)
+        toml_path = repo.book_dir(book_id) / "book.toml"
+        if not toml_path.is_file():
+            return {
+                "title": title or book_id,
+                "collection": collection,
+                "author_or_editor": author_or_editor,
+                "year": year,
+                "archive_id": archive_id,
+                "active_run_id": active_run_id,
+                "language": "en",
+                "text_direction": "ltr",
+                "series_id": None,
+                "volume_number": None,
+            }
+        cfg = cls.load(book_id, paths=repo)
+        return {
+            "title": title or cfg.title or book_id,
+            "collection": collection if collection != "world-correspondence" else (cfg.collection or collection),
+            "author_or_editor": author_or_editor or cfg.author_or_editor,
+            "year": cfg.year if year is None else year,
+            "archive_id": archive_id or cfg.archive_id or None,
+            "active_run_id": (cfg.active_run_id or active_run_id) if active_run_id == "manual" else active_run_id,
+            "language": cfg.language or "en",
+            "text_direction": cfg.text_direction,
+            "series_id": cfg.series_id,
+            "volume_number": cfg.volume_number,
+        }
+
     def resolved_extraction_settings(
         self,
         paths: RepoPaths | None = None,

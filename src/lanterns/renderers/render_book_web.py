@@ -19,12 +19,16 @@ from lanterns.renderers.html_utils import (
     READER_STRICT_CSP,
     atomic_write_json,
     atomic_write_text,
+    collect_section_footnotes,
     fold_diacritics_for_search,
     footnotes_by_block_map,
     render_block_stream_html,
     render_footnotes_apparatus_html,
     render_inline_html,
+    render_optional_links,
+    render_pager_slot,
     render_unavailable_page_banner,
+    resolve_has_local_scans,
     sanitize_xml_id,
     strip_constrained_tags,
 )
@@ -77,16 +81,7 @@ def build_scan_dialog_html() -> str:
 _build_scan_dialog_html = build_scan_dialog_html
 
 
-def _collect_section_footnotes(section: BookSection, ast: CollectionAST) -> tuple[list[str], dict[str, FootnoteItem]]:
-    ordered_ids: list[str] = list(section.footnote_ids)
-    letters_by_id = {ltr.letter_id: ltr for ltr in ast.letters}
-    for item in section.items:
-        if item.kind == "letter" and item.letter_id in letters_by_id:
-            for fid in letters_by_id[item.letter_id].footnote_ids:
-                if fid not in ordered_ids:
-                    ordered_ids.append(fid)
-    sub_map = {fid: ast.footnotes[fid] for fid in ordered_ids if fid in ast.footnotes}
-    return ordered_ids, sub_map
+_collect_section_footnotes = collect_section_footnotes
 
 
 def _render_section_item_html(
@@ -122,10 +117,8 @@ def _render_section_item_html(
         if item.kind == "letter" and item.letter_id in letters_by_id:
             ltr = letters_by_id[item.letter_id]
             dom_id = html.escape(letter_dom_anchor(ltr.letter_id), quote=True)
-            standalone_link = (
-                f'<a href="../../letters/{html.escape(ltr.slug, quote=True)}.html">Standalone Letter View →</a>'
-                if has_letters_edition
-                else ""
+            standalone_link = render_optional_links(
+                ((has_letters_edition, f'<a href="../../letters/{html.escape(ltr.slug, quote=True)}.html">Standalone Letter View →</a>'),)
             )
             sender_rec = " → ".join(
                 p for p in (ltr.metadata.sender_display, ltr.metadata.recipient_display) if p
@@ -210,20 +203,16 @@ def _render_section_page(
     )
 
     sec_title_html = render_inline_html(section.title_tagged or section.title_plain)
-    prev_link = (
-        f'<a href="{html.escape(section_filename_stem(prev_sec.section_id), quote=True)}.html">'
-        f"← {html.escape(prev_sec.title_plain)}</a>"
-        if prev_sec
-        else "<span></span>"
+    prev_link = render_pager_slot(
+        prev_sec and f"{section_filename_stem(prev_sec.section_id)}.html",
+        prev_sec and f"← {prev_sec.title_plain}",
     )
-    next_link = (
-        f'<a href="{html.escape(section_filename_stem(next_sec.section_id), quote=True)}.html">'
-        f"{html.escape(next_sec.title_plain)} →</a>"
-        if next_sec
-        else "<span></span>"
+    next_link = render_pager_slot(
+        next_sec and f"{section_filename_stem(next_sec.section_id)}.html",
+        next_sec and f"{next_sec.title_plain} →",
     )
-    letters_nav = '<a href="../../letters/index.html">Letters Catalog</a>' if has_letters_edition else ""
-    proof_nav = '<a href="../../proofing/index.html">Proofing Studio</a>' if has_proofing else ""
+    letters_nav = render_optional_links(((has_letters_edition, '<a href="../../letters/index.html">Letters Catalog</a>'),))
+    proof_nav = render_optional_links(((has_proofing, '<a href="../../proofing/index.html">Proofing Studio</a>'),))
     tier = ast.rubric.provenance_tier if ast.rubric else "community"
     archive_attr = html.escape(ast.archive_id or "", quote=True)
     csp_escaped = html.escape(READER_STRICT_CSP, quote=True)
@@ -311,10 +300,8 @@ def _render_landing_page(
         stem = html.escape(sec_stem_by_id.get(ltr.section_id, "sec"), quote=True)
         dom_id = html.escape(letter_dom_anchor(ltr.letter_id), quote=True)
         in_book_href = f"sections/{stem}.html#{dom_id}"
-        standalone_cell = (
-            f'<a href="../letters/{html.escape(ltr.slug, quote=True)}.html">Letter Page</a>'
-            if has_letters_edition
-            else ""
+        standalone_cell = render_optional_links(
+            ((has_letters_edition, f'<a href="../letters/{html.escape(ltr.slug, quote=True)}.html">Letter Page</a>'),)
         )
         fol = html.escape(ltr.start_folio or str(ltr.start_page))
         sender = html.escape(ltr.metadata.sender_display or "—")
@@ -327,29 +314,28 @@ def _render_landing_page(
             f"<td>{dateline}</td><td>p. {fol}</td><td>{incipit}</td><td>{standalone_cell}</td></tr>"
         )
 
-    downloads: list[str] = []
-    if has_letters_edition:
-        downloads.append('<a href="../letters/index.html">Individual Online Letters</a>')
-    if has_epub:
-        downloads.append(f'<a href="../epub/{html.escape(ast.book_id, quote=True)}.epub">EPUB 3</a>')
-    if has_markdown:
-        downloads.append(f'<a href="../markdown/{html.escape(ast.book_id, quote=True)}.md">Scholarly Markdown</a>')
-    if has_tei:
-        downloads.append(f'<a href="../tei/{html.escape(ast.book_id, quote=True)}.tei.xml">TEI P5 XML</a>')
-    if has_proofing:
-        downloads.append('<a href="../proofing/index.html">Community Proofing Studio</a>')
-    downloads_html = " · ".join(downloads)
+    download_specs = (
+        (has_letters_edition, '<a href="../letters/index.html">Individual Online Letters</a>'),
+        (has_epub, f'<a href="../epub/{html.escape(ast.book_id, quote=True)}.epub">EPUB 3</a>'),
+        (has_markdown, f'<a href="../markdown/{html.escape(ast.book_id, quote=True)}.md">Scholarly Markdown</a>'),
+        (has_tei, f'<a href="../tei/{html.escape(ast.book_id, quote=True)}.tei.xml">TEI P5 XML</a>'),
+        (has_proofing, '<a href="../proofing/index.html">Community Proofing Studio</a>'),
+    )
+    downloads_html = " · ".join(link for enabled, link in download_specs if enabled)
 
     year_txt = f" ({ast.year})" if ast.year else ""
     byline = html.escape(f"{ast.author_or_editor}{year_txt}".strip() or "Public Domain Archival Correspondence")
-    letters_section = (
-        '<section style="margin-top:2.8rem;">'
-        "<h2>Sequential Table of Letters</h2>"
-        '<table class="catalog-table">'
-        "<thead><tr><th>#</th><th>Correspondents</th><th>Dateline</th><th>Folio</th><th>Incipit</th><th>Standalone</th></tr></thead>"
-        f'<tbody>{"".join(letter_rows)}</tbody></table></section>'
-        if letter_rows
-        else ""
+    letters_section = render_optional_links(
+        (
+            (
+                bool(letter_rows),
+                '<section style="margin-top:2.8rem;">'
+                "<h2>Sequential Table of Letters</h2>"
+                '<table class="catalog-table">'
+                "<thead><tr><th>#</th><th>Correspondents</th><th>Dateline</th><th>Folio</th><th>Incipit</th><th>Standalone</th></tr></thead>"
+                f'<tbody>{"".join(letter_rows)}</tbody></table></section>',
+            ),
+        )
     )
 
     return f"""<!DOCTYPE html>
@@ -542,11 +528,7 @@ def render_book_web(
     sec_dir = web_dir / "sections"
     shutil.rmtree(sec_dir, ignore_errors=True)
     sec_dir.mkdir(parents=True, exist_ok=True)
-    local_scans_flag = (
-        any(p.suffix.lower() in {".png", ".webp", ".jpg", ".jpeg"} for p in (ed_root / "proofing" / "scans").glob("page_*.*"))
-        if has_local_scans is None
-        else has_local_scans
-    )
+    local_scans_flag = resolve_has_local_scans(ed_root, has_local_scans)
 
     atomic_write_text(web_dir / "styles.css", EDITORIAL_SHARED_CSS)
     atomic_write_text(web_dir / "reader.js", READER_JS)

@@ -24,7 +24,8 @@ LAYER_RANKS: dict[str, int] = {
     "epistolary": 4,
     "validation": 5,
     "renderers": 6,
-    "cli": 7,
+    "ops": 7,
+    "cli": 8,
 }
 
 MAX_FUNCTION_COMPLEXITY = 18
@@ -111,50 +112,10 @@ ALLOWED_METADATA_HEADER_TOKENS = ALLOWED_REGEX_TOKENS_STRICT | frozenset(
         "carta",
         "dispatch",
         "number",
-        "first",
-        "second",
-        "third",
-        "fourth",
-        "fifth",
-        "sixth",
-        "seventh",
-        "eighth",
-        "ninth",
-        "tenth",
         "dated",
         "written",
         "from",
         "addressed",
-        "copy",
-        "following",
-        "foregoing",
-        "above",
-        "same",
-        "king",
-        "firmand",
-        "reply",
-        "answer",
-        "articles",
-        "agreement",
-        "objections",
-        "consultations",
-        "notes",
-        "account",
-        "overland",
-        "extract",
-        "minutes",
-        "declaration",
-        "proceedings",
-        "commission",
-        "instructions",
-        "memorandum",
-        "sept",
-        "rich",
-        "capt",
-        "thos",
-        "will",
-        "lieut",
-        "honble",
     }
 )
 
@@ -213,7 +174,7 @@ def _check_content_heuristics(
     file_rel: str,
     violations: list[dict[str, Any]],
 ) -> None:
-    if subpkg not in {"epistolary", "renderers"} or file_rel.endswith("doctor.py"):
+    if subpkg not in {"epistolary", "renderers"}:
         return
     banned = BANNED_PROSE_WORDS | (EPISTOLARY_EXTRA_BANNED_WORDS if subpkg == "epistolary" else frozenset())
 
@@ -499,7 +460,7 @@ def _audit_functions_and_renderers(
     rel_repo: str,
     violations: list[dict[str, Any]],
 ) -> int:
-    if subpkg == "renderers" and pf_name != "doctor.py":
+    if subpkg == "renderers":
         for sink in _UNSAFE_DOM_SINKS:
             if sink in raw_src:
                 _add_violation(violations, "unsafe_dom_sink", rel_repo, f"Unsafe DOM sink `{sink}` in `{rel_repo}`.")

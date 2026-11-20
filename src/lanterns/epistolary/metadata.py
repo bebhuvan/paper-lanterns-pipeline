@@ -7,7 +7,6 @@ INVARIANT: Never rewrites text and never matches natural-language content words.
 from __future__ import annotations
 
 import re
-import unicodedata
 from typing import Any, Literal, cast
 
 from lanterns.core.models import BlockIR, EpistolaryMetadata
@@ -15,7 +14,21 @@ from lanterns.core.tags import (
     strip_footnote_callouts_plain,
     strip_glued_footnote_digits,
 )
-from lanterns.core.unicode_norm import fold_for_search
+from lanterns.core.unicode_norm import (
+    EUROPEAN_DIACRITIC_CODEPOINTS,
+    IAST_CODEPOINTS,
+    detect_scripts_and_orthography,
+    fold_for_search,
+)
+
+__all__ = [
+    "EUROPEAN_DIACRITIC_CODEPOINTS",
+    "IAST_CODEPOINTS",
+    "build_letter_slug",
+    "detect_scripts_and_orthography",
+    "extract_epistolary_metadata",
+    "parse_header_metadata_lines",
+]
 
 _FOLIO_MARKER_RE = re.compile(r"\[p\.\s+[^\]]+\]\s*")
 _PURE_NUMERAL_LINE_RE = re.compile(r"^[(\[]?(?:\d{1,4}|[IVXLCDM]{1,9})[.)\]]?$")
@@ -29,105 +42,21 @@ _ALPHA_TOK_RE = re.compile(r"[^\W\d_]+")
 _BARE_PAREN_NUM_RE = re.compile(r"\(\d{1,2}\)")
 _LEADING_HDR_NUM_RE = re.compile(r"^(?:[IVXLCDM]{1,7}|\d{1,4}[a-z]?)\.?\s+(?=[A-Za-z\[“\"'])")
 _ONLY_HDR_NUM_RE = re.compile(
-    r"^(?:letter\s+(?:no\.?\s*)?(?:[ivxlcdm]+|\d+[a-z]?)|(?:first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth)\s+letter|[ivxlcdm]{1,7}|\d{1,4}[a-z]?)\.?\s*$",
+    r"^(?:(?:letter|lettre|epistle|epistola|brief|carta|dispatch)\s+(?:no\.?\s*)?(?:[ivxlcdm]+|\d+[a-z]?)|[ivxlcdm]{1,7}|\d{1,4}[a-z]?)\.?\s*$",
     re.IGNORECASE,
 )
 _DATED_TAIL_RE = re.compile(r"(?:\s*[;,]\s*|\s+)(?:dated|written(?:\s+in)?)\s+(.+)$", re.IGNORECASE)
 _COMMA_DATE_RE = re.compile(
-    r"^(.+?),\s+(?=(?:the\s+)?\d|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z.]*\s+\d)(.*\b(?:1[4-9]\d{2}|20\d{2})\b.*)$"
+    r"^(.+?),\s+(?=(?:\w{1,3}\s+)?\d|[A-Z][a-z]{2,8}\.?\s+\d)(.*\b(?:1[4-9]\d{2}|20\d{2})\b.*)$"
 )
 _PERIOD_DATE_RE = re.compile(
-    r"^(.+?)(?<!\b(?:Wm|Ed|Mr|Dr|St))(?<!\b(?:Rev|Mrs|Tho|Rob|Col|Gen|Hon|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec))"
-    r"(?<!\b(?:Rich|Capt|Thos|Sept|Will))(?<!\b(?:Lieut))(?<!\b(?:Honble))\.\s+([^.]*\b(?:1[4-9]\d{2}|20\d{2})\b.*)$"
+    r"^(.+?)(?<!\b[A-Z][a-z])(?<!\b[A-Z][a-z]{2})\.\s+(?=\d{1,2}\b|[A-Z][a-z]{2,8}\.?\s+\d{1,2}\b|(?:1[4-9]\d{2}|20\d{2})\b)([^.]*\b(?:1[4-9]\d{2}|20\d{2})\b.*)$"
 )
-_NON_SENDER_PREFIX_RE = re.compile(
-    r"^(?:the\s+(?:copy|following|foregoing|above|same|king's\s+firmand)|a\s+|an\s+|letter|reply|answer|articles|copy|agreement|objections?|consultations?|notes?|account|overland|extract|minutes?|declaration|proceedings|commission|instructions?|memorandum|firmand)\b",
-    re.IGNORECASE,
-)
-
-IAST_CODEPOINTS = frozenset(
-    "āĀīĪūŪṛṚṝṜḷḶḹḸṁṀṃṂḥḤṅṄṭṬḍḌṇṆśŚṣṢ"
-    "ḏḎḫḪẖḳḲḵḴḻḺṟṞṯṮẓẒẕẔʿʾ"
-)
-
-EUROPEAN_DIACRITIC_CODEPOINTS = frozenset(
-    "àáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿßœčďěğĺľłńňőřšťůűźżž"
-    "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞŸŒČĎĚĞĹĽŁŃŇŐŘŠŤŮŰŹŻŽ"
-)
-
-_SCRIPT_RANGES: tuple[tuple[str, int, int], ...] = (
-    ("Greek", 0x0370, 0x03FF),
-    ("Greek", 0x1F00, 0x1FFF),
-    ("Cyrillic", 0x0400, 0x052F),
-    ("Arabic/Perso-Arabic", 0x0600, 0x06FF),
-    ("Arabic/Perso-Arabic", 0x0750, 0x077F),
-    ("Arabic/Perso-Arabic", 0x08A0, 0x08FF),
-    ("Arabic/Perso-Arabic", 0xFB50, 0xFDFF),
-    ("Arabic/Perso-Arabic", 0xFE70, 0xFEFF),
-    ("Devanagari", 0x0900, 0x097F),
-    ("Devanagari", 0xA8E0, 0xA8FF),
-    ("Bengali", 0x0980, 0x09FF),
-    ("Gurmukhi", 0x0A00, 0x0A7F),
-    ("Gujarati", 0x0A80, 0x0AFF),
-    ("Oriya", 0x0B00, 0x0B7F),
-    ("Tamil", 0x0B80, 0x0BFF),
-    ("Telugu", 0x0C00, 0x0C7F),
-    ("Kannada", 0x0C80, 0x0CFF),
-    ("Malayalam", 0x0D00, 0x0D7F),
-    ("Sinhala", 0x0D80, 0x0DFF),
-    ("Modi", 0x11600, 0x1165F),
-)
-
-_SCRIPT_ORDER: tuple[str, ...] = (
-    "Latin",
-    "Devanagari",
-    "Arabic/Perso-Arabic",
-    "Bengali",
-    "Gurmukhi",
-    "Gujarati",
-    "Oriya",
-    "Tamil",
-    "Telugu",
-    "Kannada",
-    "Malayalam",
-    "Sinhala",
-    "Modi",
-    "Greek",
-    "Cyrillic",
-    "IAST",
-    "European diacritics",
-)
+_HEADER_SKIP_PREFIX_RE = re.compile(r"^(?:letter|lettre|epistle|epistola|brief|carta|dispatch)\b", re.IGNORECASE)
 
 
 def _strip_folio_markers(text: str) -> str:
     return _FOLIO_MARKER_RE.sub("", text or "").strip()
-
-
-def _classify_char_script(ch: str) -> str | None:
-    code = ord(ch)
-    if (0x0041 <= code <= 0x005A) or (0x0061 <= code <= 0x007A) or (0x00C0 <= code <= 0x024F) or (0x1E00 <= code <= 0x1EFF):
-        return "Latin"
-    for label, low, high in _SCRIPT_RANGES:
-        if low <= code <= high:
-            return label
-    return None
-
-
-def detect_scripts_and_orthography(text: str) -> list[str]:
-    """Detect scripts and scholarly diacritic layers strictly from Unicode codepoints."""
-    found: set[str] = set()
-    nfc = unicodedata.normalize("NFC", text or "")
-    for ch in nfc:
-        if not ch.isalpha() and ch not in IAST_CODEPOINTS:
-            continue
-        script_name = _classify_char_script(ch)
-        if script_name is not None:
-            found.add(script_name)
-        if ch in IAST_CODEPOINTS:
-            found.add("IAST")
-        elif ch in EUROPEAN_DIACRITIC_CODEPOINTS:
-            found.add("European diacritics")
-    return [name for name in _SCRIPT_ORDER if name in found]
 
 
 def _partition_outer_and_enclosed(
@@ -139,62 +68,54 @@ def _partition_outer_and_enclosed(
     depth = 0
     has_enclosure = False
     for blk in blocks:
-        if blk.epistolary_transition == "starts_enclosure":
-            depth += 1
-            has_enclosure = True
-        if blk.block_id in explicit_enc:
-            has_enclosure = True
-        if blk.type == "blockquote":
-            has_enclosure = True
+        depth += int(blk.epistolary_transition == "starts_enclosure")
+        has_enclosure = (
+            has_enclosure
+            or blk.epistolary_transition == "starts_enclosure"
+            or blk.block_id in explicit_enc
+            or blk.type == "blockquote"
+        )
         if depth == 0 and blk.block_id not in explicit_enc:
             outer.append(blk)
-        if blk.epistolary_transition == "ends_enclosure" and depth > 0:
-            depth -= 1
-    return (outer if outer else list(blocks)), has_enclosure
+        depth = max(0, depth - int(blk.epistolary_transition == "ends_enclosure"))
+    return (outer or list(blocks)), has_enclosure
 
 
 def _extract_letter_number(header_blocks: list[BlockIR]) -> str | None:
     for blk in header_blocks:
         for raw_line in strip_footnote_callouts_plain(blk.tagged_text).splitlines():
             line = _strip_folio_markers(raw_line).strip()
-            if not line:
-                continue
-            if _PURE_NUMERAL_LINE_RE.match(line):
-                return line.strip("()[]").rstrip(".")
-            lbl_m = _LABEL_NUMERAL_LINE_RE.match(line)
-            if lbl_m:
-                return lbl_m.group(1)
-            lead = _LEADING_NUMERAL_RE.match(line)
-            if lead:
-                return lead.group(1)
+            match = line and (
+                _PURE_NUMERAL_LINE_RE.match(line)
+                or _LABEL_NUMERAL_LINE_RE.match(line)
+                or _LEADING_NUMERAL_RE.match(line)
+            )
+            if match:
+                return (match.lastindex and match.group(1)) or line.strip("()[]").rstrip(".")
     return None
 
 
 def _compute_dateline_position(
     outer_blocks: list[BlockIR],
 ) -> Literal["top", "bottom", "inline", "absent"]:
-    dl_indices = [idx for idx, b in enumerate(outer_blocks) if b.type == "dateline"]
-    if not dl_indices:
+    dl_idx = next((idx for idx, b in enumerate(outer_blocks) if b.type == "dateline"), None)
+    if dl_idx is None:
         return "absent"
-    first_dl_idx = dl_indices[0]
-    first_dl = outer_blocks[first_dl_idx]
-    if first_dl.alignment == "inline":
-        return "inline"
-
     body_indices = [idx for idx, b in enumerate(outer_blocks) if b.type in {"body", "verse"}]
     closer_indices = [idx for idx, b in enumerate(outer_blocks) if b.type in {"valediction", "signature"}]
-    if not body_indices:
-        return "bottom" if (closer_indices and first_dl_idx >= closer_indices[0]) else "top"
-    if first_dl_idx < body_indices[0]:
-        return "top"
-    if first_dl_idx > body_indices[-1] or (closer_indices and first_dl_idx >= closer_indices[0]):
-        return "bottom"
-    return "inline"
+    is_bottom = (bool(closer_indices) and dl_idx >= closer_indices[0]) or (
+        bool(body_indices) and dl_idx > body_indices[-1]
+    )
+    pos_cases: tuple[tuple[bool, Literal["top", "bottom", "inline"]], ...] = (
+        (outer_blocks[dl_idx].alignment == "inline", "inline"),
+        (bool(body_indices) and dl_idx < body_indices[0], "top"),
+        (is_bottom, "bottom"),
+        (not body_indices, "top"),
+    )
+    return next((pos for cond, pos in pos_cases if cond), "inline")
 
 
 def _clean_person_display(blocks: list[BlockIR]) -> str | None:
-    if not blocks:
-        return None
     parts: list[str] = []
     for blk in blocks:
         cleaned = strip_glued_footnote_digits(_strip_folio_markers(strip_footnote_callouts_plain(blk.tagged_text)))
@@ -202,28 +123,27 @@ def _clean_person_display(blocks: list[BlockIR]) -> str | None:
         alpha_tokens = [tok.casefold() for tok in _ALPHA_TOK_RE.findall(collapsed)]
         if collapsed and alpha_tokens and not all(tok in {"c", "etc"} for tok in alpha_tokens):
             parts.append(collapsed)
-    return " / ".join(parts) if parts else None
+    return " / ".join(parts) or None
 
 
 def _extract_incipit(outer_blocks: list[BlockIR], all_blocks: list[BlockIR], max_chars: int = 140) -> str:
-    candidates = [b for b in outer_blocks if b.type in {"body", "verse"}]
-    if not candidates:
-        candidates = [b for b in outer_blocks if b.type == "salutation"] or list(all_blocks)
+    candidates = (
+        [b for b in outer_blocks if b.type in {"body", "verse"}]
+        or [b for b in outer_blocks if b.type == "salutation"]
+        or list(all_blocks)
+    )
     for blk in candidates:
         cleaned = _strip_folio_markers(strip_footnote_callouts_plain(blk.tagged_text))
         single_line = " ".join(cleaned.split())
-        if not single_line:
-            continue
-        if len(single_line) <= max_chars:
-            return single_line
-        clipped = single_line[:max_chars].rsplit(" ", 1)[0].rstrip(" ,;:")
-        return f"{clipped or single_line[:max_chars]}…"
+        if single_line:
+            clipped = single_line[:max_chars].rsplit(" ", 1)[0].rstrip(" ,;:") or single_line[:max_chars]
+            return single_line if len(single_line) <= max_chars else f"{clipped}…"
     return ""
 
 
 def _join_block_tagged(blocks: list[BlockIR]) -> str | None:
     parts = [_strip_folio_markers(b.tagged_text) for b in blocks if _strip_folio_markers(b.tagged_text)]
-    return "\n".join(parts) if parts else None
+    return "\n".join(parts) or None
 
 
 def _join_block_plain(blocks: list[BlockIR]) -> str | None:
@@ -233,8 +153,7 @@ def _join_block_plain(blocks: list[BlockIR]) -> str | None:
         )
         for b in blocks
     ]
-    non_empty = [p for p in parts if p]
-    return " ".join(non_empty) if non_empty else None
+    return " ".join(p for p in parts if p) or None
 
 
 def _clean_hdr_fragment(val: str) -> str:
@@ -330,7 +249,7 @@ def parse_header_metadata_lines(tagged_lines: list[str]) -> tuple[str | None, st
             cand_r = s_to_r_m.group(2).strip()
             if (
                 cand_s
-                and not _NON_SENDER_PREFIX_RE.match(cand_s)
+                and not _HEADER_SKIP_PREFIX_RE.match(cand_s)
                 and len(cand_s.split()) <= 14
                 and "(" not in cand_s
             ):
@@ -343,7 +262,7 @@ def parse_header_metadata_lines(tagged_lines: list[str]) -> tuple[str | None, st
             not dateline
             and len(head_part.split()) <= 12
             and re.search(r"\b(?:1[4-9]\d{2}|20\d{2})\b", head_part)
-            and not head_part.lower().startswith(("[missing", "missing"))
+            and not head_part.startswith("[")
         ):
             dateline = " ".join(head_part.split()).strip()
 
@@ -399,7 +318,7 @@ def extract_epistolary_metadata(
         )
         if (explicit_override or {}).get(key) is not None
     }
-    return cast(EpistolaryMetadata, meta.model_copy(update=patch) if patch else meta)
+    return cast(EpistolaryMetadata, (patch and meta.model_copy(update=patch)) or meta)
 
 
 def build_letter_slug(
@@ -411,16 +330,14 @@ def build_letter_slug(
 ) -> str:
     """Build a deterministic, URL-safe, collision-free slug for a `LetterUnit`."""
     taken = used_slugs if used_slugs is not None else set()
-    if explicit_slug:
-        base_cand = _SLUG_NON_ALNUM_RE.sub("-", fold_for_search(explicit_slug)).strip("-")
-    else:
-        base_parts = [f"letter-{sequence_index:04d}"]
-        if metadata.sender_display:
-            sender_token = _SLUG_NON_ALNUM_RE.sub("-", fold_for_search(metadata.sender_display)).strip("-")
-            if sender_token:
-                base_parts.append(sender_token[:24].rstrip("-"))
-        base_cand = "-".join(base_parts)
-
+    sender_tok = (
+        metadata.sender_display
+        and _SLUG_NON_ALNUM_RE.sub("-", fold_for_search(metadata.sender_display)).strip("-")[:24].rstrip("-")
+    ) or ""
+    auto_parts = [p for p in (f"letter-{sequence_index:04d}", sender_tok) if p]
+    base_cand = (
+        explicit_slug and _SLUG_NON_ALNUM_RE.sub("-", fold_for_search(explicit_slug)).strip("-")
+    ) or "-".join(auto_parts)
     slug = base_cand or f"letter-{sequence_index:04d}"
     if slug not in taken:
         taken.add(slug)

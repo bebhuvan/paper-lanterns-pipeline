@@ -13,8 +13,14 @@ from collections import Counter
 from pathlib import Path
 from typing import Any
 
-from lanterns.core.models import BlockIR, PageIR
+from lanterns.core.models import FURNITURE_BLOCK_TYPES, BlockIR, PageIR
 from lanterns.core.tags import parse_tagged_text
+
+CONTINUABLE_PROSE_TYPES = frozenset(
+    {"body", "blockquote", "editorial", "postscript", "list_item", "index_entry", "salutation"}
+)
+FLOAT_BLOCK_TYPES = frozenset({"illustration", "facsimile_plate", "caption", "margin_note"})
+_COMPAT_PROSE_TYPES = frozenset({"body", "editorial"})
 
 DEHYPHENATABLE_PROSE_TYPES: frozenset[str] = frozenset(
     {"body", "blockquote", "editorial", "postscript", "footnote", "margin_note", "list_item", "index_entry", "toc_entry"}
@@ -327,3 +333,99 @@ def resolve_page_ir_line_wraps(
         "sites": decisions,
     }
     return out_pages, report
+
+
+def starts_lowercase(text: str) -> bool:
+    """Return True if the first alphabetic character in `text` is lowercase."""
+    alpha = next((ch for ch in text if ch.isalpha()), "")
+    return bool(alpha and alpha.islower())
+
+
+def _boundary_prose_index(blocks: list[BlockIR], *, from_end: bool) -> int | None:
+    indices = range(len(blocks) - 1, -1, -1) if from_end else range(len(blocks))
+    return next((i for i in indices if blocks[i].type not in FLOAT_BLOCK_TYPES), None)
+
+
+def _join_cross_page_pair(
+    left_blk: BlockIR,
+    right_blk: BlockIR,
+    joined_counts: Counter[str],
+    hyphen_counts: Counter[str],
+) -> tuple[BlockIR, BlockIR]:
+    can_harmonize = (
+        left_blk.continues_to_next
+        and right_blk.continues_from_prev
+        and {left_blk.type, right_blk.type} <= _COMPAT_PROSE_TYPES
+        and left_blk.type != right_blk.type
+    )
+    target_type = left_blk.type if can_harmonize else right_blk.type
+    l_raw, r_raw = dedup_or_join_cross_page_tagged(
+        left_blk.tagged_text,
+        right_blk.tagged_text,
+        joined_counts,
+        hyphen_counts,
+    )
+    lt, lp, lsp = parse_tagged_text(l_raw)
+    new_left = left_blk.model_copy(
+        update={"tagged_text": lt, "plain_text": lp, "spans": lsp, "continues_to_next": True}
+    )
+    rt, rp, rsp = parse_tagged_text(r_raw)
+    new_right = right_blk.model_copy(
+        update={
+            "type": target_type,
+            "tagged_text": rt,
+            "plain_text": rp,
+            "spans": rsp,
+            "continues_from_prev": True,
+        }
+    )
+    return new_left, new_right
+
+
+def apply_cross_page_prose_joins(
+    pages: list[PageIR],
+    *,
+    witness_dir: str | Path | None = None,
+) -> list[BlockIR]:
+    """Filter non-furniture/non-footnote blocks and join cross-page continuations/catchwords."""
+    joined_counts, hyphen_counts = count_corpus_word_forms(pages, witness_dir=witness_dir)
+    page_blocks_map: dict[int, list[BlockIR]] = {}
+    for page in pages:
+        if not page.failed_closed:
+            content = [
+                b.model_copy(deep=True)
+                for b in page.blocks
+                if b.type not in FURNITURE_BLOCK_TYPES and b.type != "footnote"
+            ]
+            if content:
+                page_blocks_map[page.page_number] = content
+
+    sorted_pnums = sorted(page_blocks_map)
+    prose_pages = [
+        (pnum, first_i, last_i)
+        for pnum in sorted_pnums
+        if (first_i := _boundary_prose_index(page_blocks_map[pnum], from_end=False)) is not None
+        and (last_i := _boundary_prose_index(page_blocks_map[pnum], from_end=True)) is not None
+    ]
+
+    for idx in range(len(prose_pages) - 1):
+        p_curr, _, left_idx = prose_pages[idx]
+        p_next, right_idx, _ = prose_pages[idx + 1]
+        left_blk = page_blocks_map[p_curr][left_idx]
+        right_blk = page_blocks_map[p_next][right_idx]
+        if (
+            0 < p_next - p_curr <= 4
+            and left_blk.type in CONTINUABLE_PROSE_TYPES
+            and right_blk.type in CONTINUABLE_PROSE_TYPES
+            and right_blk.epistolary_transition != "starts_new_letter"
+            and (left_blk.continues_to_next or right_blk.continues_from_prev)
+        ):
+            if right_blk.alignment == "indented" and not starts_lowercase(right_blk.plain_text):
+                page_blocks_map[p_curr][left_idx] = left_blk.model_copy(update={"continues_to_next": False})
+                page_blocks_map[p_next][right_idx] = right_blk.model_copy(update={"continues_from_prev": False})
+            else:
+                new_l, new_r = _join_cross_page_pair(left_blk, right_blk, joined_counts, hyphen_counts)
+                page_blocks_map[p_curr][left_idx] = new_l
+                page_blocks_map[p_next][right_idx] = new_r
+
+    return [blk for pnum in sorted_pnums for blk in page_blocks_map[pnum]]

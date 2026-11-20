@@ -17,10 +17,10 @@ from lanterns.core.models import PageExtractWire, WireBlock
 from lanterns.core.paths import RepoPaths
 from lanterns.epistolary.metadata import detect_scripts_and_orthography
 from lanterns.epistolary.segmentation import segment_epistolary_collection
+from lanterns.ops.catalog_status import garbage_collect_workspace
+from lanterns.ops.doctor import run_doctor
 from lanterns.providers.base import ProviderError, ProviderErrorKind, ProviderRequest, ProviderSuccess
 from lanterns.providers.router import FallbackRouter
-from lanterns.renderers.catalog_status import garbage_collect_workspace
-from lanterns.renderers.doctor import run_doctor
 from lanterns.source.archive_org import (
     _pick_jp2_zip,
     access_leaves,

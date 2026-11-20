@@ -125,8 +125,6 @@ def _check_unsafe_dom_and_antipatterns(repo: RepoPaths, issues: list[dict[str, A
         if not sub_dir.is_dir():
             continue
         for py_file in sorted(sub_dir.rglob("*.py")):
-            if py_file.name == "doctor.py":
-                continue
             text = py_file.read_text(encoding="utf-8")
             rel = py_file.relative_to(repo.root).as_posix()
             if _BOOK_ID_BRANCH_RE.search(text):

@@ -1,8 +1,8 @@
-"""Multi-format archival edition renderers, Proofing Studio, catalog ledger, and doctor gate.
+"""Multi-format archival edition renderers, Proofing Studio, and edition reports.
 
-ROLE: Export unified rendering entry points for Book Web, Online Letters, EPUB 3, Markdown, TEI P5, Proofing, Reports, Status, and Doctor.
-INPUTS: CollectionAST from lanterns.core.models and RepoPaths.
-OUTPUTS: Complete multi-format edition directories and repository health/catalog artifacts.
+ROLE: Export unified rendering entry points for Book Web, Online Letters, EPUB 3, Markdown, TEI P5, Proofing, and Reports.
+INPUTS: CollectionAST from lanterns.core.models.
+OUTPUTS: Complete multi-format edition directories.
 INVARIANT: Pure structural rendering; safe DOM (createElement/textContent only); zero book_id branching.
 """
 
@@ -12,10 +12,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from lanterns.core.atomic import atomic_write_json
 from lanterns.core.models import CollectionAST
-from lanterns.renderers.catalog_status import garbage_collect_workspace, generate_catalog_status
-from lanterns.renderers.doctor import run_doctor
-from lanterns.renderers.html_utils import atomic_write_json
 from lanterns.renderers.proofing_studio import compute_page_blocks_sha256, render_proofing_studio
 from lanterns.renderers.render_book_web import render_book_web
 from lanterns.renderers.render_epub import render_epub_edition
@@ -122,11 +120,8 @@ def render_complete_edition(
 
 __all__ = [
     "compute_page_blocks_sha256",
-    "garbage_collect_workspace",
-    "generate_catalog_status",
     "render_book_web",
     "render_complete_edition",
-    "render_doctor",
     "render_edition_report",
     "render_epub_edition",
     "render_letters_edition",
@@ -134,7 +129,4 @@ __all__ = [
     "render_proofing_studio",
     "render_scholarly_markdown",
     "render_tei_edition",
-    "run_doctor",
 ]
-
-render_doctor = run_doctor

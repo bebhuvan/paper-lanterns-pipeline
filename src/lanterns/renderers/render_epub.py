@@ -16,9 +16,10 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from lanterns.core.models import BookSection, CollectionAST, FootnoteItem, LetterUnit
+from lanterns.core.models import BookSection, CollectionAST, LetterUnit
 from lanterns.renderers.html_utils import (
     EDITORIAL_SHARED_CSS,
+    collect_section_footnotes,
     footnotes_by_block_map,
     render_block_stream_html,
     render_footnotes_apparatus_html,
@@ -46,15 +47,7 @@ def epub_section_filename(section_id: str) -> str:
     return f"{stem}.xhtml" if stem.startswith("sec-") else f"sec-{stem}.xhtml"
 
 
-def _collect_section_footnotes(section: BookSection, ast: CollectionAST) -> tuple[list[str], dict[str, FootnoteItem]]:
-    ordered: list[str] = list(section.footnote_ids)
-    letters_by_id = {ltr.letter_id: ltr for ltr in ast.letters}
-    for item in section.items:
-        if item.kind == "letter" and item.letter_id in letters_by_id:
-            for fid in letters_by_id[item.letter_id].footnote_ids:
-                if fid not in ordered:
-                    ordered.append(fid)
-    return ordered, {fid: ast.footnotes[fid] for fid in ordered if fid in ast.footnotes}
+_collect_section_footnotes = collect_section_footnotes
 
 
 def _build_section_xhtml(

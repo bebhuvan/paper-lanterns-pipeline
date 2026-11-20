@@ -136,3 +136,84 @@ def is_binder_signature(folio_text: str | None, page_number: int = 1) -> bool:
         return True
     return False
 
+
+IAST_CODEPOINTS = frozenset(
+    "āĀīĪūŪṛṚṝṜḷḶḹḸṁṀṃṂḥḤṅṄṭṬḍḌṇṆśŚṣṢ"
+    "ḏḎḫḪẖḳḲḵḴḻḺṟṞṯṮẓẒẕẔʿʾ"
+)
+
+EUROPEAN_DIACRITIC_CODEPOINTS = frozenset(
+    "àáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿßœčďěğĺľłńňőřšťůűźżž"
+    "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞŸŒČĎĚĞĹĽŁŃŇŐŘŠŤŮŰŹŻŽ"
+)
+
+_SCRIPT_RANGES: tuple[tuple[str, int, int], ...] = (
+    ("Greek", 0x0370, 0x03FF),
+    ("Greek", 0x1F00, 0x1FFF),
+    ("Cyrillic", 0x0400, 0x052F),
+    ("Arabic/Perso-Arabic", 0x0600, 0x06FF),
+    ("Arabic/Perso-Arabic", 0x0750, 0x077F),
+    ("Arabic/Perso-Arabic", 0x08A0, 0x08FF),
+    ("Arabic/Perso-Arabic", 0xFB50, 0xFDFF),
+    ("Arabic/Perso-Arabic", 0xFE70, 0xFEFF),
+    ("Devanagari", 0x0900, 0x097F),
+    ("Devanagari", 0xA8E0, 0xA8FF),
+    ("Bengali", 0x0980, 0x09FF),
+    ("Gurmukhi", 0x0A00, 0x0A7F),
+    ("Gujarati", 0x0A80, 0x0AFF),
+    ("Oriya", 0x0B00, 0x0B7F),
+    ("Tamil", 0x0B80, 0x0BFF),
+    ("Telugu", 0x0C00, 0x0C7F),
+    ("Kannada", 0x0C80, 0x0CFF),
+    ("Malayalam", 0x0D00, 0x0D7F),
+    ("Sinhala", 0x0D80, 0x0DFF),
+    ("Modi", 0x11600, 0x1165F),
+)
+
+_SCRIPT_ORDER: tuple[str, ...] = (
+    "Latin",
+    "Devanagari",
+    "Arabic/Perso-Arabic",
+    "Bengali",
+    "Gurmukhi",
+    "Gujarati",
+    "Oriya",
+    "Tamil",
+    "Telugu",
+    "Kannada",
+    "Malayalam",
+    "Sinhala",
+    "Modi",
+    "Greek",
+    "Cyrillic",
+    "IAST",
+    "European diacritics",
+)
+
+
+def _classify_char_script(ch: str) -> str | None:
+    code = ord(ch)
+    if (0x0041 <= code <= 0x005A) or (0x0061 <= code <= 0x007A) or (0x00C0 <= code <= 0x024F) or (0x1E00 <= code <= 0x1EFF):
+        return "Latin"
+    for label, low, high in _SCRIPT_RANGES:
+        if low <= code <= high:
+            return label
+    return None
+
+
+def detect_scripts_and_orthography(text: str) -> list[str]:
+    """Detect scripts and scholarly diacritic layers strictly from Unicode codepoints."""
+    found: set[str] = set()
+    nfc = unicodedata.normalize("NFC", text or "")
+    for ch in nfc:
+        if not ch.isalpha() and ch not in IAST_CODEPOINTS:
+            continue
+        script_name = _classify_char_script(ch)
+        if script_name is not None:
+            found.add(script_name)
+        if ch in IAST_CODEPOINTS:
+            found.add("IAST")
+        elif ch in EUROPEAN_DIACRITIC_CODEPOINTS:
+            found.add("European diacritics")
+    return [name for name in _SCRIPT_ORDER if name in found]
+

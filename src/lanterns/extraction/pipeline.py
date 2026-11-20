@@ -93,6 +93,62 @@ def load_run_pages(run_dir: str | Path) -> list[PageIR]:
     raise FileNotFoundError(f"No extracted PageIR artifacts found under {root}")
 
 
+def load_pages_from_run_dir(run_dir: str | Path) -> list[PageIR]:
+    """Load extracted `PageIR` objects from a canonical or experiment `run_dir`."""
+    rdir = Path(run_dir)
+    for rel in ("ir/pages.json", "pages.json", "collection_ast.json"):
+        cand = rdir / rel
+        if cand.is_file():
+            raw = json.loads(cand.read_text(encoding="utf-8"))
+            items = raw.get("pages") if isinstance(raw, dict) else raw
+            if isinstance(items, list):
+                return sorted((PageIR.model_validate(p) for p in items), key=lambda p: p.page_number)
+
+    for sub in ("pages", "ir/pages", "extractions"):
+        pdir = rdir / sub
+        if pdir.is_dir():
+            files = sorted(p for p in pdir.glob("*.json") if not p.name.endswith(".raw.json"))
+            if files:
+                return sorted(
+                    (PageIR.model_validate_json(f.read_text(encoding="utf-8")) for f in files),
+                    key=lambda p: p.page_number,
+                )
+    raise FileNotFoundError(f"No extracted PageIR artifacts found in {rdir}")
+
+
+def resolve_compile_pages(
+    pages: list[PageIR] | None,
+    run_dir: str | Path | None,
+    book_id: str,
+    active_run_id: str,
+    repo_root: str | Path | None,
+) -> tuple[list[PageIR], Path | None]:
+    """Resolve explicit `pages` or load extracted `PageIR`s from `run_dir`."""
+    resolved_run_dir = (
+        Path(run_dir)
+        if run_dir is not None
+        else (None if pages is not None else RepoPaths.from_root(repo_root).find_run_dir(book_id, active_run_id))
+    )
+    raw_pages = list(pages) if pages is not None else load_pages_from_run_dir(resolved_run_dir or "")
+    return raw_pages, resolved_run_dir
+
+
+def read_ledger_spend(run_dir: Path | None, pages: list[PageIR]) -> float:
+    """Compute cumulative USD spend from `cost_ledger.jsonl` or `PageIR.cost_usd` fields."""
+    page_sum = round(sum(float(p.cost_usd or 0.0) for p in pages), 6)
+    if run_dir is None:
+        return page_sum
+    ledger_file = run_dir / "cost_ledger.jsonl"
+    if not ledger_file.is_file():
+        return page_sum
+    total = 0.0
+    for line in ledger_file.read_text(encoding="utf-8").splitlines():
+        if line.strip():
+            rec = json.loads(line)
+            total += float(rec.get("cost_usd") or 0.0)
+    return round(max(total, page_sum), 6)
+
+
 def triage_book_pdf(
     book_id_or_pdf: str | Path,
     *,

@@ -6,7 +6,6 @@ INVARIANT: 100% conservation of non-furniture blocks; zero content-word regexes;
 
 from __future__ import annotations
 
-import json
 import re
 from collections import Counter
 from collections.abc import Mapping
@@ -24,19 +23,29 @@ from lanterns.core.models import (
     PageIR,
     ValidationFinding,
 )
-from lanterns.core.paths import RepoPaths
 from lanterns.core.tags import (
+    SYMBOL_NOTE_LABELS,
     extract_inline_markers,
+    normalize_note_label,
     parse_tagged_text,
-    promote_bare_symbol_in_tagged,
     resolve_endnote_row_target,
     split_side_by_side_footnote_tagged,
+    strip_redundant_leading_label,
 )
-from lanterns.core.unicode_norm import is_binder_signature
 from lanterns.extraction.line_wraps import (
-    count_corpus_word_forms,
-    dedup_or_join_cross_page_tagged,
+    apply_cross_page_prose_joins as _apply_cross_page_prose_joins,
     resolve_page_ir_line_wraps,
+    starts_lowercase as _starts_lowercase,
+)
+from lanterns.extraction.normalize import (
+    promote_attested_legacy_sup_callouts as _promote_attested_legacy_sup_callouts,
+    promote_page_symbol_callouts as _promote_page_symbol_callouts,
+    propagate_page_folios as _propagate_page_folios,
+)
+from lanterns.extraction.pipeline import (
+    load_pages_from_run_dir,
+    read_ledger_spend as _read_ledger_spend,
+    resolve_compile_pages,
 )
 from lanterns.epistolary.corrections import (
     apply_corrections_and_proof_overlay,
@@ -45,45 +54,18 @@ from lanterns.epistolary.corrections import (
 )
 from lanterns.epistolary.segmentation import segment_epistolary_collection
 
-CONTINUABLE_PROSE_TYPES = frozenset(
-    {"body", "blockquote", "editorial", "postscript", "list_item", "index_entry", "salutation"}
-)
-FLOAT_BLOCK_TYPES = frozenset({"illustration", "facsimile_plate", "caption", "margin_note"})
-_COMPAT_PROSE_TYPES = frozenset({"body", "editorial"})
-SYMBOL_NOTE_LABELS = frozenset({"*", "**", "†", "‡", "§", "‖", "||", "¶"})
-_LEADING_SUP_RE = re.compile(r"^\s*<(?:sup|fnref)>\s*([^<]+?)\s*</(?:sup|fnref)>\s*")
+__all__ = [
+    "compile_collection_ast",
+    "load_pages_from_run_dir",
+    "normalize_note_label",
+    "resolve_block_callout_targets",
+]
+
 _LEADING_WORD_NO_TAG_RE = re.compile(r"^([^\s<]+)(?:\s+(.*))?$", re.DOTALL)
 _TRAILING_HYPHEN_RE = re.compile(r"([-‐])((?:</(?:i|b|sc|fnref|sup|sub|unclear)>)*)\s*$")
 _ENDNOTE_PAGE_RE = re.compile(r"^Pages?\s+(\d+|[ivxlcdm]+)\b", re.IGNORECASE)
 _LEGEND_CARRIER_TYPES = frozenset({"dateline", "letter_header", "salutation"})
-
-
-def normalize_note_label(raw_label: str | None) -> str:
-    """Normalize printed footnote marker for deterministic callout-to-note pairing."""
-    if raw_label is None:
-        return ""
-    cleaned = str(raw_label).strip().strip("()[]")
-    if cleaned.endswith(".") and len(cleaned) > 1 and cleaned[:-1].isalnum():
-        cleaned = cleaned[:-1]
-    return cleaned.strip()
-
-
-def _strip_redundant_leading_label(tagged_text: str, norm_label: str) -> str:
-    if not norm_label:
-        return tagged_text
-    match = _LEADING_SUP_RE.match(tagged_text)
-    if match and normalize_note_label(match.group(1)) == norm_label:
-        rest = tagged_text[match.end() :].lstrip()
-        return rest if rest else tagged_text
-    if norm_label in SYMBOL_NOTE_LABELS and tagged_text.startswith(f"{norm_label} "):
-        return tagged_text[len(norm_label) :].lstrip()
-    stripped_paren = re.sub(rf"^\s*\(\s*{re.escape(norm_label)}\s*\)\s*", "", tagged_text)
-    return stripped_paren if stripped_paren else tagged_text
-
-
-def _starts_lowercase(text: str) -> bool:
-    alpha = next((ch for ch in text if ch.isalpha()), "")
-    return bool(alpha and alpha.islower())
+_strip_redundant_leading_label = strip_redundant_leading_label
 
 
 def _join_hyphenated_tagged(left_tagged: str, right_tagged: str) -> str:
@@ -99,79 +81,6 @@ def _join_hyphenated_tagged(left_tagged: str, right_tagged: str) -> str:
     return f"{left_tagged.rstrip()} {right_tagged.lstrip()}".strip()
 
 
-def _promote_page_symbol_callouts(pages: list[PageIR]) -> list[PageIR]:
-    promoted_pages: list[PageIR] = []
-    for page in pages:
-        if page.failed_closed:
-            promoted_pages.append(page)
-            continue
-        existing_sups: set[str] = set()
-        for blk in page.blocks:
-            if blk.type not in FURNITURE_BLOCK_TYPES and blk.type != "footnote":
-                existing_sups.update(extract_inline_markers(blk.tagged_text))
-        syms = sorted(
-            {
-                normalize_note_label(b.note_label)
-                for b in page.blocks
-                if b.type == "footnote" and normalize_note_label(b.note_label) in SYMBOL_NOTE_LABELS
-            }
-            - existing_sups,
-            key=len,
-            reverse=True,
-        )
-        if not syms:
-            promoted_pages.append(page)
-            continue
-        new_blocks: list[BlockIR] = []
-        for blk in page.blocks:
-            if blk.type in FURNITURE_BLOCK_TYPES:
-                new_blocks.append(blk)
-                continue
-            own_lbl = normalize_note_label(blk.note_label) if blk.type == "footnote" else ""
-            curr_tagged = blk.tagged_text
-            changed = False
-            for sym in syms:
-                if sym == own_lbl:
-                    continue
-                curr_tagged, hit = promote_bare_symbol_in_tagged(curr_tagged, sym)
-                changed = changed or hit
-            if changed:
-                t_str, p_str, sp_list = parse_tagged_text(curr_tagged)
-                blk = blk.model_copy(update={"tagged_text": t_str, "plain_text": p_str, "spans": sp_list})
-            new_blocks.append(blk)
-        promoted_pages.append(page.model_copy(update={"blocks": new_blocks}))
-    return promoted_pages
-
-
-def _propagate_page_folios(pages: list[PageIR]) -> list[PageIR]:
-    updated_pages: list[PageIR] = []
-    for page in pages:
-        folio = None if (page.printed_folio and is_binder_signature(page.printed_folio, page.page_number)) else page.printed_folio
-        if not folio:
-            folio = next(
-                (
-                    b.plain_text.strip()
-                    for b in page.blocks
-                    if b.type == "folio"
-                    and b.plain_text.strip()
-                    and not is_binder_signature(b.plain_text.strip(), page.page_number)
-                ),
-                None,
-            )
-        eff_blocks = [
-            b
-            if (b.printed_folio and not is_binder_signature(b.printed_folio, page.page_number))
-            else b.model_copy(update={"printed_folio": folio})
-            for b in page.blocks
-        ]
-        updated_pages.append(page.model_copy(update={"printed_folio": folio, "blocks": eff_blocks}))
-    for idx, pg in enumerate(updated_pages[:-1]):
-        if not pg.printed_folio and (updated_pages[idx + 1].printed_folio or "").strip() == "2":
-            eff_blks = [b.model_copy(update={"printed_folio": "1"}) for b in pg.blocks]
-            updated_pages[idx] = pg.model_copy(update={"printed_folio": "1", "blocks": eff_blks})
-    return updated_pages
-
-
 def _append_footnote_continuation(
     parent: FootnoteItem,
     blk: BlockIR,
@@ -180,15 +89,15 @@ def _append_footnote_continuation(
     raw_text: str | None = None,
 ) -> None:
     src = blk.tagged_text if raw_text is None else raw_text
-    if join_inline:
-        joined_raw = _join_hyphenated_tagged(parent.tagged_text, src)
-    else:
-        joined_raw = f"{parent.tagged_text.rstrip()}\n\n{src.lstrip()}"
+    joined_raw = (
+        _join_hyphenated_tagged(parent.tagged_text, src)
+        if join_inline
+        else f"{parent.tagged_text.rstrip()}\n\n{src.lstrip()}"
+    )
     tagged, plain, _ = parse_tagged_text(joined_raw)
     parent.tagged_text = tagged
     parent.plain_text = plain
-    if blk.block_id not in parent.block_ids:
-        parent.block_ids.append(blk.block_id)
+    parent.block_ids = list(dict.fromkeys([*parent.block_ids, blk.block_id]))
 
 
 def _stitch_footnote_segment(
@@ -234,42 +143,6 @@ def _stitch_footnote_segment(
     return new_fn
 
 
-def _promote_attested_legacy_sup_callouts(
-    pages: list[PageIR],
-    footnotes: dict[str, FootnoteItem],
-) -> list[PageIR]:
-    fns_by_page: dict[int, set[str]] = {}
-    for fn in footnotes.values():
-        if lbl := normalize_note_label(fn.label):
-            fns_by_page.setdefault(fn.origin_page, set()).add(lbl)
-    out: list[PageIR] = []
-    for page in pages:
-        window = {
-            lbl
-            for off in (-1, 0, 1)
-            for lbl in fns_by_page.get(page.page_number + off, ())
-        } | {normalize_note_label(b.note_label) for b in page.blocks if b.type == "margin_note" and b.note_label}
-        present = {
-            normalize_note_label(m)
-            for b in page.blocks
-            if b.type not in FURNITURE_BLOCK_TYPES and b.type != "footnote"
-            for m in extract_inline_markers(b.tagged_text)
-        }
-        missing = [lbl for lbl in sorted(window - present) if len(lbl) == 1 and lbl.isalpha()]
-        if page.failed_closed or not missing:
-            out.append(page)
-            continue
-        pat = re.compile(r"<sup>\s*(" + "|".join(re.escape(x) for x in missing) + r")\s*</sup>")
-        new_blocks: list[BlockIR] = []
-        for blk in page.blocks:
-            if blk.type not in FURNITURE_BLOCK_TYPES and blk.type != "footnote" and pat.search(blk.tagged_text):
-                t_str, p_str, sp_list = parse_tagged_text(pat.sub(r"<fnref>\1</fnref>", blk.tagged_text))
-                blk = blk.model_copy(update={"tagged_text": t_str, "plain_text": p_str, "spans": sp_list})
-            new_blocks.append(blk)
-        out.append(page.model_copy(update={"blocks": new_blocks}))
-    return out
-
-
 def _stitch_footnotes(pages: list[PageIR]) -> dict[str, FootnoteItem]:
     folio_to_pnum = {
         p.printed_folio.strip(): p.page_number
@@ -286,19 +159,13 @@ def _stitch_footnotes(pages: list[PageIR]) -> dict[str, FootnoteItem]:
             continue
         active_on_page: FootnoteItem | None = None
         for blk in page.blocks:
-            if blk.type == "heading":
-                m_end = _ENDNOTE_PAGE_RE.match(blk.plain_text.strip())
-                if m_end:
-                    endnote_target_folio = m_end.group(1)
-                    endnote_target_page = folio_to_pnum.get(endnote_target_folio)
-                    active_on_page = None
-                    continue
-                if blk.heading_level == 1:
-                    endnote_target_page = None
-                    endnote_target_folio = None
-            elif blk.type in {"letter_header", "index_entry"}:
-                endnote_target_page = None
-                endnote_target_folio = None
+            if blk.type == "heading" and (m_end := _ENDNOTE_PAGE_RE.match(blk.plain_text.strip())):
+                endnote_target_folio = m_end.group(1)
+                endnote_target_page = folio_to_pnum.get(endnote_target_folio)
+                active_on_page = None
+                continue
+            if (blk.type == "heading" and blk.heading_level == 1) or blk.type in {"letter_header", "index_entry"}:
+                endnote_target_page = endnote_target_folio = None
             if blk.type != "footnote":
                 continue
 
@@ -386,7 +253,7 @@ def _link_callouts_to_footnotes(
         for blk in page.blocks:
             if blk.type in FURNITURE_BLOCK_TYPES:
                 continue
-            own_lbl = normalize_note_label(blk.note_label) if blk.type == "footnote" else ""
+            own_lbl = (blk.type == "footnote" and normalize_note_label(blk.note_label)) or ""
             for raw_marker in extract_inline_markers(blk.tagged_text):
                 m_norm = normalize_note_label(raw_marker)
                 if not m_norm or (blk.type == "footnote" and (m_norm == own_lbl or m_norm not in SYMBOL_NOTE_LABELS)):
@@ -419,24 +286,22 @@ def _link_callouts_to_footnotes(
                     continue
                 if m_norm in SYMBOL_NOTE_LABELS and blk.type in _LEGEND_CARRIER_TYPES:
                     legend_by_sym.setdefault(m_norm, matched)
-                if blk.block_id not in matched.referenced_in_block_ids:
-                    matched.referenced_in_block_ids.append(blk.block_id)
+                matched.referenced_in_block_ids = list(dict.fromkeys([*matched.referenced_in_block_ids, blk.block_id]))
                 refs_by_block.setdefault(blk.block_id, []).append(matched.footnote_id)
 
-    for fn in footnotes.values():
-        if not fn.referenced_in_block_ids:
-            fn.is_orphan = True
-            folio_disp = fn.origin_folio or str(fn.origin_page)
-            findings.append(
-                ValidationFinding(
-                    code="unlinked_footnote",
-                    severity="warning",
-                    page_number=fn.origin_page,
-                    block_id=fn.block_ids[0] if fn.block_ids else None,
-                    message=f"[Unlinked note, p. {folio_disp}] Footnote {fn.footnote_id} ({fn.label or 'unlabelled'}) has no matching inline callout.",
-                    evidence={"footnote_id": fn.footnote_id, "label": fn.label},
-                )
+    for fn in [fn for fn in footnotes.values() if not fn.referenced_in_block_ids]:
+        fn.is_orphan = True
+        folio_disp = fn.origin_folio or str(fn.origin_page)
+        findings.append(
+            ValidationFinding(
+                code="unlinked_footnote",
+                severity="warning",
+                page_number=fn.origin_page,
+                block_id=fn.block_ids[0] if fn.block_ids else None,
+                message=f"[Unlinked note, p. {folio_disp}] Footnote {fn.footnote_id} ({fn.label or 'unlabelled'}) has no matching inline callout.",
+                evidence={"footnote_id": fn.footnote_id, "label": fn.label},
             )
+        )
     return refs_by_block, findings
 
 
@@ -462,95 +327,6 @@ def resolve_block_callout_targets(
     return resolved
 
 
-def _boundary_prose_index(blocks: list[BlockIR], *, from_end: bool) -> int | None:
-    indices = range(len(blocks) - 1, -1, -1) if from_end else range(len(blocks))
-    return next((i for i in indices if blocks[i].type not in FLOAT_BLOCK_TYPES), None)
-
-
-def _join_cross_page_pair(
-    left_blk: BlockIR,
-    right_blk: BlockIR,
-    joined_counts: Counter[str],
-    hyphen_counts: Counter[str],
-) -> tuple[BlockIR, BlockIR]:
-    can_harmonize = (
-        left_blk.continues_to_next
-        and right_blk.continues_from_prev
-        and {left_blk.type, right_blk.type} <= _COMPAT_PROSE_TYPES
-        and left_blk.type != right_blk.type
-    )
-    target_type = left_blk.type if can_harmonize else right_blk.type
-    l_raw, r_raw = dedup_or_join_cross_page_tagged(
-        left_blk.tagged_text,
-        right_blk.tagged_text,
-        joined_counts,
-        hyphen_counts,
-    )
-    lt, lp, lsp = parse_tagged_text(l_raw)
-    new_left = left_blk.model_copy(
-        update={"tagged_text": lt, "plain_text": lp, "spans": lsp, "continues_to_next": True}
-    )
-    rt, rp, rsp = parse_tagged_text(r_raw)
-    new_right = right_blk.model_copy(
-        update={
-            "type": target_type,
-            "tagged_text": rt,
-            "plain_text": rp,
-            "spans": rsp,
-            "continues_from_prev": True,
-        }
-    )
-    return new_left, new_right
-
-
-def _apply_cross_page_prose_joins(
-    pages: list[PageIR],
-    *,
-    witness_dir: str | Path | None = None,
-) -> list[BlockIR]:
-    joined_counts, hyphen_counts = count_corpus_word_forms(pages, witness_dir=witness_dir)
-    page_blocks_map: dict[int, list[BlockIR]] = {}
-    for page in pages:
-        if not page.failed_closed:
-            content = [
-                b.model_copy(deep=True)
-                for b in page.blocks
-                if b.type not in FURNITURE_BLOCK_TYPES and b.type != "footnote"
-            ]
-            if content:
-                page_blocks_map[page.page_number] = content
-
-    sorted_pnums = sorted(page_blocks_map)
-    prose_pages = [
-        (pnum, first_i, last_i)
-        for pnum in sorted_pnums
-        if (first_i := _boundary_prose_index(page_blocks_map[pnum], from_end=False)) is not None
-        and (last_i := _boundary_prose_index(page_blocks_map[pnum], from_end=True)) is not None
-    ]
-
-    for idx in range(len(prose_pages) - 1):
-        p_curr, _, left_idx = prose_pages[idx]
-        p_next, right_idx, _ = prose_pages[idx + 1]
-        left_blk = page_blocks_map[p_curr][left_idx]
-        right_blk = page_blocks_map[p_next][right_idx]
-        if (
-            0 < p_next - p_curr <= 4
-            and left_blk.type in CONTINUABLE_PROSE_TYPES
-            and right_blk.type in CONTINUABLE_PROSE_TYPES
-            and right_blk.epistolary_transition != "starts_new_letter"
-            and (left_blk.continues_to_next or right_blk.continues_from_prev)
-        ):
-            if right_blk.alignment == "indented" and not _starts_lowercase(right_blk.plain_text):
-                page_blocks_map[p_curr][left_idx] = left_blk.model_copy(update={"continues_to_next": False})
-                page_blocks_map[p_next][right_idx] = right_blk.model_copy(update={"continues_from_prev": False})
-            else:
-                new_l, new_r = _join_cross_page_pair(left_blk, right_blk, joined_counts, hyphen_counts)
-                page_blocks_map[p_curr][left_idx] = new_l
-                page_blocks_map[p_next][right_idx] = new_r
-
-    return [blk for pnum in sorted_pnums for blk in page_blocks_map[pnum]]
-
-
 def _project_letter_footnotes(
     letters: list[LetterUnit],
     footnotes: dict[str, FootnoteItem],
@@ -560,11 +336,11 @@ def _project_letter_footnotes(
         frame_and_letter = [*lu.preceding_editorial_block_ids, *lu.block_ids, *lu.following_editorial_block_ids]
         direct = list(dict.fromkeys(fid for bid in frame_and_letter for fid in refs_by_block.get(bid, [])))
         sub_fids = [sfid for fid in direct for fn_bid in footnotes[fid].block_ids for sfid in refs_by_block.get(fn_bid, [])]
-        ordered_fids = list(dict.fromkeys([*direct, *sub_fids]))
-        lu.footnote_ids = ordered_fids
-        for fid in ordered_fids:
-            if lu.letter_id not in footnotes[fid].referenced_in_letter_ids:
-                footnotes[fid].referenced_in_letter_ids.append(lu.letter_id)
+        lu.footnote_ids = list(dict.fromkeys([*direct, *sub_fids]))
+        for fid in lu.footnote_ids:
+            footnotes[fid].referenced_in_letter_ids = list(
+                dict.fromkeys([*footnotes[fid].referenced_in_letter_ids, lu.letter_id])
+            )
 
 
 def _project_section_footnotes(
@@ -577,11 +353,9 @@ def _project_section_footnotes(
             dict.fromkeys(fid for item in sec.items for blk in item.blocks for fid in refs_by_block.get(blk.block_id, []))
         )
         sub_fids = [sfid for fid in direct for fn_bid in footnotes[fid].block_ids for sfid in refs_by_block.get(fn_bid, [])]
-        sec_fids = list(dict.fromkeys([*direct, *sub_fids]))
-        sec.footnote_ids = sec_fids
-        for fid in sec_fids:
-            if footnotes[fid].section_id is None:
-                footnotes[fid].section_id = sec.section_id
+        sec.footnote_ids = list(dict.fromkeys([*direct, *sub_fids]))
+        for fid in sec.footnote_ids:
+            footnotes[fid].section_id = footnotes[fid].section_id or sec.section_id
 
 
 def _project_dual_footnotes(
@@ -602,46 +376,7 @@ def _project_dual_footnotes(
             key=lambda s: min(abs(s.start_page - fn.origin_page), abs(s.end_page - fn.origin_page)),
         )
         fn.section_id = target_sec.section_id
-        if fn.footnote_id not in target_sec.footnote_ids:
-            target_sec.footnote_ids.append(fn.footnote_id)
-
-
-def load_pages_from_run_dir(run_dir: str | Path) -> list[PageIR]:
-    """Load extracted `PageIR` objects from a canonical or experiment `run_dir`."""
-    rdir = Path(run_dir)
-    for rel in ("ir/pages.json", "pages.json", "collection_ast.json"):
-        cand = rdir / rel
-        if cand.is_file():
-            raw = json.loads(cand.read_text(encoding="utf-8"))
-            items = raw.get("pages") if isinstance(raw, dict) else raw
-            if isinstance(items, list):
-                return sorted((PageIR.model_validate(p) for p in items), key=lambda p: p.page_number)
-
-    for sub in ("pages", "ir/pages", "extractions"):
-        pdir = rdir / sub
-        if pdir.is_dir():
-            files = sorted(p for p in pdir.glob("*.json") if not p.name.endswith(".raw.json"))
-            if files:
-                return sorted(
-                    (PageIR.model_validate_json(f.read_text(encoding="utf-8")) for f in files),
-                    key=lambda p: p.page_number,
-                )
-    raise FileNotFoundError(f"No extracted PageIR artifacts found in {rdir}")
-
-
-def _read_ledger_spend(run_dir: Path | None, pages: list[PageIR]) -> float:
-    page_sum = round(sum(float(p.cost_usd or 0.0) for p in pages), 6)
-    if run_dir is None:
-        return page_sum
-    ledger_file = run_dir / "cost_ledger.jsonl"
-    if not ledger_file.is_file():
-        return page_sum
-    total = 0.0
-    for line in ledger_file.read_text(encoding="utf-8").splitlines():
-        if line.strip():
-            rec = json.loads(line)
-            total += float(rec.get("cost_usd") or 0.0)
-    return round(max(total, page_sum), 6)
+        target_sec.footnote_ids = list(dict.fromkeys([*target_sec.footnote_ids, fn.footnote_id]))
 
 
 def _resolve_book_metadata(
@@ -653,19 +388,16 @@ def _resolve_book_metadata(
     archive_id: str | None,
     active_run_id: str,
     repo_root: str | Path | None,
-) -> tuple[str, str, str, int | None, str | None, str]:
-    repo = RepoPaths.from_root(repo_root)
-    toml_path = repo.book_dir(book_id) / "book.toml"
-    if not toml_path.is_file():
-        return (title or book_id, collection, author_or_editor, year, archive_id, active_run_id)
-    cfg = BookConfig.load(book_id, paths=repo)
-    return (
-        title or cfg.title or book_id,
-        collection if collection != "world-correspondence" else (cfg.collection or collection),
-        author_or_editor or cfg.author_or_editor,
-        cfg.year if year is None else year,
-        archive_id or cfg.archive_id or None,
-        (cfg.active_run_id or active_run_id) if active_run_id == "manual" else active_run_id,
+) -> dict[str, Any]:
+    return BookConfig.resolve_collection_defaults(
+        book_id,
+        title=title,
+        collection=collection,
+        author_or_editor=author_or_editor,
+        year=year,
+        archive_id=archive_id,
+        active_run_id=active_run_id,
+        repo_root=repo_root,
     )
 
 
@@ -689,16 +421,12 @@ def compile_collection_ast(
     total_spend_usd: float | None = None,
 ) -> CollectionAST:
     """Compile extracted `PageIR`s into a unified `CollectionAST` for Book + Standalone Letter editions."""
-    eff_title, eff_coll, eff_author, eff_year, eff_archive, eff_run = _resolve_book_metadata(
+    meta = _resolve_book_metadata(
         book_id, title, collection, author_or_editor, year, archive_id, active_run_id, repo_root
     )
-    resolved_run_dir = Path(run_dir) if run_dir is not None else None
-    if pages is None:
-        if resolved_run_dir is None:
-            resolved_run_dir = RepoPaths.from_root(repo_root).find_run_dir(book_id, eff_run)
-        raw_pages = load_pages_from_run_dir(resolved_run_dir)
-    else:
-        raw_pages = list(pages)
+    eff_title = str(meta["title"])
+    eff_run = str(meta["active_run_id"])
+    raw_pages, resolved_run_dir = resolve_compile_pages(pages, run_dir, book_id, eff_run, repo_root)
 
     overlaid_pages, proof_summary = apply_corrections_and_proof_overlay(
         raw_pages,
@@ -711,8 +439,8 @@ def compile_collection_ast(
     dehyphenated_pages, _ = resolve_page_ir_line_wraps(overlaid_pages, witness_dir=witness_dir)
     folio_pages = _promote_page_symbol_callouts(_propagate_page_folios(dehyphenated_pages))
 
-    eff_letter_map = letter_map if letter_map is not None else load_letter_map(book_id, repo_root=repo_root)
-    eff_chapter_map = chapter_map if chapter_map is not None else load_chapter_map(book_id, repo_root=repo_root)
+    eff_letter_map = load_letter_map(book_id, repo_root=repo_root) if letter_map is None else letter_map
+    eff_chapter_map = load_chapter_map(book_id, repo_root=repo_root) if chapter_map is None else chapter_map
 
     footnotes = _stitch_footnotes(folio_pages)
     folio_pages = _promote_attested_legacy_sup_callouts(folio_pages, footnotes)
@@ -747,23 +475,24 @@ def compile_collection_ast(
     )
     _project_dual_footnotes(sections, letters, footnotes, refs_by_block)
 
-    model_breakdown: dict[str, int] = {}
-    for p in folio_pages:
-        if not p.failed_closed:
-            key = f"{p.provider}/{p.model}".strip("/") or "unknown"
-            model_breakdown[key] = model_breakdown.get(key, 0) + 1
-
-    eff_total_pages = total_pages if total_pages is not None else (max(all_pnums) if all_pnums else 0)
-    eff_spend = total_spend_usd if total_spend_usd is not None else _read_ledger_spend(resolved_run_dir, folio_pages)
+    model_breakdown = dict(
+        Counter(f"{p.provider}/{p.model}".strip("/") or "unknown" for p in folio_pages if not p.failed_closed)
+    )
+    eff_total_pages = max(all_pnums, default=0) if total_pages is None else total_pages
+    eff_spend = _read_ledger_spend(resolved_run_dir, folio_pages) if total_spend_usd is None else total_spend_usd
 
     return CollectionAST(
         book_id=book_id,
-        collection=eff_coll,
+        collection=str(meta["collection"]),
         title=eff_title,
-        author_or_editor=eff_author,
-        year=eff_year,
-        archive_id=eff_archive,
+        author_or_editor=str(meta["author_or_editor"]),
+        year=meta["year"],
+        archive_id=meta["archive_id"],
         active_run_id=eff_run,
+        language=str(meta["language"]),
+        text_direction=meta["text_direction"],
+        series_id=meta["series_id"],
+        volume_number=meta["volume_number"],
         total_pages=eff_total_pages,
         pages=folio_pages,
         sections=sections,

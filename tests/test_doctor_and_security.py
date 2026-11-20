@@ -9,7 +9,7 @@ from pathlib import Path
 import pytest
 
 from lanterns.core.paths import RepoPaths
-from lanterns.renderers.doctor import run_doctor
+from lanterns.ops.doctor import run_doctor
 from lanterns.validation.architecture_guard import evaluate_epistolary_exam, run_architecture_guard
 
 REPO_ROOT = Path(__file__).resolve().parents[1]

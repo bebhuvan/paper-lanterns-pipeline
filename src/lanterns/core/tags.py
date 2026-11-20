@@ -43,6 +43,8 @@ _ANY_ANGLE_TAG_RE = re.compile(r"</?([A-Za-z][A-Za-z0-9_-]*)(?:\s[^>]*)?>")
 _HTML_BR_RE = re.compile(r"<br\s*/?>", re.IGNORECASE)
 _SMALL_CAPS_SPAN_RE = re.compile(r"<span\b[^>]*(?:small[-_ ]?caps|\bsc\b)[^>]*>([\s\S]*?)</span>", re.IGNORECASE)
 _BARE_SPAN_TAG_RE = re.compile(r"</?span(?:\s[^>]*)?>", re.IGNORECASE)
+SYMBOL_NOTE_LABELS = frozenset({"*", "**", "†", "‡", "§", "‖", "||", "¶"})
+_LEADING_NOTE_SUP_RE = re.compile(r"^\s*<(?:sup|fnref)>\s*([^<]+?)\s*</(?:sup|fnref)>\s*")
 
 
 def escape_html(text: str, *, quote: bool = True) -> str:
@@ -376,3 +378,26 @@ def resolve_endnote_row_target(
         if mapped_page is not None and mapped_page < current_page and (not norm_lbl or norm_lbl == lbl_tok):
             return mapped_page, folio_tok, lbl_tok, rest_text
     return target_page, target_folio, norm_lbl, tagged_text
+
+
+def normalize_note_label(raw_label: str | None) -> str:
+    """Normalize printed footnote marker for deterministic callout-to-note pairing."""
+    if raw_label is None:
+        return ""
+    cleaned = str(raw_label).strip().strip("()[]")
+    if cleaned.endswith(".") and len(cleaned) > 1 and cleaned[:-1].isalnum():
+        cleaned = cleaned[:-1]
+    return cleaned.strip()
+
+
+def strip_redundant_leading_label(tagged_text: str, norm_label: str) -> str:
+    """Strip a redundant leading superscript/symbol/parenthesized marker matching `norm_label`."""
+    if not norm_label:
+        return tagged_text
+    match = _LEADING_NOTE_SUP_RE.match(tagged_text)
+    if match and normalize_note_label(match.group(1)) == norm_label:
+        rest = tagged_text[match.end() :].lstrip()
+        return rest or tagged_text
+    if norm_label in SYMBOL_NOTE_LABELS and tagged_text.startswith(f"{norm_label} "):
+        return tagged_text[len(norm_label) :].lstrip()
+    return re.sub(rf"^\s*\(\s*{re.escape(norm_label)}\s*\)\s*", "", tagged_text) or tagged_text

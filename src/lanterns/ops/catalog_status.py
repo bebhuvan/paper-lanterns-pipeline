@@ -15,9 +15,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from lanterns.core.atomic import atomic_write_text
 from lanterns.core.config import BookConfig
 from lanterns.core.paths import RepoPaths
-from lanterns.renderers.html_utils import atomic_write_text
 
 
 def _dir_size_bytes(path: Path) -> int:

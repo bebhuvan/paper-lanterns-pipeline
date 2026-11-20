@@ -9,15 +9,13 @@ INVARIANT: Never inspects prose content words, never branches on book_id, never 
 from __future__ import annotations
 
 import html
-import json
-import os
 import re
-import tempfile
 import unicodedata
 from pathlib import Path
 from typing import Any
 
-from lanterns.core.models import BlockIR, FootnoteItem
+from lanterns.core.atomic import atomic_write_json, atomic_write_text
+from lanterns.core.models import BlockIR, FootnoteItem, TableCell
 from lanterns.core.tags import split_tagged_lines_balanced
 
 ALLOWED_INLINE_TAGS: frozenset[str] = frozenset({"i", "b", "sc", "fnref", "sup", "sub", "unclear"})
@@ -155,27 +153,10 @@ _LIGATURE_SEARCH_MAP: dict[str, str] = {
 }
 
 
-def atomic_write_text(path: str | Path, content: str) -> Path:
-    """Atomically write UTF-8 text via temporary file + os.replace."""
-    target = Path(path)
-    target.parent.mkdir(parents=True, exist_ok=True)
-    fd, tmp_name = tempfile.mkstemp(dir=str(target.parent), prefix=f".{target.name}.", suffix=".tmp")
-    tmp_path = Path(tmp_name)
-    try:
-        with os.fdopen(fd, "w", encoding="utf-8", newline="\n") as handle:
-            handle.write(content)
-        os.replace(tmp_path, target)
-    except OSError:
-        if tmp_path.exists():
-            tmp_path.unlink()
-        raise
-    return target
-
-
-def atomic_write_json(path: str | Path, payload: Any) -> Path:
-    """Atomically write pretty-printed UTF-8 JSON."""
-    serialized = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
-    return atomic_write_text(path, serialized)
+_MD_STRIP_FOLIO_RE = re.compile(r"\[\[(?:FN)?FOLIO:\d+:[^\]]*\]\]\s*")
+_MD_STRIP_NOTE_RE = re.compile(r"\[\[NOTE:([^:\]]+):(?:\d+:)?[^\]]+\]\]")
+_HTML_INLINE_TAG_MAP = {"blockquote": "blockquote", "epigraph": "blockquote"}
+__all___atomic_keep = (atomic_write_json, atomic_write_text)
 
 
 def sanitize_xml_id(raw_id: str, prefix: str = "id") -> str:
@@ -284,10 +265,10 @@ def _format_folio_html(
     epub: bool,
 ) -> str:
     fol_esc = html.escape(folio_label.strip() or str(page_number or ""), quote=True)
-    id_attr = ""
-    if page_number is not None and seen_page_ids is not None and page_number not in seen_page_ids:
+    is_new_id = page_number is not None and seen_page_ids is not None and page_number not in seen_page_ids
+    if is_new_id and seen_page_ids is not None and page_number is not None:
         seen_page_ids.add(page_number)
-        id_attr = f' id="page-{page_number}"'
+    id_attr = f' id="page-{page_number}"' if is_new_id else ""
     if epub:
         pb_attrs = f' epub:type="pagebreak" role="doc-pagebreak" title="{fol_esc}"' if id_attr else ""
         return f'<span{id_attr} class="folio-marker"{pb_attrs}>[p. {fol_esc}]</span>'
@@ -432,54 +413,27 @@ def render_inline_html(
     """Convert constrained `tagged_text` into valid XHTML/HTML5 with bidirectional `#fnref` and folio links."""
     registry = ref_registry if ref_registry is not None else {}
     queue = _build_callout_queue(block_footnotes)
-    if cascading and "\n" in tagged_text:
-        lines = [ln for ln in split_tagged_lines_balanced(tagged_text) if ln.strip()]
-        rendered_lines = [
-            f'<span class="cascade-line" style="--cascade-step: {step};">'
-            + _render_single_line_html(
-                ln,
-                callout_queue=queue,
-                available_footnotes=available_footnotes,
-                ref_registry=registry,
-                seen_page_ids=seen_page_ids,
-                folio_to_page=folio_to_page,
-                default_page=default_page,
-                proof_href_prefix=proof_href_prefix,
-                epub=epub,
-            )
-            + "</span>"
-            for step, ln in enumerate(lines)
-        ]
-        return "<br />\n".join(rendered_lines)
-
-    if preserve_line_breaks and "\n" in tagged_text:
-        lines = split_tagged_lines_balanced(tagged_text)
-        return "<br />\n".join(
-            _render_single_line_html(
-                ln,
-                callout_queue=queue,
-                available_footnotes=available_footnotes,
-                ref_registry=registry,
-                seen_page_ids=seen_page_ids,
-                folio_to_page=folio_to_page,
-                default_page=default_page,
-                proof_href_prefix=proof_href_prefix,
-                epub=epub,
-            )
-            for ln in lines
+    is_multi = (cascading or preserve_line_breaks) and "\n" in tagged_text
+    lines = split_tagged_lines_balanced(tagged_text) if is_multi else [tagged_text]
+    if cascading and is_multi:
+        lines = [ln for ln in lines if ln.strip()]
+    rendered = [
+        _render_single_line_html(
+            ln,
+            callout_queue=queue,
+            available_footnotes=available_footnotes,
+            ref_registry=registry,
+            seen_page_ids=seen_page_ids,
+            folio_to_page=folio_to_page,
+            default_page=default_page,
+            proof_href_prefix=proof_href_prefix,
+            epub=epub,
         )
-
-    return _render_single_line_html(
-        tagged_text,
-        callout_queue=queue,
-        available_footnotes=available_footnotes,
-        ref_registry=registry,
-        seen_page_ids=seen_page_ids,
-        folio_to_page=folio_to_page,
-        default_page=default_page,
-        proof_href_prefix=proof_href_prefix,
-        epub=epub,
-    )
+        for ln in lines
+    ]
+    if cascading and is_multi:
+        rendered = [f'<span class="cascade-line" style="--cascade-step: {i};">{s}</span>' for i, s in enumerate(rendered)]
+    return "<br />\n".join(rendered)
 
 
 def block_css_classes(block: BlockIR) -> str:
@@ -494,6 +448,16 @@ def block_css_classes(block: BlockIR) -> str:
     if block.epistolary_transition == "starts_enclosure":
         classes.append("enclosure-start")
     return " ".join(classes)
+
+
+def collect_section_footnotes(section: Any, ast: Any) -> tuple[list[str], dict[str, FootnoteItem]]:
+    """Collect ordered footnote IDs and subset map for a `BookSection` across its letters."""
+    ordered_ids: list[str] = list(section.footnote_ids)
+    letters_by_id = {ltr.letter_id: ltr for ltr in ast.letters}
+    for item in section.items:
+        if item.kind == "letter" and item.letter_id in letters_by_id:
+            ordered_ids = list(dict.fromkeys([*ordered_ids, *letters_by_id[item.letter_id].footnote_ids]))
+    return ordered_ids, {fid: ast.footnotes[fid] for fid in ordered_ids if fid in ast.footnotes}
 
 
 def footnotes_by_block_map(
@@ -520,6 +484,31 @@ def render_unavailable_page_banner(page_number: int, *, proof_href_prefix: str |
             f'<a href="{href}">{html.escape(msg)}</a></div>'
         )
     return f'<div id="page-{page_number}" class="page-unavailable" role="alert">{html.escape(msg)}</div>'
+
+
+def render_inline_markdown(tagged_text: str, block_footnotes: list[FootnoteItem] | None = None) -> str:
+    """Convert constrained inline tags + footnotes into Scholarly Markdown text."""
+    fn_queue: dict[str, list[str]] = {}
+    for fn in block_footnotes or []:
+        fn_queue.setdefault(fn.label.strip().strip("[]()"), []).append(fn.footnote_id)
+    tokens = tokenize_tagged_text(tagged_text)
+    out: list[str] = []
+    idx = 0
+    while idx < len(tokens):
+        kind, val = tokens[idx]
+        is_fn = kind == "open" and val in {"fnref", "sup"} and idx + 2 < len(tokens) and tokens[idx + 1][0] == "text" and tokens[idx + 2] == ("close", val)
+        bucket = fn_queue.get(tokens[idx + 1][1].strip().strip("[]()")) if is_fn else None
+        if bucket:
+            out.append(f"[^{bucket.pop(0)}]")
+            idx += 3
+            continue
+        if kind == "text":
+            cleaned = _MD_STRIP_FOLIO_RE.sub("", val)
+            out.append(_MD_STRIP_NOTE_RE.sub(r"[^\1]", cleaned))
+        else:
+            out.append((MD_TAG_OPEN if kind == "open" else MD_TAG_CLOSE)[val])
+        idx += 1
+    return "".join(out)
 
 
 def _render_table_group_html(
@@ -552,49 +541,26 @@ def _render_table_group_html(
     head_rows: list[str] = []
     body_rows: list[str] = []
     for r_blk in row_blocks:
-        is_hdr = r_blk.table_role == "header"
-        cell_tag = "th" if is_hdr else "td"
-        cells = r_blk.cells or []
-        if not cells:
-            raw_parts = [p.strip() for p in r_blk.tagged_text.split("|")]
-            rendered_cells = [
-                f"<{cell_tag}>"
-                + render_inline_html(
-                    part,
-                    block_footnotes=fn_by_block.get(r_blk.block_id),
-                    available_footnotes=available_footnotes,
-                    ref_registry=ref_registry,
-                    seen_page_ids=seen_page_ids,
-                    folio_to_page=folio_to_page,
-                    default_page=r_blk.page_number,
-                    proof_href_prefix=proof_href_prefix,
-                    epub=epub,
-                )
-                + f"</{cell_tag}>"
-                for part in raw_parts
-            ]
-        else:
-            rendered_cells = []
-            for cell in cells:
-                cs = f' colspan="{cell.colspan}"' if cell.colspan > 1 else ""
-                rs = f' rowspan="{cell.rowspan}"' if cell.rowspan > 1 else ""
-                c_inner = render_inline_html(
-                    cell.text,
-                    block_footnotes=fn_by_block.get(r_blk.block_id),
-                    available_footnotes=available_footnotes,
-                    ref_registry=ref_registry,
-                    seen_page_ids=seen_page_ids,
-                    folio_to_page=folio_to_page,
-                    default_page=r_blk.page_number,
-                    proof_href_prefix=proof_href_prefix,
-                    epub=epub,
-                )
-                rendered_cells.append(f"<{cell_tag}{cs}{rs}>{c_inner}</{cell_tag}>")
+        cell_tag = "th" if r_blk.table_role == "header" else "td"
+        cells = r_blk.cells or [TableCell(text=p.strip()) for p in r_blk.tagged_text.split("|")]
+        rendered_cells: list[str] = []
+        for cell in cells:
+            cs = f' colspan="{cell.colspan}"' if cell.colspan > 1 else ""
+            rs = f' rowspan="{cell.rowspan}"' if cell.rowspan > 1 else ""
+            c_inner = render_inline_html(
+                cell.text,
+                block_footnotes=fn_by_block.get(r_blk.block_id),
+                available_footnotes=available_footnotes,
+                ref_registry=ref_registry,
+                seen_page_ids=seen_page_ids,
+                folio_to_page=folio_to_page,
+                default_page=r_blk.page_number,
+                proof_href_prefix=proof_href_prefix,
+                epub=epub,
+            )
+            rendered_cells.append(f"<{cell_tag}{cs}{rs}>{c_inner}</{cell_tag}>")
         row_html = f"<tr>{''.join(rendered_cells)}</tr>"
-        if is_hdr:
-            head_rows.append(row_html)
-        else:
-            body_rows.append(row_html)
+        (head_rows if r_blk.table_role == "header" else body_rows).append(row_html)
 
     thead = f"<thead>{''.join(head_rows)}</thead>" if head_rows else ""
     tbody = f"<tbody>{''.join(body_rows or head_rows)}</tbody>" if (body_rows or not head_rows) else "<tbody></tbody>"
@@ -638,15 +604,10 @@ def render_single_block_html(
         epub=epub,
     )
     if block.type == "ornamental_break":
-        glyph = inner.strip() or "* * *"
-        return f'<div id="{bid}" class="{cls}" role="separator">{glyph}</div>'
-    if block.type == "heading":
-        lvl = min(6, max(2, heading_base + max(0, (block.heading_level or 2) - 1)))
+        return f'<div id="{bid}" class="{cls}" role="separator">{inner.strip() or "* * *"}</div>'
+    if block.type in {"heading", "letter_header"}:
+        lvl = heading_base if block.type == "letter_header" else min(6, max(2, heading_base + max(0, (block.heading_level or 2) - 1)))
         return f'<h{lvl} id="{bid}" class="{cls}">{inner}</h{lvl}>'
-    if block.type == "letter_header":
-        return f'<h{heading_base} id="{bid}" class="{cls}">{inner}</h{heading_base}>'
-    if block.type in {"blockquote", "epigraph"}:
-        return f'<blockquote id="{bid}" class="{cls}">{inner}</blockquote>'
     if block.type == "margin_note":
         side_cls = "margin-right" if (block.bbox and block.bbox[0] >= 500) else "margin-left"
         return f'<aside id="{bid}" class="{cls} {side_cls}" role="note">{inner}</aside>'
@@ -654,7 +615,8 @@ def render_single_block_html(
         label = "Facsimile plate" if block.type == "facsimile_plate" else "Illustration"
         desc = inner or html.escape(f"[{label} on p. {block.printed_folio or block.page_number}]")
         return f'<figure id="{bid}" class="{cls}"><figcaption>{desc}</figcaption></figure>'
-    return f'<p id="{bid}" class="{cls}">{inner}</p>'
+    tag = _HTML_INLINE_TAG_MAP.get(block.type, "p")
+    return f'<{tag} id="{bid}" class="{cls}">{inner}</{tag}>'
 
 
 _LEADING_BRACKET_FOLIO_RE = re.compile(r"^\s*\[p\.\s*([^\]]+?)\]\s*")
@@ -928,18 +890,17 @@ def render_footnotes_apparatus_html(
 ) -> str:
     """Render bidirectional `#fn-...` <-> `#fnref-...` footnote apparatus."""
     items_out: list[str] = []
-    seen_fn: set[str] = set()
-    for fid in footnote_ids:
-        if fid in seen_fn or fid not in footnotes_map:
+    for fid in dict.fromkeys(footnote_ids):
+        fn = footnotes_map.get(fid)
+        if fn is None:
             continue
-        seen_fn.add(fid)
-        fn = footnotes_map[fid]
         dom_id = html.escape(fn_anchor_id(fn.footnote_id), quote=True)
         lbl_esc = html.escape(fn.label or "*", quote=False)
-        orphan_badge = ""
-        if fn.is_orphan:
-            fol = html.escape(fn.origin_folio or str(fn.origin_page))
-            orphan_badge = f'<span class="fn-orphan-tag">[Unlinked note, p. {fol}]</span> '
+        orphan_badge = (
+            f'<span class="fn-orphan-tag">[Unlinked note, p. {html.escape(fn.origin_folio or str(fn.origin_page))}]</span> '
+            if fn.is_orphan
+            else ""
+        )
         body_html = render_inline_html(
             fn.tagged_text,
             available_footnotes=footnotes_map,
@@ -951,31 +912,47 @@ def render_footnotes_apparatus_html(
             epub=epub,
         )
         refs = ref_registry.get(fn.footnote_id) or []
-        backlink = ""
-        if refs:
-            first_ref = html.escape(refs[0], quote=True)
-            backlink = f' <a class="fn-backlink" href="#{first_ref}" aria-label="Return to text">↩</a>'
-        if epub:
-            items_out.append(
-                f'<aside id="{dom_id}" epub:type="footnote" class="fn-item">'
-                f'<p><span class="fn-label">{lbl_esc}.</span> {orphan_badge}{body_html}{backlink}</p></aside>'
-            )
-        else:
-            items_out.append(
-                f'<li id="{dom_id}" class="fn-item" role="doc-footnote">'
-                f'<span class="fn-label">{lbl_esc}.</span> '
-                f'<span class="fn-body">{orphan_badge}{body_html}{backlink}</span></li>'
-            )
+        backlink = (
+            f' <a class="fn-backlink" href="#{html.escape(refs[0], quote=True)}" aria-label="Return to text">↩</a>'
+            if refs
+            else ""
+        )
+        items_out.append(
+            f'<aside id="{dom_id}" epub:type="footnote" class="fn-item"><p><span class="fn-label">{lbl_esc}.</span> {orphan_badge}{body_html}{backlink}</p></aside>'
+            if epub
+            else f'<li id="{dom_id}" class="fn-item" role="doc-footnote"><span class="fn-label">{lbl_esc}.</span> <span class="fn-body">{orphan_badge}{body_html}{backlink}</span></li>'
+        )
     if not items_out:
         return ""
     h_esc = html.escape(heading_label)
-    if epub:
-        return f'<section epub:type="footnotes" class="apparatus-notes"><h3>{h_esc}</h3>{"".join(items_out)}</section>'
+    body = "".join(items_out)
     return (
-        f'<section class="apparatus-notes" role="doc-endnotes">'
-        f'<h3 class="apparatus-heading">{h_esc}</h3>'
-        f'<ol class="fn-list">{"".join(items_out)}</ol></section>'
+        f'<section epub:type="footnotes" class="apparatus-notes"><h3>{h_esc}</h3>{body}</section>'
+        if epub
+        else f'<section class="apparatus-notes" role="doc-endnotes"><h3 class="apparatus-heading">{h_esc}</h3><ol class="fn-list">{body}</ol></section>'
     )
+
+
+def resolve_has_local_scans(edition_dir: Path, override: bool | None) -> bool:
+    """Return whether local scan images exist under `<edition_dir>/proofing/scans/`."""
+    if override is not None:
+        return override
+    return any(
+        p.suffix.lower() in {".png", ".webp", ".jpg", ".jpeg"}
+        for p in (edition_dir / "proofing" / "scans").glob("page_*.*")
+    )
+
+
+def render_optional_links(specs: tuple[tuple[bool, str], ...], sep: str = "") -> str:
+    """Concatenate HTML fragments whose condition flag is true."""
+    return sep.join(fragment for enabled, fragment in specs if enabled)
+
+
+def render_pager_slot(href: str | None, label: str | None) -> str:
+    """Render an optional pager link or spacer span."""
+    if not href or not label:
+        return "<span></span>"
+    return f'<a href="{html.escape(href, quote=True)}">{html.escape(label)}</a>'
 
 
 EDITORIAL_SHARED_CSS = """/* Paper Lanterns v2 — Scholarly Letterpress & Epistolary Edition Stylesheet */

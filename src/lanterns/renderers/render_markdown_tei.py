@@ -17,8 +17,6 @@ from typing import Any
 from lanterns.core.models import BlockIR, CollectionAST, FootnoteItem, LetterUnit
 from lanterns.core.tags import split_tagged_lines_balanced
 from lanterns.renderers.html_utils import (
-    MD_TAG_CLOSE,
-    MD_TAG_OPEN,
     TEI_TAG_CLOSE,
     TEI_TAG_OPEN,
     alloc_fnref_id,
@@ -27,6 +25,7 @@ from lanterns.renderers.html_utils import (
     count_redundant_leading_headings,
     fn_anchor_id,
     footnotes_by_block_map,
+    render_inline_markdown,
     sanitize_xml_id,
     tokenize_tagged_text,
 )
@@ -36,6 +35,24 @@ _TEI_TEXT_MARKER_RE = re.compile(
     r"|\[\[(?:FN)?FOLIO:(\d+):([^\]]*)\]\]"
     r"|\[p\.\s*([^\]]+?)\]"
 )
+_MD_LINE_PREFIX = {
+    "heading": "### ",
+    "letter_header": "### ",
+    "blockquote": "> ",
+    "epigraph": "> ",
+}
+_TEI_BLOCK_WRAPS: dict[str, tuple[str, str]] = {
+    "heading": ("", "head"),
+    "letter_header": ("", "head"),
+    "salutation": ("opener", "salute"),
+    "valediction": ("closer", "salute"),
+    "signature": ("closer", "signed"),
+    "postscript": ("postscript", "p"),
+    "blockquote": ("quote", "p"),
+    "epigraph": ("quote", "p"),
+    "address_block": ("opener", "address><addrLine"),
+    "verse": ("lg", "l"),
+}
 
 
 def corresp_xml_id(letter_id: str) -> str:
@@ -44,39 +61,7 @@ def corresp_xml_id(letter_id: str) -> str:
     return sanitize_xml_id(raw if raw.startswith("letter-") else f"letter-{raw}", "letter")
 
 
-def _md_inline(tagged_text: str, block_footnotes: list[FootnoteItem] | None = None) -> str:
-    fn_queue: dict[str, list[str]] = {}
-    for fn in block_footnotes or []:
-        fn_queue.setdefault(fn.label.strip().strip("[]()"), []).append(fn.footnote_id)
-    tokens = tokenize_tagged_text(tagged_text)
-    out: list[str] = []
-    idx = 0
-    while idx < len(tokens):
-        kind, val = tokens[idx]
-        if (
-            kind == "open"
-            and val in {"fnref", "sup"}
-            and idx + 2 < len(tokens)
-            and tokens[idx + 1][0] == "text"
-            and tokens[idx + 2] == ("close", val)
-        ):
-            lbl = tokens[idx + 1][1].strip().strip("[]()")
-            bucket = fn_queue.get(lbl)
-            if bucket:
-                fid = bucket.pop(0)
-                out.append(f"[^{fid}]")
-                idx += 3
-                continue
-        if kind == "open":
-            out.append(MD_TAG_OPEN[val])
-        elif kind == "close":
-            out.append(MD_TAG_CLOSE[val])
-        else:
-            cleaned = re.sub(r"\[\[(?:FN)?FOLIO:\d+:[^\]]*\]\]\s*", "", val)
-            cleaned = re.sub(r"\[\[NOTE:([^:\]]+):(?:\d+:)?[^\]]+\]\]", r"[^\1]", cleaned)
-            out.append(cleaned)
-        idx += 1
-    return "".join(out)
+_md_inline = render_inline_markdown
 
 
 def _md_block_lines(
@@ -100,36 +85,26 @@ def _md_block_lines(
             rows: list[list[str]] = []
             while idx < len(blocks) and blocks[idx].type == "table_row":
                 rblk = blocks[idx]
-                cells = [ _md_inline(c.text, fn_by_block.get(rblk.block_id)).replace("\n", " ") for c in (rblk.cells or []) ]
-                if not cells:
-                    cells = [p.strip() for p in _md_inline(rblk.tagged_text, fn_by_block.get(rblk.block_id)).split("|")]
-                rows.append(cells)
+                raw_parts = [c.text for c in (rblk.cells or ())] or rblk.tagged_text.split("|")
+                rows.append([_md_inline(p, fn_by_block.get(rblk.block_id)).replace("\n", " ").strip() for p in raw_parts])
                 idx += 1
             if rows:
                 width = max(len(r) for r in rows)
                 padded = [r + [""] * (width - len(r)) for r in rows]
-                lines.append("| " + " | ".join(padded[0]) + " |")
-                lines.append("| " + " | ".join("---" for _ in range(width)) + " |")
-                for r in padded[1:]:
-                    lines.append("| " + " | ".join(r) + " |")
+                lines.extend(["| " + " | ".join(padded[0]) + " |", "| " + " | ".join("---" for _ in range(width)) + " |"])
+                lines.extend("| " + " | ".join(r) + " |" for r in padded[1:])
                 lines.append("")
             continue
 
         txt = _md_inline(blk.tagged_text, fn_by_block.get(blk.block_id))
-        if blk.type == "heading":
-            lines.append(f"### {txt}\n")
-        elif blk.type == "letter_header":
-            lines.append(f"### {txt}\n")
-        elif blk.type in {"blockquote", "epigraph"}:
-            lines.append(f"> {txt}\n")
-        elif blk.type == "list_item":
+        if blk.type == "list_item":
             lines.append(f"- {txt}")
         elif blk.type == "ornamental_break":
             lines.append("* * *\n")
-        elif blk.line_breaks_preserved or blk.type == "verse":
-            lines.append("  \n".join(txt.split("\n")) + "\n")
         else:
-            lines.append(f"{txt}\n")
+            prefix = _MD_LINE_PREFIX.get(blk.type, "")
+            body = "  \n".join(txt.split("\n")) if (not prefix and (blk.line_breaks_preserved or blk.type == "verse")) else txt
+            lines.append(f"{prefix}{body}\n")
         idx += 1
     return lines
 
@@ -164,9 +139,7 @@ def render_scholarly_markdown(ast: CollectionAST, edition_dir: str | Path) -> di
                 corr = " → ".join(p for p in (ltr.metadata.sender_display, ltr.metadata.recipient_display) if p)
                 lines.append(f"### Letter {ltr.sequence_index}{': ' + corr if corr else ''}\n")
                 lines.extend(_md_block_lines(ltr.blocks, fn_by_block))
-                for fid in ltr.footnote_ids:
-                    if fid not in sec_fn_ids:
-                        sec_fn_ids.append(fid)
+                sec_fn_ids = list(dict.fromkeys([*sec_fn_ids, *ltr.footnote_ids]))
             elif item.blocks:
                 lines.extend(
                     _md_block_lines(
@@ -324,31 +297,18 @@ def _render_tei_block(
         preserve_lb=preserve_lb,
     )
     rend = f' rend="{html.escape(blk.alignment, quote=True)}"' if blk.alignment != "left" else ""
-
-    if blk.type in {"heading", "letter_header"}:
-        return f"{pb_prefix}<head{rend}>{inner}</head>"
+    if blk.type == "ornamental_break":
+        return f'{pb_prefix}<milestone unit="section" rend="ornament"/>'
+    if blk.type == "margin_note":
+        return f'{pb_prefix}<note place="margin">{inner}</note>'
     if blk.type == "dateline":
         wrap = "closer" if seen_prose_before_dateline else "opener"
         return f"{pb_prefix}<{wrap}><dateline{rend}>{inner}</dateline></{wrap}>"
-    if blk.type == "salutation":
-        return f"{pb_prefix}<opener><salute{rend}>{inner}</salute></opener>"
-    if blk.type == "valediction":
-        return f"{pb_prefix}<closer><salute{rend}>{inner}</salute></closer>"
-    if blk.type == "signature":
-        return f"{pb_prefix}<closer><signed{rend}>{inner}</signed></closer>"
-    if blk.type == "postscript":
-        return f"{pb_prefix}<postscript><p{rend}>{inner}</p></postscript>"
+    outer, inner_tag = _TEI_BLOCK_WRAPS.get(blk.type, ("", "p"))
+    core_el = f"<{inner_tag}{rend if blk.type in {'heading', 'letter_header', 'salutation', 'valediction', 'signature', 'postscript', 'blockquote', 'epigraph', 'body'} or not outer else ''}>{inner}</{inner_tag.split('><')[0]}>"
     if blk.type == "address_block":
         return f"{pb_prefix}<opener><address><addrLine>{inner}</addrLine></address></opener>"
-    if blk.type == "verse":
-        return f"{pb_prefix}<lg><l>{inner}</l></lg>"
-    if blk.type in {"blockquote", "epigraph"}:
-        return f"{pb_prefix}<quote><p{rend}>{inner}</p></quote>"
-    if blk.type == "margin_note":
-        return f'{pb_prefix}<note place="margin">{inner}</note>'
-    if blk.type == "ornamental_break":
-        return f'{pb_prefix}<milestone unit="section" rend="ornament"/>'
-    return f"{pb_prefix}<p{rend}>{inner}</p>"
+    return f"{pb_prefix}<{outer}>{core_el}</{outer}>" if outer else f"{pb_prefix}{core_el}"
 
 
 def _render_tei_block_stream(
@@ -407,33 +367,19 @@ def _render_tei_block_stream(
             while idx < len(blocks) and blocks[idx].type == "table_row":
                 rblk = blocks[idx]
                 row_pb = _tei_pb_if_needed(rblk, seen_pb_pages, used_ids)
-                cells = rblk.cells or []
-                if cells:
-                    c_xml = [
-                        "<cell>"
-                        + _render_tei_inline(
-                            c.text,
-                            block_footnotes=fn_by_block.get(rblk.block_id),
-                            available_footnotes=available_footnotes,
-                            ref_registry=ref_registry,
-                            seen_pb_pages=seen_pb_pages,
-                        )
-                        + "</cell>"
-                        for c in cells
-                    ]
-                else:
-                    c_xml = [
-                        "<cell>"
-                        + _render_tei_inline(
-                            part.strip(),
-                            block_footnotes=fn_by_block.get(rblk.block_id),
-                            available_footnotes=available_footnotes,
-                            ref_registry=ref_registry,
-                            seen_pb_pages=seen_pb_pages,
-                        )
-                        + "</cell>"
-                        for part in rblk.tagged_text.split("|")
-                    ]
+                cell_texts = [c.text for c in (rblk.cells or ())] or [p.strip() for p in rblk.tagged_text.split("|")]
+                c_xml = [
+                    "<cell>"
+                    + _render_tei_inline(
+                        cell_txt,
+                        block_footnotes=fn_by_block.get(rblk.block_id),
+                        available_footnotes=available_footnotes,
+                        ref_registry=ref_registry,
+                        seen_pb_pages=seen_pb_pages,
+                    )
+                    + "</cell>"
+                    for cell_txt in cell_texts
+                ]
                 rows_xml.append(row_pb + "<row>" + "".join(c_xml) + "</row>")
                 idx += 1
             out.append(f"{tbl_pb}<table>{head_xml}{''.join(rows_xml)}</table>")
@@ -539,9 +485,7 @@ def render_tei_edition(ast: CollectionAST, edition_dir: str | Path) -> dict[str,
                     f'<div xml:id="{html.escape(div_id, quote=True)}" type="letter" corresp="#{html.escape(cid, quote=True)}">\n'
                     f"{ltr_inner}\n</div>"
                 )
-                for fid in ltr.footnote_ids:
-                    if fid not in sec_fn_order:
-                        sec_fn_order.append(fid)
+                sec_fn_order = list(dict.fromkeys([*sec_fn_order, *ltr.footnote_ids]))
             elif item.blocks:
                 sec_children.append(
                     _render_tei_block_stream(

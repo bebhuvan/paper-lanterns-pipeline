@@ -24,10 +24,17 @@ from lanterns.core.models import (
     BlockIR,
     BlockType,
     EpistolaryTransition,
+    FootnoteItem,
     PageIR,
     TableCell,
 )
-from lanterns.core.tags import extract_inline_markers, parse_tagged_text, promote_bare_symbol_in_tagged
+from lanterns.core.tags import (
+    SYMBOL_NOTE_LABELS,
+    extract_inline_markers,
+    normalize_note_label,
+    parse_tagged_text,
+    promote_bare_symbol_in_tagged,
+)
 from lanterns.core.unicode_norm import (
     CONTROL_CHARS_WARNING,
     is_binder_signature,
@@ -406,3 +413,115 @@ def solve_monotonic_folios(pages: list[PageIR]) -> list[PageIR]:
         upd_blocks = [b.model_copy(update={"printed_folio": folio_str}) for b in page.blocks]
         updated_pages.append(page.model_copy(update={"printed_folio": folio_str, "blocks": upd_blocks}))
     return updated_pages
+
+
+def promote_page_symbol_callouts(pages: list[PageIR]) -> list[PageIR]:
+    """Promote bare page-level symbol callouts (`*`, `†`, `‡`, ...) matching attested footnotes."""
+    promoted_pages: list[PageIR] = []
+    for page in pages:
+        if page.failed_closed:
+            promoted_pages.append(page)
+            continue
+        existing_sups: set[str] = set()
+        for blk in page.blocks:
+            if blk.type not in FURNITURE_BLOCK_TYPES and blk.type != "footnote":
+                existing_sups.update(extract_inline_markers(blk.tagged_text))
+        syms = sorted(
+            {
+                normalize_note_label(b.note_label)
+                for b in page.blocks
+                if b.type == "footnote" and normalize_note_label(b.note_label) in SYMBOL_NOTE_LABELS
+            }
+            - existing_sups,
+            key=len,
+            reverse=True,
+        )
+        if not syms:
+            promoted_pages.append(page)
+            continue
+        new_blocks: list[BlockIR] = []
+        for blk in page.blocks:
+            if blk.type in FURNITURE_BLOCK_TYPES:
+                new_blocks.append(blk)
+                continue
+            own_lbl = normalize_note_label(blk.note_label) if blk.type == "footnote" else ""
+            curr_tagged = blk.tagged_text
+            changed = False
+            for sym in syms:
+                if sym == own_lbl:
+                    continue
+                curr_tagged, hit = promote_bare_symbol_in_tagged(curr_tagged, sym)
+                changed = changed or hit
+            if changed:
+                t_str, p_str, sp_list = parse_tagged_text(curr_tagged)
+                blk = blk.model_copy(update={"tagged_text": t_str, "plain_text": p_str, "spans": sp_list})
+            new_blocks.append(blk)
+        promoted_pages.append(page.model_copy(update={"blocks": new_blocks}))
+    return promoted_pages
+
+
+def propagate_page_folios(pages: list[PageIR]) -> list[PageIR]:
+    """Propagate validated non-binder printed folios down onto blocks and infer missing page 1."""
+    updated_pages: list[PageIR] = []
+    for page in pages:
+        folio = None if (page.printed_folio and is_binder_signature(page.printed_folio, page.page_number)) else page.printed_folio
+        if not folio:
+            folio = next(
+                (
+                    b.plain_text.strip()
+                    for b in page.blocks
+                    if b.type == "folio"
+                    and b.plain_text.strip()
+                    and not is_binder_signature(b.plain_text.strip(), page.page_number)
+                ),
+                None,
+            )
+        eff_blocks = [
+            b
+            if (b.printed_folio and not is_binder_signature(b.printed_folio, page.page_number))
+            else b.model_copy(update={"printed_folio": folio})
+            for b in page.blocks
+        ]
+        updated_pages.append(page.model_copy(update={"printed_folio": folio, "blocks": eff_blocks}))
+    for idx, pg in enumerate(updated_pages[:-1]):
+        if not pg.printed_folio and (updated_pages[idx + 1].printed_folio or "").strip() == "2":
+            eff_blks = [b.model_copy(update={"printed_folio": "1"}) for b in pg.blocks]
+            updated_pages[idx] = pg.model_copy(update={"printed_folio": "1", "blocks": eff_blks})
+    return updated_pages
+
+
+def promote_attested_legacy_sup_callouts(
+    pages: list[PageIR],
+    footnotes: dict[str, FootnoteItem],
+) -> list[PageIR]:
+    """Promote single-letter legacy `<sup>` callouts to `<fnref>` when attested by same/adjacent footnotes."""
+    fns_by_page: dict[int, set[str]] = {}
+    for fn in footnotes.values():
+        if lbl := normalize_note_label(fn.label):
+            fns_by_page.setdefault(fn.origin_page, set()).add(lbl)
+    out: list[PageIR] = []
+    for page in pages:
+        window = {
+            lbl
+            for off in (-1, 0, 1)
+            for lbl in fns_by_page.get(page.page_number + off, ())
+        } | {normalize_note_label(b.note_label) for b in page.blocks if b.type == "margin_note" and b.note_label}
+        present = {
+            normalize_note_label(m)
+            for b in page.blocks
+            if b.type not in FURNITURE_BLOCK_TYPES and b.type != "footnote"
+            for m in extract_inline_markers(b.tagged_text)
+        }
+        missing = [lbl for lbl in sorted(window - present) if len(lbl) == 1 and lbl.isalpha()]
+        if page.failed_closed or not missing:
+            out.append(page)
+            continue
+        pat = re.compile(r"<sup>\s*(" + "|".join(re.escape(x) for x in missing) + r")\s*</sup>")
+        new_blocks: list[BlockIR] = []
+        for blk in page.blocks:
+            if blk.type not in FURNITURE_BLOCK_TYPES and blk.type != "footnote" and pat.search(blk.tagged_text):
+                t_str, p_str, sp_list = parse_tagged_text(pat.sub(r"<fnref>\1</fnref>", blk.tagged_text))
+                blk = blk.model_copy(update={"tagged_text": t_str, "plain_text": p_str, "spans": sp_list})
+            new_blocks.append(blk)
+        out.append(page.model_copy(update={"blocks": new_blocks}))
+    return out
