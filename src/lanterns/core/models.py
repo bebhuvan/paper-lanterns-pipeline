@@ -177,6 +177,17 @@ class BoundaryAnchor(BaseModel):
     source: Literal["model", "human"] = "model"
 
 
+def make_boundary_anchor(blk: BlockIR, source: Literal["model", "human"] = "model") -> BoundaryAnchor:
+    """Construct a content- and position-anchored `BoundaryAnchor` from a `BlockIR`."""
+    return BoundaryAnchor(
+        page_number=blk.page_number,
+        block_id=blk.block_id,
+        bbox_y0=float(blk.bbox[1]) if blk.bbox else None,
+        anchor_text_prefix=" ".join(blk.plain_text.split())[:64],
+        source=source,
+    )
+
+
 class ChildSpan(BaseModel):
     child_id: str
     kind: ChildSpanKind

@@ -29,8 +29,8 @@ LAYER_RANKS: dict[str, int] = {
 }
 
 MAX_FUNCTION_COMPLEXITY = 18
-MAX_SUBSYSTEM_MODULES = {"epistolary": 8, "renderers": 12}
-MAX_SUBSYSTEM_BRANCHES = {"epistolary": 320, "renderers": 340}
+MAX_SUBSYSTEM_MODULES = {"epistolary": 8, "renderers": 10, "ops": 5}
+MAX_SUBSYSTEM_BRANCHES = {"epistolary": 160, "renderers": 230, "ops": 100}
 MAX_PROMPT_WORDS_PER_FILE = 2000
 MAX_PROMPT_WORDS_TOTAL = 4500
 

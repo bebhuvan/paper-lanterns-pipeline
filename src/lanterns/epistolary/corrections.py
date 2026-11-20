@@ -1,17 +1,18 @@
-"""ROLE: Book-scoped epistolary maps and compatibility re-exports for PageIR proof overlays.
+"""ROLE: Book-scoped epistolary maps, anchored structure overrides, and ProofOverlay re-exports.
 
-INPUTS: `books/<book_id>/{letter_map,chapter_map}.json`, `PageIR` list, and community proposals.
-OUTPUTS: Epistolary map payloads and re-exported `PageIR` correction/proof helpers.
+INPUTS: `books/<book_id>/{letter_map,chapter_map,structure_overrides}.json`, `PageIR` list, and community proposals.
+OUTPUTS: Epistolary map payloads, rebased `BoundaryAnchor` IDs, and re-exported `PageIR` proof helpers.
 INVARIANT: Human-proofed page text (`p1_proofed` or `verified`) is sacred and never overwritten by AI runs.
 """
 
 from __future__ import annotations
 
+import difflib
 from pathlib import Path
 from typing import Any
 
 from lanterns.core.atomic import atomic_write_json
-from lanterns.core.models import PageIR
+from lanterns.core.models import BlockIR, BoundaryAnchor, PageIR, make_boundary_anchor
 from lanterns.core.paths import RepoPaths
 from lanterns.extraction.proof_overlay import (
     CORRECTION_VERSION,
@@ -47,6 +48,9 @@ __all__ = [
     "load_chapter_map",
     "load_letter_map",
     "load_proof_ledger",
+    "load_structure_overrides",
+    "make_boundary_anchor",
+    "rebase_boundary_anchor",
     "record_machine_reread",
     "record_page_proof",
     "save_book_corrections",
@@ -84,6 +88,51 @@ def save_letter_map(
 def load_chapter_map(book_id: str, *, repo_root: str | Path | None = None) -> dict[str, Any]:
     """Load optional `books/<book_id>/chapter_map.json` section boundaries."""
     return load_book_json(book_id, "chapter_map.json", None, {}, repo_root)
+
+
+def load_structure_overrides(book_id: str, *, repo_root: str | Path | None = None) -> dict[str, Any]:
+    """Load optional sparse human `books/<book_id>/structure_overrides.json` overrides."""
+    return load_book_json(book_id, "structure_overrides.json", "structure_overrides", {}, repo_root)
+
+
+def rebase_boundary_anchor(anchor: BoundaryAnchor, blocks: list[BlockIR]) -> str | None:
+    """Resolve `anchor` onto live `blocks` after block splits, merges, or single-page re-extracts."""
+    prefix = " ".join(anchor.anchor_text_prefix.split())
+    p_head = prefix[:24]
+    by_id = {b.block_id: b for b in blocks}
+    exact = by_id.get(anchor.block_id)
+    if exact is not None and exact.page_number == anchor.page_number:
+        exact_txt = " ".join(exact.plain_text.split())
+        if not p_head or exact_txt.startswith(p_head) or p_head in exact_txt:
+            return exact.block_id
+
+    pool = [b for b in blocks if b.page_number == anchor.page_number] or [
+        b for b in blocks if abs(b.page_number - anchor.page_number) <= 1
+    ]
+    if not pool or not prefix:
+        return exact.block_id if exact is not None else (pool[0].block_id if pool else None)
+
+    def _score(item: tuple[int, BlockIR]) -> tuple[bool, float, float, int]:
+        pos, blk = item
+        raw_norm = " ".join(blk.plain_text.split())
+        txt = raw_norm[: max(len(prefix) + 24, 80)]
+        is_first_split = blk.block_id == f"{anchor.block_id}-s1"
+        hit = (
+            txt.startswith(p_head)
+            or p_head in txt
+            or (len(raw_norm) >= 8 and prefix.startswith(raw_norm[:32]))
+            or is_first_split
+        )
+        cmp_prefix = prefix[: max(len(txt), 16)]
+        ratio = difflib.SequenceMatcher(None, cmp_prefix, txt).ratio()
+        y_pen = -abs(float(blk.bbox[1]) - anchor.bbox_y0) if (blk.bbox and anchor.bbox_y0 is not None) else 0.0
+        return (ratio >= 0.72 or hit, ratio + (0.05 * is_first_split), y_pen, -pos)
+
+    best_pos, best_blk = max(enumerate(pool), key=_score)
+    best_ok = _score((best_pos, best_blk))[0]
+    if best_ok:
+        return best_blk.block_id
+    return exact.block_id if exact is not None else None
 
 
 def _explicit_letter_key(item: dict[str, Any]) -> tuple[str, ...]:

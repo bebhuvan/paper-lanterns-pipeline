@@ -46,6 +46,7 @@ from lanterns.core.models import (
     TextDirection,
     ValidationFinding,
     WireBlock,
+    make_boundary_anchor,
 )
 from lanterns.core.paths import RepoPaths, repo_root
 from lanterns.core.pricing import (
@@ -130,6 +131,7 @@ __all__ = [
     "load_prompt",
     "load_schema",
     "lookup_rates",
+    "make_boundary_anchor",
     "nfc_text",
     "normalize_diplomatic_text",
     "parse_inline_tags",

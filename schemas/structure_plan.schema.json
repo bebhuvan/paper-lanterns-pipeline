@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://paperlanterns.org/schemas/structure_plan.schema.json",
+  "title": "StructurePlan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "book_id",
+    "sections",
+    "decisions_verified",
+    "escalated_count",
+    "models_used",
+    "total_cost_usd"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "book_id": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "decisions_verified": { "type": "integer", "minimum": 0 },
+    "escalated_count": { "type": "integer", "minimum": 0 },
+    "max_call_output_tokens": { "type": "integer", "minimum": 0 },
+    "models_used": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "total_cost_usd": { "type": "number", "minimum": 0 },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["section_id", "kind", "title_plain", "start_anchor", "end_anchor", "units"],
+        "properties": {
+          "section_id": { "type": "string" },
+          "kind": {
+            "type": "string",
+            "enum": ["frontmatter", "chapter", "epistolary_part", "appendix", "index", "backmatter"]
+          },
+          "title_plain": { "type": "string" },
+          "title_tagged": { "type": "string" },
+          "start_block_id": { "type": "string" },
+          "end_block_id": { "type": "string" },
+          "start_anchor": { "$ref": "#/$defs/BoundaryAnchor" },
+          "end_anchor": { "$ref": "#/$defs/BoundaryAnchor" },
+          "units": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["unit_id", "kind", "start_anchor", "end_anchor"],
+              "properties": {
+                "unit_id": { "type": "string" },
+                "kind": {
+                  "type": "string",
+                  "enum": ["letter", "letter_excerpt", "narrative", "editorial_bridge", "document", "apparatus"]
+                },
+                "start_block_id": { "type": "string" },
+                "end_block_id": { "type": "string" },
+                "start_anchor": { "$ref": "#/$defs/BoundaryAnchor" },
+                "end_anchor": { "$ref": "#/$defs/BoundaryAnchor" },
+                "block_ids": { "type": "array", "items": { "type": "string" } },
+                "children": {
+                  "type": "array",
+                  "items": { "$ref": "#/$defs/ChildSpan" }
+                },
+                "label": { "type": ["string", "null"] },
+                "title": { "type": ["string", "null"] },
+                "senders": { "type": "array", "items": { "$ref": "#/$defs/CorrespondentRef" } },
+                "recipients": { "type": "array", "items": { "$ref": "#/$defs/CorrespondentRef" } },
+                "place": { "type": ["string", "null"] },
+                "date_raw": { "type": ["string", "null"] },
+                "date_iso": { "type": ["string", "null"] },
+                "language": { "type": ["string", "null"] },
+                "boundary_confidence": {
+                  "type": "string",
+                  "enum": ["high", "adjudicated", "human_mapped", "ambiguous"]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "CorrespondentRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "kind": { "type": "string", "enum": ["person", "org"] },
+        "role": { "type": ["string", "null"] }
+      }
+    },
+    "BoundaryAnchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["page_number", "block_id"],
+      "properties": {
+        "page_number": { "type": "integer", "minimum": 1 },
+        "block_id": { "type": "string" },
+        "bbox_y0": { "type": ["number", "null"] },
+        "anchor_text_prefix": { "type": "string" },
+        "source": { "type": "string", "enum": ["model", "human"] }
+      }
+    },
+    "ChildSpan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["child_id", "kind", "start_anchor", "end_anchor"],
+      "properties": {
+        "child_id": { "type": "string" },
+        "kind": { "type": "string", "enum": ["enclosure", "letter_excerpt", "verse_insert"] },
+        "start_block_id": { "type": "string" },
+        "end_block_id": { "type": "string" },
+        "start_anchor": { "$ref": "#/$defs/BoundaryAnchor" },
+        "end_anchor": { "$ref": "#/$defs/BoundaryAnchor" },
+        "block_ids": { "type": "array", "items": { "type": "string" } },
+        "title": { "type": ["string", "null"] },
+        "senders": { "type": "array", "items": { "$ref": "#/$defs/CorrespondentRef" } },
+        "recipients": { "type": "array", "items": { "$ref": "#/$defs/CorrespondentRef" } },
+        "place": { "type": ["string", "null"] },
+        "date_raw": { "type": ["string", "null"] },
+        "date_iso": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

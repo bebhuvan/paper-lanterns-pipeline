@@ -47,12 +47,18 @@ from lanterns.extraction.pipeline import (
     read_ledger_spend as _read_ledger_spend,
     resolve_compile_pages,
 )
+from lanterns.extraction.structure_pass import load_structure_auto
 from lanterns.epistolary.corrections import (
     apply_corrections_and_proof_overlay,
     load_chapter_map,
     load_letter_map,
+    load_structure_overrides,
 )
 from lanterns.epistolary.segmentation import segment_epistolary_collection
+from lanterns.epistolary.structure_compile import (
+    compile_from_structure_plan,
+    populate_section_units_from_items,
+)
 
 __all__ = [
     "compile_collection_ast",
@@ -354,6 +360,10 @@ def _project_section_footnotes(
         )
         sub_fids = [sfid for fid in direct for fn_bid in footnotes[fid].block_ids for sfid in refs_by_block.get(fn_bid, [])]
         sec.footnote_ids = list(dict.fromkeys([*direct, *sub_fids]))
+        for unit in sec.units:
+            u_dir = list(dict.fromkeys(fid for bid in unit.block_ids for fid in refs_by_block.get(bid, [])))
+            u_sub = [sfid for fid in u_dir for fn_bid in footnotes[fid].block_ids for sfid in refs_by_block.get(fn_bid, [])]
+            unit.footnote_ids = list(dict.fromkeys([*u_dir, *u_sub]))
         for fid in sec.footnote_ids:
             footnotes[fid].section_id = footnotes[fid].section_id or sec.section_id
 
@@ -418,6 +428,8 @@ def compile_collection_ast(
     chapter_map: dict[str, Any] | None = None,
     corrections: list[dict[str, Any]] | None = None,
     proof_ledger: dict[str, Any] | None = None,
+    structure_plan: dict[str, Any] | None = None,
+    structure_overrides: dict[str, Any] | None = None,
     total_spend_usd: float | None = None,
 ) -> CollectionAST:
     """Compile extracted `PageIR`s into a unified `CollectionAST` for Book + Standalone Letter editions."""
@@ -465,14 +477,29 @@ def compile_collection_ast(
     findings.extend(fn_findings)
 
     all_pnums = [p.page_number for p in folio_pages]
-    sections, letters = segment_epistolary_collection(
-        joined_content_blocks,
-        book_title=eff_title,
-        all_page_numbers=all_pnums,
-        failed_pages=failed_page_nums,
-        letter_map=eff_letter_map,
-        chapter_map=eff_chapter_map,
+    eff_plan = structure_plan if structure_plan is not None else (
+        load_structure_auto(resolved_run_dir) if (letter_map is None and chapter_map is None) else None
     )
+    if eff_plan:
+        eff_ovr = load_structure_overrides(book_id, repo_root=repo_root) if structure_overrides is None else structure_overrides
+        sections, letters = compile_from_structure_plan(
+            joined_content_blocks,
+            book_title=eff_title,
+            all_page_numbers=all_pnums,
+            failed_pages=failed_page_nums,
+            structure_plan=eff_plan,
+            structure_overrides=eff_ovr,
+        )
+    else:
+        sections, letters = segment_epistolary_collection(
+            joined_content_blocks,
+            book_title=eff_title,
+            all_page_numbers=all_pnums,
+            failed_pages=failed_page_nums,
+            letter_map=eff_letter_map,
+            chapter_map=eff_chapter_map,
+        )
+        populate_section_units_from_items(sections, {lu.letter_id: lu for lu in letters})
     _project_dual_footnotes(sections, letters, footnotes, refs_by_block)
 
     model_breakdown = dict(

@@ -266,6 +266,46 @@ def _cmd_compile(args: argparse.Namespace, repo: RepoPaths) -> int:
     return 0 if is_ok else 1
 
 
+def _cmd_structure(args: argparse.Namespace, repo: RepoPaths) -> int:
+    from lanterns.extraction.structure_pass import run_structure_pass
+
+    book_id = args.book or args.book_pos
+    if not book_id:
+        raise ValueError("Provide a book identifier (`book_id` or `--book`).")
+    toml_p = repo.book_dir(book_id) / "book.toml"
+    book = BookConfig.load(book_id, paths=repo) if toml_p.is_file() else BookConfig(book_id=book_id, title=book_id)
+    eff_run_id = args.run_id or book.active_run_id or "manual"
+    resolved_run_dir = Path(args.run_dir).resolve() if args.run_dir else (
+        repo.find_run_dir(book_id, eff_run_id) if (toml_p.is_file() or args.run_id) else None
+    )
+    pdf_path = book.resolve_source_pdf_path(args.source_pdf, paths=repo) if toml_p.is_file() else None
+    plan = run_structure_pass(
+        book_id=book_id,
+        active_run_id=eff_run_id,
+        run_dir=resolved_run_dir,
+        out_path=Path(args.out).resolve() if args.out else None,
+        repo_root=repo.root,
+        source_pdf=pdf_path,
+        cost_ceiling_usd=float(args.cost_ceiling_usd),
+        max_concurrency=int(args.max_concurrency),
+        skip_decisions=bool(args.skip_decisions),
+    )
+    _print_json(
+        {
+            "ok": True,
+            "book_id": book_id,
+            "run_id": eff_run_id,
+            "section_count": len(plan["sections"]),
+            "unit_count": sum(len(s["units"]) for s in plan["sections"]),
+            "decisions_verified": plan["decisions_verified"],
+            "escalated_count": plan["escalated_count"],
+            "max_call_output_tokens": plan.get("max_call_output_tokens", 0),
+            "total_cost_usd": plan["total_cost_usd"],
+        }
+    )
+    return 0
+
+
 def _cmd_validate_edition(args: argparse.Namespace, repo: RepoPaths) -> int:
     from lanterns.core.models import CollectionAST
     from lanterns.validation import validate_compiled_edition
@@ -478,6 +518,17 @@ def _register_pipeline_subparsers(sub: Any) -> None:
     p_comp.add_argument("--relay-url", default="")
     p_comp.add_argument("--source-pdf", default=None)
 
+    p_str = sub.add_parser("structure", help="Run Pass 2A/2B/2C structure pass to emit ir/structure_auto.json")
+    p_str.add_argument("book_pos", nargs="?", default=None)
+    p_str.add_argument("--book", default=None)
+    p_str.add_argument("--run-id", default=None)
+    p_str.add_argument("--run-dir", default=None)
+    p_str.add_argument("--out", default=None)
+    p_str.add_argument("--source-pdf", default=None)
+    p_str.add_argument("--cost-ceiling-usd", type=float, default=0.25)
+    p_str.add_argument("--max-concurrency", type=int, default=4)
+    p_str.add_argument("--skip-decisions", action="store_true")
+
 
 def _register_ops_subparsers(sub: Any) -> None:
     p_val = sub.add_parser("validate-edition", help="Validate compiled Web, Letters, EPUB 3, Markdown, TEI, & Proofing")
@@ -536,6 +587,7 @@ COMMAND_HANDLERS: dict[str, Callable[[argparse.Namespace, RepoPaths], int]] = {
     "fetch-archive": _cmd_fetch_archive,
     "triage-pdf": _cmd_triage_pdf,
     "extract": _cmd_extract,
+    "structure": _cmd_structure,
     "verify-hotspots": _cmd_verify_hotspots,
     "compile": _cmd_compile,
     "validate-edition": _cmd_validate_edition,

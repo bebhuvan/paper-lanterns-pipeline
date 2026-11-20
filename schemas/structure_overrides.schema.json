@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://paperlanterns.org/schemas/structure_overrides.schema.json",
+  "title": "StructureOverrides",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "book_id"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "book_id": { "type": "string" },
+    "notes": { "type": ["string", "null"] },
+    "force_unit_starts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["anchor"],
+        "properties": {
+          "anchor": { "$ref": "#/$defs/BoundaryAnchor" },
+          "kind": {
+            "type": "string",
+            "enum": ["letter", "letter_excerpt", "narrative", "editorial_bridge", "document", "apparatus"]
+          },
+          "label": { "type": ["string", "null"] },
+          "title": { "type": ["string", "null"] },
+          "senders": { "type": "array", "items": { "$ref": "#/$defs/CorrespondentRef" } },
+          "recipients": { "type": "array", "items": { "$ref": "#/$defs/CorrespondentRef" } },
+          "place": { "type": ["string", "null"] },
+          "date_raw": { "type": ["string", "null"] },
+          "date_iso": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "forbid_unit_splits": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/BoundaryAnchor" }
+    },
+    "enclosure_spans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["start_anchor", "end_anchor"],
+        "properties": {
+          "kind": { "type": "string", "enum": ["enclosure", "letter_excerpt", "verse_insert"] },
+          "start_anchor": { "$ref": "#/$defs/BoundaryAnchor" },
+          "end_anchor": { "$ref": "#/$defs/BoundaryAnchor" },
+          "title": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "section_overrides": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["kind", "title_plain", "start_anchor", "end_anchor"],
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": ["frontmatter", "chapter", "epistolary_part", "appendix", "index", "backmatter"]
+          },
+          "title_plain": { "type": "string" },
+          "title_tagged": { "type": "string" },
+          "start_anchor": { "$ref": "#/$defs/BoundaryAnchor" },
+          "end_anchor": { "$ref": "#/$defs/BoundaryAnchor" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "CorrespondentRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "kind": { "type": "string", "enum": ["person", "org"] },
+        "role": { "type": ["string", "null"] }
+      }
+    },
+    "BoundaryAnchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["page_number", "block_id"],
+      "properties": {
+        "page_number": { "type": "integer", "minimum": 1 },
+        "block_id": { "type": "string" },
+        "bbox_y0": { "type": ["number", "null"] },
+        "anchor_text_prefix": { "type": "string" },
+        "source": { "type": "string", "enum": ["model", "human"] }
+      }
+    }
+  }
+}
