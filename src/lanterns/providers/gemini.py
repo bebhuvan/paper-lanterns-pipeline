@@ -535,7 +535,10 @@ class GeminiProvider:
     def _get_client(self, genai: Any, api_version: str) -> Any:
         cache: dict[str, Any] = getattr(self._thread_clients, "clients", {})
         if api_version not in cache:
-            cache[api_version] = genai.Client(api_key=self.api_key, http_options={"api_version": api_version})
+            cache[api_version] = genai.Client(
+                api_key=self.api_key,
+                http_options={"api_version": api_version, "timeout": 90_000},
+            )
             self._thread_clients.clients = cache
         return cache[api_version]
 

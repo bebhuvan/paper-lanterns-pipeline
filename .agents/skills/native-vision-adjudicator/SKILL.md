@@ -20,18 +20,18 @@ Paper Lanterns supports orthogonal harness verification where an agent inspects 
    - Tiny 6-point footnote symbols (`*`, `†`, `‡`, `§`, `a`, `1`) and cross-page split notes (`continues_from_prev`).
    - Outer-margin shoulder chronology (`margin_note`), cascading valedictions (`alignment="cascading"`), bottom datelines, and enclosed inner letters (`starts_enclosure`).
 
-## Step 2 — Author or Update `books/<book_id>/scan_checks/page_NNNN.json`
+## Step 2 — Author or Update `books/<book_id>/scan_overrides/page_NNNN.json`
 
-1. Write a schema-valid `PageExtractWire` JSON (matching `schemas/page_extract_wire.schema.json`) to `books/<book_id>/scan_checks/page_NNNN.json` (zero-padded 4-digit 1-based page number), or create an anchor-matched `correction-v2` proposal for `lanterns intake`.
+1. Write a schema-valid `PageExtractWire` JSON (matching `schemas/page_extract_wire.schema.json`) to `books/<book_id>/scan_overrides/page_NNNN.json` (zero-padded 4-digit 1-based page number; pure audit sign-offs without wire block overrides go in `books/<book_id>/audit_checks.jsonl`), or create an anchor-matched `correction-v2` proposal for `lanterns intake`.
 2. Validate your JSON against `schemas/page_extract_wire.schema.json`:
    ```bash
    uv run python -c '
    import json, jsonschema
    from pathlib import Path
    schema = json.loads(Path("schemas/page_extract_wire.schema.json").read_text())
-   data = json.loads(Path("books/<book_id>/scan_checks/page_NNNN.json").read_text())
+   data = json.loads(Path("books/<book_id>/scan_overrides/page_NNNN.json").read_text())
    jsonschema.validate(instance=data, schema=schema)
-   print("Valid scan_check JSON")
+   print("Valid scan_override JSON")
    '
    ```
 

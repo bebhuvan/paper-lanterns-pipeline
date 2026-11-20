@@ -34,9 +34,6 @@ ALLOWED_DOCS_MARKDOWN: frozenset[str] = frozenset(
     {
         "FOUNDER_INTENT_AND_MANIFESTO.md",
         "ARCHITECTURE.md",
-        "ARCHIVAL_STANDARDS_AND_RUBRIC.md",
-        "COMMUNITY_PROOFING_DESIGN.md",
-        "ADVERSARIAL_REVIEW_FRAMEWORK.md",
         "LAB_NOTEBOOK.md",
     }
 )
@@ -73,12 +70,27 @@ def _check_markdown_allowlists(repo: RepoPaths, issues: list[dict[str, Any]]) ->
                 }
             )
 
+    rules_dir = repo.root / ".agents" / "rules"
+    if rules_dir.is_dir():
+        for rule_file in sorted(rules_dir.glob("*.md")):
+            issues.append(
+                {
+                    "severity": "error",
+                    "check": "markdown_sprawl",
+                    "path": f".agents/rules/{rule_file.name}",
+                    "message": (
+                        f"Duplicate rule file `.agents/rules/{rule_file.name}` is forbidden; "
+                        "keep all constitutional rules in single-source `AGENTS.md`."
+                    ),
+                }
+            )
+
     docs_dir = repo.root / "docs"
     if not docs_dir.is_dir():
         return
     allowed_ref_dirs = {
         (docs_dir / "reference" / sub).resolve()
-        for sub in ("gemini-api", "qwen-api", "claude-api")
+        for sub in ("gemini-api", "claude-api")
     }
     for path in sorted(docs_dir.rglob("*")):
         if not path.is_file():
@@ -96,7 +108,7 @@ def _check_markdown_allowlists(repo: RepoPaths, issues: list[dict[str, Any]]) ->
                     "path": f"docs/{rel}",
                     "message": (
                         f"Unauthorized docs file `docs/{rel}`; allowed in docs/: {sorted(ALLOWED_DOCS_MARKDOWN)} "
-                        "+ docs/reference/{gemini-api,qwen-api,claude-api}/"
+                        "+ docs/reference/{gemini-api,claude-api}/"
                     ),
                 }
             )

@@ -19,7 +19,7 @@ Whenever a letter is over-split, under-split, or missing framing metadata, follo
    - Example: A bottom-placed `dateline` or trailing `postscript`/`address_block` after `signature` caused a premature split.
    - **Fix Layer:** Update `src/lanterns/epistolary/segmentation.py` using **only** `BlockIR.type`, `epistolary_transition`, `alignment`, `bbox`, and continuation flags—**never** natural-language content words (`Dear`, `Yours`, month names).
 3. **Genuine Ambiguity Specific to One Volume's Editorial Convention?**
-   - **Fix Layer:** Record deterministic block-ID rules in `books/<book_id>/letter_map.json` (validated against `schemas/letter_map.schema.json`):
+   - **Fix Layer:** Run `uv run lanterns structure <book_id>` (`ir/structure_auto.json`) and record sparse human `BoundaryAnchor` overrides in `books/<book_id>/structure_overrides.json` (`schemas/structure_overrides.schema.json`; legacy `letter_map.json` supported via compatibility adapter):
      - `force_split_before_block_ids`: `["p0014-b0005"]`
      - `forbid_split_before_block_ids`: `["p0022-b0003"]`
      - `enclosure_block_ranges`: `[{"start_block_id": "p0031-b0004", "end_block_id": "p0031-b0007"}]`

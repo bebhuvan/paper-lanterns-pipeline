@@ -30,8 +30,8 @@ Rates below reflect official AI Studio Developer API pricing stored in `config/p
 | Model Code | Family | Context / Max Decode | Standard Input / Output (per 1M) | Cached Input (per 1M) | Batch Multiplier | Paper Lanterns Role |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | `gemini-4-carbon` | Gemini 4 | 1M / 64K–1M | $2.00 / $10.00 *(intro to 2026-11-30; then $4/$20)* | $0.10 *(then $0.20)* | `0.5x` | Heavy scientific / paleographic escalation |
-| `gemini-4-argon` | Gemini 4 | 1M / 64K–1M | $2.00 / $10.00 *(intro to 2026-11-30; then $4/$20)* | $0.10 *(then $0.20)* | `0.5x` | Surgical 450-DPI `hotspot_model` |
-| `gemini-4-hydrogen` | Gemini 4 | 1M / 64K–1M | $1.50 / $7.50 | $0.075 | `0.5x` | Primary polyglot / Indic / 18c reader & `boundary_model` |
+| `gemini-4-argon` | Gemini 4 | 1M / 64K–1M | $2.00 / $10.00 *(intro to 2026-11-30; then $4/$20)* | $0.10 *(then $0.20)* | `0.5x` | Retired from active profiles (`2026-12-01` cliff) |
+| `gemini-4-hydrogen` | Gemini 4 | 1M / 64K–1M | $1.50 / $7.50 | $0.075 | `0.5x` | Primary polyglot / Indic / 18c reader, `hotspot_model`, & Pass-2C escalation |
 | `gemini-3.8-flash` | Gemini 3 | 1M / 64K | $0.75 / $3.75 *(intro to 2026-12-31; then $1.50/$7.50)* | $0.075 *(then $0.15)* | `0.5x` | Primary `english_epistolary` & `recitation_shielded` reader |
 | `gemini-3.7-flash` | Gemini 3 | 1M / 64K | $0.75 / $3.75 | $0.075 | `0.5x` | Same-family Tier-2 fallback |
 | `gemini-3.6-flash` | Gemini 3 | 1M / 64K | $0.75 / $3.75 | $0.075 | `0.5x` | Fast Tier-2 fallback for `english_epistolary` |

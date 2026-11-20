@@ -34,7 +34,7 @@ Never trust administrative status flags alone. Execute every check below before 
 
 ## Step 3 — Record Evidence & Regenerate Catalog Ledger
 
-1. Log every audited page, model fallback outcome, defect found & fixed, and exact `cost_ledger.jsonl` USD total in `docs/LAB_NOTEBOOK.md` and `docs/ADVERSARIAL_REVIEW_FRAMEWORK.md`.
+1. Record per-book audit checks in `books/<book_id>/audit_checks.jsonl` (and cross-book R&D findings, if any, in `docs/LAB_NOTEBOOK.md`).
 2. Regenerate `CATALOG_STATUS.md` and re-run `./verify`:
    ```bash
    uv run lanterns status

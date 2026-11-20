@@ -1,4 +1,4 @@
-# Gemini API Reference Snapshot for Paper Lanterns v2
+# Gemini API Reference Snapshot for Paper Lanterns
 
 > **Snapshot Provenance:** Fetched directly from official Google AI Studio machine-readable documentation (`https://aistudio.google.com/llms.txt` and `https://aistudio.google.com/docs/*.md`) and verified against installed `google-genai==3.3.0` (`>= 3.2.0` required).
 >
@@ -11,8 +11,8 @@
 1. **Canonical Python SDK Only:** Always import `from google import genai` and `from google.genai import types` (`google-genai >= 3.2.0`). **Never** import or install deprecated `google-generativeai`.
 2. **Current 2026 Model Lineup Only:**
    - **Gemini 4 Frontier Family (1M shared context, long decode up to 1M tokens):**
-     - `gemini-4-hydrogen` ($1.50 / $7.50 per 1M tokens, $0.075 cached) — Primary archival reader for polyglot, Indic/Orientalist, and 18th-century correspondence, and default 2-page boundary arbiter.
-     - `gemini-4-argon` ($2.00 / $10.00 intro through 2026-11-30; $4.00 / $20.00 from 2026-12-01) — Surgical 450-DPI hotspot crop adjudicator.
+     - `gemini-4-hydrogen` ($1.50 / $7.50 per 1M tokens, $0.075 cached) — Primary archival reader for polyglot, Indic/Orientalist, and 18th-century correspondence, 450-DPI hotspot crop adjudicator, and default boundary escalation model (no 2027 rate hike).
+     - `gemini-4-argon` ($2.00 / $10.00 intro through 2026-11-30; $4.00 / $20.00 from 2026-12-01) — Retired from active profiles ahead of the `2026-12-01` 2x rate cliff.
      - `gemini-4-carbon` ($2.00 / $10.00 intro; $4.00 / $20.00 from 2026-12-01) — Highest-capability frontier reasoning model.
    - **Gemini 3.x High-Throughput Family:**
      - `gemini-3.8-flash` ($0.75 / $3.75 intro through 2026-12-31; $0.075 cached) — Primary reader for standard English correspondence (`english_epistolary`, `recitation_shielded`).
@@ -30,8 +30,9 @@
 | :--- | :--- | :--- | :--- |
 | **Interactive / Per-Page Extraction** | `client.interactions.create` (`store=False`) or `client.models.generate_content` (`v1alpha`/`v1beta`) | `gemini-3.8-flash` or `gemini-4-hydrogen` | Static prompt part at index `0`, per-part `MEDIA_RESOLUTION_ULTRA_HIGH` (2,240 image tokens) or `HIGH` (1,120 tokens), `thinking_level="low"`, archival `BLOCK_NONE` safety |
 | **Bulk Volume Extraction (50% Discount)** | `client.batches.create` (`generateContent` Batch API) | `gemini-3.8-flash` or `gemini-4-hydrogen` | `batch_discount_multiplier = 0.5`; JSONL Files API upload above 16 MB |
-| **Epistolary Boundary Verification** | `client.decisions.create` (`v1beta`) + `boundary_arbiter_v1` | `gemini-decision-1` -> `gemini-4-hydrogen` | Calibrated `noul` (`0.01..0.99`) + `confidence` at 0 output tokens; escalates low-confidence splits to `gemini-4-hydrogen` |
-| **450-DPI Hotspot Crop Re-Read** | `client.interactions.create` / `generate_content` | `gemini-4-argon` | Isolated bbox crop PNG at `MEDIA_RESOLUTION_ULTRA_HIGH` |
+| **Pass 2A / 2B Structure Plan** | `client.models.generate_content` (`flex` -> `standard`) | `gemini-3.8-flash` | Section partition + compact 10-tuple `UnitPlan` (`<= 45s` Flex timeout) |
+| **Pass 2C Boundary Verification** | `client.decisions.create` (`v1beta`) | `gemini-decision-1` -> `gemini-4-hydrogen` | Calibrated `choice` (`"criteria"` dict, 0 output tokens); escalates `< 0.85` confidence to `gemini-4-hydrogen` |
+| **450-DPI Hotspot Crop Re-Read** | `client.interactions.create` / `generate_content` | `gemini-4-hydrogen` | Isolated bbox crop PNG at `MEDIA_RESOLUTION_ULTRA_HIGH` |
 
 ---
 

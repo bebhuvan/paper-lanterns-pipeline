@@ -46,7 +46,7 @@ Because correspondence was hard to structure automatically and expensive to keyb
 
 ---
 
-## 4. The Four Commitments of Paper Lanterns v2
+## 4. The Four Commitments of Paper Lanterns
 
 ### Commitment I — 100% Diplomatic Archival Fidelity (Zero Modernization)
 Our North Star is uncompromising: **preserve exactly what the historical edition printed**.

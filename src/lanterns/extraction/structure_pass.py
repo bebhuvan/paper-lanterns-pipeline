@@ -283,27 +283,35 @@ def _call_structured_llm(
     for spec, active_schema in candidates:
         prov_name, model_name = parse_model_route(spec)
         provider = provider_factory(spec)
-        tier = "flex" if prov_name == "gemini" else "standard"
-        settings = {"service_tier": tier, "thinking_level": "low", "max_output_tokens": 65536}
-        req = ProviderRequest(
-            prompt=prompt_text,
-            dynamic_suffix=dynamic_suffix,
-            image_paths=list(image_paths or []),
-            schema_dict=active_schema,
-            settings=settings,
-        )
-        res, out_tok = _run_single_provider_call(
-            provider=provider,
-            prov_name=prov_name,
-            model_name=model_name,
-            req=req,
-            stage=stage,
-            ledger=ledger,
-            repo_root=repo_root,
-        )
-        if isinstance(res, ProviderSuccess):
-            return res.data, f"{prov_name}/{model_name}", out_tok
-        last_err = res.message
+        if prov_name == "gemini" and hasattr(provider, "max_retries"):
+            provider.max_retries = 1
+        tier_plans = (("flex", 45_000), ("standard", 75_000)) if prov_name == "gemini" else (("standard", 90_000),)
+        for tier, timeout_ms in tier_plans:
+            settings = {
+                "service_tier": tier,
+                "thinking_level": "low",
+                "max_output_tokens": 65536,
+                "timeout_ms": timeout_ms,
+            }
+            req = ProviderRequest(
+                prompt=prompt_text,
+                dynamic_suffix=dynamic_suffix,
+                image_paths=list(image_paths or []),
+                schema_dict=active_schema,
+                settings=settings,
+            )
+            res, out_tok = _run_single_provider_call(
+                provider=provider,
+                prov_name=prov_name,
+                model_name=model_name,
+                req=req,
+                stage=stage,
+                ledger=ledger,
+                repo_root=repo_root,
+            )
+            if isinstance(res, ProviderSuccess):
+                return res.data, f"{prov_name}/{model_name}", out_tok
+            last_err = res.message
     raise RuntimeError(f"Structure pass `{stage}` failed closed: {last_err}")
 
 
@@ -749,8 +757,13 @@ def _adjudicate_single_boundary(
         {
             "boundary": {
                 "type": "choice",
-                "options": list(PASS2C_VERDICTS),
-                "instructions": "Classify the structural role at the target boundary block.",
+                "instructions": "Inspect the scan strip and context. Classify the structural role at the target boundary block.",
+                "criteria": {
+                    "starts_new_letter": "Begins a distinct new top-level letter, postcard, or dispatch.",
+                    "starts_enclosure": "Begins an inner letter or document enclosed inside an active parent letter.",
+                    "narrative_or_document": "Begins non-letter biographical narrative, editorial bridge, or standalone report.",
+                    "continuation": "Continues the current unit (including postscripts, diary sub-dates, and bottom datelines).",
+                },
             }
         },
         image_paths=img_args,

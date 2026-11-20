@@ -130,3 +130,9 @@ class TestDoctorMarkdownCapAndInnerHTMLBan:
         bad_renderer.write_text('JS = "panel.innerHTML = userText;"\n', encoding="utf-8")
         res2 = run_doctor(fake_repo2)
         assert res2["ok"] is False, "lanterns doctor failed to catch innerHTML in renderers/!"
+
+        fake_repo3 = _copy_minimal_repo_tree(tmp_path / "repo_dup_rules")
+        (fake_repo3 / ".agents" / "rules").mkdir(parents=True, exist_ok=True)
+        (fake_repo3 / ".agents" / "rules" / "duplicate.md").write_text("# Duplicate rule\n", encoding="utf-8")
+        res3 = run_doctor(fake_repo3)
+        assert res3["ok"] is False, "lanterns doctor failed to catch duplicate .agents/rules/*.md sprawl!"
