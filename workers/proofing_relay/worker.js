@@ -283,15 +283,16 @@ async function handleSaveOrVerify(request, env, payload, cors) {
   if (!lease || lease.account_id !== actor.account_id || lease.expires_at < nowMs) {
     return jsonResponse({ error: "Active page checkout lease required before saving." }, 409, cors);
   }
-  if (payload.lease_token && lease.lease_token !== payload.lease_token) {
-    return jsonResponse({ error: "Lease token mismatch." }, 409, cors);
+  const leaseToken = String(payload.lease_token || "").trim();
+  if (!leaseToken || lease.lease_token !== leaseToken) {
+    return jsonResponse({ error: "Valid checkout lease_token is required." }, 409, cors);
   }
   if (nowMs - lease.claimed_at < MIN_DWELL_MS && env.SKIP_DWELL_CHECK !== "1") {
     return jsonResponse({ error: "Page must be inspected against the scan before sign-off." }, 422, cors);
   }
 
   const current = await env.DB.prepare(
-    "SELECT status, version, source_page_sha256, page_text_sha256, p1_reviewer_id, p2_verifier_id FROM page_states WHERE book_id = ? AND page_number = ?"
+    "SELECT status, version, source_page_sha256, page_text_sha256, p1_reviewer_id, p2_verifier_id, proposal_json, p1_proposal_json, exported_version FROM page_states WHERE book_id = ? AND page_number = ?"
   )
     .bind(bookId, pageNumber)
     .first();
@@ -349,13 +350,28 @@ async function handleSaveOrVerify(request, env, payload, cors) {
 
   const nextVersion = (current ? current.version : 0) + 1;
   const nowIso = new Date(nowMs).toISOString();
+  let priorP1Proposal = null;
+  const rawPrior = current?.p1_proposal_json || current?.proposal_json;
+  if (rawPrior) {
+    try {
+      priorP1Proposal = JSON.parse(rawPrior);
+    } catch {
+      priorP1Proposal = null;
+    }
+  }
+  const preservePriorP1 = (nextStatus === "verified" || (nextStatus === "problem" && !hasEdits)) && priorP1Proposal;
+  const effectiveCorrections = preservePriorP1
+    ? (Array.isArray(priorP1Proposal.corrections) ? priorP1Proposal.corrections : [])
+    : (payload.corrections || []);
+  const effectiveMapPatch = payload.letter_map_patch || (preservePriorP1 ? (priorP1Proposal.letter_map_patch || null) : null);
+
   const normalizedProposal = {
     version: "correction-v2",
     book_id: bookId,
     reviewer: actor.account_id,
     created_at: nowIso,
-    corrections: payload.corrections || [],
-    letter_map_patch: payload.letter_map_patch || null,
+    corrections: effectiveCorrections,
+    letter_map_patch: effectiveMapPatch,
     page_signoff: {
       page_number: pageNumber,
       status: nextStatus === "problem" ? "needs_review" : nextStatus,
@@ -367,12 +383,16 @@ async function handleSaveOrVerify(request, env, payload, cors) {
       note: signoff.note ? String(signoff.note).slice(0, 300) : null,
     },
   };
+  const proposalJsonStr = JSON.stringify(normalizedProposal);
+  const p1ProposalJsonStr = nextStatus === "p1_proofed"
+    ? proposalJsonStr
+    : (current?.p1_proposal_json || current?.proposal_json || proposalJsonStr);
 
   await env.DB.batch([
     env.DB.prepare(
       `INSERT INTO page_states
-        (book_id, page_number, status, version, source_page_sha256, page_text_sha256, p1_reviewer_id, p2_verifier_id, proposal_json, updated_at, exported_version)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0)
+        (book_id, page_number, status, version, source_page_sha256, page_text_sha256, p1_reviewer_id, p2_verifier_id, proposal_json, p1_proposal_json, updated_at, exported_version)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0)
        ON CONFLICT(book_id, page_number) DO UPDATE SET
         status = excluded.status,
         version = excluded.version,
@@ -381,6 +401,7 @@ async function handleSaveOrVerify(request, env, payload, cors) {
         p1_reviewer_id = excluded.p1_reviewer_id,
         p2_verifier_id = excluded.p2_verifier_id,
         proposal_json = excluded.proposal_json,
+        p1_proposal_json = excluded.p1_proposal_json,
         updated_at = excluded.updated_at`
     ).bind(
       bookId,
@@ -391,7 +412,8 @@ async function handleSaveOrVerify(request, env, payload, cors) {
       signoff.page_text_sha256,
       nextP1,
       nextP2,
-      JSON.stringify(normalizedProposal),
+      proposalJsonStr,
+      p1ProposalJsonStr,
       nowIso
     ),
     env.DB.prepare(

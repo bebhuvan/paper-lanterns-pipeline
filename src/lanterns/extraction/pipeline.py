@@ -452,14 +452,18 @@ def _execute_extraction_locked(
             primary_provider.delete_context_cache(cache_name)
         ledger.flush()
 
+    _hydrate_existing_untargeted_pages(run_root, pages_out_dir, page_map)
     ordered_pages = [page_map[p] for p in sorted(page_map)]
     folio_solved = solve_monotonic_folios(ordered_pages)
     wrapped_pages, wrap_report = resolve_page_ir_line_wraps(folio_solved, witness_dir=witness_dir)
 
+    target_set = set(target_pages)
     for page_ir in wrapped_pages:
-        payload = page_ir.model_dump(mode="json")
-        validate_data("block_ir", payload, root=str(repo.root))
-        atomic_write_json(pages_out_dir / f"page_{page_ir.page_number:04d}.json", payload)
+        page_file = pages_out_dir / f"page_{page_ir.page_number:04d}.json"
+        if page_ir.page_number in target_set or not page_file.is_file():
+            payload = page_ir.model_dump(mode="json")
+            validate_data("block_ir", payload, root=str(repo.root))
+            atomic_write_json(page_file, payload)
 
     return _persist_run_summary_and_ir(
         book=book,
@@ -474,6 +478,32 @@ def _execute_extraction_locked(
         started_iso=started_iso,
         duration_s=round(time.monotonic() - t0, 3),
     )
+
+
+def _hydrate_existing_untargeted_pages(
+    run_root: Path,
+    pages_out_dir: Path,
+    page_map: dict[int, PageIR],
+) -> None:
+    """Restore previously extracted untargeted pages on partial `--pages` runs into `page_map`."""
+    ir_pages_path = run_root / "ir" / "pages.json"
+    if ir_pages_path.is_file():
+        raw = json.loads(ir_pages_path.read_text(encoding="utf-8"))
+        raw_items = raw.get("pages") if isinstance(raw, dict) else raw
+        for item in raw_items or []:
+            existing_ir = PageIR.model_validate(item)
+            pnum = existing_ir.page_number
+            if pnum not in page_map:
+                page_map[pnum] = existing_ir
+                pfile = pages_out_dir / f"page_{pnum:04d}.json"
+                if not pfile.is_file():
+                    atomic_write_json(pfile, existing_ir.model_dump(mode="json"))
+
+    if pages_out_dir.is_dir():
+        for pfile in sorted(pages_out_dir.glob("page_*.json")):
+            existing_ir = PageIR.model_validate_json(pfile.read_text(encoding="utf-8"))
+            if existing_ir.page_number not in page_map:
+                page_map[existing_ir.page_number] = existing_ir
 
 
 def _maybe_create_cache(

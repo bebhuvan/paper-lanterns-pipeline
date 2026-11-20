@@ -19,6 +19,7 @@ from lanterns.renderers.html_utils import (
     EDITORIAL_SHARED_CSS,
     MD_TAG_CLOSE,
     MD_TAG_OPEN,
+    READER_STRICT_CSP,
     atomic_write_json,
     atomic_write_text,
     coalesce_continued_blocks,
@@ -209,6 +210,7 @@ def _render_standalone_letter_html(
     folio_to_page: dict[str, int],
     has_book_web: bool,
     has_proofing: bool,
+    has_local_scans: bool = False,
 ) -> str:
     ltr_footnotes = {fid: ast.footnotes[fid] for fid in letter.footnote_ids if fid in ast.footnotes}
     fn_by_block = footnotes_by_block_map(ltr_footnotes)
@@ -283,6 +285,7 @@ def _render_standalone_letter_html(
     )
 
     archive_attr = html.escape(ast.archive_id or "", quote=True)
+    csp_escaped = html.escape(READER_STRICT_CSP, quote=True)
     drawer_html = build_scan_dialog_html() if has_book_web else ""
     drawer_js = '<script src="../web/reader.js" defer></script>' if has_book_web else ""
 
@@ -290,11 +293,12 @@ def _render_standalone_letter_html(
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="{csp_escaped}" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{html.escape(display_heading)} — {html.escape(ast.title)}</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body data-archive-id="{archive_attr}" data-scan-prefix="../proofing/scans">
+<body data-archive-id="{archive_attr}" data-scan-prefix="../proofing/scans" data-has-local-scans="{int(bool(has_local_scans))}">
   <header class="masthead">
     <a class="masthead-brand" href="index.html">{html.escape(ast.title)} · Correspondence</a>
     <nav class="masthead-nav">
@@ -483,6 +487,7 @@ def _render_letters_index_html(ast: CollectionAST, initial_rows_html: str, *, ha
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="{html.escape(READER_STRICT_CSP, quote=True)}" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Correspondence Catalog — {html.escape(ast.title)}</title>
   <link rel="stylesheet" href="styles.css" />
@@ -548,12 +553,18 @@ def render_letters_edition(
     *,
     has_book_web: bool = True,
     has_proofing: bool = True,
+    has_local_scans: bool | None = None,
 ) -> dict[str, Any]:
     """Render Individual Online Letters Edition into `<edition_dir>/letters/`."""
     ed_root = Path(edition_dir)
     letters_dir = ed_root / "letters"
     shutil.rmtree(letters_dir, ignore_errors=True)
     letters_dir.mkdir(parents=True, exist_ok=True)
+    local_scans_flag = (
+        any(p.suffix.lower() in {".png", ".webp", ".jpg", ".jpeg"} for p in (ed_root / "proofing" / "scans").glob("page_*.*"))
+        if has_local_scans is None
+        else has_local_scans
+    )
 
     atomic_write_text(letters_dir / "styles.css", EDITORIAL_SHARED_CSS)
     atomic_write_text(letters_dir / "letters.js", LETTERS_CATALOG_JS)
@@ -582,6 +593,7 @@ def render_letters_edition(
             folio_to_page=folio_to_page,
             has_book_web=has_book_web,
             has_proofing=has_proofing,
+            has_local_scans=local_scans_flag,
         )
         atomic_write_text(letters_dir / f"{ltr.slug}.html", ltr_html)
 

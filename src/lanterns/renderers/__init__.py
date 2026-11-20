@@ -45,16 +45,6 @@ def render_complete_edition(
 
     epub_info = render_epub_edition(ast, ed_root)
     md_tei_info = render_markdown_and_tei(ast, ed_root)
-    letters_info = render_letters_edition(ast, ed_root, has_book_web=True, has_proofing=include_proofing)
-    web_info = render_book_web(
-        ast,
-        ed_root,
-        has_letters_edition=True,
-        has_epub=True,
-        has_markdown=True,
-        has_tei=True,
-        has_proofing=include_proofing,
-    )
     proof_info: dict[str, Any] = {}
     if include_proofing:
         proof_info = render_proofing_studio(
@@ -68,6 +58,24 @@ def render_complete_edition(
             has_book_web=True,
             has_letters=True,
         )
+    has_local_scans = bool(proof_info.get("bundled_scans", 0) > 0)
+    letters_info = render_letters_edition(
+        ast,
+        ed_root,
+        has_book_web=True,
+        has_proofing=include_proofing,
+        has_local_scans=has_local_scans,
+    )
+    web_info = render_book_web(
+        ast,
+        ed_root,
+        has_letters_edition=True,
+        has_epub=True,
+        has_markdown=True,
+        has_tei=True,
+        has_proofing=include_proofing,
+        has_local_scans=has_local_scans,
+    )
     report_info = render_edition_report(ast, ed_root, run_dir=run_dir)
 
     atomic_write_json(ed_root / "collection_ast.json", ast.model_dump(mode="json"))

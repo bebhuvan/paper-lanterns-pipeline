@@ -13,6 +13,7 @@ import html
 import shutil
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlsplit
 
 from lanterns.core.models import BlockIR, CollectionAST, PageIR
 from lanterns.renderers.html_utils import atomic_write_json, atomic_write_text
@@ -30,12 +31,25 @@ STRICT_CSP = (
     "script-src 'self'; "
     "style-src 'self'; "
     "img-src 'self' data: https://iiif.archive.org https://archive.org; "
-    "connect-src 'self' https://iiif.archive.org https:; "
+    "connect-src 'self' https://iiif.archive.org; "
     "font-src 'self'; "
     "frame-ancestors 'none'; "
     "base-uri 'self'; "
     "form-action 'self'"
 )
+
+
+def _build_proofing_csp(relay_url: str = "") -> str:
+    parts = urlsplit(relay_url.strip()) if relay_url else None
+    origin = (
+        f" {parts.scheme}://{parts.netloc}"
+        if (parts and parts.scheme in {"http", "https"} and parts.netloc)
+        else ""
+    )
+    return STRICT_CSP.replace(
+        "connect-src 'self' https://iiif.archive.org;",
+        f"connect-src 'self' https://iiif.archive.org{origin};",
+    )
 
 
 def compute_page_blocks_sha256(blocks: list[BlockIR]) -> str:
@@ -118,8 +132,13 @@ def _build_page_shard(
     fallback_scan = iiif_url if (local_scan and iiif_url) else None
 
     status = str(ledger_entry.get("status") or "unproofed")
-    p1_rev = ledger_entry.get("p1_reviewer_id") or ledger_entry.get("reviewer")
-    p2_ver = ledger_entry.get("p2_verifier_id")
+    is_human = str(ledger_entry.get("signoff_method") or "human") == "human" and status in {"p1_proofed", "verified"}
+    p1_rev = (
+        (ledger_entry.get("p1_reviewer_id") or (ledger_entry.get("reviewer") if status == "p1_proofed" else None))
+        if is_human
+        else None
+    )
+    p2_ver = ledger_entry.get("p2_verifier_id") if (is_human and status == "verified") else None
     text_sha = compute_page_blocks_sha256(page.blocks)
 
     blocks_json = [
@@ -141,6 +160,7 @@ def _build_page_shard(
     shard = {
         "page_number": pnum,
         "printed_folio": page.printed_folio or str(pnum),
+        "version": int(ledger_entry.get("version") or 0),
         "failed_closed": page.failed_closed,
         "failure_reason": page.failure_reason,
         "source_page_sha256": page.source_page_sha256,
@@ -256,6 +276,7 @@ button.primary-btn { background: var(--accent); color: #fff; border-color: var(-
 .block-card-head {
   display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.4rem; margin-bottom: 0.45rem; font-size: 0.76rem; color: var(--muted);
 }
+.note-label-input { width: 5.5rem; }
 .block-textarea {
   width: 100%; min-height: 4.2rem; font-family: var(--serif); font-size: 1.05rem; line-height: 1.5;
   padding: 0.45rem; border: 1px solid var(--border); background: #fff; color: var(--ink); resize: vertical;
@@ -283,6 +304,8 @@ PROOFING_JS = """/* Paper Lanterns v2 — Safe-DOM Distributed Proofreaders (P1 
     editsByBlock: {},
     forceSplits: {},
     forbidSplits: {},
+    leaseToken: null,
+    baseVersion: 0,
     zoomIndex: 0
   };
   var ZOOM_CLASSES = ["zoom-100", "zoom-150", "zoom-200", "zoom-275"];
@@ -441,9 +464,16 @@ PROOFING_JS = """/* Paper Lanterns v2 — Safe-DOM Distributed Proofreaders (P1 
         transSel.appendChild(opt);
       });
 
+      var noteInput = makeEl("input", "note-label-input");
+      noteInput.type = "text";
+      noteInput.placeholder = "note label";
+      noteInput.setAttribute("aria-label", "Footnote label");
+      noteInput.value = blk.note_label || "";
+
       controlsWrap.appendChild(typeSel);
       controlsWrap.appendChild(alignSel);
       controlsWrap.appendChild(transSel);
+      controlsWrap.appendChild(noteInput);
       head.appendChild(controlsWrap);
       card.appendChild(head);
 
@@ -458,15 +488,25 @@ PROOFING_JS = """/* Paper Lanterns v2 — Safe-DOM Distributed Proofreaders (P1 
       });
 
       function recordChange() {
+        var cleanLabel = noteInput.value.trim() || null;
         state.editsByBlock[blk.block_id] = {
           original: blk,
           tagged_text: ta.value,
           type: typeSel.value,
           alignment: alignSel.value,
-          transition: transSel.value
+          transition: transSel.value,
+          note_label: cleanLabel
         };
         if (transSel.value === "starts_new_letter" && blk.epistolary_transition !== "starts_new_letter") {
           state.forceSplits[blk.block_id] = true;
+          delete state.forbidSplits[blk.block_id];
+        } else {
+          delete state.forceSplits[blk.block_id];
+          if (blk.epistolary_transition === "starts_new_letter" && transSel.value === "none") {
+            state.forbidSplits[blk.block_id] = true;
+          } else {
+            delete state.forbidSplits[blk.block_id];
+          }
         }
       }
 
@@ -474,6 +514,7 @@ PROOFING_JS = """/* Paper Lanterns v2 — Safe-DOM Distributed Proofreaders (P1 
       typeSel.addEventListener("change", recordChange);
       alignSel.addEventListener("change", recordChange);
       transSel.addEventListener("change", recordChange);
+      noteInput.addEventListener("input", recordChange);
 
       card.appendChild(ta);
       container.appendChild(card);
@@ -482,6 +523,10 @@ PROOFING_JS = """/* Paper Lanterns v2 — Safe-DOM Distributed Proofreaders (P1 
 
   function loadPage(pageNumber) {
     state.currentPage = pageNumber;
+    state.forceSplits = {};
+    state.forbidSplits = {};
+    state.leaseToken = null;
+    state.baseVersion = 0;
     var sel = document.getElementById("page-selector");
     if (sel) sel.value = String(pageNumber);
     window.location.hash = "page-" + pageNumber;
@@ -491,6 +536,7 @@ PROOFING_JS = """/* Paper Lanterns v2 — Safe-DOM Distributed Proofreaders (P1 
       .then(function (r) { return r.json(); })
       .then(function (shard) {
         state.shard = shard;
+        state.baseVersion = Number(shard.version || 0);
         renderScanView(shard);
         renderHotspotBanner(shard);
         renderBlocksEditor(shard);
@@ -536,21 +582,30 @@ PROOFING_JS = """/* Paper Lanterns v2 — Safe-DOM Distributed Proofreaders (P1 
       var curType = edit ? edit.type : blk.type;
       var curAlign = edit ? edit.alignment : blk.alignment;
       var curTrans = edit ? edit.transition : blk.epistolary_transition;
+      var curNoteLabel = edit ? edit.note_label : (blk.note_label || null);
       if (curType !== "scanner_residue" && curType !== "noise") {
         currentBlocksJoined.push(curType + ":" + curAlign + ":" + curTrans + ":" + curText);
       }
 
-      if (edit && (curText !== blk.tagged_text || curType !== blk.type || curAlign !== blk.alignment || curTrans !== blk.epistolary_transition)) {
+      if (edit && (curText !== blk.tagged_text || curType !== blk.type || curAlign !== blk.alignment || curTrans !== blk.epistolary_transition || curNoteLabel !== (blk.note_label || null))) {
+        var op = curText !== blk.tagged_text
+          ? "set_text"
+          : (curType !== blk.type
+            ? "set_type"
+            : (curAlign !== blk.alignment
+              ? "set_alignment"
+              : (curNoteLabel !== (blk.note_label || null) ? "set_note_label" : "set_transition")));
         corrections.push({
           correction_id: "corr-" + blk.block_id + "-" + Date.now(),
           page_number: shard.page_number,
           block_id: blk.block_id,
           anchor_text: (blk.plain_text || "").slice(0, 120),
-          op: curText !== blk.tagged_text ? "set_text" : (curType !== blk.type ? "set_type" : (curAlign !== blk.alignment ? "set_alignment" : "set_transition")),
+          op: op,
           replacement_tagged_text: curText,
           replacement_type: curType,
           replacement_alignment: curAlign,
           replacement_transition: curTrans,
+          replacement_note_label: curNoteLabel,
           reviewer: reviewer,
           source: "human"
         });
@@ -575,6 +630,10 @@ PROOFING_JS = """/* Paper Lanterns v2 — Safe-DOM Distributed Proofreaders (P1 
     }
 
     var textSha = await sha256Hex(currentBlocksJoined.join("\\n"));
+    if (!textSha) {
+      feedback.textContent = "WebCrypto SHA-256 unavailable (requires HTTPS or localhost); refusing unverified sign-off.";
+      return null;
+    }
     var forceIds = Object.keys(state.forceSplits);
     var forbidIds = Object.keys(state.forbidSplits);
     var letterMapPatch = (forceIds.length || forbidIds.length)
@@ -594,7 +653,7 @@ PROOFING_JS = """/* Paper Lanterns v2 — Safe-DOM Distributed Proofreaders (P1 
         reviewer: reviewer,
         p1_reviewer: finalStatus === "verified" ? priorP1 : reviewer,
         source_page_sha256: shard.source_page_sha256 || "",
-        page_text_sha256: textSha || shard.page_text_sha256,
+        page_text_sha256: textSha,
         verified_at: new Date().toISOString()
       }
     };
@@ -602,6 +661,69 @@ PROOFING_JS = """/* Paper Lanterns v2 — Safe-DOM Distributed Proofreaders (P1 
       proposal.letter_map_patch = letterMapPatch;
     }
     return proposal;
+  }
+
+  function buildRelayHeaders() {
+    var headers = { "Content-Type": "application/json" };
+    var tokenEl = document.getElementById("reviewer-token");
+    var tok = tokenEl ? String(tokenEl.value || "").trim() : "";
+    if (tok) {
+      headers["Authorization"] = "Bearer " + tok;
+    }
+    return headers;
+  }
+
+  async function syncRelayPageVersion(baseUrl) {
+    try {
+      var stResp = await fetch(baseUrl + "/api/status?book_id=" + encodeURIComponent(state.manifest.book_id));
+      if (!stResp.ok) return;
+      var stData = await stResp.json();
+      var hit = (stData.pages || []).find(function (p) { return Number(p.page_number) === Number(state.currentPage); });
+      if (hit) {
+        state.baseVersion = Number(hit.version || 0);
+        if (state.shard) {
+          state.shard.version = state.baseVersion;
+          if (hit.p1_reviewer_id) state.shard.p1_reviewer = hit.p1_reviewer_id;
+          if (hit.p2_verifier_id) state.shard.p2_verifier = hit.p2_verifier_id;
+          if (hit.status) state.shard.proof_status = hit.status;
+          renderHotspotBanner(state.shard);
+        }
+      }
+    } catch (_err) {
+      // Offline or relay unavailable; handled on claim/submit
+    }
+  }
+
+  async function claimCurrentPage() {
+    var feedback = document.getElementById("signoff-feedback");
+    var relayUrl = state.manifest ? state.manifest.relay_url : "";
+    if (!relayUrl || !state.shard) {
+      if (feedback) feedback.textContent = "Relay URL not configured; using offline proposal.json mode.";
+      return null;
+    }
+    var reviewer = ((document.getElementById("reviewer-handle") || {}).value || "").trim();
+    if (!reviewer) {
+      feedback.textContent = "Enter your proofreader handle before checking out a leaf.";
+      return null;
+    }
+    var baseUrl = relayUrl.replace(/\\/$/, "");
+    await syncRelayPageVersion(baseUrl);
+    var resp = await fetch(baseUrl + "/api/claim", {
+      method: "POST",
+      headers: buildRelayHeaders(),
+      body: JSON.stringify({
+        book_id: state.manifest.book_id,
+        page_number: state.currentPage,
+        reviewer_id: reviewer
+      })
+    });
+    var res = await resp.json();
+    if (!resp.ok || !res.ok || !res.lease_token) {
+      throw new Error(res.error || ("Claim failed (HTTP " + resp.status + ")"));
+    }
+    state.leaseToken = res.lease_token;
+    feedback.textContent = "Leaf checked out (version=" + state.baseVersion + ").";
+    return res.lease_token;
   }
 
   async function downloadProposal(roundTarget) {
@@ -620,27 +742,40 @@ PROOFING_JS = """/* Paper Lanterns v2 — Safe-DOM Distributed Proofreaders (P1 
   }
 
   async function submitToRelay(roundTarget) {
-    var proposal = await buildProposalPayload(roundTarget);
-    if (!proposal) return;
-    var relayUrl = state.manifest.relay_url;
+    var relayUrl = state.manifest ? state.manifest.relay_url : "";
     var feedback = document.getElementById("signoff-feedback");
     if (!relayUrl) {
       await downloadProposal(roundTarget);
       return;
     }
-    fetch(relayUrl.replace(/\\/$/, "") + "/api/proposal", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(proposal)
-    })
-      .then(function (r) { return r.json(); })
-      .then(function (res) {
-        feedback.textContent = res.ok ? ("Submitted to relay: status=" + res.status) : ("Relay error: " + (res.error || "failed"));
-      })
-      .catch(function () {
-        feedback.textContent = "Relay unreachable; downloading offline proposal.json instead.";
-        downloadProposal(roundTarget);
+    var baseUrl = relayUrl.replace(/\\/$/, "");
+    try {
+      await syncRelayPageVersion(baseUrl);
+      var proposal = await buildProposalPayload(roundTarget);
+      if (!proposal) return;
+      if (!state.leaseToken) {
+        await claimCurrentPage();
+      }
+      proposal.lease_token = state.leaseToken;
+      proposal.base_version = state.baseVersion;
+      var resp = await fetch(baseUrl + "/api/proposal", {
+        method: "POST",
+        headers: buildRelayHeaders(),
+        body: JSON.stringify(proposal)
       });
+      var res = await resp.json();
+      if (!resp.ok || !res.ok) {
+        if (resp.status === 409) state.leaseToken = null;
+        feedback.textContent = "Relay error: " + (res.error || ("HTTP " + resp.status));
+        return;
+      }
+      state.leaseToken = null;
+      state.baseVersion = Number(res.version || state.baseVersion + 1);
+      feedback.textContent = "Submitted to relay: status=" + res.status + " (v" + state.baseVersion + ")";
+    } catch (err) {
+      feedback.textContent = "Relay error (" + (err && err.message ? err.message : "unreachable") + "); downloading offline proposal.json instead.";
+      await downloadProposal(roundTarget);
+    }
   }
 
   function buildPalettes(diacritics) {
@@ -722,6 +857,12 @@ PROOFING_JS = """/* Paper Lanterns v2 — Safe-DOM Distributed Proofreaders (P1 
     document.getElementById("btn-zoom-out").addEventListener("click", function () { setZoom(state.zoomIndex - 1); });
     document.getElementById("btn-p1-save").addEventListener("click", function () { submitToRelay("p1_proofed"); });
     document.getElementById("btn-p2-verify").addEventListener("click", function () { submitToRelay("verified"); });
+    document.getElementById("btn-claim-page").addEventListener("click", function () {
+      claimCurrentPage().catch(function (err) {
+        var msg = document.getElementById("signoff-feedback");
+        if (msg) msg.textContent = "Checkout error: " + (err && err.message ? err.message : "failed");
+      });
+    });
     document.getElementById("btn-export-json").addEventListener("click", function () { downloadProposal("p1_proofed"); });
 
     document.addEventListener("keydown", function (ev) {
@@ -737,7 +878,13 @@ PROOFING_JS = """/* Paper Lanterns v2 — Safe-DOM Distributed Proofreaders (P1 
 """
 
 
-def _build_studio_index_html(ast: CollectionAST, *, has_book_web: bool, has_letters: bool) -> str:
+def _build_studio_index_html(
+    ast: CollectionAST,
+    *,
+    has_book_web: bool,
+    has_letters: bool,
+    relay_url: str = "",
+) -> str:
     web_link = '<a href="../web/index.html">Book Edition</a>' if has_book_web else ""
     letters_link = '<a href="../letters/index.html">Letters</a>' if has_letters else ""
     page_ids_hidden = "".join(
@@ -747,7 +894,7 @@ def _build_studio_index_html(ast: CollectionAST, *, has_book_web: bool, has_lett
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="Content-Security-Policy" content="{html.escape(STRICT_CSP, quote=True)}" />
+  <meta http-equiv="Content-Security-Policy" content="{html.escape(_build_proofing_csp(relay_url), quote=True)}" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Proofing Studio — {html.escape(ast.title)}</title>
   <link rel="stylesheet" href="styles.css" />
@@ -798,6 +945,8 @@ def _build_studio_index_html(ast: CollectionAST, *, has_book_web: bool, has_lett
         <div class="panel-title">Two-Round Sign-Off (Type What the Printer Printed)</div>
         <div class="signoff-row">
           <input type="text" id="reviewer-handle" placeholder="Proofreader handle (e.g. c_asha)" aria-label="Proofreader handle" />
+          <input type="password" id="reviewer-token" placeholder="Relay Bearer token (online)" aria-label="Relay session token" />
+          <button type="button" id="btn-claim-page">Checkout Leaf</button>
           <button type="button" class="primary-btn" id="btn-p1-save">Save Round P1 (p1_proofed)</button>
           <button type="button" id="btn-p2-verify">Verify Round P2 (verified · P2 ≠ P1)</button>
           <button type="button" id="btn-export-json">Download proposal.json</button>
@@ -900,7 +1049,7 @@ def render_proofing_studio(
     atomic_write_text(proof_dir / "app.js", PROOFING_JS)
     atomic_write_text(
         proof_dir / "index.html",
-        _build_studio_index_html(ast, has_book_web=has_book_web, has_letters=has_letters),
+        _build_studio_index_html(ast, has_book_web=has_book_web, has_letters=has_letters, relay_url=relay_url),
     )
     return {
         "proofing_index": str(proof_dir / "index.html"),

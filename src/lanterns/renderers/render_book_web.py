@@ -16,6 +16,7 @@ from typing import Any
 from lanterns.core.models import BookSection, CollectionAST, FootnoteItem, LetterUnit
 from lanterns.renderers.html_utils import (
     EDITORIAL_SHARED_CSS,
+    READER_STRICT_CSP,
     atomic_write_json,
     atomic_write_text,
     fold_diacritics_for_search,
@@ -177,6 +178,7 @@ def _render_section_page(
     folio_to_page: dict[str, int],
     has_proofing: bool,
     has_letters_edition: bool,
+    has_local_scans: bool = False,
 ) -> str:
     letters_by_id = {ltr.letter_id: ltr for ltr in ast.letters}
     ordered_fn_ids, sec_footnotes = _collect_section_footnotes(section, ast)
@@ -224,16 +226,18 @@ def _render_section_page(
     proof_nav = '<a href="../../proofing/index.html">Proofing Studio</a>' if has_proofing else ""
     tier = ast.rubric.provenance_tier if ast.rubric else "community"
     archive_attr = html.escape(ast.archive_id or "", quote=True)
+    csp_escaped = html.escape(READER_STRICT_CSP, quote=True)
 
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="{csp_escaped}" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{html.escape(section.title_plain)} — {html.escape(ast.title)}</title>
   <link rel="stylesheet" href="../styles.css" />
 </head>
-<body data-archive-id="{archive_attr}" data-scan-prefix="../../proofing/scans">
+<body data-archive-id="{archive_attr}" data-scan-prefix="../../proofing/scans" data-has-local-scans="{int(bool(has_local_scans))}">
   <header class="masthead">
     <a class="masthead-brand" href="../index.html">{html.escape(ast.title)}</a>
     <nav class="masthead-nav">
@@ -352,6 +356,7 @@ def _render_landing_page(
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="{html.escape(READER_STRICT_CSP, quote=True)}" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{html.escape(ast.title)} — Complete Archival Edition</title>
   <link rel="stylesheet" href="styles.css" />
@@ -425,6 +430,7 @@ READER_JS = """/* Paper Lanterns v2 — Safe-DOM Facsimile Drawer & Diacritic-In
     var closeBtn = document.getElementById("scan-drawer-close");
     var archiveId = document.body.getAttribute("data-archive-id") || "";
     var scanPrefix = document.body.getAttribute("data-scan-prefix") || "../proofing/scans";
+    var hasLocalScans = document.body.getAttribute("data-has-local-scans") === "1";
 
     closeBtn.addEventListener("click", function () {
       dialog.close();
@@ -451,7 +457,14 @@ READER_JS = """/* Paper Lanterns v2 — Safe-DOM Facsimile Drawer & Diacritic-In
             fallbackEl.textContent = "Local scan preview not bundled; open in Proofing Studio to inspect.";
           }
         };
-        imgEl.src = localSrc;
+        if (hasLocalScans) {
+          imgEl.src = localSrc;
+        } else if (iaSrc) {
+          imgEl.src = iaSrc;
+        } else {
+          imgEl.removeAttribute("src");
+          fallbackEl.textContent = "Local scan preview not bundled; open in Proofing Studio to inspect.";
+        }
         dialog.showModal();
       });
     });
@@ -521,6 +534,7 @@ def render_book_web(
     has_markdown: bool = True,
     has_tei: bool = True,
     has_proofing: bool = True,
+    has_local_scans: bool | None = None,
 ) -> dict[str, Any]:
     """Render the Complete Book Web Edition into `<edition_dir>/web/`."""
     ed_root = Path(edition_dir)
@@ -528,6 +542,11 @@ def render_book_web(
     sec_dir = web_dir / "sections"
     shutil.rmtree(sec_dir, ignore_errors=True)
     sec_dir.mkdir(parents=True, exist_ok=True)
+    local_scans_flag = (
+        any(p.suffix.lower() in {".png", ".webp", ".jpg", ".jpeg"} for p in (ed_root / "proofing" / "scans").glob("page_*.*"))
+        if has_local_scans is None
+        else has_local_scans
+    )
 
     atomic_write_text(web_dir / "styles.css", EDITORIAL_SHARED_CSS)
     atomic_write_text(web_dir / "reader.js", READER_JS)
@@ -547,6 +566,7 @@ def render_book_web(
             folio_to_page=folio_to_page,
             has_proofing=has_proofing,
             has_letters_edition=has_letters_edition,
+            has_local_scans=local_scans_flag,
         )
         stem = section_filename_stem(sec.section_id)
         atomic_write_text(sec_dir / f"{stem}.html", sec_html)

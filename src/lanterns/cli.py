@@ -15,6 +15,7 @@ from collections.abc import Callable
 from pathlib import Path
 from typing import Any
 
+from lanterns.core.atomic import atomic_write_json
 from lanterns.core.config import BookConfig
 from lanterns.core.env import load_env
 from lanterns.core.hashes import sha256_file
@@ -23,6 +24,7 @@ from lanterns.renderers import (
     garbage_collect_workspace,
     generate_catalog_status,
     render_complete_edition,
+    render_edition_report,
     render_proofing_studio,
     run_doctor,
 )
@@ -220,20 +222,8 @@ def _cmd_compile(args: argparse.Namespace, repo: RepoPaths) -> int:
     )
     findings = run_ast_validators(ast, proof_ledger=proof_ledger)
     ast = ast.model_copy(update={"findings": findings})
-
-    render_complete_edition(
-        ast,
-        out_dir,
-        proof_ledger=proof_ledger,
-        run_dir=run_dir,
-        source_pdf=pdf_path,
-        bundle_scans=args.bundle_scans,
-        relay_url=args.relay_url,
-        include_proofing=True,
-    )
-    gate_res = validate_compiled_edition(out_dir, ast, require_proofing=True)
-    rubric = score_collection_rubric(ast, proof_ledger=proof_ledger, compiled_gate_result=gate_res)
-    ast = ast.model_copy(update={"rubric": rubric})
+    prelim_rubric = score_collection_rubric(ast, proof_ledger=proof_ledger, compiled_gate_result=None)
+    ast = ast.model_copy(update={"rubric": prelim_rubric})
 
     final_info = render_complete_edition(
         ast,
@@ -245,9 +235,25 @@ def _cmd_compile(args: argparse.Namespace, repo: RepoPaths) -> int:
         relay_url=args.relay_url,
         include_proofing=True,
     )
+    gate_res = validate_compiled_edition(out_dir, ast, require_proofing=True)
+    rubric = score_collection_rubric(ast, proof_ledger=proof_ledger, compiled_gate_result=gate_res)
+    if rubric != prelim_rubric:
+        ast = ast.model_copy(update={"rubric": rubric})
+        atomic_write_json(out_dir / "collection_ast.json", ast.model_dump(mode="json"))
+        atomic_write_json(out_dir / "rubric_score.json", rubric.model_dump(mode="json"))
+        manifest = {
+            **final_info["manifest"],
+            "provenance_tier": rubric.provenance_tier,
+            "rubric_score": rubric.total_score,
+            "blocker_count": rubric.blocker_count,
+            "hotspot_count": rubric.hotspot_count,
+        }
+        atomic_write_json(out_dir / "edition_manifest.json", manifest)
+        render_edition_report(ast, out_dir, run_dir=run_dir)
+    is_ok = bool(gate_res.get("ok", False)) and rubric.blocker_count == 0
     _print_json(
         {
-            "ok": gate_res.get("ok", False),
+            "ok": is_ok,
             "book_id": book.book_id,
             "run_id": resolved_run_id,
             "run_kind": run_kind,
@@ -259,7 +265,7 @@ def _cmd_compile(args: argparse.Namespace, repo: RepoPaths) -> int:
             "formats": final_info["manifest"]["formats"],
         }
     )
-    return 0
+    return 0 if is_ok else 1
 
 
 def _cmd_validate_edition(args: argparse.Namespace, repo: RepoPaths) -> int:

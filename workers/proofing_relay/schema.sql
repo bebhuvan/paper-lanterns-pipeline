@@ -27,6 +27,9 @@ CREATE TABLE IF NOT EXISTS page_leases (
     PRIMARY KEY (book_id, page_number)
 );
 
+-- Migration for existing D1 databases:
+--   ALTER TABLE page_states ADD COLUMN p1_proposal_json TEXT;
+
 CREATE TABLE IF NOT EXISTS page_states (
     book_id TEXT NOT NULL,
     page_number INTEGER NOT NULL,
@@ -37,6 +40,7 @@ CREATE TABLE IF NOT EXISTS page_states (
     p1_reviewer_id TEXT,
     p2_verifier_id TEXT,
     proposal_json TEXT NOT NULL,
+    p1_proposal_json TEXT,
     updated_at TEXT NOT NULL,
     exported_version INTEGER NOT NULL DEFAULT 0,
     PRIMARY KEY (book_id, page_number)

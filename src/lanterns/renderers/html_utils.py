@@ -22,6 +22,18 @@ from lanterns.core.tags import split_tagged_lines_balanced
 
 ALLOWED_INLINE_TAGS: frozenset[str] = frozenset({"i", "b", "sc", "sup", "sub", "unclear"})
 
+READER_STRICT_CSP = (
+    "default-src 'self'; "
+    "script-src 'self'; "
+    "style-src 'self' 'unsafe-inline'; "
+    "img-src 'self' data: https://iiif.archive.org https://archive.org; "
+    "connect-src 'self'; "
+    "font-src 'self'; "
+    "frame-ancestors 'none'; "
+    "base-uri 'self'; "
+    "form-action 'none'"
+)
+
 _INLINE_TOKEN_RE = re.compile(r"(</?(?:i|b|sc|sup|sub|unclear)>)")
 _PLACEHOLDER_NOTE_RE = re.compile(r"\[\[NOTE:([^:\]]+):(?:(\d+):)?([^\]]+)\]\]")
 _PLACEHOLDER_FOLIO_RE = re.compile(r"\[\[(?:FN)?FOLIO:(\d+):([^\]]*)\]\]")
@@ -250,7 +262,7 @@ def _build_callout_queue(block_footnotes: list[FootnoteItem] | None) -> dict[str
 def _format_fnref_html(fn_id: str, label_text: str, ref_registry: dict[str, list[str]], *, epub: bool) -> str:
     target_id = html.escape(fn_anchor_id(fn_id), quote=True)
     ref_id = html.escape(alloc_fnref_id(fn_id, ref_registry), quote=True)
-    lbl_esc = html.escape(label_text, quote=False)
+    lbl_esc = html.escape(label_text, quote=True)
     if epub:
         return f'<sup class="fn-ref"><a id="{ref_id}" epub:type="noteref" href="#{target_id}">{lbl_esc}</a></sup>'
     return f'<sup class="fn-ref"><a id="{ref_id}" href="#{target_id}" role="doc-noteref">{lbl_esc}</a></sup>'
@@ -264,7 +276,7 @@ def _format_folio_html(
     proof_href_prefix: str | None,
     epub: bool,
 ) -> str:
-    fol_esc = html.escape(folio_label.strip() or str(page_number or ""), quote=False)
+    fol_esc = html.escape(folio_label.strip() or str(page_number or ""), quote=True)
     id_attr = ""
     if page_number is not None and seen_page_ids is not None and page_number not in seen_page_ids:
         seen_page_ids.add(page_number)

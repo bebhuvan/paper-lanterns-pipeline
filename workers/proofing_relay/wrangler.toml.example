@@ -1,0 +1,32 @@
+# Paper Lanterns — Distributed Proofreaders (P1 -> P2) Cloudflare Worker Template
+# Copy to `wrangler.toml` and replace placeholder IDs before deploying:
+#   npx wrangler d1 create paper-lanterns-proofing
+#   npx wrangler d1 execute paper-lanterns-proofing --file=schema.sql
+#   npx wrangler secret put EXPORT_BEARER_TOKEN
+#   npx wrangler deploy
+#
+# Minting reviewer accounts & SHA-256 Bearer session tokens in D1:
+#   1) Generate a random 32-byte token (e.g. `openssl rand -hex 32`) for the proofreader.
+#   2) Compute its SHA-256 hex digest (`printf '%s' "$RAW_TOKEN" | sha256sum`).
+#   3) Insert account + hashed session into D1:
+#      INSERT INTO accounts (account_id, role, credit_name, created_at)
+#      VALUES ('alice_p1', 'trusted', 'Alice Reviewer', '2026-11-20T00:00:00Z');
+#      INSERT INTO sessions (session_hash, account_id, expires_at, created_at)
+#      VALUES ('<sha256_hex_of_raw_token>', 'alice_p1', 1893456000000, '2026-11-20T00:00:00Z');
+#   4) Proofreaders paste `$RAW_TOKEN` into Proofing Studio's "Relay Bearer token" input.
+
+name = "paper-lanterns-proofing-relay"
+main = "worker.js"
+compatibility_date = "2026-11-01"
+workers_dev = false
+
+[vars]
+ALLOWED_ORIGIN = "https://your-editions-domain.example"
+READ_ONLY_MODE = "0"
+ALLOW_DEV_HEADERS = "0"
+SKIP_DWELL_CHECK = "0"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "paper-lanterns-proofing"
+database_id = "00000000-0000-0000-0000-000000000000"
