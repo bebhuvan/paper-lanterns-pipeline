@@ -401,3 +401,90 @@ def strip_redundant_leading_label(tagged_text: str, norm_label: str) -> str:
     if norm_label in SYMBOL_NOTE_LABELS and tagged_text.startswith(f"{norm_label} "):
         return tagged_text[len(norm_label) :].lstrip()
     return re.sub(rf"^\s*\(\s*{re.escape(norm_label)}\s*\)\s*", "", tagged_text) or tagged_text
+
+
+_INLINE_TOKEN_RE = re.compile(r"(</?(?:i|b|sc|fnref|sup|sub|unclear)>)")
+_NCNAME_CLEAN_RE = re.compile(r"[^A-Za-z0-9_.-]+")
+
+
+def sanitize_xml_id(raw_id: str, prefix: str = "id") -> str:
+    """Normalize an identifier into a valid XML/HTML NCName."""
+    cleaned = _NCNAME_CLEAN_RE.sub("-", raw_id.strip()).strip("-.")
+    if not cleaned:
+        return prefix
+    if not (cleaned[0].isalpha() or cleaned[0] == "_"):
+        return f"{prefix}-{cleaned}"
+    return cleaned
+
+
+def fn_anchor_id(footnote_id: str) -> str:
+    """Canonical DOM/XML target id (`#fn-...`) for a FootnoteItem."""
+    raw = footnote_id.strip()
+    return sanitize_xml_id(raw if raw.startswith("fn-") else f"fn-{raw}", "fn")
+
+
+def alloc_fnref_id(footnote_id: str, ref_registry: dict[str, list[str]]) -> str:
+    """Allocate a globally unique `#fnref-...` callout anchor id and record it."""
+    target = fn_anchor_id(footnote_id)
+    base = target[3:] if target.startswith("fn-") else target
+    existing = ref_registry.setdefault(footnote_id, [])
+    occ = len(existing) + 1
+    ref_id = sanitize_xml_id(f"fnref-{base}" if occ == 1 else f"fnref-{base}-{occ}", "fnref")
+    existing.append(ref_id)
+    return ref_id
+
+
+def tokenize_tagged_text(tagged_text: str) -> list[tuple[str, str]]:
+    """Tokenize constrained inline tags with strict LIFO stack balancing."""
+    tokens: list[tuple[str, str]] = []
+    stack: list[str] = []
+    for part in _INLINE_TOKEN_RE.split(tagged_text):
+        if not part:
+            continue
+        if part.startswith("</") and part.endswith(">"):
+            tag = part[2:-1]
+            if tag in stack:
+                idx = len(stack) - 1 - stack[::-1].index(tag)
+                to_reopen = stack[idx + 1 :]
+                for open_t in reversed(stack[idx:]):
+                    tokens.append(("close", open_t))
+                del stack[idx:]
+                for reopen_t in to_reopen:
+                    stack.append(reopen_t)
+                    tokens.append(("open", reopen_t))
+            else:
+                tokens.append(("text", part))
+        elif part.startswith("<") and part.endswith(">"):
+            tag = part[1:-1]
+            stack.append(tag)
+            tokens.append(("open", tag))
+        else:
+            tokens.append(("text", part))
+    while stack:
+        tokens.append(("close", stack.pop()))
+    return tokens
+
+
+def strip_constrained_tags(tagged_text: str) -> str:
+    """Return plain diplomatic text with constrained inline tags removed."""
+    return "".join(val for kind, val in tokenize_tagged_text(tagged_text) if kind == "text")
+
+
+def split_tagged_paragraphs_balanced(tagged_text: str) -> list[str]:
+    """Split `tagged_text` on `\\n\\n`, keeping inline tags balanced inside every paragraph."""
+    if "\n\n" not in tagged_text:
+        return [tagged_text] if tagged_text.strip() else [tagged_text]
+    _, plain_text, spans = parse_tagged_text(tagged_text)
+    paragraphs: list[str] = []
+    pos = 0
+    for chunk in plain_text.split("\n\n"):
+        chunk_end = pos + len(chunk)
+        if chunk.strip():
+            c_spans = [
+                StyleSpan(tag=s.tag, start=max(s.start, pos) - pos, end=min(s.end, chunk_end) - pos)
+                for s in spans
+                if s.end > pos and s.start < chunk_end
+            ]
+            paragraphs.append(serialize_tagged_text(chunk, c_spans))
+        pos = chunk_end + 2
+    return paragraphs or [tagged_text]

@@ -10,12 +10,12 @@ from __future__ import annotations
 
 import hashlib
 import html
-import shutil
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlsplit
 
 from lanterns.core.models import BlockIR, CollectionAST, PageIR
+from lanterns.extraction.pdf_ingest import bundle_local_scans, collect_existing_local_scans
 from lanterns.renderers.html_utils import atomic_write_json, atomic_write_text
 from lanterns.source.archive_org import build_iiif_page_url
 
@@ -62,21 +62,7 @@ def compute_page_blocks_sha256(blocks: list[BlockIR]) -> str:
     return hashlib.sha256("\n".join(lines).encode("utf-8")).hexdigest()
 
 
-_ALLOWED_SCAN_EXTS: frozenset[str] = frozenset({".png", ".webp", ".jpg", ".jpeg"})
-
-
-def _collect_existing_local_scans(scans_dir: Path) -> dict[int, str]:
-    found: dict[int, str] = {}
-    if not scans_dir.is_dir():
-        return found
-    for stale in scans_dir.glob("*.json"):
-        stale.unlink()
-    for img_p in sorted(scans_dir.glob("page_*.*")):
-        if img_p.suffix.lower() in _ALLOWED_SCAN_EXTS:
-            digits = "".join(ch for ch in img_p.stem if ch.isdigit())
-            if digits:
-                found[int(digits)] = f"scans/{img_p.name}"
-    return found
+_collect_existing_local_scans = collect_existing_local_scans
 
 
 def _bundle_local_scans(
@@ -86,35 +72,13 @@ def _bundle_local_scans(
     run_dir: Path | None,
     source_pdf: Path | None,
 ) -> dict[int, str]:
-    scans_dir.mkdir(parents=True, exist_ok=True)
-    bundled = _collect_existing_local_scans(scans_dir)
-    if run_dir is not None:
-        for cand_sub in (run_dir / "renders", run_dir / "evidence" / "renders"):
-            if not cand_sub.is_dir():
-                continue
-            for img_p in sorted(cand_sub.glob("page_*.*")):
-                if img_p.suffix.lower() not in _ALLOWED_SCAN_EXTS:
-                    continue
-                digits = "".join(ch for ch in img_p.stem if ch.isdigit())
-                if not digits:
-                    continue
-                pnum = int(digits)
-                dest = scans_dir / f"page_{pnum:04d}{img_p.suffix.lower()}"
-                if not dest.exists():
-                    shutil.copy2(img_p, dest)
-                bundled[pnum] = f"scans/{dest.name}"
-    if not bundled and source_pdf is not None and source_pdf.is_file():
-        import pymupdf
-
-        page_nums = {p.page_number for p in ast.pages} or set(range(1, ast.total_pages + 1))
-        with pymupdf.open(source_pdf) as pdf_doc:
-            for pnum in sorted(page_nums):
-                if 1 <= pnum <= len(pdf_doc):
-                    pix = pdf_doc[pnum - 1].get_pixmap(dpi=150)
-                    dest = scans_dir / f"page_{pnum:04d}.png"
-                    pix.save(str(dest))
-                    bundled[pnum] = f"scans/{dest.name}"
-    return bundled
+    return bundle_local_scans(
+        {p.page_number for p in ast.pages},
+        ast.total_pages,
+        scans_dir,
+        run_dir=run_dir,
+        source_pdf=source_pdf,
+    )
 
 
 def _build_page_shard(

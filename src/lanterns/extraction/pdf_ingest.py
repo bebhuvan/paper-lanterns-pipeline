@@ -387,3 +387,61 @@ def pdf_page_count(pdf_path: str | Path) -> int:
 
 def compute_pdf_sha256(pdf_path: str | Path) -> str:
     return sha256_file(pdf_path)
+
+
+_ALLOWED_SCAN_EXTS: frozenset[str] = frozenset({".png", ".webp", ".jpg", ".jpeg"})
+
+
+def collect_existing_local_scans(scans_dir: Path) -> dict[int, str]:
+    """Collect image-only `scans/page_NNNN.*` entries while purging stale `.json` artifacts."""
+    found: dict[int, str] = {}
+    if not scans_dir.is_dir():
+        return found
+    for stale in scans_dir.glob("*.json"):
+        stale.unlink()
+    for img_p in sorted(scans_dir.glob("page_*.*")):
+        if img_p.suffix.lower() in _ALLOWED_SCAN_EXTS:
+            digits = "".join(ch for ch in img_p.stem if ch.isdigit())
+            if digits:
+                found[int(digits)] = f"scans/{img_p.name}"
+    return found
+
+
+def bundle_local_scans(
+    page_numbers: set[int],
+    total_pages: int,
+    scans_dir: Path,
+    *,
+    run_dir: Path | None,
+    source_pdf: Path | None,
+) -> dict[int, str]:
+    """Copy existing rendered page scans or render 150-DPI previews from `source_pdf` into `scans_dir`."""
+    import shutil
+
+    scans_dir.mkdir(parents=True, exist_ok=True)
+    bundled = collect_existing_local_scans(scans_dir)
+    if run_dir is not None:
+        for cand_sub in (run_dir / "renders", run_dir / "evidence" / "renders"):
+            if not cand_sub.is_dir():
+                continue
+            for img_p in sorted(cand_sub.glob("page_*.*")):
+                if img_p.suffix.lower() not in _ALLOWED_SCAN_EXTS:
+                    continue
+                digits = "".join(ch for ch in img_p.stem if ch.isdigit())
+                if not digits:
+                    continue
+                pnum = int(digits)
+                dest = scans_dir / f"page_{pnum:04d}{img_p.suffix.lower()}"
+                if not dest.exists():
+                    shutil.copy2(img_p, dest)
+                bundled[pnum] = f"scans/{dest.name}"
+    if not bundled and source_pdf is not None and source_pdf.is_file():
+        targets = page_numbers or set(range(1, total_pages + 1))
+        with fitz.open(source_pdf) as pdf_doc:
+            for pnum in sorted(targets):
+                if 1 <= pnum <= len(pdf_doc):
+                    pix = pdf_doc[pnum - 1].get_pixmap(dpi=150)
+                    dest = scans_dir / f"page_{pnum:04d}.png"
+                    pix.save(str(dest))
+                    bundled[pnum] = f"scans/{dest.name}"
+    return bundled

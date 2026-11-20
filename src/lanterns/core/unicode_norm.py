@@ -77,20 +77,33 @@ def normalize_diplomatic_text(text: str) -> str:
 nfc_text = normalize_diplomatic_text
 
 
-def fold_for_search(text: str) -> str:
-    """Return diacritic-folded lowercase string strictly for search indexing (never for edition text)."""
+_LIGATURE_SEARCH_MAP: dict[str, str] = {
+    "æ": "ae",
+    "Æ": "ae",
+    "œ": "oe",
+    "Œ": "oe",
+    "ſ": "s",
+    "ß": "ss",
+    "ø": "o",
+    "Ø": "o",
+    "ł": "l",
+    "Ł": "l",
+    "đ": "d",
+    "Đ": "d",
+}
+
+
+def fold_diacritics_for_search(text: str) -> str:
+    """Fold diacritics and historical ligatures strictly for accent-insensitive search (`Rájput` -> `rajput`)."""
     if not text:
         return ""
-    folded_ligs = (
-        text.replace("æ", "ae")
-        .replace("Æ", "ae")
-        .replace("œ", "oe")
-        .replace("Œ", "oe")
-        .replace("ſ", "s")
-    )
-    decomposed = unicodedata.normalize("NFD", folded_ligs)
-    stripped = "".join(ch for ch in decomposed if not unicodedata.combining(ch))
+    expanded = "".join(_LIGATURE_SEARCH_MAP.get(ch, ch) for ch in text)
+    decomposed = unicodedata.normalize("NFD", expanded)
+    stripped = "".join(ch for ch in decomposed if unicodedata.category(ch) != "Mn")
     return unicodedata.normalize("NFC", stripped).casefold()
+
+
+fold_for_search = fold_diacritics_for_search
 
 
 def strip_control_chars(value: Any) -> tuple[Any, bool]:

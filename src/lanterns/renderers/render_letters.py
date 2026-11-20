@@ -22,6 +22,8 @@ from lanterns.renderers.html_utils import (
     coalesce_continued_blocks,
     fold_diacritics_for_search,
     footnotes_by_block_map,
+    format_markdown_footnote,
+    index_ast_blocks,
     render_block_stream_html,
     render_footnotes_apparatus_html,
     render_inline_markdown,
@@ -38,20 +40,7 @@ from lanterns.renderers.render_book_web import (
     section_filename_stem,
 )
 
-
-def _index_blocks_by_id(ast: CollectionAST) -> dict[str, BlockIR]:
-    by_id: dict[str, BlockIR] = {}
-    for page in ast.pages:
-        for blk in page.blocks:
-            by_id[blk.block_id] = blk
-    for sec in ast.sections:
-        for item in sec.items:
-            for blk in item.blocks:
-                by_id.setdefault(blk.block_id, blk)
-    for ltr in ast.letters:
-        for blk in ltr.blocks:
-            by_id.setdefault(blk.block_id, blk)
-    return by_id
+_index_blocks_by_id = index_ast_blocks
 
 
 def _letter_header_label(letter: LetterUnit) -> str:
@@ -113,6 +102,8 @@ def _render_letter_markdown(letter: LetterUnit, ast: CollectionAST, block_lookup
         text_md = _inline_markdown(blk.tagged_text, fn_by_blk.get(blk.block_id))
         if blk.type == "ornamental_break":
             lines.append("* * *\n")
+        elif blk.type == "margin_note":
+            lines.append(f"> *[Margin: {text_md.replace(chr(10), ' ')}]*\n")
         else:
             pref = md_prefix.get(blk.type, "")
             body = "  \n".join(text_md.split("\n")) if (not pref and (blk.type == "verse" or blk.line_breaks_preserved)) else text_md
@@ -129,8 +120,7 @@ def _render_letter_markdown(letter: LetterUnit, ast: CollectionAST, block_lookup
         lines.append("## Notes\n")
         for fid in letter.footnote_ids:
             if fid in ltr_fns:
-                fn = ltr_fns[fid]
-                lines.append(f"[^{fn.footnote_id}]: ({fn.label}) {_inline_markdown(fn.tagged_text)}")
+                lines.append(format_markdown_footnote(ltr_fns[fid], include_orphan_prefix=False))
         lines.append("")
     return "\n".join(lines)
 

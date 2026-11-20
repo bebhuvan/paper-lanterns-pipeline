@@ -225,7 +225,9 @@ class GeminiProvider:
                     time.sleep(self.base_backoff_s * (2**attempt) + random.uniform(0.05, 0.5))
                     continue
                 break
-            except (OSError, TimeoutError, ValueError) as exc:
+            except Exception as exc:
+                if isinstance(exc, (KeyboardInterrupt, SystemExit)):
+                    raise
                 last_err = ProviderError(_exception_kind(exc), _safe_message(exc))
                 if last_err.kind == ProviderErrorKind.TIMEOUT and attempt < self.max_retries:
                     time.sleep(self.base_backoff_s * (2**attempt))
@@ -252,7 +254,9 @@ class GeminiProvider:
             interaction = client.interactions.create(api_version="v1", **kwargs)
         except genai_errors.APIError as exc:
             return _error_from_api_exception(exc)
-        except (OSError, TimeoutError, ValueError) as exc:
+        except Exception as exc:
+            if isinstance(exc, (KeyboardInterrupt, SystemExit)):
+                raise
             return ProviderError(_exception_kind(exc), _safe_message(exc))
 
         return self._parse_interaction_response(request, interaction, started)
@@ -357,7 +361,9 @@ class GeminiProvider:
             )
         except genai_errors.APIError as exc:
             return _error_from_api_exception(exc)
-        except (OSError, TimeoutError, ValueError) as exc:
+        except Exception as exc:
+            if isinstance(exc, (KeyboardInterrupt, SystemExit)):
+                raise
             return ProviderError(_exception_kind(exc), _safe_message(exc))
 
         return _parse_decision_batch_response(resp, clean_model, started)

@@ -10,13 +10,22 @@ from __future__ import annotations
 
 import html
 import re
-import unicodedata
 from pathlib import Path
 from typing import Any
 
 from lanterns.core.atomic import atomic_write_json, atomic_write_text
-from lanterns.core.models import BlockIR, FootnoteItem, TableCell
-from lanterns.core.tags import split_tagged_lines_balanced
+from lanterns.core.models import BlockIR, FootnoteItem, LetterUnit, StructuralUnit, TableCell
+from lanterns.core.tags import (
+    alloc_fnref_id,
+    fn_anchor_id,
+    normalize_note_label,
+    sanitize_xml_id,
+    split_tagged_lines_balanced,
+    split_tagged_paragraphs_balanced,
+    strip_constrained_tags,
+    tokenize_tagged_text,
+)
+from lanterns.core.unicode_norm import fold_diacritics_for_search
 
 ALLOWED_INLINE_TAGS: frozenset[str] = frozenset({"i", "b", "sc", "fnref", "sup", "sub", "unclear"})
 
@@ -32,11 +41,9 @@ READER_STRICT_CSP = (
     "form-action 'none'"
 )
 
-_INLINE_TOKEN_RE = re.compile(r"(</?(?:i|b|sc|fnref|sup|sub|unclear)>)")
 _PLACEHOLDER_NOTE_RE = re.compile(r"\[\[NOTE:([^:\]]+):(?:(\d+):)?([^\]]+)\]\]")
 _PLACEHOLDER_FOLIO_RE = re.compile(r"\[\[(?:FN)?FOLIO:(\d+):([^\]]*)\]\]")
 _BRACKET_FOLIO_RE = re.compile(r"\[p\.\s*([^\]]+?)\]")
-_NCNAME_CLEAN_RE = re.compile(r"[^A-Za-z0-9_.-]+")
 
 HTML_TAG_OPEN: dict[str, str] = {
     "i": "<i>",
@@ -137,106 +144,21 @@ ALIGNMENT_CLASS: dict[str, str] = {
     "two_column_right": "two-col-right",
 }
 
-_LIGATURE_SEARCH_MAP: dict[str, str] = {
-    "æ": "ae",
-    "Æ": "ae",
-    "œ": "oe",
-    "Œ": "oe",
-    "ſ": "s",
-    "ß": "ss",
-    "ø": "o",
-    "Ø": "o",
-    "ł": "l",
-    "Ł": "l",
-    "đ": "d",
-    "Đ": "d",
-}
-
-
 _MD_STRIP_FOLIO_RE = re.compile(r"\[\[(?:FN)?FOLIO:\d+:[^\]]*\]\]\s*")
 _MD_STRIP_NOTE_RE = re.compile(r"\[\[NOTE:([^:\]]+):(?:\d+:)?[^\]]+\]\]")
 _HTML_INLINE_TAG_MAP = {"blockquote": "blockquote", "epigraph": "blockquote"}
-__all___atomic_keep = (atomic_write_json, atomic_write_text)
-
-
-def sanitize_xml_id(raw_id: str, prefix: str = "id") -> str:
-    """Normalize an identifier into a valid XML/HTML NCName."""
-    cleaned = _NCNAME_CLEAN_RE.sub("-", raw_id.strip()).strip("-.")
-    if not cleaned:
-        return prefix
-    if not (cleaned[0].isalpha() or cleaned[0] == "_"):
-        return f"{prefix}-{cleaned}"
-    return cleaned
-
-
-def fn_anchor_id(footnote_id: str) -> str:
-    """Canonical DOM/XML target id (`#fn-...`) for a FootnoteItem."""
-    raw = footnote_id.strip()
-    if not raw.startswith("fn-"):
-        raw = f"fn-{raw}"
-    return sanitize_xml_id(raw, "fn")
-
-
-def alloc_fnref_id(footnote_id: str, ref_registry: dict[str, list[str]]) -> str:
-    """Allocate a globally unique `#fnref-...` callout anchor id and record it."""
-    target = fn_anchor_id(footnote_id)
-    base = target[3:] if target.startswith("fn-") else target
-    existing = ref_registry.setdefault(footnote_id, [])
-    occ = len(existing) + 1
-    ref_id = sanitize_xml_id(f"fnref-{base}" if occ == 1 else f"fnref-{base}-{occ}", "fnref")
-    existing.append(ref_id)
-    return ref_id
-
-
-def fold_diacritics_for_search(text: str) -> str:
-    """Fold diacritics and historical ligatures for accent-insensitive search (`Rájput` -> `rajput`)."""
-    expanded = "".join(_LIGATURE_SEARCH_MAP.get(ch, ch) for ch in text)
-    decomposed = unicodedata.normalize("NFD", expanded)
-    stripped = "".join(ch for ch in decomposed if unicodedata.category(ch) != "Mn")
-    return unicodedata.normalize("NFC", stripped).casefold()
-
-
-def tokenize_tagged_text(tagged_text: str) -> list[tuple[str, str]]:
-    """Tokenize constrained inline tags with strict LIFO stack balancing."""
-    tokens: list[tuple[str, str]] = []
-    stack: list[str] = []
-    for part in _INLINE_TOKEN_RE.split(tagged_text):
-        if not part:
-            continue
-        if part.startswith("</") and part.endswith(">"):
-            tag = part[2:-1]
-            if tag in stack:
-                idx = len(stack) - 1 - stack[::-1].index(tag)
-                to_reopen = stack[idx + 1 :]
-                for open_t in reversed(stack[idx:]):
-                    tokens.append(("close", open_t))
-                del stack[idx:]
-                for reopen_t in to_reopen:
-                    stack.append(reopen_t)
-                    tokens.append(("open", reopen_t))
-            else:
-                tokens.append(("text", part))
-        elif part.startswith("<") and part.endswith(">"):
-            tag = part[1:-1]
-            stack.append(tag)
-            tokens.append(("open", tag))
-        else:
-            tokens.append(("text", part))
-    while stack:
-        tokens.append(("close", stack.pop()))
-    return tokens
-
-
-def strip_constrained_tags(tagged_text: str) -> str:
-    """Return plain diplomatic text with constrained inline tags removed."""
-    return "".join(val for kind, val in tokenize_tagged_text(tagged_text) if kind == "text")
-
-
-def _normalize_note_label(raw: str) -> str:
-    cleaned = raw.strip().strip("[]()")
-    if cleaned.endswith(".") and len(cleaned) > 1 and cleaned[:-1].isalnum():
-        cleaned = cleaned[:-1]
-    return cleaned.strip()
+__all___atomic_keep = (
+    alloc_fnref_id,
+    atomic_write_json,
+    atomic_write_text,
+    fn_anchor_id,
+    fold_diacritics_for_search,
+    sanitize_xml_id,
+    split_tagged_paragraphs_balanced,
+    strip_constrained_tags,
+    tokenize_tagged_text,
+)
+_normalize_note_label = normalize_note_label
 
 
 def _build_callout_queue(block_footnotes: list[FootnoteItem] | None) -> dict[str, list[FootnoteItem]]:
@@ -450,14 +372,64 @@ def block_css_classes(block: BlockIR) -> str:
     return " ".join(classes)
 
 
+def index_ast_blocks(ast: Any) -> dict[str, BlockIR]:
+    """Build a complete `block_id -> BlockIR` lookup preferring post-join blocks in `sections`/`letters`."""
+    by_id: dict[str, BlockIR] = {}
+    for page in ast.pages:
+        for blk in page.blocks:
+            by_id[blk.block_id] = blk
+    for sec in ast.sections:
+        for item in sec.items:
+            for blk in item.blocks:
+                by_id[blk.block_id] = blk
+    for ltr in ast.letters:
+        for blk in ltr.blocks:
+            by_id[blk.block_id] = blk
+    return by_id
+
+
+def iter_section_render_units(
+    section: Any,
+    ast: Any,
+    block_lookup: dict[str, BlockIR],
+) -> list[tuple[str, list[BlockIR], LetterUnit | None, StructuralUnit | None]]:
+    """Return source-ordered `(unit_kind, blocks, letter_or_none, structural_unit_or_none)` tuples."""
+    letters_by_id: dict[str, LetterUnit] = {ltr.letter_id: ltr for ltr in ast.letters}
+    by_start: dict[str, LetterUnit] = {ltr.blocks[0].block_id: ltr for ltr in ast.letters if ltr.blocks}
+    if section.units:
+        out: list[tuple[str, list[BlockIR], LetterUnit | None, StructuralUnit | None]] = []
+        for unit in section.units:
+            blks = [block_lookup[bid] for bid in unit.block_ids if bid in block_lookup]
+            lu = (unit.kind == "letter" and blks and by_start.get(blks[0].block_id)) or None
+            out.append((unit.kind, blks, lu, unit))
+        return out
+    fallback: list[tuple[str, list[BlockIR], LetterUnit | None, StructuralUnit | None]] = []
+    for item in section.items:
+        lu = letters_by_id.get(str(item.letter_id or "")) if item.kind == "letter" else None
+        blks = lu.blocks if lu is not None else list(item.blocks)
+        fallback.append(("letter" if lu is not None else "narrative", blks, lu, None))
+    return fallback
+
+
 def collect_section_footnotes(section: Any, ast: Any) -> tuple[list[str], dict[str, FootnoteItem]]:
-    """Collect ordered footnote IDs and subset map for a `BookSection` across its letters."""
+    """Collect ordered footnote IDs and subset map for a `BookSection` across its units and letters."""
     ordered_ids: list[str] = list(section.footnote_ids)
+    for unit in section.units:
+        ordered_ids = list(dict.fromkeys([*ordered_ids, *unit.footnote_ids]))
     letters_by_id = {ltr.letter_id: ltr for ltr in ast.letters}
     for item in section.items:
         if item.kind == "letter" and item.letter_id in letters_by_id:
             ordered_ids = list(dict.fromkeys([*ordered_ids, *letters_by_id[item.letter_id].footnote_ids]))
     return ordered_ids, {fid: ast.footnotes[fid] for fid in ordered_ids if fid in ast.footnotes}
+
+
+def format_markdown_footnote(fn: FootnoteItem, *, include_orphan_prefix: bool = True) -> str:
+    """Format a single or multi-paragraph `FootnoteItem` as valid CommonMark `[^{id}]:` with 4-space continuation indent."""
+    orphan = f"[Unlinked note, p. {fn.origin_folio or fn.origin_page}] " if (include_orphan_prefix and fn.is_orphan) else ""
+    paras = [render_inline_markdown(p) for p in split_tagged_paragraphs_balanced(fn.tagged_text)]
+    indented_paras = ["\n    ".join(p.splitlines()) for p in paras if p.strip()] or [render_inline_markdown(fn.tagged_text)]
+    first = f"[^{fn.footnote_id}]: ({fn.label}) {orphan}{indented_paras[0]}"
+    return "\n\n    ".join([first, *indented_paras[1:]])
 
 
 def footnotes_by_block_map(

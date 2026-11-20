@@ -76,7 +76,10 @@ def _flush_block_run_units(
     groups: list[tuple[StructuralUnitKind, list[BlockIR]]] = []
     for blk in blocks:
         ukind = _block_unit_kind(blk.type, sec_kind)
-        if groups and groups[-1][0] == ukind:
+        if groups and (
+            groups[-1][0] == ukind
+            or (blk.continues_from_prev and {groups[-1][0], ukind} <= {"narrative", "editorial_bridge"})
+        ):
             groups[-1][1].append(blk)
         else:
             groups.append((ukind, [blk]))

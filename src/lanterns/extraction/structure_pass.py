@@ -285,7 +285,11 @@ def _call_structured_llm(
         provider = provider_factory(spec)
         if prov_name == "gemini" and hasattr(provider, "max_retries"):
             provider.max_retries = 1
-        tier_plans = (("flex", 45_000), ("standard", 75_000)) if prov_name == "gemini" else (("standard", 90_000),)
+        tier_plans = (
+            (("standard", 60_000),)
+            if stage == "structure_pass2c_escalation" or prov_name != "gemini"
+            else (("flex", 75_000), ("standard", 90_000))
+        )
         for tier, timeout_ms in tier_plans:
             settings = {
                 "service_tier": tier,
