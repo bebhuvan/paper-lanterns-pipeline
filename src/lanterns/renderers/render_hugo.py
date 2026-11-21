@@ -13,6 +13,7 @@ import json
 import re
 import shutil
 from collections import Counter
+from itertools import groupby
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
@@ -317,6 +318,8 @@ def build_book_front_matter(ast: CollectionAST, meta: HugoEditionMeta) -> dict[s
             "machine_reread": int(proof.get("machine_reread", 0)),
         },
         "page_kinds": page_kind_strip(ast),
+        # The same strip run-length encoded ([kind, leaves], ...) for small drawings such as generated covers.
+        "page_runs": [[kind, len(list(run))] for kind, run in groupby(page_kind_strip(ast))],
         "parts": [
             {"label": s.title_plain, "kind": s.kind, "start": s.start_page, "end": s.end_page} for s in ast.sections
         ],

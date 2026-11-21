@@ -132,6 +132,8 @@ def test_book_front_matter_counts_periods_and_page_strip() -> None:
     assert book["unperiodised_count"] == 1
     assert book["page_kinds"] == page_kind_strip(ast)
     assert book["page_kinds"][1:] == "LL"
+    assert sum(n for _, n in book["page_runs"]) == len(book["page_kinds"])
+    assert book["page_runs"][-1] == ["L", 2]
     assert book["scan_base"] == "https://archive.org/download/hugotestarchive/page/"
 
 
