@@ -402,6 +402,38 @@ def _cmd_proof_site(args: argparse.Namespace, repo: RepoPaths) -> int:
     return 0
 
 
+def _cmd_render_hugo(args: argparse.Namespace, repo: RepoPaths) -> int:
+    import tomllib
+
+    from lanterns.core.models import CollectionAST
+    from lanterns.renderers.render_hugo import (
+        HugoEditionMeta,
+        collect_download_files,
+        parse_life_periods,
+        render_hugo_edition,
+    )
+
+    book = BookConfig.load(args.book_id, paths=repo)
+    ed_dir = repo.edition_dir(book.collection, book.book_id)
+    ast_path = ed_dir / "collection_ast.json"
+    if not ast_path.is_file():
+        raise FileNotFoundError(f"No compiled edition at {ast_path}; run `lanterns compile {book.book_id}` first")
+    ast = CollectionAST.model_validate(json.loads(ast_path.read_text(encoding="utf-8")))
+    raw_toml = tomllib.loads((repo.book_dir(book.book_id) / "book.toml").read_text(encoding="utf-8"))
+    manifest = json.loads((ed_dir / "edition_manifest.json").read_text(encoding="utf-8"))
+    meta = HugoEditionMeta(
+        subtitle=book.subtitle,
+        imprint=book.imprint,
+        authors=tuple(book.authors),
+        compiled_at=str(manifest.get("compiled_at", "")),
+        periods=parse_life_periods(raw_toml.get("life_periods")),
+        downloads=collect_download_files(ed_dir, book.book_id),
+        source_ast_sha256=sha256_file(ast_path),
+    )
+    _print_json({"ok": True, **render_hugo_edition(ast, ed_dir, meta)})
+    return 0
+
+
 def _cmd_intake(args: argparse.Namespace, repo: RepoPaths) -> int:
     from lanterns.epistolary import intake_proposal, load_pages_from_run_dir
 
@@ -550,6 +582,9 @@ def _register_ops_subparsers(sub: Any) -> None:
     p_val.add_argument("--skip-proofing", action="store_true")
     p_val.add_argument("--external-tools", action="store_true", help="Run xmllint tei_all.rng and EPUBCheck 5.1.0")
 
+    p_hugo = sub.add_parser("render-hugo", help="Write Hugo website content for a compiled edition ($0, offline)")
+    p_hugo.add_argument("book_id")
+
     p_ps = sub.add_parser("proof-site", help="Build safe-DOM Distributed Proofreaders (P1 -> P2) Studio")
     p_ps.add_argument("book_id")
     p_ps.add_argument("--run-id", default=None)
@@ -605,6 +640,7 @@ COMMAND_HANDLERS: dict[str, Callable[[argparse.Namespace, RepoPaths], int]] = {
     "compile": _cmd_compile,
     "validate-edition": _cmd_validate_edition,
     "proof-site": _cmd_proof_site,
+    "render-hugo": _cmd_render_hugo,
     "intake": _cmd_intake,
     "status": _cmd_status,
     "doctor": _cmd_doctor,

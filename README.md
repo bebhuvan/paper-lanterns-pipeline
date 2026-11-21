@@ -62,6 +62,7 @@ uv run lanterns extract toru-dutt-life-letters-1921 \
 uv run lanterns structure toru-dutt-life-letters-1921 --cost-ceiling-usd 0.20
 uv run lanterns compile toru-dutt-life-letters-1921 --set-active
 uv run lanterns validate-edition toru-dutt-life-letters-1921
+uv run lanterns render-hugo toru-dutt-life-letters-1921   # Hugo content for the website (D23)
 
 # 6. Community proofing intake, benchmark, cache GC & catalog status
 uv run lanterns intake newton-bentley-1756 path/to/proposal.json

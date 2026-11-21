@@ -221,3 +221,15 @@ Append-only record of foundational architectural choices in **Paper Lanterns**, 
 
 
 
+
+---
+
+## D23. Hugo Website Content Renderer (`render_hugo.py`, `lanterns render-hugo`) (2026-11-21)
+
+- **Decision:** Add an offline, `$0` renderer that projects a compiled `collection_ast.json` into Hugo content for the new Paper Lanterns website (`library/<collection>/<book_id>/hugo/`): one book `_index.md` and one `<letter.slug>.md` per standalone letter, each with JSON front matter and an empty body, plus `manifest.json` (page list and EPUB/Markdown/TEI download files with byte sizes and SHA-256) for the site's thin sync script.
+  1. **Runs, never HTML:** text travels as lines of `{t, c, tag, fn}` style runs built from `tokenize_tagged_text`; the Hugo templates escape every run, so the site needs no `unsafe` Markdown and inserts no raw HTML. Every block keeps `page`, `leaf` (`page_number - 1`, the BookReader `/page/n{leaf}` index of D20) and `bbox` so the letter page can light a block on its scan.
+  2. **Attested callouts only:** a `<fnref>` or legacy `<sup>` links to a note only when that block is listed in the note's `referenced_in_block_ids`; anything else stays an unlinked superscript (nothing dropped, nothing guessed).
+  3. **Life periods are book state with a citation:** optional `[[life_periods]]` tables in `books/<id>/book.toml` (`label`, ISO `start` inclusive, `end` exclusive, `source`) group letters on the website; each must cite where the dates come from (for Dostoevsky, the book's own Chronological Table, pp. xi-xvi). Malformed, overlapping or unsourced periods and non-ISO letter dates stop the run.
+  4. **Separate command:** `lanterns render-hugo <book_id>` reads the compiled library edition; `compile` is unchanged, so existing editions need no recompile.
+- **Why:** The website (Hugo, in its own repository) must hold design only and take every word and number from pipeline output, mirroring Akshara's render-then-sync split.
+- **Rejected:** Pre-rendering letter HTML into the Markdown body (would need Hugo `unsafe = true` and raw-HTML insertion on the site); copying the EPUB/Markdown/TEI files into `hugo/` (duplicates tracked bytes; the manifest points at them instead); deriving life periods inside the renderer from prose (violates the Conveyor-Belt Law).
