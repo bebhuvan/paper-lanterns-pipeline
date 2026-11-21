@@ -27,7 +27,7 @@ Never mix test/canary runs with canonical book editions:
 | Plane | Path | Git Tracked? | Rule |
 | :--- | :--- | :---: | :--- |
 | **1. Sources** | `sources/` | Gitignored | Raw PDFs & JBIG2-free `.originals.pdf` JP2 assemblies; immutable once hashed (`source_pdf_sha256`). |
-| **2. Book State** | `collections/`, `books/<book_id>/` | **Tracked** | `book.toml`, `structure_overrides.json` (plus legacy `letter_map.json`/`chapter_map.json`), `corrections/*.json`, `proof_ledger.json`, `scan_overrides/page_NNNN.json`, `audit_checks.jsonl`. |
+| **2. Book State** | `collections/`, `books/<book_id>/` | **Tracked** | `book.toml`, `edition.toml` (cited website overlay, D25), `structure_overrides.json` (plus legacy `letter_map.json`/`chapter_map.json`), `corrections/*.json`, `proof_ledger.json`, `scan_overrides/page_NNNN.json`, `audit_checks.jsonl`. |
 | **3a. Experiments** | `workspace/experiments/` | Gitignored | All `--kind experiment` canaries & benchmarks. Preview compiles go to `workspace/builds/previews/`. |
 | **3b. Canonical Runs** | `workspace/runs/<book_id>/<run_id>/` | Gitignored | Only `--kind canonical` runs eligible for `--set-active` (`ir/pages.json`, `ir/structure_auto.json`, `cost_ledger.jsonl`). |
 | **4. Library** | `library/<collection>/<book_id>/` | **Tracked** | Compiled Web, Individual Online Letters, EPUB 3.3, Scholarly Markdown, TEI P5 XML, and Proofing Studio. |

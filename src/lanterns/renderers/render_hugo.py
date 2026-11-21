@@ -13,11 +13,13 @@ import json
 import re
 import shutil
 from collections import Counter
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
 from lanterns.core.atomic import atomic_write_json, atomic_write_text
+from lanterns.core.display_text import clip_words, letter_page_title, opening_headline
+from lanterns.core.edition_overlay import EditionOverlay, LifePeriod
 from lanterns.core.hashes import sha256_file
 from lanterns.core.models import BlockIR, CollectionAST, FootnoteItem, LetterUnit
 from lanterns.core.tags import (
@@ -62,14 +64,6 @@ class HugoRenderError(ValueError):
 
 
 @dataclass(frozen=True)
-class LifePeriod:
-    label: str
-    start: str
-    end: str
-    source: str
-
-
-@dataclass(frozen=True)
 class DownloadFile:
     format: str
     source_rel: str
@@ -84,33 +78,9 @@ class HugoEditionMeta:
     imprint: str = ""
     authors: tuple[str, ...] = ()
     compiled_at: str = ""
-    periods: tuple[LifePeriod, ...] = ()
+    overlay: EditionOverlay = field(default_factory=EditionOverlay)
     downloads: tuple[DownloadFile, ...] = ()
     source_ast_sha256: str = ""
-
-
-def parse_life_periods(raw: Any) -> tuple[LifePeriod, ...]:
-    """Validate `[[life_periods]]` tables from book.toml; malformed rows stop the run."""
-    rows = raw or []
-    if not isinstance(rows, list):
-        raise HugoRenderError("`life_periods` must be an array of tables")
-    periods: list[LifePeriod] = []
-    for idx, row in enumerate(rows):
-        try:
-            period = LifePeriod(
-                label=str(row["label"]).strip(),
-                start=str(row["start"]).strip(),
-                end=str(row["end"]).strip(),
-                source=str(row["source"]).strip(),
-            )
-        except (KeyError, TypeError) as exc:
-            raise HugoRenderError(f"life_periods[{idx}] needs label, start, end and source: {exc}") from exc
-        if not (period.label and period.source and _ISO_DATE_RE.fullmatch(period.start) and _ISO_DATE_RE.fullmatch(period.end)):
-            raise HugoRenderError(f"life_periods[{idx}] has an empty label/source or a non-ISO date: {row!r}")
-        if period.end <= period.start or (periods and period.start < periods[-1].end):
-            raise HugoRenderError(f"life_periods[{idx}] must be non-empty and in order without overlap: {row!r}")
-        periods.append(period)
-    return tuple(periods)
 
 
 def format_letter_date(date_iso: str | None) -> dict[str, str]:
@@ -186,8 +156,8 @@ def _block_payload(block: BlockIR, callouts: dict[str, FootnoteItem]) -> dict[st
     }
 
 
-def _letter_title(letter: LetterUnit) -> str:
-    header_lines = [strip_constrained_tags(x).strip() for x in (letter.metadata.header_tagged or "").split("\n")]
+def _letter_heading(letter: LetterUnit) -> str:
+    header_lines = [strip_footnote_callouts_plain(x) for x in split_tagged_lines_balanced(letter.metadata.header_tagged or "")]
     parts = [x for x in header_lines if x]
     return " · ".join(parts) or f"Letter {letter.sequence_index}"
 
@@ -214,8 +184,21 @@ def _letter_footnotes(letter: LetterUnit, ast: CollectionAST) -> list[dict[str, 
     return notes
 
 
+def _full_sender(letter: LetterUnit, ast: CollectionAST, overlay: EditionOverlay) -> str:
+    # The overlay's default writer applies only inside the volume's own letters section, never to appendices.
+    in_main_part = any(s.section_id == letter.section_id and s.kind == "epistolary_part" for s in ast.sections)
+    return overlay.full_name(letter.metadata.sender_display) or (overlay.default_sender if in_main_part else "")
+
+
 def build_letter_front_matter(letter: LetterUnit, ast: CollectionAST, meta: HugoEditionMeta) -> dict[str, Any]:
     md = letter.metadata
+    overlay = meta.overlay
+    opening = next(
+        (strip_footnote_callouts_plain(b.tagged_text) for b in letter.blocks if b.type == "body"), md.incipit
+    )
+    heading = _letter_heading(letter)
+    sender_full = _full_sender(letter, ast, overlay)
+    recipient_full = overlay.full_name(md.recipient_display)
     by_block = footnotes_by_block_map(ast.footnotes, set(letter.footnote_ids))
     blocks = [
         _block_payload(b, {normalize_note_label(fn.label): fn for fn in by_block.get(b.block_id, [])})
@@ -225,21 +208,29 @@ def build_letter_front_matter(letter: LetterUnit, ast: CollectionAST, meta: Hugo
     pages = sorted({b["page"] for b in blocks} | {letter.start_page})
     folio_by_page = {p.page_number: p.printed_folio or "" for p in ast.pages}
     return {
-        "title": _letter_title(letter),
+        "title": opening_headline(opening) or heading,
+        "heading": heading,
+        "page_title": letter_page_title(sender_full, recipient_full, date["display"]),
         "layout": "letter",
         "weight": letter.sequence_index,
-        "description": md.incipit,
+        "description": clip_words(opening, 155),
         "book_id": ast.book_id,
         "letter_id": letter.letter_id,
+        # Survives a re-split that renumbers letters: the first printed block of the letter.
+        "stable_id": (letter.block_ids or [letter.letter_id])[0],
+        "anchor_text": clip_words(opening, 80),
+        "pipeline_slug": letter.slug,
         "number": md.letter_number_label or "",
         "sequence": letter.sequence_index,
         "letter_count": len(ast.letters),
         "section_id": letter.section_id,
         "letter_date": date,
-        "period": _period_for(date["iso"], meta.periods),
+        "period": _period_for(date["iso"], overlay.periods),
         "place": md.place or "",
         "sender": md.sender_display or "",
         "recipient": md.recipient_display or "",
+        "sender_full": sender_full,
+        "recipient_full": recipient_full,
         "salutation": strip_footnote_callouts_plain(md.salutation_tagged or ""),
         "incipit": md.incipit,
         "start_page": letter.start_page,
@@ -290,7 +281,8 @@ def _plate(ast: CollectionAST) -> dict[str, Any]:
 
 def build_book_front_matter(ast: CollectionAST, meta: HugoEditionMeta) -> dict[str, Any]:
     dates = [format_letter_date(lt.metadata.date_iso)["iso"] for lt in ast.letters]
-    period_counts = Counter(_period_for(d, meta.periods) for d in dates)
+    periods = meta.overlay.periods
+    period_counts = Counter(_period_for(d, periods) for d in dates)
     year_counts = Counter(d[:4] for d in dates if d)
     title_page = _first_page_with(ast, {"imprint"})
     proof = ast.proof_summary
@@ -302,6 +294,10 @@ def build_book_front_matter(ast: CollectionAST, meta: HugoEditionMeta) -> dict[s
         "subtitle": meta.subtitle,
         "imprint": meta.imprint,
         "authors": list(meta.authors),
+        "translators": list(meta.overlay.translators),
+        "publisher": meta.overlay.publisher,
+        "default_sender": meta.overlay.default_sender,
+        "default_sender_source": meta.overlay.default_sender_source,
         "author_or_editor": ast.author_or_editor,
         "year": ast.year,
         "archive_id": ast.archive_id or "",
@@ -327,7 +323,7 @@ def build_book_front_matter(ast: CollectionAST, meta: HugoEditionMeta) -> dict[s
         "year_counts": [[int(y), n] for y, n in sorted(year_counts.items())],
         "periods": [
             {"label": p.label, "start": p.start, "end": p.end, "source": p.source, "count": period_counts[p.label]}
-            for p in meta.periods
+            for p in periods
         ],
         "unperiodised_count": period_counts[""],
         "frontispiece": _plate(ast),
@@ -352,9 +348,10 @@ def build_hugo_bundle(ast: CollectionAST, meta: HugoEditionMeta) -> dict[str, st
     """Pure projection: relative path -> file text for the whole book bundle."""
     files = {"_index.md": dump_front_matter(build_book_front_matter(ast, meta))}
     for letter in ast.letters:
-        name = f"{letter.slug}.md"
+        # Letter pages are addressed by their sequence number (/collections/<book_id>/<n>/), frozen once published.
+        name = f"{letter.sequence_index}.md"
         if name in files:
-            raise HugoRenderError(f"Duplicate letter slug {letter.slug!r} would overwrite another page")
+            raise HugoRenderError(f"Duplicate letter number {letter.sequence_index} would overwrite another page")
         files[name] = dump_front_matter(build_letter_front_matter(letter, ast, meta))
     return files
 

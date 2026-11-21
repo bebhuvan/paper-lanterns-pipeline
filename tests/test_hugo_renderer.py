@@ -7,17 +7,16 @@ from pathlib import Path
 
 import pytest
 
+from lanterns.core.edition_overlay import EditionOverlay, LifePeriod
 from lanterns.core.models import FootnoteItem
 from lanterns.epistolary.compiler import compile_collection_ast
 from lanterns.renderers.render_hugo import (
     HugoEditionMeta,
     HugoRenderError,
-    LifePeriod,
     build_hugo_bundle,
     collect_download_files,
     format_letter_date,
     page_kind_strip,
-    parse_life_periods,
     render_hugo_edition,
     tagged_to_lines,
 )
@@ -58,6 +57,7 @@ def _two_letter_ast():
     ast.archive_id = "hugotestarchive"
     ast.letters[0].metadata.date_iso = "1849-12-22"
     ast.letters[1].metadata.date_iso = "1854"
+    ast.letters[1].metadata.header_tagged = "II\n<i>To Mme. N. D. Fonvisin</i><sup>2</sup>"
     ast.letters[0].metadata.salutation_tagged = "<sc>My dear Alexander Ivanovitch</sc><sup>2</sup>,"
     ast.footnotes["fn-p0002-1"] = FootnoteItem(
         footnote_id="fn-p0002-1",
@@ -77,15 +77,25 @@ PERIODS = (
     LifePeriod(label="Petersburg", start="1837", end="1849-04-23", source="Table, p. xi"),
     LifePeriod(label="The Fortress", start="1849-04-23", end="1849-12-25", source="Table, p. xiii"),
 )
+OVERLAY = EditionOverlay(
+    periods=PERIODS,
+    name_forms={"F. D.": "Fyodor Dostoevsky", "his Brother": "his brother"},
+    default_sender="Fyodor Dostoevsky",
+    default_sender_source="Title page",
+    translators=("Ethel Colburn Mayne",),
+)
 
 
 def test_bundle_letter_front_matter_carries_runs_bboxes_dates_and_linked_callouts() -> None:
     ast = _two_letter_ast()
-    files = build_hugo_bundle(ast, HugoEditionMeta(periods=PERIODS))
-    first = json.loads(files[f"{ast.letters[0].slug}.md"])
+    files = build_hugo_bundle(ast, HugoEditionMeta(overlay=OVERLAY))
+    first = json.loads(files["1.md"])
 
     assert first["layout"] == "letter"
-    assert first["title"] == "I · To his Brother"
+    assert first["heading"] == "I · To his Brother"
+    assert first["title"] == "A bold line & <script>x</script>."
+    assert first["stable_id"] == "p0002-b0001"
+    assert first["pipeline_slug"] == ast.letters[0].slug
     assert first["letter_date"] == {"iso": "1849-12-22", "display": "22 December 1849", "short": "22 · XII · 1849"}
     assert first["period"] == "The Fortress"
     assert first["pages"] == [{"page": 2, "leaf": 1, "folio": "53"}]
@@ -106,14 +116,15 @@ def test_bundle_letter_front_matter_carries_runs_bboxes_dates_and_linked_callout
 
     assert first["salutation"] == "My dear Alexander Ivanovitch,"
 
-    second = json.loads(files[f"{ast.letters[1].slug}.md"])
+    second = json.loads(files["2.md"])
     assert second["period"] == ""
     assert second["letter_date"]["display"] == "1854"
+    assert second["heading"] == "II · To Mme. N. D. Fonvisin"
 
 
 def test_book_front_matter_counts_periods_and_page_strip() -> None:
     ast = _two_letter_ast()
-    book = json.loads(build_hugo_bundle(ast, HugoEditionMeta(periods=PERIODS))["_index.md"])
+    book = json.loads(build_hugo_bundle(ast, HugoEditionMeta(overlay=OVERLAY))["_index.md"])
     assert book["layout"] == "book"
     assert book["counts"]["letters"] == 2
     assert book["year_counts"] == [[1849, 1], [1854, 1]]
@@ -127,7 +138,7 @@ def test_book_front_matter_counts_periods_and_page_strip() -> None:
 def test_unattested_sup_is_not_linked_and_build_is_deterministic() -> None:
     assert tagged_to_lines("x<sup>e</sup>", keep_line_breaks=False) == [[{"t": "x"}, {"t": "e", "tag": "sup"}]]
     ast = _two_letter_ast()
-    meta = HugoEditionMeta(periods=PERIODS)
+    meta = HugoEditionMeta(overlay=OVERLAY)
     assert build_hugo_bundle(ast, meta) == build_hugo_bundle(ast, meta)
 
 
@@ -135,16 +146,6 @@ def test_unattested_sup_is_not_linked_and_build_is_deterministic() -> None:
 def test_malformed_dates_stop_the_run(bad: str) -> None:
     with pytest.raises(HugoRenderError):
         format_letter_date(bad)
-
-
-def test_life_periods_must_be_complete_ordered_and_sourced() -> None:
-    good = [{"label": "A", "start": "1837", "end": "1849", "source": "p. xi"}]
-    assert parse_life_periods(good)[0].label == "A"
-    assert parse_life_periods(None) == ()
-    with pytest.raises(HugoRenderError):
-        parse_life_periods([{"label": "A", "start": "1837", "end": "1849"}])
-    with pytest.raises(HugoRenderError):
-        parse_life_periods(good + [{"label": "B", "start": "1840", "end": "1850", "source": "p. xii"}])
 
 
 def test_render_writes_fresh_bundle_and_manifest(tmp_path: Path) -> None:
@@ -163,10 +164,26 @@ def test_render_writes_fresh_bundle_and_manifest(tmp_path: Path) -> None:
     assert info["page_count"] == 3
     assert not stale.exists()
     manifest = json.loads((ed / "hugo" / "manifest.json").read_text(encoding="utf-8"))
-    assert manifest["pages"] == sorted(["_index.md", *[f"{lt.slug}.md" for lt in ast.letters]])
+    assert manifest["pages"] == ["1.md", "2.md", "_index.md"]
     assert [d["to"] for d in manifest["downloads"]] == ["hugo-test.epub", "hugo-test.md", "hugo-test.tei.xml"]
 
 
 def test_missing_download_file_stops_the_run(tmp_path: Path) -> None:
     with pytest.raises(HugoRenderError):
         collect_download_files(tmp_path, "hugo-test")
+
+
+def test_page_title_uses_full_names_and_default_writer_only_in_the_letters_section() -> None:
+    ast = _two_letter_ast()
+    ast.letters[0].metadata.sender_display = "F. D."
+    ast.letters[0].metadata.recipient_display = "his Brother"
+    ast.letters[1].metadata.sender_display = None
+    ast.letters[1].metadata.recipient_display = None
+    files = build_hugo_bundle(ast, HugoEditionMeta(overlay=OVERLAY))
+    first, second = json.loads(files["1.md"]), json.loads(files["2.md"])
+    assert first["page_title"] == "Fyodor Dostoevsky to his brother, 22 December 1849"
+    assert first["sender"] == "F. D."  # the printed form is kept for the page itself
+    in_letters_part = any(s.section_id == ast.letters[1].section_id and s.kind == "epistolary_part" for s in ast.sections)
+    assert second["page_title"] == ("Fyodor Dostoevsky, 1854" if in_letters_part else "Letter, 1854")
+    book = json.loads(files["_index.md"])
+    assert book["translators"] == ["Ethel Colburn Mayne"]

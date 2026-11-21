@@ -1,0 +1,76 @@
+# Editorial overlay for the website (pipeline D25). Kept out of book.toml, which BookConfig.save() rewrites.
+# Every value is cited to a page of this edition so a reader can check it.
+
+[edition]
+translators = ["Ethel Colburn Mayne"]  # title page (scan leaf 7): "Translated by Ethel Colburn Mayne"
+publisher = "The Macmillan Company"      # title page (scan leaf 7): "New York / The Macmillan Company"
+
+# The volume is "Letters of Fyodor Michailovitch Dostoevsky to his Family and Friends": every letter in its
+# letters section is his. Applied only where the printed letter names no writer, and never to the appendices.
+[default_sender]
+name = "Fyodor Dostoevsky"
+source = "Title page (scan leaf 7)"
+
+# Full forms of names as printed in the letter headings and signatures, for page titles and structured data.
+# The printed forms stay on the page exactly as printed. Only forms the book itself gives are used
+# (its index names Turgenev without a first name, so he stays "Turgenev").
+[[correspondents]]
+name = "Fyodor Dostoevsky"
+printed = ["Fyodor Michailovitch Dostoevsky", "F. Dostoevsky", "Dostoevsky", "DOSTOEVSKY", "D."]
+
+[[correspondents]]
+name = "Fyodor Dostoevsky, with Anya and Lyuba"
+printed = ["Fyodor Dostoevsky / Anya / Lyuba"]
+
+[[correspondents]]
+name = "his brother Michael"
+printed = ["his Brother Michael"]
+
+[[correspondents]]
+name = "his father"
+printed = ["his Father"]
+
+# Periods of the writer's life used to group letters on the website.
+# Dates and places come from the book's own "Chronological Table of Dostoevsky's Life" (printed pp. xi-xvi, scan leaves 17-22).
+# A period runs from `start` (inclusive) to `end` (exclusive). Year-only letter dates sort to the start of their year.
+[[life_periods]]
+label = "Petersburg"
+start = "1837"
+end = "1849-04-23"
+source = "Chronological Table, pp. xi-xiii: arrives in Petersburg 1837; arrested 23 April 1849"
+
+[[life_periods]]
+label = "The Fortress"
+start = "1849-04-23"
+end = "1849-12-25"
+source = "Chronological Table, p. xiii: imprisoned in the Petropaulovsky Fortress 23 April 1849; sent to Siberia 24-25 December 1849"
+
+[[life_periods]]
+label = "Prison at Omsk"
+start = "1849-12-25"
+end = "1854-02-16"
+source = "Chronological Table, p. xiii: serves his sentence at Omsk 1850-54; completed 15 February 1854"
+
+[[life_periods]]
+label = "Semipalatinsk"
+start = "1854-02-16"
+end = "1859-07-03"
+source = "Chronological Table, pp. xiii-xiv: private in the 7th Siberian Regiment from March 1854; leaves Semipalatinsk 2 July 1859"
+
+[[life_periods]]
+label = "Tver and Petersburg"
+start = "1859-07-03"
+end = "1867-04-14"
+source = "Chronological Table, p. xiv-xv: Tver, then Petersburg from November 1859; goes abroad 14 April 1867"
+
+[[life_periods]]
+label = "Abroad"
+start = "1867-04-14"
+end = "1871-07-08"
+source = "Chronological Table, p. xv: life abroad 1867-71; returns to Petersburg 8 July 1871"
+
+[[life_periods]]
+label = "The last years"
+start = "1871-07-08"
+end = "1881-01-29"
+source = "Chronological Table, pp. xv-xvi: Petersburg and Staraya Roussa from July 1871; dies 28 January 1881"

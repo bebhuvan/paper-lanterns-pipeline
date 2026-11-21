@@ -233,3 +233,26 @@ Append-only record of foundational architectural choices in **Paper Lanterns**, 
   4. **Separate command:** `lanterns render-hugo <book_id>` reads the compiled library edition; `compile` is unchanged, so existing editions need no recompile.
 - **Why:** The website (Hugo, in its own repository) must hold design only and take every word and number from pipeline output, mirroring Akshara's render-then-sync split.
 - **Rejected:** Pre-rendering letter HTML into the Markdown body (would need Hugo `unsafe = true` and raw-HTML insertion on the site); copying the EPUB/Markdown/TEI files into `hugo/` (duplicates tracked bytes; the manifest points at them instead); deriving life periods inside the renderer from prose (violates the Conveyor-Belt Law).
+
+---
+
+## D24. Public Repository: MIT Code, CC BY 4.0 Content & gitleaks Secret Gate (2026-11-21)
+
+- **Decision:** The repository will be public.
+  1. **Licences:** code MIT (`LICENSE`, matching `pyproject.toml`); transcriptions, `library/` editions and data CC BY 4.0 (`LICENSE-CONTENT` with the official legal code and a credit line), in the owner's words "MIT for code, CC BY 4 for letters" (CC0 was considered and rejected the same day).
+  2. **Secrets:** keys only in `.env` (ignored together with every `.env.*` except the empty-valued `.env.example`) or a host secret store. gitleaks `8.30.1` (`.gitleaks-version`) runs as a pre-commit hook on staged changes (`.githooks/pre-commit`, enabled with `git config core.hooksPath .githooks`), over the full history as step 1 of `./verify`, and in CI on every push (`.github/workflows/secrets.yml`, checksum-verified binary). Response steps live in `.github/SECURITY.md` (kept out of the root to respect the four-file Markdown allowlist enforced by `lanterns doctor`).
+  3. **History:** scanned in full before publishing (`19` commits, `~958 MB`, `0` findings); no rewrite.
+- **Why:** The owner's first concern about going public is leaked API keys; licences make the corpus freely reusable.
+- **Rejected:** `gitleaks dir` over the working tree (would read the real local `.env`); rewriting history (nothing found); running the full `./verify` in CI for now (needs local run data and tools).
+
+---
+
+## D25. Website Letter Identity, Display Text & `edition.toml` Overlay (2026-11-21)
+
+- **Decision:** Extends D23.
+  1. **Numbered pages & stable ids:** `render-hugo` writes each letter as `<sequence_index>.md`, so the website address is `/collections/<book_id>/<n>/` (frozen once published; the site keeps a ledger). Each page carries `stable_id` (the letter's first printed block id, e.g. `p0079-b0002`), `anchor_text` and `pipeline_slug`, so a future re-split that renumbers letters can be mapped to redirects.
+  2. **Display text without invention (`core/display_text.py`):** `heading` is the printed letter heading (callouts stripped); `title` is the letter's own opening words cut at a sentence end, else a clause break, within ~90 characters (a full stop after a word of under three letters, such as `Mme.` or an initial, never ends the sentence); `description` is the opening clipped to ~155 characters; `page_title` is "Sender to recipient, date" with graceful fallbacks.
+  3. **`books/<id>/edition.toml` (`core/edition_overlay.py`):** cited editorial data for the website: `[[life_periods]]` (moved from book.toml), `[[correspondents]]` full forms of printed names, `[default_sender]` (applied only inside the `epistolary_part` section where no writer is printed), and `[edition]` translators and publisher. Only forms the book itself gives are used.
+- **Why:** The website needs short addresses that never break, search-friendly titles, and structured data, while the page shows only printed text.
+- **Bug fixed:** D23 stored `[[life_periods]]` in `book.toml`, but `BookConfig.save()` (run by `compile --set-active` and `fetch-archive`) rewrites that file from its own fields and would have dropped them silently; `tests/test_display_text_and_overlay.py::test_overlay_survives_book_config_save` guards the move.
+- **Rejected:** Slug addresses (`letter-0020-f-dostoevsky`) that change when sender metadata improves; extending `BookConfig` with presentation-only fields.
