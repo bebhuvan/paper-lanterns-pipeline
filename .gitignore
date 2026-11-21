@@ -1,5 +1,4 @@
 .venv/
-.env
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -11,3 +10,7 @@ sources/*
 !sources/.gitkeep
 workspace/*
 !workspace/.gitkeep
+# Local secrets, never committed (SECURITY.md)
+.env
+.env.*
+!.env.example

@@ -74,6 +74,13 @@ uv run lanterns doctor
 
 ---
 
+## Licence & Secrets
+
+- Code: MIT (`LICENSE`). Transcriptions, compiled editions (`library/`) and data: CC BY 4.0 (`LICENSE-CONTENT`). The letters themselves are public domain.
+- API keys live only in `.env` (ignored; copy `.env.example`) or a host secret store. gitleaks `8.30.1` (`.gitleaks-version`) scans staged changes in the pre-commit hook (`git config core.hooksPath .githooks` once per clone), the full history in `./verify`, and every push in CI (`.github/workflows/secrets.yml`). See [.github/SECURITY.md](.github/SECURITY.md).
+
+---
+
 ## Canonical Documentation Map (Single-Source-of-Truth Allowlist)
 
 Enforced mechanically by `uv run lanterns doctor`:
