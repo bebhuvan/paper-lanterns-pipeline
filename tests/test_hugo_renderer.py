@@ -58,6 +58,7 @@ def _two_letter_ast():
     ast.archive_id = "hugotestarchive"
     ast.letters[0].metadata.date_iso = "1849-12-22"
     ast.letters[1].metadata.date_iso = "1854"
+    ast.letters[0].metadata.salutation_tagged = "<sc>My dear Alexander Ivanovitch</sc><sup>2</sup>,"
     ast.footnotes["fn-p0002-1"] = FootnoteItem(
         footnote_id="fn-p0002-1",
         label="1",
@@ -85,7 +86,7 @@ def test_bundle_letter_front_matter_carries_runs_bboxes_dates_and_linked_callout
 
     assert first["layout"] == "letter"
     assert first["title"] == "I · To his Brother"
-    assert first["date"] == {"iso": "1849-12-22", "display": "22 December 1849", "short": "22 · XII · 1849"}
+    assert first["letter_date"] == {"iso": "1849-12-22", "display": "22 December 1849", "short": "22 · XII · 1849"}
     assert first["period"] == "The Fortress"
     assert first["pages"] == [{"page": 2, "leaf": 1, "folio": "53"}]
 
@@ -103,9 +104,11 @@ def test_bundle_letter_front_matter_carries_runs_bboxes_dates_and_linked_callout
     assert runs[-1] == {"t": "1", "tag": "sup", "fn": "fn-p0002-1"}
     assert first["footnotes"][0]["lines"] == [[{"t": "A "}, {"t": "note", "c": "i"}, {"t": "."}]]
 
+    assert first["salutation"] == "My dear Alexander Ivanovitch,"
+
     second = json.loads(files[f"{ast.letters[1].slug}.md"])
     assert second["period"] == ""
-    assert second["date"]["display"] == "1854"
+    assert second["letter_date"]["display"] == "1854"
 
 
 def test_book_front_matter_counts_periods_and_page_strip() -> None:

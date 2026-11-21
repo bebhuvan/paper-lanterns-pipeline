@@ -25,6 +25,7 @@ from lanterns.core.tags import (
     normalize_note_label,
     split_tagged_lines_balanced,
     strip_constrained_tags,
+    strip_footnote_callouts_plain,
     tokenize_tagged_text,
 )
 from lanterns.renderers.html_utils import footnotes_by_block_map
@@ -234,12 +235,12 @@ def build_letter_front_matter(letter: LetterUnit, ast: CollectionAST, meta: Hugo
         "sequence": letter.sequence_index,
         "letter_count": len(ast.letters),
         "section_id": letter.section_id,
-        "date": date,
+        "letter_date": date,
         "period": _period_for(date["iso"], meta.periods),
         "place": md.place or "",
         "sender": md.sender_display or "",
         "recipient": md.recipient_display or "",
-        "salutation": strip_constrained_tags(md.salutation_tagged or "").strip(),
+        "salutation": strip_footnote_callouts_plain(md.salutation_tagged or ""),
         "incipit": md.incipit,
         "start_page": letter.start_page,
         "end_page": letter.end_page,
