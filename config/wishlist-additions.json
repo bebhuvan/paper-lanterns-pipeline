@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-21",
+  "note": "Two books to digitize next, chosen by the owner to replace the old collections.paperlanterns.ink subdomain. Entries follow the item shape of config/wishlist.json; merge them into its `items` once that file is committed, then delete this file. Nothing has been extracted or spent on either book.",
+  "items": [
+    {
+      "id": "tagore-glimpses-of-bengal-1921",
+      "title": "Glimpses of Bengal: Selected from the Letters of Sir Rabindranath Tagore, 1885 to 1895",
+      "correspondents": "Rabindranath Tagore to his niece Indira Devi; translator to be taken from the title page or preface",
+      "publication_year": 1921,
+      "publisher": "London: Macmillan and Co.",
+      "region": "india",
+      "collection": "indian-epistolary-heritage",
+      "status": "candidate",
+      "archive_id": "glimpsesofbengal00tagoiala",
+      "archive_url": "https://archive.org/details/glimpsesofbengal00tagoiala",
+      "fallback_archive_ids": ["glimpsesofbengal0000rabi"],
+      "source_library": "University of California Libraries",
+      "page_count": 188,
+      "printed_pages": "vii, 166 p.",
+      "ppi": 400,
+      "has_jp2": true,
+      "rights": "Public domain: published 1921 (US public domain); Tagore died 1941, so public domain in India since 2002. The Archive marks this copy NOT_IN_COPYRIGHT.",
+      "pg_status": "On Project Gutenberg (ebook 7951), an exception to the wishlist's anti-duplication rule: the owner wants it on the site because the old subdomain carried 67 of its letters, and Gutenberg has no page-by-page scan alignment.",
+      "why_this_edition": "The 1921 Macmillan first edition, scanned at 400 ppi with lossless JP2 by a research library (UC), which the wishlist prefers over DLI scans. The old subdomain mislabelled this book as 'The Letters of Sir Rabindranath Tagore (1921)' and gave its letters invented titles; ignore those.",
+      "pitch": "A young Tagore's letters from the family estates on the Padma: river life, villagers, monsoon and the making of a poet."
+    },
+    {
+      "id": "nehru-father-daughter-letters-1929",
+      "title": "Letters from a Father to His Daughter: Being a Brief Account of the Early Days of the World, Written for Children",
+      "correspondents": "Jawaharlal Nehru to his daughter Indira",
+      "publication_year": 1929,
+      "publisher": "Allahabad: Allahabad Law Journal Press",
+      "region": "india",
+      "collection": "indian-epistolary-heritage",
+      "status": "candidate",
+      "archive_id": "in.ernet.dli.2015.220076",
+      "archive_url": "https://archive.org/details/in.ernet.dli.2015.220076",
+      "source_library": "Digital Library of India (scanned at S.V. Digital Library, Tirupati, from SNL Vetapalem)",
+      "page_count": 164,
+      "ppi": 600,
+      "has_jp2": true,
+      "rights": "Public domain: published 1929, so US public domain since 2025; Nehru died 1964, so public domain in India since 1 January 2025 (life plus 60 years).",
+      "pg_status": "Not checked against Project Gutenberg.",
+      "why_this_edition": "The first edition: its text layer shows the 1929 title page and contents (foreword, 31 letters, illustrations including a Sphinx frontispiece and fossils). The 1931 second edition (rkas.245.lettersfromfathe0000jawa, used by the old subdomain) stays in US copyright until 1 January 2027, and ims0594-lettersfromafathertohisdaughter-1929 names Geoffrey Cumberlege, OUP's publisher from 1945, so it is a later reprint mislabelled 1929. This is a DLI scan, which the wishlist usually avoids: run triage-pdf first, and if it is bitonal or blotted, look for a better 1929 copy before extracting.",
+      "pitch": "Thirty-one letters Nehru wrote to ten-year-old Indira in 1928, telling the story of the earth, early peoples and civilisations."
+    }
+  ]
+}
