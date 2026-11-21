@@ -22,7 +22,7 @@ from lanterns.core.atomic import atomic_write_json, atomic_write_text
 from lanterns.core.display_text import clip_words, letter_page_title, opening_headline
 from lanterns.core.edition_overlay import EditionOverlay, LifePeriod
 from lanterns.core.hashes import sha256_file
-from lanterns.core.models import BlockIR, CollectionAST, FootnoteItem, LetterUnit
+from lanterns.core.models import BlockIR, CollectionAST, FootnoteItem, LetterUnit, RubricBreakdown
 from lanterns.core.tags import (
     fn_anchor_id,
     normalize_note_label,
@@ -311,6 +311,7 @@ def build_book_front_matter(ast: CollectionAST, meta: HugoEditionMeta) -> dict[s
             "dated_letters": sum(1 for d in dates if d),
         },
         "provenance_tier": ast.rubric.provenance_tier if ast.rubric else "",
+        "quality": _quality(ast.rubric),
         "proof": {
             "total_pages": int(proof.get("total_pages", ast.total_pages)),
             "p1_proofed": int(proof.get("p1_proofed", 0)),
@@ -345,6 +346,29 @@ def build_book_front_matter(ast: CollectionAST, meta: HugoEditionMeta) -> dict[s
 def dump_front_matter(front_matter: dict[str, Any]) -> str:
     """Serialize JSON front matter (Hugo reads a file starting with `{` as JSON) with an empty body."""
     return json.dumps(front_matter, ensure_ascii=False, indent=1) + "\n"
+
+
+# Each pillar's score next to its maximum, so the site can say "26 of 30" without knowing the rubric.
+_RUBRIC_PILLARS = (
+    ("text", "text_and_diacritic_fidelity", 30.0),
+    ("structure", "epistolary_structure_and_layout", 25.0),
+    ("notes", "apparatus_and_footnote_integrity", 20.0),
+    ("completeness", "completeness_and_page_coverage", 15.0),
+    ("files", "compiled_output_validity", 10.0),
+)
+
+
+def _quality(rubric: RubricBreakdown | None) -> dict[str, Any] | None:
+    """The 100-point rubric score for readers; None when the edition was never scored."""
+    if rubric is None:
+        return None
+    return {
+        "score": rubric.total_score,
+        "out_of": sum(m for _, _, m in _RUBRIC_PILLARS),
+        "pillars": [{"key": k, "score": getattr(rubric, f), "out_of": m} for k, f, m in _RUBRIC_PILLARS],
+        "flagged": rubric.hotspot_count,
+        "blockers": rubric.blocker_count,
+    }
 
 
 def build_hugo_bundle(ast: CollectionAST, meta: HugoEditionMeta) -> dict[str, str]:

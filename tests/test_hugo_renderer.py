@@ -8,7 +8,7 @@ from pathlib import Path
 import pytest
 
 from lanterns.core.edition_overlay import EditionOverlay, LifePeriod
-from lanterns.core.models import FootnoteItem
+from lanterns.core.models import FootnoteItem, RubricBreakdown
 from lanterns.epistolary.compiler import compile_collection_ast
 from lanterns.renderers.render_hugo import (
     HugoEditionMeta,
@@ -135,6 +135,27 @@ def test_book_front_matter_counts_periods_and_page_strip() -> None:
     assert sum(n for _, n in book["page_runs"]) == len(book["page_kinds"])
     assert book["page_runs"][-1] == ["L", 2]
     assert book["scan_base"] == "https://archive.org/download/hugotestarchive/page/"
+
+
+def test_book_front_matter_carries_the_rubric_score_with_each_pillar_maximum() -> None:
+    ast = _two_letter_ast()
+    meta = HugoEditionMeta(overlay=OVERLAY)
+    assert json.loads(build_hugo_bundle(ast, meta)["_index.md"])["quality"] is None
+    ast.rubric = RubricBreakdown(
+        total_score=76.0,
+        text_and_diacritic_fidelity=26.0,
+        epistolary_structure_and_layout=10.0,
+        apparatus_and_footnote_integrity=15.0,
+        completeness_and_page_coverage=15.0,
+        compiled_output_validity=10.0,
+        provenance_tier="community",
+        blocker_count=0,
+        hotspot_count=101,
+    )
+    quality = json.loads(build_hugo_bundle(ast, meta)["_index.md"])["quality"]
+    assert (quality["score"], quality["out_of"], quality["flagged"]) == (76.0, 100.0, 101)
+    assert [(p["key"], p["score"], p["out_of"]) for p in quality["pillars"]][:2] == [("text", 26.0, 30.0), ("structure", 10.0, 25.0)]
+    assert sum(p["score"] for p in quality["pillars"]) == quality["score"]
 
 
 def test_unattested_sup_is_not_linked_and_build_is_deterministic() -> None:
